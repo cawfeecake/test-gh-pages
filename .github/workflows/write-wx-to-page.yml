@@ -6,19 +6,15 @@ on:
     types: [completed]
 
 jobs:
-  on-success:
+  add-weather-data-to-pages:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v3
         with:
           ref: gh-pages
-      - name: download WX data from upstream workflow run 
+      - name: download weather data from upstream workflow run
         run: |
           gh run download ${{ github.event.workflow_run.id }} -n weather-data -D weather-data
         env:
           GH_TOKEN: ${{ github.token }}
-      - name: "[DEBUG]: dump context"
-        run: echo "$GITHUB_CONTEXT"
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
