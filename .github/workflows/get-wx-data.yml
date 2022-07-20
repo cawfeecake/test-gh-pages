@@ -21,12 +21,12 @@ jobs:
             ((api_requests+=1))
           done < <(printf "%s" "$(< airports.txt)")
           # TODO can I connect the /$number in cron string to the equation here?
-          request_rate_per_day=$(($((60/20))*$api_requests*24))
+          request_rate_per_day=$((24*((60/20))*$api_requests))
           if [ "$request_rate_per_day" -gt "4000" ]; then
             # 55 @ every 20 minutes
-            echo "warning, going to breach free-teir limit!"
+            echo "::warning::will perform $request_rate_per_day request per day; above free-tier limit of 4000"
           else
-            echo "limit usage all good :)"
+            echo "::debug::under per day request limit"
           fi
         env:
           AVWX_TOKEN: ${{ secrets.AVWX_TOKEN }}
