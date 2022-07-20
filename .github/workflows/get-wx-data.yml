@@ -10,6 +10,7 @@ jobs:
   upload-wx-assets:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -s --header "Authorization: $AVWX_TOKEN" https://avwx.rest/api/metar/KPAE
+      - run: |
+          curl -s --header "Authorization: $AVWX_TOKEN" https://avwx.rest/api/metar/KPAE
         env:
           AVWX_TOKEN: ${{ secrets.AVWX_TOKEN }}
