@@ -16,6 +16,8 @@ jobs:
       - name: download WX data from upstream workflow run 
         run: |
           gh run download ${{ github.event.workflow_run.id }} -n weather-data -D weather-data
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: "[DEBUG]: dump context"
         run: echo "$GITHUB_CONTEXT"
         env:
