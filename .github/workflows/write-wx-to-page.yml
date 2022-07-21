@@ -31,7 +31,7 @@ jobs:
         run: |
           from string import Template
 
-          with open('index.md', 'w') as output_file, open('template.md', 'r') as template_file, open('weather.txt') as weather_file:
+          with open('index.md', 'w') as output_file, open('_template.md', 'r') as template_file, open('weather.txt') as weather_file:
               template_data = {
                   'weather': weather_file.read()
               }
