@@ -43,5 +43,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git commit -am "Automated report"
-          git push
+          if git diff --quiet index.md; then
+            echo "no changes; nothing to commit"
+          else
+            git add index.md
+            git commit -m 'update Page with changed wx data'
+            git push
+          fi
