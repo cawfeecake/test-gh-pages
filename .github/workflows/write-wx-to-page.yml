@@ -18,3 +18,28 @@ jobs:
           gh run download ${{ github.event.workflow_run.id }} -n weather-data -D weather-data
         env:
           GH_TOKEN: ${{ github.token }}
+      - name: add weather data to GitHub Pages
+        run: |
+          touch weather.txt
+          for f in weather-data/*.json; do
+            jq -r .station $f >> weather.txt
+            jq -r .flight_rules $f >> weather.txt
+            jq -r .altimeter.repr $f >> weather.txt
+            echo '' >> weather.txt
+          done
+      - name: create index.md for Pages with template
+        run: |
+          from string import Template
+
+          with open('index.md', 'w') as output_file, open('template.md', 'r') as template_file, open('weather.txt') as weather_file:
+              template_data = {
+                  'weather': weather_file.read()
+              }
+              template = Template(template_file.read())
+              result = template.substitute(template_data)
+              output_file.write(result)
+        shell: python
+      - name: commit changes to branch
+        run: |
+          git commit -am "Automated report"
+          git push
