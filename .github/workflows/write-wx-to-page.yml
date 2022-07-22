@@ -6,6 +6,11 @@ on:
     types: [completed]
 
 jobs:
+  debug-github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo '${{ toJSON(github) }}' | jq .
   add-weather-data-to-pages:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
@@ -50,9 +55,9 @@ jobs:
             git commit -m 'update Page with changed wx data'
             git push
           fi
-  debug-on-no-success:
+  job-ran-if-not-success:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion != 'success' }}
     steps:
       - run: |
-          echo '${{ toJSON(github) }}' | jq .
+          echo 'Check out DEBUG step; ...conclusion != '"'success'"
