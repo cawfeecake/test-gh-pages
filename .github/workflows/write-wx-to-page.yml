@@ -27,7 +27,8 @@ jobs:
             jq -r .altimeter.repr $f >> weather.txt
             echo '' >> weather.txt
           done
-      - name: create index.md for Pages with template
+      - name: create index.md from template
+        shell: python
         run: |
           from string import Template
 
@@ -38,7 +39,6 @@ jobs:
               template = Template(template_file.read())
               result = template.substitute(template_data)
               output_file.write(result)
-        shell: python
       - name: commit changes to branch
         run: |
           git config user.name 'github-actions[bot]'
