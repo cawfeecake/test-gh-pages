@@ -21,10 +21,8 @@ jobs:
       - name: add weather data to GitHub Pages
         run: |
           touch weather.txt
-          for f in weather-data/*.json; do
-            jq -r .station $f >> weather.txt
-            jq -r .flight_rules $f >> weather.txt
-            jq -r .altimeter.repr $f >> weather.txt
+          for file in weather-data/*.json; do
+            jq -r '[ .station,.flight_rules,.altimeter.repr ] | join(" ")' $file >> weather.txt
             echo '' >> weather.txt
           done
       - name: create index.md from template
@@ -35,8 +33,8 @@ jobs:
 
           with open('index.md', 'w') as output_file, open('_template.md', 'r') as template_file, open('weather.txt') as weather_file:
               template_data = {
-                  'weather': weather_file.read()
-                  'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                  'weather': weather_file.read(),
+                  'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
               }
               template = Template(template_file.read())
               result = template.substitute(template_data)
