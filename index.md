@@ -2,7 +2,7 @@
 
 ## Current Weather
 
-Last updated: 2022-07-23 06:07:08
+Last updated: 2022-07-23 06:37:54
 
 KAWO VFR A3013
 
@@ -12,6 +12,6 @@ KBVS VFR A3012
 
 KNUW VFR A3014
 
-KORS VFR A3006
+KORS VFR A3007
 
 
