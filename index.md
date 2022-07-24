@@ -1,14 +1,11 @@
 ---
 title: Home
 ---
-{% include favicon.html %}
-{% include navigation.html %}
-
 # Welcome!
 
 ## Current Weather
 
-Last updated: 2022-07-24 08:35:57
+Last updated: 2022-07-24 08:48:36
 
 KAWO VFR A3013
 
