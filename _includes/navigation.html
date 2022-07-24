@@ -1,8 +1,6 @@
 <nav>
-  <a href="/test-gh-pages/" {% if page.url == "/" %}style="color: red;"{% endif %}>
-    Home
-  </a>
-  <a href="/test-gh-pages/about" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
-    About
-  </a>
+  <a href="{{ "/" | prepend: site.baseurl }}" {% if page.url == "/" %}style="color: red;"{% endif %}>
+      Home</a>
+  <a href="{{ "/about" | prepend: site.baseurl }}" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
+      About</a>
 </nav>
