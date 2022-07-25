@@ -1,15 +1,17 @@
 ---
 title: Home
 ---
+{% include favicon.html %}
+{% include navigation.html %}
 # Welcome!
 
 ## Current Weather
 
 Last updated: {{ site.data.weather.update_time }}
 
-KAWO MVFR A3002
+KAWO VFR A3002
 
-KBLI VFR A3000
+KBLI MVFR A3000
 
 KBVS MVFR A3001
 
