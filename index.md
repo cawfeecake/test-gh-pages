@@ -9,11 +9,11 @@ title: Home
 
 Last updated: {{ site.data.weather.update_time }}
 
-KAWO VFR A3002
+KAWO VFR A3001
 
-KBLI MVFR A3000
+KBLI VFR A3000
 
-KBVS MVFR A3001
+KBVS VFR A3001
 
 KNUW VFR A3004
 
