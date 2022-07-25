@@ -7,6 +7,6 @@ title: Home
 
 ## Current Weather
 
-Last updated: $update_time
+Last updated: {{ site.data.weather.update_time }}
 
 $weather

@@ -5,7 +5,7 @@ title: Home
 
 ## Current Weather
 
-Last updated: 2022-07-25 13:01:49
+Last updated: {{ site.data.weather.update_time }}
 
 KAWO MVFR A3002
 
