@@ -5,11 +5,11 @@ title: Home
 
 ## Current Weather
 
-Last updated: 2022-07-25 02:58:13
+Last updated: 2022-07-25 04:03:01
 
-KAWO VFR A3003
+KAWO VFR A3004
 
-KBLI VFR A3004
+KBLI VFR A3003
 
 KBVS VFR A3003
 
