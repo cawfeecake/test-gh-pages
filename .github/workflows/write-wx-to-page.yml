@@ -52,7 +52,7 @@ jobs:
           if git diff --quiet index.md; then
             echo "no changes; nothing to commit"
           else
-            git add index.md
+            git add index.md _data/*
             git commit -m 'update Page with changed wx data'
             git push
           fi
