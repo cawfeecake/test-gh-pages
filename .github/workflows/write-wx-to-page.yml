@@ -33,20 +33,18 @@ jobs:
       - name: create index.md from template
         shell: python
         run: |
-          from datetime import datetime
           from string import Template
 
           with open('index.md', 'w') as output_file, open('_template.md', 'r') as template_file, open('weather.txt') as weather_file:
               template_data = {
                   'weather': weather_file.read(),
-                  'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
               }
               template = Template(template_file.read())
               result = template.substitute(template_data)
               output_file.write(result)
       - name: update weather _data file
         run: |
-          UPDATE_TIME=$(date) yq -i '.update_time = strenv(UPDATE_TIME)' _data/weather.yml
+          UPDATE_TIME=$(date -u '+%a, %b %d, %Y - %r GMT') yq -i '.update_time = strenv(UPDATE_TIME)' _data/weather.yml
       - name: commit changes to branch
         run: |
           git config user.name 'github-actions[bot]'
