@@ -9,13 +9,13 @@ title: Home
 
 Last updated: {{ site.data.weather.update_time }}
 
-KAWO VFR A2988
+KAWO VFR A2989
 
-KBLI VFR A2987
+KBLI VFR A2988
 
-KBVS VFR A2988
+KBVS MVFR A2988
 
-KNUW VFR A2991
+KNUW VFR A2992
 
 KORS VFR A2988
 
