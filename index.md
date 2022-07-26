@@ -11,7 +11,7 @@ Last updated: {{ site.data.weather.update_time }}
 
 KAWO VFR A2987
 
-KBLI VFR A2985
+KBLI VFR A2986
 
 KBVS VFR A2987
 
