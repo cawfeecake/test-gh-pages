@@ -9,7 +9,7 @@ title: Home
 
 Last updated: {{ site.data.weather.update_time }}
 
-KAWO MVFR A2990
+KAWO VFR A2990
 
 KBLI VFR A2990
 
