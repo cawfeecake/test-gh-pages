@@ -3,12 +3,6 @@ title: Home
 ---
 {% include favicon.html %}
 {% include navigation.html %}
-
-## Debug
-
-### Page url
-{{ page.url }}
-
 # Welcome!
 
 ## Current Weather
@@ -19,7 +13,7 @@ KAWO VFR A2986
 
 KBLI VFR A2985
 
-KBVS VFR A2985
+KBVS VFR A2986
 
 KNUW VFR A2989
 
