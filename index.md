@@ -3,6 +3,12 @@ title: Home
 ---
 {% include favicon.html %}
 {% include navigation.html %}
+
+## Debug
+
+### Page url
+{{ page.url }}
+
 # Welcome!
 
 ## Current Weather
