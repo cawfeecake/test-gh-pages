@@ -24,10 +24,12 @@ jobs:
 
           if [ -d "weather-data" ]; then
             cp weather-data/* _data/metars
+            echo '::info::Copied weather data to _data/metars'
           fi
 
           if [ -d "station-data" ]; then
             cp station-data/* _data/stations
+            echo '::info::Copied station data to _data/stations'
           fi
         env:
           GH_TOKEN: ${{ github.token }}
