@@ -23,26 +23,10 @@ jobs:
           gh run download ${{ github.event.workflow_run.id }} -n weather-data -D weather-data
         env:
           GH_TOKEN: ${{ github.token }}
-      - name: add weather data to GitHub Pages
+      - name: copy weather data into GitHub Pages
         run: |
-          touch weather.txt
-          for file in weather-data/*.json; do
-            jq -r '[ .station,.flight_rules,.altimeter.repr ] | join(" ")' $file >> weather.txt
-            echo '' >> weather.txt
-          done
-      - name: create index.md from template
-        shell: python
-        run: |
-          from string import Template
-
-          with open('index.md', 'w') as output_file, open('_template.md', 'r') as template_file, open('weather.txt') as weather_file:
-              template_data = {
-                  'weather': weather_file.read(),
-              }
-              template = Template(template_file.read())
-              result = template.substitute(template_data)
-              output_file.write(result)
-      - name: update weather _data file
+          cp weather-data/* _data/stations
+      - name: set new timestamp for when data was last updated
         run: |
           UPDATE_TIME=$(date -u '+%a, %b %d, %Y - %r GMT') yq -i '.update_time = strenv(UPDATE_TIME)' _data/weather.yml
       - name: commit changes to branch
@@ -52,8 +36,8 @@ jobs:
           if git diff --quiet index.md; then
             echo "no changes; nothing to commit"
           else
-            git add index.md _data/*
-            git commit -m 'update Page with changed wx data'
+            git add _data/*
+            git commit -m 'update site with current wx data'
             git push
           fi
   job-ran-if-not-success:
