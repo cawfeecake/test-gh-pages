@@ -8,13 +8,13 @@ title: Home
 
 Last updated: {{ site.data.weather.update_time }}
 
-{% assign sorted = site.data.stations | sort %}
+{% assign sorted = site.data.metars | sort %}
 {% for station_hash in sorted %}
 {% assign station = station_hash[0] %}
 {% assign station_data = station_hash[1] %}
 ## {{ station }} ({{ station_data.flight_rules }})
 
-XXX {{ station_data.units.altitude }} field elevation (Pressure: {{ station_data.pressure_altitude }} {{ station_data.units.altitude }}; Density: {{ station_data.density_altitude }} {{ station_data.units.altitude }})
+Field elevation: {{ site.data.stations[station].elevation_ft }} ft -- Pressure: {{ station_data.pressure_altitude }} {{ station_data.units.altitude }}; Density: {{ station_data.density_altitude }} {{ station_data.units.altitude }}
 
 Visibility: {{ station_data.visibility.value }} {{ station_data.units.visibility }} 
 
