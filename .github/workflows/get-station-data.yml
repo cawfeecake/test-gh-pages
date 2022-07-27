@@ -1,4 +1,4 @@
-name: Get WX data
+name: Get station data
 
 on:
   workflow_dispatch:
@@ -6,21 +6,21 @@ on:
   schedule:
     # dev note: * is a special character in yaml so it must be within a string
     # see: https://crontab.guru/
-    # below is: "At every 20th minute."
-    - cron:  '*/20 * * * *'
+    # below is: "At 09:00 on day-of-month 1 and 15."
+    - cron:  '0 9 1,15 * *'
 
 jobs:
-  upload-weather-assets:
+  upload-station-assets:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: query external data source
         run: |
-          mkdir weather-data
+          mkdir station-data
           apiRequests=0
           while read -r station
           do
-            curl -s --header "Authorization: $AVWX_TOKEN" "https://avwx.rest/api/metar/$station" | jq . | tee weather-data/$station.json
+            curl -s --header "Authorization: $AVWX_TOKEN" "https://avwx.rest/api/station/$station" | jq . | tee station-data/$station.json
             echo
             # dev note: let returns exit code 1 when expression evals to 0; x++ returns 0 if x == 0 b/c it's post-increment
             let ++apiRequests
@@ -30,5 +30,5 @@ jobs:
           AVWX_TOKEN: ${{ secrets.AVWX_TOKEN }}
       - uses: actions/upload-artifact@v3
         with:
-          name: weather-data
-          path: weather-data
+          name: station-data
+          path: station-data
