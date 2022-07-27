@@ -3,20 +3,22 @@ title: Home
 ---
 {% include favicon.html %}
 {% include navigation.html %}
+
 # Welcome!
 
 ## Current Weather
 
 Last updated: {{ site.data.weather.update_time }}
 
-KAWO VFR A2988
+{% for station_hash in site.data.stations %}
+{% assign station = station_hash[0] %}
+{% assign station_data = station_hash[1] %}
+{{ station }}: {{ station_data.flight_rules }} {{ station_data.altimeter.repr }}
 
-KBLI VFR A2986
+{% endfor %}
 
-KBVS VFR A2988
+## Debug
 
-KNUW VFR A2991
-
-KORS VFR A2985
-
+### Page url
+{{ page.url }}
 
