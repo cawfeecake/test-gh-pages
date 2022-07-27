@@ -4,9 +4,7 @@ title: Home
 {% include favicon.html %}
 {% include navigation.html %}
 
-# Welcome!
-
-## Current Weather
+# Weather
 
 Last updated: {{ site.data.weather.update_time }}
 
@@ -14,12 +12,39 @@ Last updated: {{ site.data.weather.update_time }}
 {% for station_hash in sorted %}
 {% assign station = station_hash[0] %}
 {% assign station_data = station_hash[1] %}
-{{ station }}: {{ station_data.flight_rules }} {{ station_data.altimeter.repr }}
+## {{ station }} ({{ station_data.flight_rules }})
+
+XXX {{ station_data.units.altitude }} field elevation (Pressure: {{ station_data.pressure_altitude }} {{ station_data.units.altitude }}; Density: {{ station_data.density_altitude }} {{ station_data.units.altitude }})
+
+Visibility: {{ station_data.visibility.value }} {{ station_data.units.visibility }} 
+
+{% assign ceilings = station_data.clouds %}
+{% if ceilings.size > 0 %}
+Ceilings
+{% for ceiling in ceilings %}
+  * {{ ceiling.type }} @ {{ ceiling.altitude }} {{ station_data.units.altitude }}
+{% endfor %}
+{% endif %}
+
+Altimeter: {{ station_data.altimeter.value }} {{ station_data.units.altimeter }}
+
+Wind: {% if station_data.wind_speed and station_data.wind_speed.value > 0 %}
+{{ station_data.wind_direction.repr }} @ {{ station_data.wind_speed.value }} {{ station_data.units.wind_speed }}
+{% if station_data.wind_gust %}
+ gusting {{ station_data.wind_gust.value }} {{ station_data.units.wind_speed }}
+{% endif %}
+{% else %}
+calm
+{% endif %}
+
+Temps: {{ station_data.temperature.value }} {{ station_data.units.temperature }} / dewpoint {{ station_data.dewpoint.value }}
 
 {% endfor %}
 
-## Debug
+---
 
-### Page url
+### Debug
+
+#### Page url
 {{ page.url }}
 
