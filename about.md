@@ -4,11 +4,12 @@ title: About
 {% include favicon.html %}
 {% include navigation.html %}
 
+# About
+
+Hello! Welcome to an attempt at tracking METAR weather
+
 ## Debug
 
 ### Page url
 {{ page.url }}
 
-# About
-
-Hello! Welcome to an attempt at tracking METAR weather
