@@ -1,7 +1,6 @@
 <nav>
   {% for item in site.data.navigation %}
-  {% assign with_trailing = item.link | append: "/" %}
-  <a href="{{ item.link | relative_url }}" {% if page.url == item.link or page.url == with_trailing %}style="color: red;"{% endif %}>
+  <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
     {{ item.name }}</a>
   {% endfor %}
 </nav>
