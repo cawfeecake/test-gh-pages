@@ -22,7 +22,7 @@ Visibility: {{ station_data.visibility.value }} {{ station_data.units.visibility
 {% if ceilings.size > 0 %}
 Ceilings
 {% for ceiling in ceilings %}
-  * {{ ceiling.type }} @ {{ ceiling.altitude }} {{ station_data.units.altitude }}
+  * {{ ceiling.type }} @ {{ ceiling.altitude | times: 100 }} {{ station_data.units.altitude }}
 {% endfor %}
 {% endif %}
 
