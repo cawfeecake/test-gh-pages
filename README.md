@@ -19,9 +19,9 @@ would also be where you can run test CI/CD.
 
 ### Site URLs
 
-Remote: https://cawfeecake.github.io/test-gh-pages/
+Remote: https://cawfeecake.github.io/avwx-report/
 
-Local: http://127.0.0.1:4000/test-gh-pages/
+Local: http://127.0.0.1:4000/avwx-report/
 
 ### Launch a local instance
 
@@ -32,8 +32,8 @@ bundle exec jekyll build && bundle exec jekyll serve`
 
 ### Differences between local instance and site on GitHub Pages
 
-* The trailing `/` is required when accessing the root of the site on local (i.e. http://127.0.0.1:4000/test-gh-pages returns a 404),
-but on GitHub Pages it will redirect from https://cawfeecake.github.io/test-gh-pages to https://cawfeecake.github.io/test-gh-pages/
+* The trailing `/` is required when accessing the root of the site on local (i.e. http://127.0.0.1:4000/avwx-report returns a 404),
+but on GitHub Pages it will redirect from https://cawfeecake.github.io/avwx-report to https://cawfeecake.github.io/avwx-report/
 
 * On GitHub Pages a 404 will be returned when a trailing `/` is added to the end of non-root page URLs, but on local it will accept
 both cases (trailing `/` or not)
