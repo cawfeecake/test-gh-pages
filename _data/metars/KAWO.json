@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-01T17:49:31.471274Z",
+    "timestamp": "2022-08-01T18:06:31.676630Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -8,7 +8,14 @@
     "value": 29.95,
     "spoken": "two nine point nine five"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "FEW023",
+      "type": "FEW",
+      "altitude": 23,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -28,37 +35,57 @@
     "spoken": "five"
   },
   "wx_codes": [],
-  "raw": "KAWO 011656Z AUTO 32005KT 10SM CLR 21/15 A2995 RMK AO2 SLP146 T02110150",
-  "sanitized": "KAWO 011656Z 32005KT 10SM 21/15 A2995 RMK AO2 SLP146 T02110150",
+  "raw": "KAWO 011756Z AUTO 32005KT 10SM FEW023 21/16 A2995 RMK AO2 RAB37E54 SLP146 P0000 60000 T02110156 10222 20144 50000",
+  "sanitized": "KAWO 011756Z 32005KT 10SM FEW023 21/16 A2995 RMK AO2 RAB37E54 SLP146 P0000 60000 T02110156 10222 20144 50000",
   "station": "KAWO",
   "time": {
-    "repr": "011656Z",
-    "dt": "2022-08-01T16:56:00Z"
+    "repr": "011756Z",
+    "dt": "2022-08-01T17:56:00Z"
   },
-  "remarks": "RMK AO2 SLP146 T02110150",
+  "remarks": "RMK AO2 RAB37E54 SLP146 P0000 60000 T02110156 10222 20144 50000",
   "dewpoint": {
-    "repr": "15",
-    "value": 15,
-    "spoken": "one five"
+    "repr": "16",
+    "value": 16,
+    "spoken": "one six"
   },
-  "relative_humidity": 0.6813218534447363,
+  "relative_humidity": 0.7080955150446102,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10222",
+      "value": 22.2,
+      "spoken": "two two point two"
+    },
+    "minimum_temperature_6": {
+      "repr": "20144",
+      "value": 14.4,
+      "spoken": "one four point four"
+    },
+    "pressure_tendency": {
+      "repr": "50000",
+      "tendency": "Increasing, then decreasing",
+      "change": 0
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0150",
-      "value": 15,
-      "spoken": "one five point zero"
+      "repr": "0156",
+      "value": 15.6,
+      "spoken": "one five point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
