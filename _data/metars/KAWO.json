@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-03T13:02:10.683156Z",
+    "timestamp": "2022-08-03T13:50:33.758735Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -8,13 +8,20 @@
     "value": 29.99,
     "spoken": "two nine point nine nine"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "BKN005",
+      "type": "BKN",
+      "altitude": 5,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "6",
-    "value": 6,
-    "spoken": "six"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "000",
@@ -33,20 +40,20 @@
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 031256Z AUTO 00000KT 6SM BR CLR 11/11 A2999 RMK AO2 SLP157 T01110106",
-  "sanitized": "KAWO 031256Z 00000KT 6SM BR 11/11 A2999 RMK AO2 SLP157 T01110106",
+  "raw": "KAWO 031339Z AUTO 00000KT 5SM BR BKN005 11/11 A2999 RMK AO2",
+  "sanitized": "KAWO 031339Z 00000KT 5SM BR BKN005 11/11 A2999 RMK AO2",
   "station": "KAWO",
   "time": {
-    "repr": "031256Z",
-    "dt": "2022-08-03T12:56:00Z"
+    "repr": "031339Z",
+    "dt": "2022-08-03T13:39:00Z"
   },
-  "remarks": "RMK AO2 SLP157 T01110106",
+  "remarks": "RMK AO2",
   "dewpoint": {
     "repr": "11",
     "value": 11,
     "spoken": "one one"
   },
-  "relative_humidity": 0.9672929424668637,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -60,25 +67,13 @@
         "value": "Automated with precipitation sensor"
       }
     ],
-    "dewpoint_decimal": {
-      "repr": "0106",
-      "value": 10.6,
-      "spoken": "one zero point six"
-    },
+    "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP157",
-      "value": 1015.7,
-      "spoken": "one zero one five point seven"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
-    "temperature_decimal": {
-      "repr": "0111",
-      "value": 11.1,
-      "spoken": "one one point one"
-    }
+    "temperature_decimal": null
   },
   "runway_visibility": [],
   "temperature": {
@@ -87,7 +82,7 @@
     "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -362,
+  "density_altitude": -374,
   "pressure_altitude": 72,
   "units": {
     "accumulation": "in",
