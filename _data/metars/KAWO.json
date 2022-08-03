@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-03T11:41:12.292532Z",
+    "timestamp": "2022-08-03T12:10:17.400094Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -13,6 +13,12 @@
       "repr": "FEW003",
       "type": "FEW",
       "altitude": 3,
+      "modifier": null
+    },
+    {
+      "repr": "SCT009",
+      "type": "SCT",
+      "altitude": 9,
       "modifier": null
     }
   ],
@@ -40,20 +46,20 @@
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 031138Z AUTO 00000KT 6SM BR FEW003 12/11 A3000 RMK AO2",
-  "sanitized": "KAWO 031138Z 00000KT 6SM BR FEW003 12/11 A3000 RMK AO2",
+  "raw": "KAWO 031156Z AUTO 00000KT 6SM BR FEW003 SCT009 12/11 A3000 RMK AO2 SLP161 6//// 7//// T01170106",
+  "sanitized": "KAWO 031156Z 00000KT 6SM BR FEW003 SCT009 12/11 A3000 RMK AO2 SLP161 6//// 7//// T01170106",
   "station": "KAWO",
   "time": {
-    "repr": "031138Z",
-    "dt": "2022-08-03T11:38:00Z"
+    "repr": "031156Z",
+    "dt": "2022-08-03T11:56:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 SLP161 6//// 7//// T01170106",
   "dewpoint": {
     "repr": "11",
     "value": 11,
     "spoken": "one one"
   },
-  "relative_humidity": 0.9359723503065726,
+  "relative_humidity": 0.9296133286105723,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -67,13 +73,25 @@
         "value": "Automated with precipitation sensor"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP161",
+      "value": 1016.1,
+      "spoken": "one zero one six point one"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0117",
+      "value": 11.7,
+      "spoken": "one one point seven"
+    }
   },
   "runway_visibility": [],
   "temperature": {
@@ -82,7 +100,7 @@
     "spoken": "one two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -264,
+  "density_altitude": -300,
   "pressure_altitude": 62,
   "units": {
     "accumulation": "in",
