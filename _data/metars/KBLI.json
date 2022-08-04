@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-04T10:35:03.641562Z",
+    "timestamp": "2022-08-04T10:48:04.347189Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -10,51 +10,60 @@
   },
   "clouds": [
     {
-      "repr": "BKN010",
-      "type": "BKN",
-      "altitude": 10,
+      "repr": "SCT009",
+      "type": "SCT",
+      "altitude": 9,
       "modifier": null
     },
     {
-      "repr": "BKN025",
+      "repr": "BKN037",
       "type": "BKN",
-      "altitude": 25,
+      "altitude": 37,
       "modifier": null
     },
     {
-      "repr": "OVC047",
+      "repr": "OVC050",
       "type": "OVC",
-      "altitude": 47,
+      "altitude": 50,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "8",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_direction": {
     "repr": "180",
     "value": 180,
     "spoken": "one eight zero"
   },
-  "wind_gust": null,
-  "wind_speed": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+  "wind_gust": {
+    "repr": "17",
+    "value": 17,
+    "spoken": "one seven"
   },
-  "wx_codes": [],
-  "raw": "KBLI 040953Z 18009KT 10SM BKN010 BKN025 OVC047 15/14 A2991 RMK AO2 RAE12 CIG 008V014 SLP135 P0000 T01500144",
-  "sanitized": "KBLI 040953Z 18009KT 10SM BKN010 BKN025 OVC047 15/14 A2991 RMK AO2 RAE12 CIG 008V014 SLP135 P0000 T01500144",
+  "wind_speed": {
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
+  },
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 041034Z 18011G17KT 8SM -RA SCT009 BKN037 OVC050 15/14 A2991 RMK AO2 RAB18 P0002 T01500144",
+  "sanitized": "KBLI 041034Z 18011G17KT 8SM -RA SCT009 BKN037 OVC050 15/14 A2991 RMK AO2 RAB18 P0002 T01500144",
   "station": "KBLI",
   "time": {
-    "repr": "040953Z",
-    "dt": "2022-08-04T09:53:00Z"
+    "repr": "041034Z",
+    "dt": "2022-08-04T10:34:00Z"
   },
-  "remarks": "RMK AO2 RAE12 CIG 008V014 SLP135 P0000 T01500144",
+  "remarks": "RMK AO2 RAB18 P0002 T01500144",
   "dewpoint": {
     "repr": "14",
     "value": 14,
@@ -74,12 +83,8 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAE12",
-        "value": "Rain ended at :12"
+        "repr": "RAB18",
+        "value": "Rain began at :18"
       }
     ],
     "dewpoint_decimal": {
@@ -89,12 +94,12 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP135",
-      "value": 1013.5,
-      "spoken": "one zero one three point five"
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
     },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0150",
