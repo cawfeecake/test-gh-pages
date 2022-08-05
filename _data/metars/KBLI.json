@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-05T10:45:18.882622Z",
+    "timestamp": "2022-08-05T11:02:32.033705Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -8,13 +8,20 @@
     "value": 30.09,
     "spoken": "three zero point zero nine"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "FEW045",
+      "type": "FEW",
+      "altitude": 45,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "9",
+    "value": 9,
+    "spoken": "nine"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,20 +34,15 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ],
-  "raw": "KBLI 051010Z AUTO 00000KT 3SM BR CLR 10/10 A3009 RMK AO2 T01000100",
-  "sanitized": "KBLI 051010Z 00000KT 3SM BR 10/10 A3009 RMK AO2 T01000100",
+  "wx_codes": [],
+  "raw": "KBLI 051053Z AUTO 00000KT 9SM FEW045 10/10 A3009 RMK AO2 SLP194 T01000100",
+  "sanitized": "KBLI 051053Z 00000KT 9SM FEW045 10/10 A3009 RMK AO2 SLP194 T01000100",
   "station": "KBLI",
   "time": {
-    "repr": "051010Z",
-    "dt": "2022-08-05T10:10:00Z"
+    "repr": "051053Z",
+    "dt": "2022-08-05T10:53:00Z"
   },
-  "remarks": "RMK AO2 T01000100",
+  "remarks": "RMK AO2 SLP194 T01000100",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -68,7 +70,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP194",
+      "value": 1019.4,
+      "spoken": "one zero one nine point four"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0100",
