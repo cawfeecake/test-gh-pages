@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-06T11:28:17.815664Z",
+    "timestamp": "2022-08-06T11:43:51.233193Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -8,16 +8,23 @@
     "value": 30.06,
     "spoken": "three zero point zero six"
   },
-  "clouds": [],
-  "flight_rules": "IFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5/4",
-    "value": 1.25,
-    "spoken": "one and one quarter",
-    "numerator": 5,
-    "denominator": 4,
-    "normalized": "1 1/4"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -32,18 +39,18 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 061126Z AUTO 00000KT 1 1/4SM R16/4000VP6000FT BR CLR 12/12 A3006 RMK AO2 T01170117",
-  "sanitized": "KBLI 061126Z 00000KT 1 1/4SM R16/4000VP6000FT BR 12/12 A3006 RMK AO2 T01170117",
+  "raw": "KBLI 061133Z AUTO 00000KT 1/2SM R16/4000VP6000FT FG VV002 12/12 A3006 RMK AO2 VIS 1/4V5 T01170117",
+  "sanitized": "KBLI 061133Z 00000KT 1/2SM R16/4000VP6000FT FG VV002 12/12 A3006 RMK AO2 VIS 1/4V5 T01170117",
   "station": "KBLI",
   "time": {
-    "repr": "061126Z",
-    "dt": "2022-08-06T11:26:00Z"
+    "repr": "061133Z",
+    "dt": "2022-08-06T11:33:00Z"
   },
-  "remarks": "RMK AO2 T01170117",
+  "remarks": "RMK AO2 VIS 1/4V5 T01170117",
   "dewpoint": {
     "repr": "12",
     "value": 12,
