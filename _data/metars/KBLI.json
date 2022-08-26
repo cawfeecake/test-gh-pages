@@ -1,7 +1,9 @@
 {
   "meta": {
-    "timestamp": "2022-08-26T15:48:18.023860Z",
-    "stations_updated": "2022-07-17"
+    "timestamp": "2022-08-26T16:07:10.439135Z",
+    "stations_updated": "2022-07-17",
+    "cache-timestamp": "2022-08-26T16:02:28.198000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A2998",
@@ -10,9 +12,15 @@
   },
   "clouds": [
     {
-      "repr": "OVC006",
-      "type": "OVC",
+      "repr": "BKN006",
+      "type": "BKN",
       "altitude": 6,
+      "modifier": null
+    },
+    {
+      "repr": "OVC010",
+      "type": "OVC",
+      "altitude": 10,
       "modifier": null
     }
   ],
@@ -24,9 +32,9 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "180",
-    "value": 180,
-    "spoken": "one eight zero"
+    "repr": "190",
+    "value": 190,
+    "spoken": "one nine zero"
   },
   "wind_gust": {
     "repr": "23",
@@ -34,19 +42,19 @@
     "spoken": "two three"
   },
   "wind_speed": {
-    "repr": "14",
-    "value": 14,
-    "spoken": "one four"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "wx_codes": [],
-  "raw": "KBLI 261537Z 18014G23KT 10SM OVC006 17/16 A2998 RMK AO2 CIG 003V010 T01670156",
-  "sanitized": "KBLI 261537Z 18014G23KT 10SM OVC006 17/16 A2998 RMK AO2 CIG 003V010 T01670156",
+  "raw": "KBLI 261553Z 19010G23KT 10SM BKN006 OVC010 17/16 A2998 RMK AO2 CIG 005V009 SLP155 T01670156",
+  "sanitized": "KBLI 261553Z 19010G23KT 10SM BKN006 OVC010 17/16 A2998 RMK AO2 CIG 005V009 SLP155 T01670156",
   "station": "KBLI",
   "time": {
-    "repr": "261537Z",
-    "dt": "2022-08-26T15:37:00Z"
+    "repr": "261553Z",
+    "dt": "2022-08-26T15:53:00Z"
   },
-  "remarks": "RMK AO2 CIG 003V010 T01670156",
+  "remarks": "RMK AO2 CIG 005V009 SLP155 T01670156",
   "dewpoint": {
     "repr": "16",
     "value": 16,
@@ -74,7 +82,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP155",
+      "value": 1015.5,
+      "spoken": "one zero one five point five"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0167",
