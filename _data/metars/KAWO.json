@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-08-28T08:48:55.811266Z",
+    "timestamp": "2022-08-28T09:03:06.196064Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -8,7 +8,14 @@
     "value": 30.01,
     "spoken": "three zero point zero one"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "SCT070",
+      "type": "SCT",
+      "altitude": 70,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -17,35 +24,39 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "320",
-    "value": 320,
-    "spoken": "three two zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KAWO 280756Z AUTO 32004KT 10SM CLR 12/11 A3001 RMK AO2 SLP165 T01220106 402000117",
-  "sanitized": "KAWO 280756Z 32004KT 10SM 12/11 A3001 RMK AO2 SLP165 T01220106 402000117",
+  "raw": "KAWO 280856Z AUTO 00000KT 10SM SCT070 12/11 A3001 RMK AO2 SLP165 T01220111 58001",
+  "sanitized": "KAWO 280856Z 00000KT 10SM SCT070 12/11 A3001 RMK AO2 SLP165 T01220111 58001",
   "station": "KAWO",
   "time": {
-    "repr": "280756Z",
-    "dt": "2022-08-28T07:56:00Z"
+    "repr": "280856Z",
+    "dt": "2022-08-28T08:56:00Z"
   },
-  "remarks": "RMK AO2 SLP165 T01220106 402000117",
+  "remarks": "RMK AO2 SLP165 T01220111 58001",
   "dewpoint": {
     "repr": "11",
     "value": 11,
     "spoken": "one one"
   },
-  "relative_humidity": 0.8994654196028143,
+  "relative_humidity": 0.9298790264187491,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "58001",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 0.1
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -56,20 +67,12 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0106",
-      "value": 10.6,
-      "spoken": "one zero point six"
+      "repr": "0111",
+      "value": 11.1,
+      "spoken": "one one point one"
     },
-    "maximum_temperature_24": {
-      "repr": "0200",
-      "value": 20,
-      "spoken": "two zero point zero"
-    },
-    "minimum_temperature_24": {
-      "repr": "0117",
-      "value": 11.7,
-      "spoken": "one one point seven"
-    },
+    "maximum_temperature_24": null,
+    "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
       "repr": "SLP165",
