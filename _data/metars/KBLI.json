@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-09-09T08:43:21.958090Z",
+    "timestamp": "2022-09-09T09:08:41.537397Z",
     "stations_updated": "2022-07-17"
   },
   "altimeter": {
@@ -9,12 +9,12 @@
     "spoken": "three zero point one two"
   },
   "clouds": [],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,15 +27,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 090832Z AUTO 00000KT 10SM CLR 10/10 A3012 RMK AO2 T01000100",
-  "sanitized": "KBLI 090832Z 00000KT 10SM 10/10 A3012 RMK AO2 T01000100",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBLI 090853Z AUTO 00000KT 5SM BR CLR 10/10 A3012 RMK AO2 SLP206 T01000100 53001",
+  "sanitized": "KBLI 090853Z 00000KT 5SM BR 10/10 A3012 RMK AO2 SLP206 T01000100 53001",
   "station": "KBLI",
   "time": {
-    "repr": "090832Z",
-    "dt": "2022-09-09T08:32:00Z"
+    "repr": "090853Z",
+    "dt": "2022-09-09T08:53:00Z"
   },
-  "remarks": "RMK AO2 T01000100",
+  "remarks": "RMK AO2 SLP206 T01000100 53001",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -45,7 +50,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "53001",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.1
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -63,7 +72,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP206",
+      "value": 1020.6,
+      "spoken": "one zero two zero point six"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0100",
