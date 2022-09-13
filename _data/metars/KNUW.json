@@ -1,60 +1,60 @@
 {
   "meta": {
-    "timestamp": "2022-09-13T10:51:32.231514Z",
+    "timestamp": "2022-09-13T11:03:08.888276Z",
     "stations_updated": "2022-09-05"
   },
-  "altimeter": null,
+  "altimeter": {
+    "repr": "A2995",
+    "value": 29.95,
+    "spoken": "two nine point nine five"
+  },
   "clouds": [
     {
-      "repr": "SCT03",
+      "repr": "SCT040",
       "type": "SCT",
-      "altitude": null,
-      "modifier": "03"
+      "altitude": 40,
+      "modifier": null
+    },
+    {
+      "repr": "BKN070",
+      "type": "BKN",
+      "altitude": 70,
+      "modifier": null
     }
   ],
   "flight_rules": "VFR",
-  "other": [
-    "CARRIER",
-    "CONNECT",
-    "57600",
-    "LAXMTRNXF"
-  ],
+  "other": [],
   "visibility": {
     "repr": "9",
     "value": 9,
     "spoken": "nine"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "220",
+    "value": 220,
+    "spoken": "two two zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
-  "wx_codes": [
-    {
-      "repr": "NO",
-      "value": "NO"
-    },
-    {
-      "repr": "RING",
-      "value": "RING"
-    }
-  ],
-  "raw": "KNUW 130953Z 00000KT 9SM SCT03 NO CARRIER RING CONNECT 57600 LAXMTRNXF ALL TTAA00 KNXF 130956 METAR",
-  "sanitized": "KNUW 130953Z 00000KT 9SM SCT03 NO CARRIER RING CONNECT 57600 LAXMTRNXF ALL TTAA00 KNXF 130956 METAR",
+  "wx_codes": [],
+  "raw": "KNUW 131053Z 22004KT 9SM SCT040 BKN070 13/11 A2995 RMK AO2 SLP140 T01280111 $",
+  "sanitized": "KNUW 131053Z 22004KT 9SM SCT040 BKN070 13/11 A2995 RMK AO2 SLP140 T01280111 $",
   "station": "KNUW",
   "time": {
-    "repr": "130953Z",
-    "dt": "2022-09-13T09:53:00Z"
+    "repr": "131053Z",
+    "dt": "2022-09-13T10:53:00Z"
   },
-  "remarks": "ALL TTAA00 KNXF 130956 METAR",
-  "dewpoint": null,
-  "relative_humidity": null,
+  "remarks": "RMK AO2 SLP140 T01280111 $",
+  "dewpoint": {
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
+  },
+  "relative_humidity": 0.8939613602034909,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -62,20 +62,45 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [],
-    "dewpoint_decimal": null,
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
+    "dewpoint_decimal": {
+      "repr": "0111",
+      "value": 11.1,
+      "spoken": "one one point one"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP140",
+      "value": 1014,
+      "spoken": "one zero one four point zero"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0128",
+      "value": 12.8,
+      "spoken": "one two point eight"
+    }
   },
   "runway_visibility": [],
-  "temperature": null,
+  "temperature": {
+    "repr": "13",
+    "value": 13,
+    "spoken": "one three"
+  },
   "wind_variable_direction": [],
-  "density_altitude": null,
-  "pressure_altitude": null,
+  "density_altitude": -236,
+  "pressure_altitude": 17,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
