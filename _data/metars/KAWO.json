@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-01T11:32:08.764698Z",
+    "timestamp": "2022-10-01T11:45:35.666179Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -8,13 +8,23 @@
     "value": 30.09,
     "spoken": "three zero point zero nine"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "3/4",
+    "value": 0.75,
+    "spoken": "three quarters",
+    "numerator": 3,
+    "denominator": 4,
+    "normalized": "3/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -33,20 +43,20 @@
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 011116Z AUTO 00000KT 4SM BR CLR 09/08 A3009 RMK AO2",
-  "sanitized": "KAWO 011116Z 00000KT 4SM BR 09/08 A3009 RMK AO2",
+  "raw": "KAWO 011140Z AUTO 00000KT 3/4SM BR VV002 08/08 A3009 RMK AO2 VIS 1/4V5",
+  "sanitized": "KAWO 011140Z 00000KT 3/4SM BR VV002 08/08 A3009 RMK AO2 VIS 1/4V5",
   "station": "KAWO",
   "time": {
-    "repr": "011116Z",
-    "dt": "2022-10-01T11:16:00Z"
+    "repr": "011140Z",
+    "dt": "2022-10-01T11:40:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 VIS 1/4V5",
   "dewpoint": {
     "repr": "08",
     "value": 8,
     "spoken": "eight"
   },
-  "relative_humidity": 0.9344901544791844,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -70,12 +80,12 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_variable_direction": [],
-  "density_altitude": -714,
+  "density_altitude": -834,
   "pressure_altitude": -28,
   "units": {
     "accumulation": "in",
