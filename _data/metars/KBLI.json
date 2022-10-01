@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-01T10:52:56.313584Z",
+    "timestamp": "2022-10-01T11:02:13.695035Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,21 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "FEW002",
-      "type": "FEW",
-      "altitude": 2,
+      "repr": "VV001",
+      "type": "VV",
+      "altitude": 1,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "7/4",
-    "value": 1.75,
-    "spoken": "one and three quarters",
-    "numerator": 7,
-    "denominator": 4,
-    "normalized": "1 3/4"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -39,18 +39,18 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 011042Z AUTO 00000KT 1 3/4SM R16/2600VP6000FT BR FEW002 09/09 A3009 RMK AO2 T00890089",
-  "sanitized": "KBLI 011042Z 00000KT 1 3/4SM R16/2600VP6000FT BR FEW002 09/09 A3009 RMK AO2 T00890089",
+  "raw": "KBLI 011053Z AUTO 00000KT 1/2SM R16/1800VP6000FT FG VV001 09/09 A3009 RMK AO2 VIS 1/4V2 SLP195 T00890089",
+  "sanitized": "KBLI 011053Z 00000KT 1/2SM R16/1800VP6000FT FG VV001 09/09 A3009 RMK AO2 VIS 1/4V2 SLP195 T00890089",
   "station": "KBLI",
   "time": {
-    "repr": "011042Z",
-    "dt": "2022-10-01T10:42:00Z"
+    "repr": "011053Z",
+    "dt": "2022-10-01T10:53:00Z"
   },
-  "remarks": "RMK AO2 T00890089",
+  "remarks": "RMK AO2 VIS 1/4V2 SLP195 T00890089",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -78,7 +78,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP195",
+      "value": 1019.5,
+      "spoken": "one zero one nine point five"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0089",
@@ -88,14 +92,14 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/2600VP6000FT",
+      "repr": "R16/1800VP6000FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "2600",
-          "value": 2600,
-          "spoken": "two six hundred"
+          "repr": "1800",
+          "value": 1800,
+          "spoken": "one eight hundred"
         },
         {
           "repr": "P6000",
