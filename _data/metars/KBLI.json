@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-04T12:13:48.138532Z",
+    "timestamp": "2022-10-04T13:12:21.471627Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,18 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "BKN003",
-      "type": "BKN",
-      "altitude": 3,
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
       "modifier": null
     }
   ],
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "190",
@@ -36,22 +39,22 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 041207Z AUTO 19009KT 4SM BR BKN003 12/12 A3004 RMK AO2 T01170117",
-  "sanitized": "KBLI 041207Z 19009KT 4SM BR BKN003 12/12 A3004 RMK AO2 T01170117",
+  "raw": "KBLI 041305Z AUTO 19009KT 1/2SM R16/1600V2200FT FG VV002 11/11 A3004 RMK AO2 T01110111",
+  "sanitized": "KBLI 041305Z 19009KT 1/2SM R16/1600V2200FT FG VV002 11/11 A3004 RMK AO2 T01110111",
   "station": "KBLI",
   "time": {
-    "repr": "041207Z",
-    "dt": "2022-10-04T12:07:00Z"
+    "repr": "041305Z",
+    "dt": "2022-10-04T13:05:00Z"
   },
-  "remarks": "RMK AO2 T01170117",
+  "remarks": "RMK AO2 T01110111",
   "dewpoint": {
-    "repr": "12",
-    "value": 12,
-    "spoken": "one two"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -68,9 +71,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0117",
-      "value": 11.7,
-      "spoken": "one one point seven"
+      "repr": "0111",
+      "value": 11.1,
+      "spoken": "one one point one"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
@@ -78,19 +81,38 @@
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0117",
-      "value": 11.7,
-      "spoken": "one one point seven"
+      "repr": "0111",
+      "value": 11.1,
+      "spoken": "one one point one"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/1600V2200FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "1600",
+          "value": 1600,
+          "spoken": "one six hundred"
+        },
+        {
+          "repr": "2200",
+          "value": 2200,
+          "spoken": "two two hundred"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
-    "repr": "12",
-    "value": 12,
-    "spoken": "one two"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -305,
+  "density_altitude": -377,
   "pressure_altitude": 50,
   "units": {
     "accumulation": "in",
