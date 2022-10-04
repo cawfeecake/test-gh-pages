@@ -1,17 +1,17 @@
 {
   "meta": {
-    "timestamp": "2022-10-04T14:50:35.061687Z",
+    "timestamp": "2022-10-04T15:11:26.964611Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3005",
-    "value": 30.05,
-    "spoken": "three zero point zero five"
+    "repr": "A3006",
+    "value": 30.06,
+    "spoken": "three zero point zero six"
   },
   "clouds": [
     {
-      "repr": "OVC001",
-      "type": "OVC",
+      "repr": "VV001",
+      "type": "VV",
       "altitude": 1,
       "modifier": null
     }
@@ -19,33 +19,36 @@
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
-    "repr": "190",
-    "value": 190,
-    "spoken": "one nine zero"
+    "repr": "170",
+    "value": 170,
+    "spoken": "one seven zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "09",
+    "value": 9,
+    "spoken": "nine"
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 041446Z 19006KT 3SM BR OVC001 11/11 A3005 RMK AO2 T01110111",
-  "sanitized": "KBLI 041446Z 19006KT 3SM BR OVC001 11/11 A3005 RMK AO2 T01110111",
+  "raw": "KBLI 041505Z 17009KT 1/4SM R16/1200V2200FT FG VV001 11/11 A3006 RMK AO2 T01110111",
+  "sanitized": "KBLI 041505Z 17009KT 1/4SM R16/1200V2200FT FG VV001 11/11 A3006 RMK AO2 T01110111",
   "station": "KBLI",
   "time": {
-    "repr": "041446Z",
-    "dt": "2022-10-04T14:46:00Z"
+    "repr": "041505Z",
+    "dt": "2022-10-04T15:05:00Z"
   },
   "remarks": "RMK AO2 T01110111",
   "dewpoint": {
@@ -83,15 +86,34 @@
       "spoken": "one one point one"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/1200V2200FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "1200",
+          "value": 1200,
+          "spoken": "one two hundred"
+        },
+        {
+          "repr": "2200",
+          "value": 2200,
+          "spoken": "two two hundred"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "11",
     "value": 11,
     "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -387,
-  "pressure_altitude": 40,
+  "density_altitude": -397,
+  "pressure_altitude": 30,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
