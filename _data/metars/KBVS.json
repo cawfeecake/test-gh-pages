@@ -1,14 +1,20 @@
 {
   "meta": {
-    "timestamp": "2022-10-05T09:41:56.457889Z",
+    "timestamp": "2022-10-05T10:08:03.035058Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3015",
-    "value": 30.15,
-    "spoken": "three zero point one five"
+    "repr": "A3016",
+    "value": 30.16,
+    "spoken": "three zero point one six"
   },
   "clouds": [
+    {
+      "repr": "SCT003",
+      "type": "SCT",
+      "altitude": 3,
+      "modifier": null
+    },
     {
       "repr": "OVC023",
       "type": "OVC",
@@ -16,12 +22,15 @@
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -40,18 +49,18 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBVS 050935Z AUTO 00000KT 1SM BR OVC023 10/10 A3015 RMK A01 VIS 1/2V5",
-  "sanitized": "KBVS 050935Z 00000KT 1SM BR OVC023 10/10 A3015 RMK A01 VIS 1/2V5",
+  "raw": "KBVS 050955Z AUTO 00000KT 1/2SM BR SCT003 OVC023 09/09 A3016 RMK A01",
+  "sanitized": "KBVS 050955Z 00000KT 1/2SM BR SCT003 OVC023 09/09 A3016 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "050935Z",
-    "dt": "2022-10-05T09:35:00Z"
+    "repr": "050955Z",
+    "dt": "2022-10-05T09:55:00Z"
   },
-  "remarks": "RMK A01 VIS 1/2V5",
+  "remarks": "RMK A01",
   "dewpoint": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "09",
+    "value": 9,
+    "spoken": "nine"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -72,13 +81,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "09",
+    "value": 9,
+    "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -651,
-  "pressure_altitude": -86,
+  "density_altitude": -781,
+  "pressure_altitude": -96,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
