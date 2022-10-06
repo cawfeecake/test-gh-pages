@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-06T07:13:42.676018Z",
+    "timestamp": "2022-10-06T07:39:40.151078Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -8,13 +8,20 @@
     "value": 30.18,
     "spoken": "three zero point one eight"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "VV003",
+      "type": "VV",
+      "altitude": 3,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "1",
+    "value": 1,
+    "spoken": "one"
   },
   "wind_direction": {
     "repr": "000",
@@ -33,14 +40,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 060653Z AUTO 00000KT 5SM BR CLR 11/11 A3018 RMK AO2 SLP225 T01060106",
-  "sanitized": "KBLI 060653Z 00000KT 5SM BR 11/11 A3018 RMK AO2 SLP225 T01060106",
+  "raw": "KBLI 060729Z AUTO 00000KT 1SM R16/P6000FT BR VV003 11/11 A3018 RMK AO2 T01060106",
+  "sanitized": "KBLI 060729Z 00000KT 1SM R16/P6000FT BR VV003 11/11 A3018 RMK AO2 T01060106",
   "station": "KBLI",
   "time": {
-    "repr": "060653Z",
-    "dt": "2022-10-06T06:53:00Z"
+    "repr": "060729Z",
+    "dt": "2022-10-06T07:29:00Z"
   },
-  "remarks": "RMK AO2 SLP225 T01060106",
+  "remarks": "RMK AO2 T01060106",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -68,11 +75,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP225",
-      "value": 1022.5,
-      "spoken": "one zero two two point five"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0106",
@@ -80,7 +83,19 @@
       "spoken": "one zero point six"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/P6000FT",
+      "runway": "16",
+      "visibility": {
+        "repr": "P6000",
+        "value": null,
+        "spoken": "greater than six thousand"
+      },
+      "variable_visibility": [],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "11",
     "value": 11,
