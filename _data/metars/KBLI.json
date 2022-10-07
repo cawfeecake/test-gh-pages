@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-07T09:12:16.780904Z",
+    "timestamp": "2022-10-07T09:43:11.565131Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -9,12 +9,15 @@
     "spoken": "three zero point one five"
   },
   "clouds": [],
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -29,16 +32,16 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 070907Z AUTO 00000KT 3SM R16/3000VP6000FT BR CLR 12/12 A3015 RMK AO2 T01170117",
-  "sanitized": "KBLI 070907Z 00000KT 3SM R16/3000VP6000FT BR 12/12 A3015 RMK AO2 T01170117",
+  "raw": "KBLI 070932Z AUTO 00000KT 1/2SM R16/P6000FT FG CLR 12/12 A3015 RMK AO2 T01170117",
+  "sanitized": "KBLI 070932Z 00000KT 1/2SM R16/P6000FT FG 12/12 A3015 RMK AO2 T01170117",
   "station": "KBLI",
   "time": {
-    "repr": "070907Z",
-    "dt": "2022-10-07T09:07:00Z"
+    "repr": "070932Z",
+    "dt": "2022-10-07T09:32:00Z"
   },
   "remarks": "RMK AO2 T01170117",
   "dewpoint": {
@@ -78,21 +81,14 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/3000VP6000FT",
+      "repr": "R16/P6000FT",
       "runway": "16",
-      "visibility": null,
-      "variable_visibility": [
-        {
-          "repr": "3000",
-          "value": 3000,
-          "spoken": "three thousand"
-        },
-        {
-          "repr": "P6000",
-          "value": null,
-          "spoken": "greater than six thousand"
-        }
-      ],
+      "visibility": {
+        "repr": "P6000",
+        "value": null,
+        "spoken": "greater than six thousand"
+      },
+      "variable_visibility": [],
       "trend": null
     }
   ],
