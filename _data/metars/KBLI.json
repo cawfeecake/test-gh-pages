@@ -1,27 +1,27 @@
 {
   "meta": {
-    "timestamp": "2022-10-08T13:01:49.123542Z",
+    "timestamp": "2022-10-08T13:54:17.169074Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3019",
-    "value": 30.19,
-    "spoken": "three zero point one nine"
+    "repr": "A3020",
+    "value": 30.2,
+    "spoken": "three zero point two zero"
   },
   "clouds": [
     {
-      "repr": "VV002",
-      "type": "VV",
+      "repr": "SCT002",
+      "type": "SCT",
       "altitude": 2,
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
     "repr": "000",
@@ -40,14 +40,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 081258Z AUTO 00000KT 1SM R16/P6000FT BR VV002 09/09 A3019 RMK AO2 T00890089",
-  "sanitized": "KBLI 081258Z 00000KT 1SM R16/P6000FT BR VV002 09/09 A3019 RMK AO2 T00890089",
+  "raw": "KBLI 081328Z AUTO 00000KT 4SM BR SCT002 09/09 A3020 RMK AO2 T00890089 $",
+  "sanitized": "KBLI 081328Z 00000KT 4SM BR SCT002 09/09 A3020 RMK AO2 T00890089 $",
   "station": "KBLI",
   "time": {
-    "repr": "081258Z",
-    "dt": "2022-10-08T12:58:00Z"
+    "repr": "081328Z",
+    "dt": "2022-10-08T13:28:00Z"
   },
-  "remarks": "RMK AO2 T00890089",
+  "remarks": "RMK AO2 T00890089 $",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -62,6 +62,10 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -83,27 +87,15 @@
       "spoken": "eight point nine"
     }
   },
-  "runway_visibility": [
-    {
-      "repr": "R16/P6000FT",
-      "runway": "16",
-      "visibility": {
-        "repr": "P6000",
-        "value": null,
-        "spoken": "greater than six thousand"
-      },
-      "variable_visibility": [],
-      "trend": null
-    }
-  ],
+  "runway_visibility": [],
   "temperature": {
     "repr": "09",
     "value": 9,
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -791,
-  "pressure_altitude": -100,
+  "density_altitude": -801,
+  "pressure_altitude": -110,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
