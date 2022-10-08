@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-08T11:30:57.092807Z",
+    "timestamp": "2022-10-08T11:44:56.493753Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,24 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT038",
-      "type": "SCT",
-      "altitude": 38,
-      "modifier": null
-    },
-    {
-      "repr": "SCT046",
-      "type": "SCT",
-      "altitude": 46,
+      "repr": "OVC035",
+      "type": "OVC",
+      "altitude": 35,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -40,13 +37,18 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 081115Z AUTO 00000KT 10SM SCT038 SCT046 10/10 A3020 RMK A01",
-  "sanitized": "KBVS 081115Z 00000KT 10SM SCT038 SCT046 10/10 A3020 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ],
+  "raw": "KBVS 081135Z AUTO 00000KT 1/4SM FG OVC035 10/10 A3020 RMK A01",
+  "sanitized": "KBVS 081135Z 00000KT 1/4SM FG OVC035 10/10 A3020 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "081115Z",
-    "dt": "2022-10-08T11:15:00Z"
+    "repr": "081135Z",
+    "dt": "2022-10-08T11:35:00Z"
   },
   "remarks": "RMK A01",
   "dewpoint": {
