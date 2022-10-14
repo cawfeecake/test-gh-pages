@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-14T12:13:33.192840Z",
+    "timestamp": "2022-10-14T13:13:58.353199Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -8,13 +8,23 @@
     "value": 30.07,
     "spoken": "three zero point zero seven"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "FEW002",
+      "type": "FEW",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "9",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "7/4",
+    "value": 1.75,
+    "spoken": "one and three quarters",
+    "numerator": 7,
+    "denominator": 4,
+    "normalized": "1 3/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,15 +37,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 141200Z AUTO 00000KT 9SM R16/4000VP6000FT CLR 07/07 A3007 RMK AO2 T00720072",
-  "sanitized": "KBLI 141200Z 00000KT 9SM R16/4000VP6000FT 07/07 A3007 RMK AO2 T00720072",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBLI 141310Z AUTO 00000KT 1 3/4SM BR FEW002 07/07 A3007 RMK AO2 VIS 1/2V5 T00720072",
+  "sanitized": "KBLI 141310Z 00000KT 1 3/4SM BR FEW002 07/07 A3007 RMK AO2 VIS 1/2V5 T00720072",
   "station": "KBLI",
   "time": {
-    "repr": "141200Z",
-    "dt": "2022-10-14T12:00:00Z"
+    "repr": "141310Z",
+    "dt": "2022-10-14T13:10:00Z"
   },
-  "remarks": "RMK AO2 T00720072",
+  "remarks": "RMK AO2 VIS 1/2V5 T00720072",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -71,26 +86,7 @@
       "spoken": "seven point two"
     }
   },
-  "runway_visibility": [
-    {
-      "repr": "R16/4000VP6000FT",
-      "runway": "16",
-      "visibility": null,
-      "variable_visibility": [
-        {
-          "repr": "4000",
-          "value": 4000,
-          "spoken": "four thousand"
-        },
-        {
-          "repr": "P6000",
-          "value": null,
-          "spoken": "greater than six thousand"
-        }
-      ],
-      "trend": null
-    }
-  ],
+  "runway_visibility": [],
   "temperature": {
     "repr": "07",
     "value": 7,
