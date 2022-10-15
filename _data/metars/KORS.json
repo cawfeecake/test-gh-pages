@@ -1,18 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-10-15T05:00:36.062777Z",
+    "timestamp": "2022-10-15T05:58:30.483955Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2998",
-    "value": 29.98,
-    "spoken": "two nine point nine eight"
+    "repr": "A3000",
+    "value": 30,
+    "spoken": "three zero point zero zero"
   },
   "clouds": [
     {
-      "repr": "OVC055",
+      "repr": "FEW016",
+      "type": "FEW",
+      "altitude": 16,
+      "modifier": null
+    },
+    {
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 55,
+      "altitude": 60,
       "modifier": null
     }
   ],
@@ -34,13 +40,18 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KORS 150455Z AUTO 00000KT 10SM OVC055 11/09 A2998 RMK AO2",
-  "sanitized": "KORS 150455Z 00000KT 10SM OVC055 11/09 A2998 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KORS 150555Z AUTO 00000KT 10SM -RA FEW016 OVC060 11/09 A3000 RMK AO2",
+  "sanitized": "KORS 150555Z 00000KT 10SM -RA FEW016 OVC060 11/09 A3000 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "150455Z",
-    "dt": "2022-10-15T04:55:00Z"
+    "repr": "150555Z",
+    "dt": "2022-10-15T05:55:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
@@ -77,8 +88,8 @@
     "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -502,
-  "pressure_altitude": -29,
+  "density_altitude": -522,
+  "pressure_altitude": -49,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
