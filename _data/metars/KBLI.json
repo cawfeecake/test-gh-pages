@@ -1,30 +1,27 @@
 {
   "meta": {
-    "timestamp": "2022-10-18T11:07:51.203288Z",
+    "timestamp": "2022-10-18T11:33:57.897546Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3016",
-    "value": 30.16,
-    "spoken": "three zero point one six"
+    "repr": "A3017",
+    "value": 30.17,
+    "spoken": "three zero point one seven"
   },
   "clouds": [
     {
-      "repr": "VV006",
+      "repr": "VV005",
       "type": "VV",
-      "altitude": 6,
+      "altitude": 5,
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "3/4",
-    "value": 0.75,
-    "spoken": "three quarters",
-    "numerator": 3,
-    "denominator": 4,
-    "normalized": "3/4"
+    "repr": "1",
+    "value": 1,
+    "spoken": "one"
   },
   "wind_direction": {
     "repr": "000",
@@ -43,14 +40,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 181103Z AUTO 00000KT 3/4SM R16/1600VP6000FT BR VV006 06/06 A3016 RMK AO2 T00610061",
-  "sanitized": "KBLI 181103Z 00000KT 3/4SM R16/1600VP6000FT BR VV006 06/06 A3016 RMK AO2 T00610061",
+  "raw": "KBLI 181126Z AUTO 00000KT 1SM R16/P6000FT BR VV005 06/06 A3017 RMK AO2 VIS 1/2V3 T00610061",
+  "sanitized": "KBLI 181126Z 00000KT 1SM R16/P6000FT BR VV005 06/06 A3017 RMK AO2 VIS 1/2V3 T00610061",
   "station": "KBLI",
   "time": {
-    "repr": "181103Z",
-    "dt": "2022-10-18T11:03:00Z"
+    "repr": "181126Z",
+    "dt": "2022-10-18T11:26:00Z"
   },
-  "remarks": "RMK AO2 T00610061",
+  "remarks": "RMK AO2 VIS 1/2V3 T00610061",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -88,21 +85,14 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1600VP6000FT",
+      "repr": "R16/P6000FT",
       "runway": "16",
-      "visibility": null,
-      "variable_visibility": [
-        {
-          "repr": "1600",
-          "value": 1600,
-          "spoken": "one six hundred"
-        },
-        {
-          "repr": "P6000",
-          "value": null,
-          "spoken": "greater than six thousand"
-        }
-      ],
+      "visibility": {
+        "repr": "P6000",
+        "value": null,
+        "spoken": "greater than six thousand"
+      },
+      "variable_visibility": [],
       "trend": null
     }
   ],
@@ -112,8 +102,8 @@
     "spoken": "six"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1097,
-  "pressure_altitude": -70,
+  "density_altitude": -1107,
+  "pressure_altitude": -80,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
