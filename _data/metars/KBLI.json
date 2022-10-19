@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-19T11:09:18.099602Z",
+    "timestamp": "2022-10-19T11:35:11.512636Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -16,26 +16,23 @@
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "3/4",
-    "value": 0.75,
-    "spoken": "three quarters",
-    "numerator": 3,
-    "denominator": 4,
-    "normalized": "3/4"
+    "repr": "1",
+    "value": 1,
+    "spoken": "one"
   },
   "wind_direction": {
-    "repr": "360",
-    "value": 360,
-    "spoken": "three six zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [
     {
@@ -43,12 +40,12 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 191106Z AUTO 36003KT 3/4SM R16/P6000FT BR VV019 06/06 A3030 RMK AO2 T00610061",
-  "sanitized": "KBLI 191106Z 36003KT 3/4SM R16/P6000FT BR VV019 06/06 A3030 RMK AO2 T00610061",
+  "raw": "KBLI 191115Z AUTO 00000KT 1SM R16/1800VP6000FT BR VV019 06/06 A3030 RMK AO2 T00610061",
+  "sanitized": "KBLI 191115Z 00000KT 1SM R16/1800VP6000FT BR VV019 06/06 A3030 RMK AO2 T00610061",
   "station": "KBLI",
   "time": {
-    "repr": "191106Z",
-    "dt": "2022-10-19T11:06:00Z"
+    "repr": "191115Z",
+    "dt": "2022-10-19T11:15:00Z"
   },
   "remarks": "RMK AO2 T00610061",
   "dewpoint": {
@@ -88,14 +85,21 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/P6000FT",
+      "repr": "R16/1800VP6000FT",
       "runway": "16",
-      "visibility": {
-        "repr": "P6000",
-        "value": null,
-        "spoken": "greater than six thousand"
-      },
-      "variable_visibility": [],
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "1800",
+          "value": 1800,
+          "spoken": "one eight hundred"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
       "trend": null
     }
   ],
