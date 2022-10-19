@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-19T14:47:34.232258Z",
+    "timestamp": "2022-10-19T15:11:15.723751Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,14 +10,8 @@
   },
   "clouds": [
     {
-      "repr": "SCT002",
+      "repr": "SCT013",
       "type": "SCT",
-      "altitude": 2,
-      "modifier": null
-    },
-    {
-      "repr": "BKN013",
-      "type": "BKN",
       "altitude": 13,
       "modifier": null
     },
@@ -52,14 +46,14 @@
       "value": "Fog"
     }
   ],
-  "raw": "KAWO 191445Z AUTO 00000KT M1/4SM FG SCT002 BKN013 OVC026 04/04 A3033 RMK AO2",
-  "sanitized": "KAWO 191445Z 00000KT M1/4SM FG SCT002 BKN013 OVC026 04/04 A3033 RMK AO2",
+  "raw": "KAWO 191456Z AUTO 00000KT M1/4SM FG SCT013 OVC026 04/04 A3033 RMK AO2 SLP274 T00390039 51005",
+  "sanitized": "KAWO 191456Z 00000KT M1/4SM FG SCT013 OVC026 04/04 A3033 RMK AO2 SLP274 T00390039 51005",
   "station": "KAWO",
   "time": {
-    "repr": "191445Z",
-    "dt": "2022-10-19T14:45:00Z"
+    "repr": "191456Z",
+    "dt": "2022-10-19T14:56:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 SLP274 T00390039 51005",
   "dewpoint": {
     "repr": "04",
     "value": 4,
@@ -69,7 +63,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "51005",
+      "tendency": "Increasing, then steady",
+      "change": 0.5
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -79,13 +77,25 @@
         "value": "Automated with precipitation sensor"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0039",
+      "value": 3.9,
+      "spoken": "three point nine"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP274",
+      "value": 1027.4,
+      "spoken": "one zero two seven point four"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0039",
+      "value": 3.9,
+      "spoken": "three point nine"
+    }
   },
   "runway_visibility": [],
   "temperature": {
@@ -94,7 +104,7 @@
     "spoken": "four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1554,
+  "density_altitude": -1566,
   "pressure_altitude": -268,
   "units": {
     "accumulation": "in",
