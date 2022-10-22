@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-22T18:44:15.132743Z",
+    "timestamp": "2022-10-22T19:09:07.075842Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,30 +10,30 @@
   },
   "clouds": [
     {
-      "repr": "SCT015",
-      "type": "SCT",
-      "altitude": 15,
+      "repr": "FEW007",
+      "type": "FEW",
+      "altitude": 7,
       "modifier": null
     },
     {
-      "repr": "SCT026",
+      "repr": "SCT021",
       "type": "SCT",
-      "altitude": 26,
+      "altitude": 21,
       "modifier": null
     },
     {
-      "repr": "OVC033",
-      "type": "OVC",
-      "altitude": 33,
+      "repr": "BKN034",
+      "type": "BKN",
+      "altitude": 34,
       "modifier": null
     }
   ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "6",
+    "value": 6,
+    "spoken": "six"
   },
   "wind_direction": {
     "repr": "000",
@@ -46,15 +46,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 221835Z AUTO 00000KT 10SM SCT015 SCT026 OVC033 09/09 A2977 RMK A01",
-  "sanitized": "KBVS 221835Z 00000KT 10SM SCT015 SCT026 OVC033 09/09 A2977 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBVS 221855Z AUTO 00000KT 6SM BR FEW007 SCT021 BKN034 09/09 A2977 RMK A01 P0001",
+  "sanitized": "KBVS 221855Z 00000KT 6SM BR FEW007 SCT021 BKN034 09/09 A2977 RMK A01 P0001",
   "station": "KBVS",
   "time": {
-    "repr": "221835Z",
-    "dt": "2022-10-22T18:35:00Z"
+    "repr": "221855Z",
+    "dt": "2022-10-22T18:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0001",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -72,7 +77,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
