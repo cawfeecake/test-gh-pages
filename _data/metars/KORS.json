@@ -1,20 +1,39 @@
 {
   "meta": {
-    "timestamp": "2022-10-23T13:54:54.881067Z",
+    "timestamp": "2022-10-23T14:10:58.013057Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3004",
-    "value": 30.04,
-    "spoken": "three zero point zero four"
+    "repr": "A3005",
+    "value": 30.05,
+    "spoken": "three zero point zero five"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "SCT028",
+      "type": "SCT",
+      "altitude": 28,
+      "modifier": null
+    },
+    {
+      "repr": "BKN037",
+      "type": "BKN",
+      "altitude": 37,
+      "modifier": null
+    },
+    {
+      "repr": "BKN044",
+      "type": "BKN",
+      "altitude": 44,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "6",
-    "value": 6,
-    "spoken": "six"
+    "repr": "2",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_direction": {
     "repr": "000",
@@ -29,16 +48,16 @@
   },
   "wx_codes": [
     {
-      "repr": "HZ",
-      "value": "Haze"
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KORS 231335Z AUTO 00000KT 6SM HZ CLR 05/ A3004 RMK AO2",
-  "sanitized": "KORS 231335Z 00000KT 6SM HZ 05/ A3004 RMK AO2",
+  "raw": "KORS 231355Z AUTO 00000KT 2SM BR SCT028 BKN037 BKN044 05/ A3005 RMK AO2",
+  "sanitized": "KORS 231355Z 00000KT 2SM BR SCT028 BKN037 BKN044 05/ A3005 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "231335Z",
-    "dt": "2022-10-23T13:35:00Z"
+    "repr": "231355Z",
+    "dt": "2022-10-23T13:55:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": null,
@@ -71,8 +90,8 @@
     "spoken": "five"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1282,
-  "pressure_altitude": -89,
+  "density_altitude": -1292,
+  "pressure_altitude": -99,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
