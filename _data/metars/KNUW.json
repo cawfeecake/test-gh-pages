@@ -1,60 +1,130 @@
 {
   "meta": {
-    "timestamp": "2022-10-29T17:45:08.020234Z",
+    "timestamp": "2022-10-29T18:07:08.845553Z",
     "stations_updated": "2022-09-05"
   },
-  "altimeter": null,
-  "clouds": [],
-  "flight_rules": "IFR",
-  "other": [
-    "291",
-    "CARRIER",
-    "CONNECT",
-    "57600",
-    "LAXMTRNKX"
-  ],
-  "visibility": null,
-  "wind_direction": null,
-  "wind_gust": null,
-  "wind_speed": null,
-  "wx_codes": [
+  "altimeter": {
+    "repr": "A3033",
+    "value": 30.33,
+    "spoken": "three zero point three three"
+  },
+  "clouds": [
     {
-      "repr": "NO",
-      "value": "NO"
+      "repr": "SCT011",
+      "type": "SCT",
+      "altitude": 11,
+      "modifier": null
     },
     {
-      "repr": "RING",
-      "value": "RING"
+      "repr": "BKN015",
+      "type": "BKN",
+      "altitude": 15,
+      "modifier": null
+    },
+    {
+      "repr": "BKN030",
+      "type": "BKN",
+      "altitude": 30,
+      "modifier": null
+    },
+    {
+      "repr": "BKN180",
+      "type": "BKN",
+      "altitude": 180,
+      "modifier": null
     }
   ],
-  "raw": "KNUW 291 NO CARRIER RING CONNECT 57600 LAXMTRNKX ALL TTAA00 KNKX 291655 METAR",
-  "sanitized": "KNUW 291 NO CARRIER RING CONNECT 57600 LAXMTRNKX ALL TTAA00 KNKX 291655 METAR",
+  "flight_rules": "MVFR",
+  "other": [],
+  "visibility": {
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
+  },
+  "wind_direction": {
+    "repr": "150",
+    "value": 150,
+    "spoken": "one five zero"
+  },
+  "wind_gust": null,
+  "wind_speed": {
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
+  },
+  "wx_codes": [],
+  "raw": "KNUW 291753Z 15012KT 10SM SCT011 BKN015 BKN030 BKN180 11/08 A3033 RMK AO2 SLP268 T01110083 10111 20078 51009 VISNO $",
+  "sanitized": "KNUW 291753Z 15012KT 10SM SCT011 BKN015 BKN030 BKN180 11/08 A3033 RMK AO2 SLP268 T01110083 10111 20078 51009 VISNO $",
   "station": "KNUW",
-  "time": null,
-  "remarks": "ALL TTAA00 KNKX 291655 METAR",
-  "dewpoint": null,
-  "relative_humidity": null,
+  "time": {
+    "repr": "291753Z",
+    "dt": "2022-10-29T17:53:00Z"
+  },
+  "remarks": "RMK AO2 SLP268 T01110083 10111 20078 51009 VISNO $",
+  "dewpoint": {
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
+  },
+  "relative_humidity": 0.8286786978983101,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10111",
+      "value": 11.1,
+      "spoken": "one one point one"
+    },
+    "minimum_temperature_6": {
+      "repr": "20078",
+      "value": 7.8,
+      "spoken": "seven point eight"
+    },
+    "pressure_tendency": {
+      "repr": "51009",
+      "tendency": "Increasing, then steady",
+      "change": 0.9
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [],
-    "dewpoint_decimal": null,
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
+    "dewpoint_decimal": {
+      "repr": "0083",
+      "value": 8.3,
+      "spoken": "eight point three"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP268",
+      "value": 1026.8,
+      "spoken": "one zero two six point eight"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0111",
+      "value": 11.1,
+      "spoken": "one one point one"
+    }
   },
   "runway_visibility": [],
-  "temperature": null,
+  "temperature": {
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
+  },
   "wind_variable_direction": [],
-  "density_altitude": null,
-  "pressure_altitude": null,
+  "density_altitude": -820,
+  "pressure_altitude": -363,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
