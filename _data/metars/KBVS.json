@@ -1,14 +1,27 @@
 {
   "meta": {
-    "timestamp": "2022-10-29T09:03:09.619146Z",
+    "timestamp": "2022-10-29T09:31:23.772405Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3026",
-    "value": 30.26,
-    "spoken": "three zero point two six"
+    "repr": "A3027",
+    "value": 30.27,
+    "spoken": "three zero point two seven"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "SCT036",
+      "type": "SCT",
+      "altitude": 36,
+      "modifier": null
+    },
+    {
+      "repr": "SCT065",
+      "type": "SCT",
+      "altitude": 65,
+      "modifier": null
+    }
+  ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
@@ -19,31 +32,23 @@
     "denominator": 4,
     "normalized": "1 1/4"
   },
-  "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
-  },
+  "wind_direction": null,
   "wind_gust": null,
-  "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
-  },
+  "wind_speed": null,
   "wx_codes": [
     {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KBVS 290855Z AUTO 00000KT 1 1/4SM BR CLR 07/07 A3026 RMK A01 VIS 1/4V5",
-  "sanitized": "KBVS 290855Z 00000KT 1 1/4SM BR 07/07 A3026 RMK A01 VIS 1/4V5",
+  "raw": "KBVS 290915Z AUTO 1 1/4SM BR SCT036 SCT065 07/07 A3027 RMK A01",
+  "sanitized": "KBVS 290915Z 1 1/4SM BR SCT036 SCT065 07/07 A3027 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "290855Z",
-    "dt": "2022-10-29T08:55:00Z"
+    "repr": "290915Z",
+    "dt": "2022-10-29T09:15:00Z"
   },
-  "remarks": "RMK A01 VIS 1/4V5",
+  "remarks": "RMK A01",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -73,8 +78,8 @@
     "spoken": "seven"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1121,
-  "pressure_altitude": -196,
+  "density_altitude": -1131,
+  "pressure_altitude": -206,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
