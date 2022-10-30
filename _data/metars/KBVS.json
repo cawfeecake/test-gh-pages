@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-10-30T20:06:31.964177Z",
+    "timestamp": "2022-10-30T20:32:59.120528Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,23 +10,26 @@
   },
   "clouds": [
     {
-      "repr": "OVC017",
+      "repr": "OVC016",
       "type": "OVC",
-      "altitude": 17,
+      "altitude": 16,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "7",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
-    "repr": "VRB",
-    "value": null,
-    "spoken": "variable"
+    "repr": "110",
+    "value": 110,
+    "spoken": "one one zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -34,21 +37,26 @@
     "value": 5,
     "spoken": "five"
   },
-  "wx_codes": [],
-  "raw": "KBVS 301955Z AUTO VRB05KT 7SM OVC017 11/10 A3008 RMK A01 P0011",
-  "sanitized": "KBVS 301955Z VRB05KT 7SM OVC017 11/10 A3008 RMK A01 P0011",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBVS 302015Z AUTO 11005KT 2 1/2SM BR OVC016 11/11 A3008 RMK A01",
+  "sanitized": "KBVS 302015Z 11005KT 2 1/2SM BR OVC016 11/11 A3008 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "301955Z",
-    "dt": "2022-10-30T19:55:00Z"
+    "repr": "302015Z",
+    "dt": "2022-10-30T20:15:00Z"
   },
-  "remarks": "RMK A01 P0011",
+  "remarks": "RMK A01",
   "dewpoint": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
-  "relative_humidity": 0.9354838571101949,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -60,11 +68,7 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0011",
-      "value": 0.11,
-      "spoken": "zero point one one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
