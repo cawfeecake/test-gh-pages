@@ -1,12 +1,12 @@
 {
   "meta": {
-    "timestamp": "2022-10-30T20:46:01.467934Z",
+    "timestamp": "2022-10-30T21:30:05.359114Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3001",
-    "value": 30.01,
-    "spoken": "three zero point zero one"
+    "repr": "A3000",
+    "value": 30,
+    "spoken": "three zero point zero zero"
   },
   "clouds": [
     {
@@ -40,11 +40,15 @@
     "value": 160,
     "spoken": "one six zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "21",
+    "value": 21,
+    "spoken": "two one"
+  },
   "wind_speed": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
   "wx_codes": [
     {
@@ -52,14 +56,14 @@
       "value": "Light Rain"
     }
   ],
-  "raw": "KBLI 302033Z 16013KT 8SM -RA SCT015 BKN030 OVC060 12/10 A3001 RMK AO2 P0002 T01170100",
-  "sanitized": "KBLI 302033Z 16013KT 8SM -RA SCT015 BKN030 OVC060 12/10 A3001 RMK AO2 P0002 T01170100",
+  "raw": "KBLI 302053Z 16011G21KT 8SM -RA SCT015 BKN030 OVC060 12/10 A3000 RMK AO2 SLP167 P0002 60011 T01170100 58018",
+  "sanitized": "KBLI 302053Z 16011G21KT 8SM -RA SCT015 BKN030 OVC060 12/10 A3000 RMK AO2 SLP167 P0002 60011 T01170100 58018",
   "station": "KBLI",
   "time": {
-    "repr": "302033Z",
-    "dt": "2022-10-30T20:33:00Z"
+    "repr": "302053Z",
+    "dt": "2022-10-30T20:53:00Z"
   },
-  "remarks": "RMK AO2 P0002 T01170100",
+  "remarks": "RMK AO2 SLP167 P0002 60011 T01170100 58018",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -69,8 +73,16 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "58018",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 1.8
+    },
+    "precip_36_hours": {
+      "repr": "60011",
+      "value": 0.11,
+      "spoken": "zero point one one"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -91,7 +103,11 @@
       "value": 0.02,
       "spoken": "zero point zero two"
     },
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP167",
+      "value": 1016.7,
+      "spoken": "one zero one six point seven"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0117",
@@ -106,8 +122,8 @@
     "spoken": "one two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -275,
-  "pressure_altitude": 80,
+  "density_altitude": -265,
+  "pressure_altitude": 90,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
