@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-11-03T18:44:36.058344Z",
+    "timestamp": "2022-11-03T19:03:21.400091Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,15 +10,15 @@
   },
   "clouds": [
     {
-      "repr": "BKN015",
-      "type": "BKN",
-      "altitude": 15,
+      "repr": "SCT018",
+      "type": "SCT",
+      "altitude": 18,
       "modifier": null
     },
     {
-      "repr": "BKN030",
+      "repr": "BKN042",
       "type": "BKN",
-      "altitude": 30,
+      "altitude": 42,
       "modifier": null
     },
     {
@@ -28,12 +28,12 @@
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "6",
+    "value": 6,
+    "spoken": "six"
   },
   "wind_direction": {
     "repr": "160",
@@ -42,41 +42,38 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
-  "wx_codes": [],
-  "raw": "KNUW 031753Z 16008KT 10SM BKN015 BKN030 OVC050 07/04 A3024 RMK AO2 SLP241 T00670044 10067 20044 58001 VISNO $",
-  "sanitized": "KNUW 031753Z 16008KT 10SM BKN015 BKN030 OVC050 07/04 A3024 RMK AO2 SLP241 T00670044 10067 20044 58001 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KNUW 031853Z 16010KT 6SM -RA BR SCT018 BKN042 OVC050 07/04 A3024 RMK AO2 RAB38 SLP238 P0001 T00720044 VISNO $",
+  "sanitized": "KNUW 031853Z 16010KT 6SM -RA BR SCT018 BKN042 OVC050 07/04 A3024 RMK AO2 RAB38 SLP238 P0001 T00720044 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "031753Z",
-    "dt": "2022-11-03T17:53:00Z"
+    "repr": "031853Z",
+    "dt": "2022-11-03T18:53:00Z"
   },
-  "remarks": "RMK AO2 SLP241 T00670044 10067 20044 58001 VISNO $",
+  "remarks": "RMK AO2 RAB38 SLP238 P0001 T00720044 VISNO $",
   "dewpoint": {
     "repr": "04",
     "value": 4,
     "spoken": "four"
   },
-  "relative_humidity": 0.8525264910597357,
+  "relative_humidity": 0.8237826093197136,
   "remarks_info": {
-    "maximum_temperature_6": {
-      "repr": "10067",
-      "value": 6.7,
-      "spoken": "six point seven"
-    },
-    "minimum_temperature_6": {
-      "repr": "20044",
-      "value": 4.4,
-      "spoken": "four point four"
-    },
-    "pressure_tendency": {
-      "repr": "58001",
-      "tendency": "Steady or increasing, then decreasing",
-      "change": 0.1
-    },
+    "maximum_temperature_6": null,
+    "minimum_temperature_6": null,
+    "pressure_tendency": null,
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -88,6 +85,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAB38",
+        "value": "Rain began at :38"
       }
     ],
     "dewpoint_decimal": {
@@ -97,17 +98,21 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": {
-      "repr": "SLP241",
-      "value": 1024.1,
-      "spoken": "one zero two four point one"
+      "repr": "SLP238",
+      "value": 1023.8,
+      "spoken": "one zero two three point eight"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0067",
-      "value": 6.7,
-      "spoken": "six point seven"
+      "repr": "0072",
+      "value": 7.2,
+      "spoken": "seven point two"
     }
   },
   "runway_visibility": [],
@@ -117,7 +122,7 @@
     "spoken": "seven"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1258,
+  "density_altitude": -1198,
   "pressure_altitude": -273,
   "units": {
     "accumulation": "in",
