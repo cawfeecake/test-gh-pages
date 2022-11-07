@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-11-07T11:02:34.217862Z",
+    "timestamp": "2022-11-07T11:27:56.777517Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,19 +10,19 @@
   },
   "clouds": [
     {
-      "repr": "BKN022",
-      "type": "BKN",
-      "altitude": 22,
+      "repr": "SCT020",
+      "type": "SCT",
+      "altitude": 20,
       "modifier": null
     },
     {
-      "repr": "OVC055",
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 55,
+      "altitude": 60,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -30,25 +30,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "010",
-    "value": 10,
-    "spoken": "zero one zero"
+    "repr": "030",
+    "value": 30,
+    "spoken": "zero three zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KNUW 071053Z 01005KT 10SM BKN022 OVC055 04/02 A2950 RMK AO2 RAE23 SLP989 P0000 T00440022 VISNO $",
-  "sanitized": "KNUW 071053Z 01005KT 10SM BKN022 OVC055 04/02 A2950 RMK AO2 RAE23 SLP989 P0000 T00440022 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 071117Z 03003KT 10SM -RA SCT020 OVC060 04/02 A2950 RMK AO2 RAB09 P0000 T00440022 VISNO $",
+  "sanitized": "KNUW 071117Z 03003KT 10SM -RA SCT020 OVC060 04/02 A2950 RMK AO2 RAB09 P0000 T00440022 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "071053Z",
-    "dt": "2022-11-07T10:53:00Z"
+    "repr": "071117Z",
+    "dt": "2022-11-07T11:17:00Z"
   },
-  "remarks": "RMK AO2 RAE23 SLP989 P0000 T00440022 VISNO $",
+  "remarks": "RMK AO2 RAB09 P0000 T00440022 VISNO $",
   "dewpoint": {
     "repr": "02",
     "value": 2,
@@ -76,8 +81,8 @@
         "value": "Trace amount of rain in the last hour"
       },
       {
-        "repr": "RAE23",
-        "value": "Rain ended at :23"
+        "repr": "RAB09",
+        "value": "Rain began at :09"
       }
     ],
     "dewpoint_decimal": {
@@ -88,11 +93,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP989",
-      "value": 998.9,
-      "spoken": "nine nine eight point nine"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0044",
