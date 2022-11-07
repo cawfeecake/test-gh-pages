@@ -1,24 +1,30 @@
 {
   "meta": {
-    "timestamp": "2022-11-07T11:41:43.892443Z",
+    "timestamp": "2022-11-07T12:12:22.105696Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2950",
-    "value": 29.5,
-    "spoken": "two nine point five zero"
+    "repr": "A2951",
+    "value": 29.51,
+    "spoken": "two nine point five one"
   },
   "clouds": [
     {
-      "repr": "SCT020",
+      "repr": "SCT022",
       "type": "SCT",
-      "altitude": 20,
+      "altitude": 22,
       "modifier": null
     },
     {
-      "repr": "OVC060",
-      "type": "OVC",
+      "repr": "BKN060",
+      "type": "BKN",
       "altitude": 60,
+      "modifier": null
+    },
+    {
+      "repr": "OVC080",
+      "type": "OVC",
+      "altitude": 80,
       "modifier": null
     }
   ],
@@ -30,42 +36,57 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "030",
-    "value": 30,
-    "spoken": "zero three zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KNUW 071117Z 03003KT 10SM -RA SCT020 OVC060 04/02 A2950 RMK AO2 RAB09 P0000 T00440022 VISNO $",
-  "sanitized": "KNUW 071117Z 03003KT 10SM -RA SCT020 OVC060 04/02 A2950 RMK AO2 RAB09 P0000 T00440022 VISNO $",
+  "wx_codes": [],
+  "raw": "KNUW 071153Z 00000KT 10SM SCT022 BKN060 OVC080 04/02 A2951 RMK AO2 RAB09E23 SLP992 P0000 60004 70029 T00390022 10050 20039 53010 VISNO $",
+  "sanitized": "KNUW 071153Z 00000KT 10SM SCT022 BKN060 OVC080 04/02 A2951 RMK AO2 RAB09E23 SLP992 P0000 60004 70029 T00390022 10050 20039 53010 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "071117Z",
-    "dt": "2022-11-07T11:17:00Z"
+    "repr": "071153Z",
+    "dt": "2022-11-07T11:53:00Z"
   },
-  "remarks": "RMK AO2 RAB09 P0000 T00440022 VISNO $",
+  "remarks": "RMK AO2 RAB09E23 SLP992 P0000 60004 70029 T00390022 10050 20039 53010 VISNO $",
   "dewpoint": {
     "repr": "02",
     "value": 2,
     "spoken": "two"
   },
-  "relative_humidity": 0.8560648690888376,
+  "relative_humidity": 0.886626408872418,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
-    "precip_24_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10050",
+      "value": 5,
+      "spoken": "five point zero"
+    },
+    "minimum_temperature_6": {
+      "repr": "20039",
+      "value": 3.9,
+      "spoken": "three point nine"
+    },
+    "pressure_tendency": {
+      "repr": "53010",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 1
+    },
+    "precip_36_hours": {
+      "repr": "60004",
+      "value": 0.04,
+      "spoken": "zero point zero four"
+    },
+    "precip_24_hours": {
+      "repr": "70029",
+      "value": 0.29,
+      "spoken": "zero point two nine"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
@@ -79,10 +100,6 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAB09",
-        "value": "Rain began at :09"
       }
     ],
     "dewpoint_decimal": {
@@ -93,12 +110,16 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP992",
+      "value": 999.2,
+      "spoken": "nine nine nine point two"
+    },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0044",
-      "value": 4.4,
-      "spoken": "four point four"
+      "repr": "0039",
+      "value": 3.9,
+      "spoken": "three point nine"
     }
   },
   "runway_visibility": [],
@@ -108,8 +129,8 @@
     "spoken": "four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -794,
-  "pressure_altitude": 467,
+  "density_altitude": -864,
+  "pressure_altitude": 457,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
