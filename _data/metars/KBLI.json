@@ -1,18 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-11-08T02:36:59.545417Z",
+    "timestamp": "2022-11-08T03:45:21.497986Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2974",
-    "value": 29.74,
-    "spoken": "two nine point seven four"
+    "repr": "A2975",
+    "value": 29.75,
+    "spoken": "two nine point seven five"
   },
   "clouds": [
     {
-      "repr": "BKN045",
+      "repr": "FEW043",
+      "type": "FEW",
+      "altitude": 43,
+      "modifier": null
+    },
+    {
+      "repr": "BKN055",
       "type": "BKN",
-      "altitude": 45,
+      "altitude": 55,
       "modifier": null
     },
     {
@@ -25,9 +31,9 @@
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "9",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "wind_direction": {
     "repr": "040",
@@ -35,40 +41,43 @@
     "spoken": "zero four zero"
   },
   "wind_gust": {
-    "repr": "30",
-    "value": 30,
-    "spoken": "three zero"
+    "repr": "32",
+    "value": 32,
+    "spoken": "three two"
   },
   "wind_speed": {
-    "repr": "17",
-    "value": 17,
-    "spoken": "one seven"
+    "repr": "21",
+    "value": 21,
+    "spoken": "two one"
   },
-  "wx_codes": [
-    {
-      "repr": "-SN",
-      "value": "Light Snow"
-    }
-  ],
-  "raw": "KBLI 080153Z 04017G30KT 9SM -SN BKN045 OVC070 01/M08 A2974 RMK AO2 PK WND 03038/0101 SLP080 P0000 T00111083",
-  "sanitized": "KBLI 080153Z 04017G30KT 9SM -SN BKN045 OVC070 01/M08 A2974 RMK AO2 PK WND 03038/0101 SLP080 P0000 T00111083",
+  "wx_codes": [],
+  "raw": "KBLI 080253Z 04021G32KT 10SM FEW043 BKN055 OVC070 01/M09 A2975 RMK AO2 PK WND 03036/0230 SNE22 SLP083 P0000 60000 T00111089 53016",
+  "sanitized": "KBLI 080253Z 04021G32KT 10SM FEW043 BKN055 OVC070 01/M09 A2975 RMK AO2 PK WND 03036/0230 SNE22 SLP083 P0000 60000 T00111089 53016",
   "station": "KBLI",
   "time": {
-    "repr": "080153Z",
-    "dt": "2022-11-08T01:53:00Z"
+    "repr": "080253Z",
+    "dt": "2022-11-08T02:53:00Z"
   },
-  "remarks": "RMK AO2 PK WND 03038/0101 SLP080 P0000 T00111083",
+  "remarks": "RMK AO2 PK WND 03036/0230 SNE22 SLP083 P0000 60000 T00111089 53016",
   "dewpoint": {
-    "repr": "M08",
-    "value": -8,
-    "spoken": "minus eight"
+    "repr": "M09",
+    "value": -9,
+    "spoken": "minus nine"
   },
-  "relative_humidity": 0.4950863410825104,
+  "relative_humidity": 0.47245645252334056,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "53016",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 1.6
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -79,20 +88,24 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "SNE22",
+        "value": "Snow ended at :22"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1083",
-      "value": -8.3,
-      "spoken": "minus eight point three"
+      "repr": "1089",
+      "value": -8.9,
+      "spoken": "minus eight point nine"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP080",
-      "value": 1008,
-      "spoken": "one zero zero eight point zero"
+      "repr": "SLP083",
+      "value": 1008.3,
+      "spoken": "one zero zero eight point three"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -108,8 +121,8 @@
     "spoken": "one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1277,
-  "pressure_altitude": 350,
+  "density_altitude": -1287,
+  "pressure_altitude": 340,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
