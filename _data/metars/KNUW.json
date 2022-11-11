@@ -1,38 +1,54 @@
 {
   "meta": {
-    "timestamp": "2022-11-11T16:46:00.139871Z",
+    "timestamp": "2022-11-11T17:10:24.373794Z",
     "stations_updated": "2022-09-05"
   },
-  "altimeter": null,
-  "clouds": [],
-  "flight_rules": "IFR",
-  "other": [
-    "CARRIER",
-    "CONNECT",
-    "57600",
-    "LAXMTRNKX"
-  ],
-  "visibility": null,
-  "wind_direction": null,
-  "wind_gust": null,
-  "wind_speed": null,
-  "wx_codes": [
+  "altimeter": {
+    "repr": "A3022",
+    "value": 30.22,
+    "spoken": "three zero point two two"
+  },
+  "clouds": [
     {
-      "repr": "NO",
-      "value": "NO"
-    },
-    {
-      "repr": "RING",
-      "value": "RING"
+      "repr": "OVC100",
+      "type": "OVC",
+      "altitude": 100,
+      "modifier": null
     }
   ],
-  "raw": "KNUW NO CARRIER RING CONNECT 57600 LAXMTRNKX ALL TTAA00 KNKX 111555 METAR",
-  "sanitized": "KNUW NO CARRIER RING CONNECT 57600 LAXMTRNKX ALL TTAA00 KNKX 111555 METAR",
+  "flight_rules": "VFR",
+  "other": [],
+  "visibility": {
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
+  },
+  "wind_direction": {
+    "repr": "070",
+    "value": 70,
+    "spoken": "zero seven zero"
+  },
+  "wind_gust": null,
+  "wind_speed": {
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
+  },
+  "wx_codes": [],
+  "raw": "KNUW 111653Z AUTO 07004KT 10SM OVC100 05/M02 A3022 RMK AO2 SLP232 T00501022 VISNO $",
+  "sanitized": "KNUW 111653Z 07004KT 10SM OVC100 05/M02 A3022 RMK AO2 SLP232 T00501022 VISNO $",
   "station": "KNUW",
-  "time": null,
-  "remarks": "ALL TTAA00 KNKX 111555 METAR",
-  "dewpoint": null,
-  "relative_humidity": null,
+  "time": {
+    "repr": "111653Z",
+    "dt": "2022-11-11T16:53:00Z"
+  },
+  "remarks": "RMK AO2 SLP232 T00501022 VISNO $",
+  "dewpoint": {
+    "repr": "M02",
+    "value": -2,
+    "spoken": "minus two"
+  },
+  "relative_humidity": 0.5965241444490401,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -40,20 +56,45 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [],
-    "dewpoint_decimal": null,
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
+    "dewpoint_decimal": {
+      "repr": "1022",
+      "value": -2.2,
+      "spoken": "minus two point two"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP232",
+      "value": 1023.2,
+      "spoken": "one zero two three point two"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0050",
+      "value": 5,
+      "spoken": "five point zero"
+    }
   },
   "runway_visibility": [],
-  "temperature": null,
+  "temperature": {
+    "repr": "05",
+    "value": 5,
+    "spoken": "five"
+  },
   "wind_variable_direction": [],
-  "density_altitude": null,
-  "pressure_altitude": null,
+  "density_altitude": -1442,
+  "pressure_altitude": -253,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
