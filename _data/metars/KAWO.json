@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-11-12T14:42:40.131230Z",
+    "timestamp": "2022-11-12T15:04:15.263173Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -8,13 +8,23 @@
     "value": 30.22,
     "spoken": "three zero point two two"
   },
-  "clouds": [],
-  "flight_rules": "IFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -29,18 +39,18 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ],
-  "raw": "KAWO 121439Z AUTO 00000KT 1SM BR CLR M03/M04 A3022 RMK AO2 FZRANO",
-  "sanitized": "KAWO 121439Z 00000KT 1SM BR M03/M04 A3022 RMK AO2 FZRANO",
+  "raw": "KAWO 121501Z AUTO 00000KT 1/2SM FZFG VV002 M03/M04 A3022 RMK AO2 VIS 1/4V5 FZRANO",
+  "sanitized": "KAWO 121501Z 00000KT 1/2SM FZFG VV002 M03/M04 A3022 RMK AO2 VIS 1/4V5 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "121439Z",
-    "dt": "2022-11-12T14:39:00Z"
+    "repr": "121501Z",
+    "dt": "2022-11-12T15:01:00Z"
   },
-  "remarks": "RMK AO2 FZRANO",
+  "remarks": "RMK AO2 VIS 1/4V5 FZRANO",
   "dewpoint": {
     "repr": "M04",
     "value": -4,
