@@ -1,24 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-11-14T14:45:40.660662Z",
+    "timestamp": "2022-11-14T15:06:00.606601Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3046",
-    "value": 30.46,
-    "spoken": "three zero point four six"
+    "repr": "A3047",
+    "value": 30.47,
+    "spoken": "three zero point four seven"
   },
   "clouds": [
     {
-      "repr": "FEW012",
+      "repr": "FEW011",
       "type": "FEW",
-      "altitude": 12,
+      "altitude": 11,
       "modifier": null
     },
     {
-      "repr": "SCT015",
-      "type": "SCT",
-      "altitude": 15,
+      "repr": "BKN017",
+      "type": "BKN",
+      "altitude": 17,
       "modifier": null
     },
     {
@@ -28,33 +28,38 @@
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "9",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "8",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_direction": {
-    "repr": "120",
-    "value": 120,
-    "spoken": "one two zero"
+    "repr": "070",
+    "value": 70,
+    "spoken": "zero seven zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KNUW 141409Z 12005KT 9SM FEW012 SCT015 BKN200 02/01 A3046 RMK AO2 T00170006 VISNO $",
-  "sanitized": "KNUW 141409Z 12005KT 9SM FEW012 SCT015 BKN200 02/01 A3046 RMK AO2 T00170006 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "MIFG",
+      "value": "Shallow Fog"
+    }
+  ],
+  "raw": "KNUW 141453Z 07003KT 8SM MIFG FEW011 BKN017 BKN200 02/01 A3047 RMK AO2 SLP316 T00170006 53002 VISNO $",
+  "sanitized": "KNUW 141453Z 07003KT 8SM MIFG FEW011 BKN017 BKN200 02/01 A3047 RMK AO2 SLP316 T00170006 53002 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "141409Z",
-    "dt": "2022-11-14T14:09:00Z"
+    "repr": "141453Z",
+    "dt": "2022-11-14T14:53:00Z"
   },
-  "remarks": "RMK AO2 T00170006 VISNO $",
+  "remarks": "RMK AO2 SLP316 T00170006 53002 VISNO $",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -64,7 +69,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "53002",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -86,7 +95,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP316",
+      "value": 1031.6,
+      "spoken": "one zero three one point six"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0017",
@@ -101,8 +114,8 @@
     "spoken": "two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -2078,
-  "pressure_altitude": -493,
+  "density_altitude": -2088,
+  "pressure_altitude": -503,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
