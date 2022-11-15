@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-11-15T07:40:37.155746Z",
+    "timestamp": "2022-11-15T08:08:08.550779Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,18 +10,27 @@
   },
   "clouds": [
     {
-      "repr": "FEW004",
-      "type": "FEW",
-      "altitude": 4,
+      "repr": "BKN000",
+      "type": "BKN",
+      "altitude": 0,
+      "modifier": null
+    },
+    {
+      "repr": "BKN003",
+      "type": "BKN",
+      "altitude": 3,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -36,22 +45,18 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
-    },
-    {
-      "repr": "BCFG",
-      "value": "Patchy Fog"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KNUW 150653Z 00000KT 5SM BR BCFG FEW004 01/00 A3052 RMK AO2 SLP333 T00060000 VISNO $",
-  "sanitized": "KNUW 150653Z 00000KT 5SM BR BCFG FEW004 01/00 A3052 RMK AO2 SLP333 T00060000 VISNO $",
+  "raw": "KNUW 150753Z 00000KT 1/2SM FG BKN000 BKN003 01/00 A3052 RMK AO2 SLP332 VIS SW-W 1 FG BKN000 T00060000 400941006 VISNO $",
+  "sanitized": "KNUW 150753Z 00000KT 1/2SM FG BKN000 BKN003 01/00 A3052 RMK AO2 SLP332 VIS SW-W 1 FG BKN000 T00060000 400941006 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "150653Z",
-    "dt": "2022-11-15T06:53:00Z"
+    "repr": "150753Z",
+    "dt": "2022-11-15T07:53:00Z"
   },
-  "remarks": "RMK AO2 SLP333 T00060000 VISNO $",
+  "remarks": "RMK AO2 SLP332 VIS SW-W 1 FG BKN000 T00060000 400941006 VISNO $",
   "dewpoint": {
     "repr": "00",
     "value": 0,
@@ -80,13 +85,21 @@
       "value": 0,
       "spoken": "zero"
     },
-    "maximum_temperature_24": null,
-    "minimum_temperature_24": null,
+    "maximum_temperature_24": {
+      "repr": "0094",
+      "value": 9.4,
+      "spoken": "nine point four"
+    },
+    "minimum_temperature_24": {
+      "repr": "1006",
+      "value": -0.6,
+      "spoken": "minus zero point six"
+    },
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP333",
-      "value": 1033.3,
-      "spoken": "one zero three three point three"
+      "repr": "SLP332",
+      "value": 1033.2,
+      "spoken": "one zero three three point two"
     },
     "snow_depth": null,
     "temperature_decimal": {
