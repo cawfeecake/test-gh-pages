@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-11-16T08:39:11.096348Z",
+    "timestamp": "2022-11-16T08:51:00.639486Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -9,44 +9,47 @@
     "spoken": "three zero point six one"
   },
   "clouds": [],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
-    "repr": "010",
-    "value": 10,
-    "spoken": "zero one zero"
+    "repr": "360",
+    "value": 360,
+    "spoken": "three six zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ],
-  "raw": "KAWO 160825Z AUTO 01004KT 1SM BR CLR M03/M04 A3061 RMK AO2 FZRANO",
-  "sanitized": "KAWO 160825Z 01004KT 1SM BR M03/M04 A3061 RMK AO2 FZRANO",
+  "raw": "KAWO 160849Z AUTO 36003KT 1/2SM FZFG CLR M03/M03 A3061 RMK AO2 SNB32E43 P0000 FZRANO",
+  "sanitized": "KAWO 160849Z 36003KT 1/2SM FZFG M03/M03 A3061 RMK AO2 SNB32E43 P0000 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "160825Z",
-    "dt": "2022-11-16T08:25:00Z"
+    "repr": "160849Z",
+    "dt": "2022-11-16T08:49:00Z"
   },
-  "remarks": "RMK AO2 FZRANO",
+  "remarks": "RMK AO2 SNB32E43 P0000 FZRANO",
   "dewpoint": {
-    "repr": "M04",
-    "value": -4,
-    "spoken": "minus four"
+    "repr": "M03",
+    "value": -3,
+    "spoken": "minus three"
   },
-  "relative_humidity": 0.9280227586111668,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -62,6 +65,10 @@
       {
         "repr": "FZRANO",
         "value": "Freezing rain information not available"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": null,
