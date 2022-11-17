@@ -1,14 +1,21 @@
 {
   "meta": {
-    "timestamp": "2022-11-17T05:04:27.412153Z",
+    "timestamp": "2022-11-17T05:29:01.074374Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3043",
-    "value": 30.43,
-    "spoken": "three zero point four three"
+    "repr": "A3044",
+    "value": 30.44,
+    "spoken": "three zero point four four"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "SCT005",
+      "type": "SCT",
+      "altitude": 5,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -27,21 +34,26 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 170453Z 00000KT 10SM R16/1400VP6000FT CLR M01/M02 A3043 RMK AO2 SLP316 I1000 T10111017",
-  "sanitized": "KBLI 170453Z 00000KT 10SM R16/1400VP6000FT M01/M02 A3043 RMK AO2 SLP316 I1000 T10111017",
+  "wx_codes": [
+    {
+      "repr": "BCFG",
+      "value": "Patchy Fog"
+    }
+  ],
+  "raw": "KBLI 170525Z 00000KT 10SM R16/1000VP6000FT BCFG SCT005 M02/M02 A3044 RMK AO2 BCFG NW PORTION AFLD I1000 T10171017",
+  "sanitized": "KBLI 170525Z 00000KT 10SM R16/1000VP6000FT BCFG SCT005 M02/M02 A3044 RMK AO2 BCFG NW PORTION AFLD I1000 T10171017",
   "station": "KBLI",
   "time": {
-    "repr": "170453Z",
-    "dt": "2022-11-17T04:53:00Z"
+    "repr": "170525Z",
+    "dt": "2022-11-17T05:25:00Z"
   },
-  "remarks": "RMK AO2 SLP316 I1000 T10111017",
+  "remarks": "RMK AO2 BCFG NW PORTION AFLD I1000 T10171017",
   "dewpoint": {
     "repr": "M02",
     "value": -2,
     "spoken": "minus two"
   },
-  "relative_humidity": 0.9569107752623097,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -63,28 +75,24 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP316",
-      "value": 1031.6,
-      "spoken": "one zero three one point six"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "1011",
-      "value": -1.1,
-      "spoken": "minus one point one"
+      "repr": "1017",
+      "value": -1.7,
+      "spoken": "minus one point seven"
     }
   },
   "runway_visibility": [
     {
-      "repr": "R16/1400VP6000FT",
+      "repr": "R16/1000VP6000FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "1400",
-          "value": 1400,
-          "spoken": "one four hundred"
+          "repr": "1000",
+          "value": 1000,
+          "spoken": "one thousand"
         },
         {
           "repr": "P6000",
@@ -96,13 +104,13 @@
     }
   ],
   "temperature": {
-    "repr": "M01",
-    "value": -1,
-    "spoken": "minus one"
+    "repr": "M02",
+    "value": -2,
+    "spoken": "minus two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -2231,
-  "pressure_altitude": -340,
+  "density_altitude": -2313,
+  "pressure_altitude": -350,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
