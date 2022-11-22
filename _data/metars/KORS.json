@@ -1,38 +1,32 @@
 {
   "meta": {
-    "timestamp": "2022-11-22T22:43:08.689379Z",
+    "timestamp": "2022-11-22T23:02:11.098879Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2977",
-    "value": 29.77,
-    "spoken": "two nine point seven seven"
+    "repr": "A2978",
+    "value": 29.78,
+    "spoken": "two nine point seven eight"
   },
   "clouds": [
     {
-      "repr": "BKN022",
-      "type": "BKN",
-      "altitude": 22,
-      "modifier": null
-    },
-    {
-      "repr": "OVC026",
+      "repr": "OVC020",
       "type": "OVC",
-      "altitude": 26,
+      "altitude": 20,
       "modifier": null
     }
   ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
-    "repr": "190",
-    "value": 190,
-    "spoken": "one nine zero"
+    "repr": "180",
+    "value": 180,
+    "spoken": "one eight zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -40,15 +34,24 @@
     "value": 9,
     "spoken": "nine"
   },
-  "wx_codes": [],
-  "raw": "KORS 222235Z AUTO 19009KT 10SM BKN022 OVC026 09/09 A2977 RMK AO2",
-  "sanitized": "KORS 222235Z 19009KT 10SM BKN022 OVC026 09/09 A2977 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KORS 222255Z AUTO 18009KT 4SM -RA BR OVC020 09/09 A2978 RMK AO2 P0001",
+  "sanitized": "KORS 222255Z 18009KT 4SM -RA BR OVC020 09/09 A2978 RMK AO2 P0001",
   "station": "KORS",
   "time": {
-    "repr": "222235Z",
-    "dt": "2022-11-22T22:35:00Z"
+    "repr": "222255Z",
+    "dt": "2022-11-22T22:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0001",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -71,7 +74,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
@@ -83,8 +90,8 @@
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -532,
-  "pressure_altitude": 181,
+  "density_altitude": -542,
+  "pressure_altitude": 171,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
