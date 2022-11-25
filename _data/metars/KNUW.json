@@ -1,60 +1,79 @@
 {
   "meta": {
-    "timestamp": "2022-11-25T14:40:50.220446Z",
+    "timestamp": "2022-11-25T15:02:15.684359Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3017",
-    "value": 30.17,
-    "spoken": "three zero point one seven"
+    "repr": "A3016",
+    "value": 30.16,
+    "spoken": "three zero point one six"
   },
   "clouds": [
     {
-      "repr": "BKN007",
-      "type": "BKN",
+      "repr": "SCT007",
+      "type": "SCT",
       "altitude": 7,
       "modifier": null
     },
     {
-      "repr": "OVC013",
+      "repr": "BKN035",
+      "type": "BKN",
+      "altitude": 35,
+      "modifier": null
+    },
+    {
+      "repr": "OVC045",
       "type": "OVC",
-      "altitude": 13,
+      "altitude": 45,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
-    "repr": "220",
-    "value": 220,
-    "spoken": "two two zero"
+    "repr": "270",
+    "value": 270,
+    "spoken": "two seven zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "26",
+    "value": 26,
+    "spoken": "two six"
+  },
   "wind_speed": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "20",
+    "value": 20,
+    "spoken": "two zero"
   },
-  "wx_codes": [],
-  "raw": "KNUW 251413Z AUTO 22009KT 10SM BKN007 OVC013 09/07 A3017 RMK AO2 T00890067 VISNO $",
-  "sanitized": "KNUW 251413Z 22009KT 10SM BKN007 OVC013 09/07 A3017 RMK AO2 T00890067 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KNUW 251500Z AUTO 27020G26KT 4SM -RA BR SCT007 BKN035 OVC045 09/08 A3016 RMK AO2 PK WND 27026/1456 CIG 007 P0001 T00890078 VISNO $",
+  "sanitized": "KNUW 251500Z 27020G26KT 4SM -RA BR SCT007 BKN035 OVC045 09/08 A3016 RMK AO2 PK WND 27026/1456 CIG 007 P0001 T00890078 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "251413Z",
-    "dt": "2022-11-25T14:13:00Z"
+    "repr": "251500Z",
+    "dt": "2022-11-25T15:00:00Z"
   },
-  "remarks": "RMK AO2 T00890067 VISNO $",
+  "remarks": "RMK AO2 PK WND 27026/1456 CIG 007 P0001 T00890078 VISNO $",
   "dewpoint": {
-    "repr": "07",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
-  "relative_humidity": 0.8608000212004648,
+  "relative_humidity": 0.9280975124584884,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -73,13 +92,17 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0067",
-      "value": 6.7,
-      "spoken": "six point seven"
+      "repr": "0078",
+      "value": 7.8,
+      "spoken": "seven point eight"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
@@ -95,8 +118,8 @@
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -924,
-  "pressure_altitude": -203,
+  "density_altitude": -914,
+  "pressure_altitude": -193,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
