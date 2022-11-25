@@ -1,63 +1,60 @@
 {
   "meta": {
-    "timestamp": "2022-11-25T16:40:36.081162Z",
+    "timestamp": "2022-11-25T17:01:51.938270Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3015",
-    "value": 30.15,
-    "spoken": "three zero point one five"
+    "repr": "A3016",
+    "value": 30.16,
+    "spoken": "three zero point one six"
   },
   "clouds": [
     {
-      "repr": "BKN008",
-      "type": "BKN",
-      "altitude": 8,
-      "modifier": null
-    },
-    {
-      "repr": "OVC012",
+      "repr": "OVC006",
       "type": "OVC",
-      "altitude": 12,
+      "altitude": 6,
       "modifier": null
     }
   ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "2",
-    "value": 2,
-    "spoken": "two"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
-    "repr": "180",
-    "value": 180,
-    "spoken": "one eight zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wx_codes": [
     {
-      "repr": "RA",
-      "value": "Rain"
+      "repr": "-RA",
+      "value": "Light Rain"
     },
     {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 251633Z 18006KT 2SM RA BR BKN008 OVC012 08/08 A3015 RMK AO2 P0012 T00830083",
-  "sanitized": "KBLI 251633Z 18006KT 2SM RA BR BKN008 OVC012 08/08 A3015 RMK AO2 P0012 T00830083",
+  "raw": "KBLI 251653Z VRB03KT 2 1/2SM -RA BR OVC006 08/08 A3016 RMK AO2 CIG 004V010 SLP221 P0016 T00830083",
+  "sanitized": "KBLI 251653Z VRB03KT 2 1/2SM -RA BR OVC006 08/08 A3016 RMK AO2 CIG 004V010 SLP221 P0016 T00830083",
   "station": "KBLI",
   "time": {
-    "repr": "251633Z",
-    "dt": "2022-11-25T16:33:00Z"
+    "repr": "251653Z",
+    "dt": "2022-11-25T16:53:00Z"
   },
-  "remarks": "RMK AO2 P0012 T00830083",
+  "remarks": "RMK AO2 CIG 004V010 SLP221 P0016 T00830083",
   "dewpoint": {
     "repr": "08",
     "value": 8,
@@ -85,11 +82,15 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": {
-      "repr": "P0012",
-      "value": 0.12,
-      "spoken": "zero point one two"
+      "repr": "P0016",
+      "value": 0.16,
+      "spoken": "zero point one six"
     },
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP221",
+      "value": 1022.1,
+      "spoken": "one zero two two point one"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0083",
@@ -104,8 +105,8 @@
     "spoken": "eight"
   },
   "wind_variable_direction": [],
-  "density_altitude": -823,
-  "pressure_altitude": -60,
+  "density_altitude": -833,
+  "pressure_altitude": -70,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
