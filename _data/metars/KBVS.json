@@ -1,27 +1,42 @@
 {
   "meta": {
-    "timestamp": "2022-11-26T00:26:57.503223Z",
+    "timestamp": "2022-11-26T02:09:16.008328Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3028",
-    "value": 30.28,
-    "spoken": "three zero point two eight"
+    "repr": "A3030",
+    "value": 30.3,
+    "spoken": "three zero point three zero"
   },
   "clouds": [
     {
-      "repr": "SCT050",
+      "repr": "SCT025",
       "type": "SCT",
-      "altitude": 50,
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "SCT031",
+      "type": "SCT",
+      "altitude": 31,
+      "modifier": null
+    },
+    {
+      "repr": "BKN041",
+      "type": "BKN",
+      "altitude": 41,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -34,19 +49,24 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 260015Z AUTO 00000KT 10SM SCT050 06/06 A3028 RMK A01",
-  "sanitized": "KBVS 260015Z 00000KT 10SM SCT050 06/06 A3028 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ],
+  "raw": "KBVS 260155Z AUTO 00000KT 1/4SM FG SCT025 SCT031 BKN041 03/03 A3030 RMK A01",
+  "sanitized": "KBVS 260155Z 00000KT 1/4SM FG SCT025 SCT031 BKN041 03/03 A3030 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "260015Z",
-    "dt": "2022-11-26T00:15:00Z"
+    "repr": "260155Z",
+    "dt": "2022-11-26T01:55:00Z"
   },
   "remarks": "RMK A01",
   "dewpoint": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -67,13 +87,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1261,
-  "pressure_altitude": -216,
+  "density_altitude": -1641,
+  "pressure_altitude": -236,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
