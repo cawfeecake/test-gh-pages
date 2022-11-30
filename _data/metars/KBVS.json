@@ -1,9 +1,7 @@
 {
   "meta": {
-    "timestamp": "2022-11-30T13:53:39.412038Z",
-    "stations_updated": "2022-09-05",
-    "cache-timestamp": "2022-11-30T13:21:30.095000Z",
-    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
+    "timestamp": "2022-11-30T14:01:51.089744Z",
+    "stations_updated": "2022-09-05"
   },
   "altimeter": {
     "repr": "A2942",
@@ -12,9 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "OVC010",
-      "type": "OVC",
+      "repr": "SCT010",
+      "type": "SCT",
       "altitude": 10,
+      "modifier": null
+    },
+    {
+      "repr": "SCT013",
+      "type": "SCT",
+      "altitude": 13,
+      "modifier": null
+    },
+    {
+      "repr": "OVC024",
+      "type": "OVC",
+      "altitude": 24,
       "modifier": null
     }
   ],
@@ -32,19 +42,19 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
   "wx_codes": [],
-  "raw": "KBVS 301315Z AUTO 16005KT 10SM OVC010 03/03 A2942 RMK A01",
-  "sanitized": "KBVS 301315Z 16005KT 10SM OVC010 03/03 A2942 RMK A01",
+  "raw": "KBVS 301355Z AUTO 16007KT 10SM SCT010 SCT013 OVC024 03/03 A2942 RMK A01 P0002",
+  "sanitized": "KBVS 301355Z 16007KT 10SM SCT010 SCT013 OVC024 03/03 A2942 RMK A01 P0002",
   "station": "KBVS",
   "time": {
-    "repr": "301315Z",
-    "dt": "2022-11-30T13:15:00Z"
+    "repr": "301355Z",
+    "dt": "2022-11-30T13:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0002",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -62,7 +72,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
