@@ -1,30 +1,30 @@
 {
   "meta": {
-    "timestamp": "2022-12-01T11:40:50.654276Z",
+    "timestamp": "2022-12-01T12:10:16.036191Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2963",
-    "value": 29.63,
-    "spoken": "two nine point six three"
+    "repr": "A2962",
+    "value": 29.62,
+    "spoken": "two nine point six two"
   },
   "clouds": [
     {
-      "repr": "FEW030",
+      "repr": "FEW035",
       "type": "FEW",
-      "altitude": 30,
+      "altitude": 35,
       "modifier": null
     },
     {
-      "repr": "BKN150",
+      "repr": "BKN110",
       "type": "BKN",
+      "altitude": 110,
+      "modifier": null
+    },
+    {
+      "repr": "OVC150",
+      "type": "OVC",
       "altitude": 150,
-      "modifier": null
-    },
-    {
-      "repr": "BKN220",
-      "type": "BKN",
-      "altitude": 220,
       "modifier": null
     }
   ],
@@ -36,25 +36,25 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "030",
+    "value": 30,
+    "spoken": "zero three zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
   "wx_codes": [],
-  "raw": "KNUW 011053Z 00000KT 10SM FEW030 BKN150 BKN220 M01/M02 A2963 RMK AO2 SLP031 T10061017 VISNO $",
-  "sanitized": "KNUW 011053Z 00000KT 10SM FEW030 BKN150 BKN220 M01/M02 A2963 RMK AO2 SLP031 T10061017 VISNO $",
+  "raw": "KNUW 011153Z 03004KT 10SM FEW035 BKN110 OVC150 M01/M02 A2962 RMK AO2 SLP031 70002 T10061017 10006 21022 50005 VISNO $",
+  "sanitized": "KNUW 011153Z 03004KT 10SM FEW035 BKN110 OVC150 M01/M02 A2962 RMK AO2 SLP031 70002 T10061017 10006 21022 50005 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "011053Z",
-    "dt": "2022-12-01T10:53:00Z"
+    "repr": "011153Z",
+    "dt": "2022-12-01T11:53:00Z"
   },
-  "remarks": "RMK AO2 SLP031 T10061017 VISNO $",
+  "remarks": "RMK AO2 SLP031 70002 T10061017 10006 21022 50005 VISNO $",
   "dewpoint": {
     "repr": "M02",
     "value": -2,
@@ -62,11 +62,27 @@
   },
   "relative_humidity": 0.9225781625278401,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10006",
+      "value": 0.6,
+      "spoken": "zero point six"
+    },
+    "minimum_temperature_6": {
+      "repr": "21022",
+      "value": -2.2,
+      "spoken": "minus two point two"
+    },
+    "pressure_tendency": {
+      "repr": "50005",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.5
+    },
     "precip_36_hours": null,
-    "precip_24_hours": null,
+    "precip_24_hours": {
+      "repr": "70002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
@@ -105,8 +121,8 @@
     "spoken": "minus one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1524,
-  "pressure_altitude": 337,
+  "density_altitude": -1514,
+  "pressure_altitude": 347,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
