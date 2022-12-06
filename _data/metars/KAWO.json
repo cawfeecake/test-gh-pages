@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-06T18:43:44.713292Z",
+    "timestamp": "2022-12-06T19:01:38.137109Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,30 +10,18 @@
   },
   "clouds": [
     {
-      "repr": "BKN010",
-      "type": "BKN",
-      "altitude": 10,
-      "modifier": null
-    },
-    {
-      "repr": "BKN017",
-      "type": "BKN",
-      "altitude": 17,
-      "modifier": null
-    },
-    {
-      "repr": "OVC039",
+      "repr": "OVC010",
       "type": "OVC",
-      "altitude": 39,
+      "altitude": 10,
       "modifier": null
     }
   ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "7",
+    "value": 7,
+    "spoken": "seven"
   },
   "wind_direction": {
     "repr": "000",
@@ -46,21 +34,26 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KAWO 061819Z AUTO 00000KT 10SM BKN010 BKN017 OVC039 03/02 A3016 RMK AO2 RAE01UPB01E04 P0000",
-  "sanitized": "KAWO 061819Z 00000KT 10SM BKN010 BKN017 OVC039 03/02 A3016 RMK AO2 RAE01UPB01E04 P0000",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 061856Z AUTO 00000KT 7SM -RA OVC010 03/02 A3016 RMK AO2 RAE01B32UPB01E04B27E32 SLP218 P0000 T00330022",
+  "sanitized": "KAWO 061856Z 00000KT 7SM -RA OVC010 03/02 A3016 RMK AO2 RAE01B32UPB01E04B27E32 SLP218 P0000 T00330022",
   "station": "KAWO",
   "time": {
-    "repr": "061819Z",
-    "dt": "2022-12-06T18:19:00Z"
+    "repr": "061856Z",
+    "dt": "2022-12-06T18:56:00Z"
   },
-  "remarks": "RMK AO2 RAE01UPB01E04 P0000",
+  "remarks": "RMK AO2 RAE01B32UPB01E04B27E32 SLP218 P0000 T00330022",
   "dewpoint": {
     "repr": "02",
     "value": 2,
     "spoken": "two"
   },
-  "relative_humidity": 0.9313691326652258,
+  "relative_humidity": 0.9249173515197439,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -78,13 +71,25 @@
         "value": "Trace amount of rain in the last hour"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0022",
+      "value": 2.2,
+      "spoken": "two point two"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP218",
+      "value": 1021.8,
+      "spoken": "one zero two one point eight"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0033",
+      "value": 3.3,
+      "spoken": "three point three"
+    }
   },
   "runway_visibility": [],
   "temperature": {
@@ -93,7 +98,7 @@
     "spoken": "three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1504,
+  "density_altitude": -1468,
   "pressure_altitude": -98,
   "units": {
     "accumulation": "in",
