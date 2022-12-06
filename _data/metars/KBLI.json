@@ -1,22 +1,28 @@
 {
   "meta": {
-    "timestamp": "2022-12-06T11:40:34.985198Z",
+    "timestamp": "2022-12-06T12:09:07.108276Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3009",
-    "value": 30.09,
-    "spoken": "three zero point zero nine"
+    "repr": "A3008",
+    "value": 30.08,
+    "spoken": "three zero point zero eight"
   },
   "clouds": [
     {
-      "repr": "OVC033",
+      "repr": "BKN022",
+      "type": "BKN",
+      "altitude": 22,
+      "modifier": null
+    },
+    {
+      "repr": "OVC029",
       "type": "OVC",
-      "altitude": 33,
+      "altitude": 29,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
     "repr": "9",
@@ -34,26 +40,21 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [
-    {
-      "repr": "UP",
-      "value": "Unknown Precip"
-    }
-  ],
-  "raw": "KBLI 061110Z AUTO 00000KT 9SM UP OVC033 00/M02 A3009 RMK AO2 P0000 T00001022",
-  "sanitized": "KBLI 061110Z 00000KT 9SM UP OVC033 00/M02 A3009 RMK AO2 P0000 T00001022",
+  "wx_codes": [],
+  "raw": "KBLI 061200Z AUTO 00000KT 9SM BKN022 OVC029 00/M01 A3008 RMK AO2 T00001006",
+  "sanitized": "KBLI 061200Z 00000KT 9SM BKN022 OVC029 00/M01 A3008 RMK AO2 T00001006",
   "station": "KBLI",
   "time": {
-    "repr": "061110Z",
-    "dt": "2022-12-06T11:10:00Z"
+    "repr": "061200Z",
+    "dt": "2022-12-06T12:00:00Z"
   },
-  "remarks": "RMK AO2 P0000 T00001022",
+  "remarks": "RMK AO2 T00001006",
   "dewpoint": {
-    "repr": "M02",
-    "value": -2,
-    "spoken": "minus two"
+    "repr": "M01",
+    "value": -1,
+    "spoken": "minus one"
   },
-  "relative_humidity": 0.851204935433664,
+  "relative_humidity": 0.9572912555144957,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -65,16 +66,12 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1022",
-      "value": -2.2,
-      "spoken": "minus two point two"
+      "repr": "1006",
+      "value": -0.6,
+      "spoken": "minus zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
@@ -94,8 +91,8 @@
     "spoken": "zero"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1759,
-  "pressure_altitude": 0,
+  "density_altitude": -1749,
+  "pressure_altitude": 10,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
