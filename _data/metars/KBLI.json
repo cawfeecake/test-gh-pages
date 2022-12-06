@@ -1,27 +1,39 @@
 {
   "meta": {
-    "timestamp": "2022-12-06T19:40:36.217145Z",
+    "timestamp": "2022-12-06T20:02:32.322639Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3013",
-    "value": 30.13,
-    "spoken": "three zero point one three"
+    "repr": "A3012",
+    "value": 30.12,
+    "spoken": "three zero point one two"
   },
   "clouds": [
     {
-      "repr": "OVC013",
+      "repr": "FEW010",
+      "type": "FEW",
+      "altitude": 10,
+      "modifier": null
+    },
+    {
+      "repr": "BKN014",
+      "type": "BKN",
+      "altitude": 14,
+      "modifier": null
+    },
+    {
+      "repr": "OVC025",
       "type": "OVC",
-      "altitude": 13,
+      "altitude": 25,
       "modifier": null
     }
   ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
     "repr": "000",
@@ -44,20 +56,20 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 061853Z 00000KT 3SM -RA BR OVC013 01/01 A3013 RMK AO2 SLP212 P0001 T00110011",
-  "sanitized": "KBLI 061853Z 00000KT 3SM -RA BR OVC013 01/01 A3013 RMK AO2 SLP212 P0001 T00110011",
+  "raw": "KBLI 061953Z 00000KT 4SM -RA BR FEW010 BKN014 OVC025 02/01 A3012 RMK AO2 SLP208 P0000 T00220011",
+  "sanitized": "KBLI 061953Z 00000KT 4SM -RA BR FEW010 BKN014 OVC025 02/01 A3012 RMK AO2 SLP208 P0000 T00220011",
   "station": "KBLI",
   "time": {
-    "repr": "061853Z",
-    "dt": "2022-12-06T18:53:00Z"
+    "repr": "061953Z",
+    "dt": "2022-12-06T19:53:00Z"
   },
-  "remarks": "RMK AO2 SLP212 P0001 T00110011",
+  "remarks": "RMK AO2 SLP208 P0000 T00220011",
   "dewpoint": {
     "repr": "01",
     "value": 1,
     "spoken": "one"
   },
-  "relative_humidity": 1,
+  "relative_humidity": 0.9242682769225287,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -69,6 +81,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -78,32 +94,28 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP212",
-      "value": 1021.2,
-      "spoken": "one zero two one point two"
+      "repr": "SLP208",
+      "value": 1020.8,
+      "spoken": "one zero two zero point eight"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0011",
-      "value": 1.1,
-      "spoken": "one point one"
+      "repr": "0022",
+      "value": 2.2,
+      "spoken": "two point two"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "01",
-    "value": 1,
-    "spoken": "one"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1667,
-  "pressure_altitude": -40,
+  "density_altitude": -1525,
+  "pressure_altitude": -30,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
