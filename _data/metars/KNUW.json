@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-07T17:40:42.346554Z",
+    "timestamp": "2022-12-07T18:06:40.090193Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,15 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "BKN017",
+      "repr": "BKN015",
       "type": "BKN",
-      "altitude": 17,
+      "altitude": 15,
       "modifier": null
     },
     {
-      "repr": "OVC025",
-      "type": "OVC",
+      "repr": "BKN025",
+      "type": "BKN",
       "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "OVC040",
+      "type": "OVC",
+      "altitude": 40,
       "modifier": null
     }
   ],
@@ -36,33 +42,49 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wx_codes": [],
-  "raw": "KNUW 071653Z COR 11009KT 10SM BKN017 OVC025 05/03 A3017 RMK AO2 SLP215 T00500033",
-  "sanitized": "KNUW 071653Z 11009KT 10SM BKN017 OVC025 05/03 A3017 RMK AO2 SLP215 T00500033",
+  "raw": "KNUW 071753Z 11008KT 10SM BKN015 BKN025 OVC040 06/03 A3017 RMK AO2 SLP215 T00560033 10056 20039 55001 VISNO $",
+  "sanitized": "KNUW 071753Z 11008KT 10SM BKN015 BKN025 OVC040 06/03 A3017 RMK AO2 SLP215 T00560033 10056 20039 55001 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "071653Z",
-    "dt": "2022-12-07T16:53:00Z"
+    "repr": "071753Z",
+    "dt": "2022-12-07T17:53:00Z"
   },
-  "remarks": "RMK AO2 SLP215 T00500033",
+  "remarks": "RMK AO2 SLP215 T00560033 10056 20039 55001 VISNO $",
   "dewpoint": {
     "repr": "03",
     "value": 3,
     "spoken": "three"
   },
-  "relative_humidity": 0.8875725932131937,
+  "relative_humidity": 0.8513177604096042,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10056",
+      "value": 5.6,
+      "spoken": "five point six"
+    },
+    "minimum_temperature_6": {
+      "repr": "20039",
+      "value": 3.9,
+      "spoken": "three point nine"
+    },
+    "pressure_tendency": {
+      "repr": "55001",
+      "tendency": "Decreasing, then increasing",
+      "change": 0.1
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -83,19 +105,19 @@
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0050",
-      "value": 5,
-      "spoken": "five point zero"
+      "repr": "0056",
+      "value": 5.6,
+      "spoken": "five point six"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1392,
+  "density_altitude": -1320,
   "pressure_altitude": -203,
   "units": {
     "accumulation": "in",
