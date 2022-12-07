@@ -1,18 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-12-07T22:27:52.945207Z",
+    "timestamp": "2022-12-07T22:40:39.325601Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3003",
-    "value": 30.03,
-    "spoken": "three zero point zero three"
+    "repr": "A3002",
+    "value": 30.02,
+    "spoken": "three zero point zero two"
   },
   "clouds": [
     {
-      "repr": "BKN044",
-      "type": "BKN",
-      "altitude": 44,
+      "repr": "SCT047",
+      "type": "SCT",
+      "altitude": 47,
+      "modifier": null
+    },
+    {
+      "repr": "SCT055",
+      "type": "SCT",
+      "altitude": 55,
       "modifier": null
     }
   ],
@@ -24,27 +30,23 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "VRB",
-    "value": null,
-    "spoken": "variable"
+    "repr": "140",
+    "value": 140,
+    "spoken": "one four zero"
   },
-  "wind_gust": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
   "wx_codes": [],
-  "raw": "KORS 072215Z AUTO VRB06G13KT 10SM BKN044 08/03 A3003 RMK AO2",
-  "sanitized": "KORS 072215Z VRB06G13KT 10SM BKN044 08/03 A3003 RMK AO2",
+  "raw": "KORS 072235Z AUTO 14007KT 080V190 10SM SCT047 SCT055 08/03 A3002 RMK AO2",
+  "sanitized": "KORS 072235Z 14007KT 080V190 10SM SCT047 SCT055 08/03 A3002 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "072215Z",
-    "dt": "2022-12-07T22:15:00Z"
+    "repr": "072235Z",
+    "dt": "2022-12-07T22:35:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
@@ -80,9 +82,20 @@
     "value": 8,
     "spoken": "eight"
   },
-  "wind_variable_direction": [],
-  "density_altitude": -912,
-  "pressure_altitude": -79,
+  "wind_variable_direction": [
+    {
+      "repr": "080",
+      "value": 80,
+      "spoken": "zero eight zero"
+    },
+    {
+      "repr": "190",
+      "value": 190,
+      "spoken": "one nine zero"
+    }
+  ],
+  "density_altitude": -902,
+  "pressure_altitude": -69,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
