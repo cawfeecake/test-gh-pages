@@ -1,18 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-12-11T09:40:38.468006Z",
+    "timestamp": "2022-12-11T10:01:51.475536Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2960",
-    "value": 29.6,
-    "spoken": "two nine point six zero"
+    "repr": "A2961",
+    "value": 29.61,
+    "spoken": "two nine point six one"
   },
   "clouds": [
     {
-      "repr": "SCT029",
-      "type": "SCT",
-      "altitude": 29,
+      "repr": "FEW012",
+      "type": "FEW",
+      "altitude": 12,
+      "modifier": null
+    },
+    {
+      "repr": "BKN030",
+      "type": "BKN",
+      "altitude": 30,
       "modifier": null
     },
     {
@@ -22,42 +28,33 @@
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "6",
-    "value": 6,
-    "spoken": "six"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "360",
-    "value": 360,
-    "spoken": "three six zero"
+    "repr": "030",
+    "value": 30,
+    "spoken": "zero three zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ],
-  "raw": "KBLI 110934Z AUTO 36003KT 6SM -RA BR SCT029 OVC036 04/04 A2960 RMK AO2 P0001 T00440044",
-  "sanitized": "KBLI 110934Z 36003KT 6SM -RA BR SCT029 OVC036 04/04 A2960 RMK AO2 P0001 T00440044",
+  "wx_codes": [],
+  "raw": "KBLI 110953Z AUTO 03006KT 10SM FEW012 BKN030 OVC036 04/04 A2961 RMK AO2 RAE49 SLP035 P0001 T00440044",
+  "sanitized": "KBLI 110953Z 03006KT 10SM FEW012 BKN030 OVC036 04/04 A2961 RMK AO2 RAE49 SLP035 P0001 T00440044",
   "station": "KBLI",
   "time": {
-    "repr": "110934Z",
-    "dt": "2022-12-11T09:34:00Z"
+    "repr": "110953Z",
+    "dt": "2022-12-11T09:53:00Z"
   },
-  "remarks": "RMK AO2 P0001 T00440044",
+  "remarks": "RMK AO2 RAE49 SLP035 P0001 T00440044",
   "dewpoint": {
     "repr": "04",
     "value": 4,
@@ -75,6 +72,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAE49",
+        "value": "Rain ended at :49"
       }
     ],
     "dewpoint_decimal": {
@@ -89,7 +90,11 @@
       "value": 0.01,
       "spoken": "zero point zero one"
     },
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP035",
+      "value": 1003.5,
+      "spoken": "one zero zero three point five"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0044",
@@ -104,8 +109,8 @@
     "spoken": "four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -741,
-  "pressure_altitude": 490,
+  "density_altitude": -751,
+  "pressure_altitude": 480,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
