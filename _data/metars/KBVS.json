@@ -1,20 +1,23 @@
 {
   "meta": {
-    "timestamp": "2022-12-13T11:01:41.348389Z",
+    "timestamp": "2022-12-13T11:23:47.924939Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3020",
-    "value": 30.2,
-    "spoken": "three zero point two zero"
+    "repr": "A3021",
+    "value": 30.21,
+    "spoken": "three zero point two one"
   },
   "clouds": [],
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "3/2",
+    "value": 1.5,
+    "spoken": "one and one half",
+    "numerator": 3,
+    "denominator": 2,
+    "normalized": "1 1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,19 +30,24 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 131055Z AUTO 00000KT 10SM CLR M03/M03 A3020 RMK A01",
-  "sanitized": "KBVS 131055Z 00000KT 10SM M03/M03 A3020 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBVS 131115Z AUTO 00000KT 1 1/2SM BR CLR M02/M02 A3021 RMK A01 VIS 3/4V3",
+  "sanitized": "KBVS 131115Z 00000KT 1 1/2SM BR M02/M02 A3021 RMK A01 VIS 3/4V3",
   "station": "KBVS",
   "time": {
-    "repr": "131055Z",
-    "dt": "2022-12-13T10:55:00Z"
+    "repr": "131115Z",
+    "dt": "2022-12-13T11:15:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 VIS 3/4V3",
   "dewpoint": {
-    "repr": "M03",
-    "value": -3,
-    "spoken": "minus three"
+    "repr": "M02",
+    "value": -2,
+    "spoken": "minus two"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -60,13 +68,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "M03",
-    "value": -3,
-    "spoken": "minus three"
+    "repr": "M02",
+    "value": -2,
+    "spoken": "minus two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -2261,
-  "pressure_altitude": -136,
+  "density_altitude": -2151,
+  "pressure_altitude": -146,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
