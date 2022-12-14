@@ -1,20 +1,33 @@
 {
   "meta": {
-    "timestamp": "2022-12-14T13:31:45.828699Z",
+    "timestamp": "2022-12-14T13:41:24.207588Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3037",
-    "value": 30.37,
-    "spoken": "three zero point three seven"
+    "repr": "A3038",
+    "value": 30.38,
+    "spoken": "three zero point three eight"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "FEW035",
+      "type": "FEW",
+      "altitude": 35,
+      "modifier": null
+    },
+    {
+      "repr": "FEW042",
+      "type": "FEW",
+      "altitude": 42,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,17 +40,22 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 141315Z AUTO 00000KT 10SM CLR 00/00 A3037 RMK A01",
-  "sanitized": "KBVS 141315Z 00000KT 10SM 00/00 A3037 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBVS 141335Z AUTO 00000KT 4SM BR FEW035 FEW042 M00/M00 A3038 RMK A01",
+  "sanitized": "KBVS 141335Z 00000KT 4SM BR FEW035 FEW042 M00/M00 A3038 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "141315Z",
-    "dt": "2022-12-14T13:15:00Z"
+    "repr": "141335Z",
+    "dt": "2022-12-14T13:35:00Z"
   },
   "remarks": "RMK A01",
   "dewpoint": {
-    "repr": "00",
+    "repr": "M00",
     "value": 0,
     "spoken": "zero"
   },
@@ -60,13 +78,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "00",
+    "repr": "M00",
     "value": 0,
     "spoken": "zero"
   },
   "wind_variable_direction": [],
-  "density_altitude": -2071,
-  "pressure_altitude": -306,
+  "density_altitude": -2081,
+  "pressure_altitude": -316,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
