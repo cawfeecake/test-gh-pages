@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-15T19:01:17.490118Z",
+    "timestamp": "2022-12-15T19:20:42.502530Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -8,7 +8,20 @@
     "value": 30.58,
     "spoken": "three zero point five eight"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "FEW025",
+      "type": "FEW",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "BKN220",
+      "type": "BKN",
+      "altitude": 220,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -16,18 +29,26 @@
     "value": 10,
     "spoken": "one zero"
   },
-  "wind_direction": null,
+  "wind_direction": {
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
+  },
   "wind_gust": null,
-  "wind_speed": null,
+  "wind_speed": {
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
+  },
   "wx_codes": [],
-  "raw": "KNUW 151853Z 10SM 04/01 A3058 RMK AO2 SLP353 T00390011 VISNO $",
-  "sanitized": "KNUW 151853Z 10SM 04/01 A3058 RMK AO2 SLP353 T00390011 VISNO $",
+  "raw": "KNUW 151853Z COR 00000KT 10SM FEW025 BKN220 04/01 A3058 RMK SLP353 T00390011",
+  "sanitized": "KNUW 151853Z 00000KT 10SM FEW025 BKN220 04/01 A3058 RMK SLP353 T00390011",
   "station": "KNUW",
   "time": {
     "repr": "151853Z",
     "dt": "2022-12-15T18:53:00Z"
   },
-  "remarks": "RMK AO2 SLP353 T00390011 VISNO $",
+  "remarks": "RMK SLP353 T00390011",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -41,16 +62,7 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [
-      {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      }
-    ],
+    "codes": [],
     "dewpoint_decimal": {
       "repr": "0011",
       "value": 1.1,
