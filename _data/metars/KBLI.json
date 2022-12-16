@@ -1,18 +1,18 @@
 {
   "meta": {
-    "timestamp": "2022-12-16T19:40:40.166410Z",
+    "timestamp": "2022-12-16T20:01:48.805618Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3039",
-    "value": 30.39,
-    "spoken": "three zero point three nine"
+    "repr": "A3038",
+    "value": 30.38,
+    "spoken": "three zero point three eight"
   },
   "clouds": [
     {
-      "repr": "VV002",
+      "repr": "VV001",
       "type": "VV",
-      "altitude": 2,
+      "altitude": 1,
       "modifier": null
     }
   ],
@@ -43,14 +43,14 @@
       "value": "Fog"
     }
   ],
-  "raw": "KBLI 161934Z 35004KT 1/4SM R16/1200V1600FT FG VV002 01/01 A3039 RMK AO2 T00060006 $",
-  "sanitized": "KBLI 161934Z 35004KT 1/4SM R16/1200V1600FT FG VV002 01/01 A3039 RMK AO2 T00060006 $",
+  "raw": "KBLI 161953Z 35004KT 1/4SM R16/1600V2800FT FG VV001 01/01 A3038 RMK AO2 SLP299 T00060006",
+  "sanitized": "KBLI 161953Z 35004KT 1/4SM R16/1600V2800FT FG VV001 01/01 A3038 RMK AO2 SLP299 T00060006",
   "station": "KBLI",
   "time": {
-    "repr": "161934Z",
-    "dt": "2022-12-16T19:34:00Z"
+    "repr": "161953Z",
+    "dt": "2022-12-16T19:53:00Z"
   },
-  "remarks": "RMK AO2 T00060006 $",
+  "remarks": "RMK AO2 SLP299 T00060006",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -66,10 +66,6 @@
     "sunshine_minutes": null,
     "codes": [
       {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
       }
@@ -82,7 +78,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP299",
+      "value": 1029.9,
+      "spoken": "one zero two nine point nine"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0006",
@@ -92,19 +92,19 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1200V1600FT",
+      "repr": "R16/1600V2800FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "1200",
-          "value": 1200,
-          "spoken": "one two hundred"
-        },
-        {
           "repr": "1600",
           "value": 1600,
           "spoken": "one six hundred"
+        },
+        {
+          "repr": "2800",
+          "value": 2800,
+          "spoken": "two eight hundred"
         }
       ],
       "trend": null
@@ -116,8 +116,8 @@
     "spoken": "one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1987,
-  "pressure_altitude": -300,
+  "density_altitude": -1977,
+  "pressure_altitude": -290,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
