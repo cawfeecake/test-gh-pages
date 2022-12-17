@@ -1,18 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-12-17T13:26:19.357713Z",
+    "timestamp": "2022-12-17T13:40:40.700408Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3012",
-    "value": 30.12,
-    "spoken": "three zero point one two"
+    "repr": "A3010",
+    "value": 30.1,
+    "spoken": "three zero point one zero"
   },
   "clouds": [
     {
-      "repr": "OVC014",
+      "repr": "SCT006",
+      "type": "SCT",
+      "altitude": 6,
+      "modifier": null
+    },
+    {
+      "repr": "OVC011",
       "type": "OVC",
-      "altitude": 14,
+      "altitude": 11,
       "modifier": null
     }
   ],
@@ -40,14 +46,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 171253Z AUTO 00000KT 3SM BR OVC014 01/01 A3012 RMK AO2 SLP208 T00060006",
-  "sanitized": "KBLI 171253Z 00000KT 3SM BR OVC014 01/01 A3012 RMK AO2 SLP208 T00060006",
+  "raw": "KBLI 171332Z AUTO 00000KT 3SM BR SCT006 OVC011 01/01 A3010 RMK AO2 T00060006",
+  "sanitized": "KBLI 171332Z 00000KT 3SM BR SCT006 OVC011 01/01 A3010 RMK AO2 T00060006",
   "station": "KBLI",
   "time": {
-    "repr": "171253Z",
-    "dt": "2022-12-17T12:53:00Z"
+    "repr": "171332Z",
+    "dt": "2022-12-17T13:32:00Z"
   },
-  "remarks": "RMK AO2 SLP208 T00060006",
+  "remarks": "RMK AO2 T00060006",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -75,11 +81,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP208",
-      "value": 1020.8,
-      "spoken": "one zero two zero point eight"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0006",
@@ -94,8 +96,8 @@
     "spoken": "one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1717,
-  "pressure_altitude": -30,
+  "density_altitude": -1697,
+  "pressure_altitude": -10,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
