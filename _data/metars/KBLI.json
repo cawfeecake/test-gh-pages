@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-17T02:26:19.396038Z",
+    "timestamp": "2022-12-17T02:47:19.943860Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,8 +10,8 @@
   },
   "clouds": [
     {
-      "repr": "VV002",
-      "type": "VV",
+      "repr": "OVC002",
+      "type": "OVC",
       "altitude": 2,
       "modifier": null
     }
@@ -19,12 +19,9 @@
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1/2",
-    "value": 0.5,
-    "spoken": "one half",
-    "numerator": 1,
-    "denominator": 2,
-    "normalized": "1/2"
+    "repr": "1",
+    "value": 1,
+    "spoken": "one"
   },
   "wind_direction": {
     "repr": "000",
@@ -39,16 +36,16 @@
   },
   "wx_codes": [
     {
-      "repr": "FG",
-      "value": "Fog"
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KBLI 170223Z 00000KT 1/2SM R16/4000VP6000FT FG VV002 01/01 A3027 RMK AO2 T00060006",
-  "sanitized": "KBLI 170223Z 00000KT 1/2SM R16/4000VP6000FT FG VV002 01/01 A3027 RMK AO2 T00060006",
+  "raw": "KBLI 170236Z 00000KT 1SM R16/P6000FT BR OVC002 01/01 A3027 RMK AO2 T00060006",
+  "sanitized": "KBLI 170236Z 00000KT 1SM R16/P6000FT BR OVC002 01/01 A3027 RMK AO2 T00060006",
   "station": "KBLI",
   "time": {
-    "repr": "170223Z",
-    "dt": "2022-12-17T02:23:00Z"
+    "repr": "170236Z",
+    "dt": "2022-12-17T02:36:00Z"
   },
   "remarks": "RMK AO2 T00060006",
   "dewpoint": {
@@ -88,21 +85,14 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/4000VP6000FT",
+      "repr": "R16/P6000FT",
       "runway": "16",
-      "visibility": null,
-      "variable_visibility": [
-        {
-          "repr": "4000",
-          "value": 4000,
-          "spoken": "four thousand"
-        },
-        {
-          "repr": "P6000",
-          "value": null,
-          "spoken": "greater than six thousand"
-        }
-      ],
+      "visibility": {
+        "repr": "P6000",
+        "value": null,
+        "spoken": "greater than six thousand"
+      },
+      "variable_visibility": [],
       "trend": null
     }
   ],
