@@ -1,53 +1,64 @@
 {
   "meta": {
-    "timestamp": "2022-12-17T19:40:48.650077Z",
+    "timestamp": "2022-12-17T20:01:18.240798Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3006",
-    "value": 30.06,
-    "spoken": "three zero point zero six"
+    "repr": "A3004",
+    "value": 30.04,
+    "spoken": "three zero point zero four"
   },
   "clouds": [
     {
-      "repr": "OVC007",
+      "repr": "FEW006",
+      "type": "FEW",
+      "altitude": 6,
+      "modifier": null
+    },
+    {
+      "repr": "BKN031",
+      "type": "BKN",
+      "altitude": 31,
+      "modifier": null
+    },
+    {
+      "repr": "OVC045",
       "type": "OVC",
-      "altitude": 7,
+      "altitude": 45,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "8",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_direction": {
     "repr": "190",
     "value": 190,
     "spoken": "one nine zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "15",
+    "value": 15,
+    "spoken": "one five"
+  },
   "wind_speed": {
     "repr": "07",
     "value": 7,
     "spoken": "seven"
   },
-  "wx_codes": [
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ],
-  "raw": "KBLI 171900Z 19007KT 5SM BR OVC007 03/03 A3006 RMK AO2 T00280028 $",
-  "sanitized": "KBLI 171900Z 19007KT 5SM BR OVC007 03/03 A3006 RMK AO2 T00280028 $",
+  "wx_codes": [],
+  "raw": "KBLI 171957Z 19007G15KT 8SM FEW006 BKN031 OVC045 03/03 A3004 RMK AO2 RAE57 P0000 T00280028 $",
+  "sanitized": "KBLI 171957Z 19007G15KT 8SM FEW006 BKN031 OVC045 03/03 A3004 RMK AO2 RAE57 P0000 T00280028 $",
   "station": "KBLI",
   "time": {
-    "repr": "171900Z",
-    "dt": "2022-12-17T19:00:00Z"
+    "repr": "171957Z",
+    "dt": "2022-12-17T19:57:00Z"
   },
-  "remarks": "RMK AO2 T00280028 $",
+  "remarks": "RMK AO2 RAE57 P0000 T00280028 $",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -69,6 +80,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAE57",
+        "value": "Rain ended at :57"
       }
     ],
     "dewpoint_decimal": {
@@ -94,8 +113,8 @@
     "spoken": "three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1393,
-  "pressure_altitude": 30,
+  "density_altitude": -1373,
+  "pressure_altitude": 50,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
