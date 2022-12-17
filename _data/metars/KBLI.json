@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-17T16:44:57.904192Z",
+    "timestamp": "2022-12-17T17:01:09.589893Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,18 +10,27 @@
   },
   "clouds": [
     {
-      "repr": "OVC005",
+      "repr": "BKN007",
+      "type": "BKN",
+      "altitude": 7,
+      "modifier": null
+    },
+    {
+      "repr": "OVC015",
       "type": "OVC",
-      "altitude": 5,
+      "altitude": 15,
       "modifier": null
     }
   ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "7/4",
+    "value": 1.75,
+    "spoken": "one and three quarters",
+    "numerator": 7,
+    "denominator": 4,
+    "normalized": "1 3/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -36,22 +45,26 @@
   },
   "wx_codes": [
     {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 171553Z 00000KT 3SM BR OVC005 01/01 A3008 RMK AO2 SLP195 T00110011",
-  "sanitized": "KBLI 171553Z 00000KT 3SM BR OVC005 01/01 A3008 RMK AO2 SLP195 T00110011",
+  "raw": "KBLI 171657Z 00000KT 1 3/4SM -RA BR BKN007 OVC015 02/02 A3008 RMK AO2 RAB55 P0000 T00170017 $",
+  "sanitized": "KBLI 171657Z 00000KT 1 3/4SM -RA BR BKN007 OVC015 02/02 A3008 RMK AO2 RAB55 P0000 T00170017 $",
   "station": "KBLI",
   "time": {
-    "repr": "171553Z",
-    "dt": "2022-12-17T15:53:00Z"
+    "repr": "171657Z",
+    "dt": "2022-12-17T16:57:00Z"
   },
-  "remarks": "RMK AO2 SLP195 T00110011",
+  "remarks": "RMK AO2 RAB55 P0000 T00170017 $",
   "dewpoint": {
-    "repr": "01",
-    "value": 1,
-    "spoken": "one"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -63,38 +76,46 @@
     "sunshine_minutes": null,
     "codes": [
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB55",
+        "value": "Rain began at :55"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0011",
-      "value": 1.1,
-      "spoken": "one point one"
+      "repr": "0017",
+      "value": 1.7,
+      "spoken": "one point seven"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP195",
-      "value": 1019.5,
-      "spoken": "one zero one nine point five"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0011",
-      "value": 1.1,
-      "spoken": "one point one"
+      "repr": "0017",
+      "value": 1.7,
+      "spoken": "one point seven"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "01",
-    "value": 1,
-    "spoken": "one"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1617,
+  "density_altitude": -1545,
   "pressure_altitude": 10,
   "units": {
     "accumulation": "in",
