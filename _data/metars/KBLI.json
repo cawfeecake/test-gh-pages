@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-17T08:40:42.768203Z",
+    "timestamp": "2022-12-17T09:01:33.073858Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -9,6 +9,12 @@
     "spoken": "three zero point one nine"
   },
   "clouds": [
+    {
+      "repr": "FEW001",
+      "type": "FEW",
+      "altitude": 1,
+      "modifier": null
+    },
     {
       "repr": "OVC016",
       "type": "OVC",
@@ -19,17 +25,14 @@
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "7/4",
-    "value": 1.75,
-    "spoken": "one and three quarters",
-    "numerator": 7,
-    "denominator": 4,
-    "normalized": "1 3/4"
+    "repr": "2",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_direction": {
-    "repr": "010",
-    "value": 10,
-    "spoken": "zero one zero"
+    "repr": "030",
+    "value": 30,
+    "spoken": "zero three zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -43,14 +46,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 170826Z AUTO 01004KT 1 3/4SM BR OVC016 01/01 A3019 RMK AO2 T00060006",
-  "sanitized": "KBLI 170826Z 01004KT 1 3/4SM BR OVC016 01/01 A3019 RMK AO2 T00060006",
+  "raw": "KBLI 170853Z AUTO 03004KT 2SM BR FEW001 OVC016 01/01 A3019 RMK AO2 SLP232 T00060006 58012",
+  "sanitized": "KBLI 170853Z 03004KT 2SM BR FEW001 OVC016 01/01 A3019 RMK AO2 SLP232 T00060006 58012",
   "station": "KBLI",
   "time": {
-    "repr": "170826Z",
-    "dt": "2022-12-17T08:26:00Z"
+    "repr": "170853Z",
+    "dt": "2022-12-17T08:53:00Z"
   },
-  "remarks": "RMK AO2 T00060006",
+  "remarks": "RMK AO2 SLP232 T00060006 58012",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -60,7 +63,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "58012",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 1.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -78,7 +85,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP232",
+      "value": 1023.2,
+      "spoken": "one zero two three point two"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0006",
