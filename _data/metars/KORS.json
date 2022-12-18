@@ -1,14 +1,20 @@
 {
   "meta": {
-    "timestamp": "2022-12-18T19:40:52.377436Z",
+    "timestamp": "2022-12-18T20:01:57.102378Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2993",
-    "value": 29.93,
-    "spoken": "two nine point nine three"
+    "repr": "A2992",
+    "value": 29.92,
+    "spoken": "two nine point nine two"
   },
   "clouds": [
+    {
+      "repr": "BKN004",
+      "type": "BKN",
+      "altitude": 4,
+      "modifier": null
+    },
     {
       "repr": "BKN007",
       "type": "BKN",
@@ -16,42 +22,36 @@
       "modifier": null
     },
     {
-      "repr": "BKN017",
+      "repr": "BKN019",
       "type": "BKN",
-      "altitude": 17,
-      "modifier": null
-    },
-    {
-      "repr": "OVC025",
-      "type": "OVC",
-      "altitude": 25,
+      "altitude": 19,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3/2",
-    "value": 1.5,
-    "spoken": "one and one half",
+    "repr": "3/4",
+    "value": 0.75,
+    "spoken": "three quarters",
     "numerator": 3,
-    "denominator": 2,
-    "normalized": "1 1/2"
+    "denominator": 4,
+    "normalized": "3/4"
   },
   "wind_direction": {
-    "repr": "VRB",
-    "value": null,
-    "spoken": "variable"
+    "repr": "030",
+    "value": 30,
+    "spoken": "zero three zero"
   },
   "wind_gust": {
-    "repr": "18",
-    "value": 18,
-    "spoken": "one eight"
+    "repr": "16",
+    "value": 16,
+    "spoken": "one six"
   },
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wx_codes": [
     {
@@ -63,12 +63,12 @@
       "value": "Mist"
     }
   ],
-  "raw": "KORS 181935Z AUTO VRB06G18KT 1 1/2SM -SN BR BKN007 BKN017 OVC025 M03/M04 A2993 RMK AO2",
-  "sanitized": "KORS 181935Z VRB06G18KT 1 1/2SM -SN BR BKN007 BKN017 OVC025 M03/M04 A2993 RMK AO2",
+  "raw": "KORS 181955Z AUTO 03008G16KT 350V070 3/4SM -SN BR BKN004 BKN007 BKN019 M03/M04 A2992 RMK AO2",
+  "sanitized": "KORS 181955Z 03008G16KT 350V070 3/4SM -SN BR BKN004 BKN007 BKN019 M03/M04 A2992 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "181935Z",
-    "dt": "2022-12-18T19:35:00Z"
+    "repr": "181955Z",
+    "dt": "2022-12-18T19:55:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
@@ -104,9 +104,20 @@
     "value": -3,
     "spoken": "minus three"
   },
-  "wind_variable_direction": [],
-  "density_altitude": -2132,
-  "pressure_altitude": 21,
+  "wind_variable_direction": [
+    {
+      "repr": "350",
+      "value": 350,
+      "spoken": "three five zero"
+    },
+    {
+      "repr": "070",
+      "value": 70,
+      "spoken": "zero seven zero"
+    }
+  ],
+  "density_altitude": -2122,
+  "pressure_altitude": 31,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
