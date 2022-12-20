@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-20T16:37:10.369559Z",
+    "timestamp": "2022-12-20T16:49:37.260112Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,49 +10,52 @@
   },
   "clouds": [
     {
-      "repr": "BKN011",
+      "repr": "BKN010",
       "type": "BKN",
-      "altitude": 11,
+      "altitude": 10,
       "modifier": null
     },
     {
-      "repr": "OVC050",
+      "repr": "BKN025",
+      "type": "BKN",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "OVC040",
       "type": "OVC",
-      "altitude": 50,
+      "altitude": 40,
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "1/2",
-    "value": 0.5,
-    "spoken": "one half",
-    "numerator": 1,
-    "denominator": 2,
-    "normalized": "1/2"
+    "repr": "2",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_direction": null,
   "wind_gust": null,
   "wind_speed": null,
   "wx_codes": [
     {
-      "repr": "SN",
-      "value": "Snow"
+      "repr": "-SN",
+      "value": "Light Snow"
     },
     {
-      "repr": "FZFG",
-      "value": "Freezing Fog"
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KBLI 201624Z 1/2SM R16/5000VP6000FT SN FZFG BKN011 OVC050 M09/M09 A3007 RMK AO2 P0000 T10941094",
-  "sanitized": "KBLI 201624Z 1/2SM R16/5000VP6000FT SN FZFG BKN011 OVC050 M09/M09 A3007 RMK AO2 P0000 T10941094",
+  "raw": "KBLI 201636Z 2SM -SN BR BKN010 BKN025 OVC040 M09/M09 A3007 RMK AO2 PK WND 01026/1634 P0000 T10941094",
+  "sanitized": "KBLI 201636Z 2SM -SN BR BKN010 BKN025 OVC040 M09/M09 A3007 RMK AO2 PK WND 01026/1634 P0000 T10941094",
   "station": "KBLI",
   "time": {
-    "repr": "201624Z",
-    "dt": "2022-12-20T16:24:00Z"
+    "repr": "201636Z",
+    "dt": "2022-12-20T16:36:00Z"
   },
-  "remarks": "RMK AO2 P0000 T10941094",
+  "remarks": "RMK AO2 PK WND 01026/1634 P0000 T10941094",
   "dewpoint": {
     "repr": "M09",
     "value": -9,
@@ -92,26 +95,7 @@
       "spoken": "minus nine point four"
     }
   },
-  "runway_visibility": [
-    {
-      "repr": "R16/5000VP6000FT",
-      "runway": "16",
-      "visibility": null,
-      "variable_visibility": [
-        {
-          "repr": "5000",
-          "value": 5000,
-          "spoken": "five thousand"
-        },
-        {
-          "repr": "P6000",
-          "value": null,
-          "spoken": "greater than six thousand"
-        }
-      ],
-      "trend": null
-    }
-  ],
+  "runway_visibility": [],
   "temperature": {
     "repr": "M09",
     "value": -9,
