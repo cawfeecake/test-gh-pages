@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-20T17:02:00.234433Z",
+    "timestamp": "2022-12-20T17:25:31.399958Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,53 +10,62 @@
   },
   "clouds": [
     {
-      "repr": "OVC008",
-      "type": "OVC",
+      "repr": "SCT008",
+      "type": "SCT",
       "altitude": 8,
+      "modifier": null
+    },
+    {
+      "repr": "BKN015",
+      "type": "BKN",
+      "altitude": 15,
+      "modifier": null
+    },
+    {
+      "repr": "OVC040",
+      "type": "OVC",
+      "altitude": 40,
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "1/2",
-    "value": 0.5,
-    "spoken": "one half",
-    "numerator": 1,
-    "denominator": 2,
-    "normalized": "1/2"
+    "repr": "1",
+    "value": 1,
+    "spoken": "one"
   },
   "wind_direction": {
-    "repr": "010",
-    "value": 10,
-    "spoken": "zero one zero"
+    "repr": "050",
+    "value": 50,
+    "spoken": "zero five zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wx_codes": [
     {
-      "repr": "SN",
-      "value": "Snow"
+      "repr": "-SN",
+      "value": "Light Snow"
     }
   ],
-  "raw": "KNUW 201653Z 01006KT 1/2SM SN OVC008 M03/M05 A3011 RMK AO2 TWR VIS 1 SLP196 P0000 T10331050 VISNO $",
-  "sanitized": "KNUW 201653Z 01006KT 1/2SM SN OVC008 M03/M05 A3011 RMK AO2 TWR VIS 1 SLP196 P0000 T10331050 VISNO $",
+  "raw": "KNUW 201714Z 05003KT 1SM -SN SCT008 BKN015 OVC040 M03/M04 A3011 RMK AO2 SFC VIS 3 P0001 T10331039 VISNO $",
+  "sanitized": "KNUW 201714Z 05003KT 1SM -SN SCT008 BKN015 OVC040 M03/M04 A3011 RMK AO2 SFC VIS 3 P0001 T10331039 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "201653Z",
-    "dt": "2022-12-20T16:53:00Z"
+    "repr": "201714Z",
+    "dt": "2022-12-20T17:14:00Z"
   },
-  "remarks": "RMK AO2 TWR VIS 1 SLP196 P0000 T10331050 VISNO $",
+  "remarks": "RMK AO2 SFC VIS 3 P0001 T10331039 VISNO $",
   "dewpoint": {
-    "repr": "M05",
-    "value": -5,
-    "spoken": "minus five"
+    "repr": "M04",
+    "value": -4,
+    "spoken": "minus four"
   },
-  "relative_humidity": 0.8801349317420939,
+  "relative_humidity": 0.9561345228017767,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -72,25 +81,21 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1050",
-      "value": -5,
-      "spoken": "minus five point zero"
+      "repr": "1039",
+      "value": -3.9,
+      "spoken": "minus three point nine"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP196",
-      "value": 1019.6,
-      "spoken": "one zero one nine point six"
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
     },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "1033",
