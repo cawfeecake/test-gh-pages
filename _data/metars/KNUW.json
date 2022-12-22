@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-22T18:06:25.275918Z",
+    "timestamp": "2022-12-22T18:30:32.270993Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -8,7 +8,26 @@
     "value": 30.51,
     "spoken": "three zero point five one"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "FEW025",
+      "type": "FEW",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "SCT150",
+      "type": "SCT",
+      "altitude": 150,
+      "modifier": null
+    },
+    {
+      "repr": "BKN220",
+      "type": "BKN",
+      "altitude": 220,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -28,14 +47,14 @@
     "spoken": "three"
   },
   "wx_codes": [],
-  "raw": "KNUW 221753Z 08003KT 10SM CLR M08/M13 A3051 RMK AO2 SLP332 T10831133 11083 21111 56014 VISNO $",
-  "sanitized": "KNUW 221753Z 08003KT 10SM M08/M13 A3051 RMK AO2 SLP332 T10831133 11083 21111 56014 VISNO $",
+  "raw": "KNUW 221753Z COR 08003KT 10SM FEW025 SCT150 BKN220 M08/M13 A3051 RMK AO2 SLP332 4/004 933040 T10831133 11083 21111 56014 VISNO $",
+  "sanitized": "KNUW 221753Z 08003KT 10SM FEW025 SCT150 BKN220 M08/M13 A3051 RMK AO2 SLP332 4/004 933040 T10831133 11083 21111 56014 VISNO $",
   "station": "KNUW",
   "time": {
     "repr": "221753Z",
     "dt": "2022-12-22T17:53:00Z"
   },
-  "remarks": "RMK AO2 SLP332 T10831133 11083 21111 56014 VISNO $",
+  "remarks": "RMK AO2 SLP332 4/004 933040 T10831133 11083 21111 56014 VISNO $",
   "dewpoint": {
     "repr": "M13",
     "value": -13,
@@ -84,7 +103,11 @@
       "value": 1033.2,
       "spoken": "one zero three three point two"
     },
-    "snow_depth": null,
+    "snow_depth": {
+      "repr": "4/004",
+      "value": 4,
+      "spoken": "four"
+    },
     "temperature_decimal": {
       "repr": "1083",
       "value": -8.3,
