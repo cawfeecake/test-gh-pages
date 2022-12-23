@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-23T12:44:29.849921Z",
+    "timestamp": "2022-12-23T13:10:59.692178Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -16,36 +16,35 @@
       "modifier": null
     },
     {
-      "repr": "OVC008",
-      "type": "OVC",
+      "repr": "BKN008",
+      "type": "BKN",
       "altitude": 8,
+      "modifier": null
+    },
+    {
+      "repr": "OVC018",
+      "type": "OVC",
+      "altitude": 18,
       "modifier": null
     }
   ],
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3/2",
-    "value": 1.5,
-    "spoken": "one and one half",
-    "numerator": 3,
-    "denominator": 2,
-    "normalized": "1 1/2"
+    "repr": "2",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_direction": {
-    "repr": "040",
-    "value": 40,
-    "spoken": "zero four zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
-  "wind_gust": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wx_codes": [
     {
@@ -57,20 +56,20 @@
       "value": "Mist"
     }
   ],
-  "raw": "KORS 231235Z AUTO 04004G10KT 1 1/2SM -SN BR BKN004 OVC008 M04/M05 A2994 RMK AO2",
-  "sanitized": "KORS 231235Z 04004G10KT 1 1/2SM -SN BR BKN004 OVC008 M04/M05 A2994 RMK AO2",
+  "raw": "KORS 231255Z AUTO VRB03KT 2SM -SN BR BKN004 BKN008 OVC018 M04/M04 A2994 RMK AO2 P0005",
+  "sanitized": "KORS 231255Z VRB03KT 2SM -SN BR BKN004 BKN008 OVC018 M04/M04 A2994 RMK AO2 P0005",
   "station": "KORS",
   "time": {
-    "repr": "231235Z",
-    "dt": "2022-12-23T12:35:00Z"
+    "repr": "231255Z",
+    "dt": "2022-12-23T12:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0005",
   "dewpoint": {
-    "repr": "M05",
-    "value": -5,
-    "spoken": "minus five"
+    "repr": "M04",
+    "value": -4,
+    "spoken": "minus four"
   },
-  "relative_humidity": 0.9274416207905862,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -87,7 +86,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0005",
+      "value": 0.05,
+      "spoken": "zero point zero five"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
