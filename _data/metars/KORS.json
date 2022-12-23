@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-23T21:01:15.822406Z",
+    "timestamp": "2022-12-23T21:22:59.311767Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -16,9 +16,9 @@
       "modifier": null
     },
     {
-      "repr": "OVC014",
+      "repr": "OVC010",
       "type": "OVC",
-      "altitude": 14,
+      "altitude": 10,
       "modifier": null
     }
   ],
@@ -30,25 +30,30 @@
     "spoken": "nine"
   },
   "wind_direction": {
-    "repr": "050",
-    "value": 50,
-    "spoken": "zero five zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
-  "wx_codes": [],
-  "raw": "KORS 232055Z AUTO 05006KT 9SM BKN004 OVC014 M00/M00 A2997 RMK AO2 P0002",
-  "sanitized": "KORS 232055Z 05006KT 9SM BKN004 OVC014 M00/M00 A2997 RMK AO2 P0002",
+  "wx_codes": [
+    {
+      "repr": "UP",
+      "value": "Unknown Precip"
+    }
+  ],
+  "raw": "KORS 232115Z AUTO VRB04KT 9SM UP BKN004 OVC010 M00/M00 A2997 RMK AO2",
+  "sanitized": "KORS 232115Z VRB04KT 9SM UP BKN004 OVC010 M00/M00 A2997 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "232055Z",
-    "dt": "2022-12-23T20:55:00Z"
+    "repr": "232115Z",
+    "dt": "2022-12-23T21:15:00Z"
   },
-  "remarks": "RMK AO2 P0002",
+  "remarks": "RMK AO2",
   "dewpoint": {
     "repr": "M00",
     "value": 0,
@@ -71,11 +76,7 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0002",
-      "value": 0.02,
-      "spoken": "zero point zero two"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
