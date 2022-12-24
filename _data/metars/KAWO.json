@@ -1,12 +1,12 @@
 {
   "meta": {
-    "timestamp": "2022-12-24T13:07:56.132263Z",
+    "timestamp": "2022-12-24T13:26:47.252805Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3006",
-    "value": 30.06,
-    "spoken": "three zero point zero six"
+    "repr": "A3005",
+    "value": 30.05,
+    "spoken": "three zero point zero five"
   },
   "clouds": [
     {
@@ -16,38 +16,45 @@
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "3/4",
+    "value": 0.75,
+    "spoken": "three quarters",
+    "numerator": 3,
+    "denominator": 4,
+    "normalized": "3/4"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "270",
+    "value": 270,
+    "spoken": "two seven zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
   "wx_codes": [
+    {
+      "repr": "UP",
+      "value": "Unknown Precip"
+    },
     {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 241301Z AUTO 00000KT 3SM BR OVC021 02/02 A3006 RMK AO2 UPE01 P0000 FZRANO",
-  "sanitized": "KAWO 241301Z 00000KT 3SM BR OVC021 02/02 A3006 RMK AO2 UPE01 P0000 FZRANO",
+  "raw": "KAWO 241319Z AUTO 27004KT 3/4SM UP BR OVC021 02/02 A3005 RMK AO2 P0000 FZRANO",
+  "sanitized": "KAWO 241319Z 27004KT 3/4SM UP BR OVC021 02/02 A3005 RMK AO2 P0000 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "241301Z",
-    "dt": "2022-12-24T13:01:00Z"
+    "repr": "241319Z",
+    "dt": "2022-12-24T13:19:00Z"
   },
-  "remarks": "RMK AO2 UPE01 P0000 FZRANO",
+  "remarks": "RMK AO2 P0000 FZRANO",
   "dewpoint": {
     "repr": "02",
     "value": 2,
@@ -73,10 +80,6 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "UPE01",
-        "value": "Unknown Precip ended at :01"
       }
     ],
     "dewpoint_decimal": null,
@@ -94,8 +97,8 @@
     "spoken": "two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1524,
-  "pressure_altitude": 2,
+  "density_altitude": -1514,
+  "pressure_altitude": 12,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",

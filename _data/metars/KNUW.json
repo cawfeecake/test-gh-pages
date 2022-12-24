@@ -1,18 +1,18 @@
 {
   "meta": {
-    "timestamp": "2022-12-24T13:07:55.389225Z",
+    "timestamp": "2022-12-24T13:26:46.640093Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3002",
-    "value": 30.02,
-    "spoken": "three zero point zero two"
+    "repr": "A3000",
+    "value": 30,
+    "spoken": "three zero point zero zero"
   },
   "clouds": [
     {
-      "repr": "OVC016",
+      "repr": "OVC014",
       "type": "OVC",
-      "altitude": 16,
+      "altitude": 14,
       "modifier": null
     }
   ],
@@ -29,24 +29,29 @@
     "spoken": "one four zero"
   },
   "wind_gust": {
-    "repr": "38",
-    "value": 38,
-    "spoken": "three eight"
+    "repr": "40",
+    "value": 40,
+    "spoken": "four zero"
   },
   "wind_speed": {
-    "repr": "28",
-    "value": 28,
-    "spoken": "two eight"
+    "repr": "30",
+    "value": 30,
+    "spoken": "three zero"
   },
-  "wx_codes": [],
-  "raw": "KNUW 241253Z AUTO 14028G38KT 10SM OVC016 09/07 A3002 RMK AO2 PK WND 15038/1251 RAB34E44 SLP164 P0000 T00940067 VISNO $",
-  "sanitized": "KNUW 241253Z 14028G38KT 10SM OVC016 09/07 A3002 RMK AO2 PK WND 15038/1251 RAB34E44 SLP164 P0000 T00940067 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 241312Z AUTO 14030G40KT 10SM -RA OVC014 09/07 A3000 RMK AO2 PK WND 14040/1305 RAB04 P0000 T00940067 VISNO $",
+  "sanitized": "KNUW 241312Z 14030G40KT 10SM -RA OVC014 09/07 A3000 RMK AO2 PK WND 14040/1305 RAB04 P0000 T00940067 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "241253Z",
-    "dt": "2022-12-24T12:53:00Z"
+    "repr": "241312Z",
+    "dt": "2022-12-24T13:12:00Z"
   },
-  "remarks": "RMK AO2 PK WND 15038/1251 RAB34E44 SLP164 P0000 T00940067 VISNO $",
+  "remarks": "RMK AO2 PK WND 14040/1305 RAB04 P0000 T00940067 VISNO $",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -72,6 +77,10 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB04",
+        "value": "Rain began at :04"
       }
     ],
     "dewpoint_decimal": {
@@ -82,11 +91,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP164",
-      "value": 1016.4,
-      "spoken": "one zero one six point four"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0094",
@@ -101,8 +106,8 @@
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -714,
-  "pressure_altitude": -53,
+  "density_altitude": -694,
+  "pressure_altitude": -33,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
