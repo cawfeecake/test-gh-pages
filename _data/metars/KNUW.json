@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2022-12-24T16:03:36.072197Z",
+    "timestamp": "2022-12-24T16:34:31.601508Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
@@ -10,13 +10,25 @@
   },
   "clouds": [
     {
-      "repr": "OVC010",
-      "type": "OVC",
+      "repr": "SCT010",
+      "type": "SCT",
       "altitude": 10,
+      "modifier": null
+    },
+    {
+      "repr": "SCT070",
+      "type": "SCT",
+      "altitude": 70,
+      "modifier": null
+    },
+    {
+      "repr": "OVC095",
+      "type": "OVC",
+      "altitude": 95,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -29,29 +41,24 @@
     "spoken": "one four zero"
   },
   "wind_gust": {
-    "repr": "42",
-    "value": 42,
-    "spoken": "four two"
+    "repr": "36",
+    "value": 36,
+    "spoken": "three six"
   },
   "wind_speed": {
-    "repr": "32",
-    "value": 32,
-    "spoken": "three two"
+    "repr": "27",
+    "value": 27,
+    "spoken": "two seven"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KNUW 241553Z AUTO 14032G42KT 10SM -RA OVC010 09/07 A2993 RMK AO2 PK WND 14043/1538 RAB36 SLP134 P0000 T00890072 VISNO $",
-  "sanitized": "KNUW 241553Z 14032G42KT 10SM -RA OVC010 09/07 A2993 RMK AO2 PK WND 14043/1538 RAB36 SLP134 P0000 T00890072 VISNO $",
+  "wx_codes": [],
+  "raw": "KNUW 241625Z AUTO 14027G36KT 10SM SCT010 SCT070 OVC095 09/07 A2993 RMK AO2 PK WND 13041/1603 RAE13 CIG 010 P0001 T00890072 VISNO $",
+  "sanitized": "KNUW 241625Z 14027G36KT 10SM SCT010 SCT070 OVC095 09/07 A2993 RMK AO2 PK WND 13041/1603 RAE13 CIG 010 P0001 T00890072 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "241553Z",
-    "dt": "2022-12-24T15:53:00Z"
+    "repr": "241625Z",
+    "dt": "2022-12-24T16:25:00Z"
   },
-  "remarks": "RMK AO2 PK WND 14043/1538 RAB36 SLP134 P0000 T00890072 VISNO $",
+  "remarks": "RMK AO2 PK WND 13041/1603 RAE13 CIG 010 P0001 T00890072 VISNO $",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -75,12 +82,8 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAB36",
-        "value": "Rain began at :36"
+        "repr": "RAE13",
+        "value": "Rain ended at :13"
       }
     ],
     "dewpoint_decimal": {
@@ -90,12 +93,12 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP134",
-      "value": 1013.4,
-      "spoken": "one zero one three point four"
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
     },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0089",
