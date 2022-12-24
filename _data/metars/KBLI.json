@@ -1,44 +1,32 @@
 {
   "meta": {
-    "timestamp": "2022-12-24T20:40:34.578518Z",
+    "timestamp": "2022-12-24T21:00:59.780768Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2987",
-    "value": 29.87,
-    "spoken": "two nine point eight seven"
+    "repr": "A2989",
+    "value": 29.89,
+    "spoken": "two nine point eight nine"
   },
   "clouds": [
     {
-      "repr": "SCT015",
-      "type": "SCT",
-      "altitude": 15,
-      "modifier": null
-    },
-    {
-      "repr": "BKN040",
-      "type": "BKN",
-      "altitude": 40,
-      "modifier": null
-    },
-    {
-      "repr": "OVC075",
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 75,
+      "altitude": 60,
       "modifier": null
     }
   ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "8",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_direction": {
-    "repr": "170",
-    "value": 170,
-    "spoken": "one seven zero"
+    "repr": "180",
+    "value": 180,
+    "spoken": "one eight zero"
   },
   "wind_gust": {
     "repr": "32",
@@ -46,30 +34,43 @@
     "spoken": "three two"
   },
   "wind_speed": {
-    "repr": "20",
-    "value": 20,
-    "spoken": "two zero"
+    "repr": "15",
+    "value": 15,
+    "spoken": "one five"
   },
-  "wx_codes": [],
-  "raw": "KBLI 241953Z 17020G32KT 10SM SCT015 BKN040 OVC075 10/09 A2987 RMK AO2 PK WND 18043/1905 RAE50 SLP123 P0004 T01000089 $",
-  "sanitized": "KBLI 241953Z 17020G32KT 10SM SCT015 BKN040 OVC075 10/09 A2987 RMK AO2 PK WND 18043/1905 RAE50 SLP123 P0004 T01000089 $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 242053Z 18015G32KT 8SM -RA OVC060 11/09 A2989 RMK AO2 PK WND 17034/2018 RAB06 SLP129 P0000 60006 T01060089 53002 $",
+  "sanitized": "KBLI 242053Z 18015G32KT 8SM -RA OVC060 11/09 A2989 RMK AO2 PK WND 17034/2018 RAB06 SLP129 P0000 60006 T01060089 53002 $",
   "station": "KBLI",
   "time": {
-    "repr": "241953Z",
-    "dt": "2022-12-24T19:53:00Z"
+    "repr": "242053Z",
+    "dt": "2022-12-24T20:53:00Z"
   },
-  "remarks": "RMK AO2 PK WND 18043/1905 RAE50 SLP123 P0004 T01000089 $",
+  "remarks": "RMK AO2 PK WND 17034/2018 RAB06 SLP129 P0000 60006 T01060089 53002 $",
   "dewpoint": {
     "repr": "09",
     "value": 9,
     "spoken": "nine"
   },
-  "relative_humidity": 0.9286987212378438,
+  "relative_humidity": 0.8922144848734106,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "53002",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.2
+    },
+    "precip_36_hours": {
+      "repr": "60006",
+      "value": 0.06,
+      "spoken": "zero point zero six"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -82,8 +83,12 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "RAE50",
-        "value": "Rain ended at :50"
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB06",
+        "value": "Rain began at :06"
       }
     ],
     "dewpoint_decimal": {
@@ -93,32 +98,28 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0004",
-      "value": 0.04,
-      "spoken": "zero point zero four"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP123",
-      "value": 1012.3,
-      "spoken": "one zero one two point three"
+      "repr": "SLP129",
+      "value": 1012.9,
+      "spoken": "one zero one two point nine"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0100",
-      "value": 10,
-      "spoken": "one zero point zero"
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -339,
-  "pressure_altitude": 220,
+  "density_altitude": -287,
+  "pressure_altitude": 200,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
