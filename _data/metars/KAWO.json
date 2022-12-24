@@ -1,20 +1,14 @@
 {
   "meta": {
-    "timestamp": "2022-12-24T12:42:29.898793Z",
+    "timestamp": "2022-12-24T13:07:56.132263Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A3007",
-    "value": 30.07,
-    "spoken": "three zero point zero seven"
+    "repr": "A3006",
+    "value": 30.06,
+    "spoken": "three zero point zero six"
   },
   "clouds": [
-    {
-      "repr": "SCT002",
-      "type": "SCT",
-      "altitude": 2,
-      "modifier": null
-    },
     {
       "repr": "OVC021",
       "type": "OVC",
@@ -22,15 +16,12 @@
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "3/4",
-    "value": 0.75,
-    "spoken": "three quarters",
-    "numerator": 3,
-    "denominator": 4,
-    "normalized": "3/4"
+    "repr": "3",
+    "value": 3,
+    "spoken": "three"
   },
   "wind_direction": {
     "repr": "000",
@@ -45,28 +36,24 @@
   },
   "wx_codes": [
     {
-      "repr": "-RA",
-      "value": "Light Rain"
-    },
-    {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 241229Z AUTO 00000KT 3/4SM -RA BR SCT002 OVC021 03/02 A3007 RMK AO2 RAB08 P0001",
-  "sanitized": "KAWO 241229Z 00000KT 3/4SM -RA BR SCT002 OVC021 03/02 A3007 RMK AO2 RAB08 P0001",
+  "raw": "KAWO 241301Z AUTO 00000KT 3SM BR OVC021 02/02 A3006 RMK AO2 UPE01 P0000 FZRANO",
+  "sanitized": "KAWO 241301Z 00000KT 3SM BR OVC021 02/02 A3006 RMK AO2 UPE01 P0000 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "241229Z",
-    "dt": "2022-12-24T12:29:00Z"
+    "repr": "241301Z",
+    "dt": "2022-12-24T13:01:00Z"
   },
-  "remarks": "RMK AO2 RAB08 P0001",
+  "remarks": "RMK AO2 UPE01 P0000 FZRANO",
   "dewpoint": {
     "repr": "02",
     "value": 2,
     "spoken": "two"
   },
-  "relative_humidity": 0.9313691326652258,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -80,31 +67,35 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "RAB08",
-        "value": "Rain began at :08"
+        "repr": "FZRANO",
+        "value": "Freezing rain information not available"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "UPE01",
+        "value": "Unknown Precip ended at :01"
       }
     ],
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1414,
-  "pressure_altitude": -8,
+  "density_altitude": -1524,
+  "pressure_altitude": 2,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
