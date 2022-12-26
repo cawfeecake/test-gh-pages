@@ -1,30 +1,24 @@
 {
   "meta": {
-    "timestamp": "2022-12-26T11:40:42.109391Z",
+    "timestamp": "2022-12-26T12:08:43.249778Z",
     "stations_updated": "2022-09-05"
   },
   "altimeter": {
-    "repr": "A2978",
-    "value": 29.78,
-    "spoken": "two nine point seven eight"
+    "repr": "A2973",
+    "value": 29.73,
+    "spoken": "two nine point seven three"
   },
   "clouds": [
     {
-      "repr": "BKN047",
+      "repr": "BKN043",
       "type": "BKN",
-      "altitude": 47,
+      "altitude": 43,
       "modifier": null
     },
     {
-      "repr": "BKN060",
-      "type": "BKN",
-      "altitude": 60,
-      "modifier": null
-    },
-    {
-      "repr": "OVC100",
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 100,
+      "altitude": 60,
       "modifier": null
     }
   ],
@@ -41,36 +35,61 @@
     "spoken": "one two zero"
   },
   "wind_gust": {
-    "repr": "25",
-    "value": 25,
-    "spoken": "two five"
+    "repr": "23",
+    "value": 23,
+    "spoken": "two three"
   },
   "wind_speed": {
     "repr": "18",
     "value": 18,
     "spoken": "one eight"
   },
-  "wx_codes": [],
-  "raw": "KAWO 261056Z AUTO 12018G25KT 10SM BKN047 BKN060 OVC100 13/11 A2978 RMK AO2 PK WND 16026/1004 RAE49 SLP087 P0001 T01330111",
-  "sanitized": "KAWO 261056Z 12018G25KT 10SM BKN047 BKN060 OVC100 13/11 A2978 RMK AO2 PK WND 16026/1004 RAE49 SLP087 P0001 T01330111",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 261156Z AUTO 12018G23KT 10SM -RA BKN043 OVC060 14/11 A2973 RMK AO2 RAB06 SLP071 P0000 60029 70061 T01390106 10139 20089 58046",
+  "sanitized": "KAWO 261156Z 12018G23KT 10SM -RA BKN043 OVC060 14/11 A2973 RMK AO2 RAB06 SLP071 P0000 60029 70061 T01390106 10139 20089 58046",
   "station": "KAWO",
   "time": {
-    "repr": "261056Z",
-    "dt": "2022-12-26T10:56:00Z"
+    "repr": "261156Z",
+    "dt": "2022-12-26T11:56:00Z"
   },
-  "remarks": "RMK AO2 PK WND 16026/1004 RAE49 SLP087 P0001 T01330111",
+  "remarks": "RMK AO2 RAB06 SLP071 P0000 60029 70061 T01390106 10139 20089 58046",
   "dewpoint": {
     "repr": "11",
     "value": 11,
     "spoken": "one one"
   },
-  "relative_humidity": 0.8652137135915917,
+  "relative_humidity": 0.8048589656881102,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
-    "precip_24_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10139",
+      "value": 13.9,
+      "spoken": "one three point nine"
+    },
+    "minimum_temperature_6": {
+      "repr": "20089",
+      "value": 8.9,
+      "spoken": "eight point nine"
+    },
+    "pressure_tendency": {
+      "repr": "58046",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 4.6
+    },
+    "precip_36_hours": {
+      "repr": "60029",
+      "value": 0.29,
+      "spoken": "zero point two nine"
+    },
+    "precip_24_hours": {
+      "repr": "70061",
+      "value": 0.61,
+      "spoken": "zero point six one"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
@@ -78,43 +97,43 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "RAE49",
-        "value": "Rain ended at :49"
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB06",
+        "value": "Rain began at :06"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0111",
-      "value": 11.1,
-      "spoken": "one one point one"
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP087",
-      "value": 1008.7,
-      "spoken": "one zero zero eight point seven"
+      "repr": "SLP071",
+      "value": 1007.1,
+      "spoken": "one zero zero seven point one"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0133",
-      "value": 13.3,
-      "spoken": "one three point three"
+      "repr": "0139",
+      "value": 13.9,
+      "spoken": "one three point nine"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
+    "repr": "14",
+    "value": 14,
+    "spoken": "one four"
   },
   "wind_variable_direction": [],
-  "density_altitude": 112,
-  "pressure_altitude": 282,
+  "density_altitude": 234,
+  "pressure_altitude": 332,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
