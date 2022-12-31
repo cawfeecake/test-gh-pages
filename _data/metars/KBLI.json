@@ -1,8 +1,9 @@
 {
   "meta": {
-    "timestamp": "2022-12-31T01:54:30.678004Z",
+    "timestamp": "2022-12-31T02:32:00.902527Z",
     "stations_updated": "2022-12-27",
-    "cache-timestamp": "2022-12-31T01:54:06.739000Z"
+    "cache-timestamp": "2022-12-31T02:28:06.035000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A2949",
@@ -11,25 +12,19 @@
   },
   "clouds": [
     {
-      "repr": "FEW015",
-      "type": "FEW",
-      "altitude": 15,
-      "modifier": null
-    },
-    {
-      "repr": "SCT030",
-      "type": "SCT",
-      "altitude": 30,
-      "modifier": null
-    },
-    {
-      "repr": "BKN040",
+      "repr": "BKN020",
       "type": "BKN",
-      "altitude": 40,
+      "altitude": 20,
+      "modifier": null
+    },
+    {
+      "repr": "OVC030",
+      "type": "OVC",
+      "altitude": 30,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
     "repr": "8",
@@ -37,9 +32,9 @@
     "spoken": "eight"
   },
   "wind_direction": {
-    "repr": "180",
-    "value": 180,
-    "spoken": "one eight zero"
+    "repr": "190",
+    "value": 190,
+    "spoken": "one nine zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -53,14 +48,14 @@
       "value": "Light Rain"
     }
   ],
-  "raw": "KBLI 310053Z 18004KT 8SM -RA FEW015 SCT030 BKN040 09/08 A2949 RMK AO2 RAB06 SLP993 P0000 T00890078",
-  "sanitized": "KBLI 310053Z 18004KT 8SM -RA FEW015 SCT030 BKN040 09/08 A2949 RMK AO2 RAB06 SLP993 P0000 T00890078",
+  "raw": "KBLI 310153Z 19004KT 8SM -RA BKN020 OVC030 09/08 A2949 RMK AO2 RAE23B48 SLP993 P0000 T00890078",
+  "sanitized": "KBLI 310153Z 19004KT 8SM -RA BKN020 OVC030 09/08 A2949 RMK AO2 RAE23B48 SLP993 P0000 T00890078",
   "station": "KBLI",
   "time": {
-    "repr": "310053Z",
-    "dt": "2022-12-31T00:53:00Z"
+    "repr": "310153Z",
+    "dt": "2022-12-31T01:53:00Z"
   },
-  "remarks": "RMK AO2 RAB06 SLP993 P0000 T00890078",
+  "remarks": "RMK AO2 RAE23B48 SLP993 P0000 T00890078",
   "dewpoint": {
     "repr": "08",
     "value": 8,
@@ -82,10 +77,6 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAB06",
-        "value": "Rain began at :06"
       }
     ],
     "dewpoint_decimal": {
