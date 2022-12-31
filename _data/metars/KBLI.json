@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2022-12-31T06:03:58.374348Z",
-    "stations_updated": "2022-12-27",
-    "cache-timestamp": "2022-12-31T06:03:55.161000Z"
+    "timestamp": "2022-12-31T06:29:20.709174Z",
+    "stations_updated": "2022-12-27"
   },
   "altimeter": {
     "repr": "A2952",
@@ -11,15 +10,15 @@
   },
   "clouds": [
     {
-      "repr": "BKN100",
+      "repr": "BKN070",
       "type": "BKN",
-      "altitude": 100,
+      "altitude": 70,
       "modifier": null
     },
     {
-      "repr": "OVC120",
+      "repr": "OVC085",
       "type": "OVC",
-      "altitude": 120,
+      "altitude": 85,
       "modifier": null
     }
   ],
@@ -31,62 +30,95 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "180",
-    "value": 180,
-    "spoken": "one eight zero"
+    "repr": "170",
+    "value": 170,
+    "spoken": "one seven zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "20",
+    "value": 20,
+    "spoken": "two zero"
+  },
   "wind_speed": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
   },
-  "wx_codes": [],
-  "raw": "KBLI 310453Z 18005KT 10SM BKN100 OVC120 09/07 A2952 RMK AO2 SLP004 T00890072",
-  "sanitized": "KBLI 310453Z 18005KT 10SM BKN100 OVC120 09/07 A2952 RMK AO2 SLP004 T00890072",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 310553Z 17012G20KT 10SM -RA BKN070 OVC085 09/07 A2952 RMK AO2 RAB44 SLP005 P0000 60009 T00940067 10100 20083 51006",
+  "sanitized": "KBLI 310553Z 17012G20KT 10SM -RA BKN070 OVC085 09/07 A2952 RMK AO2 RAB44 SLP005 P0000 60009 T00940067 10100 20083 51006",
   "station": "KBLI",
   "time": {
-    "repr": "310453Z",
-    "dt": "2022-12-31T04:53:00Z"
+    "repr": "310553Z",
+    "dt": "2022-12-31T05:53:00Z"
   },
-  "remarks": "RMK AO2 SLP004 T00890072",
+  "remarks": "RMK AO2 RAB44 SLP005 P0000 60009 T00940067 10100 20083 51006",
   "dewpoint": {
     "repr": "07",
     "value": 7,
     "spoken": "seven"
   },
-  "relative_humidity": 0.8908355350985154,
+  "relative_humidity": 0.8322719985957746,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10100",
+      "value": 10,
+      "spoken": "one zero point zero"
+    },
+    "minimum_temperature_6": {
+      "repr": "20083",
+      "value": 8.3,
+      "spoken": "eight point three"
+    },
+    "pressure_tendency": {
+      "repr": "51006",
+      "tendency": "Increasing, then steady",
+      "change": 0.6
+    },
+    "precip_36_hours": {
+      "repr": "60009",
+      "value": 0.09,
+      "spoken": "zero point zero nine"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB44",
+        "value": "Rain began at :44"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0072",
-      "value": 7.2,
-      "spoken": "seven point two"
+      "repr": "0067",
+      "value": 6.7,
+      "spoken": "six point seven"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP004",
-      "value": 1000.4,
-      "spoken": "one zero zero zero point four"
+      "repr": "SLP005",
+      "value": 1000.5,
+      "spoken": "one zero zero zero point five"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0089",
-      "value": 8.9,
-      "spoken": "eight point nine"
+      "repr": "0094",
+      "value": 9.4,
+      "spoken": "nine point four"
     }
   },
   "runway_visibility": [],
@@ -96,7 +128,7 @@
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -121,
+  "density_altitude": -61,
   "pressure_altitude": 570,
   "units": {
     "accumulation": "in",
