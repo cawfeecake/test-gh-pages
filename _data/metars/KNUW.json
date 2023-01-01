@@ -1,29 +1,29 @@
 {
   "meta": {
-    "timestamp": "2023-01-01T09:24:09.020732Z",
+    "timestamp": "2023-01-01T09:40:42.189511Z",
     "stations_updated": "2022-12-27",
-    "cache-timestamp": "2023-01-01T09:24:06.340000Z"
+    "cache-timestamp": "2023-01-01T09:40:06.411000Z"
   },
   "altimeter": {
-    "repr": "A3009",
-    "value": 30.09,
-    "spoken": "three zero point zero nine"
+    "repr": "A3010",
+    "value": 30.1,
+    "spoken": "three zero point one zero"
   },
   "clouds": [
     {
-      "repr": "SCT010",
-      "type": "SCT",
+      "repr": "BKN010",
+      "type": "BKN",
       "altitude": 10,
       "modifier": null
     },
     {
-      "repr": "OVC050",
+      "repr": "OVC048",
       "type": "OVC",
-      "altitude": 50,
+      "altitude": 48,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -31,25 +31,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "250",
-    "value": 250,
-    "spoken": "two five zero"
+    "repr": "260",
+    "value": 260,
+    "spoken": "two six zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
-  "wx_codes": [],
-  "raw": "KNUW 010905Z AUTO 25008KT 10SM SCT010 OVC050 07/06 A3009 RMK AO2 CIG 011 T00720056 VISNO $",
-  "sanitized": "KNUW 010905Z 25008KT 10SM SCT010 OVC050 07/06 A3009 RMK AO2 CIG 011 T00720056 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 010930Z AUTO 26007KT 10SM -RA BKN010 OVC048 07/06 A3010 RMK AO2 RAB22 P0000 T00720056 VISNO $",
+  "sanitized": "KNUW 010930Z 26007KT 10SM -RA BKN010 OVC048 07/06 A3010 RMK AO2 RAB22 P0000 T00720056 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "010905Z",
-    "dt": "2023-01-01T09:05:00Z"
+    "repr": "010930Z",
+    "dt": "2023-01-01T09:30:00Z"
   },
-  "remarks": "RMK AO2 CIG 011 T00720056 VISNO $",
+  "remarks": "RMK AO2 RAB22 P0000 T00720056 VISNO $",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -71,6 +76,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB22",
+        "value": "Rain began at :22"
       }
     ],
     "dewpoint_decimal": {
@@ -96,8 +109,8 @@
     "spoken": "seven"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1048,
-  "pressure_altitude": -123,
+  "density_altitude": -1058,
+  "pressure_altitude": -133,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
