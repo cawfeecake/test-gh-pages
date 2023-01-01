@@ -1,19 +1,24 @@
 {
   "meta": {
-    "timestamp": "2023-01-01T11:40:38.924111Z",
-    "stations_updated": "2022-12-27",
-    "cache-timestamp": "2023-01-01T11:40:06.801000Z"
+    "timestamp": "2023-01-01T12:07:45.743914Z",
+    "stations_updated": "2022-12-27"
   },
   "altimeter": {
-    "repr": "A3013",
-    "value": 30.13,
-    "spoken": "three zero point one three"
+    "repr": "A3014",
+    "value": 30.14,
+    "spoken": "three zero point one four"
   },
   "clouds": [
     {
-      "repr": "OVC012",
+      "repr": "BKN014",
+      "type": "BKN",
+      "altitude": 14,
+      "modifier": null
+    },
+    {
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 12,
+      "altitude": 60,
       "modifier": null
     }
   ],
@@ -25,37 +30,57 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "260",
-    "value": 260,
-    "spoken": "two six zero"
+    "repr": "240",
+    "value": 240,
+    "spoken": "two four zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "07",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wx_codes": [],
-  "raw": "KNUW 011053Z AUTO 26007KT 10SM OVC012 07/06 A3013 RMK AO2 RAE10 SLP203 P0000 T00720056 VISNO $",
-  "sanitized": "KNUW 011053Z 26007KT 10SM OVC012 07/06 A3013 RMK AO2 RAE10 SLP203 P0000 T00720056 VISNO $",
+  "raw": "KNUW 011153Z AUTO 24008KT 10SM BKN014 OVC060 07/06 A3014 RMK AO2 SLP206 60001 70006 T00670056 10072 20067 51017 VISNO $",
+  "sanitized": "KNUW 011153Z 24008KT 10SM BKN014 OVC060 07/06 A3014 RMK AO2 SLP206 60001 70006 T00670056 10072 20067 51017 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "011053Z",
-    "dt": "2023-01-01T10:53:00Z"
+    "repr": "011153Z",
+    "dt": "2023-01-01T11:53:00Z"
   },
-  "remarks": "RMK AO2 RAE10 SLP203 P0000 T00720056 VISNO $",
+  "remarks": "RMK AO2 SLP206 60001 70006 T00670056 10072 20067 51017 VISNO $",
   "dewpoint": {
     "repr": "06",
     "value": 6,
     "spoken": "six"
   },
-  "relative_humidity": 0.8956218363001711,
+  "relative_humidity": 0.9268723723701822,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
-    "precip_24_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10072",
+      "value": 7.2,
+      "spoken": "seven point two"
+    },
+    "minimum_temperature_6": {
+      "repr": "20067",
+      "value": 6.7,
+      "spoken": "six point seven"
+    },
+    "pressure_tendency": {
+      "repr": "51017",
+      "tendency": "Increasing, then steady",
+      "change": 1.7
+    },
+    "precip_36_hours": {
+      "repr": "60001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
+    "precip_24_hours": {
+      "repr": "70006",
+      "value": 0.06,
+      "spoken": "zero point zero six"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
@@ -65,14 +90,6 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAE10",
-        "value": "Rain ended at :10"
       }
     ],
     "dewpoint_decimal": {
@@ -84,15 +101,15 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP203",
-      "value": 1020.3,
-      "spoken": "one zero two zero point three"
+      "repr": "SLP206",
+      "value": 1020.6,
+      "spoken": "one zero two zero point six"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0072",
-      "value": 7.2,
-      "spoken": "seven point two"
+      "repr": "0067",
+      "value": 6.7,
+      "spoken": "six point seven"
     }
   },
   "runway_visibility": [],
@@ -102,8 +119,8 @@
     "spoken": "seven"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1088,
-  "pressure_altitude": -163,
+  "density_altitude": -1158,
+  "pressure_altitude": -173,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
