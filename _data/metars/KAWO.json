@@ -1,20 +1,31 @@
 {
   "meta": {
-    "timestamp": "2023-01-02T07:23:22.845460Z",
-    "stations_updated": "2022-12-27"
+    "timestamp": "2023-01-02T07:40:46.443063Z",
+    "stations_updated": "2022-12-27",
+    "cache-timestamp": "2023-01-02T07:40:07.944000Z"
   },
   "altimeter": {
     "repr": "A3000",
     "value": 30,
     "spoken": "three zero point zero zero"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -29,16 +40,16 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ],
-  "raw": "KAWO 020712Z AUTO 00000KT 3SM BR CLR M01/M01 A3000 RMK AO2 FZRANO",
-  "sanitized": "KAWO 020712Z 00000KT 3SM BR M01/M01 A3000 RMK AO2 FZRANO",
+  "raw": "KAWO 020731Z AUTO 00000KT 1/2SM FZFG VV002 M01/M01 A3000 RMK AO2 FZRANO",
+  "sanitized": "KAWO 020731Z 00000KT 1/2SM FZFG VV002 M01/M01 A3000 RMK AO2 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "020712Z",
-    "dt": "2023-01-02T07:12:00Z"
+    "repr": "020731Z",
+    "dt": "2023-01-02T07:31:00Z"
   },
   "remarks": "RMK AO2 FZRANO",
   "dewpoint": {
