@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-01-10T14:45:20.251774Z",
-    "stations_updated": "2022-12-27"
+    "timestamp": "2023-01-10T15:08:12.463595Z",
+    "stations_updated": "2022-12-27",
+    "cache-timestamp": "2023-01-10T15:08:05.933000Z"
   },
   "altimeter": {
     "repr": "A2968",
@@ -10,9 +11,9 @@
   },
   "clouds": [
     {
-      "repr": "OVC037",
+      "repr": "OVC040",
       "type": "OVC",
-      "altitude": 37,
+      "altitude": 40,
       "modifier": null
     }
   ],
@@ -24,25 +25,25 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "030",
-    "value": 30,
-    "spoken": "zero three zero"
+    "repr": "360",
+    "value": 360,
+    "spoken": "three six zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "05",
+    "value": 5,
+    "spoken": "five"
   },
   "wx_codes": [],
-  "raw": "KBLI 101353Z AUTO 03004KT 10SM OVC037 07/06 A2968 RMK AO2 RAE06 SLP059 P0000 T00670061",
-  "sanitized": "KBLI 101353Z 03004KT 10SM OVC037 07/06 A2968 RMK AO2 RAE06 SLP059 P0000 T00670061",
+  "raw": "KBLI 101453Z 36005KT 10SM OVC040 07/06 A2968 RMK AO2 SLP059 60000 T00670061 50002",
+  "sanitized": "KBLI 101453Z 36005KT 10SM OVC040 07/06 A2968 RMK AO2 SLP059 60000 T00670061 50002",
   "station": "KBLI",
   "time": {
-    "repr": "101353Z",
-    "dt": "2023-01-10T13:53:00Z"
+    "repr": "101453Z",
+    "dt": "2023-01-10T14:53:00Z"
   },
-  "remarks": "RMK AO2 RAE06 SLP059 P0000 T00670061",
+  "remarks": "RMK AO2 SLP059 60000 T00670061 50002",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -52,22 +53,22 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "50002",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.2
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAE06",
-        "value": "Rain ended at :06"
       }
     ],
     "dewpoint_decimal": {
