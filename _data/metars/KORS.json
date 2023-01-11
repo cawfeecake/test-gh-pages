@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-01-11T17:42:04.621840Z",
-    "stations_updated": "2022-12-27"
+    "timestamp": "2023-01-11T18:08:25.141602Z",
+    "stations_updated": "2022-12-27",
+    "cache-timestamp": "2023-01-11T18:08:05.048000Z"
   },
   "altimeter": {
     "repr": "A2986",
@@ -10,9 +11,15 @@
   },
   "clouds": [
     {
-      "repr": "OVC032",
-      "type": "OVC",
+      "repr": "SCT032",
+      "type": "SCT",
       "altitude": 32,
+      "modifier": null
+    },
+    {
+      "repr": "OVC095",
+      "type": "OVC",
+      "altitude": 95,
       "modifier": null
     }
   ],
@@ -24,23 +31,27 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "VRB",
-    "value": null,
-    "spoken": "variable"
+    "repr": "140",
+    "value": 140,
+    "spoken": "one four zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "16",
+    "value": 16,
+    "spoken": "one six"
+  },
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wx_codes": [],
-  "raw": "KORS 111735Z AUTO VRB06KT 10SM OVC032 11/05 A2986 RMK AO2",
-  "sanitized": "KORS 111735Z VRB06KT 10SM OVC032 11/05 A2986 RMK AO2",
+  "raw": "KORS 111755Z AUTO 14008G16KT 090V190 10SM SCT032 OVC095 11/05 A2986 RMK AO2",
+  "sanitized": "KORS 111755Z 14008G16KT 090V190 10SM SCT032 OVC095 11/05 A2986 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "111735Z",
-    "dt": "2023-01-11T17:35:00Z"
+    "repr": "111755Z",
+    "dt": "2023-01-11T17:55:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
@@ -76,7 +87,18 @@
     "value": 11,
     "spoken": "one one"
   },
-  "wind_variable_direction": [],
+  "wind_variable_direction": [
+    {
+      "repr": "090",
+      "value": 90,
+      "spoken": "zero nine zero"
+    },
+    {
+      "repr": "190",
+      "value": 190,
+      "spoken": "one nine zero"
+    }
+  ],
   "density_altitude": -382,
   "pressure_altitude": 91,
   "units": {
