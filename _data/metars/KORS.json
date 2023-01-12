@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-01-12T08:45:25.348830Z",
-    "stations_updated": "2022-12-27"
+    "timestamp": "2023-01-12T09:06:40.043605Z",
+    "stations_updated": "2022-12-27",
+    "cache-timestamp": "2023-01-12T09:06:06.512000Z"
   },
   "altimeter": {
     "repr": "A2979",
@@ -16,9 +17,9 @@
       "modifier": null
     },
     {
-      "repr": "SCT049",
-      "type": "SCT",
-      "altitude": 49,
+      "repr": "BKN044",
+      "type": "BKN",
+      "altitude": 44,
       "modifier": null
     },
     {
@@ -36,19 +37,15 @@
     "spoken": "six"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
-  "wind_gust": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
   "wx_codes": [
     {
@@ -60,14 +57,14 @@
       "value": "Haze"
     }
   ],
-  "raw": "KORS 120835Z AUTO 00000G13KT 6SM -RA HZ FEW030 SCT049 OVC065 10/07 A2979 RMK AO2",
-  "sanitized": "KORS 120835Z 00000G13KT 6SM -RA HZ FEW030 SCT049 OVC065 10/07 A2979 RMK AO2",
+  "raw": "KORS 120855Z AUTO VRB04KT 6SM -RA HZ FEW030 BKN044 OVC065 10/07 A2979 RMK AO2 P0003",
+  "sanitized": "KORS 120855Z VRB04KT 6SM -RA HZ FEW030 BKN044 OVC065 10/07 A2979 RMK AO2 P0003",
   "station": "KORS",
   "time": {
-    "repr": "120835Z",
-    "dt": "2023-01-12T08:35:00Z"
+    "repr": "120855Z",
+    "dt": "2023-01-12T08:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0003",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -90,7 +87,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0003",
+      "value": 0.03,
+      "spoken": "zero point zero three"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
