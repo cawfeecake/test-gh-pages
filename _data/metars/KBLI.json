@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-01-13T22:40:41.119846Z",
-    "stations_updated": "2022-12-27",
-    "cache-timestamp": "2023-01-13T22:40:07.403000Z"
+    "timestamp": "2023-01-13T23:02:07.746222Z",
+    "stations_updated": "2022-12-27"
   },
   "altimeter": {
     "repr": "A2967",
@@ -11,15 +10,15 @@
   },
   "clouds": [
     {
-      "repr": "SCT021",
-      "type": "SCT",
-      "altitude": 21,
+      "repr": "FEW022",
+      "type": "FEW",
+      "altitude": 22,
       "modifier": null
     },
     {
-      "repr": "BKN055",
+      "repr": "BKN060",
       "type": "BKN",
-      "altitude": 55,
+      "altitude": 60,
       "modifier": null
     },
     {
@@ -43,25 +42,30 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
-  "wx_codes": [],
-  "raw": "KBLI 132204Z 17006KT 10SM SCT021 BKN055 OVC075 12/10 A2967 RMK AO2 T01220100",
-  "sanitized": "KBLI 132204Z 17006KT 10SM SCT021 BKN055 OVC075 12/10 A2967 RMK AO2 T01220100",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 132253Z 17004KT 10SM -RA FEW022 BKN060 OVC075 12/11 A2967 RMK AO2 RAB06 SLP054 P0001 T01220106",
+  "sanitized": "KBLI 132253Z 17004KT 10SM -RA FEW022 BKN060 OVC075 12/11 A2967 RMK AO2 RAB06 SLP054 P0001 T01220106",
   "station": "KBLI",
   "time": {
-    "repr": "132204Z",
-    "dt": "2023-01-13T22:04:00Z"
+    "repr": "132253Z",
+    "dt": "2023-01-13T22:53:00Z"
   },
-  "remarks": "RMK AO2 T01220100",
+  "remarks": "RMK AO2 RAB06 SLP054 P0001 T01220106",
   "dewpoint": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
-  "relative_humidity": 0.8641296231599346,
+  "relative_humidity": 0.8994654196028143,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -73,17 +77,29 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAB06",
+        "value": "Rain began at :06"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0100",
-      "value": 10,
-      "spoken": "one zero point zero"
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
-    "sea_level_pressure": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP054",
+      "value": 1005.4,
+      "spoken": "one zero zero five point four"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0122",
