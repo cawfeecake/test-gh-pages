@@ -1,19 +1,25 @@
 {
   "meta": {
-    "timestamp": "2023-01-15T23:40:42.867025Z",
+    "timestamp": "2023-01-16T00:28:53.436691Z",
     "stations_updated": "2022-12-27",
-    "cache-timestamp": "2023-01-15T23:40:19.618000Z"
+    "cache-timestamp": "2023-01-16T00:28:04.982000Z"
   },
   "altimeter": {
-    "repr": "A2937",
-    "value": 29.37,
-    "spoken": "two nine point three seven"
+    "repr": "A2939",
+    "value": 29.39,
+    "spoken": "two nine point three nine"
   },
   "clouds": [
     {
-      "repr": "OVC048",
+      "repr": "BKN040",
+      "type": "BKN",
+      "altitude": 40,
+      "modifier": null
+    },
+    {
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 48,
+      "altitude": 60,
       "modifier": null
     }
   ],
@@ -25,15 +31,15 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "130",
-    "value": 130,
-    "spoken": "one three zero"
+    "repr": "160",
+    "value": 160,
+    "spoken": "one six zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
   "wx_codes": [
     {
@@ -41,35 +47,47 @@
       "value": "Light Rain"
     }
   ],
-  "raw": "KAWO 152256Z AUTO 13005KT 10SM -RA OVC048 08/07 A2937 RMK AO2 SLP951 P0000 T00830067",
-  "sanitized": "KAWO 152256Z 13005KT 10SM -RA OVC048 08/07 A2937 RMK AO2 SLP951 P0000 T00830067",
+  "raw": "KAWO 152356Z AUTO 16004KT 10SM -RA BKN040 OVC060 08/07 A2939 RMK AO2 SLP957 P0002 60002 T00780067 10100 20078 53018",
+  "sanitized": "KAWO 152356Z 16004KT 10SM -RA BKN040 OVC060 08/07 A2939 RMK AO2 SLP957 P0002 60002 T00780067 10100 20078 53018",
   "station": "KAWO",
   "time": {
-    "repr": "152256Z",
-    "dt": "2023-01-15T22:56:00Z"
+    "repr": "152356Z",
+    "dt": "2023-01-15T23:56:00Z"
   },
-  "remarks": "RMK AO2 SLP951 P0000 T00830067",
+  "remarks": "RMK AO2 SLP957 P0002 60002 T00780067 10100 20078 53018",
   "dewpoint": {
     "repr": "07",
     "value": 7,
     "spoken": "seven"
   },
-  "relative_humidity": 0.8964857337002037,
+  "relative_humidity": 0.9274887710023534,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10100",
+      "value": 10,
+      "spoken": "one zero point zero"
+    },
+    "minimum_temperature_6": {
+      "repr": "20078",
+      "value": 7.8,
+      "spoken": "seven point eight"
+    },
+    "pressure_tendency": {
+      "repr": "53018",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 1.8
+    },
+    "precip_36_hours": {
+      "repr": "60002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -79,17 +97,21 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sea_level_pressure": {
-      "repr": "SLP951",
-      "value": 995.1,
-      "spoken": "nine nine five point one"
+      "repr": "SLP957",
+      "value": 995.7,
+      "spoken": "nine nine five point seven"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0083",
-      "value": 8.3,
-      "spoken": "eight point three"
+      "repr": "0078",
+      "value": 7.8,
+      "spoken": "seven point eight"
     }
   },
   "runway_visibility": [],
@@ -99,8 +121,8 @@
     "spoken": "eight"
   },
   "wind_variable_direction": [],
-  "density_altitude": -78,
-  "pressure_altitude": 692,
+  "density_altitude": -158,
+  "pressure_altitude": 672,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
