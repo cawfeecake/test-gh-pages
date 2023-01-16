@@ -1,35 +1,35 @@
 {
   "meta": {
-    "timestamp": "2023-01-16T02:50:13.302125Z",
+    "timestamp": "2023-01-16T03:02:49.810096Z",
     "stations_updated": "2022-12-27",
-    "cache-timestamp": "2023-01-16T02:50:05.582000Z"
+    "cache-timestamp": "2023-01-16T03:02:47.444000Z"
   },
   "altimeter": {
-    "repr": "A2942",
-    "value": 29.42,
-    "spoken": "two nine point four two"
+    "repr": "A2943",
+    "value": 29.43,
+    "spoken": "two nine point four three"
   },
   "clouds": [
     {
-      "repr": "SCT034",
-      "type": "SCT",
-      "altitude": 34,
-      "modifier": null
-    },
-    {
-      "repr": "BKN040",
+      "repr": "BKN022",
       "type": "BKN",
-      "altitude": 40,
+      "altitude": 22,
       "modifier": null
     },
     {
-      "repr": "OVC060",
+      "repr": "BKN028",
+      "type": "BKN",
+      "altitude": 28,
+      "modifier": null
+    },
+    {
+      "repr": "OVC032",
       "type": "OVC",
-      "altitude": 60,
+      "altitude": 32,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -41,11 +41,15 @@
     "value": 130,
     "spoken": "one three zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "26",
+    "value": 26,
+    "spoken": "two six"
+  },
   "wind_speed": {
-    "repr": "20",
-    "value": 20,
-    "spoken": "two zero"
+    "repr": "18",
+    "value": 18,
+    "spoken": "one eight"
   },
   "wx_codes": [
     {
@@ -53,14 +57,14 @@
       "value": "Light Rain"
     }
   ],
-  "raw": "KNUW 160153Z 13020KT 10SM -RA SCT034 BKN040 OVC060 08/06 A2942 RMK AO2 RAB37 SLP960 P0000 T00830056 VISNO $",
-  "sanitized": "KNUW 160153Z 13020KT 10SM -RA SCT034 BKN040 OVC060 08/06 A2942 RMK AO2 RAB37 SLP960 P0000 T00830056 VISNO $",
+  "raw": "KNUW 160253Z 13018G26KT 10SM -RA BKN022 BKN028 OVC032 08/06 A2943 RMK AO2 PK WND 14029/0159 SLP966 P0002 60002 T00830056 53014 VISNO $",
+  "sanitized": "KNUW 160253Z 13018G26KT 10SM -RA BKN022 BKN028 OVC032 08/06 A2943 RMK AO2 PK WND 14029/0159 SLP966 P0002 60002 T00830056 53014 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "160153Z",
-    "dt": "2023-01-16T01:53:00Z"
+    "repr": "160253Z",
+    "dt": "2023-01-16T02:53:00Z"
   },
-  "remarks": "RMK AO2 RAB37 SLP960 P0000 T00830056 VISNO $",
+  "remarks": "RMK AO2 PK WND 14029/0159 SLP966 P0002 60002 T00830056 53014 VISNO $",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -70,8 +74,16 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "53014",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 1.4
+    },
+    "precip_36_hours": {
+      "repr": "60002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -82,14 +94,6 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAB37",
-        "value": "Rain began at :37"
       }
     ],
     "dewpoint_decimal": {
@@ -99,11 +103,15 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sea_level_pressure": {
-      "repr": "SLP960",
-      "value": 996,
-      "spoken": "nine nine six point zero"
+      "repr": "SLP966",
+      "value": 996.6,
+      "spoken": "nine nine six point six"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -119,8 +127,8 @@
     "spoken": "eight"
   },
   "wind_variable_direction": [],
-  "density_altitude": -246,
-  "pressure_altitude": 547,
+  "density_altitude": -256,
+  "pressure_altitude": 537,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
