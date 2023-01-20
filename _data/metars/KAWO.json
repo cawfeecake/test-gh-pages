@@ -1,52 +1,62 @@
 {
   "meta": {
-    "timestamp": "2023-01-20T03:29:49.346201Z",
+    "timestamp": "2023-01-20T03:41:31.037383Z",
     "stations_updated": "2023-01-16"
   },
   "altimeter": {
-    "repr": "A3045",
-    "value": 30.45,
-    "spoken": "three zero point four five"
+    "repr": "A3046",
+    "value": 30.46,
+    "spoken": "three zero point four six"
   },
-  "clouds": [],
-  "flight_rules": "IFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "010",
+    "value": 10,
+    "spoken": "zero one zero"
   },
   "wind_gust": null,
   "wind_speed": {
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
+  },
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ],
+  "raw": "KAWO 200339Z AUTO 01004KT 1/4SM FG VV002 00/00 A3046 RMK AO2 FZRANO",
+  "sanitized": "KAWO 200339Z 01004KT 1/4SM FG VV002 00/00 A3046 RMK AO2 FZRANO",
+  "station": "KAWO",
+  "time": {
+    "repr": "200339Z",
+    "dt": "2023-01-20T03:39:00Z"
+  },
+  "remarks": "RMK AO2 FZRANO",
+  "dewpoint": {
     "repr": "00",
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ],
-  "raw": "KAWO 200323Z AUTO 00000KT 1SM BR CLR 00/M01 A3045 RMK AO2 FZRANO",
-  "sanitized": "KAWO 200323Z 00000KT 1SM BR 00/M01 A3045 RMK AO2 FZRANO",
-  "station": "KAWO",
-  "time": {
-    "repr": "200323Z",
-    "dt": "2023-01-20T03:23:00Z"
-  },
-  "remarks": "RMK AO2 FZRANO",
-  "dewpoint": {
-    "repr": "M01",
-    "value": -1,
-    "spoken": "minus one"
-  },
-  "relative_humidity": 0.9297254240529413,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -79,8 +89,8 @@
     "spoken": "zero"
   },
   "wind_variable_direction": [],
-  "density_altitude": -2154,
-  "pressure_altitude": -388,
+  "density_altitude": -2164,
+  "pressure_altitude": -398,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
