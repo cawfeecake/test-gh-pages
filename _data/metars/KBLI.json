@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-01-23T08:42:56.719029Z",
+    "timestamp": "2023-01-23T09:03:34.778814Z",
     "stations_updated": "2023-01-16",
-    "cache-timestamp": "2023-01-23T08:42:07.942000Z"
+    "cache-timestamp": "2023-01-23T09:02:37.444000Z"
   },
   "altimeter": {
     "repr": "A3046",
@@ -11,18 +11,18 @@
   },
   "clouds": [
     {
-      "repr": "OVC085",
+      "repr": "OVC075",
       "type": "OVC",
-      "altitude": 85,
+      "altitude": 75,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "3",
+    "value": 3,
+    "spoken": "three"
   },
   "wind_direction": {
     "repr": "000",
@@ -35,15 +35,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 230753Z AUTO 00000KT 10SM OVC085 02/02 A3046 RMK AO2 SLP324 T00220022 400560000",
-  "sanitized": "KBLI 230753Z 00000KT 10SM OVC085 02/02 A3046 RMK AO2 SLP324 T00220022 400560000",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBLI 230853Z AUTO 00000KT 3SM BR OVC075 02/02 A3046 RMK AO2 SLP325 T00220022 55002",
+  "sanitized": "KBLI 230853Z 00000KT 3SM BR OVC075 02/02 A3046 RMK AO2 SLP325 T00220022 55002",
   "station": "KBLI",
   "time": {
-    "repr": "230753Z",
-    "dt": "2023-01-23T07:53:00Z"
+    "repr": "230853Z",
+    "dt": "2023-01-23T08:53:00Z"
   },
-  "remarks": "RMK AO2 SLP324 T00220022 400560000",
+  "remarks": "RMK AO2 SLP325 T00220022 55002",
   "dewpoint": {
     "repr": "02",
     "value": 2,
@@ -53,7 +58,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "55002",
+      "tendency": "Decreasing, then increasing",
+      "change": 0.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -68,21 +77,13 @@
       "value": 2.2,
       "spoken": "two point two"
     },
-    "maximum_temperature_24": {
-      "repr": "0056",
-      "value": 5.6,
-      "spoken": "five point six"
-    },
-    "minimum_temperature_24": {
-      "repr": "0000",
-      "value": 0,
-      "spoken": "zero"
-    },
+    "maximum_temperature_24": null,
+    "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP324",
-      "value": 1032.4,
-      "spoken": "one zero three two point four"
+      "repr": "SLP325",
+      "value": 1032.5,
+      "spoken": "one zero three two point five"
     },
     "snow_depth": null,
     "temperature_decimal": {
