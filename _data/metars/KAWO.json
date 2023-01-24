@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-01-24T17:26:10.169004Z",
+    "timestamp": "2023-01-24T17:40:35.802967Z",
     "stations_updated": "2023-01-16",
-    "cache-timestamp": "2023-01-24T17:26:07.844000Z"
+    "cache-timestamp": "2023-01-24T17:40:08.479000Z"
   },
   "altimeter": {
     "repr": "A3058",
@@ -11,19 +11,25 @@
   },
   "clouds": [
     {
-      "repr": "SCT020",
-      "type": "SCT",
+      "repr": "FEW020",
+      "type": "FEW",
       "altitude": 20,
       "modifier": null
     },
     {
-      "repr": "OVC028",
+      "repr": "SCT030",
+      "type": "SCT",
+      "altitude": 30,
+      "modifier": null
+    },
+    {
+      "repr": "OVC043",
       "type": "OVC",
-      "altitude": 28,
+      "altitude": 43,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -31,36 +37,31 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "360",
-    "value": 360,
-    "spoken": "three six zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KAWO 241704Z AUTO 36003KT 10SM -RA SCT020 OVC028 04/03 A3058 RMK AO2 P0000",
-  "sanitized": "KAWO 241704Z 36003KT 10SM -RA SCT020 OVC028 04/03 A3058 RMK AO2 P0000",
+  "wx_codes": [],
+  "raw": "KAWO 241715Z AUTO 00000KT 10SM FEW020 SCT030 OVC043 04/04 A3058 RMK AO2 RAE05 P0000",
+  "sanitized": "KAWO 241715Z 00000KT 10SM FEW020 SCT030 OVC043 04/04 A3058 RMK AO2 RAE05 P0000",
   "station": "KAWO",
   "time": {
-    "repr": "241704Z",
-    "dt": "2023-01-24T17:04:00Z"
+    "repr": "241715Z",
+    "dt": "2023-01-24T17:15:00Z"
   },
-  "remarks": "RMK AO2 P0000",
+  "remarks": "RMK AO2 RAE05 P0000",
   "dewpoint": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
-  "relative_humidity": 0.9319043972307702,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -76,6 +77,10 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAE05",
+        "value": "Rain ended at :05"
       }
     ],
     "dewpoint_decimal": null,
