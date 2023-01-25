@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-01-25T18:29:26.425228Z",
+    "timestamp": "2023-01-25T18:42:06.711654Z",
     "stations_updated": "2023-01-16"
   },
   "altimeter": {
@@ -10,99 +10,91 @@
   },
   "clouds": [
     {
-      "repr": "SCT013",
-      "type": "SCT",
-      "altitude": 13,
+      "repr": "FEW004",
+      "type": "FEW",
+      "altitude": 4,
       "modifier": null
     },
     {
-      "repr": "OVC021",
+      "repr": "OVC017",
       "type": "OVC",
-      "altitude": 21,
+      "altitude": 17,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
-    "repr": "360",
-    "value": 360,
-    "spoken": "three six zero"
+    "repr": "330",
+    "value": 330,
+    "spoken": "three three zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KAWO 251756Z AUTO 36004KT 10SM SCT013 OVC021 06/06 A3075 RMK AO2 SLP418 60001 T00610056 10061 20050 53014",
-  "sanitized": "KAWO 251756Z 36004KT 10SM SCT013 OVC021 06/06 A3075 RMK AO2 SLP418 60001 T00610056 10061 20050 53014",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KAWO 251836Z AUTO 33003KT 2 1/2SM -RA BR FEW004 OVC017 06/06 A3075 RMK AO2 RAB34 P0000",
+  "sanitized": "KAWO 251836Z 33003KT 2 1/2SM -RA BR FEW004 OVC017 06/06 A3075 RMK AO2 RAB34 P0000",
   "station": "KAWO",
   "time": {
-    "repr": "251756Z",
-    "dt": "2023-01-25T17:56:00Z"
+    "repr": "251836Z",
+    "dt": "2023-01-25T18:36:00Z"
   },
-  "remarks": "RMK AO2 SLP418 60001 T00610056 10061 20050 53014",
+  "remarks": "RMK AO2 RAB34 P0000",
   "dewpoint": {
     "repr": "06",
     "value": 6,
     "spoken": "six"
   },
-  "relative_humidity": 0.9659908804883092,
+  "relative_humidity": 1,
   "remarks_info": {
-    "maximum_temperature_6": {
-      "repr": "10061",
-      "value": 6.1,
-      "spoken": "six point one"
-    },
-    "minimum_temperature_6": {
-      "repr": "20050",
-      "value": 5,
-      "spoken": "five point zero"
-    },
-    "pressure_tendency": {
-      "repr": "53014",
-      "tendency": "Decreasing or steady, then increasing",
-      "change": 1.4
-    },
-    "precip_36_hours": {
-      "repr": "60001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "maximum_temperature_6": null,
+    "minimum_temperature_6": null,
+    "pressure_tendency": null,
+    "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB34",
+        "value": "Rain began at :34"
       }
     ],
-    "dewpoint_decimal": {
-      "repr": "0056",
-      "value": 5.6,
-      "spoken": "five point six"
-    },
+    "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP418",
-      "value": 1041.8,
-      "spoken": "one zero four one point eight"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
-    "temperature_decimal": {
-      "repr": "0061",
-      "value": 6.1,
-      "spoken": "six point one"
-    }
+    "temperature_decimal": null
   },
   "runway_visibility": [],
   "temperature": {
@@ -111,7 +103,7 @@
     "spoken": "six"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1722,
+  "density_altitude": -1734,
   "pressure_altitude": -688,
   "units": {
     "accumulation": "in",
