@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-01-25T08:06:55.344385Z",
+    "timestamp": "2023-01-25T09:01:50.198362Z",
     "stations_updated": "2023-01-16"
   },
   "altimeter": {
@@ -10,18 +10,18 @@
   },
   "clouds": [
     {
-      "repr": "OVC004",
+      "repr": "OVC002",
       "type": "OVC",
-      "altitude": 4,
+      "altitude": 2,
       "modifier": null
     }
   ],
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
     "repr": "000",
@@ -40,14 +40,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 250706Z AUTO 00000KT 3SM BR OVC004 07/07 A3065 RMK AO2 T00670067",
-  "sanitized": "KBLI 250706Z 00000KT 3SM BR OVC004 07/07 A3065 RMK AO2 T00670067",
+  "raw": "KBLI 250853Z AUTO 00000KT 4SM BR OVC002 07/07 A3065 RMK AO2 RAE04 SLP387 P0000 60000 T00670067 50000",
+  "sanitized": "KBLI 250853Z 00000KT 4SM BR OVC002 07/07 A3065 RMK AO2 RAE04 SLP387 P0000 60000 T00670067 50000",
   "station": "KBLI",
   "time": {
-    "repr": "250706Z",
-    "dt": "2023-01-25T07:06:00Z"
+    "repr": "250853Z",
+    "dt": "2023-01-25T08:53:00Z"
   },
-  "remarks": "RMK AO2 T00670067",
+  "remarks": "RMK AO2 RAE04 SLP387 P0000 60000 T00670067 50000",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -57,14 +57,30 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "50000",
+      "tendency": "Increasing, then decreasing",
+      "change": 0
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAE04",
+        "value": "Rain ended at :04"
       }
     ],
     "dewpoint_decimal": {
@@ -75,7 +91,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP387",
+      "value": 1038.7,
+      "spoken": "one zero three eight point seven"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0067",
