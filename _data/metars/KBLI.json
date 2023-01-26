@@ -1,27 +1,37 @@
 {
   "meta": {
-    "timestamp": "2023-01-26T14:25:54.294302Z",
-    "stations_updated": "2023-01-16"
+    "timestamp": "2023-01-26T14:40:34.906897Z",
+    "stations_updated": "2023-01-16",
+    "cache-timestamp": "2023-01-26T14:40:07.014000Z"
   },
   "altimeter": {
-    "repr": "A3066",
-    "value": 30.66,
-    "spoken": "three zero point six six"
+    "repr": "A3065",
+    "value": 30.65,
+    "spoken": "three zero point six five"
   },
   "clouds": [
     {
-      "repr": "OVC013",
+      "repr": "BKN010",
+      "type": "BKN",
+      "altitude": 10,
+      "modifier": null
+    },
+    {
+      "repr": "OVC014",
       "type": "OVC",
-      "altitude": 13,
+      "altitude": 14,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -36,18 +46,22 @@
   },
   "wx_codes": [
     {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 261410Z AUTO 00000KT 4SM BR OVC013 06/06 A3066 RMK AO2 T00610061",
-  "sanitized": "KBLI 261410Z 00000KT 4SM BR OVC013 06/06 A3066 RMK AO2 T00610061",
+  "raw": "KBLI 261426Z AUTO 00000KT 2 1/2SM -RA BR BKN010 OVC014 06/06 A3065 RMK AO2 RAB21 CIG 007V012 P0000 T00610061",
+  "sanitized": "KBLI 261426Z 00000KT 2 1/2SM -RA BR BKN010 OVC014 06/06 A3065 RMK AO2 RAB21 CIG 007V012 P0000 T00610061",
   "station": "KBLI",
   "time": {
-    "repr": "261410Z",
-    "dt": "2023-01-26T14:10:00Z"
+    "repr": "261426Z",
+    "dt": "2023-01-26T14:26:00Z"
   },
-  "remarks": "RMK AO2 T00610061",
+  "remarks": "RMK AO2 RAB21 CIG 007V012 P0000 T00610061",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -65,6 +79,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB21",
+        "value": "Rain began at :21"
       }
     ],
     "dewpoint_decimal": {
@@ -90,8 +112,8 @@
     "spoken": "six"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1597,
-  "pressure_altitude": -570,
+  "density_altitude": -1587,
+  "pressure_altitude": -560,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
