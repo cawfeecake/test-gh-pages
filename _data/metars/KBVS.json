@@ -1,39 +1,38 @@
 {
   "meta": {
-    "timestamp": "2023-01-27T07:40:35.855728Z",
+    "timestamp": "2023-01-27T08:06:53.131136Z",
     "stations_updated": "2023-01-16",
-    "cache-timestamp": "2023-01-27T07:40:06.282000Z"
+    "cache-timestamp": "2023-01-27T08:06:07.349000Z"
   },
   "altimeter": {
-    "repr": "A3032",
-    "value": 30.32,
-    "spoken": "three zero point three two"
+    "repr": "A3029",
+    "value": 30.29,
+    "spoken": "three zero point two nine"
   },
   "clouds": [
     {
-      "repr": "OVC005",
+      "repr": "OVC004",
       "type": "OVC",
-      "altitude": 5,
+      "altitude": 4,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
     "repr": "160",
     "value": 160,
     "spoken": "one six zero"
   },
-  "wind_gust": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
-  },
+  "wind_gust": null,
   "wind_speed": {
     "repr": "06",
     "value": 6,
@@ -45,14 +44,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBVS 270715Z AUTO 16006G13KT 4SM BR OVC005 06/06 A3032 RMK A01",
-  "sanitized": "KBVS 270715Z 16006G13KT 4SM BR OVC005 06/06 A3032 RMK A01",
+  "raw": "KBVS 270755Z AUTO 16006KT 2 1/2SM BR OVC004 06/06 A3029 RMK A01 P0007",
+  "sanitized": "KBVS 270755Z 16006KT 2 1/2SM BR OVC004 06/06 A3029 RMK A01 P0007",
   "station": "KBVS",
   "time": {
-    "repr": "270715Z",
-    "dt": "2023-01-27T07:15:00Z"
+    "repr": "270755Z",
+    "dt": "2023-01-27T07:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0007",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -70,7 +69,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0007",
+      "value": 0.07,
+      "spoken": "zero point zero seven"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
@@ -82,8 +85,8 @@
     "spoken": "six"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1301,
-  "pressure_altitude": -256,
+  "density_altitude": -1271,
+  "pressure_altitude": -226,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
