@@ -1,7 +1,9 @@
 {
   "meta": {
-    "timestamp": "2023-02-05T12:43:47.399276Z",
-    "stations_updated": "2023-01-30"
+    "timestamp": "2023-02-05T13:12:03.689567Z",
+    "stations_updated": "2023-01-30",
+    "cache-timestamp": "2023-02-05T13:10:05.913000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A2969",
@@ -10,15 +12,9 @@
   },
   "clouds": [
     {
-      "repr": "BKN060",
-      "type": "BKN",
-      "altitude": 60,
-      "modifier": null
-    },
-    {
-      "repr": "OVC070",
+      "repr": "OVC055",
       "type": "OVC",
-      "altitude": 70,
+      "altitude": 55,
       "modifier": null
     }
   ],
@@ -30,23 +26,28 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KORS 051235Z AUTO 00000KT 10SM BKN060 OVC070 08/08 A2969 RMK AO2",
-  "sanitized": "KORS 051235Z 00000KT 10SM BKN060 OVC070 08/08 A2969 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KORS 051255Z AUTO VRB03KT 10SM -RA OVC055 08/08 A2969 RMK AO2",
+  "sanitized": "KORS 051255Z VRB03KT 10SM -RA OVC055 08/08 A2969 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "051235Z",
-    "dt": "2023-02-05T12:35:00Z"
+    "repr": "051255Z",
+    "dt": "2023-02-05T12:55:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
