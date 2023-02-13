@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-02-13T17:02:03.994962Z",
+    "timestamp": "2023-02-13T17:27:40.043947Z",
     "stations_updated": "2023-01-30"
   },
   "altimeter": {
@@ -8,7 +8,32 @@
     "value": 29.86,
     "spoken": "two nine point eight six"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "SCT025",
+      "type": "SCT",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "BKN090",
+      "type": "BKN",
+      "altitude": 90,
+      "modifier": null
+    },
+    {
+      "repr": "BKN150",
+      "type": "BKN",
+      "altitude": 150,
+      "modifier": null
+    },
+    {
+      "repr": "BKN220",
+      "type": "BKN",
+      "altitude": 220,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -32,14 +57,14 @@
     "spoken": "two zero"
   },
   "wx_codes": [],
-  "raw": "KNUW 131653Z 26020G32KT 10SM CLR 07/03 A2986 RMK AO2 PK WND 26034/1557 RAB31E37 SLP110 P0000 T00670033 VISNO $",
-  "sanitized": "KNUW 131653Z 26020G32KT 10SM 07/03 A2986 RMK AO2 PK WND 26034/1557 RAB31E37 SLP110 P0000 T00670033 VISNO $",
+  "raw": "KNUW 131653Z COR 26020G32KT 10SM SCT025 BKN090 BKN150 BKN220 07/03 A2986 RMK PK WND 26034/1557 RAB31E37 SLP110 P0000 T00670033",
+  "sanitized": "KNUW 131653Z 26020G32KT 10SM SCT025 BKN090 BKN150 BKN220 07/03 A2986 RMK PK WND 26034/1557 RAB31E37 SLP110 P0000 T00670033",
   "station": "KNUW",
   "time": {
     "repr": "131653Z",
     "dt": "2023-02-13T16:53:00Z"
   },
-  "remarks": "RMK AO2 PK WND 26034/1557 RAB31E37 SLP110 P0000 T00670033 VISNO $",
+  "remarks": "RMK PK WND 26034/1557 RAB31E37 SLP110 P0000 T00670033",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -54,14 +79,6 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
-      {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      },
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
