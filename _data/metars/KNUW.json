@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-02-14T05:27:11.507417Z",
-    "stations_updated": "2023-01-30"
+    "timestamp": "2023-02-14T05:40:38.558244Z",
+    "stations_updated": "2023-01-30",
+    "cache-timestamp": "2023-02-14T05:40:04.483000Z"
   },
   "altimeter": {
     "repr": "A2986",
@@ -10,21 +11,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT013",
+      "repr": "FEW030",
+      "type": "FEW",
+      "altitude": 30,
+      "modifier": null
+    },
+    {
+      "repr": "SCT075",
       "type": "SCT",
-      "altitude": 13,
-      "modifier": null
-    },
-    {
-      "repr": "BKN065",
-      "type": "BKN",
-      "altitude": 65,
-      "modifier": null
-    },
-    {
-      "repr": "OVC075",
-      "type": "OVC",
       "altitude": 75,
+      "modifier": null
+    },
+    {
+      "repr": "OVC100",
+      "type": "OVC",
+      "altitude": 100,
       "modifier": null
     }
   ],
@@ -36,36 +37,35 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "260",
-    "value": 260,
-    "spoken": "two six zero"
+    "repr": "240",
+    "value": 240,
+    "spoken": "two four zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "31",
+    "value": 31,
+    "spoken": "three one"
+  },
   "wind_speed": {
-    "repr": "16",
-    "value": 16,
-    "spoken": "one six"
+    "repr": "20",
+    "value": 20,
+    "spoken": "two zero"
   },
-  "wx_codes": [
-    {
-      "repr": "-RASN",
-      "value": "Light Rain Snow"
-    }
-  ],
-  "raw": "KNUW 140353Z 26016KT 10SM -RASN SCT013 BKN065 OVC075 03/02 A2986 RMK AO2 PK WND 30032/0254 SLP112 P0002 T00330017 VISNO $",
-  "sanitized": "KNUW 140353Z 26016KT 10SM -RASN SCT013 BKN065 OVC075 03/02 A2986 RMK AO2 PK WND 30032/0254 SLP112 P0002 T00330017 VISNO $",
+  "wx_codes": [],
+  "raw": "KNUW 140453Z 24020G31KT 10SM FEW030 SCT075 OVC100 04/01 A2986 RMK PK WND 24031/0447 RAE53SNE52 SLP112 P0000 T00390006",
+  "sanitized": "KNUW 140453Z 24020G31KT 10SM FEW030 SCT075 OVC100 04/01 A2986 RMK PK WND 24031/0447 RAE53SNE52 SLP112 P0000 T00390006",
   "station": "KNUW",
   "time": {
-    "repr": "140353Z",
-    "dt": "2023-02-14T03:53:00Z"
+    "repr": "140453Z",
+    "dt": "2023-02-14T04:53:00Z"
   },
-  "remarks": "RMK AO2 PK WND 30032/0254 SLP112 P0002 T00330017 VISNO $",
+  "remarks": "RMK PK WND 24031/0447 RAE53SNE52 SLP112 P0000 T00390006",
   "dewpoint": {
-    "repr": "02",
-    "value": 2,
-    "spoken": "two"
+    "repr": "01",
+    "value": 1,
+    "spoken": "one"
   },
-  "relative_humidity": 0.892472054966446,
+  "relative_humidity": 0.7904792361594455,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -75,26 +75,18 @@
     "sunshine_minutes": null,
     "codes": [
       {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0017",
-      "value": 1.7,
-      "spoken": "one point seven"
+      "repr": "0006",
+      "value": 0.6,
+      "spoken": "zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0002",
-      "value": 0.02,
-      "spoken": "zero point zero two"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": {
       "repr": "SLP112",
       "value": 1011.2,
@@ -102,19 +94,19 @@
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0033",
-      "value": 3.3,
-      "spoken": "three point three"
+      "repr": "0039",
+      "value": 3.9,
+      "spoken": "three point nine"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1286,
+  "density_altitude": -1214,
   "pressure_altitude": 107,
   "units": {
     "accumulation": "in",
