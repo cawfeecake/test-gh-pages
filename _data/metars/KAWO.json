@@ -1,41 +1,35 @@
 {
   "meta": {
-    "timestamp": "2023-02-15T11:23:57.102470Z",
-    "stations_updated": "2023-01-30"
+    "timestamp": "2023-02-15T11:40:41.170028Z",
+    "stations_updated": "2023-01-30",
+    "cache-timestamp": "2023-02-15T11:40:06.748000Z"
   },
   "altimeter": {
     "repr": "A3038",
     "value": 30.38,
     "spoken": "three zero point three eight"
   },
-  "clouds": [
-    {
-      "repr": "VV001",
-      "type": "VV",
-      "altitude": 1,
-      "modifier": null
-    }
-  ],
+  "clouds": [],
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1/2",
-    "value": 0.5,
-    "spoken": "one half",
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
     "numerator": 1,
-    "denominator": 2,
-    "normalized": "1/2"
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "350",
+    "value": 350,
+    "spoken": "three five zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wx_codes": [
     {
@@ -43,14 +37,14 @@
       "value": "Freezing Fog"
     }
   ],
-  "raw": "KAWO 151121Z AUTO 00000KT 1/2SM FZFG VV001 M03/M04 A3038 RMK AO2 FZRANO",
-  "sanitized": "KAWO 151121Z 00000KT 1/2SM FZFG VV001 M03/M04 A3038 RMK AO2 FZRANO",
+  "raw": "KAWO 151123Z AUTO 35003KT 1/4SM FZFG M03/M04 A3038 RMK AO2 FZRANO $",
+  "sanitized": "KAWO 151123Z 35003KT 1/4SM FZFG M03/M04 A3038 RMK AO2 FZRANO $",
   "station": "KAWO",
   "time": {
-    "repr": "151121Z",
-    "dt": "2023-02-15T11:21:00Z"
+    "repr": "151123Z",
+    "dt": "2023-02-15T11:23:00Z"
   },
-  "remarks": "RMK AO2 FZRANO",
+  "remarks": "RMK AO2 FZRANO $",
   "dewpoint": {
     "repr": "M04",
     "value": -4,
@@ -65,6 +59,10 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
