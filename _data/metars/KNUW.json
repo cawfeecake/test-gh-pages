@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-02-17T06:07:38.839066Z",
+    "timestamp": "2023-02-17T06:32:26.795767Z",
     "stations_updated": "2023-01-30"
   },
   "altimeter": {
@@ -10,13 +10,19 @@
   },
   "clouds": [
     {
-      "repr": "OVC085",
+      "repr": "BKN030",
+      "type": "BKN",
+      "altitude": 30,
+      "modifier": null
+    },
+    {
+      "repr": "OVC070",
       "type": "OVC",
-      "altitude": 85,
+      "altitude": 70,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -24,29 +30,25 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "150",
-    "value": 150,
-    "spoken": "one five zero"
+    "repr": "140",
+    "value": 140,
+    "spoken": "one four zero"
   },
-  "wind_gust": {
-    "repr": "22",
-    "value": 22,
-    "spoken": "two two"
-  },
+  "wind_gust": null,
   "wind_speed": {
     "repr": "13",
     "value": 13,
     "spoken": "one three"
   },
   "wx_codes": [],
-  "raw": "KNUW 170453Z 15013G22KT 10SM OVC085 07/02 A3018 RMK SLP218 T00720017",
-  "sanitized": "KNUW 170453Z 15013G22KT 10SM OVC085 07/02 A3018 RMK SLP218 T00720017",
+  "raw": "KNUW 170553Z 14013KT 10SM BKN030 OVC070 07/02 A3018 RMK SLP219 T00720017 10078 20056 55001",
+  "sanitized": "KNUW 170553Z 14013KT 10SM BKN030 OVC070 07/02 A3018 RMK SLP219 T00720017 10078 20056 55001",
   "station": "KNUW",
   "time": {
-    "repr": "170453Z",
-    "dt": "2023-02-17T04:53:00Z"
+    "repr": "170553Z",
+    "dt": "2023-02-17T05:53:00Z"
   },
-  "remarks": "RMK SLP218 T00720017",
+  "remarks": "RMK SLP219 T00720017 10078 20056 55001",
   "dewpoint": {
     "repr": "02",
     "value": 2,
@@ -54,9 +56,21 @@
   },
   "relative_humidity": 0.6804731505127267,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10078",
+      "value": 7.8,
+      "spoken": "seven point eight"
+    },
+    "minimum_temperature_6": {
+      "repr": "20056",
+      "value": 5.6,
+      "spoken": "five point six"
+    },
+    "pressure_tendency": {
+      "repr": "55001",
+      "tendency": "Decreasing, then increasing",
+      "change": 0.1
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -70,9 +84,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP218",
-      "value": 1021.8,
-      "spoken": "one zero two one point eight"
+      "repr": "SLP219",
+      "value": 1021.9,
+      "spoken": "one zero two one point nine"
     },
     "snow_depth": null,
     "temperature_decimal": {
