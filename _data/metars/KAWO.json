@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-02-19T09:02:07.437561Z",
+    "timestamp": "2023-02-19T09:24:57.596822Z",
     "stations_updated": "2023-01-30",
-    "cache-timestamp": "2023-02-19T09:02:05.862000Z"
+    "cache-timestamp": "2023-02-19T09:24:06.051000Z"
   },
   "altimeter": {
     "repr": "A3025",
@@ -37,14 +37,14 @@
       "value": "Fog"
     }
   ],
-  "raw": "KAWO 190842Z AUTO 00000KT 1/4SM FG 01/01 A3025 RMK AO2 FZRANO",
-  "sanitized": "KAWO 190842Z 00000KT 1/4SM FG 01/01 A3025 RMK AO2 FZRANO",
+  "raw": "KAWO 190856Z AUTO 00000KT 1/4SM FG 01/01 A3025 RMK AO2 SLP247 T00110011 50005 FZRANO",
+  "sanitized": "KAWO 190856Z 00000KT 1/4SM FG 01/01 A3025 RMK AO2 SLP247 T00110011 50005 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "190842Z",
-    "dt": "2023-02-19T08:42:00Z"
+    "repr": "190856Z",
+    "dt": "2023-02-19T08:56:00Z"
   },
-  "remarks": "RMK AO2 FZRANO",
+  "remarks": "RMK AO2 SLP247 T00110011 50005 FZRANO",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -54,7 +54,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "50005",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.5
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -68,13 +72,25 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0011",
+      "value": 1.1,
+      "spoken": "one point one"
+    },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP247",
+      "value": 1024.7,
+      "spoken": "one zero two four point seven"
+    },
     "snow_depth": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0011",
+      "value": 1.1,
+      "spoken": "one point one"
+    }
   },
   "runway_visibility": [],
   "temperature": {
@@ -83,7 +99,7 @@
     "spoken": "one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1834,
+  "density_altitude": -1822,
   "pressure_altitude": -188,
   "units": {
     "accumulation": "in",
