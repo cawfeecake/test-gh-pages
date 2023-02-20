@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-02-20T07:40:31.895771Z",
+    "timestamp": "2023-02-20T08:08:15.109632Z",
     "stations_updated": "2023-01-30",
-    "cache-timestamp": "2023-02-20T07:40:04.755000Z"
+    "cache-timestamp": "2023-02-20T08:08:06.078000Z"
   },
   "altimeter": {
     "repr": "A3014",
@@ -11,25 +11,25 @@
   },
   "clouds": [
     {
-      "repr": "BKN028",
-      "type": "BKN",
+      "repr": "FEW028",
+      "type": "FEW",
       "altitude": 28,
       "modifier": null
     },
     {
-      "repr": "BKN065",
+      "repr": "BKN060",
       "type": "BKN",
-      "altitude": 65,
+      "altitude": 60,
       "modifier": null
     },
     {
-      "repr": "OVC080",
+      "repr": "OVC075",
       "type": "OVC",
-      "altitude": 80,
+      "altitude": 75,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -37,25 +37,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "170",
-    "value": 170,
-    "spoken": "one seven zero"
+    "repr": "180",
+    "value": 180,
+    "spoken": "one eight zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
-  "wx_codes": [],
-  "raw": "KBLI 200705Z AUTO 17008KT 10SM BKN028 BKN065 OVC080 08/07 A3014 RMK AO2 T00830072",
-  "sanitized": "KBLI 200705Z 17008KT 10SM BKN028 BKN065 OVC080 08/07 A3014 RMK AO2 T00830072",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 200753Z AUTO 18007KT 10SM -RA FEW028 BKN060 OVC075 08/07 A3014 RMK AO2 RAB28 SLP215 P0000 T00830072 400890056",
+  "sanitized": "KBLI 200753Z 18007KT 10SM -RA FEW028 BKN060 OVC075 08/07 A3014 RMK AO2 RAB28 SLP215 P0000 T00830072 400890056",
   "station": "KBLI",
   "time": {
-    "repr": "200705Z",
-    "dt": "2023-02-20T07:05:00Z"
+    "repr": "200753Z",
+    "dt": "2023-02-20T07:53:00Z"
   },
-  "remarks": "RMK AO2 T00830072",
+  "remarks": "RMK AO2 RAB28 SLP215 P0000 T00830072 400890056",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -73,6 +78,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB28",
+        "value": "Rain began at :28"
       }
     ],
     "dewpoint_decimal": {
@@ -80,10 +93,22 @@
       "value": 7.2,
       "spoken": "seven point two"
     },
-    "maximum_temperature_24": null,
-    "minimum_temperature_24": null,
+    "maximum_temperature_24": {
+      "repr": "0089",
+      "value": 8.9,
+      "spoken": "eight point nine"
+    },
+    "minimum_temperature_24": {
+      "repr": "0056",
+      "value": 5.6,
+      "spoken": "five point six"
+    },
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP215",
+      "value": 1021.5,
+      "spoken": "one zero two one point five"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0083",
