@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-02-28T15:41:59.874479Z",
-    "stations_updated": "2023-01-30"
+    "timestamp": "2023-02-28T16:06:47.133654Z",
+    "stations_updated": "2023-01-30",
+    "cache-timestamp": "2023-02-28T16:06:06.757000Z"
   },
   "altimeter": {
     "repr": "A2944",
@@ -10,13 +11,19 @@
   },
   "clouds": [
     {
-      "repr": "OVC003",
-      "type": "OVC",
+      "repr": "SCT003",
+      "type": "SCT",
       "altitude": 3,
+      "modifier": null
+    },
+    {
+      "repr": "OVC008",
+      "type": "OVC",
+      "altitude": 8,
       "modifier": null
     }
   ],
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -24,25 +31,29 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "130",
-    "value": 130,
-    "spoken": "one three zero"
+    "repr": "140",
+    "value": 140,
+    "spoken": "one four zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "13",
+    "value": 13,
+    "spoken": "one three"
+  },
   "wind_speed": {
-    "repr": "07",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wx_codes": [],
-  "raw": "KBVS 281535Z AUTO 13007KT 10SM OVC003 01/01 A2944 RMK A01",
-  "sanitized": "KBVS 281535Z 13007KT 10SM OVC003 01/01 A2944 RMK A01",
+  "raw": "KBVS 281555Z AUTO 14008G13KT 10SM SCT003 OVC008 01/01 A2944 RMK A01 P0002",
+  "sanitized": "KBVS 281555Z 14008G13KT 10SM SCT003 OVC008 01/01 A2944 RMK A01 P0002",
   "station": "KBVS",
   "time": {
-    "repr": "281535Z",
-    "dt": "2023-02-28T15:35:00Z"
+    "repr": "281555Z",
+    "dt": "2023-02-28T15:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0002",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -60,7 +71,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
