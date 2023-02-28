@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-02-28T11:40:47.931182Z",
-    "stations_updated": "2023-01-30",
-    "cache-timestamp": "2023-02-28T11:40:05.076000Z"
+    "timestamp": "2023-02-28T12:09:57.849136Z",
+    "stations_updated": "2023-01-30"
   },
   "altimeter": {
     "repr": "A2937",
@@ -11,9 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "OVC018",
+      "repr": "SCT010",
+      "type": "SCT",
+      "altitude": 10,
+      "modifier": null
+    },
+    {
+      "repr": "BKN013",
+      "type": "BKN",
+      "altitude": 13,
+      "modifier": null
+    },
+    {
+      "repr": "OVC019",
       "type": "OVC",
-      "altitude": 18,
+      "altitude": 19,
       "modifier": null
     }
   ],
@@ -45,14 +56,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KORS 281115Z AUTO 00000KT 6SM -RA BR OVC018 02/01 A2937 RMK AO2",
-  "sanitized": "KORS 281115Z 00000KT 6SM -RA BR OVC018 02/01 A2937 RMK AO2",
+  "raw": "KORS 281155Z AUTO 00000KT 6SM -RA BR SCT010 BKN013 OVC019 02/01 A2937 RMK AO2 P0001",
+  "sanitized": "KORS 281155Z 00000KT 6SM -RA BR SCT010 BKN013 OVC019 02/01 A2937 RMK AO2 P0001",
   "station": "KORS",
   "time": {
-    "repr": "281115Z",
-    "dt": "2023-02-28T11:15:00Z"
+    "repr": "281155Z",
+    "dt": "2023-02-28T11:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0001",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -75,7 +86,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
