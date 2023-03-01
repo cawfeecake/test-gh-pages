@@ -1,50 +1,61 @@
 {
   "meta": {
-    "timestamp": "2023-03-01T08:33:35.354551Z",
-    "stations_updated": "2023-01-30"
+    "timestamp": "2023-03-01T08:44:05.790762Z",
+    "stations_updated": "2023-01-30",
+    "cache-timestamp": "2023-03-01T08:44:04.083000Z"
   },
   "altimeter": {
     "repr": "A2986",
     "value": 29.86,
     "spoken": "two nine point eight six"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "VV001",
+      "type": "VV",
+      "altitude": 1,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
-    "repr": "340",
-    "value": 340,
-    "spoken": "three four zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ],
-  "raw": "KBLI 010830Z AUTO 34003KT 4SM BR CLR M02/M02 A2986 RMK AO2 T10221022",
-  "sanitized": "KBLI 010830Z 34003KT 4SM BR M02/M02 A2986 RMK AO2 T10221022",
+  "raw": "KBLI 010837Z AUTO 00000KT 1/2SM R16/2600VP6000FT FZFG VV001 M03/M03 A2986 RMK AO2 T10281028",
+  "sanitized": "KBLI 010837Z 00000KT 1/2SM R16/2600VP6000FT FZFG VV001 M03/M03 A2986 RMK AO2 T10281028",
   "station": "KBLI",
   "time": {
-    "repr": "010830Z",
-    "dt": "2023-03-01T08:30:00Z"
+    "repr": "010837Z",
+    "dt": "2023-03-01T08:37:00Z"
   },
-  "remarks": "RMK AO2 T10221022",
+  "remarks": "RMK AO2 T10281028",
   "dewpoint": {
-    "repr": "M02",
-    "value": -2,
-    "spoken": "minus two"
+    "repr": "M03",
+    "value": -3,
+    "spoken": "minus three"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -61,9 +72,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1022",
-      "value": -2.2,
-      "spoken": "minus two point two"
+      "repr": "1028",
+      "value": -2.8,
+      "spoken": "minus two point eight"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
@@ -71,19 +82,38 @@
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "1022",
-      "value": -2.2,
-      "spoken": "minus two point two"
+      "repr": "1028",
+      "value": -2.8,
+      "spoken": "minus two point eight"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/2600VP6000FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "2600",
+          "value": 2600,
+          "spoken": "two six hundred"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
-    "repr": "M02",
-    "value": -2,
-    "spoken": "minus two"
+    "repr": "M03",
+    "value": -3,
+    "spoken": "minus three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1793,
+  "density_altitude": -1865,
   "pressure_altitude": 230,
   "units": {
     "accumulation": "in",
