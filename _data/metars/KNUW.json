@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-03-03T18:43:27.463165Z",
+    "timestamp": "2023-03-03T19:01:14.994898Z",
     "stations_updated": "2023-01-30"
   },
   "altimeter": {
@@ -47,14 +47,14 @@
     "spoken": "one five"
   },
   "wx_codes": [],
-  "raw": "KNUW 031753Z 16015KT 10SM SCT035 BKN040 OVC095 04/01 A2997 RMK SLP151 T00440011 10044 20028 57004",
-  "sanitized": "KNUW 031753Z 16015KT 10SM SCT035 BKN040 OVC095 04/01 A2997 RMK SLP151 T00440011 10044 20028 57004",
+  "raw": "KNUW 031753Z 16015KT 10SM SCT035 BKN040 OVC095 04/01 A2997 RMK AO2 SLP151 T00440011 10044 20028 57004 VISNO $",
+  "sanitized": "KNUW 031753Z 16015KT 10SM SCT035 BKN040 OVC095 04/01 A2997 RMK AO2 SLP151 T00440011 10044 20028 57004 VISNO $",
   "station": "KNUW",
   "time": {
     "repr": "031753Z",
     "dt": "2023-03-03T17:53:00Z"
   },
-  "remarks": "RMK SLP151 T00440011 10044 20028 57004",
+  "remarks": "RMK AO2 SLP151 T00440011 10044 20028 57004 VISNO $",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -80,7 +80,16 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0011",
       "value": 1.1,
