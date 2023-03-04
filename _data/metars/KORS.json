@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-03-04T22:01:23.756275Z",
-    "stations_updated": "2023-01-30"
+    "timestamp": "2023-03-04T22:27:02.557622Z",
+    "stations_updated": "2023-01-30",
+    "cache-timestamp": "2023-03-04T22:26:05.241000Z"
   },
   "altimeter": {
     "repr": "A2946",
@@ -10,43 +11,56 @@
   },
   "clouds": [
     {
-      "repr": "FEW013",
+      "repr": "FEW030",
       "type": "FEW",
-      "altitude": 13,
+      "altitude": 30,
       "modifier": null
     },
     {
-      "repr": "SCT032",
-      "type": "SCT",
-      "altitude": 32,
+      "repr": "FEW035",
+      "type": "FEW",
+      "altitude": 35,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "8",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "VRB",
     "value": null,
     "spoken": "variable"
   },
-  "wind_gust": null,
-  "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+  "wind_gust": {
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
   },
-  "wx_codes": [],
-  "raw": "KORS 042155Z AUTO VRB03KT 8SM FEW013 SCT032 04/03 A2946 RMK AO2",
-  "sanitized": "KORS 042155Z VRB03KT 8SM FEW013 SCT032 04/03 A2946 RMK AO2",
+  "wind_speed": {
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
+  },
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KORS 042215Z AUTO VRB06G12KT 020V100 5SM -RA BR FEW030 FEW035 04/03 A2946 RMK AO2",
+  "sanitized": "KORS 042215Z VRB06G12KT 020V100 5SM -RA BR FEW030 FEW035 04/03 A2946 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "042155Z",
-    "dt": "2023-03-04T21:55:00Z"
+    "repr": "042215Z",
+    "dt": "2023-03-04T22:15:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
@@ -82,7 +96,18 @@
     "value": 4,
     "spoken": "four"
   },
-  "wind_variable_direction": [],
+  "wind_variable_direction": [
+    {
+      "repr": "020",
+      "value": 20,
+      "spoken": "zero two zero"
+    },
+    {
+      "repr": "100",
+      "value": 100,
+      "spoken": "one zero zero"
+    }
+  ],
   "density_altitude": -822,
   "pressure_altitude": 491,
   "units": {
