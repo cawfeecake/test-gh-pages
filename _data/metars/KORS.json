@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-03-11T12:43:33.152598Z",
+    "timestamp": "2023-03-11T13:09:15.322118Z",
     "stations_updated": "2023-01-30"
   },
   "altimeter": {
@@ -10,56 +10,60 @@
   },
   "clouds": [
     {
-      "repr": "FEW003",
+      "repr": "FEW010",
       "type": "FEW",
-      "altitude": 3,
+      "altitude": 10,
       "modifier": null
     },
     {
-      "repr": "BKN027",
+      "repr": "SCT026",
+      "type": "SCT",
+      "altitude": 26,
+      "modifier": null
+    },
+    {
+      "repr": "BKN031",
       "type": "BKN",
-      "altitude": 27,
-      "modifier": null
-    },
-    {
-      "repr": "OVC040",
-      "type": "OVC",
-      "altitude": 40,
+      "altitude": 31,
       "modifier": null
     }
   ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "7",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
-    "repr": "100",
-    "value": 100,
-    "spoken": "one zero zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KORS 111235Z AUTO 10003KT 7SM -RA FEW003 BKN027 OVC040 05/05 A2984 RMK AO2",
-  "sanitized": "KORS 111235Z 10003KT 7SM -RA FEW003 BKN027 OVC040 05/05 A2984 RMK AO2",
+  "raw": "KORS 111255Z AUTO 00000KT 5SM -RA BR FEW010 SCT026 BKN031 05/05 A2984 RMK AO2 P0008",
+  "sanitized": "KORS 111255Z 00000KT 5SM -RA BR FEW010 SCT026 BKN031 05/05 A2984 RMK AO2 P0008",
   "station": "KORS",
   "time": {
-    "repr": "111235Z",
-    "dt": "2023-03-11T12:35:00Z"
+    "repr": "111255Z",
+    "dt": "2023-03-11T12:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0008",
   "dewpoint": {
     "repr": "05",
     "value": 5,
@@ -82,7 +86,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0008",
+      "value": 0.08,
+      "spoken": "zero point zero eight"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
