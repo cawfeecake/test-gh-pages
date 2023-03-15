@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-03-15T10:04:34.303585Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-15T10:04:06.042000Z"
+    "timestamp": "2023-03-15T10:30:07.476845Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2988",
@@ -11,15 +10,15 @@
   },
   "clouds": [
     {
-      "repr": "SCT020",
-      "type": "SCT",
+      "repr": "FEW020",
+      "type": "FEW",
       "altitude": 20,
       "modifier": null
     },
     {
-      "repr": "BKN025",
+      "repr": "BKN032",
       "type": "BKN",
-      "altitude": 25,
+      "altitude": 32,
       "modifier": null
     },
     {
@@ -29,7 +28,7 @@
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -37,31 +36,35 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "260",
-    "value": 260,
-    "spoken": "two six zero"
+    "repr": "280",
+    "value": 280,
+    "spoken": "two eight zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "28",
+    "value": 28,
+    "spoken": "two eight"
+  },
   "wind_speed": {
-    "repr": "14",
-    "value": 14,
-    "spoken": "one four"
+    "repr": "18",
+    "value": 18,
+    "spoken": "one eight"
   },
   "wx_codes": [],
-  "raw": "KNUW 150923Z 26014KT 10SM SCT020 BKN025 OVC040 06/03 A2988 RMK RAE13 P0000 T00610028",
-  "sanitized": "KNUW 150923Z 26014KT 10SM SCT020 BKN025 OVC040 06/03 A2988 RMK RAE13 P0000 T00610028",
+  "raw": "KNUW 150953Z 28018G28KT 10SM FEW020 BKN032 OVC040 06/02 A2988 RMK AO2 PK WND 27028/0949 RAE13 SLP123 P0000 T00610022 VISNO $",
+  "sanitized": "KNUW 150953Z 28018G28KT 10SM FEW020 BKN032 OVC040 06/02 A2988 RMK AO2 PK WND 27028/0949 RAE13 SLP123 P0000 T00610022 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "150923Z",
-    "dt": "2023-03-15T09:23:00Z"
+    "repr": "150953Z",
+    "dt": "2023-03-15T09:53:00Z"
   },
-  "remarks": "RMK RAE13 P0000 T00610028",
+  "remarks": "RMK AO2 PK WND 27028/0949 RAE13 SLP123 P0000 T00610022 VISNO $",
   "dewpoint": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
-  "relative_humidity": 0.7937696580662857,
+  "relative_humidity": 0.76061983624849,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -70,6 +73,14 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
@@ -80,14 +91,18 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0028",
-      "value": 2.8,
-      "spoken": "two point eight"
+      "repr": "0022",
+      "value": 2.2,
+      "spoken": "two point two"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP123",
+      "value": 1012.3,
+      "spoken": "one zero one two point three"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0061",
