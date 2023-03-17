@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-03-17T09:03:00.007747Z",
+    "timestamp": "2023-03-17T09:26:15.771584Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-17T09:02:05.681000Z"
+    "cache-timestamp": "2023-03-17T09:26:05.644000Z"
   },
   "altimeter": {
     "repr": "A3018",
@@ -10,15 +10,12 @@
     "spoken": "three zero point one eight"
   },
   "clouds": [],
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "7/4",
-    "value": 1.75,
-    "spoken": "one and three quarters",
-    "numerator": 7,
-    "denominator": 4,
-    "normalized": "1 3/4"
+    "repr": "3",
+    "value": 3,
+    "spoken": "three"
   },
   "wind_direction": {
     "repr": "000",
@@ -37,14 +34,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 170846Z AUTO 00000KT 1 3/4SM BR CLR 01/01 A3018 RMK AO2 VIS 3/4V5 T00060006",
-  "sanitized": "KBLI 170846Z 00000KT 1 3/4SM BR 01/01 A3018 RMK AO2 VIS 3/4V5 T00060006",
+  "raw": "KBLI 170853Z AUTO 00000KT 3SM BR CLR 01/01 A3018 RMK AO2 SLP230 T00060006 51006",
+  "sanitized": "KBLI 170853Z 00000KT 3SM BR 01/01 A3018 RMK AO2 SLP230 T00060006 51006",
   "station": "KBLI",
   "time": {
-    "repr": "170846Z",
-    "dt": "2023-03-17T08:46:00Z"
+    "repr": "170853Z",
+    "dt": "2023-03-17T08:53:00Z"
   },
-  "remarks": "RMK AO2 VIS 3/4V5 T00060006",
+  "remarks": "RMK AO2 SLP230 T00060006 51006",
   "dewpoint": {
     "repr": "01",
     "value": 1,
@@ -54,7 +51,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "51006",
+      "tendency": "Increasing, then steady",
+      "change": 0.6
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -72,7 +73,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP230",
+      "value": 1023,
+      "spoken": "one zero two three point zero"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0006",
