@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-03-21T11:40:44.864544Z",
+    "timestamp": "2023-03-21T12:08:48.441218Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-21T11:40:05.693000Z"
+    "cache-timestamp": "2023-03-21T12:08:06.109000Z"
   },
   "altimeter": {
     "repr": "A2984",
@@ -11,15 +11,9 @@
   },
   "clouds": [
     {
-      "repr": "BKN004",
-      "type": "BKN",
-      "altitude": 4,
-      "modifier": null
-    },
-    {
-      "repr": "OVC020",
+      "repr": "OVC003",
       "type": "OVC",
-      "altitude": 20,
+      "altitude": 3,
       "modifier": null
     }
   ],
@@ -47,14 +41,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 211127Z AUTO 00000KT 5SM BR BKN004 OVC020 08/08 A2984 RMK AO2 RAE22 P0000 T00830083",
-  "sanitized": "KBLI 211127Z 00000KT 5SM BR BKN004 OVC020 08/08 A2984 RMK AO2 RAE22 P0000 T00830083",
+  "raw": "KBLI 211153Z AUTO 00000KT 5SM BR OVC003 08/08 A2984 RMK AO2 RAE22 SLP113 P0000 60004 70010 T00830083 10094 20083 53001",
+  "sanitized": "KBLI 211153Z 00000KT 5SM BR OVC003 08/08 A2984 RMK AO2 RAE22 SLP113 P0000 60004 70010 T00830083 10094 20083 53001",
   "station": "KBLI",
   "time": {
-    "repr": "211127Z",
-    "dt": "2023-03-21T11:27:00Z"
+    "repr": "211153Z",
+    "dt": "2023-03-21T11:53:00Z"
   },
-  "remarks": "RMK AO2 RAE22 P0000 T00830083",
+  "remarks": "RMK AO2 RAE22 SLP113 P0000 60004 70010 T00830083 10094 20083 53001",
   "dewpoint": {
     "repr": "08",
     "value": 8,
@@ -62,11 +56,31 @@
   },
   "relative_humidity": 1,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
-    "precip_24_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10094",
+      "value": 9.4,
+      "spoken": "nine point four"
+    },
+    "minimum_temperature_6": {
+      "repr": "20083",
+      "value": 8.3,
+      "spoken": "eight point three"
+    },
+    "pressure_tendency": {
+      "repr": "53001",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.1
+    },
+    "precip_36_hours": {
+      "repr": "60004",
+      "value": 0.04,
+      "spoken": "zero point zero four"
+    },
+    "precip_24_hours": {
+      "repr": "70010",
+      "value": 0.1,
+      "spoken": "zero point one"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
@@ -90,7 +104,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP113",
+      "value": 1011.3,
+      "spoken": "one zero one one point three"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0083",
