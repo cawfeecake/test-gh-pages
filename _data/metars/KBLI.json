@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-03-21T10:02:29.331693Z",
-    "stations_updated": "2023-03-11"
+    "timestamp": "2023-03-21T10:28:36.108490Z",
+    "stations_updated": "2023-03-11",
+    "cache-timestamp": "2023-03-21T10:28:32.439000Z"
   },
   "altimeter": {
     "repr": "A2984",
@@ -10,18 +11,30 @@
   },
   "clouds": [
     {
-      "repr": "OVC036",
+      "repr": "BKN005",
+      "type": "BKN",
+      "altitude": 5,
+      "modifier": null
+    },
+    {
+      "repr": "BKN018",
+      "type": "BKN",
+      "altitude": 18,
+      "modifier": null
+    },
+    {
+      "repr": "OVC032",
       "type": "OVC",
-      "altitude": 36,
+      "altitude": 32,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "000",
@@ -44,14 +57,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 210953Z AUTO 00000KT 4SM -RA BR OVC036 08/08 A2984 RMK AO2 SLP111 P0002 T00830083",
-  "sanitized": "KBLI 210953Z 00000KT 4SM -RA BR OVC036 08/08 A2984 RMK AO2 SLP111 P0002 T00830083",
+  "raw": "KBLI 211018Z AUTO 00000KT 5SM -RA BR BKN005 BKN018 OVC032 08/08 A2984 RMK AO2 P0000 T00830083",
+  "sanitized": "KBLI 211018Z 00000KT 5SM -RA BR BKN005 BKN018 OVC032 08/08 A2984 RMK AO2 P0000 T00830083",
   "station": "KBLI",
   "time": {
-    "repr": "210953Z",
-    "dt": "2023-03-21T09:53:00Z"
+    "repr": "211018Z",
+    "dt": "2023-03-21T10:18:00Z"
   },
-  "remarks": "RMK AO2 SLP111 P0002 T00830083",
+  "remarks": "RMK AO2 P0000 T00830083",
   "dewpoint": {
     "repr": "08",
     "value": 8,
@@ -69,6 +82,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -78,16 +95,8 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0002",
-      "value": 0.02,
-      "spoken": "zero point zero two"
-    },
-    "sea_level_pressure": {
-      "repr": "SLP111",
-      "value": 1011.1,
-      "spoken": "one zero one one point one"
-    },
+    "precip_hourly": null,
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0083",
