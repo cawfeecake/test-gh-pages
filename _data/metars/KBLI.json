@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-03-22T15:02:11.233860Z",
-    "stations_updated": "2023-03-11"
+    "timestamp": "2023-03-22T15:28:32.501729Z",
+    "stations_updated": "2023-03-11",
+    "cache-timestamp": "2023-03-22T15:28:06.790000Z"
   },
   "altimeter": {
     "repr": "A2981",
@@ -10,8 +11,8 @@
   },
   "clouds": [
     {
-      "repr": "VV002",
-      "type": "VV",
+      "repr": "OVC002",
+      "type": "OVC",
       "altitude": 2,
       "modifier": null
     }
@@ -43,14 +44,14 @@
       "value": "Fog"
     }
   ],
-  "raw": "KBLI 221453Z 00000KT 1/4SM R16/1000V1400FT FG VV002 03/03 A2981 RMK AO2 SLP101 T00330033 53008 $",
-  "sanitized": "KBLI 221453Z 00000KT 1/4SM R16/1000V1400FT FG VV002 03/03 A2981 RMK AO2 SLP101 T00330033 53008 $",
+  "raw": "KBLI 221502Z 00000KT 1/4SM R16/1400VP6000FT FG OVC002 03/03 A2981 RMK AO2 T00330033 $",
+  "sanitized": "KBLI 221502Z 00000KT 1/4SM R16/1400VP6000FT FG OVC002 03/03 A2981 RMK AO2 T00330033 $",
   "station": "KBLI",
   "time": {
-    "repr": "221453Z",
-    "dt": "2023-03-22T14:53:00Z"
+    "repr": "221502Z",
+    "dt": "2023-03-22T15:02:00Z"
   },
-  "remarks": "RMK AO2 SLP101 T00330033 53008 $",
+  "remarks": "RMK AO2 T00330033 $",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -60,11 +61,7 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": {
-      "repr": "53008",
-      "tendency": "Decreasing or steady, then increasing",
-      "change": 0.8
-    },
+    "pressure_tendency": null,
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -86,11 +83,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP101",
-      "value": 1010.1,
-      "spoken": "one zero one zero point one"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0033",
@@ -100,19 +93,19 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1000V1400FT",
+      "repr": "R16/1400VP6000FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "1000",
-          "value": 1000,
-          "spoken": "one thousand"
-        },
-        {
           "repr": "1400",
           "value": 1400,
           "spoken": "one four hundred"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
         }
       ],
       "trend": null
