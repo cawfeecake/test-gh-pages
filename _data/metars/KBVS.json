@@ -1,19 +1,24 @@
 {
   "meta": {
-    "timestamp": "2023-03-24T14:40:49.996291Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-24T14:40:06.643000Z"
+    "timestamp": "2023-03-24T15:02:07.627063Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
-    "repr": "A3007",
-    "value": 30.07,
-    "spoken": "three zero point zero seven"
+    "repr": "A3008",
+    "value": 30.08,
+    "spoken": "three zero point zero eight"
   },
   "clouds": [
     {
-      "repr": "OVC014",
+      "repr": "FEW015",
+      "type": "FEW",
+      "altitude": 15,
+      "modifier": null
+    },
+    {
+      "repr": "OVC022",
       "type": "OVC",
-      "altitude": 14,
+      "altitude": 22,
       "modifier": null
     }
   ],
@@ -36,14 +41,14 @@
     "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KBVS 241415Z AUTO 00000KT 10SM OVC014 04/04 A3007 RMK A01",
-  "sanitized": "KBVS 241415Z 00000KT 10SM OVC014 04/04 A3007 RMK A01",
+  "raw": "KBVS 241455Z AUTO 00000KT 10SM FEW015 OVC022 04/04 A3008 RMK A01 P0001",
+  "sanitized": "KBVS 241455Z 00000KT 10SM FEW015 OVC022 04/04 A3008 RMK A01 P0001",
   "station": "KBVS",
   "time": {
-    "repr": "241415Z",
-    "dt": "2023-03-24T14:15:00Z"
+    "repr": "241455Z",
+    "dt": "2023-03-24T14:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0001",
   "dewpoint": {
     "repr": "04",
     "value": 4,
@@ -61,7 +66,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
@@ -73,8 +82,8 @@
     "spoken": "four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1291,
-  "pressure_altitude": -6,
+  "density_altitude": -1301,
+  "pressure_altitude": -16,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
