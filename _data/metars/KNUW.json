@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-03-24T10:40:35.359356Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-24T10:40:05.962000Z"
+    "timestamp": "2023-03-24T11:01:17.480117Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A3005",
@@ -11,21 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT016",
-      "type": "SCT",
-      "altitude": 16,
-      "modifier": null
-    },
-    {
-      "repr": "BKN024",
+      "repr": "BKN015",
       "type": "BKN",
-      "altitude": 24,
+      "altitude": 15,
       "modifier": null
     },
     {
-      "repr": "OVC047",
-      "type": "OVC",
-      "altitude": 47,
+      "repr": "BKN025",
+      "type": "BKN",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "BKN055",
+      "type": "BKN",
+      "altitude": 55,
       "modifier": null
     }
   ],
@@ -53,14 +52,14 @@
       "value": "Light Rain"
     }
   ],
-  "raw": "KNUW 241014Z 09004KT 10SM -RA SCT016 BKN024 OVC047 04/03 A3005 RMK AO2 RAB05 P0000 T00390028 VISNO $",
-  "sanitized": "KNUW 241014Z 09004KT 10SM -RA SCT016 BKN024 OVC047 04/03 A3005 RMK AO2 RAB05 P0000 T00390028 VISNO $",
+  "raw": "KNUW 241053Z 09004KT 10SM -RA BKN015 BKN025 BKN055 04/03 A3005 RMK AO2 RAB05 SLP178 P0001 T00390028 VISNO $",
+  "sanitized": "KNUW 241053Z 09004KT 10SM -RA BKN015 BKN025 BKN055 04/03 A3005 RMK AO2 RAB05 SLP178 P0001 T00390028 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "241014Z",
-    "dt": "2023-03-24T10:14:00Z"
+    "repr": "241053Z",
+    "dt": "2023-03-24T10:53:00Z"
   },
-  "remarks": "RMK AO2 RAB05 P0000 T00390028 VISNO $",
+  "remarks": "RMK AO2 RAB05 SLP178 P0001 T00390028 VISNO $",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -84,10 +83,6 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
         "repr": "RAB05",
         "value": "Rain began at :05"
       }
@@ -99,8 +94,16 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
-    "sea_level_pressure": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP178",
+      "value": 1017.8,
+      "spoken": "one zero one seven point eight"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0039",
