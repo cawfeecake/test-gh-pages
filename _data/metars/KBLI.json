@@ -1,61 +1,66 @@
 {
   "meta": {
-    "timestamp": "2023-03-24T02:48:42.800469Z",
+    "timestamp": "2023-03-24T03:02:49.175573Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-24T02:48:25.961000Z"
+    "cache-timestamp": "2023-03-24T03:02:06.082000Z"
   },
   "altimeter": {
-    "repr": "A2992",
-    "value": 29.92,
-    "spoken": "two nine point nine two"
+    "repr": "A2994",
+    "value": 29.94,
+    "spoken": "two nine point nine four"
   },
   "clouds": [
     {
-      "repr": "SCT017",
-      "type": "SCT",
-      "altitude": 17,
+      "repr": "FEW015",
+      "type": "FEW",
+      "altitude": 15,
       "modifier": null
     },
     {
-      "repr": "BKN022",
+      "repr": "BKN026",
       "type": "BKN",
-      "altitude": 22,
+      "altitude": 26,
       "modifier": null
     },
     {
-      "repr": "OVC040",
-      "type": "OVC",
-      "altitude": 40,
+      "repr": "BKN060",
+      "type": "BKN",
+      "altitude": 60,
       "modifier": null
     }
   ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "8",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "190",
-    "value": 190,
-    "spoken": "one nine zero"
+    "repr": "160",
+    "value": 160,
+    "spoken": "one six zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
-  "wx_codes": [],
-  "raw": "KBLI 240153Z 19005KT 8SM SCT017 BKN022 OVC040 06/04 A2992 RMK AO2 RAE53 SLP140 P0004 T00560044",
-  "sanitized": "KBLI 240153Z 19005KT 8SM SCT017 BKN022 OVC040 06/04 A2992 RMK AO2 RAE53 SLP140 P0004 T00560044",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 240253Z 16011KT 10SM -RA FEW015 BKN026 BKN060 06/04 A2994 RMK AO2 RAB44 SLP145 P0000 60031 T00560044 51031",
+  "sanitized": "KBLI 240253Z 16011KT 10SM -RA FEW015 BKN026 BKN060 06/04 A2994 RMK AO2 RAB44 SLP145 P0000 60031 T00560044 51031",
   "station": "KBLI",
   "time": {
-    "repr": "240153Z",
-    "dt": "2023-03-24T01:53:00Z"
+    "repr": "240253Z",
+    "dt": "2023-03-24T02:53:00Z"
   },
-  "remarks": "RMK AO2 RAE53 SLP140 P0004 T00560044",
+  "remarks": "RMK AO2 RAB44 SLP145 P0000 60031 T00560044 51031",
   "dewpoint": {
     "repr": "04",
     "value": 4,
@@ -65,8 +70,16 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "51031",
+      "tendency": "Increasing, then steady",
+      "change": 3.1
+    },
+    "precip_36_hours": {
+      "repr": "60031",
+      "value": 0.31,
+      "spoken": "zero point three one"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -75,8 +88,12 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "RAE53",
-        "value": "Rain ended at :53"
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB44",
+        "value": "Rain began at :44"
       }
     ],
     "dewpoint_decimal": {
@@ -86,15 +103,11 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0004",
-      "value": 0.04,
-      "spoken": "zero point zero four"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP140",
-      "value": 1014,
-      "spoken": "one zero one four point zero"
+      "repr": "SLP145",
+      "value": 1014.5,
+      "spoken": "one zero one four point five"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -110,8 +123,8 @@
     "spoken": "six"
   },
   "wind_variable_direction": [],
-  "density_altitude": -917,
-  "pressure_altitude": 170,
+  "density_altitude": -937,
+  "pressure_altitude": 150,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
