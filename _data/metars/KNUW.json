@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-03-27T14:46:47.190387Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-03-27T14:46:06.120000Z"
+    "timestamp": "2023-03-27T15:03:18.959800Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A3030",
@@ -17,8 +16,8 @@
       "modifier": null
     },
     {
-      "repr": "FEW250",
-      "type": "FEW",
+      "repr": "SCT250",
+      "type": "SCT",
       "altitude": 250,
       "modifier": null
     }
@@ -31,35 +30,39 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "120",
-    "value": 120,
-    "spoken": "one two zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
-  },
-  "wx_codes": [],
-  "raw": "KNUW 271353Z 12004KT 10SM FEW030 FEW250 01/00 A3030 RMK AO2 SLP266 T00110000 VISNO $",
-  "sanitized": "KNUW 271353Z 12004KT 10SM FEW030 FEW250 01/00 A3030 RMK AO2 SLP266 T00110000 VISNO $",
-  "station": "KNUW",
-  "time": {
-    "repr": "271353Z",
-    "dt": "2023-03-27T13:53:00Z"
-  },
-  "remarks": "RMK AO2 SLP266 T00110000 VISNO $",
-  "dewpoint": {
     "repr": "00",
     "value": 0,
     "spoken": "zero"
   },
-  "relative_humidity": 0.9236108706295763,
+  "wx_codes": [],
+  "raw": "KNUW 271453Z 00000KT 10SM FEW030 SCT250 01/01 A3030 RMK AO2 SLP265 T00110006 56003 VISNO $",
+  "sanitized": "KNUW 271453Z 00000KT 10SM FEW030 SCT250 01/01 A3030 RMK AO2 SLP265 T00110006 56003 VISNO $",
+  "station": "KNUW",
+  "time": {
+    "repr": "271453Z",
+    "dt": "2023-03-27T14:53:00Z"
+  },
+  "remarks": "RMK AO2 SLP265 T00110006 56003 VISNO $",
+  "dewpoint": {
+    "repr": "01",
+    "value": 1,
+    "spoken": "one"
+  },
+  "relative_humidity": 0.9646099922239331,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "56003",
+      "tendency": "Decreasing, then steady",
+      "change": 0.3
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -74,17 +77,17 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0000",
-      "value": 0,
-      "spoken": "zero"
+      "repr": "0006",
+      "value": 0.6,
+      "spoken": "zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP266",
-      "value": 1026.6,
-      "spoken": "one zero two six point six"
+      "repr": "SLP265",
+      "value": 1026.5,
+      "spoken": "one zero two six point five"
     },
     "snow_depth": null,
     "temperature_decimal": {
