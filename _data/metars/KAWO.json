@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-04-02T15:40:34.080889Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-02T15:40:05.525000Z"
+    "timestamp": "2023-04-02T16:02:03.793252Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2990",
@@ -28,34 +27,31 @@
     "value": 8,
     "spoken": "eight"
   },
-  "wx_codes": [],
-  "raw": "KAWO 021456Z AUTO 14008KT 10SM CLR 03/02 A2990 RMK AO2 RAE16UPB18E41 SLP129 P0000 60001 T00330017 56004",
-  "sanitized": "KAWO 021456Z 14008KT 10SM 03/02 A2990 RMK AO2 RAE16UPB18E41 SLP129 P0000 60001 T00330017 56004",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 021556Z AUTO 14008KT 10SM -RA CLR 03/02 A2990 RMK AO2 RAB35 SLP129 P0000 T00330022",
+  "sanitized": "KAWO 021556Z 14008KT 10SM -RA 03/02 A2990 RMK AO2 RAB35 SLP129 P0000 T00330022",
   "station": "KAWO",
   "time": {
-    "repr": "021456Z",
-    "dt": "2023-04-02T14:56:00Z"
+    "repr": "021556Z",
+    "dt": "2023-04-02T15:56:00Z"
   },
-  "remarks": "RMK AO2 RAE16UPB18E41 SLP129 P0000 60001 T00330017 56004",
+  "remarks": "RMK AO2 RAB35 SLP129 P0000 T00330022",
   "dewpoint": {
     "repr": "02",
     "value": 2,
     "spoken": "two"
   },
-  "relative_humidity": 0.892472054966446,
+  "relative_humidity": 0.9249173515197439,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": {
-      "repr": "56004",
-      "tendency": "Decreasing, then steady",
-      "change": 0.4
-    },
-    "precip_36_hours": {
-      "repr": "60001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "pressure_tendency": null,
+    "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -66,12 +62,16 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB35",
+        "value": "Rain began at :35"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0017",
-      "value": 1.7,
-      "spoken": "one point seven"
+      "repr": "0022",
+      "value": 2.2,
+      "spoken": "two point two"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
