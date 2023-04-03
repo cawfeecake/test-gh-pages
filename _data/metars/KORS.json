@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-04-03T11:01:03.593748Z",
+    "timestamp": "2023-04-03T11:20:44.094408Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-03T11:00:04.777000Z"
+    "cache-timestamp": "2023-04-03T11:20:02.019000Z"
   },
   "altimeter": {
     "repr": "A2999",
@@ -11,32 +11,35 @@
   },
   "clouds": [
     {
-      "repr": "SCT003",
-      "type": "SCT",
+      "repr": "FEW003",
+      "type": "FEW",
       "altitude": 3,
       "modifier": null
     },
     {
-      "repr": "OVC015",
+      "repr": "BKN018",
+      "type": "BKN",
+      "altitude": 18,
+      "modifier": null
+    },
+    {
+      "repr": "OVC023",
       "type": "OVC",
-      "altitude": 15,
+      "altitude": 23,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "5/2",
-    "value": 2.5,
-    "spoken": "two and one half",
-    "numerator": 5,
-    "denominator": 2,
-    "normalized": "2 1/2"
+    "repr": "8",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_direction": {
-    "repr": "VRB",
-    "value": null,
-    "spoken": "variable"
+    "repr": "150",
+    "value": 150,
+    "spoken": "one five zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -46,22 +49,18 @@
   },
   "wx_codes": [
     {
-      "repr": "UP",
-      "value": "Unknown Precip"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "-RA",
+      "value": "Light Rain"
     }
   ],
-  "raw": "KORS 031035Z AUTO VRB03KT 2 1/2SM UP BR SCT003 OVC015 03/03 A2999 RMK AO2",
-  "sanitized": "KORS 031035Z VRB03KT 2 1/2SM UP BR SCT003 OVC015 03/03 A2999 RMK AO2",
+  "raw": "KORS 031055Z AUTO 15003KT 8SM -RA FEW003 BKN018 OVC023 03/03 A2999 RMK AO2 P0012",
+  "sanitized": "KORS 031055Z 15003KT 8SM -RA FEW003 BKN018 OVC023 03/03 A2999 RMK AO2 P0012",
   "station": "KORS",
   "time": {
-    "repr": "031035Z",
-    "dt": "2023-04-03T10:35:00Z"
+    "repr": "031055Z",
+    "dt": "2023-04-03T10:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0012",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -84,7 +83,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0012",
+      "value": 0.12,
+      "spoken": "zero point one two"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
