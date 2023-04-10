@@ -1,15 +1,28 @@
 {
   "meta": {
-    "timestamp": "2023-04-10T19:40:39.264532Z",
+    "timestamp": "2023-04-10T20:01:41.662555Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-10T19:40:05.470000Z"
+    "cache-timestamp": "2023-04-10T20:01:40.187000Z"
   },
   "altimeter": {
-    "repr": "A3006",
-    "value": 30.06,
-    "spoken": "three zero point zero six"
+    "repr": "A3005",
+    "value": 30.05,
+    "spoken": "three zero point zero five"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "SCT015",
+      "type": "SCT",
+      "altitude": 15,
+      "modifier": null
+    },
+    {
+      "repr": "SCT019",
+      "type": "SCT",
+      "altitude": 19,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -29,20 +42,20 @@
     "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KBVS 101915Z AUTO 00000KT 10SM CLR 08/08 A3006 RMK A01",
-  "sanitized": "KBVS 101915Z 00000KT 10SM 08/08 A3006 RMK A01",
+  "raw": "KBVS 101955Z AUTO 00000KT 10SM SCT015 SCT019 08/07 A3005 RMK A01 P0001",
+  "sanitized": "KBVS 101955Z 00000KT 10SM SCT015 SCT019 08/07 A3005 RMK A01 P0001",
   "station": "KBVS",
   "time": {
-    "repr": "101915Z",
-    "dt": "2023-04-10T19:15:00Z"
+    "repr": "101955Z",
+    "dt": "2023-04-10T19:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0001",
   "dewpoint": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
-  "relative_humidity": 1,
+  "relative_humidity": 0.933984777240729,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -54,7 +67,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
@@ -66,8 +83,8 @@
     "spoken": "eight"
   },
   "wind_variable_direction": [],
-  "density_altitude": -801,
-  "pressure_altitude": 4,
+  "density_altitude": -791,
+  "pressure_altitude": 14,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
