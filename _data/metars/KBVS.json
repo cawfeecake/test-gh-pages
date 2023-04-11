@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-04-11T07:01:31.733349Z",
-    "stations_updated": "2023-03-11"
+    "timestamp": "2023-04-11T07:21:47.616658Z",
+    "stations_updated": "2023-03-11",
+    "cache-timestamp": "2023-04-11T07:21:39.556000Z"
   },
   "altimeter": {
     "repr": "A2993",
@@ -10,19 +11,25 @@
   },
   "clouds": [
     {
-      "repr": "BKN008",
-      "type": "BKN",
-      "altitude": 8,
+      "repr": "FEW007",
+      "type": "FEW",
+      "altitude": 7,
       "modifier": null
     },
     {
-      "repr": "OVC012",
+      "repr": "SCT011",
+      "type": "SCT",
+      "altitude": 11,
+      "modifier": null
+    },
+    {
+      "repr": "OVC034",
       "type": "OVC",
-      "altitude": 12,
+      "altitude": 34,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -41,14 +48,14 @@
     "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KBVS 110635Z AUTO 00000KT 10SM BKN008 OVC012 06/06 A2993 RMK A01",
-  "sanitized": "KBVS 110635Z 00000KT 10SM BKN008 OVC012 06/06 A2993 RMK A01",
+  "raw": "KBVS 110655Z AUTO 00000KT 10SM FEW007 SCT011 OVC034 06/06 A2993 RMK A01 P0004",
+  "sanitized": "KBVS 110655Z 00000KT 10SM FEW007 SCT011 OVC034 06/06 A2993 RMK A01 P0004",
   "station": "KBVS",
   "time": {
-    "repr": "110635Z",
-    "dt": "2023-04-11T06:35:00Z"
+    "repr": "110655Z",
+    "dt": "2023-04-11T06:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0004",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -66,7 +73,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0004",
+      "value": 0.04,
+      "spoken": "zero point zero four"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
