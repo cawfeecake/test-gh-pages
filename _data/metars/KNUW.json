@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-04-11T03:40:47.363954Z",
+    "timestamp": "2023-04-11T04:03:48.929378Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-11T03:40:05.555000Z"
+    "cache-timestamp": "2023-04-11T04:03:11.009000Z"
   },
   "altimeter": {
     "repr": "A2994",
@@ -11,21 +11,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT020",
+      "repr": "SCT026",
       "type": "SCT",
-      "altitude": 20,
+      "altitude": 26,
       "modifier": null
     },
     {
-      "repr": "SCT040",
+      "repr": "SCT038",
       "type": "SCT",
-      "altitude": 40,
+      "altitude": 38,
       "modifier": null
     },
     {
-      "repr": "OVC070",
+      "repr": "OVC046",
       "type": "OVC",
-      "altitude": 70,
+      "altitude": 46,
       "modifier": null
     }
   ],
@@ -37,39 +37,40 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "150",
-    "value": 150,
-    "spoken": "one five zero"
+    "repr": "160",
+    "value": 160,
+    "spoken": "one six zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
-  "wx_codes": [],
-  "raw": "KNUW 110253Z 15003KT 10SM SCT020 SCT040 OVC070 07/05 A2994 RMK AO2 SLP142 T00720050 56016 VISNO $",
-  "sanitized": "KNUW 110253Z 15003KT 10SM SCT020 SCT040 OVC070 07/05 A2994 RMK AO2 SLP142 T00720050 56016 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 110353Z 16004KT 10SM -RA SCT026 SCT038 OVC046 07/06 A2994 RMK AO2 RAB48 SLP142 P0000 T00720056 VISNO $",
+  "sanitized": "KNUW 110353Z 16004KT 10SM -RA SCT026 SCT038 OVC046 07/06 A2994 RMK AO2 RAB48 SLP142 P0000 T00720056 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "110253Z",
-    "dt": "2023-04-11T02:53:00Z"
+    "repr": "110353Z",
+    "dt": "2023-04-11T03:53:00Z"
   },
-  "remarks": "RMK AO2 SLP142 T00720050 56016 VISNO $",
+  "remarks": "RMK AO2 RAB48 SLP142 P0000 T00720056 VISNO $",
   "dewpoint": {
-    "repr": "05",
-    "value": 5,
-    "spoken": "five"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
-  "relative_humidity": 0.8590382146577359,
+  "relative_humidity": 0.8956218363001711,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": {
-      "repr": "56016",
-      "tendency": "Decreasing, then steady",
-      "change": 1.6
-    },
+    "pressure_tendency": null,
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -81,12 +82,20 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB48",
+        "value": "Rain began at :48"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0050",
-      "value": 5,
-      "spoken": "five point zero"
+      "repr": "0056",
+      "value": 5.6,
+      "spoken": "five point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
