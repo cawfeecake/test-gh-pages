@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-04-13T09:01:49.495585Z",
+    "timestamp": "2023-04-13T09:23:40.870111Z",
     "stations_updated": "2023-03-11"
   },
   "altimeter": {
@@ -16,14 +16,14 @@
       "modifier": null
     },
     {
-      "repr": "FEW180",
-      "type": "FEW",
+      "repr": "SCT180",
+      "type": "SCT",
       "altitude": 180,
       "modifier": null
     },
     {
-      "repr": "SCT250",
-      "type": "SCT",
+      "repr": "BKN250",
+      "type": "BKN",
       "altitude": 250,
       "modifier": null
     }
@@ -36,25 +36,29 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "240",
-    "value": 240,
-    "spoken": "two four zero"
+    "repr": "250",
+    "value": 250,
+    "spoken": "two five zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "24",
+    "value": 24,
+    "spoken": "two four"
+  },
   "wind_speed": {
     "repr": "17",
     "value": 17,
     "spoken": "one seven"
   },
   "wx_codes": [],
-  "raw": "KNUW 130753Z 24017KT 10SM FEW022 FEW180 SCT250 07/03 A3007 RMK AO2 SLP185 T00670028 401110006 VISNO $",
-  "sanitized": "KNUW 130753Z 24017KT 10SM FEW022 FEW180 SCT250 07/03 A3007 RMK AO2 SLP185 T00670028 401110006 VISNO $",
+  "raw": "KNUW 130853Z 25017G24KT 10SM FEW022 SCT180 BKN250 07/03 A3007 RMK SLP185 T00670028 58001",
+  "sanitized": "KNUW 130853Z 25017G24KT 10SM FEW022 SCT180 BKN250 07/03 A3007 RMK SLP185 T00670028 58001",
   "station": "KNUW",
   "time": {
-    "repr": "130753Z",
-    "dt": "2023-04-13T07:53:00Z"
+    "repr": "130853Z",
+    "dt": "2023-04-13T08:53:00Z"
   },
-  "remarks": "RMK AO2 SLP185 T00670028 401110006 VISNO $",
+  "remarks": "RMK SLP185 T00670028 58001",
   "dewpoint": {
     "repr": "03",
     "value": 3,
@@ -64,35 +68,22 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "58001",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 0.1
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [
-      {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      }
-    ],
+    "codes": [],
     "dewpoint_decimal": {
       "repr": "0028",
       "value": 2.8,
       "spoken": "two point eight"
     },
-    "maximum_temperature_24": {
-      "repr": "0111",
-      "value": 11.1,
-      "spoken": "one one point one"
-    },
-    "minimum_temperature_24": {
-      "repr": "0006",
-      "value": 0.6,
-      "spoken": "zero point six"
-    },
+    "maximum_temperature_24": null,
+    "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
       "repr": "SLP185",
