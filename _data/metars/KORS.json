@@ -1,14 +1,22 @@
 {
   "meta": {
-    "timestamp": "2023-04-15T22:01:15.786242Z",
-    "stations_updated": "2023-03-11"
+    "timestamp": "2023-04-15T22:24:49.510083Z",
+    "stations_updated": "2023-03-11",
+    "cache-timestamp": "2023-04-15T22:24:04.680000Z"
   },
   "altimeter": {
     "repr": "A3008",
     "value": 30.08,
     "spoken": "three zero point zero eight"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "SCT034",
+      "type": "SCT",
+      "altitude": 34,
+      "modifier": null
+    }
+  ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
@@ -21,11 +29,15 @@
     "value": 170,
     "spoken": "one seven zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "16",
+    "value": 16,
+    "spoken": "one six"
+  },
   "wind_speed": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "wx_codes": [
     {
@@ -37,14 +49,14 @@
       "value": "Haze"
     }
   ],
-  "raw": "KORS 152155Z AUTO 17011KT 4SM -RA HZ CLR 10/06 A3008 RMK AO2 P0001",
-  "sanitized": "KORS 152155Z 17011KT 4SM -RA HZ 10/06 A3008 RMK AO2 P0001",
+  "raw": "KORS 152215Z AUTO 17010G16KT 4SM -RA HZ SCT034 10/06 A3008 RMK AO2",
+  "sanitized": "KORS 152215Z 17010G16KT 4SM -RA HZ SCT034 10/06 A3008 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "152155Z",
-    "dt": "2023-04-15T21:55:00Z"
+    "repr": "152215Z",
+    "dt": "2023-04-15T22:15:00Z"
   },
-  "remarks": "RMK AO2 P0001",
+  "remarks": "RMK AO2",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -67,11 +79,7 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
