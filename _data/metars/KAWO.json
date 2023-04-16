@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-04-16T11:40:46.070845Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-16T11:40:04.556000Z"
+    "timestamp": "2023-04-16T12:07:41.526157Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2996",
@@ -18,9 +17,9 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "300",
-    "value": 300,
-    "spoken": "three zero zero"
+    "repr": "120",
+    "value": 120,
+    "spoken": "one two zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -28,15 +27,20 @@
     "value": 3,
     "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KAWO 161056Z AUTO 30003KT 10SM 07/06 A2996 RMK AO2 SLP151 T00670056 $",
-  "sanitized": "KAWO 161056Z 30003KT 10SM 07/06 A2996 RMK AO2 SLP151 T00670056 $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 161156Z AUTO 12003KT 10SM -RA 07/06 A2996 RMK AO2 RAB27 SLP151 P0000 60000 70001 T00670056 10089 20061 56010",
+  "sanitized": "KAWO 161156Z 12003KT 10SM -RA 07/06 A2996 RMK AO2 RAB27 SLP151 P0000 60000 70001 T00670056 10089 20061 56010",
   "station": "KAWO",
   "time": {
-    "repr": "161056Z",
-    "dt": "2023-04-16T10:56:00Z"
+    "repr": "161156Z",
+    "dt": "2023-04-16T11:56:00Z"
   },
-  "remarks": "RMK AO2 SLP151 T00670056 $",
+  "remarks": "RMK AO2 RAB27 SLP151 P0000 60000 70001 T00670056 10089 20061 56010",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -44,20 +48,44 @@
   },
   "relative_humidity": 0.9268723723701822,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
-    "precip_24_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10089",
+      "value": 8.9,
+      "spoken": "eight point nine"
+    },
+    "minimum_temperature_6": {
+      "repr": "20061",
+      "value": 6.1,
+      "spoken": "six point one"
+    },
+    "pressure_tendency": {
+      "repr": "56010",
+      "tendency": "Decreasing, then steady",
+      "change": 1
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
+    "precip_24_hours": {
+      "repr": "70001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB27",
+        "value": "Rain began at :27"
       }
     ],
     "dewpoint_decimal": {
