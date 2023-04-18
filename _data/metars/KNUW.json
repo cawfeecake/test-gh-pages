@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-04-18T05:01:40.859084Z",
+    "timestamp": "2023-04-18T05:25:12.208819Z",
     "stations_updated": "2023-03-11"
   },
   "altimeter": {
@@ -10,27 +10,15 @@
   },
   "clouds": [
     {
-      "repr": "FEW025",
-      "type": "FEW",
-      "altitude": 25,
-      "modifier": null
-    },
-    {
-      "repr": "SCT070",
+      "repr": "SCT100",
       "type": "SCT",
-      "altitude": 70,
+      "altitude": 100,
       "modifier": null
     },
     {
-      "repr": "SCT090",
-      "type": "SCT",
-      "altitude": 90,
-      "modifier": null
-    },
-    {
-      "repr": "BKN200",
+      "repr": "BKN120",
       "type": "BKN",
-      "altitude": 200,
+      "altitude": 120,
       "modifier": null
     }
   ],
@@ -42,35 +30,40 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "160",
-    "value": 160,
-    "spoken": "one six zero"
+    "repr": "140",
+    "value": 140,
+    "spoken": "one four zero"
   },
   "wind_gust": {
-    "repr": "29",
-    "value": 29,
-    "spoken": "two nine"
+    "repr": "32",
+    "value": 32,
+    "spoken": "three two"
   },
   "wind_speed": {
-    "repr": "20",
-    "value": 20,
-    "spoken": "two zero"
+    "repr": "22",
+    "value": 22,
+    "spoken": "two two"
   },
-  "wx_codes": [],
-  "raw": "KNUW 180353Z 16020G29KT 10SM FEW025 SCT070 SCT090 BKN200 06/01 A2962 RMK PK WND 18029/0345 RAE51 SLP035 P0000 T00610011",
-  "sanitized": "KNUW 180353Z 16020G29KT 10SM FEW025 SCT070 SCT090 BKN200 06/01 A2962 RMK PK WND 18029/0345 RAE51 SLP035 P0000 T00610011",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 180453Z 14022G32KT 10SM -RA SCT100 BKN120 06/02 A2962 RMK PK WND 13033/0439 RAB47 SLP035 P0000 T00610017 VISNO $",
+  "sanitized": "KNUW 180453Z 14022G32KT 10SM -RA SCT100 BKN120 06/02 A2962 RMK PK WND 13033/0439 RAB47 SLP035 P0000 T00610017 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "180353Z",
-    "dt": "2023-04-18T03:53:00Z"
+    "repr": "180453Z",
+    "dt": "2023-04-18T04:53:00Z"
   },
-  "remarks": "RMK PK WND 18029/0345 RAE51 SLP035 P0000 T00610011",
+  "remarks": "RMK PK WND 13033/0439 RAB47 SLP035 P0000 T00610017 VISNO $",
   "dewpoint": {
-    "repr": "01",
-    "value": 1,
-    "spoken": "one"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
-  "relative_humidity": 0.7030167854424878,
+  "relative_humidity": 0.7339379536880067,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -80,18 +73,22 @@
     "sunshine_minutes": null,
     "codes": [
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
       },
       {
-        "repr": "RAE51",
-        "value": "Rain ended at :51"
+        "repr": "RAB47",
+        "value": "Rain began at :47"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0011",
-      "value": 1.1,
-      "spoken": "one point one"
+      "repr": "0017",
+      "value": 1.7,
+      "spoken": "one point seven"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
