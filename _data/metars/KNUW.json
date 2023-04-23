@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-04-23T11:40:46.107167Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-23T11:40:04.932000Z"
+    "timestamp": "2023-04-23T12:07:45.701848Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2981",
@@ -11,57 +10,88 @@
   },
   "clouds": [
     {
+      "repr": "SCT004",
+      "type": "SCT",
+      "altitude": 4,
+      "modifier": null
+    },
+    {
       "repr": "BKN008",
       "type": "BKN",
       "altitude": 8,
       "modifier": null
     },
     {
-      "repr": "OVC010",
+      "repr": "OVC012",
       "type": "OVC",
-      "altitude": 10,
+      "altitude": 12,
       "modifier": null
     }
   ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
-    "repr": "220",
-    "value": 220,
-    "spoken": "two two zero"
+    "repr": "230",
+    "value": 230,
+    "spoken": "two three zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
-  },
-  "wx_codes": [],
-  "raw": "KNUW 231120Z 22006KT 10SM BKN008 OVC010 09/09 A2981 RMK AO2 T00940089 VISNO $",
-  "sanitized": "KNUW 231120Z 22006KT 10SM BKN008 OVC010 09/09 A2981 RMK AO2 T00940089 VISNO $",
-  "station": "KNUW",
-  "time": {
-    "repr": "231120Z",
-    "dt": "2023-04-23T11:20:00Z"
-  },
-  "remarks": "RMK AO2 T00940089 VISNO $",
-  "dewpoint": {
     "repr": "09",
     "value": 9,
     "spoken": "nine"
   },
-  "relative_humidity": 0.9668587106156139,
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KNUW 231153Z 23009KT 5SM BR SCT004 BKN008 OVC012 09/08 A2981 RMK AO2 SLP097 60008 70020 T00890078 10122 20089 55005 VISNO $",
+  "sanitized": "KNUW 231153Z 23009KT 5SM BR SCT004 BKN008 OVC012 09/08 A2981 RMK AO2 SLP097 60008 70020 T00890078 10122 20089 55005 VISNO $",
+  "station": "KNUW",
+  "time": {
+    "repr": "231153Z",
+    "dt": "2023-04-23T11:53:00Z"
+  },
+  "remarks": "RMK AO2 SLP097 60008 70020 T00890078 10122 20089 55005 VISNO $",
+  "dewpoint": {
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
+  },
+  "relative_humidity": 0.9280975124584884,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
-    "precip_24_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10122",
+      "value": 12.2,
+      "spoken": "one two point two"
+    },
+    "minimum_temperature_6": {
+      "repr": "20089",
+      "value": 8.9,
+      "spoken": "eight point nine"
+    },
+    "pressure_tendency": {
+      "repr": "55005",
+      "tendency": "Decreasing, then increasing",
+      "change": 0.5
+    },
+    "precip_36_hours": {
+      "repr": "60008",
+      "value": 0.08,
+      "spoken": "zero point zero eight"
+    },
+    "precip_24_hours": {
+      "repr": "70020",
+      "value": 0.2,
+      "spoken": "zero point two"
+    },
     "sunshine_minutes": null,
     "codes": [
       {
@@ -74,19 +104,23 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0089",
-      "value": 8.9,
-      "spoken": "eight point nine"
+      "repr": "0078",
+      "value": 7.8,
+      "spoken": "seven point eight"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP097",
+      "value": 1009.7,
+      "spoken": "one zero zero nine point seven"
+    },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0094",
-      "value": 9.4,
-      "spoken": "nine point four"
+      "repr": "0089",
+      "value": 8.9,
+      "spoken": "eight point nine"
     }
   },
   "runway_visibility": [],
@@ -96,7 +130,7 @@
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -504,
+  "density_altitude": -564,
   "pressure_altitude": 157,
   "units": {
     "accumulation": "in",
