@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-04-24T16:31:35.135945Z",
-    "stations_updated": "2023-03-11"
+    "timestamp": "2023-04-24T16:42:41.475577Z",
+    "stations_updated": "2023-03-11",
+    "cache-timestamp": "2023-04-24T16:42:05.725000Z"
   },
   "altimeter": {
     "repr": "A3010",
@@ -10,21 +11,15 @@
   },
   "clouds": [
     {
-      "repr": "SCT011",
-      "type": "SCT",
-      "altitude": 11,
-      "modifier": null
-    },
-    {
-      "repr": "BKN019",
+      "repr": "BKN013",
       "type": "BKN",
-      "altitude": 19,
+      "altitude": 13,
       "modifier": null
     },
     {
-      "repr": "OVC023",
+      "repr": "OVC021",
       "type": "OVC",
-      "altitude": 23,
+      "altitude": 21,
       "modifier": null
     }
   ],
@@ -36,25 +31,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "220",
+    "value": 220,
+    "spoken": "two two zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KAWO 241622Z AUTO 00000KT 10SM SCT011 BKN019 OVC023 09/06 A3010 RMK AO2 RAB01E12 P0000",
-  "sanitized": "KAWO 241622Z 00000KT 10SM SCT011 BKN019 OVC023 09/06 A3010 RMK AO2 RAB01E12 P0000",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 241631Z AUTO 22003KT 10SM -RA BKN013 OVC021 09/06 A3010 RMK AO2 RAB01 P0000",
+  "sanitized": "KAWO 241631Z 22003KT 10SM -RA BKN013 OVC021 09/06 A3010 RMK AO2 RAB01 P0000",
   "station": "KAWO",
   "time": {
-    "repr": "241622Z",
-    "dt": "2023-04-24T16:22:00Z"
+    "repr": "241631Z",
+    "dt": "2023-04-24T16:31:00Z"
   },
-  "remarks": "RMK AO2 RAB01E12 P0000",
+  "remarks": "RMK AO2 RAB01 P0000",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -76,6 +76,10 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB01",
+        "value": "Rain began at :01"
       }
     ],
     "dewpoint_decimal": null,
