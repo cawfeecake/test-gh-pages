@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-04-24T04:40:36.383563Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-24T04:40:05.920000Z"
+    "timestamp": "2023-04-24T05:02:18.858653Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2985",
@@ -11,18 +10,24 @@
   },
   "clouds": [
     {
-      "repr": "OVC021",
-      "type": "OVC",
+      "repr": "BKN021",
+      "type": "BKN",
       "altitude": 21,
+      "modifier": null
+    },
+    {
+      "repr": "OVC027",
+      "type": "OVC",
+      "altitude": 27,
       "modifier": null
     }
   ],
   "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "8",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "6",
+    "value": 6,
+    "spoken": "six"
   },
   "wind_direction": {
     "repr": "180",
@@ -39,16 +44,20 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KORS 240415Z AUTO 18004KT 8SM -RA OVC021 09/08 A2985 RMK AO2",
-  "sanitized": "KORS 240415Z 18004KT 8SM -RA OVC021 09/08 A2985 RMK AO2",
+  "raw": "KORS 240455Z AUTO 18004KT 6SM -RA BR BKN021 OVC027 09/08 A2985 RMK AO2 P0001",
+  "sanitized": "KORS 240455Z 18004KT 6SM -RA BR BKN021 OVC027 09/08 A2985 RMK AO2 P0001",
   "station": "KORS",
   "time": {
-    "repr": "240415Z",
-    "dt": "2023-04-24T04:15:00Z"
+    "repr": "240455Z",
+    "dt": "2023-04-24T04:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0001",
   "dewpoint": {
     "repr": "08",
     "value": 8,
@@ -71,7 +80,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
