@@ -1,28 +1,36 @@
 {
   "meta": {
-    "timestamp": "2023-04-27T12:42:23.580772Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-27T12:42:06.577000Z"
+    "timestamp": "2023-04-27T13:07:22.734914Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
-    "repr": "A3023",
-    "value": 30.23,
-    "spoken": "three zero point two three"
+    "repr": "A3024",
+    "value": 30.24,
+    "spoken": "three zero point two four"
   },
   "clouds": [
     {
-      "repr": "SCT002",
+      "repr": "SCT003",
       "type": "SCT",
-      "altitude": 2,
+      "altitude": 3,
+      "modifier": null
+    },
+    {
+      "repr": "BKN029",
+      "type": "BKN",
+      "altitude": 29,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "3/2",
+    "value": 1.5,
+    "spoken": "one and one half",
+    "numerator": 3,
+    "denominator": 2,
+    "normalized": "1 1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -41,14 +49,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 271225Z AUTO 00000KT 3SM BR SCT002 04/04 A3023 RMK AO2 T00440044",
-  "sanitized": "KBLI 271225Z 00000KT 3SM BR SCT002 04/04 A3023 RMK AO2 T00440044",
+  "raw": "KBLI 271303Z AUTO 00000KT 1 1/2SM R16/4000VP6000FT BR SCT003 BKN029 04/04 A3024 RMK AO2 VIS 1/2V5 T00440044",
+  "sanitized": "KBLI 271303Z 00000KT 1 1/2SM R16/4000VP6000FT BR SCT003 BKN029 04/04 A3024 RMK AO2 VIS 1/2V5 T00440044",
   "station": "KBLI",
   "time": {
-    "repr": "271225Z",
-    "dt": "2023-04-27T12:25:00Z"
+    "repr": "271303Z",
+    "dt": "2023-04-27T13:03:00Z"
   },
-  "remarks": "RMK AO2 T00440044",
+  "remarks": "RMK AO2 VIS 1/2V5 T00440044",
   "dewpoint": {
     "repr": "04",
     "value": 4,
@@ -84,15 +92,34 @@
       "spoken": "four point four"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/4000VP6000FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "4000",
+          "value": 4000,
+          "spoken": "four thousand"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "04",
     "value": 4,
     "spoken": "four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1371,
-  "pressure_altitude": -140,
+  "density_altitude": -1381,
+  "pressure_altitude": -150,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
