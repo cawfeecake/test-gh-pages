@@ -1,21 +1,31 @@
 {
   "meta": {
-    "timestamp": "2023-04-27T11:40:45.671106Z",
+    "timestamp": "2023-04-27T12:08:49.611639Z",
     "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-27T11:40:06.581000Z"
+    "cache-timestamp": "2023-04-27T12:08:04.573000Z"
   },
   "altimeter": {
     "repr": "A3023",
     "value": 30.23,
     "spoken": "three zero point two three"
   },
-  "clouds": [],
-  "flight_rules": "IFR",
+  "clouds": [
+    {
+      "repr": "VV005",
+      "type": "VV",
+      "altitude": 5,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "3/4",
+    "value": 0.75,
+    "spoken": "three quarters",
+    "numerator": 3,
+    "denominator": 4,
+    "normalized": "3/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -34,14 +44,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBVS 271115Z AUTO 00000KT 1SM BR CLR 05/05 A3023 RMK A01 VIS 1/2V5",
-  "sanitized": "KBVS 271115Z 00000KT 1SM BR 05/05 A3023 RMK A01 VIS 1/2V5",
+  "raw": "KBVS 271135Z AUTO 00000KT 3/4SM BR VV005 05/05 A3023 RMK A01",
+  "sanitized": "KBVS 271135Z 00000KT 3/4SM BR VV005 05/05 A3023 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "271115Z",
-    "dt": "2023-04-27T11:15:00Z"
+    "repr": "271135Z",
+    "dt": "2023-04-27T11:35:00Z"
   },
-  "remarks": "RMK A01 VIS 1/2V5",
+  "remarks": "RMK A01",
   "dewpoint": {
     "repr": "05",
     "value": 5,
