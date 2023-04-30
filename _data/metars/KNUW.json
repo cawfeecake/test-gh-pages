@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-04-30T20:40:37.883916Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-04-30T20:40:04.734000Z"
+    "timestamp": "2023-04-30T21:01:20.579291Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2992",
@@ -11,21 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT016",
+      "repr": "SCT015",
       "type": "SCT",
-      "altitude": 16,
+      "altitude": 15,
       "modifier": null
     },
     {
-      "repr": "BKN018",
+      "repr": "BKN020",
       "type": "BKN",
-      "altitude": 18,
+      "altitude": 20,
       "modifier": null
     },
     {
-      "repr": "BKN030",
+      "repr": "BKN025",
       "type": "BKN",
-      "altitude": 30,
+      "altitude": 25,
       "modifier": null
     }
   ],
@@ -37,25 +36,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "170",
-    "value": 170,
-    "spoken": "one seven zero"
+    "repr": "180",
+    "value": 180,
+    "spoken": "one eight zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
-  "wx_codes": [],
-  "raw": "KNUW 301953Z 17008KT 10SM SCT016 BKN018 BKN030 12/09 A2992 RMK AO2 SLP136 T01220089 VISNO $",
-  "sanitized": "KNUW 301953Z 17008KT 10SM SCT016 BKN018 BKN030 12/09 A2992 RMK AO2 SLP136 T01220089 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 302053Z 18006KT 10SM -RA SCT015 BKN020 BKN025 12/09 A2992 RMK AO2 RAB38 SLP136 P0000 60000 T01220089 56001 VISNO $",
+  "sanitized": "KNUW 302053Z 18006KT 10SM -RA SCT015 BKN020 BKN025 12/09 A2992 RMK AO2 RAB38 SLP136 P0000 60000 T01220089 56001 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "301953Z",
-    "dt": "2023-04-30T19:53:00Z"
+    "repr": "302053Z",
+    "dt": "2023-04-30T20:53:00Z"
   },
-  "remarks": "RMK AO2 SLP136 T01220089 VISNO $",
+  "remarks": "RMK AO2 RAB38 SLP136 P0000 60000 T01220089 56001 VISNO $",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -65,8 +69,16 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "56001",
+      "tendency": "Decreasing, then steady",
+      "change": 0.1
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -77,6 +89,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB38",
+        "value": "Rain began at :38"
       }
     ],
     "dewpoint_decimal": {
