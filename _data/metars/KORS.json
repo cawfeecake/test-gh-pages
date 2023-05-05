@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-05-05T15:01:28.744853Z",
+    "timestamp": "2023-05-05T15:24:03.404227Z",
     "stations_updated": "2023-03-11"
   },
   "altimeter": {
@@ -10,24 +10,33 @@
   },
   "clouds": [
     {
-      "repr": "BKN008",
-      "type": "BKN",
+      "repr": "SCT008",
+      "type": "SCT",
       "altitude": 8,
       "modifier": null
     },
     {
-      "repr": "OVC013",
+      "repr": "BKN012",
+      "type": "BKN",
+      "altitude": 12,
+      "modifier": null
+    },
+    {
+      "repr": "OVC028",
       "type": "OVC",
-      "altitude": 13,
+      "altitude": 28,
       "modifier": null
     }
   ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "2",
-    "value": 2,
-    "spoken": "two"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
     "repr": "180",
@@ -42,18 +51,22 @@
   },
   "wx_codes": [
     {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KORS 051455Z AUTO 18007KT 2SM BR BKN008 OVC013 10/10 A2980 RMK AO2 P0001",
-  "sanitized": "KORS 051455Z 18007KT 2SM BR BKN008 OVC013 10/10 A2980 RMK AO2 P0001",
+  "raw": "KORS 051515Z AUTO 18007KT 2 1/2SM -RA BR SCT008 BKN012 OVC028 10/10 A2980 RMK AO2",
+  "sanitized": "KORS 051515Z 18007KT 2 1/2SM -RA BR SCT008 BKN012 OVC028 10/10 A2980 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "051455Z",
-    "dt": "2023-05-05T14:55:00Z"
+    "repr": "051515Z",
+    "dt": "2023-05-05T15:15:00Z"
   },
-  "remarks": "RMK AO2 P0001",
+  "remarks": "RMK AO2",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -76,11 +89,7 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
