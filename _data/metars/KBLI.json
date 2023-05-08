@@ -1,15 +1,21 @@
 {
   "meta": {
-    "timestamp": "2023-05-08T10:02:04.503222Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-05-08T10:01:39.455000Z"
+    "timestamp": "2023-05-08T10:27:35.981443Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
     "repr": "A2999",
     "value": 29.99,
     "spoken": "two nine point nine nine"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "BKN070",
+      "type": "BKN",
+      "altitude": 70,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -28,15 +34,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 080953Z AUTO 00000KT 10SM CLR 07/07 A2999 RMK AO2 RAE0856B15E36 SLP164 P0000 T00670067",
-  "sanitized": "KBLI 080953Z 00000KT 10SM 07/07 A2999 RMK AO2 RAE0856B15E36 SLP164 P0000 T00670067",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 081012Z AUTO 00000KT 10SM -RA BKN070 07/07 A2999 RMK AO2 RAB0954 P0000 T00670067",
+  "sanitized": "KBLI 081012Z 00000KT 10SM -RA BKN070 07/07 A2999 RMK AO2 RAB0954 P0000 T00670067",
   "station": "KBLI",
   "time": {
-    "repr": "080953Z",
-    "dt": "2023-05-08T09:53:00Z"
+    "repr": "081012Z",
+    "dt": "2023-05-08T10:12:00Z"
   },
-  "remarks": "RMK AO2 RAE0856B15E36 SLP164 P0000 T00670067",
+  "remarks": "RMK AO2 RAB0954 P0000 T00670067",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -68,11 +79,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP164",
-      "value": 1016.4,
-      "spoken": "one zero one six point four"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0067",
