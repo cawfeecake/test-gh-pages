@@ -1,19 +1,24 @@
 {
   "meta": {
-    "timestamp": "2023-05-13T08:40:45.750674Z",
-    "stations_updated": "2023-03-11",
-    "cache-timestamp": "2023-05-13T08:40:07.191000Z"
+    "timestamp": "2023-05-13T09:01:26.030493Z",
+    "stations_updated": "2023-03-11"
   },
   "altimeter": {
-    "repr": "A3024",
-    "value": 30.24,
-    "spoken": "three zero point two four"
+    "repr": "A3025",
+    "value": 30.25,
+    "spoken": "three zero point two five"
   },
   "clouds": [
     {
-      "repr": "FEW200",
+      "repr": "FEW050",
       "type": "FEW",
-      "altitude": 200,
+      "altitude": 50,
+      "modifier": null
+    },
+    {
+      "repr": "FEW220",
+      "type": "FEW",
+      "altitude": 220,
       "modifier": null
     }
   ],
@@ -36,24 +41,28 @@
     "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KNUW 130753Z 00000KT 10SM FEW200 12/08 A3024 RMK AO2 SLP244 T01220078 401830061 VISNO",
-  "sanitized": "KNUW 130753Z 00000KT 10SM FEW200 12/08 A3024 RMK AO2 SLP244 T01220078 401830061 VISNO",
+  "raw": "KNUW 130853Z 00000KT 10SM FEW050 FEW220 11/07 A3025 RMK AO2 SLP247 T01060072 53008 VISNO",
+  "sanitized": "KNUW 130853Z 00000KT 10SM FEW050 FEW220 11/07 A3025 RMK AO2 SLP247 T01060072 53008 VISNO",
   "station": "KNUW",
   "time": {
-    "repr": "130753Z",
-    "dt": "2023-05-13T07:53:00Z"
+    "repr": "130853Z",
+    "dt": "2023-05-13T08:53:00Z"
   },
-  "remarks": "RMK AO2 SLP244 T01220078 401830061 VISNO",
+  "remarks": "RMK AO2 SLP247 T01060072 53008 VISNO",
   "dewpoint": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
-  "relative_humidity": 0.7448131738550289,
+  "relative_humidity": 0.794816368054851,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "53008",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.8
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -64,42 +73,34 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0078",
-      "value": 7.8,
-      "spoken": "seven point eight"
+      "repr": "0072",
+      "value": 7.2,
+      "spoken": "seven point two"
     },
-    "maximum_temperature_24": {
-      "repr": "0183",
-      "value": 18.3,
-      "spoken": "one eight point three"
-    },
-    "minimum_temperature_24": {
-      "repr": "0061",
-      "value": 6.1,
-      "spoken": "six point one"
-    },
+    "maximum_temperature_24": null,
+    "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP244",
-      "value": 1024.4,
-      "spoken": "one zero two four point four"
+      "repr": "SLP247",
+      "value": 1024.7,
+      "spoken": "one zero two four point seven"
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0122",
-      "value": 12.2,
-      "spoken": "one two point two"
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "12",
-    "value": 12,
-    "spoken": "one two"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -598,
-  "pressure_altitude": -273,
+  "density_altitude": -800,
+  "pressure_altitude": -283,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
