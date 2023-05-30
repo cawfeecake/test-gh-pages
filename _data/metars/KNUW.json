@@ -1,23 +1,28 @@
 {
   "meta": {
-    "timestamp": "2023-05-30T15:01:28.130363Z",
-    "stations_updated": "2023-05-30",
-    "cache-timestamp": "2023-05-30T15:00:36.558000Z"
+    "timestamp": "2023-05-30T15:24:08.148458Z",
+    "stations_updated": "2023-05-30"
   },
   "altimeter": {
-    "repr": "A3001",
-    "value": 30.01,
-    "spoken": "three zero point zero one"
+    "repr": "A3002",
+    "value": 30.02,
+    "spoken": "three zero point zero two"
   },
   "clouds": [
     {
-      "repr": "OVC030",
-      "type": "OVC",
+      "repr": "SCT030",
+      "type": "SCT",
       "altitude": 30,
+      "modifier": null
+    },
+    {
+      "repr": "OVC035",
+      "type": "OVC",
+      "altitude": 35,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -25,29 +30,29 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "250",
-    "value": 250,
-    "spoken": "two five zero"
+    "repr": "260",
+    "value": 260,
+    "spoken": "two six zero"
   },
   "wind_gust": {
-    "repr": "24",
-    "value": 24,
-    "spoken": "two four"
+    "repr": "23",
+    "value": 23,
+    "spoken": "two three"
   },
   "wind_speed": {
-    "repr": "14",
-    "value": 14,
-    "spoken": "one four"
+    "repr": "17",
+    "value": 17,
+    "spoken": "one seven"
   },
   "wx_codes": [],
-  "raw": "KNUW 301353Z 25014G24KT 10SM OVC030 11/06 A3001 RMK AO2 PK WND 26026/1256 SLP165 T01060056 $",
-  "sanitized": "KNUW 301353Z 25014G24KT 10SM OVC030 11/06 A3001 RMK AO2 PK WND 26026/1256 SLP165 T01060056 $",
+  "raw": "KNUW 301453Z 26017G23KT 10SM SCT030 OVC035 11/06 A3002 RMK AO2 SLP169 T01060056 51013 $",
+  "sanitized": "KNUW 301453Z 26017G23KT 10SM SCT030 OVC035 11/06 A3002 RMK AO2 SLP169 T01060056 51013 $",
   "station": "KNUW",
   "time": {
-    "repr": "301353Z",
-    "dt": "2023-05-30T13:53:00Z"
+    "repr": "301453Z",
+    "dt": "2023-05-30T14:53:00Z"
   },
-  "remarks": "RMK AO2 PK WND 26026/1256 SLP165 T01060056 $",
+  "remarks": "RMK AO2 SLP169 T01060056 51013 $",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -57,7 +62,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "51013",
+      "tendency": "Increasing, then steady",
+      "change": 1.3
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -80,9 +89,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP165",
-      "value": 1016.5,
-      "spoken": "one zero one six point five"
+      "repr": "SLP169",
+      "value": 1016.9,
+      "spoken": "one zero one six point nine"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -98,8 +107,8 @@
     "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -560,
-  "pressure_altitude": -43,
+  "density_altitude": -570,
+  "pressure_altitude": -53,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
