@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-06-09T16:40:55.285349Z",
-    "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-09T16:40:04.506000Z"
+    "timestamp": "2023-06-09T17:01:33.768146Z",
+    "stations_updated": "2023-06-06"
   },
   "altimeter": {
     "repr": "A3003",
@@ -37,25 +36,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "230",
-    "value": 230,
-    "spoken": "two three zero"
+    "repr": "240",
+    "value": 240,
+    "spoken": "two four zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
-  "wx_codes": [],
-  "raw": "KNUW 091627Z 23006KT 10SM BKN015 BKN025 OVC120 12/09 A3003 RMK AO2 T01170094 VISNO $",
-  "sanitized": "KNUW 091627Z 23006KT 10SM BKN015 BKN025 OVC120 12/09 A3003 RMK AO2 T01170094 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 091653Z 24007KT 10SM -RA BKN015 BKN025 OVC120 12/09 A3003 RMK AO2 RAB41 SLP172 P0000 T01170094 VISNO $",
+  "sanitized": "KNUW 091653Z 24007KT 10SM -RA BKN015 BKN025 OVC120 12/09 A3003 RMK AO2 RAB41 SLP172 P0000 T01170094 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "091627Z",
-    "dt": "2023-06-09T16:27:00Z"
+    "repr": "091653Z",
+    "dt": "2023-06-09T16:53:00Z"
   },
-  "remarks": "RMK AO2 T01170094 VISNO $",
+  "remarks": "RMK AO2 RAB41 SLP172 P0000 T01170094 VISNO $",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -77,6 +81,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB41",
+        "value": "Rain began at :41"
       }
     ],
     "dewpoint_decimal": {
@@ -87,7 +99,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP172",
+      "value": 1017.2,
+      "spoken": "one zero one seven point two"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0117",
