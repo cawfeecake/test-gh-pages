@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-06-10T20:40:43.530869Z",
-    "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-10T20:40:05.844000Z"
+    "timestamp": "2023-06-10T21:01:12.012778Z",
+    "stations_updated": "2023-06-06"
   },
   "altimeter": {
     "repr": "A3008",
@@ -52,18 +51,22 @@
   },
   "wx_codes": [
     {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 102029Z 18007KT 2 1/2SM BR BKN006 BKN020 OVC028 13/13 A3008 RMK AO2 RAE15 P0001 T01280128",
-  "sanitized": "KBLI 102029Z 18007KT 2 1/2SM BR BKN006 BKN020 OVC028 13/13 A3008 RMK AO2 RAE15 P0001 T01280128",
+  "raw": "KBLI 102053Z 18007KT 2 1/2SM -RA BR BKN006 BKN020 OVC028 13/13 A3008 RMK AO2 RAE15B46 SLP193 P0001 60002 T01280128 51009",
+  "sanitized": "KBLI 102053Z 18007KT 2 1/2SM -RA BR BKN006 BKN020 OVC028 13/13 A3008 RMK AO2 RAE15B46 SLP193 P0001 60002 T01280128 51009",
   "station": "KBLI",
   "time": {
-    "repr": "102029Z",
-    "dt": "2023-06-10T20:29:00Z"
+    "repr": "102053Z",
+    "dt": "2023-06-10T20:53:00Z"
   },
-  "remarks": "RMK AO2 RAE15 P0001 T01280128",
+  "remarks": "RMK AO2 RAE15B46 SLP193 P0001 60002 T01280128 51009",
   "dewpoint": {
     "repr": "13",
     "value": 13,
@@ -73,18 +76,22 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "51009",
+      "tendency": "Increasing, then steady",
+      "change": 0.9
+    },
+    "precip_36_hours": {
+      "repr": "60002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "RAE15",
-        "value": "Rain ended at :15"
       }
     ],
     "dewpoint_decimal": {
@@ -99,7 +106,11 @@
       "value": 0.01,
       "spoken": "zero point zero one"
     },
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP193",
+      "value": 1019.3,
+      "spoken": "one zero one nine point three"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0128",
