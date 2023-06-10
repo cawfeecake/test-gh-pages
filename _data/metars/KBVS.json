@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-06-10T15:40:39.717566Z",
-    "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-10T15:40:04.417000Z"
+    "timestamp": "2023-06-10T16:01:58.520066Z",
+    "stations_updated": "2023-06-06"
   },
   "altimeter": {
     "repr": "A3006",
@@ -11,24 +10,24 @@
   },
   "clouds": [
     {
-      "repr": "SCT003",
-      "type": "SCT",
-      "altitude": 3,
+      "repr": "BKN006",
+      "type": "BKN",
+      "altitude": 6,
       "modifier": null
     },
     {
-      "repr": "BKN007",
+      "repr": "BKN013",
       "type": "BKN",
-      "altitude": 7,
+      "altitude": 13,
       "modifier": null
     }
   ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "000",
@@ -41,15 +40,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 101515Z AUTO 00000KT 10SM SCT003 BKN007 12/12 A3006 RMK A01",
-  "sanitized": "KBVS 101515Z 00000KT 10SM SCT003 BKN007 12/12 A3006 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBVS 101555Z AUTO 00000KT 5SM BR BKN006 BKN013 12/12 A3006 RMK A01 P0001",
+  "sanitized": "KBVS 101555Z 00000KT 5SM BR BKN006 BKN013 12/12 A3006 RMK A01 P0001",
   "station": "KBVS",
   "time": {
-    "repr": "101515Z",
-    "dt": "2023-06-10T15:15:00Z"
+    "repr": "101555Z",
+    "dt": "2023-06-10T15:55:00Z"
   },
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0001",
   "dewpoint": {
     "repr": "12",
     "value": 12,
@@ -67,7 +71,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
