@@ -1,32 +1,36 @@
 {
   "meta": {
-    "timestamp": "2023-06-10T10:01:28.230256Z",
-    "stations_updated": "2023-06-06"
+    "timestamp": "2023-06-10T10:26:51.017230Z",
+    "stations_updated": "2023-06-06",
+    "cache-timestamp": "2023-06-10T10:26:03.161000Z"
   },
   "altimeter": {
-    "repr": "A3002",
-    "value": 30.02,
-    "spoken": "three zero point zero two"
+    "repr": "A3001",
+    "value": 30.01,
+    "spoken": "three zero point zero one"
   },
   "clouds": [
     {
-      "repr": "OVC023",
+      "repr": "OVC020",
       "type": "OVC",
-      "altitude": 23,
+      "altitude": 20,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
-    "repr": "170",
-    "value": 170,
-    "spoken": "one seven zero"
+    "repr": "180",
+    "value": 180,
+    "spoken": "one eight zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -36,16 +40,20 @@
   },
   "wx_codes": [
     {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KORS 100955Z AUTO 17007KT 5SM BR OVC023 12/12 A3002 RMK AO2",
-  "sanitized": "KORS 100955Z 17007KT 5SM BR OVC023 12/12 A3002 RMK AO2",
+  "raw": "KORS 101015Z AUTO 18007KT 2 1/2SM -RA BR OVC020 12/12 A3001 RMK AO2",
+  "sanitized": "KORS 101015Z 18007KT 2 1/2SM -RA BR OVC020 12/12 A3001 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "100955Z",
-    "dt": "2023-06-10T09:55:00Z"
+    "repr": "101015Z",
+    "dt": "2023-06-10T10:15:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": {
@@ -82,8 +90,8 @@
     "spoken": "one two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -422,
-  "pressure_altitude": -69,
+  "density_altitude": -412,
+  "pressure_altitude": -59,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
