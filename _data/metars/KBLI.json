@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-06-11T12:08:13.424229Z",
+    "timestamp": "2023-06-11T12:40:40.113217Z",
     "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-11T12:08:06.605000Z"
+    "cache-timestamp": "2023-06-11T12:40:03.522000Z"
   },
   "altimeter": {
     "repr": "A3008",
@@ -11,21 +11,18 @@
   },
   "clouds": [
     {
-      "repr": "BKN060",
-      "type": "BKN",
-      "altitude": 60,
+      "repr": "OVC050",
+      "type": "OVC",
+      "altitude": 50,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "5/4",
-    "value": 1.25,
-    "spoken": "one and one quarter",
-    "numerator": 5,
-    "denominator": 4,
-    "normalized": "1 1/4"
+    "repr": "3",
+    "value": 3,
+    "spoken": "three"
   },
   "wind_direction": {
     "repr": "000",
@@ -44,42 +41,26 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 111153Z AUTO 00000KT 1 1/4SM R16/2400VP6000FT BR BKN060 11/11 A3008 RMK AO2 SLP192 70011 T01110111 10128 20111 50000",
-  "sanitized": "KBLI 111153Z 00000KT 1 1/4SM R16/2400VP6000FT BR BKN060 11/11 A3008 RMK AO2 SLP192 70011 T01110111 10128 20111 50000",
+  "raw": "KBLI 111227Z AUTO 00000KT 3SM R16/3000VP6000FT BR OVC050 12/12 A3008 RMK AO2 T01170117",
+  "sanitized": "KBLI 111227Z 00000KT 3SM R16/3000VP6000FT BR OVC050 12/12 A3008 RMK AO2 T01170117",
   "station": "KBLI",
   "time": {
-    "repr": "111153Z",
-    "dt": "2023-06-11T11:53:00Z"
+    "repr": "111227Z",
+    "dt": "2023-06-11T12:27:00Z"
   },
-  "remarks": "RMK AO2 SLP192 70011 T01110111 10128 20111 50000",
+  "remarks": "RMK AO2 T01170117",
   "dewpoint": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
   },
   "relative_humidity": 1,
   "remarks_info": {
-    "maximum_temperature_6": {
-      "repr": "10128",
-      "value": 12.8,
-      "spoken": "one two point eight"
-    },
-    "minimum_temperature_6": {
-      "repr": "20111",
-      "value": 11.1,
-      "spoken": "one one point one"
-    },
-    "pressure_tendency": {
-      "repr": "50000",
-      "tendency": "Increasing, then decreasing",
-      "change": 0
-    },
+    "maximum_temperature_6": null,
+    "minimum_temperature_6": null,
+    "pressure_tendency": null,
     "precip_36_hours": null,
-    "precip_24_hours": {
-      "repr": "70011",
-      "value": 0.11,
-      "spoken": "zero point one one"
-    },
+    "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
@@ -88,35 +69,31 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0111",
-      "value": 11.1,
-      "spoken": "one one point one"
+      "repr": "0117",
+      "value": 11.7,
+      "spoken": "one one point seven"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP192",
-      "value": 1019.2,
-      "spoken": "one zero one nine point two"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0111",
-      "value": 11.1,
-      "spoken": "one one point one"
+      "repr": "0117",
+      "value": 11.7,
+      "spoken": "one one point seven"
     }
   },
   "runway_visibility": [
     {
-      "repr": "R16/2400VP6000FT",
+      "repr": "R16/3000VP6000FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "2400",
-          "value": 2400,
-          "spoken": "two four hundred"
+          "repr": "3000",
+          "value": 3000,
+          "spoken": "three thousand"
         },
         {
           "repr": "P6000",
@@ -128,12 +105,12 @@
     }
   ],
   "temperature": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -417,
+  "density_altitude": -345,
   "pressure_altitude": 10,
   "units": {
     "accumulation": "in",
