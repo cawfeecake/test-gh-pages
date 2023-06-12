@@ -1,20 +1,31 @@
 {
   "meta": {
-    "timestamp": "2023-06-12T12:09:14.410057Z",
-    "stations_updated": "2023-06-06"
+    "timestamp": "2023-06-12T12:42:40.395234Z",
+    "stations_updated": "2023-06-06",
+    "cache-timestamp": "2023-06-12T12:42:03.548000Z"
   },
   "altimeter": {
-    "repr": "A3000",
-    "value": 30,
-    "spoken": "three zero point zero zero"
+    "repr": "A3001",
+    "value": 30.01,
+    "spoken": "three zero point zero one"
   },
-  "clouds": [],
-  "flight_rules": "IFR",
+  "clouds": [
+    {
+      "repr": "VV005",
+      "type": "VV",
+      "altitude": 5,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -33,18 +44,18 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBVS 121155Z AUTO 00000KT 1SM BR CLR 11/11 A3000 RMK A01",
-  "sanitized": "KBVS 121155Z 00000KT 1SM BR 11/11 A3000 RMK A01",
+  "raw": "KBVS 121215Z AUTO 00000KT 1/2SM BR VV005 10/10 A3001 RMK A01",
+  "sanitized": "KBVS 121215Z 00000KT 1/2SM BR VV005 10/10 A3001 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "121155Z",
-    "dt": "2023-06-12T11:55:00Z"
+    "repr": "121215Z",
+    "dt": "2023-06-12T12:15:00Z"
   },
   "remarks": "RMK A01",
   "dewpoint": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -65,13 +76,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "10",
+    "value": 10,
+    "spoken": "one zero"
   },
   "wind_variable_direction": [],
-  "density_altitude": -381,
-  "pressure_altitude": 64,
+  "density_altitude": -511,
+  "pressure_altitude": 54,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",

@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-06-12T12:09:13.010766Z",
-    "stations_updated": "2023-06-06"
+    "timestamp": "2023-06-12T12:42:39.380968Z",
+    "stations_updated": "2023-06-06",
+    "cache-timestamp": "2023-06-12T12:42:03.495000Z"
   },
   "altimeter": {
     "repr": "A3000",
@@ -9,12 +10,12 @@
     "spoken": "three zero point zero zero"
   },
   "clouds": [],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "4",
+    "value": 4,
+    "spoken": "four"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,13 +28,18 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 121201Z AUTO 00000KT 10SM CLR 12/12 A3000 RMK AO2 T01170117",
-  "sanitized": "KBLI 121201Z 00000KT 10SM 12/12 A3000 RMK AO2 T01170117",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBLI 121236Z AUTO 00000KT 4SM R16/3500VP6000FT BR CLR 12/12 A3000 RMK AO2 T01170117",
+  "sanitized": "KBLI 121236Z 00000KT 4SM R16/3500VP6000FT BR 12/12 A3000 RMK AO2 T01170117",
   "station": "KBLI",
   "time": {
-    "repr": "121201Z",
-    "dt": "2023-06-12T12:01:00Z"
+    "repr": "121236Z",
+    "dt": "2023-06-12T12:36:00Z"
   },
   "remarks": "RMK AO2 T01170117",
   "dewpoint": {
@@ -71,7 +77,26 @@
       "spoken": "one one point seven"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/3500VP6000FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "3500",
+          "value": 3500,
+          "spoken": "three five hundred"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "12",
     "value": 12,
