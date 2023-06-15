@@ -1,15 +1,34 @@
 {
   "meta": {
-    "timestamp": "2023-06-15T19:20:41.283703Z",
+    "timestamp": "2023-06-15T19:40:42.211467Z",
     "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-15T19:20:03.726000Z"
+    "cache-timestamp": "2023-06-15T19:40:03.593000Z"
   },
   "altimeter": {
     "repr": "A3021",
     "value": 30.21,
     "spoken": "three zero point two one"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "FEW025",
+      "type": "FEW",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "SCT100",
+      "type": "SCT",
+      "altitude": 100,
+      "modifier": null
+    },
+    {
+      "repr": "SCT250",
+      "type": "SCT",
+      "altitude": 250,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -29,14 +48,14 @@
     "spoken": "seven"
   },
   "wx_codes": [],
-  "raw": "KNUW 151853Z 29007KT 10SM CLR 14/10 A3021 RMK AO2 SLP232 T01390100 VISNO $",
-  "sanitized": "KNUW 151853Z 29007KT 10SM 14/10 A3021 RMK AO2 SLP232 T01390100 VISNO $",
+  "raw": "KNUW 151853Z COR 29007KT 10SM FEW025 SCT100 SCT250 14/10 A3021 RMK SLP232 T01390100",
+  "sanitized": "KNUW 151853Z 29007KT 10SM FEW025 SCT100 SCT250 14/10 A3021 RMK SLP232 T01390100",
   "station": "KNUW",
   "time": {
     "repr": "151853Z",
     "dt": "2023-06-15T18:53:00Z"
   },
-  "remarks": "RMK AO2 SLP232 T01390100 VISNO $",
+  "remarks": "RMK SLP232 T01390100",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -50,16 +69,7 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [
-      {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      }
-    ],
+    "codes": [],
     "dewpoint_decimal": {
       "repr": "0100",
       "value": 10,
