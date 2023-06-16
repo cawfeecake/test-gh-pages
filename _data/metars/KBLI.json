@@ -1,9 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-06-16T21:01:24.176523Z",
+    "timestamp": "2023-06-16T21:20:33.170300Z",
     "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-16T21:00:03.588000Z",
-    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
+    "cache-timestamp": "2023-06-16T21:20:05.163000Z"
   },
   "altimeter": {
     "repr": "A3013",
@@ -12,24 +11,24 @@
   },
   "clouds": [
     {
-      "repr": "FEW039",
+      "repr": "FEW043",
       "type": "FEW",
-      "altitude": 39,
+      "altitude": 43,
       "modifier": null
     },
     {
-      "repr": "OVC046",
+      "repr": "OVC055",
       "type": "OVC",
-      "altitude": 46,
+      "altitude": 55,
       "modifier": null
     }
   ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "7",
+    "value": 7,
+    "spoken": "seven"
   },
   "wind_direction": {
     "repr": "180",
@@ -38,50 +37,67 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
-  "wx_codes": [],
-  "raw": "KBLI 161953Z 18009KT 10SM FEW039 OVC046 16/13 A3013 RMK AO2 SLP209 P0001 T01610128",
-  "sanitized": "KBLI 161953Z 18009KT 10SM FEW039 OVC046 16/13 A3013 RMK AO2 SLP209 P0001 T01610128",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KBLI 162053Z 18004KT 7SM -RA FEW043 OVC055 16/14 A3013 RMK AO2 RAB13 SLP209 P0000 60001 T01610139 56005",
+  "sanitized": "KBLI 162053Z 18004KT 7SM -RA FEW043 OVC055 16/14 A3013 RMK AO2 RAB13 SLP209 P0000 60001 T01610139 56005",
   "station": "KBLI",
   "time": {
-    "repr": "161953Z",
-    "dt": "2023-06-16T19:53:00Z"
+    "repr": "162053Z",
+    "dt": "2023-06-16T20:53:00Z"
   },
-  "remarks": "RMK AO2 SLP209 P0001 T01610128",
+  "remarks": "RMK AO2 RAB13 SLP209 P0000 60001 T01610139 56005",
   "dewpoint": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
+    "repr": "14",
+    "value": 14,
+    "spoken": "one four"
   },
-  "relative_humidity": 0.8078322465211591,
+  "relative_humidity": 0.8679169411495125,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "56005",
+      "tendency": "Decreasing, then steady",
+      "change": 0.5
+    },
+    "precip_36_hours": {
+      "repr": "60001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB13",
+        "value": "Rain began at :13"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0128",
-      "value": 12.8,
-      "spoken": "one two point eight"
+      "repr": "0139",
+      "value": 13.9,
+      "spoken": "one three point nine"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": {
       "repr": "SLP209",
       "value": 1020.9,
