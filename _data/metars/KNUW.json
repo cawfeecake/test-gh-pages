@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-06-20T10:40:47.494862Z",
-    "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-20T10:40:03.539000Z"
+    "timestamp": "2023-06-20T11:01:20.571776Z",
+    "stations_updated": "2023-06-06"
   },
   "altimeter": {
     "repr": "A3006",
@@ -17,9 +16,9 @@
       "modifier": null
     },
     {
-      "repr": "OVC040",
+      "repr": "OVC035",
       "type": "OVC",
-      "altitude": 40,
+      "altitude": 35,
       "modifier": null
     }
   ],
@@ -31,25 +30,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "130",
-    "value": 130,
-    "spoken": "one three zero"
+    "repr": "110",
+    "value": 110,
+    "spoken": "one one zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "05",
+    "value": 5,
+    "spoken": "five"
   },
-  "wx_codes": [],
-  "raw": "KNUW 200953Z 13006KT 10SM BKN030 OVC040 11/09 A3006 RMK AO2 SLP182 T01060094 VISNO $",
-  "sanitized": "KNUW 200953Z 13006KT 10SM BKN030 OVC040 11/09 A3006 RMK AO2 SLP182 T01060094 VISNO $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 201053Z 11005KT 10SM -RA BKN030 OVC035 11/09 A3006 RMK AO2 RAB11 SLP183 P0000 T01060094 VISNO $",
+  "sanitized": "KNUW 201053Z 11005KT 10SM -RA BKN030 OVC035 11/09 A3006 RMK AO2 RAB11 SLP183 P0000 T01060094 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "200953Z",
-    "dt": "2023-06-20T09:53:00Z"
+    "repr": "201053Z",
+    "dt": "2023-06-20T10:53:00Z"
   },
-  "remarks": "RMK AO2 SLP182 T01060094 VISNO $",
+  "remarks": "RMK AO2 RAB11 SLP183 P0000 T01060094 VISNO $",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -71,6 +75,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB11",
+        "value": "Rain began at :11"
       }
     ],
     "dewpoint_decimal": {
@@ -82,9 +94,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP182",
-      "value": 1018.2,
-      "spoken": "one zero one eight point two"
+      "repr": "SLP183",
+      "value": 1018.3,
+      "spoken": "one zero one eight point three"
     },
     "snow_depth": null,
     "temperature_decimal": {
