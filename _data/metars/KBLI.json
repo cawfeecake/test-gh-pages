@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-06-27T14:01:48.102036Z",
+    "timestamp": "2023-06-27T14:29:10.560233Z",
     "stations_updated": "2023-06-06"
   },
   "altimeter": {
@@ -19,9 +19,12 @@
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "3/4",
+    "value": 0.75,
+    "spoken": "three quarters",
+    "numerator": 3,
+    "denominator": 4,
+    "normalized": "3/4"
   },
   "wind_direction": {
     "repr": "180",
@@ -29,14 +32,14 @@
     "spoken": "one eight zero"
   },
   "wind_gust": {
-    "repr": "15",
-    "value": 15,
-    "spoken": "one five"
+    "repr": "16",
+    "value": 16,
+    "spoken": "one six"
   },
   "wind_speed": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "07",
+    "value": 7,
+    "spoken": "seven"
   },
   "wx_codes": [
     {
@@ -44,14 +47,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 271353Z 18009G15KT 4SM BR OVC002 12/12 A2996 RMK AO2 SLP149 T01220122",
-  "sanitized": "KBLI 271353Z 18009G15KT 4SM BR OVC002 12/12 A2996 RMK AO2 SLP149 T01220122",
+  "raw": "KBLI 271423Z 18007G16KT 3/4SM R16/P6000FT BR OVC002 12/12 A2996 RMK AO2 T01220122",
+  "sanitized": "KBLI 271423Z 18007G16KT 3/4SM R16/P6000FT BR OVC002 12/12 A2996 RMK AO2 T01220122",
   "station": "KBLI",
   "time": {
-    "repr": "271353Z",
-    "dt": "2023-06-27T13:53:00Z"
+    "repr": "271423Z",
+    "dt": "2023-06-27T14:23:00Z"
   },
-  "remarks": "RMK AO2 SLP149 T01220122",
+  "remarks": "RMK AO2 T01220122",
   "dewpoint": {
     "repr": "12",
     "value": 12,
@@ -79,11 +82,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP149",
-      "value": 1014.9,
-      "spoken": "one zero one four point nine"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0122",
@@ -91,7 +90,19 @@
       "spoken": "one two point two"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/P6000FT",
+      "runway": "16",
+      "visibility": {
+        "repr": "P6000",
+        "value": null,
+        "spoken": "greater than six thousand"
+      },
+      "variable_visibility": [],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "12",
     "value": 12,
