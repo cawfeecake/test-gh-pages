@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-06-27T11:40:34.927665Z",
+    "timestamp": "2023-06-27T12:10:15.673541Z",
     "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-06-27T11:40:04.627000Z"
+    "cache-timestamp": "2023-06-27T12:10:06.543000Z"
   },
   "altimeter": {
     "repr": "A2997",
@@ -20,20 +20,23 @@
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "1",
-    "value": 1,
-    "spoken": "one"
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
+    "denominator": 2,
+    "normalized": "1/2"
   },
   "wind_direction": {
-    "repr": "230",
-    "value": 230,
-    "spoken": "two three zero"
+    "repr": "220",
+    "value": 220,
+    "spoken": "two two zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
   "wx_codes": [
     {
@@ -41,24 +44,36 @@
       "value": "Mist"
     }
   ],
-  "raw": "KNUW 271053Z 23009KT 1SM BR OVC004 11/10 A2997 RMK AO2 SFC VIS 1 1/2 SLP151 T01060100 VISNO $",
-  "sanitized": "KNUW 271053Z 23009KT 1SM BR OVC004 11/10 A2997 RMK AO2 SFC VIS 1 1/2 SLP151 T01060100 VISNO $",
+  "raw": "KNUW 271153Z 22006KT 1/2SM BR OVC004 11/11 A2997 RMK AO2 SFC VIS 2 1/2 SLP152 FG BNK E T01060106 10117 20106 55000 VISNO $",
+  "sanitized": "KNUW 271153Z 22006KT 1/2SM BR OVC004 11/11 A2997 RMK AO2 SFC VIS 2 1/2 SLP152 FG BNK E T01060106 10117 20106 55000 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "271053Z",
-    "dt": "2023-06-27T10:53:00Z"
+    "repr": "271153Z",
+    "dt": "2023-06-27T11:53:00Z"
   },
-  "remarks": "RMK AO2 SFC VIS 1 1/2 SLP151 T01060100 VISNO $",
+  "remarks": "RMK AO2 SFC VIS 2 1/2 SLP152 FG BNK E T01060106 10117 20106 55000 VISNO $",
   "dewpoint": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
-  "relative_humidity": 0.9607146693216029,
+  "relative_humidity": 1,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10117",
+      "value": 11.7,
+      "spoken": "one one point seven"
+    },
+    "minimum_temperature_6": {
+      "repr": "20106",
+      "value": 10.6,
+      "spoken": "one zero point six"
+    },
+    "pressure_tendency": {
+      "repr": "55000",
+      "tendency": "Decreasing, then increasing",
+      "change": 0
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -73,17 +88,17 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0100",
-      "value": 10,
-      "spoken": "one zero point zero"
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP151",
-      "value": 1015.1,
-      "spoken": "one zero one five point one"
+      "repr": "SLP152",
+      "value": 1015.2,
+      "spoken": "one zero one five point two"
     },
     "snow_depth": null,
     "temperature_decimal": {
