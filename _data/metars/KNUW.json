@@ -1,42 +1,40 @@
 {
   "meta": {
-    "timestamp": "2023-06-28T21:23:32.499297Z",
-    "stations_updated": "2023-06-06"
+    "timestamp": "2023-06-28T21:40:35.897359Z",
+    "stations_updated": "2023-06-06",
+    "cache-timestamp": "2023-06-28T21:40:03.442000Z"
   },
   "altimeter": {
-    "repr": "A3002",
-    "value": 30.02,
-    "spoken": "three zero point zero two"
+    "repr": "A3001",
+    "value": 30.01,
+    "spoken": "three zero point zero one"
   },
   "clouds": [
     {
-      "repr": "SCT002",
+      "repr": "SCT003",
       "type": "SCT",
-      "altitude": 2,
+      "altitude": 3,
       "modifier": null
     },
     {
-      "repr": "BKN005",
-      "type": "BKN",
-      "altitude": 5,
-      "modifier": null
-    },
-    {
-      "repr": "BKN025",
-      "type": "BKN",
+      "repr": "SCT025",
+      "type": "SCT",
       "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "SCT100",
+      "type": "SCT",
+      "altitude": 100,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "5/4",
-    "value": 1.25,
-    "spoken": "one and one quarter",
-    "numerator": 5,
-    "denominator": 4,
-    "normalized": "1 1/4"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "300",
@@ -55,14 +53,14 @@
       "value": "Haze"
     }
   ],
-  "raw": "KNUW 282053Z 30004KT 1 1/4SM HZ SCT002 BKN005 BKN025 15/12 A3002 RMK AO2 SFC VIS 4 SLP168 VIS W 1/2 FG BNK W T01500122 58004 VISNO $",
-  "sanitized": "KNUW 282053Z 30004KT 1 1/4SM HZ SCT002 BKN005 BKN025 15/12 A3002 RMK AO2 SFC VIS 4 SLP168 VIS W 1/2 FG BNK W T01500122 58004 VISNO $",
+  "raw": "KNUW 282129Z 30004KT 5SM HZ SCT003 SCT025 SCT100 15/12 A3001 RMK AO2 VIS W 1/2 FG BNK W T01500122 VISNO $",
+  "sanitized": "KNUW 282129Z 30004KT 5SM HZ SCT003 SCT025 SCT100 15/12 A3001 RMK AO2 VIS W 1/2 FG BNK W T01500122 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "282053Z",
-    "dt": "2023-06-28T20:53:00Z"
+    "repr": "282129Z",
+    "dt": "2023-06-28T21:29:00Z"
   },
-  "remarks": "RMK AO2 SFC VIS 4 SLP168 VIS W 1/2 FG BNK W T01500122 58004 VISNO $",
+  "remarks": "RMK AO2 VIS W 1/2 FG BNK W T01500122 VISNO $",
   "dewpoint": {
     "repr": "12",
     "value": 12,
@@ -72,11 +70,7 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": {
-      "repr": "58004",
-      "tendency": "Steady or increasing, then decreasing",
-      "change": 0.4
-    },
+    "pressure_tendency": null,
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -98,11 +92,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP168",
-      "value": 1016.8,
-      "spoken": "one zero one six point eight"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0150",
@@ -117,8 +107,8 @@
     "spoken": "one five"
   },
   "wind_variable_direction": [],
-  "density_altitude": -42,
-  "pressure_altitude": -53,
+  "density_altitude": -32,
+  "pressure_altitude": -43,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
