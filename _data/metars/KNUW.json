@@ -1,15 +1,28 @@
 {
   "meta": {
-    "timestamp": "2023-07-14T13:14:28.401544Z",
+    "timestamp": "2023-07-14T13:30:13.645096Z",
     "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-07-14T13:14:04.659000Z"
+    "cache-timestamp": "2023-07-14T13:30:05.020000Z"
   },
   "altimeter": {
     "repr": "A3014",
     "value": 30.14,
     "spoken": "three zero point one four"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "FEW025",
+      "type": "FEW",
+      "altitude": 25,
+      "modifier": null
+    },
+    {
+      "repr": "FEW050",
+      "type": "FEW",
+      "altitude": 50,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -29,14 +42,14 @@
     "spoken": "six"
   },
   "wx_codes": [],
-  "raw": "KNUW 141253Z 21006KT 10SM CLR 13/11 A3014 RMK AO2 SLP211 T01280111 VISNO $",
-  "sanitized": "KNUW 141253Z 21006KT 10SM 13/11 A3014 RMK AO2 SLP211 T01280111 VISNO $",
+  "raw": "KNUW 141253Z COR 21006KT 10SM FEW025 FEW050 13/11 A3014 RMK SLP211 T01280111",
+  "sanitized": "KNUW 141253Z 21006KT 10SM FEW025 FEW050 13/11 A3014 RMK SLP211 T01280111",
   "station": "KNUW",
   "time": {
     "repr": "141253Z",
     "dt": "2023-07-14T12:53:00Z"
   },
-  "remarks": "RMK AO2 SLP211 T01280111 VISNO $",
+  "remarks": "RMK SLP211 T01280111",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -50,16 +63,7 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [
-      {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      }
-    ],
+    "codes": [],
     "dewpoint_decimal": {
       "repr": "0111",
       "value": 11.1,
