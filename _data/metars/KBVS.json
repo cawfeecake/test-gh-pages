@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-07-19T12:44:02.055851Z",
+    "timestamp": "2023-07-19T13:09:46.194716Z",
     "stations_updated": "2023-06-06"
   },
   "altimeter": {
@@ -8,13 +8,23 @@
     "value": 30.12,
     "spoken": "three zero point one two"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -27,13 +37,18 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBVS 191235Z AUTO 00000KT 10SM CLR 11/11 A3012 RMK A01",
-  "sanitized": "KBVS 191235Z 00000KT 10SM 11/11 A3012 RMK A01",
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ],
+  "raw": "KBVS 191255Z AUTO 00000KT 1/4SM FG VV002 11/11 A3012 RMK A01",
+  "sanitized": "KBVS 191255Z 00000KT 1/4SM FG VV002 11/11 A3012 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "191235Z",
-    "dt": "2023-07-19T12:35:00Z"
+    "repr": "191255Z",
+    "dt": "2023-07-19T12:55:00Z"
   },
   "remarks": "RMK A01",
   "dewpoint": {
