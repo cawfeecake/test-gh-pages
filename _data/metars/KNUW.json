@@ -1,31 +1,30 @@
 {
   "meta": {
-    "timestamp": "2023-07-25T02:52:09.757622Z",
-    "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-07-25T02:52:03.387000Z"
+    "timestamp": "2023-07-25T03:03:57.581737Z",
+    "stations_updated": "2023-06-06"
   },
   "altimeter": {
-    "repr": "A3001",
-    "value": 30.01,
-    "spoken": "three zero point zero one"
+    "repr": "A2999",
+    "value": 29.99,
+    "spoken": "two nine point nine nine"
   },
   "clouds": [
     {
-      "repr": "SCT018",
+      "repr": "SCT007",
       "type": "SCT",
-      "altitude": 18,
+      "altitude": 7,
       "modifier": null
     },
     {
-      "repr": "BKN029",
+      "repr": "BKN045",
       "type": "BKN",
-      "altitude": 29,
+      "altitude": 45,
       "modifier": null
     },
     {
-      "repr": "OVC037",
+      "repr": "OVC070",
       "type": "OVC",
-      "altitude": 37,
+      "altitude": 70,
       "modifier": null
     }
   ],
@@ -37,45 +36,53 @@
     "spoken": "one"
   },
   "wind_direction": {
-    "repr": "240",
-    "value": 240,
-    "spoken": "two four zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "07",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [
     {
-      "repr": "+RA",
-      "value": "Heavy Rain"
+      "repr": "-RA",
+      "value": "Light Rain"
     },
     {
       "repr": "BR",
       "value": "Mist"
     }
   ],
-  "raw": "KNUW 250159Z 24007KT 1SM +RA BR SCT018 BKN029 OVC037 14/13 A3001 RMK AO2 SFC VIS 1 1/2 P0002 T01390128 VISNO $",
-  "sanitized": "KNUW 250159Z 24007KT 1SM +RA BR SCT018 BKN029 OVC037 14/13 A3001 RMK AO2 SFC VIS 1 1/2 P0002 T01390128 VISNO $",
+  "raw": "KNUW 250253Z 00000KT 1SM -RA BR SCT007 BKN045 OVC070 14/14 A2999 RMK AO2 SFC VIS 2 1/2 SLP159 P0025 60041 T01390139 50007 VISNO $",
+  "sanitized": "KNUW 250253Z 00000KT 1SM -RA BR SCT007 BKN045 OVC070 14/14 A2999 RMK AO2 SFC VIS 2 1/2 SLP159 P0025 60041 T01390139 50007 VISNO $",
   "station": "KNUW",
   "time": {
-    "repr": "250159Z",
-    "dt": "2023-07-25T01:59:00Z"
+    "repr": "250253Z",
+    "dt": "2023-07-25T02:53:00Z"
   },
-  "remarks": "RMK AO2 SFC VIS 1 1/2 P0002 T01390128 VISNO $",
+  "remarks": "RMK AO2 SFC VIS 2 1/2 SLP159 P0025 60041 T01390139 50007 VISNO $",
   "dewpoint": {
-    "repr": "13",
-    "value": 13,
-    "spoken": "one three"
+    "repr": "14",
+    "value": 14,
+    "spoken": "one four"
   },
-  "relative_humidity": 0.9307713770988568,
+  "relative_humidity": 1,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "pressure_tendency": {
+      "repr": "50007",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.7
+    },
+    "precip_36_hours": {
+      "repr": "60041",
+      "value": 0.41,
+      "spoken": "zero point four one"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
@@ -89,18 +96,22 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0128",
-      "value": 12.8,
-      "spoken": "one two point eight"
+      "repr": "0139",
+      "value": 13.9,
+      "spoken": "one three point nine"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": {
-      "repr": "P0002",
-      "value": 0.02,
-      "spoken": "zero point zero two"
+      "repr": "P0025",
+      "value": 0.25,
+      "spoken": "zero point two five"
     },
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP159",
+      "value": 1015.9,
+      "spoken": "one zero one five point nine"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0139",
@@ -115,8 +126,8 @@
     "spoken": "one four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -164,
-  "pressure_altitude": -43,
+  "density_altitude": -144,
+  "pressure_altitude": -23,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
