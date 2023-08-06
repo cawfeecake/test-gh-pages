@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-08-06T05:40:33.943657Z",
-    "stations_updated": "2023-06-06",
-    "cache-timestamp": "2023-08-06T05:40:03.223000Z"
+    "timestamp": "2023-08-06T06:03:52.143449Z",
+    "stations_updated": "2023-06-06"
   },
   "altimeter": {
     "repr": "A3015",
@@ -18,25 +17,25 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "320",
-    "value": 320,
-    "spoken": "three two zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KAWO 060456Z AUTO 32004KT 10SM CLR 19/15 A3015 RMK AO2 SLP213 T01890150",
-  "sanitized": "KAWO 060456Z 32004KT 10SM 19/15 A3015 RMK AO2 SLP213 T01890150",
+  "raw": "KAWO 060556Z AUTO 00000KT 10SM 19/15 A3015 RMK AO2 SLP212 T01890150 10239 20183 50006 $",
+  "sanitized": "KAWO 060556Z 00000KT 10SM 19/15 A3015 RMK AO2 SLP212 T01890150 10239 20183 50006 $",
   "station": "KAWO",
   "time": {
-    "repr": "060456Z",
-    "dt": "2023-08-06T04:56:00Z"
+    "repr": "060556Z",
+    "dt": "2023-08-06T05:56:00Z"
   },
-  "remarks": "RMK AO2 SLP213 T01890150",
+  "remarks": "RMK AO2 SLP212 T01890150 10239 20183 50006 $",
   "dewpoint": {
     "repr": "15",
     "value": 15,
@@ -44,13 +43,29 @@
   },
   "relative_humidity": 0.7808389532239374,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10239",
+      "value": 23.9,
+      "spoken": "two three point nine"
+    },
+    "minimum_temperature_6": {
+      "repr": "20183",
+      "value": 18.3,
+      "spoken": "one eight point three"
+    },
+    "pressure_tendency": {
+      "repr": "50006",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.6
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -65,9 +80,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP213",
-      "value": 1021.3,
-      "spoken": "one zero two one point three"
+      "repr": "SLP212",
+      "value": 1021.2,
+      "spoken": "one zero two one point two"
     },
     "snow_depth": null,
     "temperature_decimal": {
