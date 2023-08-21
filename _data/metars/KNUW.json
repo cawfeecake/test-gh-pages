@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-08-21T14:01:28.576023Z",
+    "timestamp": "2023-08-21T14:25:52.190221Z",
     "stations_updated": "2023-08-05"
   },
   "altimeter": {
@@ -8,7 +8,20 @@
     "value": 29.84,
     "spoken": "two nine point eight four"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "BKN050",
+      "type": "BKN",
+      "altitude": 50,
+      "modifier": null
+    },
+    {
+      "repr": "BKN080",
+      "type": "BKN",
+      "altitude": 80,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -28,14 +41,14 @@
     "spoken": "six"
   },
   "wx_codes": [],
-  "raw": "KNUW 211353Z 25006KT 10SM CLR 12/11 A2984 RMK AO2 SLP109 T01170106 VISNO $",
-  "sanitized": "KNUW 211353Z 25006KT 10SM 12/11 A2984 RMK AO2 SLP109 T01170106 VISNO $",
+  "raw": "KNUW 211353Z COR 25006KT 10SM BKN050 BKN080 12/11 A2984 RMK SLP109 FU BKN050 T01170106",
+  "sanitized": "KNUW 211353Z 25006KT 10SM BKN050 BKN080 12/11 A2984 RMK SLP109 FU BKN050 T01170106",
   "station": "KNUW",
   "time": {
     "repr": "211353Z",
     "dt": "2023-08-21T13:53:00Z"
   },
-  "remarks": "RMK AO2 SLP109 T01170106 VISNO $",
+  "remarks": "RMK SLP109 FU BKN050 T01170106",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -49,16 +62,7 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [
-      {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      }
-    ],
+    "codes": [],
     "dewpoint_decimal": {
       "repr": "0106",
       "value": 10.6,
