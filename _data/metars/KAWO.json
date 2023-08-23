@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-08-23T20:40:34.809349Z",
-    "stations_updated": "2023-08-05",
-    "cache-timestamp": "2023-08-23T20:40:05.745000Z"
+    "timestamp": "2023-08-23T21:01:28.240088Z",
+    "stations_updated": "2023-08-05"
   },
   "altimeter": {
     "repr": "A3015",
@@ -11,15 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT030",
-      "type": "SCT",
-      "altitude": 30,
+      "repr": "BKN032",
+      "type": "BKN",
+      "altitude": 32,
       "modifier": null
     },
     {
-      "repr": "BKN070",
+      "repr": "BKN041",
       "type": "BKN",
-      "altitude": 70,
+      "altitude": 41,
+      "modifier": null
+    },
+    {
+      "repr": "OVC050",
+      "type": "OVC",
+      "altitude": 50,
       "modifier": null
     }
   ],
@@ -31,9 +36,9 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "VRB",
-    "value": null,
-    "spoken": "variable"
+    "repr": "050",
+    "value": 50,
+    "spoken": "zero five zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -42,14 +47,14 @@
     "spoken": "four"
   },
   "wx_codes": [],
-  "raw": "KAWO 231956Z AUTO VRB04KT 10SM SCT030 BKN070 20/13 A3015 RMK AO2 SLP213 T02000128",
-  "sanitized": "KAWO 231956Z VRB04KT 10SM SCT030 BKN070 20/13 A3015 RMK AO2 SLP213 T02000128",
+  "raw": "KAWO 232056Z AUTO 05004KT 10SM BKN032 BKN041 OVC050 20/13 A3015 RMK AO2 SLP212 T02000128 58002",
+  "sanitized": "KAWO 232056Z 05004KT 10SM BKN032 BKN041 OVC050 20/13 A3015 RMK AO2 SLP212 T02000128 58002",
   "station": "KAWO",
   "time": {
-    "repr": "231956Z",
-    "dt": "2023-08-23T19:56:00Z"
+    "repr": "232056Z",
+    "dt": "2023-08-23T20:56:00Z"
   },
-  "remarks": "RMK AO2 SLP213 T02000128",
+  "remarks": "RMK AO2 SLP212 T02000128 58002",
   "dewpoint": {
     "repr": "13",
     "value": 13,
@@ -59,7 +64,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "58002",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 0.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -78,9 +87,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP213",
-      "value": 1021.3,
-      "spoken": "one zero two one point three"
+      "repr": "SLP212",
+      "value": 1021.2,
+      "spoken": "one zero two one point two"
     },
     "snow_depth": null,
     "temperature_decimal": {
