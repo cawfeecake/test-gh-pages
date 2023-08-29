@@ -1,33 +1,34 @@
 {
   "meta": {
-    "timestamp": "2023-08-29T10:02:06.772875Z",
-    "stations_updated": "2023-08-05"
+    "timestamp": "2023-08-29T10:28:09.559803Z",
+    "stations_updated": "2023-08-05",
+    "cache-timestamp": "2023-08-29T10:28:03.248000Z"
   },
   "altimeter": {
-    "repr": "A3006",
-    "value": 30.06,
-    "spoken": "three zero point zero six"
+    "repr": "A3007",
+    "value": 30.07,
+    "spoken": "three zero point zero seven"
   },
   "clouds": [
     {
-      "repr": "SCT025",
-      "type": "SCT",
-      "altitude": 25,
+      "repr": "BKN027",
+      "type": "BKN",
+      "altitude": 27,
       "modifier": null
     },
     {
-      "repr": "BKN035",
+      "repr": "BKN120",
       "type": "BKN",
-      "altitude": 35,
+      "altitude": 120,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "150",
@@ -36,24 +37,28 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wx_codes": [
     {
       "repr": "-TSRA",
       "value": "Light Thunderstorm Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KBLI 290959Z AUTO 15006KT 10SM -TSRA SCT025 BKN035 16/14 A3006 RMK AO2 LTG DSNT S-NW TSB57 P0000 T01560144",
-  "sanitized": "KBLI 290959Z 15006KT 10SM -TSRA SCT025 BKN035 16/14 A3006 RMK AO2 LTG DSNT S-NW TSB57 P0000 T01560144",
+  "raw": "KBLI 291015Z AUTO 15008KT 5SM -TSRA BR BKN027 BKN120 16/14 A3007 RMK AO2 LTG DSNT W AND NW TSB0957 P0006 T01560144",
+  "sanitized": "KBLI 291015Z 15008KT 5SM -TSRA BR BKN027 BKN120 16/14 A3007 RMK AO2 LTG DSNT W AND NW TSB0957 P0006 T01560144",
   "station": "KBLI",
   "time": {
-    "repr": "290959Z",
-    "dt": "2023-08-29T09:59:00Z"
+    "repr": "291015Z",
+    "dt": "2023-08-29T10:15:00Z"
   },
-  "remarks": "RMK AO2 LTG DSNT S-NW TSB57 P0000 T01560144",
+  "remarks": "RMK AO2 LTG DSNT W AND NW TSB0957 P0006 T01560144",
   "dewpoint": {
     "repr": "14",
     "value": 14,
@@ -71,14 +76,6 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "TSB57",
-        "value": "Thunderstorm began at :57"
       }
     ],
     "dewpoint_decimal": {
@@ -88,7 +85,11 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0006",
+      "value": 0.06,
+      "spoken": "zero point zero six"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
@@ -104,8 +105,8 @@
     "spoken": "one six"
   },
   "wind_variable_direction": [],
-  "density_altitude": 143,
-  "pressure_altitude": 30,
+  "density_altitude": 133,
+  "pressure_altitude": 20,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
