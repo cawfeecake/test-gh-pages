@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-08-29T11:40:52.145439Z",
+    "timestamp": "2023-08-29T12:08:36.990673Z",
     "stations_updated": "2023-08-05",
-    "cache-timestamp": "2023-08-29T11:40:03.516000Z"
+    "cache-timestamp": "2023-08-29T12:08:06.540000Z"
   },
   "altimeter": {
     "repr": "A3005",
@@ -11,19 +11,19 @@
   },
   "clouds": [
     {
-      "repr": "BKN014",
+      "repr": "BKN009",
       "type": "BKN",
-      "altitude": 14,
+      "altitude": 9,
       "modifier": null
     },
     {
-      "repr": "OVC019",
+      "repr": "OVC013",
       "type": "OVC",
-      "altitude": 19,
+      "altitude": 13,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
     "repr": "7",
@@ -31,30 +31,25 @@
     "spoken": "seven"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KORS 291135Z AUTO 00000KT 7SM -RA BKN014 OVC019 15/14 A3005 RMK AO2",
-  "sanitized": "KORS 291135Z 00000KT 7SM -RA BKN014 OVC019 15/14 A3005 RMK AO2",
+  "wx_codes": [],
+  "raw": "KORS 291155Z AUTO VRB03KT 7SM BKN009 OVC013 15/14 A3005 RMK AO2 P0001",
+  "sanitized": "KORS 291155Z VRB03KT 7SM BKN009 OVC013 15/14 A3005 RMK AO2 P0001",
   "station": "KORS",
   "time": {
-    "repr": "291135Z",
-    "dt": "2023-08-29T11:35:00Z"
+    "repr": "291155Z",
+    "dt": "2023-08-29T11:55:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0001",
   "dewpoint": {
     "repr": "14",
     "value": 14,
@@ -77,7 +72,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
