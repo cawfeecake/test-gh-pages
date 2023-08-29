@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-08-29T22:27:12.605528Z",
-    "stations_updated": "2023-08-05"
+    "timestamp": "2023-08-29T22:40:35.079269Z",
+    "stations_updated": "2023-08-05",
+    "cache-timestamp": "2023-08-29T22:40:03.344000Z"
   },
   "altimeter": {
     "repr": "A3011",
@@ -16,10 +17,10 @@
       "modifier": null
     },
     {
-      "repr": "BKN035",
+      "repr": "BKN035CB",
       "type": "BKN",
       "altitude": 35,
-      "modifier": null
+      "modifier": "CB"
     },
     {
       "repr": "OVC070",
@@ -47,14 +48,14 @@
     "spoken": "five"
   },
   "wx_codes": [],
-  "raw": "KNUW 292153Z 16005KT 10SM SCT025 BKN035 OVC070 17/13 A3011 RMK AO2 SLP200 T01670133",
-  "sanitized": "KNUW 292153Z 16005KT 10SM SCT025 BKN035 OVC070 17/13 A3011 RMK AO2 SLP200 T01670133",
+  "raw": "KNUW 292153Z COR 16005KT 10SM SCT025 BKN035CB OVC070 17/13 A3011 RMK AO2 SLP200 OCNL LTGIC W MOV NE T01670133 $",
+  "sanitized": "KNUW 292153Z 16005KT 10SM SCT025 BKN035CB OVC070 17/13 A3011 RMK AO2 SLP200 OCNL LTGIC W MOV NE T01670133 $",
   "station": "KNUW",
   "time": {
     "repr": "292153Z",
     "dt": "2023-08-29T21:53:00Z"
   },
-  "remarks": "RMK AO2 SLP200 T01670133",
+  "remarks": "RMK AO2 SLP200 OCNL LTGIC W MOV NE T01670133 $",
   "dewpoint": {
     "repr": "13",
     "value": 13,
@@ -69,6 +70,10 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
