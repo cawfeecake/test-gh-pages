@@ -1,20 +1,31 @@
 {
   "meta": {
-    "timestamp": "2023-09-15T12:41:39.312145Z",
-    "stations_updated": "2023-08-05"
+    "timestamp": "2023-09-15T13:07:03.500485Z",
+    "stations_updated": "2023-08-05",
+    "cache-timestamp": "2023-09-15T13:06:04.740000Z"
   },
   "altimeter": {
-    "repr": "A2999",
-    "value": 29.99,
-    "spoken": "two nine point nine nine"
+    "repr": "A3000",
+    "value": 30,
+    "spoken": "three zero point zero zero"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -29,16 +40,16 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBVS 151235Z AUTO 00000KT 5SM BR CLR 10/10 A2999 RMK A01",
-  "sanitized": "KBVS 151235Z 00000KT 5SM BR 10/10 A2999 RMK A01",
+  "raw": "KBVS 151255Z AUTO 00000KT 1/4SM FG VV002 10/10 A3000 RMK A01",
+  "sanitized": "KBVS 151255Z 00000KT 1/4SM FG VV002 10/10 A3000 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "151235Z",
-    "dt": "2023-09-15T12:35:00Z"
+    "repr": "151255Z",
+    "dt": "2023-09-15T12:55:00Z"
   },
   "remarks": "RMK A01",
   "dewpoint": {
@@ -70,8 +81,8 @@
     "spoken": "one zero"
   },
   "wind_variable_direction": [],
-  "density_altitude": -491,
-  "pressure_altitude": 74,
+  "density_altitude": -501,
+  "pressure_altitude": 64,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
