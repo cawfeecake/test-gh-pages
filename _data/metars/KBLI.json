@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-09-25T17:40:38.245303Z",
+    "timestamp": "2023-09-25T18:06:35.704415Z",
     "stations_updated": "2023-08-05",
-    "cache-timestamp": "2023-09-25T17:40:05.397000Z"
+    "cache-timestamp": "2023-09-25T18:06:05.583000Z"
   },
   "altimeter": {
     "repr": "A2969",
@@ -11,15 +11,21 @@
   },
   "clouds": [
     {
-      "repr": "FEW080",
-      "type": "FEW",
-      "altitude": 80,
+      "repr": "SCT045",
+      "type": "SCT",
+      "altitude": 45,
       "modifier": null
     },
     {
-      "repr": "OVC100",
-      "type": "OVC",
-      "altitude": 100,
+      "repr": "BKN055",
+      "type": "BKN",
+      "altitude": 55,
+      "modifier": null
+    },
+    {
+      "repr": "BKN060",
+      "type": "BKN",
+      "altitude": 60,
       "modifier": null
     }
   ],
@@ -35,21 +41,25 @@
     "value": 140,
     "spoken": "one four zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "22",
+    "value": 22,
+    "spoken": "two two"
+  },
   "wind_speed": {
     "repr": "10",
     "value": 10,
     "spoken": "one zero"
   },
   "wx_codes": [],
-  "raw": "KBLI 251653Z 14010KT 10SM FEW080 OVC100 19/13 A2969 RMK AO2 PK WND 14030/1624 SLP060 T01890128",
-  "sanitized": "KBLI 251653Z 14010KT 10SM FEW080 OVC100 19/13 A2969 RMK AO2 PK WND 14030/1624 SLP060 T01890128",
+  "raw": "KBLI 251753Z 14010G22KT 10SM SCT045 BKN055 BKN060 19/13 A2969 RMK AO2 SLP060 60000 T01890128 10189 20144 55002",
+  "sanitized": "KBLI 251753Z 14010G22KT 10SM SCT045 BKN055 BKN060 19/13 A2969 RMK AO2 SLP060 60000 T01890128 10189 20144 55002",
   "station": "KBLI",
   "time": {
-    "repr": "251653Z",
-    "dt": "2023-09-25T16:53:00Z"
+    "repr": "251753Z",
+    "dt": "2023-09-25T17:53:00Z"
   },
-  "remarks": "RMK AO2 PK WND 14030/1624 SLP060 T01890128",
+  "remarks": "RMK AO2 SLP060 60000 T01890128 10189 20144 55002",
   "dewpoint": {
     "repr": "13",
     "value": 13,
@@ -57,10 +67,26 @@
   },
   "relative_humidity": 0.6768815481108411,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10189",
+      "value": 18.9,
+      "spoken": "one eight point nine"
+    },
+    "minimum_temperature_6": {
+      "repr": "20144",
+      "value": 14.4,
+      "spoken": "one four point four"
+    },
+    "pressure_tendency": {
+      "repr": "55002",
+      "tendency": "Decreasing, then increasing",
+      "change": 0.2
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
