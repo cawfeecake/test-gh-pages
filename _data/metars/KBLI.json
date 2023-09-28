@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2023-09-28T17:01:35.731059Z",
+    "timestamp": "2023-09-28T17:25:32.093700Z",
     "stations_updated": "2023-08-05"
   },
   "altimeter": {
@@ -10,13 +10,19 @@
   },
   "clouds": [
     {
-      "repr": "OVC011",
+      "repr": "BKN009",
+      "type": "BKN",
+      "altitude": 9,
+      "modifier": null
+    },
+    {
+      "repr": "OVC013",
       "type": "OVC",
-      "altitude": 11,
+      "altitude": 13,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -30,24 +36,19 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KBLI 281653Z 18004KT 10SM -RA OVC011 12/12 A3000 RMK AO2 SLP166 P0000 T01220122",
-  "sanitized": "KBLI 281653Z 18004KT 10SM -RA OVC011 12/12 A3000 RMK AO2 SLP166 P0000 T01220122",
+  "wx_codes": [],
+  "raw": "KBLI 281702Z 18008KT 10SM BKN009 OVC013 12/12 A3000 RMK AO2 RAE01 P0000 T01220122",
+  "sanitized": "KBLI 281702Z 18008KT 10SM BKN009 OVC013 12/12 A3000 RMK AO2 RAE01 P0000 T01220122",
   "station": "KBLI",
   "time": {
-    "repr": "281653Z",
-    "dt": "2023-09-28T16:53:00Z"
+    "repr": "281702Z",
+    "dt": "2023-09-28T17:02:00Z"
   },
-  "remarks": "RMK AO2 SLP166 P0000 T01220122",
+  "remarks": "RMK AO2 RAE01 P0000 T01220122",
   "dewpoint": {
     "repr": "12",
     "value": 12,
@@ -69,6 +70,10 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAE01",
+        "value": "Rain ended at :01"
       }
     ],
     "dewpoint_decimal": {
@@ -79,11 +84,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP166",
-      "value": 1016.6,
-      "spoken": "one zero one six point six"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0122",
