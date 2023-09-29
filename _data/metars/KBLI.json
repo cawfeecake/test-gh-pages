@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-09-29T10:28:43.059041Z",
+    "timestamp": "2023-09-29T10:40:35.977751Z",
     "stations_updated": "2023-08-05",
-    "cache-timestamp": "2023-09-29T10:28:36.500000Z"
+    "cache-timestamp": "2023-09-29T10:40:02.511000Z"
   },
   "altimeter": {
     "repr": "A2999",
@@ -11,21 +11,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT043",
-      "type": "SCT",
-      "altitude": 43,
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "7/4",
-    "value": 1.75,
-    "spoken": "one and three quarters",
-    "numerator": 7,
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
     "denominator": 4,
-    "normalized": "1 3/4"
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -40,18 +40,18 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 291012Z AUTO 00000KT 1 3/4SM R16/5000VP6000FT BR SCT043 06/06 A2999 RMK AO2 VIS 1/2V5 T00560056",
-  "sanitized": "KBLI 291012Z 00000KT 1 3/4SM R16/5000VP6000FT BR SCT043 06/06 A2999 RMK AO2 VIS 1/2V5 T00560056",
+  "raw": "KBLI 291026Z AUTO 00000KT 1/4SM R16/2200VP6000FT FG VV002 06/06 A2999 RMK AO2 T00560056 $",
+  "sanitized": "KBLI 291026Z 00000KT 1/4SM R16/2200VP6000FT FG VV002 06/06 A2999 RMK AO2 T00560056 $",
   "station": "KBLI",
   "time": {
-    "repr": "291012Z",
-    "dt": "2023-09-29T10:12:00Z"
+    "repr": "291026Z",
+    "dt": "2023-09-29T10:26:00Z"
   },
-  "remarks": "RMK AO2 VIS 1/2V5 T00560056",
+  "remarks": "RMK AO2 T00560056 $",
   "dewpoint": {
     "repr": "06",
     "value": 6,
@@ -66,6 +66,10 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -89,14 +93,14 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/5000VP6000FT",
+      "repr": "R16/2200VP6000FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "5000",
-          "value": 5000,
-          "spoken": "five thousand"
+          "repr": "2200",
+          "value": 2200,
+          "spoken": "two two hundred"
         },
         {
           "repr": "P6000",
