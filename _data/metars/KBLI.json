@@ -1,21 +1,27 @@
 {
   "meta": {
-    "timestamp": "2023-09-29T13:06:59.507989Z",
-    "stations_updated": "2023-08-05",
-    "cache-timestamp": "2023-09-29T13:06:30.447000Z"
+    "timestamp": "2023-09-29T13:25:57.705737Z",
+    "stations_updated": "2023-08-05"
   },
   "altimeter": {
     "repr": "A2998",
     "value": 29.98,
     "spoken": "two nine point nine eight"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "FEW002",
+      "type": "FEW",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
-    "repr": "6",
-    "value": 6,
-    "spoken": "six"
+    "repr": "3",
+    "value": 3,
+    "spoken": "three"
   },
   "wind_direction": {
     "repr": "000",
@@ -34,14 +40,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 291253Z AUTO 00000KT 6SM BR CLR 04/04 A2998 RMK AO2 SLP161 T00440044 $",
-  "sanitized": "KBLI 291253Z 00000KT 6SM BR 04/04 A2998 RMK AO2 SLP161 T00440044 $",
+  "raw": "KBLI 291323Z AUTO 00000KT 3SM BR FEW002 04/04 A2998 RMK AO2 T00440044 $",
+  "sanitized": "KBLI 291323Z 00000KT 3SM BR FEW002 04/04 A2998 RMK AO2 T00440044 $",
   "station": "KBLI",
   "time": {
-    "repr": "291253Z",
-    "dt": "2023-09-29T12:53:00Z"
+    "repr": "291323Z",
+    "dt": "2023-09-29T13:23:00Z"
   },
-  "remarks": "RMK AO2 SLP161 T00440044 $",
+  "remarks": "RMK AO2 T00440044 $",
   "dewpoint": {
     "repr": "04",
     "value": 4,
@@ -73,11 +79,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP161",
-      "value": 1016.1,
-      "spoken": "one zero one six point one"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0044",
