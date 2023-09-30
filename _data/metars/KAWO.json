@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-09-30T14:23:32.765142Z",
-    "stations_updated": "2023-08-05"
+    "timestamp": "2023-09-30T14:40:38.817330Z",
+    "stations_updated": "2023-08-05",
+    "cache-timestamp": "2023-09-30T14:40:03.680000Z"
   },
   "altimeter": {
     "repr": "A3004",
@@ -16,8 +17,8 @@
       "modifier": null
     },
     {
-      "repr": "BKN014",
-      "type": "BKN",
+      "repr": "SCT014",
+      "type": "SCT",
       "altitude": 14,
       "modifier": null
     }
@@ -25,14 +26,17 @@
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "2",
-    "value": 2,
-    "spoken": "two"
+    "repr": "5/2",
+    "value": 2.5,
+    "spoken": "two and one half",
+    "numerator": 5,
+    "denominator": 2,
+    "normalized": "2 1/2"
   },
   "wind_direction": {
-    "repr": "350",
-    "value": 350,
-    "spoken": "three five zero"
+    "repr": "340",
+    "value": 340,
+    "spoken": "three four zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -46,18 +50,18 @@
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 301421Z AUTO 35003KT 2SM BR FEW001 BKN014 03/03 A3004 RMK AO2",
-  "sanitized": "KAWO 301421Z 35003KT 2SM BR FEW001 BKN014 03/03 A3004 RMK AO2",
+  "raw": "KAWO 301434Z AUTO 34003KT 2 1/2SM BR FEW001 SCT014 02/02 A3004 RMK AO2 VIS 1/2V5 FZRANO",
+  "sanitized": "KAWO 301434Z 34003KT 2 1/2SM BR FEW001 SCT014 02/02 A3004 RMK AO2 VIS 1/2V5 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "301421Z",
-    "dt": "2023-09-30T14:21:00Z"
+    "repr": "301434Z",
+    "dt": "2023-09-30T14:34:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 VIS 1/2V5 FZRANO",
   "dewpoint": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -71,6 +75,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "FZRANO",
+        "value": "Freezing rain information not available"
       }
     ],
     "dewpoint_decimal": null,
@@ -83,12 +91,12 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "02",
+    "value": 2,
+    "spoken": "two"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1384,
+  "density_altitude": -1504,
   "pressure_altitude": 22,
   "units": {
     "accumulation": "in",

@@ -1,12 +1,13 @@
 {
   "meta": {
-    "timestamp": "2023-09-30T14:23:29.674561Z",
-    "stations_updated": "2023-08-05"
+    "timestamp": "2023-09-30T14:40:37.591207Z",
+    "stations_updated": "2023-08-05",
+    "cache-timestamp": "2023-09-30T14:40:03.691000Z"
   },
   "altimeter": {
-    "repr": "A3002",
-    "value": 30.02,
-    "spoken": "three zero point zero two"
+    "repr": "A3003",
+    "value": 30.03,
+    "spoken": "three zero point zero three"
   },
   "clouds": [
     {
@@ -17,10 +18,15 @@
     }
   ],
   "flight_rules": "LIFR",
-  "other": [
-    "M14KT"
-  ],
-  "visibility": null,
+  "other": [],
+  "visibility": {
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
+  },
   "wind_direction": {
     "repr": "000",
     "value": 0,
@@ -38,12 +44,12 @@
       "value": "Fog"
     }
   ],
-  "raw": "KBLI 301415Z 00000KT M1/4SM R16/1200V3000FT FG VV001 03/03 A3002 RMK AO2 T00330033",
-  "sanitized": "KBLI 301415Z 00000KT M14KT R16/1200V3000FT FG VV001 03/03 A3002 RMK AO2 T00330033",
+  "raw": "KBLI 301427Z 00000KT 1/4SM R16/3000VP6000FT FG VV001 03/03 A3003 RMK AO2 T00330033",
+  "sanitized": "KBLI 301427Z 00000KT 1/4SM R16/3000VP6000FT FG VV001 03/03 A3003 RMK AO2 T00330033",
   "station": "KBLI",
   "time": {
-    "repr": "301415Z",
-    "dt": "2023-09-30T14:15:00Z"
+    "repr": "301427Z",
+    "dt": "2023-09-30T14:27:00Z"
   },
   "remarks": "RMK AO2 T00330033",
   "dewpoint": {
@@ -83,19 +89,19 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1200V3000FT",
+      "repr": "R16/3000VP6000FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "1200",
-          "value": 1200,
-          "spoken": "one two hundred"
-        },
-        {
           "repr": "3000",
           "value": 3000,
           "spoken": "three thousand"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
         }
       ],
       "trend": null
@@ -107,8 +113,8 @@
     "spoken": "three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1293,
-  "pressure_altitude": 70,
+  "density_altitude": -1303,
+  "pressure_altitude": 60,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
