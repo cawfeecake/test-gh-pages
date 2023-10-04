@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-04T17:26:07.268714Z",
+    "timestamp": "2023-10-04T17:40:44.907159Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-04T17:26:04.019000Z"
+    "cache-timestamp": "2023-10-04T17:40:39.405000Z"
   },
   "altimeter": {
     "repr": "A3036",
@@ -11,23 +11,32 @@
   },
   "clouds": [
     {
-      "repr": "OVC005",
-      "type": "OVC",
+      "repr": "BKN005",
+      "type": "BKN",
       "altitude": 5,
+      "modifier": null
+    },
+    {
+      "repr": "OVC008",
+      "type": "OVC",
+      "altitude": 8,
       "modifier": null
     }
   ],
   "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "2",
-    "value": 2,
-    "spoken": "two"
+    "repr": "7/4",
+    "value": 1.75,
+    "spoken": "one and three quarters",
+    "numerator": 7,
+    "denominator": 4,
+    "normalized": "1 3/4"
   },
   "wind_direction": {
-    "repr": "170",
-    "value": 170,
-    "spoken": "one seven zero"
+    "repr": "200",
+    "value": 200,
+    "spoken": "two zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -45,14 +54,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KAWO 041711Z AUTO 17004KT 2SM -RA BR OVC005 13/13 A3036 RMK AO2 VIS 1 1/2V5 RAB05 P0000",
-  "sanitized": "KAWO 041711Z 17004KT 2SM -RA BR OVC005 13/13 A3036 RMK AO2 VIS 1 1/2V5 RAB05 P0000",
+  "raw": "KAWO 041730Z AUTO 20004KT 1 3/4SM -RA BR BKN005 OVC008 13/13 A3036 RMK AO2 RAB05 CIG 003V007 P0001",
+  "sanitized": "KAWO 041730Z 20004KT 1 3/4SM -RA BR BKN005 OVC008 13/13 A3036 RMK AO2 RAB05 CIG 003V007 P0001",
   "station": "KAWO",
   "time": {
-    "repr": "041711Z",
-    "dt": "2023-10-04T17:11:00Z"
+    "repr": "041730Z",
+    "dt": "2023-10-04T17:30:00Z"
   },
-  "remarks": "RMK AO2 VIS 1 1/2V5 RAB05 P0000",
+  "remarks": "RMK AO2 RAB05 CIG 003V007 P0001",
   "dewpoint": {
     "repr": "13",
     "value": 13,
@@ -72,10 +81,6 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
         "repr": "RAB05",
         "value": "Rain began at :05"
       }
@@ -83,7 +88,11 @@
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
