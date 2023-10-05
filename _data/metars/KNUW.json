@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-05T11:01:14.710669Z",
-    "stations_updated": "2023-10-01"
+    "timestamp": "2023-10-05T11:20:34.971043Z",
+    "stations_updated": "2023-10-01",
+    "cache-timestamp": "2023-10-05T11:20:04.949000Z"
   },
   "altimeter": {
     "repr": "A3039",
@@ -10,8 +11,8 @@
   },
   "clouds": [
     {
-      "repr": "SCT004",
-      "type": "SCT",
+      "repr": "BKN004",
+      "type": "BKN",
       "altitude": 4,
       "modifier": null
     },
@@ -28,17 +29,20 @@
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "3",
-    "value": 3,
-    "spoken": "three"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
-    "repr": "240",
-    "value": 240,
-    "spoken": "two four zero"
+    "repr": "260",
+    "value": 260,
+    "spoken": "two six zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -50,16 +54,20 @@
     {
       "repr": "BR",
       "value": "Mist"
+    },
+    {
+      "repr": "BCFG",
+      "value": "Patchy Fog"
     }
   ],
-  "raw": "KNUW 051053Z 24005KT 3SM BR SCT004 BKN025 OVC030 11/11 A3039 RMK AO2 SLP294 T01110106 $",
-  "sanitized": "KNUW 051053Z 24005KT 3SM BR SCT004 BKN025 OVC030 11/11 A3039 RMK AO2 SLP294 T01110106 $",
+  "raw": "KNUW 051109Z 26005KT 1/4SM BR BCFG BKN004 BKN025 OVC030 11/11 A3039 RMK AO2 SFC VIS 1 1/4 T01110106 $",
+  "sanitized": "KNUW 051109Z 26005KT 1/4SM BR BCFG BKN004 BKN025 OVC030 11/11 A3039 RMK AO2 SFC VIS 1 1/4 T01110106 $",
   "station": "KNUW",
   "time": {
-    "repr": "051053Z",
-    "dt": "2023-10-05T10:53:00Z"
+    "repr": "051109Z",
+    "dt": "2023-10-05T11:09:00Z"
   },
-  "remarks": "RMK AO2 SLP294 T01110106 $",
+  "remarks": "RMK AO2 SFC VIS 1 1/4 T01110106 $",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -91,11 +99,7 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP294",
-      "value": 1029.4,
-      "spoken": "one zero two nine point four"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0111",
