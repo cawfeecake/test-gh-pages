@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-05T13:10:31.527276Z",
+    "timestamp": "2023-10-05T13:30:28.509947Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-05T13:10:04.415000Z"
+    "cache-timestamp": "2023-10-05T13:30:04.210000Z"
   },
   "altimeter": {
     "repr": "A3038",
@@ -11,15 +11,9 @@
   },
   "clouds": [
     {
-      "repr": "FEW002",
-      "type": "FEW",
-      "altitude": 2,
-      "modifier": null
-    },
-    {
-      "repr": "FEW031",
-      "type": "FEW",
-      "altitude": 31,
+      "repr": "BKN001",
+      "type": "BKN",
+      "altitude": 1,
       "modifier": null
     },
     {
@@ -29,20 +23,20 @@
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5/2",
-    "value": 2.5,
-    "spoken": "two and one half",
-    "numerator": 5,
+    "repr": "1/2",
+    "value": 0.5,
+    "spoken": "one half",
+    "numerator": 1,
     "denominator": 2,
-    "normalized": "2 1/2"
+    "normalized": "1/2"
   },
   "wind_direction": {
-    "repr": "350",
-    "value": 350,
-    "spoken": "three five zero"
+    "repr": "010",
+    "value": 10,
+    "spoken": "zero one zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -52,16 +46,16 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBLI 051300Z AUTO 35003KT 2 1/2SM BR FEW002 FEW031 OVC042 12/12 A3038 RMK AO2 T01220122",
-  "sanitized": "KBLI 051300Z 35003KT 2 1/2SM BR FEW002 FEW031 OVC042 12/12 A3038 RMK AO2 T01220122",
+  "raw": "KBLI 051318Z AUTO 01003KT 1/2SM R16/2000VP6000FT FG BKN001 OVC042 12/12 A3038 RMK AO2 T01220122",
+  "sanitized": "KBLI 051318Z 01003KT 1/2SM R16/2000VP6000FT FG BKN001 OVC042 12/12 A3038 RMK AO2 T01220122",
   "station": "KBLI",
   "time": {
-    "repr": "051300Z",
-    "dt": "2023-10-05T13:00:00Z"
+    "repr": "051318Z",
+    "dt": "2023-10-05T13:18:00Z"
   },
   "remarks": "RMK AO2 T01220122",
   "dewpoint": {
@@ -99,7 +93,26 @@
       "spoken": "one two point two"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/2000VP6000FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "2000",
+          "value": 2000,
+          "spoken": "two thousand"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "12",
     "value": 12,
