@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-06T10:40:31.778425Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-06T10:40:03.306000Z"
+    "timestamp": "2023-10-06T11:01:27.145384Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A3029",
@@ -11,18 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "SCT003",
+      "repr": "SCT002",
       "type": "SCT",
-      "altitude": 3,
+      "altitude": 2,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "4",
-    "value": 4,
-    "spoken": "four"
+    "repr": "3/2",
+    "value": 1.5,
+    "spoken": "one and one half",
+    "numerator": 3,
+    "denominator": 2,
+    "normalized": "1 1/2"
   },
   "wind_direction": {
     "repr": "000",
@@ -41,12 +43,12 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 061027Z AUTO 00000KT 4SM BR SCT003 08/07 A3029 RMK AO2 T00780072",
-  "sanitized": "KBLI 061027Z 00000KT 4SM BR SCT003 08/07 A3029 RMK AO2 T00780072",
+  "raw": "KBLI 061059Z AUTO 00000KT 1 1/2SM R16/2200VP6000FT BR SCT002 08/07 A3029 RMK AO2 T00780072",
+  "sanitized": "KBLI 061059Z 00000KT 1 1/2SM R16/2200VP6000FT BR SCT002 08/07 A3029 RMK AO2 T00780072",
   "station": "KBLI",
   "time": {
-    "repr": "061027Z",
-    "dt": "2023-10-06T10:27:00Z"
+    "repr": "061059Z",
+    "dt": "2023-10-06T10:59:00Z"
   },
   "remarks": "RMK AO2 T00780072",
   "dewpoint": {
@@ -84,7 +86,26 @@
       "spoken": "seven point eight"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/2200VP6000FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "2200",
+          "value": 2200,
+          "spoken": "two two hundred"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "08",
     "value": 8,

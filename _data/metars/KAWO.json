@@ -1,21 +1,30 @@
 {
   "meta": {
-    "timestamp": "2023-10-06T10:40:33.708239Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-06T10:40:03.305000Z"
+    "timestamp": "2023-10-06T11:01:32.016755Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
-    "repr": "A3029",
-    "value": 30.29,
-    "spoken": "three zero point two nine"
+    "repr": "A3028",
+    "value": 30.28,
+    "spoken": "three zero point two eight"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "BKN002",
+      "type": "BKN",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5/4",
+    "value": 1.25,
+    "spoken": "one and one quarter",
+    "numerator": 5,
+    "denominator": 4,
+    "normalized": "1 1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -28,21 +37,26 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KAWO 061029Z AUTO 00000KT 10SM CLR 09/09 A3029 RMK AO2",
-  "sanitized": "KAWO 061029Z 00000KT 10SM 09/09 A3029 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KAWO 061059Z AUTO 00000KT 1 1/4SM BR BKN002 09/08 A3028 RMK AO2 VIS 1/2V5",
+  "sanitized": "KAWO 061059Z 00000KT 1 1/4SM BR BKN002 09/08 A3028 RMK AO2 VIS 1/2V5",
   "station": "KAWO",
   "time": {
-    "repr": "061029Z",
-    "dt": "2023-10-06T10:29:00Z"
+    "repr": "061059Z",
+    "dt": "2023-10-06T10:59:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 VIS 1/2V5",
   "dewpoint": {
-    "repr": "09",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
-  "relative_humidity": 1,
+  "relative_humidity": 0.9344901544791844,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -71,8 +85,8 @@
     "spoken": "nine"
   },
   "wind_variable_direction": [],
-  "density_altitude": -914,
-  "pressure_altitude": -228,
+  "density_altitude": -904,
+  "pressure_altitude": -218,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
