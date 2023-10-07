@@ -1,23 +1,33 @@
 {
   "meta": {
-    "timestamp": "2023-10-07T13:22:19.045297Z",
+    "timestamp": "2023-10-07T13:40:42.199406Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-07T13:22:03.416000Z"
+    "cache-timestamp": "2023-10-07T13:40:04.080000Z"
   },
   "altimeter": {
-    "repr": "A2996",
-    "value": 29.96,
-    "spoken": "two nine point nine six"
+    "repr": "A2995",
+    "value": 29.95,
+    "spoken": "two nine point nine five"
   },
-  "clouds": [],
-  "flight_rules": "VFR",
+  "clouds": [
+    {
+      "repr": "VV002",
+      "type": "VV",
+      "altitude": 2,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [
     "11"
   ],
   "visibility": {
-    "repr": "9",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -30,13 +40,18 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KORS 071255Z AUTO 00000KT 9SM CLR 11/ A2996 RMK AO2",
-  "sanitized": "KORS 071255Z 00000KT 9SM 11 A2996 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ],
+  "raw": "KORS 071315Z AUTO 00000KT 1/4SM FG VV002 11/ A2995 RMK AO2",
+  "sanitized": "KORS 071315Z 00000KT 1/4SM FG VV002 11 A2995 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "071255Z",
-    "dt": "2023-10-07T12:55:00Z"
+    "repr": "071315Z",
+    "dt": "2023-10-07T13:15:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": null,
