@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-10T21:21:11.107022Z",
-    "stations_updated": "2023-10-01"
+    "timestamp": "2023-10-10T21:40:47.502700Z",
+    "stations_updated": "2023-10-01",
+    "cache-timestamp": "2023-10-10T21:40:03.656000Z"
   },
   "altimeter": {
     "repr": "A2946",
@@ -10,19 +11,25 @@
   },
   "clouds": [
     {
-      "repr": "BKN027",
-      "type": "BKN",
-      "altitude": 27,
+      "repr": "SCT026",
+      "type": "SCT",
+      "altitude": 26,
       "modifier": null
     },
     {
-      "repr": "OVC037",
+      "repr": "BKN044",
+      "type": "BKN",
+      "altitude": 44,
+      "modifier": null
+    },
+    {
+      "repr": "OVC050",
       "type": "OVC",
-      "altitude": 37,
+      "altitude": 50,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -30,30 +37,29 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "150",
-    "value": 150,
-    "spoken": "one five zero"
+    "repr": "130",
+    "value": 130,
+    "spoken": "one three zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "20",
+    "value": 20,
+    "spoken": "two zero"
+  },
   "wind_speed": {
     "repr": "11",
     "value": 11,
     "spoken": "one one"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KAWO 102114Z AUTO 15011KT 10SM -RA BKN027 OVC037 14/11 A2946 RMK AO2 P0001",
-  "sanitized": "KAWO 102114Z 15011KT 10SM -RA BKN027 OVC037 14/11 A2946 RMK AO2 P0001",
+  "wx_codes": [],
+  "raw": "KAWO 102130Z AUTO 13011G20KT 10SM SCT026 BKN044 OVC050 14/11 A2946 RMK AO2 RAE24 P0001",
+  "sanitized": "KAWO 102130Z 13011G20KT 10SM SCT026 BKN044 OVC050 14/11 A2946 RMK AO2 RAE24 P0001",
   "station": "KAWO",
   "time": {
-    "repr": "102114Z",
-    "dt": "2023-10-10T21:14:00Z"
+    "repr": "102130Z",
+    "dt": "2023-10-10T21:30:00Z"
   },
-  "remarks": "RMK AO2 P0001",
+  "remarks": "RMK AO2 RAE24 P0001",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -71,6 +77,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAE24",
+        "value": "Rain ended at :24"
       }
     ],
     "dewpoint_decimal": null,
