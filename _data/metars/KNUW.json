@@ -1,7 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-13T04:27:29.951014Z",
-    "stations_updated": "2023-10-01"
+    "timestamp": "2023-10-13T04:40:49.478170Z",
+    "stations_updated": "2023-10-01",
+    "cache-timestamp": "2023-10-13T04:40:03.520000Z"
   },
   "altimeter": {
     "repr": "A2996",
@@ -43,14 +44,14 @@
       "value": "Fog"
     }
   ],
-  "raw": "KNUW 130419Z COR 26005KT 1/2SM FG VV003 09/08 A2996 RMK T00890083",
-  "sanitized": "KNUW 130419Z 26005KT 1/2SM FG VV003 09/08 A2996 RMK T00890083",
+  "raw": "KNUW 130419Z COR 26005KT 1/2SM FG VV003 09/08 A2996 RMK AO2 T00890083 $",
+  "sanitized": "KNUW 130419Z 26005KT 1/2SM FG VV003 09/08 A2996 RMK AO2 T00890083 $",
   "station": "KNUW",
   "time": {
     "repr": "130419Z",
     "dt": "2023-10-13T04:19:00Z"
   },
-  "remarks": "RMK T00890083",
+  "remarks": "RMK AO2 T00890083 $",
   "dewpoint": {
     "repr": "08",
     "value": 8,
@@ -64,7 +65,16 @@
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0083",
       "value": 8.3,
