@@ -1,59 +1,73 @@
 {
   "meta": {
-    "timestamp": "2023-10-16T22:01:52.796203Z",
+    "timestamp": "2023-10-16T22:26:28.976674Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-16T22:00:03.073000Z",
-    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
+    "cache-timestamp": "2023-10-16T22:26:03.577000Z"
   },
   "altimeter": {
-    "repr": "A2982",
-    "value": 29.82,
-    "spoken": "two nine point eight two"
+    "repr": "A2983",
+    "value": 29.83,
+    "spoken": "two nine point eight three"
   },
   "clouds": [
     {
-      "repr": "OVC014",
+      "repr": "SCT003",
+      "type": "SCT",
+      "altitude": 3,
+      "modifier": null
+    },
+    {
+      "repr": "BKN013",
+      "type": "BKN",
+      "altitude": 13,
+      "modifier": null
+    },
+    {
+      "repr": "OVC030",
       "type": "OVC",
-      "altitude": 14,
+      "altitude": 30,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "other": [
     "16"
   ],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "3/2",
+    "value": 1.5,
+    "spoken": "one and one half",
+    "numerator": 3,
+    "denominator": 2,
+    "normalized": "1 1/2"
   },
   "wind_direction": {
-    "repr": "180",
-    "value": 180,
-    "spoken": "one eight zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
-  "wind_gust": {
-    "repr": "14",
-    "value": 14,
-    "spoken": "one four"
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "07",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "05",
+    "value": 5,
+    "spoken": "five"
   },
   "wx_codes": [
     {
-      "repr": "-RA",
-      "value": "Light Rain"
+      "repr": "RA",
+      "value": "Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ],
-  "raw": "KORS 162135Z AUTO 18007G14KT 10SM -RA OVC014 16/ A2982 RMK AO2",
-  "sanitized": "KORS 162135Z 18007G14KT 10SM -RA OVC014 16 A2982 RMK AO2",
+  "raw": "KORS 162215Z AUTO VRB05KT 1 1/2SM RA BR SCT003 BKN013 OVC030 16/ A2983 RMK AO2",
+  "sanitized": "KORS 162215Z VRB05KT 1 1/2SM RA BR SCT003 BKN013 OVC030 16 A2983 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "162135Z",
-    "dt": "2023-10-16T21:35:00Z"
+    "repr": "162215Z",
+    "dt": "2023-10-16T22:15:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": null,
