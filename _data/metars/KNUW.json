@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-17T07:02:26.793738Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-17T07:02:23.662000Z"
+    "timestamp": "2023-10-17T07:22:01.213383Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A3008",
@@ -48,14 +47,14 @@
     "spoken": "six"
   },
   "wx_codes": [],
-  "raw": "KNUW 170653Z 10006KT 10SM FEW028 SCT060 SCT160 09/09 A3008 RMK AO2 SLP189 T00940089 $",
-  "sanitized": "KNUW 170653Z 10006KT 10SM FEW028 SCT060 SCT160 09/09 A3008 RMK AO2 SLP189 T00940089 $",
+  "raw": "KNUW 170653Z 10006KT 10SM FEW028 SCT060 SCT160 09/09 A3008 RMK AO2 SLP189 T00940089 $ KNUW 170553Z 10003KT 10SM FEW022 BKN070 BKN160 09/09 A3007 RMK AO2 SLP185 60014 T00940089 10133 20094 51028 $",
+  "sanitized": "KNUW 170653Z 10006KT 10SM FEW028 SCT060 SCT160 09/09 A3008 RMK AO2 SLP189 T00940089 $ KNUW 170553Z 10003KT 10SM FEW022 BKN070 BKN160 09/09 A3007 RMK AO2 SLP185 60014 T00940089 10133 20094 51028 $",
   "station": "KNUW",
   "time": {
     "repr": "170653Z",
     "dt": "2023-10-17T06:53:00Z"
   },
-  "remarks": "RMK AO2 SLP189 T00940089 $",
+  "remarks": "RMK AO2 SLP189 T00940089 $ KNUW 170553Z 10003KT 10SM FEW022 BKN070 BKN160 09/09 A3007 RMK AO2 SLP185 60014 T00940089 10133 20094 51028 $",
   "dewpoint": {
     "repr": "09",
     "value": 9,
@@ -63,16 +62,40 @@
   },
   "relative_humidity": 0.9668587106156139,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10133",
+      "value": 13.3,
+      "spoken": "one three point three"
+    },
+    "minimum_temperature_6": {
+      "repr": "20094",
+      "value": 9.4,
+      "spoken": "nine point four"
+    },
+    "pressure_tendency": {
+      "repr": "51028",
+      "tendency": "Increasing, then steady",
+      "change": 2.8
+    },
+    "precip_36_hours": {
+      "repr": "60014",
+      "value": 0.14,
+      "spoken": "zero point one four"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "$",
         "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
       },
       {
         "repr": "AO2",
