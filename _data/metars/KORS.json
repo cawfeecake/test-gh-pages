@@ -1,30 +1,42 @@
 {
   "meta": {
-    "timestamp": "2023-10-17T20:40:32.988962Z",
+    "timestamp": "2023-10-17T21:02:38.243975Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-17T20:40:04.562000Z"
+    "cache-timestamp": "2023-10-17T21:02:27.198000Z"
   },
   "altimeter": {
-    "repr": "A3019",
-    "value": 30.19,
-    "spoken": "three zero point one nine"
+    "repr": "A3020",
+    "value": 30.2,
+    "spoken": "three zero point two zero"
   },
   "clouds": [
     {
-      "repr": "OVC070",
-      "type": "OVC",
-      "altitude": 70,
+      "repr": "FEW042",
+      "type": "FEW",
+      "altitude": 42,
+      "modifier": null
+    },
+    {
+      "repr": "SCT055",
+      "type": "SCT",
+      "altitude": 55,
+      "modifier": null
+    },
+    {
+      "repr": "BKN065",
+      "type": "BKN",
+      "altitude": 65,
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [
     "14"
   ],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
     "repr": "000",
@@ -37,13 +49,22 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KORS 172015Z AUTO 00000KT 10SM OVC070 14/ A3019 RMK AO2",
-  "sanitized": "KORS 172015Z 00000KT 10SM OVC070 14 A3019 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "HZ",
+      "value": "Haze"
+    }
+  ],
+  "raw": "KORS 172055Z AUTO 00000KT 5SM -RA HZ FEW042 SCT055 BKN065 14/ A3020 RMK AO2",
+  "sanitized": "KORS 172055Z 00000KT 5SM -RA HZ FEW042 SCT055 BKN065 14 A3020 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "172015Z",
-    "dt": "2023-10-17T20:15:00Z"
+    "repr": "172055Z",
+    "dt": "2023-10-17T20:55:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": null,
