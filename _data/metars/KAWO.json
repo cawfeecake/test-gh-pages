@@ -1,23 +1,24 @@
 {
   "meta": {
-    "timestamp": "2023-10-17T02:06:34.771227Z",
+    "timestamp": "2023-10-17T02:30:20.366827Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-17T02:06:02.658000Z"
+    "cache-timestamp": "2023-10-17T02:28:02.653000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
-    "repr": "A2997",
-    "value": 29.97,
-    "spoken": "two nine point nine seven"
+    "repr": "A2999",
+    "value": 29.99,
+    "spoken": "two nine point nine nine"
   },
   "clouds": [
     {
-      "repr": "OVC029",
+      "repr": "OVC031",
       "type": "OVC",
-      "altitude": 29,
+      "altitude": 31,
       "modifier": null
     }
   ],
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -25,9 +26,9 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "010",
-    "value": 10,
-    "spoken": "zero one zero"
+    "repr": "040",
+    "value": 40,
+    "spoken": "zero four zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -35,20 +36,15 @@
     "value": 7,
     "spoken": "seven"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KAWO 170149Z AUTO 01007KT 10SM -RA OVC029 13/11 A2997 RMK AO2 P0001",
-  "sanitized": "KAWO 170149Z 01007KT 10SM -RA OVC029 13/11 A2997 RMK AO2 P0001",
+  "wx_codes": [],
+  "raw": "KAWO 170208Z AUTO 04007KT 10SM OVC031 13/11 A2999 RMK AO2 PRESRR",
+  "sanitized": "KAWO 170208Z 04007KT 10SM OVC031 13/11 A2999 RMK AO2 PRESRR",
   "station": "KAWO",
   "time": {
-    "repr": "170149Z",
-    "dt": "2023-10-17T01:49:00Z"
+    "repr": "170208Z",
+    "dt": "2023-10-17T02:08:00Z"
   },
-  "remarks": "RMK AO2 P0001",
+  "remarks": "RMK AO2 PRESRR",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -66,16 +62,16 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "PRESRR",
+        "value": "Pressure Rising Rapidly"
       }
     ],
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "value": 0.01,
-      "spoken": "zero point zero one"
-    },
+    "precip_hourly": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
@@ -87,8 +83,8 @@
     "spoken": "one three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -114,
-  "pressure_altitude": 92,
+  "density_altitude": -134,
+  "pressure_altitude": 72,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
