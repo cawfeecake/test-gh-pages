@@ -1,31 +1,18 @@
 {
   "meta": {
-    "timestamp": "2023-10-17T22:40:34.891554Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-17T22:40:04.471000Z"
+    "timestamp": "2023-10-17T23:01:37.874951Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
-    "repr": "A3023",
-    "value": 30.23,
-    "spoken": "three zero point two three"
+    "repr": "A3022",
+    "value": 30.22,
+    "spoken": "three zero point two two"
   },
   "clouds": [
     {
-      "repr": "FEW031",
-      "type": "FEW",
-      "altitude": 31,
-      "modifier": null
-    },
-    {
-      "repr": "BKN042",
-      "type": "BKN",
-      "altitude": 42,
-      "modifier": null
-    },
-    {
-      "repr": "OVC075",
+      "repr": "OVC080",
       "type": "OVC",
-      "altitude": 75,
+      "altitude": 80,
       "modifier": null
     }
   ],
@@ -37,9 +24,9 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "040",
-    "value": 40,
-    "spoken": "zero four zero"
+    "repr": "070",
+    "value": 70,
+    "spoken": "zero seven zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -47,15 +34,20 @@
     "value": 3,
     "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KAWO 172156Z AUTO 04003KT 10SM FEW031 BKN042 OVC075 14/12 A3023 RMK AO2 SLP240 T01440117",
-  "sanitized": "KAWO 172156Z 04003KT 10SM FEW031 BKN042 OVC075 14/12 A3023 RMK AO2 SLP240 T01440117",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 172256Z AUTO 07003KT 10SM -RA OVC080 14/12 A3022 RMK AO2 RAB10 SLP237 P0002 T01390117 KAWO 172156Z AUTO 04003KT 10SM FEW031 BKN042 OVC075 14/12 A3023 RMK AO2 SLP240 T01440117",
+  "sanitized": "KAWO 172256Z 07003KT 10SM -RA OVC080 14/12 A3022 RMK AO2 RAB10 SLP237 P0002 T01390117 KAWO 172156Z AUTO 04003KT 10SM FEW031 BKN042 OVC075 14/12 A3023 RMK AO2 SLP240 T01440117",
   "station": "KAWO",
   "time": {
-    "repr": "172156Z",
-    "dt": "2023-10-17T21:56:00Z"
+    "repr": "172256Z",
+    "dt": "2023-10-17T22:56:00Z"
   },
-  "remarks": "RMK AO2 SLP240 T01440117",
+  "remarks": "RMK AO2 RAB10 SLP237 P0002 T01390117 KAWO 172156Z AUTO 04003KT 10SM FEW031 BKN042 OVC075 14/12 A3023 RMK AO2 SLP240 T01440117",
   "dewpoint": {
     "repr": "12",
     "value": 12,
@@ -73,6 +65,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAB10",
+        "value": "Rain began at :10"
       }
     ],
     "dewpoint_decimal": {
@@ -82,11 +82,15 @@
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sea_level_pressure": {
-      "repr": "SLP240",
-      "value": 1024,
-      "spoken": "one zero two four point zero"
+      "repr": "SLP237",
+      "value": 1023.7,
+      "spoken": "one zero two three point seven"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -102,8 +106,8 @@
     "spoken": "one four"
   },
   "wind_variable_direction": [],
-  "density_altitude": -206,
-  "pressure_altitude": -168,
+  "density_altitude": -196,
+  "pressure_altitude": -158,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
