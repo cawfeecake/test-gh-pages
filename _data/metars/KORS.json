@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-18T06:29:09.688573Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-18T06:28:36.755000Z"
+    "timestamp": "2023-10-18T06:40:49.341305Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A3007",
@@ -47,14 +46,14 @@
       "value": "Haze"
     }
   ],
-  "raw": "KORS 180515Z AUTO 00000KT 5SM -RA HZ OVC050 12/ A3007 RMK AO2",
-  "sanitized": "KORS 180515Z 00000KT 5SM -RA HZ OVC050 12 A3007 RMK AO2",
+  "raw": "KORS 180515Z AUTO 00000KT 5SM -RA HZ OVC050 12/ A3007 RMK AO2 KORS 180455Z AUTO 00000KT 9SM -RA SCT047 OVC055 12/ A3008 RMK AO2 P0001",
+  "sanitized": "KORS 180515Z 00000KT 5SM -RA HZ OVC050 12 A3007 RMK AO2 KORS 180455Z AUTO 00000KT 9SM -RA SCT047 OVC055 12/ A3008 RMK AO2 P0001",
   "station": "KORS",
   "time": {
     "repr": "180515Z",
     "dt": "2023-10-18T05:15:00Z"
   },
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 KORS 180455Z AUTO 00000KT 9SM -RA SCT047 OVC055 12/ A3008 RMK AO2 P0001",
   "dewpoint": null,
   "relative_humidity": null,
   "remarks_info": {
@@ -68,12 +67,20 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
       }
     ],
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "value": 0.01,
+      "spoken": "zero point zero one"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
