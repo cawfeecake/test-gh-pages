@@ -1,18 +1,31 @@
 {
   "meta": {
-    "timestamp": "2023-10-18T09:23:27.611486Z",
-    "stations_updated": "2023-10-01"
+    "timestamp": "2023-10-18T09:40:36.315332Z",
+    "stations_updated": "2023-10-01",
+    "cache-timestamp": "2023-10-18T09:40:02.932000Z"
   },
   "altimeter": {
-    "repr": "A3006",
-    "value": 30.06,
-    "spoken": "three zero point zero six"
+    "repr": "A3005",
+    "value": 30.05,
+    "spoken": "three zero point zero five"
   },
   "clouds": [
     {
-      "repr": "OVC065",
-      "type": "OVC",
-      "altitude": 65,
+      "repr": "FEW035",
+      "type": "FEW",
+      "altitude": 35,
+      "modifier": null
+    },
+    {
+      "repr": "SCT041",
+      "type": "SCT",
+      "altitude": 41,
+      "modifier": null
+    },
+    {
+      "repr": "BKN049",
+      "type": "BKN",
+      "altitude": 49,
       "modifier": null
     }
   ],
@@ -21,30 +34,39 @@
     "12"
   ],
   "visibility": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "9",
+    "value": 9,
+    "spoken": "nine"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "080",
+    "value": 80,
+    "spoken": "zero eight zero"
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
+  },
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
-  "wx_codes": [],
-  "raw": "KORS 180915Z AUTO 00000KT 10SM OVC065 12/ A3006 RMK AO2 KORS 180855Z AUTO 04007KT 010V070 9SM FEW005 FEW044 OVC070 12/ A3004 RMK AO2 KORS 180835Z AUTO 00000KT 9SM FEW005 SCT055 OVC065 12/ A3006 RMK AO2",
-  "sanitized": "KORS 180915Z 00000KT 10SM OVC065 12 A3006 RMK AO2 KORS 180855Z AUTO 04007KT 010V070 9SM FEW005 FEW044 OVC070 12/ A3004 RMK AO2 KORS 180835Z AUTO 00000KT 9SM FEW005 SCT055 OVC065 12/ A3006 RMK AO2",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KORS 180935Z AUTO 08006G12KT 9SM -RA FEW035 SCT041 BKN049 12/ A3005 RMK AO2",
+  "sanitized": "KORS 180935Z 08006G12KT 9SM -RA FEW035 SCT041 BKN049 12 A3005 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "180915Z",
-    "dt": "2023-10-18T09:15:00Z"
+    "repr": "180935Z",
+    "dt": "2023-10-18T09:35:00Z"
   },
-  "remarks": "RMK AO2 KORS 180855Z AUTO 04007KT 010V070 9SM FEW005 FEW044 OVC070 12/ A3004 RMK AO2 KORS 180835Z AUTO 00000KT 9SM FEW005 SCT055 OVC065 12/ A3006 RMK AO2",
+  "remarks": "RMK AO2",
   "dewpoint": null,
   "relative_humidity": null,
   "remarks_info": {
@@ -55,14 +77,6 @@
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
