@@ -1,19 +1,25 @@
 {
   "meta": {
-    "timestamp": "2023-10-18T17:40:31.678309Z",
+    "timestamp": "2023-10-18T18:06:59.640401Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-18T17:40:05.531000Z"
+    "cache-timestamp": "2023-10-18T18:06:20.693000Z"
   },
   "altimeter": {
-    "repr": "A3006",
-    "value": 30.06,
-    "spoken": "three zero point zero six"
+    "repr": "A3005",
+    "value": 30.05,
+    "spoken": "three zero point zero five"
   },
   "clouds": [
     {
-      "repr": "OVC055",
+      "repr": "BKN050",
+      "type": "BKN",
+      "altitude": 50,
+      "modifier": null
+    },
+    {
+      "repr": "OVC060",
       "type": "OVC",
-      "altitude": 55,
+      "altitude": 60,
       "modifier": null
     }
   ],
@@ -25,9 +31,9 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "040",
-    "value": 40,
-    "spoken": "zero four zero"
+    "repr": "030",
+    "value": 30,
+    "spoken": "zero three zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -36,31 +42,55 @@
     "spoken": "five"
   },
   "wx_codes": [],
-  "raw": "KBLI 181653Z 04005KT 10SM OVC055 12/11 A3006 RMK AO2 RAE50 SLP187 P0001 T01170111",
-  "sanitized": "KBLI 181653Z 04005KT 10SM OVC055 12/11 A3006 RMK AO2 RAE50 SLP187 P0001 T01170111",
+  "raw": "KBLI 181753Z 03005KT 10SM BKN050 OVC060 13/12 A3005 RMK AO2 RAB13E47 SLP184 P0000 60002 T01280117 10128 20106 56007 KBLI 181653Z 04005KT 10SM OVC055 12/11 A3006 RMK AO2 RAE50 SLP187 P0001 T01170111",
+  "sanitized": "KBLI 181753Z 03005KT 10SM BKN050 OVC060 13/12 A3005 RMK AO2 RAB13E47 SLP184 P0000 60002 T01280117 10128 20106 56007 KBLI 181653Z 04005KT 10SM OVC055 12/11 A3006 RMK AO2 RAE50 SLP187 P0001 T01170111",
   "station": "KBLI",
   "time": {
-    "repr": "181653Z",
-    "dt": "2023-10-18T16:53:00Z"
+    "repr": "181753Z",
+    "dt": "2023-10-18T17:53:00Z"
   },
-  "remarks": "RMK AO2 RAE50 SLP187 P0001 T01170111",
+  "remarks": "RMK AO2 RAB13E47 SLP184 P0000 60002 T01280117 10128 20106 56007 KBLI 181653Z 04005KT 10SM OVC055 12/11 A3006 RMK AO2 RAE50 SLP187 P0001 T01170111",
   "dewpoint": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
   },
   "relative_humidity": 0.9610463260900074,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10128",
+      "value": 12.8,
+      "spoken": "one two point eight"
+    },
+    "minimum_temperature_6": {
+      "repr": "20106",
+      "value": 10.6,
+      "spoken": "one zero point six"
+    },
+    "pressure_tendency": {
+      "repr": "56007",
+      "tendency": "Decreasing, then steady",
+      "change": 0.7
+    },
+    "precip_36_hours": {
+      "repr": "60002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       },
       {
         "repr": "RAE50",
@@ -80,9 +110,9 @@
       "spoken": "zero point zero one"
     },
     "sea_level_pressure": {
-      "repr": "SLP187",
-      "value": 1018.7,
-      "spoken": "one zero one eight point seven"
+      "repr": "SLP184",
+      "value": 1018.4,
+      "spoken": "one zero one eight point four"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -93,13 +123,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "12",
-    "value": 12,
-    "spoken": "one two"
+    "repr": "13",
+    "value": 13,
+    "spoken": "one three"
   },
   "wind_variable_direction": [],
-  "density_altitude": -325,
-  "pressure_altitude": 30,
+  "density_altitude": -315,
+  "pressure_altitude": 40,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
