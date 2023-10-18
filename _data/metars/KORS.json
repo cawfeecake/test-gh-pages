@@ -1,14 +1,27 @@
 {
   "meta": {
-    "timestamp": "2023-10-18T01:35:57.443601Z",
-    "stations_updated": "2023-10-01"
+    "timestamp": "2023-10-18T02:06:34.681178Z",
+    "stations_updated": "2023-10-01",
+    "cache-timestamp": "2023-10-18T02:06:02.530000Z"
   },
   "altimeter": {
-    "repr": "A3015",
-    "value": 30.15,
-    "spoken": "three zero point one five"
+    "repr": "A3014",
+    "value": 30.14,
+    "spoken": "three zero point one four"
   },
   "clouds": [
+    {
+      "repr": "FEW035",
+      "type": "FEW",
+      "altitude": 35,
+      "modifier": null
+    },
+    {
+      "repr": "FEW042",
+      "type": "FEW",
+      "altitude": 42,
+      "modifier": null
+    },
     {
       "repr": "OVC055",
       "type": "OVC",
@@ -16,40 +29,44 @@
       "modifier": null
     }
   ],
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "other": [
     "12"
   ],
   "visibility": {
-    "repr": "7",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "5",
+    "value": 5,
+    "spoken": "five"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "VRB",
+    "value": null,
+    "spoken": "variable"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "05",
+    "value": 5,
+    "spoken": "five"
   },
   "wx_codes": [
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "HZ",
+      "value": "Haze"
     }
   ],
-  "raw": "KORS 180115Z AUTO 00000KT 7SM -RA OVC055 12/ A3015 RMK AO2 KORS 180055Z AUTO 00000G10KT 5SM -RA HZ OVC060 13/ A3014 RMK AO2 KORS 180035Z AUTO VRB06G15KT 8SM -RA OVC065 14/ A3014 RMK AO2 KORS 180015Z AUTO 16011G19KT 10SM OVC065 14/ A3013 RMK AO2 KORS 172355Z AUTO 17010KT 10SM OVC065 14/ A3012 RMK AO2",
-  "sanitized": "KORS 180115Z 00000KT 7SM -RA OVC055 12 A3015 RMK AO2 KORS 180055Z AUTO 00000G10KT 5SM -RA HZ OVC060 13/ A3014 RMK AO2 KORS 180035Z AUTO VRB06G15KT 8SM -RA OVC065 14/ A3014 RMK AO2 KORS 180015Z AUTO 16011G19KT 10SM OVC065 14/ A3013 RMK AO2 KORS 172355Z AUTO 17010KT 10SM OVC065 14/ A3012 RMK AO2",
+  "raw": "KORS 180155Z AUTO VRB05KT 5SM -RA HZ FEW035 FEW042 OVC055 12/ A3014 RMK AO2 P0002",
+  "sanitized": "KORS 180155Z VRB05KT 5SM -RA HZ FEW035 FEW042 OVC055 12 A3014 RMK AO2 P0002",
   "station": "KORS",
   "time": {
-    "repr": "180115Z",
-    "dt": "2023-10-18T01:15:00Z"
+    "repr": "180155Z",
+    "dt": "2023-10-18T01:55:00Z"
   },
-  "remarks": "RMK AO2 KORS 180055Z AUTO 00000G10KT 5SM -RA HZ OVC060 13/ A3014 RMK AO2 KORS 180035Z AUTO VRB06G15KT 8SM -RA OVC065 14/ A3014 RMK AO2 KORS 180015Z AUTO 16011G19KT 10SM OVC065 14/ A3013 RMK AO2 KORS 172355Z AUTO 17010KT 10SM OVC065 14/ A3012 RMK AO2",
+  "remarks": "RMK AO2 P0002",
   "dewpoint": null,
   "relative_humidity": null,
   "remarks_info": {
@@ -63,28 +80,16 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
       }
     ],
     "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "value": 0.02,
+      "spoken": "zero point zero two"
+    },
     "sea_level_pressure": null,
     "snow_depth": null,
     "temperature_decimal": null
