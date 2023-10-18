@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-18T07:02:13.729190Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-18T07:02:02.700000Z"
+    "timestamp": "2023-10-18T07:22:01.579463Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A3007",
@@ -11,21 +10,27 @@
   },
   "clouds": [
     {
-      "repr": "FEW050",
-      "type": "FEW",
-      "altitude": 50,
-      "modifier": null
-    },
-    {
-      "repr": "SCT070",
+      "repr": "SCT060",
       "type": "SCT",
-      "altitude": 70,
+      "altitude": 60,
       "modifier": null
     },
     {
-      "repr": "OVC110",
-      "type": "OVC",
+      "repr": "SCT110",
+      "type": "SCT",
       "altitude": 110,
+      "modifier": null
+    },
+    {
+      "repr": "BKN210",
+      "type": "BKN",
+      "altitude": 210,
+      "modifier": null
+    },
+    {
+      "repr": "OVC250",
+      "type": "OVC",
+      "altitude": 250,
       "modifier": null
     }
   ],
@@ -48,18 +53,18 @@
     "spoken": "nine"
   },
   "wx_codes": [],
-  "raw": "KNUW 180553Z COR 12009KT 10SM FEW050 SCT070 OVC110 12/10 A3007 RMK AO2 RAE04 SLP186 P0000 60007 T01220100 10133 20111 58017 $",
-  "sanitized": "KNUW 180553Z 12009KT 10SM FEW050 SCT070 OVC110 12/10 A3007 RMK AO2 RAE04 SLP186 P0000 60007 T01220100 10133 20111 58017 $",
+  "raw": "KNUW 180653Z 12009KT 10SM SCT060 SCT110 BKN210 OVC250 12/09 A3007 RMK AO2 SLP188 T01220089 $ KNUW 180553Z COR 12009KT 10SM FEW050 SCT070 OVC110 12/10 A3007 RMK AO2 RAE04 SLP186 P0000 60007 T01220100 10133 20111 58017 $",
+  "sanitized": "KNUW 180653Z 12009KT 10SM SCT060 SCT110 BKN210 OVC250 12/09 A3007 RMK AO2 SLP188 T01220089 $ KNUW 180553Z COR 12009KT 10SM FEW050 SCT070 OVC110 12/10 A3007 RMK AO2 RAE04 SLP186 P0000 60007 T01220100 10133 20111 58017 $",
   "station": "KNUW",
   "time": {
-    "repr": "180553Z",
-    "dt": "2023-10-18T05:53:00Z"
+    "repr": "180653Z",
+    "dt": "2023-10-18T06:53:00Z"
   },
-  "remarks": "RMK AO2 RAE04 SLP186 P0000 60007 T01220100 10133 20111 58017 $",
+  "remarks": "RMK AO2 SLP188 T01220089 $ KNUW 180553Z COR 12009KT 10SM FEW050 SCT070 OVC110 12/10 A3007 RMK AO2 RAE04 SLP186 P0000 60007 T01220100 10133 20111 58017 $",
   "dewpoint": {
-    "repr": "10",
-    "value": 10,
-    "spoken": "one zero"
+    "repr": "09",
+    "value": 9,
+    "spoken": "nine"
   },
   "relative_humidity": 0.8641296231599346,
   "remarks_info": {
@@ -91,6 +96,14 @@
         "value": "ASOS requires maintenance"
       },
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
       },
@@ -112,9 +125,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP186",
-      "value": 1018.6,
-      "spoken": "one zero one eight point six"
+      "repr": "SLP188",
+      "value": 1018.8,
+      "spoken": "one zero one eight point eight"
     },
     "snow_depth": null,
     "temperature_decimal": {
