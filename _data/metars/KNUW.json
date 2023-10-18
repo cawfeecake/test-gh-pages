@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-18T04:06:19.725601Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-18T04:06:04.958000Z"
+    "timestamp": "2023-10-18T04:27:11.105133Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A3012",
@@ -53,24 +52,28 @@
       "value": "Light Rain"
     }
   ],
-  "raw": "KNUW 180353Z 10008KT 10SM -RA SCT050 BKN070 OVC100 12/10 A3012 RMK AO2 RAB08 SLP203 P0001 T01220100 $",
-  "sanitized": "KNUW 180353Z 10008KT 10SM -RA SCT050 BKN070 OVC100 12/10 A3012 RMK AO2 RAB08 SLP203 P0001 T01220100 $",
+  "raw": "KNUW 180353Z 10008KT 10SM -RA SCT050 BKN070 OVC100 12/10 A3012 RMK AO2 RAB08 SLP203 P0001 T01220100 $ KNUW 180253Z 12012KT 10SM SCT050 BKN070 OVC090 12/11 A3012 RMK AO2 RAE34 SLP203 P0002 6//// T01220106 58009 $",
+  "sanitized": "KNUW 180353Z 10008KT 10SM -RA SCT050 BKN070 OVC100 12/10 A3012 RMK AO2 RAB08 SLP203 P0001 T01220100 $ KNUW 180253Z 12012KT 10SM SCT050 BKN070 OVC090 12/11 A3012 RMK AO2 RAE34 SLP203 P0002 6//// T01220106 58009 $",
   "station": "KNUW",
   "time": {
     "repr": "180353Z",
     "dt": "2023-10-18T03:53:00Z"
   },
-  "remarks": "RMK AO2 RAB08 SLP203 P0001 T01220100 $",
+  "remarks": "RMK AO2 RAB08 SLP203 P0001 T01220100 $ KNUW 180253Z 12012KT 10SM SCT050 BKN070 OVC090 12/11 A3012 RMK AO2 RAE34 SLP203 P0002 6//// T01220106 58009 $",
   "dewpoint": {
     "repr": "10",
     "value": 10,
     "spoken": "one zero"
   },
-  "relative_humidity": 0.8641296231599346,
+  "relative_humidity": 0.8994654196028143,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "58009",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 0.9
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -80,18 +83,30 @@
         "value": "ASOS requires maintenance"
       },
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
       },
       {
         "repr": "RAB08",
         "value": "Rain began at :08"
+      },
+      {
+        "repr": "RAE34",
+        "value": "Rain ended at :34"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0100",
-      "value": 10,
-      "spoken": "one zero point zero"
+      "repr": "0106",
+      "value": 10.6,
+      "spoken": "one zero point six"
     },
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
