@@ -1,20 +1,32 @@
 {
   "meta": {
-    "timestamp": "2023-10-19T12:43:23.478114Z",
-    "stations_updated": "2023-10-01"
+    "timestamp": "2023-10-19T13:08:18.841921Z",
+    "stations_updated": "2023-10-01",
+    "cache-timestamp": "2023-10-19T13:06:37.700000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A3001",
     "value": 30.01,
     "spoken": "three zero point zero one"
   },
-  "clouds": [],
-  "flight_rules": "MVFR",
+  "clouds": [
+    {
+      "repr": "BKN090",
+      "type": "BKN",
+      "altitude": 90,
+      "modifier": null
+    }
+  ],
+  "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "1/4",
+    "value": 0.25,
+    "spoken": "one quarter",
+    "numerator": 1,
+    "denominator": 4,
+    "normalized": "1/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -29,18 +41,18 @@
   },
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ],
-  "raw": "KBVS 191235Z AUTO 00000KT 5SM BR CLR 10/10 A3001 RMK A01 KBVS 191215Z AUTO 00000KT 1/2SM FG VV005 10/10 A3000 RMK A01 KBVS 191155Z AUTO 00000KT 1 1/2SM BR CLR 10/10 A3000 RMK A01 KBVS 191135Z AUTO 00000KT 1/4SM FG VV002 10/10 A3001 RMK A01 KBVS 191115Z AUTO 00000KT M1/4SM FG VV000 10/10 A3001 RMK A01 KBVS 191055Z AUTO 00000KT 1/2SM BR VV005 11/11 A3001 RMK A01",
-  "sanitized": "KBVS 191235Z 00000KT 5SM BR 10/10 A3001 RMK A01 KBVS 191215Z AUTO 00000KT 1/2SM FG VV005 10/10 A3000 RMK A01 KBVS 191155Z AUTO 00000KT 1 1/2SM BR CLR 10/10 A3000 RMK A01 KBVS 191135Z AUTO 00000KT 1/4SM FG VV002 10/10 A3001 RMK A01 KBVS 191115Z AUTO 00000KT M1/4SM FG VV000 10/10 A3001 RMK A01 KBVS 191055Z AUTO 00000KT 1/2SM BR VV005 11/11 A3001 RMK A01",
+  "raw": "KBVS 191255Z AUTO 00000KT 1/4SM FG BKN090 10/10 A3001 RMK A01",
+  "sanitized": "KBVS 191255Z 00000KT 1/4SM FG BKN090 10/10 A3001 RMK A01",
   "station": "KBVS",
   "time": {
-    "repr": "191235Z",
-    "dt": "2023-10-19T12:35:00Z"
+    "repr": "191255Z",
+    "dt": "2023-10-19T12:55:00Z"
   },
-  "remarks": "RMK A01 KBVS 191215Z AUTO 00000KT 1/2SM FG VV005 10/10 A3000 RMK A01 KBVS 191155Z AUTO 00000KT 1 1/2SM BR CLR 10/10 A3000 RMK A01 KBVS 191135Z AUTO 00000KT 1/4SM FG VV002 10/10 A3001 RMK A01 KBVS 191115Z AUTO 00000KT M1/4SM FG VV000 10/10 A3001 RMK A01 KBVS 191055Z AUTO 00000KT 1/2SM BR VV005 11/11 A3001 RMK A01",
+  "remarks": "RMK A01",
   "dewpoint": {
     "repr": "10",
     "value": 10,
