@@ -1,8 +1,9 @@
 {
   "meta": {
-    "timestamp": "2023-10-20T05:40:38.019871Z",
+    "timestamp": "2023-10-20T06:07:44.589178Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-20T05:40:02.940000Z"
+    "cache-timestamp": "2023-10-20T06:06:10.820000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A3003",
@@ -11,15 +12,15 @@
   },
   "clouds": [
     {
-      "repr": "BKN055",
-      "type": "BKN",
-      "altitude": 55,
+      "repr": "FEW004",
+      "type": "FEW",
+      "altitude": 4,
       "modifier": null
     },
     {
-      "repr": "OVC070",
-      "type": "OVC",
-      "altitude": 70,
+      "repr": "SCT055",
+      "type": "SCT",
+      "altitude": 55,
       "modifier": null
     }
   ],
@@ -31,25 +32,25 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "180",
-    "value": 180,
-    "spoken": "one eight zero"
+    "repr": "200",
+    "value": 200,
+    "spoken": "two zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "04",
+    "value": 4,
+    "spoken": "four"
   },
   "wx_codes": [],
-  "raw": "KBLI 200453Z 18008KT 10SM BKN055 OVC070 13/13 A3003 RMK AO2 SLP176 T01330128",
-  "sanitized": "KBLI 200453Z 18008KT 10SM BKN055 OVC070 13/13 A3003 RMK AO2 SLP176 T01330128",
+  "raw": "KBLI 200553Z AUTO 20004KT 10SM FEW004 SCT055 13/13 A3003 RMK AO2 SLP176 60000 T01330128 10156 20133 51001",
+  "sanitized": "KBLI 200553Z 20004KT 10SM FEW004 SCT055 13/13 A3003 RMK AO2 SLP176 60000 T01330128 10156 20133 51001",
   "station": "KBLI",
   "time": {
-    "repr": "200453Z",
-    "dt": "2023-10-20T04:53:00Z"
+    "repr": "200553Z",
+    "dt": "2023-10-20T05:53:00Z"
   },
-  "remarks": "RMK AO2 SLP176 T01330128",
+  "remarks": "RMK AO2 SLP176 60000 T01330128 10156 20133 51001",
   "dewpoint": {
     "repr": "13",
     "value": 13,
@@ -57,10 +58,26 @@
   },
   "relative_humidity": 0.9678424058447498,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10156",
+      "value": 15.6,
+      "spoken": "one five point six"
+    },
+    "minimum_temperature_6": {
+      "repr": "20133",
+      "value": 13.3,
+      "spoken": "one three point three"
+    },
+    "pressure_tendency": {
+      "repr": "51001",
+      "tendency": "Increasing, then steady",
+      "change": 0.1
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
