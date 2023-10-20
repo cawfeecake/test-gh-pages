@@ -1,8 +1,9 @@
 {
   "meta": {
-    "timestamp": "2023-10-20T04:06:20.847832Z",
+    "timestamp": "2023-10-20T04:27:35.968427Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-20T04:06:02.722000Z"
+    "cache-timestamp": "2023-10-20T04:26:04.883000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A3003",
@@ -11,15 +12,21 @@
   },
   "clouds": [
     {
-      "repr": "OVC060",
-      "type": "OVC",
-      "altitude": 60,
+      "repr": "SCT055",
+      "type": "SCT",
+      "altitude": 55,
+      "modifier": null
+    },
+    {
+      "repr": "SCT065",
+      "type": "SCT",
+      "altitude": 65,
       "modifier": null
     }
   ],
   "flight_rules": "VFR",
   "other": [
-    "15"
+    "14"
   ],
   "visibility": {
     "repr": "10",
@@ -31,23 +38,19 @@
     "value": 170,
     "spoken": "one seven zero"
   },
-  "wind_gust": {
-    "repr": "12",
-    "value": 12,
-    "spoken": "one two"
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "07",
-    "value": 7,
-    "spoken": "seven"
+    "repr": "06",
+    "value": 6,
+    "spoken": "six"
   },
   "wx_codes": [],
-  "raw": "KORS 200335Z AUTO 17007G12KT 10SM OVC060 15/ A3003 RMK AO2",
-  "sanitized": "KORS 200335Z 17007G12KT 10SM OVC060 15 A3003 RMK AO2",
+  "raw": "KORS 200415Z AUTO 17006KT 10SM SCT055 SCT065 14/ A3003 RMK AO2",
+  "sanitized": "KORS 200415Z 17006KT 10SM SCT055 SCT065 14 A3003 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "200335Z",
-    "dt": "2023-10-20T03:35:00Z"
+    "repr": "200415Z",
+    "dt": "2023-10-20T04:15:00Z"
   },
   "remarks": "RMK AO2",
   "dewpoint": null,
