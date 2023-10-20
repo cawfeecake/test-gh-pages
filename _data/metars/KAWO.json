@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-20T03:02:48.685358Z",
+    "timestamp": "2023-10-20T03:22:48.036250Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-20T03:02:03.770000Z"
+    "cache-timestamp": "2023-10-20T03:22:03.710000Z"
   },
   "altimeter": {
     "repr": "A3006",
@@ -11,9 +11,21 @@
   },
   "clouds": [
     {
-      "repr": "OVC030",
+      "repr": "SCT023",
+      "type": "SCT",
+      "altitude": 23,
+      "modifier": null
+    },
+    {
+      "repr": "BKN028",
+      "type": "BKN",
+      "altitude": 28,
+      "modifier": null
+    },
+    {
+      "repr": "OVC040",
       "type": "OVC",
-      "altitude": 30,
+      "altitude": 40,
       "modifier": null
     }
   ],
@@ -36,14 +48,14 @@
     "spoken": "zero"
   },
   "wx_codes": [],
-  "raw": "KAWO 200156Z AUTO 00000KT 10SM OVC030 17/15 A3006 RMK AO2 SLP183 T01670150",
-  "sanitized": "KAWO 200156Z 00000KT 10SM OVC030 17/15 A3006 RMK AO2 SLP183 T01670150",
+  "raw": "KAWO 200256Z AUTO 00000KT 10SM SCT023 BKN028 OVC040 17/15 A3006 RMK AO2 SLP183 T01670150 53002",
+  "sanitized": "KAWO 200256Z 00000KT 10SM SCT023 BKN028 OVC040 17/15 A3006 RMK AO2 SLP183 T01670150 53002",
   "station": "KAWO",
   "time": {
-    "repr": "200156Z",
-    "dt": "2023-10-20T01:56:00Z"
+    "repr": "200256Z",
+    "dt": "2023-10-20T02:56:00Z"
   },
-  "remarks": "RMK AO2 SLP183 T01670150",
+  "remarks": "RMK AO2 SLP183 T01670150 53002",
   "dewpoint": {
     "repr": "15",
     "value": 15,
@@ -53,7 +65,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "53002",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
