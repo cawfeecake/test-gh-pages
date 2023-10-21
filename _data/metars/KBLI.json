@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-21T09:40:34.898276Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-21T09:40:04.828000Z"
+    "timestamp": "2023-10-21T10:01:14.654080Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A2994",
@@ -11,18 +10,21 @@
   },
   "clouds": [
     {
-      "repr": "OVC004",
+      "repr": "OVC003",
       "type": "OVC",
-      "altitude": 4,
+      "altitude": 3,
       "modifier": null
     }
   ],
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "8",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "3/4",
+    "value": 0.75,
+    "spoken": "three quarters",
+    "numerator": 3,
+    "denominator": 4,
+    "normalized": "3/4"
   },
   "wind_direction": {
     "repr": "000",
@@ -35,15 +37,20 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KBLI 210922Z AUTO 00000KT 8SM OVC004 11/11 A2994 RMK AO2 T01110106",
-  "sanitized": "KBLI 210922Z 00000KT 8SM OVC004 11/11 A2994 RMK AO2 T01110106",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KBLI 210953Z AUTO 00000KT 3/4SM R16/3500VP6000FT BR OVC003 11/11 A2994 RMK AO2 SLP144 T01060106 KBLI 210948Z AUTO 00000KT 1/2SM R16/3500VP6000FT FG OVC003 11/11 A2994 RMK AO2 KBLI 210937Z AUTO 00000KT 1 3/4SM R16/5500VP6000FT BR OVC003 11/11 A2994 RMK AO2 VIS 1V5 T01110106 KBLI 210922Z AUTO 00000KT 8SM OVC004 11/11 A2994 RMK AO2 T01110106 KBLI 210902Z AUTO 00000KT 8SM OVC005 11/11 A2994 RMK AO2 T01110106 KBLI 210853Z AUTO 00000KT 7SM OVC004 11/11 A2994 RMK AO2 SLP147 T01110106 56006",
+  "sanitized": "KBLI 210953Z 00000KT 3/4SM R16/3500VP6000FT BR OVC003 11/11 A2994 RMK AO2 SLP144 T01060106 KBLI 210948Z AUTO 00000KT 1/2SM R16/3500VP6000FT FG OVC003 11/11 A2994 RMK AO2 KBLI 210937Z AUTO 00000KT 1 3/4SM R16/5500VP6000FT BR OVC003 11/11 A2994 RMK AO2 VIS 1V5 T01110106 KBLI 210922Z AUTO 00000KT 8SM OVC004 11/11 A2994 RMK AO2 T01110106 KBLI 210902Z AUTO 00000KT 8SM OVC005 11/11 A2994 RMK AO2 T01110106 KBLI 210853Z AUTO 00000KT 7SM OVC004 11/11 A2994 RMK AO2 SLP147 T01110106 56006",
   "station": "KBLI",
   "time": {
-    "repr": "210922Z",
-    "dt": "2023-10-21T09:22:00Z"
+    "repr": "210953Z",
+    "dt": "2023-10-21T09:53:00Z"
   },
-  "remarks": "RMK AO2 T01110106",
+  "remarks": "RMK AO2 SLP144 T01060106 KBLI 210948Z AUTO 00000KT 1/2SM R16/3500VP6000FT FG OVC003 11/11 A2994 RMK AO2 KBLI 210937Z AUTO 00000KT 1 3/4SM R16/5500VP6000FT BR OVC003 11/11 A2994 RMK AO2 VIS 1V5 T01110106 KBLI 210922Z AUTO 00000KT 8SM OVC004 11/11 A2994 RMK AO2 T01110106 KBLI 210902Z AUTO 00000KT 8SM OVC005 11/11 A2994 RMK AO2 T01110106 KBLI 210853Z AUTO 00000KT 7SM OVC004 11/11 A2994 RMK AO2 SLP147 T01110106 56006",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -53,11 +60,35 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "56006",
+      "tendency": "Decreasing, then steady",
+      "change": 0.6
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -71,7 +102,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP144",
+      "value": 1014.4,
+      "spoken": "one zero one four point four"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0111",
@@ -79,7 +114,26 @@
       "spoken": "one one point one"
     }
   },
-  "runway_visibility": [],
+  "runway_visibility": [
+    {
+      "repr": "R16/3500VP6000FT",
+      "runway": "16",
+      "visibility": null,
+      "variable_visibility": [
+        {
+          "repr": "3500",
+          "value": 3500,
+          "spoken": "three five hundred"
+        },
+        {
+          "repr": "P6000",
+          "value": null,
+          "spoken": "greater than six thousand"
+        }
+      ],
+      "trend": null
+    }
+  ],
   "temperature": {
     "repr": "11",
     "value": 11,
