@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-21T11:40:29.322038Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-21T11:40:03.025000Z"
+    "timestamp": "2023-10-21T12:07:54.260986Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A2992",
@@ -44,14 +43,14 @@
       "value": "Fog"
     }
   ],
-  "raw": "KBLI 211119Z AUTO 00000KT 1/4SM R16/1800V2200FT FG VV002 11/11 A2992 RMK AO2 T01060106",
-  "sanitized": "KBLI 211119Z 00000KT 1/4SM R16/1800V2200FT FG VV002 11/11 A2992 RMK AO2 T01060106",
+  "raw": "KBLI 211153Z AUTO 00000KT 1/4SM R16/1400V1600FT FG VV002 11/11 A2992 RMK AO2 SLP138 T01060106 10111 20106 58006 KBLI 211119Z AUTO 00000KT 1/4SM R16/1800V2200FT FG VV002 11/11 A2992 RMK AO2 T01060106 KBLI 211105Z AUTO 00000KT 1/2SM R16/2200V2800FT FG VV002 11/11 A2992 RMK AO2 T01060106 KBLI 211053Z AUTO 00000KT 3/4SM R16/3500V4500FT BR VV003 11/11 A2993 RMK AO2 SLP141 T01060106 KBLI 211017Z AUTO 00000KT 1/2SM R16/2800V3000FT FG VV003 11/11 A2994 RMK AO2 T01060106",
+  "sanitized": "KBLI 211153Z 00000KT 1/4SM R16/1400V1600FT FG VV002 11/11 A2992 RMK AO2 SLP138 T01060106 10111 20106 58006 KBLI 211119Z AUTO 00000KT 1/4SM R16/1800V2200FT FG VV002 11/11 A2992 RMK AO2 T01060106 KBLI 211105Z AUTO 00000KT 1/2SM R16/2200V2800FT FG VV002 11/11 A2992 RMK AO2 T01060106 KBLI 211053Z AUTO 00000KT 3/4SM R16/3500V4500FT BR VV003 11/11 A2993 RMK AO2 SLP141 T01060106 KBLI 211017Z AUTO 00000KT 1/2SM R16/2800V3000FT FG VV003 11/11 A2994 RMK AO2 T01060106",
   "station": "KBLI",
   "time": {
-    "repr": "211119Z",
-    "dt": "2023-10-21T11:19:00Z"
+    "repr": "211153Z",
+    "dt": "2023-10-21T11:53:00Z"
   },
-  "remarks": "RMK AO2 T01060106",
+  "remarks": "RMK AO2 SLP138 T01060106 10111 20106 58006 KBLI 211119Z AUTO 00000KT 1/4SM R16/1800V2200FT FG VV002 11/11 A2992 RMK AO2 T01060106 KBLI 211105Z AUTO 00000KT 1/2SM R16/2200V2800FT FG VV002 11/11 A2992 RMK AO2 T01060106 KBLI 211053Z AUTO 00000KT 3/4SM R16/3500V4500FT BR VV003 11/11 A2993 RMK AO2 SLP141 T01060106 KBLI 211017Z AUTO 00000KT 1/2SM R16/2800V3000FT FG VV003 11/11 A2994 RMK AO2 T01060106",
   "dewpoint": {
     "repr": "11",
     "value": 11,
@@ -59,13 +58,41 @@
   },
   "relative_humidity": 1,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10111",
+      "value": 11.1,
+      "spoken": "one one point one"
+    },
+    "minimum_temperature_6": {
+      "repr": "20106",
+      "value": 10.6,
+      "spoken": "one zero point six"
+    },
+    "pressure_tendency": {
+      "repr": "58006",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 0.6
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -79,7 +106,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP138",
+      "value": 1013.8,
+      "spoken": "one zero one three point eight"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0106",
@@ -89,19 +120,19 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1800V2200FT",
+      "repr": "R16/1400V1600FT",
       "runway": "16",
       "visibility": null,
       "variable_visibility": [
         {
-          "repr": "1800",
-          "value": 1800,
-          "spoken": "one eight hundred"
+          "repr": "1400",
+          "value": 1400,
+          "spoken": "one four hundred"
         },
         {
-          "repr": "2200",
-          "value": 2200,
-          "spoken": "two two hundred"
+          "repr": "1600",
+          "value": 1600,
+          "spoken": "one six hundred"
         }
       ],
       "trend": null
