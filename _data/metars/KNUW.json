@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-22T04:40:32.250479Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-22T04:40:03.380000Z"
+    "timestamp": "2023-10-22T05:01:38.760428Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A2989",
@@ -11,15 +10,9 @@
   },
   "clouds": [
     {
-      "repr": "BKN019",
-      "type": "BKN",
-      "altitude": 19,
-      "modifier": null
-    },
-    {
-      "repr": "OVC022",
+      "repr": "OVC016",
       "type": "OVC",
-      "altitude": 22,
+      "altitude": 16,
       "modifier": null
     }
   ],
@@ -31,25 +24,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "140",
-    "value": 140,
-    "spoken": "one four zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
-  "wx_codes": [],
-  "raw": "KNUW 220353Z 14003KT 10SM BKN019 OVC022 11/10 A2989 RMK AO2 SLP124 T01110100 $",
-  "sanitized": "KNUW 220353Z 14003KT 10SM BKN019 OVC022 11/10 A2989 RMK AO2 SLP124 T01110100 $",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $ KNUW 220353Z 14003KT 10SM BKN019 OVC022 11/10 A2989 RMK AO2 SLP124 T01110100 $",
+  "sanitized": "KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $ KNUW 220353Z 14003KT 10SM BKN019 OVC022 11/10 A2989 RMK AO2 SLP124 T01110100 $",
   "station": "KNUW",
   "time": {
-    "repr": "220353Z",
-    "dt": "2023-10-22T03:53:00Z"
+    "repr": "220453Z",
+    "dt": "2023-10-22T04:53:00Z"
   },
-  "remarks": "RMK AO2 SLP124 T01110100 $",
+  "remarks": "RMK AO2 RAB45 SLP124 P0000 T01170100 $ KNUW 220353Z 14003KT 10SM BKN019 OVC022 11/10 A2989 RMK AO2 SLP124 T01110100 $",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -69,8 +67,24 @@
         "value": "ASOS requires maintenance"
       },
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB45",
+        "value": "Rain began at :45"
       }
     ],
     "dewpoint_decimal": {
@@ -95,9 +109,9 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "11",
-    "value": 11,
-    "spoken": "one one"
+    "repr": "12",
+    "value": 12,
+    "spoken": "one two"
   },
   "wind_variable_direction": [],
   "density_altitude": -380,
