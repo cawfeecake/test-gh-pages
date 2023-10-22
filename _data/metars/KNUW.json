@@ -1,19 +1,18 @@
 {
   "meta": {
-    "timestamp": "2023-10-22T05:40:32.088930Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-22T05:40:03.852000Z"
+    "timestamp": "2023-10-22T06:05:54.496982Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
-    "repr": "A2989",
-    "value": 29.89,
-    "spoken": "two nine point eight nine"
+    "repr": "A2990",
+    "value": 29.9,
+    "spoken": "two nine point nine zero"
   },
   "clouds": [
     {
-      "repr": "OVC016",
+      "repr": "OVC012",
       "type": "OVC",
-      "altitude": 16,
+      "altitude": 12,
       "modifier": null
     }
   ],
@@ -35,20 +34,15 @@
     "value": 0,
     "spoken": "zero"
   },
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ],
-  "raw": "KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $",
-  "sanitized": "KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $",
+  "wx_codes": [],
+  "raw": "KNUW 220553Z 00000KT 10SM OVC012 11/10 A2990 RMK AO2 RAE44 SLP129 P0000 60000 T01110100 10122 20111 53004 $ KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $",
+  "sanitized": "KNUW 220553Z 00000KT 10SM OVC012 11/10 A2990 RMK AO2 RAE44 SLP129 P0000 60000 T01110100 10122 20111 53004 $ KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $",
   "station": "KNUW",
   "time": {
-    "repr": "220453Z",
-    "dt": "2023-10-22T04:53:00Z"
+    "repr": "220553Z",
+    "dt": "2023-10-22T05:53:00Z"
   },
-  "remarks": "RMK AO2 RAB45 SLP124 P0000 T01170100 $",
+  "remarks": "RMK AO2 RAE44 SLP129 P0000 60000 T01110100 10122 20111 53004 $ KNUW 220453Z 00000KT 10SM -RA OVC016 12/10 A2989 RMK AO2 RAB45 SLP124 P0000 T01170100 $",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -56,16 +50,40 @@
   },
   "relative_humidity": 0.8930931615930605,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
-    "precip_36_hours": null,
+    "maximum_temperature_6": {
+      "repr": "10122",
+      "value": 12.2,
+      "spoken": "one two point two"
+    },
+    "minimum_temperature_6": {
+      "repr": "20111",
+      "value": 11.1,
+      "spoken": "one one point one"
+    },
+    "pressure_tendency": {
+      "repr": "53004",
+      "tendency": "Decreasing or steady, then increasing",
+      "change": 0.4
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "value": 0,
+      "spoken": "zero"
+    },
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
       {
         "repr": "$",
         "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
       },
       {
         "repr": "AO2",
@@ -76,8 +94,16 @@
         "value": "Trace amount of rain in the last hour"
       },
       {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
         "repr": "RAB45",
         "value": "Rain began at :45"
+      },
+      {
+        "repr": "RAE44",
+        "value": "Rain ended at :44"
       }
     ],
     "dewpoint_decimal": {
@@ -89,9 +115,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP124",
-      "value": 1012.4,
-      "spoken": "one zero one two point four"
+      "repr": "SLP129",
+      "value": 1012.9,
+      "spoken": "one zero one two point nine"
     },
     "snow_depth": null,
     "temperature_decimal": {
@@ -102,13 +128,13 @@
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "12",
-    "value": 12,
-    "spoken": "one two"
+    "repr": "11",
+    "value": 11,
+    "spoken": "one one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -308,
-  "pressure_altitude": 77,
+  "density_altitude": -318,
+  "pressure_altitude": 67,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
