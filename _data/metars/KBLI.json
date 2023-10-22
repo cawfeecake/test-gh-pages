@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-22T14:40:36.418428Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-22T14:40:04.606000Z"
+    "timestamp": "2023-10-22T15:01:19.664472Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A2988",
@@ -11,18 +10,18 @@
   },
   "clouds": [
     {
-      "repr": "OVC004",
+      "repr": "OVC003",
       "type": "OVC",
-      "altitude": 4,
+      "altitude": 3,
       "modifier": null
     }
   ],
   "flight_rules": "LIFR",
   "other": [],
   "visibility": {
-    "repr": "5",
-    "value": 5,
-    "spoken": "five"
+    "repr": "6",
+    "value": 6,
+    "spoken": "six"
   },
   "wind_direction": {
     "repr": "000",
@@ -41,14 +40,14 @@
       "value": "Mist"
     }
   ],
-  "raw": "KBLI 221418Z 00000KT 5SM BR OVC004 11/10 A2988 RMK AO2 T01060100",
-  "sanitized": "KBLI 221418Z 00000KT 5SM BR OVC004 11/10 A2988 RMK AO2 T01060100",
+  "raw": "KBLI 221453Z 00000KT 6SM BR OVC003 11/10 A2988 RMK AO2 SLP126 T01060100 58000 KBLI 221418Z 00000KT 5SM BR OVC004 11/10 A2988 RMK AO2 T01060100 KBLI 221353Z 00000KT 10SM OVC005 11/10 A2988 RMK AO2 SLP126 T01060100",
+  "sanitized": "KBLI 221453Z 00000KT 6SM BR OVC003 11/10 A2988 RMK AO2 SLP126 T01060100 58000 KBLI 221418Z 00000KT 5SM BR OVC004 11/10 A2988 RMK AO2 T01060100 KBLI 221353Z 00000KT 10SM OVC005 11/10 A2988 RMK AO2 SLP126 T01060100",
   "station": "KBLI",
   "time": {
-    "repr": "221418Z",
-    "dt": "2023-10-22T14:18:00Z"
+    "repr": "221453Z",
+    "dt": "2023-10-22T14:53:00Z"
   },
-  "remarks": "RMK AO2 T01060100",
+  "remarks": "RMK AO2 SLP126 T01060100 58000 KBLI 221418Z 00000KT 5SM BR OVC004 11/10 A2988 RMK AO2 T01060100 KBLI 221353Z 00000KT 10SM OVC005 11/10 A2988 RMK AO2 SLP126 T01060100",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -58,11 +57,23 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "58000",
+      "tendency": "Steady or increasing, then decreasing",
+      "change": 0
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
     "codes": [
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -76,7 +87,11 @@
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP126",
+      "value": 1012.6,
+      "spoken": "one zero one two point six"
+    },
     "snow_depth": null,
     "temperature_decimal": {
       "repr": "0106",
