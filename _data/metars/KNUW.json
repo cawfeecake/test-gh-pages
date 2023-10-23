@@ -1,8 +1,9 @@
 {
   "meta": {
-    "timestamp": "2023-10-23T07:40:32.644867Z",
+    "timestamp": "2023-10-23T08:07:50.329961Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-23T07:40:03.417000Z"
+    "cache-timestamp": "2023-10-23T08:06:02.970000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A2997",
@@ -17,21 +18,9 @@
       "modifier": null
     },
     {
-      "repr": "FEW030",
-      "type": "FEW",
-      "altitude": 30,
-      "modifier": null
-    },
-    {
-      "repr": "SCT150",
-      "type": "SCT",
-      "altitude": 150,
-      "modifier": null
-    },
-    {
-      "repr": "SCT220",
-      "type": "SCT",
-      "altitude": 220,
+      "repr": "OVC033",
+      "type": "OVC",
+      "altitude": 33,
       "modifier": null
     }
   ],
@@ -43,15 +32,15 @@
     "spoken": "six"
   },
   "wind_direction": {
-    "repr": "100",
-    "value": 100,
-    "spoken": "one zero zero"
+    "repr": "000",
+    "value": 0,
+    "spoken": "zero zero zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "value": 4,
-    "spoken": "four"
+    "repr": "00",
+    "value": 0,
+    "spoken": "zero"
   },
   "wx_codes": [
     {
@@ -63,18 +52,18 @@
       "value": "Shallow Fog"
     }
   ],
-  "raw": "KNUW 230653Z 10004KT 6SM BR MIFG FEW010 FEW030 SCT150 SCT220 06/06 A2997 RMK AO2 SLP153 T00610061 $",
-  "sanitized": "KNUW 230653Z 10004KT 6SM BR MIFG FEW010 FEW030 SCT150 SCT220 06/06 A2997 RMK AO2 SLP153 T00610061 $",
+  "raw": "KNUW 230753Z 00000KT 6SM BR MIFG FEW010 OVC033 08/08 A2997 RMK AO2 SLP153 T00780078 401330050 $",
+  "sanitized": "KNUW 230753Z 00000KT 6SM BR MIFG FEW010 OVC033 08/08 A2997 RMK AO2 SLP153 T00780078 401330050 $",
   "station": "KNUW",
   "time": {
-    "repr": "230653Z",
-    "dt": "2023-10-23T06:53:00Z"
+    "repr": "230753Z",
+    "dt": "2023-10-23T07:53:00Z"
   },
-  "remarks": "RMK AO2 SLP153 T00610061 $",
+  "remarks": "RMK AO2 SLP153 T00780078 401330050 $",
   "dewpoint": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "relative_humidity": 1,
   "remarks_info": {
@@ -95,12 +84,20 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0061",
-      "value": 6.1,
-      "spoken": "six point one"
+      "repr": "0078",
+      "value": 7.8,
+      "spoken": "seven point eight"
     },
-    "maximum_temperature_24": null,
-    "minimum_temperature_24": null,
+    "maximum_temperature_24": {
+      "repr": "0133",
+      "value": 13.3,
+      "spoken": "one three point three"
+    },
+    "minimum_temperature_24": {
+      "repr": "0050",
+      "value": 5,
+      "spoken": "five point zero"
+    },
     "precip_hourly": null,
     "sea_level_pressure": {
       "repr": "SLP153",
@@ -109,19 +106,19 @@
     },
     "snow_depth": null,
     "temperature_decimal": {
-      "repr": "0061",
-      "value": 6.1,
-      "spoken": "six point one"
+      "repr": "0078",
+      "value": 7.8,
+      "spoken": "seven point eight"
     }
   },
   "runway_visibility": [],
   "temperature": {
-    "repr": "06",
-    "value": 6,
-    "spoken": "six"
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1060,
+  "density_altitude": -856,
   "pressure_altitude": -3,
   "units": {
     "accumulation": "in",
