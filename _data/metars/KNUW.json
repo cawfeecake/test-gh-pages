@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-23T05:40:33.953958Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-23T05:40:05.492000Z"
+    "timestamp": "2023-10-23T06:07:41.651120Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A2998",
@@ -17,14 +16,14 @@
       "modifier": null
     },
     {
-      "repr": "SCT034",
+      "repr": "SCT038",
       "type": "SCT",
-      "altitude": 34,
+      "altitude": 38,
       "modifier": null
     },
     {
-      "repr": "SCT150",
-      "type": "SCT",
+      "repr": "BKN150",
+      "type": "BKN",
       "altitude": 150,
       "modifier": null
     },
@@ -43,30 +42,34 @@
     "spoken": "six"
   },
   "wind_direction": {
-    "repr": "000",
-    "value": 0,
-    "spoken": "zero zero zero"
+    "repr": "080",
+    "value": 80,
+    "spoken": "zero eight zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "03",
+    "value": 3,
+    "spoken": "three"
   },
   "wx_codes": [
     {
       "repr": "BR",
       "value": "Mist"
+    },
+    {
+      "repr": "MIFG",
+      "value": "Shallow Fog"
     }
   ],
-  "raw": "KNUW 230453Z 00000KT 6SM BR FEW010 SCT034 SCT150 BKN220 07/07 A2998 RMK AO2 SLP155 T00670067 $",
-  "sanitized": "KNUW 230453Z 00000KT 6SM BR FEW010 SCT034 SCT150 BKN220 07/07 A2998 RMK AO2 SLP155 T00670067 $",
+  "raw": "KNUW 230553Z 08003KT 6SM BR MIFG FEW010 SCT038 BKN150 BKN220 07/07 A2998 RMK AO2 SLP155 T00720072 10122 20056 51006 $ KNUW 230453Z 00000KT 6SM BR FEW010 SCT034 SCT150 BKN220 07/07 A2998 RMK AO2 SLP155 T00670067 $",
+  "sanitized": "KNUW 230553Z 08003KT 6SM BR MIFG FEW010 SCT038 BKN150 BKN220 07/07 A2998 RMK AO2 SLP155 T00720072 10122 20056 51006 $ KNUW 230453Z 00000KT 6SM BR FEW010 SCT034 SCT150 BKN220 07/07 A2998 RMK AO2 SLP155 T00670067 $",
   "station": "KNUW",
   "time": {
-    "repr": "230453Z",
-    "dt": "2023-10-23T04:53:00Z"
+    "repr": "230553Z",
+    "dt": "2023-10-23T05:53:00Z"
   },
-  "remarks": "RMK AO2 SLP155 T00670067 $",
+  "remarks": "RMK AO2 SLP155 T00720072 10122 20056 51006 $ KNUW 230453Z 00000KT 6SM BR FEW010 SCT034 SCT150 BKN220 07/07 A2998 RMK AO2 SLP155 T00670067 $",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -74,9 +77,21 @@
   },
   "relative_humidity": 1,
   "remarks_info": {
-    "maximum_temperature_6": null,
-    "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "maximum_temperature_6": {
+      "repr": "10122",
+      "value": 12.2,
+      "spoken": "one two point two"
+    },
+    "minimum_temperature_6": {
+      "repr": "20056",
+      "value": 5.6,
+      "spoken": "five point six"
+    },
+    "pressure_tendency": {
+      "repr": "51006",
+      "tendency": "Increasing, then steady",
+      "change": 0.6
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -84,6 +99,14 @@
       {
         "repr": "$",
         "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
       },
       {
         "repr": "AO2",
