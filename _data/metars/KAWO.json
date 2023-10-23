@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-23T17:24:27.472608Z",
+    "timestamp": "2023-10-23T17:40:38.105170Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-23T17:24:02.893000Z"
+    "cache-timestamp": "2023-10-23T17:40:02.885000Z"
   },
   "altimeter": {
     "repr": "A3001",
@@ -11,15 +11,9 @@
   },
   "clouds": [
     {
-      "repr": "BKN006",
-      "type": "BKN",
+      "repr": "SCT006",
+      "type": "SCT",
       "altitude": 6,
-      "modifier": null
-    },
-    {
-      "repr": "BKN011",
-      "type": "BKN",
-      "altitude": 11,
       "modifier": null
     },
     {
@@ -29,7 +23,7 @@
       "modifier": null
     }
   ],
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "other": [],
   "visibility": {
     "repr": "10",
@@ -37,25 +31,30 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "190",
-    "value": 190,
-    "spoken": "one nine zero"
+    "repr": "170",
+    "value": 170,
+    "spoken": "one seven zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "value": 3,
-    "spoken": "three"
+    "repr": "09",
+    "value": 9,
+    "spoken": "nine"
   },
-  "wx_codes": [],
-  "raw": "KAWO 231715Z AUTO 19003KT 10SM BKN006 BKN011 OVC022 11/10 A3001 RMK AO2 CIG 005V010",
-  "sanitized": "KAWO 231715Z 19003KT 10SM BKN006 BKN011 OVC022 11/10 A3001 RMK AO2 CIG 005V010",
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ],
+  "raw": "KAWO 231722Z AUTO 17009KT 10SM -RA SCT006 OVC022 11/10 A3001 RMK AO2 RAB22 P0000",
+  "sanitized": "KAWO 231722Z 17009KT 10SM -RA SCT006 OVC022 11/10 A3001 RMK AO2 RAB22 P0000",
   "station": "KAWO",
   "time": {
-    "repr": "231715Z",
-    "dt": "2023-10-23T17:15:00Z"
+    "repr": "231722Z",
+    "dt": "2023-10-23T17:22:00Z"
   },
-  "remarks": "RMK AO2 CIG 005V010",
+  "remarks": "RMK AO2 RAB22 P0000",
   "dewpoint": {
     "repr": "10",
     "value": 10,
@@ -73,6 +72,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB22",
+        "value": "Rain began at :22"
       }
     ],
     "dewpoint_decimal": null,
