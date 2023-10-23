@@ -1,8 +1,7 @@
 {
   "meta": {
-    "timestamp": "2023-10-23T20:40:37.847768Z",
-    "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-23T20:40:03.532000Z"
+    "timestamp": "2023-10-23T21:01:25.591838Z",
+    "stations_updated": "2023-10-01"
   },
   "altimeter": {
     "repr": "A3001",
@@ -17,21 +16,15 @@
       "modifier": null
     },
     {
-      "repr": "FEW030",
-      "type": "FEW",
-      "altitude": 30,
+      "repr": "BKN048",
+      "type": "BKN",
+      "altitude": 48,
       "modifier": null
     },
     {
-      "repr": "SCT040",
-      "type": "SCT",
-      "altitude": 40,
-      "modifier": null
-    },
-    {
-      "repr": "SCT200",
-      "type": "SCT",
-      "altitude": 200,
+      "repr": "BKN250",
+      "type": "BKN",
+      "altitude": 250,
       "modifier": null
     }
   ],
@@ -43,25 +36,25 @@
     "spoken": "one zero"
   },
   "wind_direction": {
-    "repr": "240",
-    "value": 240,
-    "spoken": "two four zero"
+    "repr": "280",
+    "value": 280,
+    "spoken": "two eight zero"
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "value": 8,
-    "spoken": "eight"
+    "repr": "13",
+    "value": 13,
+    "spoken": "one three"
   },
   "wx_codes": [],
-  "raw": "KNUW 231953Z 24008KT 10SM FEW015 FEW030 SCT040 SCT200 12/07 A3001 RMK AO2 SLP166 T01170072 $",
-  "sanitized": "KNUW 231953Z 24008KT 10SM FEW015 FEW030 SCT040 SCT200 12/07 A3001 RMK AO2 SLP166 T01170072 $",
+  "raw": "KNUW 232053Z 28013KT 10SM FEW015 BKN048 BKN250 12/07 A3001 RMK AO2 SLP165 T01220072 50002 $ KNUW 231953Z 24008KT 10SM FEW015 FEW030 SCT040 SCT200 12/07 A3001 RMK AO2 SLP166 T01170072 $",
+  "sanitized": "KNUW 232053Z 28013KT 10SM FEW015 BKN048 BKN250 12/07 A3001 RMK AO2 SLP165 T01220072 50002 $ KNUW 231953Z 24008KT 10SM FEW015 FEW030 SCT040 SCT200 12/07 A3001 RMK AO2 SLP166 T01170072 $",
   "station": "KNUW",
   "time": {
-    "repr": "231953Z",
-    "dt": "2023-10-23T19:53:00Z"
+    "repr": "232053Z",
+    "dt": "2023-10-23T20:53:00Z"
   },
-  "remarks": "RMK AO2 SLP166 T01170072 $",
+  "remarks": "RMK AO2 SLP165 T01220072 50002 $ KNUW 231953Z 24008KT 10SM FEW015 FEW030 SCT040 SCT200 12/07 A3001 RMK AO2 SLP166 T01170072 $",
   "dewpoint": {
     "repr": "07",
     "value": 7,
@@ -71,7 +64,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "50002",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -79,6 +76,14 @@
       {
         "repr": "$",
         "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
       },
       {
         "repr": "AO2",
@@ -94,9 +99,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP166",
-      "value": 1016.6,
-      "spoken": "one zero one six point six"
+      "repr": "SLP165",
+      "value": 1016.5,
+      "spoken": "one zero one six point five"
     },
     "snow_depth": null,
     "temperature_decimal": {
