@@ -1,8 +1,9 @@
 {
   "meta": {
-    "timestamp": "2023-10-27T09:44:17.348931Z",
+    "timestamp": "2023-10-27T10:05:03.081037Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-27T09:44:03.544000Z"
+    "cache-timestamp": "2023-10-27T10:02:05.316000Z",
+    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
   },
   "altimeter": {
     "repr": "A3035",
@@ -11,9 +12,7 @@
   },
   "clouds": [],
   "flight_rules": "VFR",
-  "other": [
-    "08"
-  ],
+  "other": [],
   "visibility": {
     "repr": "10",
     "value": 10,
@@ -35,16 +34,20 @@
     "spoken": "seven"
   },
   "wx_codes": [],
-  "raw": "KORS 270935Z AUTO 03007G15KT 330V100 10SM CLR 08/ A3035 RMK AO2",
-  "sanitized": "KORS 270935Z 03007G15KT 330V100 10SM 08 A3035 RMK AO2",
+  "raw": "KORS 270955Z AUTO 03007G15KT 330V070 10SM CLR 08/M08 A3035 RMK AO2",
+  "sanitized": "KORS 270955Z 03007G15KT 330V070 10SM 08/M08 A3035 RMK AO2",
   "station": "KORS",
   "time": {
-    "repr": "270935Z",
-    "dt": "2023-10-27T09:35:00Z"
+    "repr": "270955Z",
+    "dt": "2023-10-27T09:55:00Z"
   },
   "remarks": "RMK AO2",
-  "dewpoint": null,
-  "relative_humidity": null,
+  "dewpoint": {
+    "repr": "M08",
+    "value": -8,
+    "spoken": "minus eight"
+  },
+  "relative_humidity": 0.3127589942350026,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -67,7 +70,11 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "temperature": null,
+  "temperature": {
+    "repr": "08",
+    "value": 8,
+    "spoken": "eight"
+  },
   "wind_variable_direction": [
     {
       "repr": "330",
@@ -75,13 +82,13 @@
       "spoken": "three three zero"
     },
     {
-      "repr": "100",
-      "value": 100,
-      "spoken": "one zero zero"
+      "repr": "070",
+      "value": 70,
+      "spoken": "zero seven zero"
     }
   ],
-  "density_altitude": null,
-  "pressure_altitude": null,
+  "density_altitude": -1232,
+  "pressure_altitude": -399,
   "units": {
     "accumulation": "in",
     "altimeter": "inHg",
