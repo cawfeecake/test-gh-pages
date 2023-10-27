@@ -1,8 +1,8 @@
 {
   "meta": {
-    "timestamp": "2023-10-27T06:08:39.338405Z",
+    "timestamp": "2023-10-27T06:28:21.383084Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-27T06:08:02.736000Z"
+    "cache-timestamp": "2023-10-27T06:28:03.131000Z"
   },
   "altimeter": {
     "repr": "A3030",
@@ -10,17 +10,20 @@
     "spoken": "three zero point three zero"
   },
   "clouds": [],
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "other": [],
   "visibility": {
-    "repr": "9",
-    "value": 9,
-    "spoken": "nine"
+    "repr": "3/2",
+    "value": 1.5,
+    "spoken": "one and one half",
+    "numerator": 3,
+    "denominator": 2,
+    "normalized": "1 1/2"
   },
   "wind_direction": {
-    "repr": "340",
-    "value": 340,
-    "spoken": "three four zero"
+    "repr": "020",
+    "value": 20,
+    "spoken": "zero two zero"
   },
   "wind_gust": null,
   "wind_speed": {
@@ -28,21 +31,26 @@
     "value": 3,
     "spoken": "three"
   },
-  "wx_codes": [],
-  "raw": "KAWO 270456Z AUTO 34003KT 9SM CLR 01/00 A3030 RMK AO2 SLP266 T00110000 FZRANO",
-  "sanitized": "KAWO 270456Z 34003KT 9SM 01/00 A3030 RMK AO2 SLP266 T00110000 FZRANO",
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ],
+  "raw": "KAWO 270620Z AUTO 02003KT 1 1/2SM BR CLR 01/M01 A3030 RMK AO2 VIS 3/4V4 FZRANO",
+  "sanitized": "KAWO 270620Z 02003KT 1 1/2SM BR 01/M01 A3030 RMK AO2 VIS 3/4V4 FZRANO",
   "station": "KAWO",
   "time": {
-    "repr": "270456Z",
-    "dt": "2023-10-27T04:56:00Z"
+    "repr": "270620Z",
+    "dt": "2023-10-27T06:20:00Z"
   },
-  "remarks": "RMK AO2 SLP266 T00110000 FZRANO",
+  "remarks": "RMK AO2 VIS 3/4V4 FZRANO",
   "dewpoint": {
-    "repr": "00",
-    "value": 0,
-    "spoken": "zero"
+    "repr": "M01",
+    "value": -1,
+    "spoken": "minus one"
   },
-  "relative_humidity": 0.9236108706295763,
+  "relative_humidity": 0.8649047289729658,
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
@@ -60,25 +68,13 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": {
-      "repr": "0000",
-      "value": 0,
-      "spoken": "zero"
-    },
+    "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "minimum_temperature_24": null,
     "precip_hourly": null,
-    "sea_level_pressure": {
-      "repr": "SLP266",
-      "value": 1026.6,
-      "spoken": "one zero two six point six"
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
-    "temperature_decimal": {
-      "repr": "0011",
-      "value": 1.1,
-      "spoken": "one point one"
-    }
+    "temperature_decimal": null
   },
   "runway_visibility": [],
   "temperature": {
@@ -87,7 +83,7 @@
     "spoken": "one"
   },
   "wind_variable_direction": [],
-  "density_altitude": -1872,
+  "density_altitude": -1884,
   "pressure_altitude": -238,
   "units": {
     "accumulation": "in",
