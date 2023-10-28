@@ -1,15 +1,22 @@
 {
   "meta": {
-    "timestamp": "2023-10-28T15:02:35.832894Z",
+    "timestamp": "2023-10-28T15:22:32.424080Z",
     "stations_updated": "2023-10-01",
-    "cache-timestamp": "2023-10-28T15:02:03.331000Z"
+    "cache-timestamp": "2023-10-28T15:22:04.847000Z"
   },
   "altimeter": {
     "repr": "A3054",
     "value": 30.54,
     "spoken": "three zero point five four"
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "repr": "FEW035",
+      "type": "FEW",
+      "altitude": 35,
+      "modifier": null
+    }
+  ],
   "flight_rules": "VFR",
   "other": [],
   "visibility": {
@@ -29,14 +36,14 @@
     "spoken": "six"
   },
   "wx_codes": [],
-  "raw": "KNUW 281353Z 12006KT 10SM CLR M02/M04 A3054 RMK AO2 SLP346 T10221039 $",
-  "sanitized": "KNUW 281353Z 12006KT 10SM M02/M04 A3054 RMK AO2 SLP346 T10221039 $",
+  "raw": "KNUW 281453Z 12006KT 10SM FEW035 M02/M04 A3054 RMK AO2 SLP345 T10221039 50002 $",
+  "sanitized": "KNUW 281453Z 12006KT 10SM FEW035 M02/M04 A3054 RMK AO2 SLP345 T10221039 50002 $",
   "station": "KNUW",
   "time": {
-    "repr": "281353Z",
-    "dt": "2023-10-28T13:53:00Z"
+    "repr": "281453Z",
+    "dt": "2023-10-28T14:53:00Z"
   },
-  "remarks": "RMK AO2 SLP346 T10221039 $",
+  "remarks": "RMK AO2 SLP345 T10221039 50002 $",
   "dewpoint": {
     "repr": "M04",
     "value": -4,
@@ -46,7 +53,11 @@
   "remarks_info": {
     "maximum_temperature_6": null,
     "minimum_temperature_6": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "repr": "50002",
+      "tendency": "Increasing, then decreasing",
+      "change": 0.2
+    },
     "precip_36_hours": null,
     "precip_24_hours": null,
     "sunshine_minutes": null,
@@ -69,9 +80,9 @@
     "minimum_temperature_24": null,
     "precip_hourly": null,
     "sea_level_pressure": {
-      "repr": "SLP346",
-      "value": 1034.6,
-      "spoken": "one zero three four point six"
+      "repr": "SLP345",
+      "value": 1034.5,
+      "spoken": "one zero three four point five"
     },
     "snow_depth": null,
     "temperature_decimal": {
