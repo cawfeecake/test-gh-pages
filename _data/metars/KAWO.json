@@ -4,24 +4,31 @@
     "spoken": "three zero point two four",
     "value": 30.24
   },
-  "clouds": [],
-  "density_altitude": -2064,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "FEW002",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": -2184,
   "dewpoint": {
     "repr": "M02",
     "spoken": "minus two",
     "value": -2
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2023-10-31T07:40:06.773000Z",
+    "cache-timestamp": "2023-10-31T08:07:07.253000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-10-31T07:40:45.225892Z"
+    "timestamp": "2023-10-31T08:07:11.737737Z"
   },
   "other": [],
   "pressure_altitude": -178,
-  "raw": "KAWO 310709Z AUTO 35003KT 3SM BR CLR M01/M02 A3024 RMK AO2 FZRANO",
-  "relative_humidity": 0.9291645551718306,
-  "remarks": "RMK AO2 FZRANO",
+  "raw": "KAWO 310753Z AUTO 35003KT 1 1/2SM BR FEW002 M02/M02 A3024 RMK AO2 VIS 1/2V5 401281044 FZRANO",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 VIS 1/2V5 401281044 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -34,9 +41,17 @@
       }
     ],
     "dewpoint_decimal": null,
-    "maximum_temperature_24": null,
+    "maximum_temperature_24": {
+      "repr": "0128",
+      "spoken": "one two point eight",
+      "value": 12.8
+    },
     "maximum_temperature_6": null,
-    "minimum_temperature_24": null,
+    "minimum_temperature_24": {
+      "repr": "1044",
+      "spoken": "minus four point four",
+      "value": -4.4
+    },
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
@@ -48,16 +63,16 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 310709Z 35003KT 3SM BR M01/M02 A3024 RMK AO2 FZRANO",
+  "sanitized": "KAWO 310753Z 35003KT 1 1/2SM BR FEW002 M02/M02 A3024 RMK AO2 VIS 1/2V5 401281044 FZRANO",
   "station": "KAWO",
   "temperature": {
-    "repr": "M01",
-    "spoken": "minus one",
-    "value": -1
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
   "time": {
-    "dt": "2023-10-31T07:09:00Z",
-    "repr": "310709Z"
+    "dt": "2023-10-31T07:53:00Z",
+    "repr": "310753Z"
   },
   "units": {
     "accumulation": "in",
@@ -68,9 +83,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "denominator": 2,
+    "normalized": "1 1/2",
+    "numerator": 3,
+    "repr": "3/2",
+    "spoken": "one and one half",
+    "value": 1.5
   },
   "wind_direction": {
     "repr": "350",
