@@ -1,44 +1,43 @@
 {
   "altimeter": {
-    "repr": "A3000",
-    "spoken": "three zero point zero zero",
-    "value": 30
+    "repr": "A3001",
+    "spoken": "three zero point zero one",
+    "value": 30.01
   },
   "clouds": [
     {
-      "altitude": 32,
+      "altitude": 8,
       "modifier": null,
-      "repr": "FEW032",
+      "repr": "FEW008",
       "type": "FEW"
     },
     {
-      "altitude": 43,
+      "altitude": 40,
       "modifier": null,
-      "repr": "BKN043",
+      "repr": "BKN040",
       "type": "BKN"
     },
     {
-      "altitude": 49,
+      "altitude": 50,
       "modifier": null,
-      "repr": "OVC049",
+      "repr": "OVC050",
       "type": "OVC"
     }
   ],
   "density_altitude": null,
   "dewpoint": null,
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2023-11-03T03:40:05.056000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-03T03:40:33.911117Z"
+    "timestamp": "2023-11-03T04:06:26.367274Z"
   },
   "other": [
     "13"
   ],
   "pressure_altitude": null,
-  "raw": "KORS 030315Z AUTO 00000KT 9SM FEW032 BKN043 OVC049 13/ A3000 RMK AO2",
+  "raw": "KORS 030355Z AUTO 18006KT 4SM -RA HZ FEW008 BKN040 OVC050 13/ A3001 RMK AO2 P0002",
   "relative_humidity": null,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0002",
   "remarks_info": {
     "codes": [
       {
@@ -53,7 +52,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -61,12 +64,12 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 030315Z 00000KT 9SM FEW032 BKN043 OVC049 13 A3000 RMK AO2",
+  "sanitized": "KORS 030355Z 18006KT 4SM -RA HZ FEW008 BKN040 OVC050 13 A3001 RMK AO2 P0002",
   "station": "KORS",
   "temperature": null,
   "time": {
-    "dt": "2023-11-03T03:15:00Z",
-    "repr": "030315Z"
+    "dt": "2023-11-03T03:55:00Z",
+    "repr": "030355Z"
   },
   "units": {
     "accumulation": "in",
@@ -77,21 +80,30 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "repr": "4",
+    "spoken": "four",
+    "value": 4
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "180",
+    "spoken": "one eight zero",
+    "value": 180
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "HZ",
+      "value": "Haze"
+    }
+  ]
 }
