@@ -1,11 +1,24 @@
 {
   "altimeter": {
-    "repr": "A2953",
-    "spoken": "two nine point five three",
-    "value": 29.53
+    "repr": "A2952",
+    "spoken": "two nine point five two",
+    "value": 29.52
   },
-  "clouds": [],
-  "density_altitude": -166,
+  "clouds": [
+    {
+      "altitude": 60,
+      "modifier": null,
+      "repr": "SCT060",
+      "type": "SCT"
+    },
+    {
+      "altitude": 80,
+      "modifier": null,
+      "repr": "BKN080",
+      "type": "BKN"
+    }
+  ],
+  "density_altitude": -156,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -13,15 +26,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-11-06T14:40:06.510000Z",
+    "cache-timestamp": "2023-11-06T15:02:54.020000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-06T14:40:45.415819Z"
+    "timestamp": "2023-11-06T15:03:08.408378Z"
   },
   "other": [],
-  "pressure_altitude": 532,
-  "raw": "KAWO 061356Z AUTO 05004KT 10SM CLR 09/08 A2953 RMK AO2 SLP006 T00890078",
+  "pressure_altitude": 542,
+  "raw": "KAWO 061456Z AUTO 00000KT 10SM SCT060 BKN080 09/08 A2952 RMK AO2 SLP002 T00890078 56017",
   "relative_humidity": 0.9280975124584884,
-  "remarks": "RMK AO2 SLP006 T00890078",
+  "remarks": "RMK AO2 SLP002 T00890078 56017",
   "remarks_info": {
     "codes": [
       {
@@ -41,11 +54,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 1.7,
+      "repr": "56017",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP006",
-      "spoken": "one zero zero zero point six",
-      "value": 1000.6
+      "repr": "SLP002",
+      "spoken": "one zero zero zero point two",
+      "value": 1000.2
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -56,7 +73,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 061356Z 05004KT 10SM 09/08 A2953 RMK AO2 SLP006 T00890078",
+  "sanitized": "KAWO 061456Z 00000KT 10SM SCT060 BKN080 09/08 A2952 RMK AO2 SLP002 T00890078 56017",
   "station": "KAWO",
   "temperature": {
     "repr": "09",
@@ -64,8 +81,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2023-11-06T13:56:00Z",
-    "repr": "061356Z"
+    "dt": "2023-11-06T14:56:00Z",
+    "repr": "061456Z"
   },
   "units": {
     "accumulation": "in",
@@ -81,15 +98,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "050",
-    "spoken": "zero five zero",
-    "value": 50
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
   "wx_codes": []
