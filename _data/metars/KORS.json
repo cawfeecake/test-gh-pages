@@ -1,38 +1,43 @@
 {
   "altimeter": {
-    "repr": "A2966",
-    "spoken": "two nine point six six",
-    "value": 29.66
+    "repr": "A2967",
+    "spoken": "two nine point six seven",
+    "value": 29.67
   },
   "clouds": [
     {
-      "altitude": 35,
+      "altitude": 11,
       "modifier": null,
-      "repr": "BKN035",
+      "repr": "SCT011",
+      "type": "SCT"
+    },
+    {
+      "altitude": 17,
+      "modifier": null,
+      "repr": "BKN017",
       "type": "BKN"
     },
     {
-      "altitude": 42,
+      "altitude": 33,
       "modifier": null,
-      "repr": "OVC042",
+      "repr": "OVC033",
       "type": "OVC"
     }
   ],
   "density_altitude": null,
   "dewpoint": null,
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2023-11-07T07:40:02.583000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-07T07:40:33.295979Z"
+    "timestamp": "2023-11-07T08:07:20.812476Z"
   },
   "other": [
     "11"
   ],
   "pressure_altitude": null,
-  "raw": "KORS 070735Z AUTO 00000KT 7SM -RA BKN035 OVC042 11/ A2966 RMK AO2",
+  "raw": "KORS 070755Z AUTO 00000KT 4SM -RA HZ SCT011 BKN017 OVC033 11/ A2967 RMK AO2 P0002",
   "relative_humidity": null,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0002",
   "remarks_info": {
     "codes": [
       {
@@ -47,7 +52,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -55,12 +64,12 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 070735Z 00000KT 7SM -RA BKN035 OVC042 11 A2966 RMK AO2",
+  "sanitized": "KORS 070755Z 00000KT 4SM -RA HZ SCT011 BKN017 OVC033 11 A2967 RMK AO2 P0002",
   "station": "KORS",
   "temperature": null,
   "time": {
-    "dt": "2023-11-07T07:35:00Z",
-    "repr": "070735Z"
+    "dt": "2023-11-07T07:55:00Z",
+    "repr": "070755Z"
   },
   "units": {
     "accumulation": "in",
@@ -71,9 +80,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "repr": "4",
+    "spoken": "four",
+    "value": 4
   },
   "wind_direction": {
     "repr": "000",
@@ -91,6 +100,10 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "HZ",
+      "value": "Haze"
     }
   ]
 }
