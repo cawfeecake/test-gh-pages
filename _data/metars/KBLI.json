@@ -6,9 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 1,
+      "altitude": 2,
       "modifier": null,
-      "repr": "VV001",
+      "repr": "VV002",
       "type": "VV"
     }
   ],
@@ -20,14 +20,15 @@
   },
   "flight_rules": "LIFR",
   "meta": {
+    "cache-timestamp": "2023-11-09T11:20:03.963000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-09T11:01:12.224685Z"
+    "timestamp": "2023-11-09T11:20:33.651357Z"
   },
   "other": [],
   "pressure_altitude": -120,
-  "raw": "KBLI 091053Z AUTO 00000KT 1/2SM R16/P6000FT FG VV001 02/02 A3021 RMK AO2 SLP239 T00220017",
+  "raw": "KBLI 091105Z AUTO 00000KT 1/2SM R16/3500VP6000FT FG VV002 02/02 A3021 RMK AO2 T00220017",
   "relative_humidity": 0.9649208694160765,
-  "remarks": "RMK AO2 SLP239 T00220017",
+  "remarks": "RMK AO2 T00220017",
   "remarks_info": {
     "codes": [
       {
@@ -48,11 +49,7 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP239",
-      "spoken": "one zero two three point nine",
-      "value": 1023.9
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -63,18 +60,25 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/P6000FT",
+      "repr": "R16/3500VP6000FT",
       "runway": "16",
       "trend": null,
-      "variable_visibility": [],
-      "visibility": {
-        "repr": "P6000",
-        "spoken": "greater than six thousand",
-        "value": null
-      }
+      "variable_visibility": [
+        {
+          "repr": "3500",
+          "spoken": "three five hundred",
+          "value": 3500
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
     }
   ],
-  "sanitized": "KBLI 091053Z 00000KT 1/2SM R16/P6000FT FG VV001 02/02 A3021 RMK AO2 SLP239 T00220017",
+  "sanitized": "KBLI 091105Z 00000KT 1/2SM R16/3500VP6000FT FG VV002 02/02 A3021 RMK AO2 T00220017",
   "station": "KBLI",
   "temperature": {
     "repr": "02",
@@ -82,8 +86,8 @@
     "value": 2
   },
   "time": {
-    "dt": "2023-11-09T10:53:00Z",
-    "repr": "091053Z"
+    "dt": "2023-11-09T11:05:00Z",
+    "repr": "091105Z"
   },
   "units": {
     "accumulation": "in",
