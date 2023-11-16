@@ -4,24 +4,31 @@
     "spoken": "three zero point zero four",
     "value": 30.04
   },
-  "clouds": [],
-  "density_altitude": -1672,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -1864,
   "dewpoint": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "M01",
+    "spoken": "minus one",
+    "value": -1
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-11-16T04:06:03.527000Z",
+    "cache-timestamp": "2023-11-16T04:28:06.046000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-16T04:06:59.048856Z"
+    "timestamp": "2023-11-16T04:29:03.455332Z"
   },
   "other": [],
   "pressure_altitude": 22,
-  "raw": "KAWO 160356Z AUTO 01004KT 7SM CLR 01/00 A3004 RMK AO2 SLP177 T00060000 FZRANO",
-  "relative_humidity": 0.9574966857850682,
-  "remarks": "RMK AO2 SLP177 T00060000 FZRANO",
+  "raw": "KAWO 160411Z AUTO 01005KT 1/4SM FZFG VV002 M01/M01 A3004 RMK AO2 FZRANO",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -33,11 +40,7 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": {
-      "repr": "0000",
-      "spoken": "zero",
-      "value": 0
-    },
+    "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -46,30 +49,22 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP177",
-      "spoken": "one zero one seven point seven",
-      "value": 1017.7
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": {
-      "repr": "0006",
-      "spoken": "zero point six",
-      "value": 0.6
-    }
+    "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 160356Z 01004KT 7SM 01/00 A3004 RMK AO2 SLP177 T00060000 FZRANO",
+  "sanitized": "KAWO 160411Z 01005KT 1/4SM FZFG VV002 M01/M01 A3004 RMK AO2 FZRANO",
   "station": "KAWO",
   "temperature": {
-    "repr": "01",
-    "spoken": "one",
-    "value": 1
+    "repr": "M01",
+    "spoken": "minus one",
+    "value": -1
   },
   "time": {
-    "dt": "2023-11-16T03:56:00Z",
-    "repr": "160356Z"
+    "dt": "2023-11-16T04:11:00Z",
+    "repr": "160411Z"
   },
   "units": {
     "accumulation": "in",
@@ -80,9 +75,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "010",
@@ -91,10 +89,15 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "05",
+    "spoken": "five",
+    "value": 5
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FZFG",
+      "value": "Freezing Fog"
+    }
+  ]
 }
