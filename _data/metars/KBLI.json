@@ -11,16 +11,16 @@
     "spoken": "minus two",
     "value": -2
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-16T10:41:06.248287Z"
+    "timestamp": "2023-11-16T11:01:25.179473Z"
   },
   "other": [],
   "pressure_altitude": -30,
-  "raw": "KBLI 161034Z AUTO 00000KT 1 3/4SM R16/4000VP6000FT BR CLR M01/M02 A3012 RMK AO2 I1000 T10111017",
+  "raw": "KBLI 161053Z AUTO 00000KT 1/2SM R16/P6000FT FZFG CLR M01/M02 A3012 RMK AO2 SLP208 I1000 T10111017",
   "relative_humidity": 0.9569107752623097,
-  "remarks": "RMK AO2 I1000 T10111017",
+  "remarks": "RMK AO2 SLP208 I1000 T10111017",
   "remarks_info": {
     "codes": [
       {
@@ -41,7 +41,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP208",
+      "spoken": "one zero two zero point eight",
+      "value": 1020.8
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -52,25 +56,18 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/4000VP6000FT",
+      "repr": "R16/P6000FT",
       "runway": "16",
       "trend": null,
-      "variable_visibility": [
-        {
-          "repr": "4000",
-          "spoken": "four thousand",
-          "value": 4000
-        },
-        {
-          "repr": "P6000",
-          "spoken": "greater than six thousand",
-          "value": null
-        }
-      ],
-      "visibility": null
+      "variable_visibility": [],
+      "visibility": {
+        "repr": "P6000",
+        "spoken": "greater than six thousand",
+        "value": null
+      }
     }
   ],
-  "sanitized": "KBLI 161034Z 00000KT 1 3/4SM R16/4000VP6000FT BR M01/M02 A3012 RMK AO2 I1000 T10111017",
+  "sanitized": "KBLI 161053Z 00000KT 1/2SM R16/P6000FT FZFG M01/M02 A3012 RMK AO2 SLP208 I1000 T10111017",
   "station": "KBLI",
   "temperature": {
     "repr": "M01",
@@ -78,8 +75,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2023-11-16T10:34:00Z",
-    "repr": "161034Z"
+    "dt": "2023-11-16T10:53:00Z",
+    "repr": "161053Z"
   },
   "units": {
     "accumulation": "in",
@@ -90,12 +87,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 4,
-    "normalized": "1 3/4",
-    "numerator": 7,
-    "repr": "7/4",
-    "spoken": "one and three quarters",
-    "value": 1.75
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -111,8 +108,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
