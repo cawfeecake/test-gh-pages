@@ -1,11 +1,24 @@
 {
   "altimeter": {
-    "repr": "A2967",
-    "spoken": "two nine point six seven",
-    "value": 29.67
+    "repr": "A2965",
+    "spoken": "two nine point six five",
+    "value": 29.65
   },
-  "clouds": [],
-  "density_altitude": 65,
+  "clouds": [
+    {
+      "altitude": 90,
+      "modifier": null,
+      "repr": "FEW090",
+      "type": "FEW"
+    },
+    {
+      "altitude": 110,
+      "modifier": null,
+      "repr": "SCT110",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": 85,
   "dewpoint": {
     "repr": "03",
     "spoken": "three",
@@ -13,15 +26,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-11-18T21:40:04.810000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-18T21:40:48.145026Z"
+    "timestamp": "2023-11-18T22:01:20.257869Z"
   },
   "other": [],
-  "pressure_altitude": 420,
-  "raw": "KBLI 182053Z VRB03KT 10SM CLR 12/03 A2967 RMK AO2 SLP055 T01170033 58029",
+  "pressure_altitude": 440,
+  "raw": "KBLI 182153Z 36003KT 10SM FEW090 SCT110 12/03 A2965 RMK AO2 SLP047 T01170033",
   "relative_humidity": 0.5633593564121078,
-  "remarks": "RMK AO2 SLP055 T01170033 58029",
+  "remarks": "RMK AO2 SLP047 T01170033",
   "remarks_info": {
     "codes": [
       {
@@ -41,15 +53,11 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 2.9,
-      "repr": "58029",
-      "tendency": "Steady or increasing, then decreasing"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP055",
-      "spoken": "one zero zero five point five",
-      "value": 1005.5
+      "repr": "SLP047",
+      "spoken": "one zero zero four point seven",
+      "value": 1004.7
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -60,7 +68,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 182053Z VRB03KT 10SM 12/03 A2967 RMK AO2 SLP055 T01170033 58029",
+  "sanitized": "KBLI 182153Z 36003KT 10SM FEW090 SCT110 12/03 A2965 RMK AO2 SLP047 T01170033",
   "station": "KBLI",
   "temperature": {
     "repr": "12",
@@ -68,8 +76,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2023-11-18T20:53:00Z",
-    "repr": "182053Z"
+    "dt": "2023-11-18T21:53:00Z",
+    "repr": "182153Z"
   },
   "units": {
     "accumulation": "in",
@@ -85,9 +93,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "VRB",
-    "spoken": "variable",
-    "value": null
+    "repr": "360",
+    "spoken": "three six zero",
+    "value": 360
   },
   "wind_gust": null,
   "wind_speed": {
