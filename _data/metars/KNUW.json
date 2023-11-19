@@ -1,15 +1,15 @@
 {
   "altimeter": {
-    "repr": "A2974",
-    "spoken": "two nine point seven four",
-    "value": 29.74
+    "repr": "A2976",
+    "spoken": "two nine point seven six",
+    "value": 29.76
   },
   "clouds": [
     {
       "altitude": 15,
       "modifier": null,
-      "repr": "SCT015",
-      "type": "SCT"
+      "repr": "FEW015",
+      "type": "FEW"
     },
     {
       "altitude": 20,
@@ -18,13 +18,13 @@
       "type": "BKN"
     },
     {
-      "altitude": 26,
+      "altitude": 50,
       "modifier": null,
-      "repr": "OVC026",
+      "repr": "OVC050",
       "type": "OVC"
     }
   ],
-  "density_altitude": -566,
+  "density_altitude": -514,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -33,22 +33,22 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-19T09:01:23.750834Z"
+    "timestamp": "2023-11-19T09:21:14.831179Z"
   },
   "other": [],
-  "pressure_altitude": 227,
-  "raw": "KNUW 190826Z 14005KT 6SM -RA BR SCT015 BKN020 OVC026 08/08 A2974 RMK AO2 P0008 T00830078 $",
-  "relative_humidity": 0.9665731399975396,
-  "remarks": "RMK AO2 P0008 T00830078 $",
+  "pressure_altitude": 207,
+  "raw": "KNUW 190853Z COR VRB03KT 10SM FEW015 BKN020 OVC050 09/08 A2976 RMK AO2 RAE46 SLP082 P0008 60029 T00890078 53051",
+  "relative_humidity": 0.9280975124584884,
+  "remarks": "RMK AO2 RAE46 SLP082 P0008 60029 T00890078 53051",
   "remarks_info": {
     "codes": [
       {
-        "repr": "$",
-        "value": "ASOS requires maintenance"
-      },
-      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAE46",
+        "value": "Rain ended at :46"
       }
     ],
     "dewpoint_decimal": {
@@ -61,33 +61,45 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60029",
+      "spoken": "zero point two nine",
+      "value": 0.29
+    },
     "precip_hourly": {
       "repr": "P0008",
       "spoken": "zero point zero eight",
       "value": 0.08
     },
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 5.1,
+      "repr": "53051",
+      "tendency": "Decreasing or steady, then increasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP082",
+      "spoken": "one zero zero eight point two",
+      "value": 1008.2
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0083",
-      "spoken": "eight point three",
-      "value": 8.3
+      "repr": "0089",
+      "spoken": "eight point nine",
+      "value": 8.9
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 190826Z 14005KT 6SM -RA BR SCT015 BKN020 OVC026 08/08 A2974 RMK AO2 P0008 T00830078 $",
+  "sanitized": "KNUW 190853Z VRB03KT 10SM FEW015 BKN020 OVC050 09/08 A2976 RMK AO2 RAE46 SLP082 P0008 60029 T00890078 53051",
   "station": "KNUW",
   "temperature": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "09",
+    "spoken": "nine",
+    "value": 9
   },
   "time": {
-    "dt": "2023-11-19T08:26:00Z",
-    "repr": "190826Z"
+    "dt": "2023-11-19T08:53:00Z",
+    "repr": "190853Z"
   },
   "units": {
     "accumulation": "in",
@@ -98,30 +110,21 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "6",
-    "spoken": "six",
-    "value": 6
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_direction": {
-    "repr": "140",
-    "spoken": "one four zero",
-    "value": 140
+    "repr": "VRB",
+    "spoken": "variable",
+    "value": null
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ]
+  "wx_codes": []
 }
