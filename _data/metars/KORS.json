@@ -1,38 +1,44 @@
 {
   "altimeter": {
-    "repr": "A3020",
-    "spoken": "three zero point two zero",
-    "value": 30.2
+    "repr": "A3021",
+    "spoken": "three zero point two one",
+    "value": 30.21
   },
   "clouds": [
     {
-      "altitude": 50,
+      "altitude": 6,
       "modifier": null,
-      "repr": "BKN050",
-      "type": "BKN"
+      "repr": "FEW006",
+      "type": "FEW"
     },
     {
-      "altitude": 55,
+      "altitude": 38,
       "modifier": null,
-      "repr": "OVC055",
+      "repr": "FEW038",
+      "type": "FEW"
+    },
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "OVC050",
       "type": "OVC"
     }
   ],
   "density_altitude": null,
   "dewpoint": null,
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2023-11-22T04:06:02.562000Z",
+    "cache-timestamp": "2023-11-22T04:28:02.559000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-22T04:06:58.357034Z"
+    "timestamp": "2023-11-22T04:28:28.797349Z"
   },
   "other": [
     "08"
   ],
   "pressure_altitude": null,
-  "raw": "KORS 220355Z AUTO 00000KT 4SM -RA HZ BKN050 OVC055 08/ A3020 RMK AO2 P0004",
+  "raw": "KORS 220415Z AUTO 00000KT 2 1/2SM -RA BR FEW006 FEW038 OVC050 08/ A3021 RMK AO2",
   "relative_humidity": null,
-  "remarks": "RMK AO2 P0004",
+  "remarks": "RMK AO2",
   "remarks_info": {
     "codes": [
       {
@@ -47,11 +53,7 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0004",
-      "spoken": "zero point zero four",
-      "value": 0.04
-    },
+    "precip_hourly": null,
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -59,12 +61,12 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 220355Z 00000KT 4SM -RA HZ BKN050 OVC055 08 A3020 RMK AO2 P0004",
+  "sanitized": "KORS 220415Z 00000KT 2 1/2SM -RA BR FEW006 FEW038 OVC050 08 A3021 RMK AO2",
   "station": "KORS",
   "temperature": null,
   "time": {
-    "dt": "2023-11-22T03:55:00Z",
-    "repr": "220355Z"
+    "dt": "2023-11-22T04:15:00Z",
+    "repr": "220415Z"
   },
   "units": {
     "accumulation": "in",
@@ -75,9 +77,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "4",
-    "spoken": "four",
-    "value": 4
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
@@ -97,8 +102,8 @@
       "value": "Light Rain"
     },
     {
-      "repr": "HZ",
-      "value": "Haze"
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
