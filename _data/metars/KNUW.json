@@ -4,24 +4,36 @@
     "spoken": "three zero point four three",
     "value": 30.43
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "altitude": 40,
+      "modifier": null,
+      "repr": "FEW040",
+      "type": "FEW"
+    },
+    {
+      "altitude": 250,
+      "modifier": null,
+      "repr": "SCT250",
+      "type": "SCT"
+    }
+  ],
   "density_altitude": -2588,
   "dewpoint": {
-    "repr": "M03",
-    "spoken": "minus three",
-    "value": -3
+    "repr": "M04",
+    "spoken": "minus four",
+    "value": -4
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-11-24T14:40:04.586000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-24T14:40:35.807326Z"
+    "timestamp": "2023-11-24T15:02:12.578686Z"
   },
   "other": [],
   "pressure_altitude": -463,
-  "raw": "KNUW 241353Z 14005KT 10SM CLR M03/M03 A3043 RMK AO2 SLP307 T10281033 $",
-  "relative_humidity": 0.9634740523958434,
-  "remarks": "RMK AO2 SLP307 T10281033 $",
+  "raw": "KNUW 241453Z 11005KT 10SM FEW040 SCT250 M03/M04 A3043 RMK AO2 SLP307 T10281039 56003 $",
+  "relative_humidity": 0.9212108033193936,
+  "remarks": "RMK AO2 SLP307 T10281039 56003 $",
   "remarks_info": {
     "codes": [
       {
@@ -34,9 +46,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1033",
-      "spoken": "minus three point three",
-      "value": -3.3
+      "repr": "1039",
+      "spoken": "minus three point nine",
+      "value": -3.9
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -45,7 +57,11 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.3,
+      "repr": "56003",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP307",
       "spoken": "one zero three zero point seven",
@@ -60,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 241353Z 14005KT 10SM M03/M03 A3043 RMK AO2 SLP307 T10281033 $",
+  "sanitized": "KNUW 241453Z 11005KT 10SM FEW040 SCT250 M03/M04 A3043 RMK AO2 SLP307 T10281039 56003 $",
   "station": "KNUW",
   "temperature": {
     "repr": "M03",
@@ -68,8 +84,8 @@
     "value": -3
   },
   "time": {
-    "dt": "2023-11-24T13:53:00Z",
-    "repr": "241353Z"
+    "dt": "2023-11-24T14:53:00Z",
+    "repr": "241453Z"
   },
   "units": {
     "accumulation": "in",
@@ -85,9 +101,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "140",
-    "spoken": "one four zero",
-    "value": 140
+    "repr": "110",
+    "spoken": "one one zero",
+    "value": 110
   },
   "wind_gust": null,
   "wind_speed": {
