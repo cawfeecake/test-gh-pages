@@ -11,17 +11,16 @@
     "spoken": "minus three",
     "value": -3
   },
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2023-11-25T09:40:02.597000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-25T09:40:44.258654Z"
+    "timestamp": "2023-11-25T10:01:21.365176Z"
   },
   "other": [],
   "pressure_altitude": -280,
-  "raw": "KBLI 250911Z AUTO 00000KT 8SM CLR M02/M03 A3037 RMK AO2 T10221028",
+  "raw": "KBLI 250953Z AUTO 00000KT 2 1/2SM BR CLR M02/M03 A3037 RMK AO2 SLP293 I1000 T10221028",
   "relative_humidity": 0.956525227573871,
-  "remarks": "RMK AO2 T10221028",
+  "remarks": "RMK AO2 SLP293 I1000 T10221028",
   "remarks_info": {
     "codes": [
       {
@@ -42,7 +41,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP293",
+      "spoken": "one zero two nine point three",
+      "value": 1029.3
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -52,7 +55,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 250911Z 00000KT 8SM M02/M03 A3037 RMK AO2 T10221028",
+  "sanitized": "KBLI 250953Z 00000KT 2 1/2SM BR M02/M03 A3037 RMK AO2 SLP293 I1000 T10221028",
   "station": "KBLI",
   "temperature": {
     "repr": "M02",
@@ -60,8 +63,8 @@
     "value": -2
   },
   "time": {
-    "dt": "2023-11-25T09:11:00Z",
-    "repr": "250911Z"
+    "dt": "2023-11-25T09:53:00Z",
+    "repr": "250953Z"
   },
   "units": {
     "accumulation": "in",
@@ -72,9 +75,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
@@ -88,5 +94,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
