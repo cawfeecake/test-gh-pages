@@ -1,25 +1,31 @@
 {
   "altimeter": {
-    "repr": "A3032",
-    "spoken": "three zero point three two",
-    "value": 30.32
+    "repr": "A3031",
+    "spoken": "three zero point three one",
+    "value": 30.31
   },
-  "clouds": [],
-  "density_altitude": -2141,
+  "clouds": [
+    {
+      "altitude": 5,
+      "modifier": null,
+      "repr": "VV005",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -2131,
   "dewpoint": {
     "repr": "M01",
     "spoken": "minus one",
     "value": -1
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-11-26T14:40:06.013000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-26T14:40:38.875256Z"
+    "timestamp": "2023-11-26T15:01:29.392535Z"
   },
   "other": [],
-  "pressure_altitude": -256,
-  "raw": "KBVS 261415Z AUTO 00000KT 9SM CLR M01/M01 A3032 RMK A01",
+  "pressure_altitude": -246,
+  "raw": "KBVS 261455Z AUTO 00000KT 1/2SM BR VV005 M01/M01 A3031 RMK A01",
   "relative_humidity": 1,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -39,7 +45,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 261415Z 00000KT 9SM M01/M01 A3032 RMK A01",
+  "sanitized": "KBVS 261455Z 00000KT 1/2SM BR VV005 M01/M01 A3031 RMK A01",
   "station": "KBVS",
   "temperature": {
     "repr": "M01",
@@ -47,8 +53,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2023-11-26T14:15:00Z",
-    "repr": "261415Z"
+    "dt": "2023-11-26T14:55:00Z",
+    "repr": "261455Z"
   },
   "units": {
     "accumulation": "in",
@@ -59,9 +65,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -75,5 +84,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
