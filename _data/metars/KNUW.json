@@ -1,10 +1,16 @@
 {
   "altimeter": {
-    "repr": "A3022",
-    "spoken": "three zero point two two",
-    "value": 30.22
+    "repr": "A3023",
+    "spoken": "three zero point two three",
+    "value": 30.23
   },
   "clouds": [
+    {
+      "altitude": 1,
+      "modifier": null,
+      "repr": "FEW001",
+      "type": "FEW"
+    },
     {
       "altitude": 110,
       "modifier": null,
@@ -14,27 +20,26 @@
     {
       "altitude": 220,
       "modifier": null,
-      "repr": "FEW220",
-      "type": "FEW"
+      "repr": "SCT220",
+      "type": "SCT"
     }
   ],
-  "density_altitude": -1646,
+  "density_altitude": -1848,
   "dewpoint": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "02",
+    "spoken": "two",
+    "value": 2
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2023-11-27T05:40:05.376000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-27T05:40:36.780233Z"
+    "timestamp": "2023-11-27T06:07:47.644913Z"
   },
   "other": [],
-  "pressure_altitude": -253,
-  "raw": "KNUW 270453Z 13003KT 8SM FEW110 FEW220 03/03 A3022 RMK AO2 SLP238 T00330028 $",
-  "relative_humidity": 0.9652276930831346,
-  "remarks": "RMK AO2 SLP238 T00330028 $",
+  "pressure_altitude": -263,
+  "raw": "KNUW 270553Z 00000KT 5SM BR MIFG FEW001 FEW110 SCT220 02/02 A3023 RMK AO2 SLP240 T00170017 10067 20000 53001 $",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 SLP240 T00170017 10067 20000 53001 $",
   "remarks_info": {
     "codes": [
       {
@@ -47,42 +52,54 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0028",
-      "spoken": "two point eight",
-      "value": 2.8
+      "repr": "0017",
+      "spoken": "one point seven",
+      "value": 1.7
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10067",
+      "spoken": "six point seven",
+      "value": 6.7
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "53001",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP238",
-      "spoken": "one zero two three point eight",
-      "value": 1023.8
+      "repr": "SLP240",
+      "spoken": "one zero two four point zero",
+      "value": 1024
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0033",
-      "spoken": "three point three",
-      "value": 3.3
+      "repr": "0017",
+      "spoken": "one point seven",
+      "value": 1.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 270453Z 13003KT 8SM FEW110 FEW220 03/03 A3022 RMK AO2 SLP238 T00330028 $",
+  "sanitized": "KNUW 270553Z 00000KT 5SM BR MIFG FEW001 FEW110 SCT220 02/02 A3023 RMK AO2 SLP240 T00170017 10067 20000 53001 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "02",
+    "spoken": "two",
+    "value": 2
   },
   "time": {
-    "dt": "2023-11-27T04:53:00Z",
-    "repr": "270453Z"
+    "dt": "2023-11-27T05:53:00Z",
+    "repr": "270553Z"
   },
   "units": {
     "accumulation": "in",
@@ -93,21 +110,30 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
-    "repr": "130",
-    "spoken": "one three zero",
-    "value": 130
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    },
+    {
+      "repr": "MIFG",
+      "value": "Shallow Fog"
+    }
+  ]
 }
