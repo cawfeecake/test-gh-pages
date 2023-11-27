@@ -1,25 +1,31 @@
 {
   "altimeter": {
-    "repr": "A3022",
-    "spoken": "three zero point two two",
-    "value": 30.22
+    "repr": "A3023",
+    "spoken": "three zero point two three",
+    "value": 30.23
   },
-  "clouds": [],
-  "density_altitude": -2041,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "OVC002",
+      "type": "OVC"
+    }
+  ],
+  "density_altitude": -2171,
   "dewpoint": {
-    "repr": "M01",
-    "spoken": "minus one",
-    "value": -1
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-11-27T13:40:03.981000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-27T13:40:36.355902Z"
+    "timestamp": "2023-11-27T14:01:32.394963Z"
   },
   "other": [],
-  "pressure_altitude": -156,
-  "raw": "KBVS 271315Z AUTO 00000KT 1SM BR CLR M01/M01 A3022 RMK A01",
+  "pressure_altitude": -166,
+  "raw": "KBVS 271355Z AUTO 00000KT 1/2SM FZFG OVC002 M02/M02 A3023 RMK A01",
   "relative_humidity": 1,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -39,16 +45,16 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 271315Z 00000KT 1SM BR M01/M01 A3022 RMK A01",
+  "sanitized": "KBVS 271355Z 00000KT 1/2SM FZFG OVC002 M02/M02 A3023 RMK A01",
   "station": "KBVS",
   "temperature": {
-    "repr": "M01",
-    "spoken": "minus one",
-    "value": -1
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
   "time": {
-    "dt": "2023-11-27T13:15:00Z",
-    "repr": "271315Z"
+    "dt": "2023-11-27T13:55:00Z",
+    "repr": "271355Z"
   },
   "units": {
     "accumulation": "in",
@@ -59,9 +65,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "1",
-    "spoken": "one",
-    "value": 1
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -77,8 +86,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
