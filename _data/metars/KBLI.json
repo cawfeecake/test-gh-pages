@@ -20,17 +20,15 @@
   },
   "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-11-28T01:40:05.513000Z",
+    "cache-timestamp": "2023-11-28T02:20:06.780000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-28T01:40:26.215782Z"
+    "timestamp": "2023-11-28T02:20:47.277171Z"
   },
-  "other": [
-    "M14KT"
-  ],
+  "other": [],
   "pressure_altitude": -120,
-  "raw": "KBLI 280129Z 00000KT M1/4SM R16/1000V1200FT FG VV001 01/01 A3021 RMK AO2 T00110011",
+  "raw": "KBLI 280153Z 03003KT 1/4SM R16/1000V1400FT FG VV001 01/01 A3021 RMK AO2 SLP241 T00110011",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00110011",
+  "remarks": "RMK AO2 SLP241 T00110011",
   "remarks_info": {
     "codes": [
       {
@@ -51,7 +49,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP241",
+      "spoken": "one zero two four point one",
+      "value": 1024.1
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -62,7 +64,7 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1000V1200FT",
+      "repr": "R16/1000V1400FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
@@ -72,15 +74,15 @@
           "value": 1000
         },
         {
-          "repr": "1200",
-          "spoken": "one two hundred",
-          "value": 1200
+          "repr": "1400",
+          "spoken": "one four hundred",
+          "value": 1400
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 280129Z 00000KT M14KT R16/1000V1200FT FG VV001 01/01 A3021 RMK AO2 T00110011",
+  "sanitized": "KBLI 280153Z 03003KT 1/4SM R16/1000V1400FT FG VV001 01/01 A3021 RMK AO2 SLP241 T00110011",
   "station": "KBLI",
   "temperature": {
     "repr": "01",
@@ -88,8 +90,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2023-11-28T01:29:00Z",
-    "repr": "280129Z"
+    "dt": "2023-11-28T01:53:00Z",
+    "repr": "280153Z"
   },
   "units": {
     "accumulation": "in",
@@ -99,17 +101,24 @@
     "visibility": "sm",
     "wind_speed": "kt"
   },
-  "visibility": null,
+  "visibility": {
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
+  },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "030",
+    "spoken": "zero three zero",
+    "value": 30
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": [
