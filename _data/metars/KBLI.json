@@ -6,39 +6,53 @@
   },
   "clouds": [
     {
-      "altitude": 2,
+      "altitude": 1,
       "modifier": null,
-      "repr": "OVC002",
-      "type": "OVC"
+      "repr": "VV001",
+      "type": "VV"
     }
   ],
-  "density_altitude": -2225,
+  "density_altitude": -2153,
   "dewpoint": {
-    "repr": "M03",
-    "spoken": "minus three",
-    "value": -3
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-11-28T09:03:14.084933Z"
+    "timestamp": "2023-11-28T09:23:55.323940Z"
   },
-  "other": [],
+  "other": [
+    "M14KT"
+  ],
   "pressure_altitude": -130,
-  "raw": "KBLI 280853Z AUTO 00000KT 2SM R16/5500VP6000FT BR OVC002 M03/M03 A3022 RMK AO2 SLP244 I1000 I3000 T10281033 53004",
-  "relative_humidity": 0.9634740523958434,
-  "remarks": "RMK AO2 SLP244 I1000 I3000 T10281033 53004",
+  "raw": "KBLI 280916Z AUTO 00000KT M1/4SM R16/0800V1800FT FZFG VV001 M02/M02 A3022 RMK AO2 T10221022 PWINO FZRANO $",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 T10221022 PWINO FZRANO $",
   "remarks_info": {
     "codes": [
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "FZRANO",
+        "value": "Freezing rain information not available"
+      },
+      {
+        "repr": "PWINO",
+        "value": "Precipitation identifier information not available"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1033",
-      "spoken": "minus three point three",
-      "value": -3.3
+      "repr": "1022",
+      "spoken": "minus two point two",
+      "value": -2.2
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -47,54 +61,46 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.4,
-      "repr": "53004",
-      "tendency": "Decreasing or steady, then increasing"
-    },
-    "sea_level_pressure": {
-      "repr": "SLP244",
-      "spoken": "one zero two four point four",
-      "value": 1024.4
-    },
+    "pressure_tendency": null,
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "1028",
-      "spoken": "minus two point eight",
-      "value": -2.8
+      "repr": "1022",
+      "spoken": "minus two point two",
+      "value": -2.2
     }
   },
   "runway_visibility": [
     {
-      "repr": "R16/5500VP6000FT",
+      "repr": "R16/0800V1800FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
-          "repr": "5500",
-          "spoken": "five five hundred",
-          "value": 5500
+          "repr": "0800",
+          "spoken": "eight hundred",
+          "value": 800
         },
         {
-          "repr": "P6000",
-          "spoken": "greater than six thousand",
-          "value": null
+          "repr": "1800",
+          "spoken": "one eight hundred",
+          "value": 1800
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 280853Z 00000KT 2SM R16/5500VP6000FT BR OVC002 M03/M03 A3022 RMK AO2 SLP244 I1000 I3000 T10281033 53004",
+  "sanitized": "KBLI 280916Z 00000KT M14KT R16/0800V1800FT FZFG VV001 M02/M02 A3022 RMK AO2 T10221022 PWINO FZRANO $",
   "station": "KBLI",
   "temperature": {
-    "repr": "M03",
-    "spoken": "minus three",
-    "value": -3
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
   "time": {
-    "dt": "2023-11-28T08:53:00Z",
-    "repr": "280853Z"
+    "dt": "2023-11-28T09:16:00Z",
+    "repr": "280916Z"
   },
   "units": {
     "accumulation": "in",
@@ -104,11 +110,7 @@
     "visibility": "sm",
     "wind_speed": "kt"
   },
-  "visibility": {
-    "repr": "2",
-    "spoken": "two",
-    "value": 2
-  },
+  "visibility": null,
   "wind_direction": {
     "repr": "000",
     "spoken": "zero zero zero",
@@ -123,8 +125,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
