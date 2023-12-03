@@ -6,9 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 65,
+      "altitude": 43,
       "modifier": null,
-      "repr": "OVC065",
+      "repr": "OVC043",
       "type": "OVC"
     }
   ],
@@ -21,26 +21,18 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-03T15:01:28.360494Z"
+    "timestamp": "2023-12-03T15:22:24.387661Z"
   },
   "other": [],
   "pressure_altitude": 282,
-  "raw": "KAWO 031356Z AUTO 00000KT 10SM -RA OVC065 04/03 A2978 RMK AO2 RAB16 SLP089 P0000 T00440033",
+  "raw": "KAWO 031456Z AUTO 00000KT 6SM -RA BR OVC043 04/03 A2978 RMK AO2 SLP089 P0005 60005 T00440033 55012",
   "relative_humidity": 0.9255582325082627,
-  "remarks": "RMK AO2 RAB16 SLP089 P0000 T00440033",
+  "remarks": "RMK AO2 SLP089 P0005 60005 T00440033 55012",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAB16",
-        "value": "Rain began at :16"
       }
     ],
     "dewpoint_decimal": {
@@ -53,9 +45,21 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
+    "precip_36_hours": {
+      "repr": "60005",
+      "spoken": "zero point zero five",
+      "value": 0.05
+    },
+    "precip_hourly": {
+      "repr": "P0005",
+      "spoken": "zero point zero five",
+      "value": 0.05
+    },
+    "pressure_tendency": {
+      "change": 1.2,
+      "repr": "55012",
+      "tendency": "Decreasing, then increasing"
+    },
     "sea_level_pressure": {
       "repr": "SLP089",
       "spoken": "one zero zero eight point nine",
@@ -70,7 +74,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 031356Z 00000KT 10SM -RA OVC065 04/03 A2978 RMK AO2 RAB16 SLP089 P0000 T00440033",
+  "sanitized": "KAWO 031456Z 00000KT 6SM -RA BR OVC043 04/03 A2978 RMK AO2 SLP089 P0005 60005 T00440033 55012",
   "station": "KAWO",
   "temperature": {
     "repr": "04",
@@ -78,8 +82,8 @@
     "value": 4
   },
   "time": {
-    "dt": "2023-12-03T13:56:00Z",
-    "repr": "031356Z"
+    "dt": "2023-12-03T14:56:00Z",
+    "repr": "031456Z"
   },
   "units": {
     "accumulation": "in",
@@ -90,9 +94,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "6",
+    "spoken": "six",
+    "value": 6
   },
   "wind_direction": {
     "repr": "000",
@@ -110,6 +114,10 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
