@@ -6,15 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 36,
+      "altitude": 38,
       "modifier": null,
-      "repr": "FEW036",
+      "repr": "FEW038",
       "type": "FEW"
     },
     {
       "altitude": 47,
       "modifier": null,
-      "repr": "OVC047",
+      "repr": "BKN047",
+      "type": "BKN"
+    },
+    {
+      "altitude": 55,
+      "modifier": null,
+      "repr": "OVC055",
       "type": "OVC"
     }
   ],
@@ -22,16 +28,17 @@
   "dewpoint": null,
   "flight_rules": "VFR",
   "meta": {
+    "cache-timestamp": "2023-12-05T13:08:03.212000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-05T12:43:05.250812Z"
+    "timestamp": "2023-12-05T13:08:52.780739Z"
   },
   "other": [
     "12"
   ],
   "pressure_altitude": null,
-  "raw": "KORS 051235Z AUTO 00000KT 9SM -RA FEW036 OVC047 12/ A2983 RMK AO2",
+  "raw": "KORS 051255Z AUTO 00000KT 6SM -RA HZ FEW038 BKN047 OVC055 12/ A2983 RMK AO2 P0004",
   "relative_humidity": null,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0004",
   "remarks_info": {
     "codes": [
       {
@@ -46,7 +53,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0004",
+      "spoken": "zero point zero four",
+      "value": 0.04
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -54,12 +65,12 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 051235Z 00000KT 9SM -RA FEW036 OVC047 12 A2983 RMK AO2",
+  "sanitized": "KORS 051255Z 00000KT 6SM -RA HZ FEW038 BKN047 OVC055 12 A2983 RMK AO2 P0004",
   "station": "KORS",
   "temperature": null,
   "time": {
-    "dt": "2023-12-05T12:35:00Z",
-    "repr": "051235Z"
+    "dt": "2023-12-05T12:55:00Z",
+    "repr": "051255Z"
   },
   "units": {
     "accumulation": "in",
@@ -70,9 +81,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "repr": "6",
+    "spoken": "six",
+    "value": 6
   },
   "wind_direction": {
     "repr": "000",
@@ -90,6 +101,10 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "HZ",
+      "value": "Haze"
     }
   ]
 }
