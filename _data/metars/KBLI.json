@@ -12,9 +12,15 @@
       "type": "BKN"
     },
     {
-      "altitude": 46,
+      "altitude": 40,
       "modifier": null,
-      "repr": "OVC046",
+      "repr": "BKN040",
+      "type": "BKN"
+    },
+    {
+      "altitude": 90,
+      "modifier": null,
+      "repr": "OVC090",
       "type": "OVC"
     }
   ],
@@ -26,15 +32,15 @@
   },
   "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-12-06T14:40:03.580000Z",
+    "cache-timestamp": "2023-12-06T15:02:06.711000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-06T14:40:28.141640Z"
+    "timestamp": "2023-12-06T15:02:15.124911Z"
   },
   "other": [],
   "pressure_altitude": 250,
-  "raw": "KBLI 061419Z AUTO 18005KT 3SM BR BKN002 OVC046 08/08 A2984 RMK AO2 T00780078",
+  "raw": "KBLI 061453Z 18003KT 3SM BR BKN002 BKN040 OVC090 08/08 A2984 RMK AO2 CIG 001V012 SLP113 T00780078 58004",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00780078",
+  "remarks": "RMK AO2 CIG 001V012 SLP113 T00780078 58004",
   "remarks_info": {
     "codes": [
       {
@@ -54,8 +60,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.4,
+      "repr": "58004",
+      "tendency": "Steady or increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP113",
+      "spoken": "one zero one one point three",
+      "value": 1011.3
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -65,7 +79,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 061419Z 18005KT 3SM BR BKN002 OVC046 08/08 A2984 RMK AO2 T00780078",
+  "sanitized": "KBLI 061453Z 18003KT 3SM BR BKN002 BKN040 OVC090 08/08 A2984 RMK AO2 CIG 001V012 SLP113 T00780078 58004",
   "station": "KBLI",
   "temperature": {
     "repr": "08",
@@ -73,8 +87,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2023-12-06T14:19:00Z",
-    "repr": "061419Z"
+    "dt": "2023-12-06T14:53:00Z",
+    "repr": "061453Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,9 +110,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": [
