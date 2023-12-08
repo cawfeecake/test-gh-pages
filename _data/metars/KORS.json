@@ -1,30 +1,36 @@
 {
   "altimeter": {
-    "repr": "A3008",
-    "spoken": "three zero point zero eight",
-    "value": 30.08
+    "repr": "A3009",
+    "spoken": "three zero point zero nine",
+    "value": 30.09
   },
   "clouds": [
     {
-      "altitude": 42,
+      "altitude": 1,
       "modifier": null,
-      "repr": "BKN042",
+      "repr": "SCT001",
+      "type": "SCT"
+    },
+    {
+      "altitude": 44,
+      "modifier": null,
+      "repr": "BKN044",
       "type": "BKN"
     }
   ],
   "density_altitude": null,
   "dewpoint": null,
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2023-12-08T08:40:02.900000Z",
+    "cache-timestamp": "2023-12-08T09:02:09.727000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-08T08:40:36.276240Z"
+    "timestamp": "2023-12-08T09:02:11.525437Z"
   },
   "other": [
     "03"
   ],
   "pressure_altitude": null,
-  "raw": "KORS 080815Z AUTO 00000KT 6SM HZ BKN042 03/ A3008 RMK AO2",
+  "raw": "KORS 080835Z AUTO 00000KT 1 1/4SM BR SCT001 BKN044 03/ A3009 RMK AO2",
   "relative_humidity": null,
   "remarks": "RMK AO2",
   "remarks_info": {
@@ -49,12 +55,12 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 080815Z 00000KT 6SM HZ BKN042 03 A3008 RMK AO2",
+  "sanitized": "KORS 080835Z 00000KT 1 1/4SM BR SCT001 BKN044 03 A3009 RMK AO2",
   "station": "KORS",
   "temperature": null,
   "time": {
-    "dt": "2023-12-08T08:15:00Z",
-    "repr": "080815Z"
+    "dt": "2023-12-08T08:35:00Z",
+    "repr": "080835Z"
   },
   "units": {
     "accumulation": "in",
@@ -65,9 +71,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "6",
-    "spoken": "six",
-    "value": 6
+    "denominator": 4,
+    "normalized": "1 1/4",
+    "numerator": 5,
+    "repr": "5/4",
+    "spoken": "one and one quarter",
+    "value": 1.25
   },
   "wind_direction": {
     "repr": "000",
@@ -83,8 +92,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "HZ",
-      "value": "Haze"
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
