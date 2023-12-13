@@ -1,27 +1,33 @@
 {
   "altimeter": {
-    "repr": "A3019",
-    "spoken": "three zero point one nine",
-    "value": 30.19
+    "repr": "A3017",
+    "spoken": "three zero point one seven",
+    "value": 30.17
   },
-  "clouds": [],
-  "density_altitude": -1690,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -1670,
   "dewpoint": {
     "repr": "01",
     "spoken": "one",
     "value": 1
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-12-13T04:40:38.438000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-13T04:40:43.424517Z"
+    "timestamp": "2023-12-13T05:02:14.409410Z"
   },
   "other": [],
-  "pressure_altitude": -128,
-  "raw": "KAWO 130356Z AUTO 00000KT 7SM CLR 02/01 A3019 RMK AO2 SLP228 T00170011 FZRANO",
+  "pressure_altitude": -108,
+  "raw": "KAWO 130456Z AUTO 00000KT 1/2SM FG VV002 02/01 A3017 RMK AO2 SLP224 T00170011 FZRANO",
   "relative_humidity": 0.9578695064206159,
-  "remarks": "RMK AO2 SLP228 T00170011 FZRANO",
+  "remarks": "RMK AO2 SLP224 T00170011 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -47,9 +53,9 @@
     "precip_hourly": null,
     "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP228",
-      "spoken": "one zero two two point eight",
-      "value": 1022.8
+      "repr": "SLP224",
+      "spoken": "one zero two two point four",
+      "value": 1022.4
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -60,7 +66,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 130356Z 00000KT 7SM 02/01 A3019 RMK AO2 SLP228 T00170011 FZRANO",
+  "sanitized": "KAWO 130456Z 00000KT 1/2SM FG VV002 02/01 A3017 RMK AO2 SLP224 T00170011 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "02",
@@ -68,8 +74,8 @@
     "value": 2
   },
   "time": {
-    "dt": "2023-12-13T03:56:00Z",
-    "repr": "130356Z"
+    "dt": "2023-12-13T04:56:00Z",
+    "repr": "130456Z"
   },
   "units": {
     "accumulation": "in",
@@ -80,9 +86,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -96,5 +105,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ]
 }
