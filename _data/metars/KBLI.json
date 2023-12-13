@@ -20,12 +20,13 @@
   },
   "flight_rules": "LIFR",
   "meta": {
+    "cache-timestamp": "2023-12-13T11:40:03.546000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-13T11:21:03.756198Z"
+    "timestamp": "2023-12-13T11:40:37.052291Z"
   },
   "other": [],
   "pressure_altitude": 20,
-  "raw": "KBLI 131108Z AUTO 00000KT 1/2SM R16/3000V4000FT FZFG VV001 M01/M01 A3007 RMK AO2 T10111011 $",
+  "raw": "KBLI 131120Z AUTO 00000KT 3/4SM R16/4000VP6000FT BR VV001 M01/M01 A3007 RMK AO2 T10111011 $",
   "relative_humidity": 1,
   "remarks": "RMK AO2 T10111011 $",
   "remarks_info": {
@@ -63,25 +64,25 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/3000V4000FT",
+      "repr": "R16/4000VP6000FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
-          "repr": "3000",
-          "spoken": "three thousand",
-          "value": 3000
-        },
-        {
           "repr": "4000",
           "spoken": "four thousand",
           "value": 4000
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 131108Z 00000KT 1/2SM R16/3000V4000FT FZFG VV001 M01/M01 A3007 RMK AO2 T10111011 $",
+  "sanitized": "KBLI 131120Z 00000KT 3/4SM R16/4000VP6000FT BR VV001 M01/M01 A3007 RMK AO2 T10111011 $",
   "station": "KBLI",
   "temperature": {
     "repr": "M01",
@@ -89,8 +90,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2023-12-13T11:08:00Z",
-    "repr": "131108Z"
+    "dt": "2023-12-13T11:20:00Z",
+    "repr": "131120Z"
   },
   "units": {
     "accumulation": "in",
@@ -101,12 +102,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 2,
-    "normalized": "1/2",
-    "numerator": 1,
-    "repr": "1/2",
-    "spoken": "one half",
-    "value": 0.5
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
     "repr": "000",
@@ -122,8 +123,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "FZFG",
-      "value": "Freezing Fog"
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
