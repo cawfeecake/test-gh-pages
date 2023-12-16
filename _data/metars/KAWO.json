@@ -4,24 +4,30 @@
     "spoken": "three zero point one nine",
     "value": 30.19
   },
-  "clouds": [],
-  "density_altitude": -1630,
+  "clouds": [
+    {
+      "altitude": 1,
+      "modifier": null,
+      "repr": "BKN001",
+      "type": "BKN"
+    }
+  ],
+  "density_altitude": -1654,
   "dewpoint": {
     "repr": "02",
     "spoken": "two",
     "value": 2
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2023-12-16T04:06:07.413000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-16T04:06:37.262485Z"
+    "timestamp": "2023-12-16T04:27:51.310098Z"
   },
   "other": [],
   "pressure_altitude": -128,
-  "raw": "KAWO 160356Z AUTO 00000KT 1SM BR CLR 02/02 A3019 RMK AO2 SLP229 T00220017 FZRANO",
-  "relative_humidity": 0.9649208694160765,
-  "remarks": "RMK AO2 SLP229 T00220017 FZRANO",
+  "raw": "KAWO 160416Z AUTO 00000KT 1/4SM FG BKN001 02/02 A3019 RMK AO2 FZRANO",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -33,11 +39,7 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": {
-      "repr": "0017",
-      "spoken": "one point seven",
-      "value": 1.7
-    },
+    "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -46,21 +48,13 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP229",
-      "spoken": "one zero two two point nine",
-      "value": 1022.9
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": {
-      "repr": "0022",
-      "spoken": "two point two",
-      "value": 2.2
-    }
+    "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 160356Z 00000KT 1SM BR 02/02 A3019 RMK AO2 SLP229 T00220017 FZRANO",
+  "sanitized": "KAWO 160416Z 00000KT 1/4SM FG BKN001 02/02 A3019 RMK AO2 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "02",
@@ -68,8 +62,8 @@
     "value": 2
   },
   "time": {
-    "dt": "2023-12-16T03:56:00Z",
-    "repr": "160356Z"
+    "dt": "2023-12-16T04:16:00Z",
+    "repr": "160416Z"
   },
   "units": {
     "accumulation": "in",
@@ -80,9 +74,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "1",
-    "spoken": "one",
-    "value": 1
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -98,8 +95,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
