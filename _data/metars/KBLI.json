@@ -8,8 +8,8 @@
     {
       "altitude": 100,
       "modifier": null,
-      "repr": "OVC100",
-      "type": "OVC"
+      "repr": "BKN100",
+      "type": "BKN"
     }
   ],
   "density_altitude": -1677,
@@ -18,17 +18,16 @@
     "spoken": "one",
     "value": 1
   },
-  "flight_rules": "IFR",
+  "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-12-16T08:40:06.223000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-16T08:40:32.217620Z"
+    "timestamp": "2023-12-16T09:01:20.042539Z"
   },
   "other": [],
   "pressure_altitude": -50,
-  "raw": "KBLI 160829Z AUTO 00000KT 1 1/4SM BR OVC100 01/01 A3014 RMK AO2 T00110006",
+  "raw": "KBLI 160853Z AUTO 00000KT 8SM BKN100 01/01 A3014 RMK AO2 SLP214 T00110006 58010",
   "relative_humidity": 0.9646099922239331,
-  "remarks": "RMK AO2 T00110006",
+  "remarks": "RMK AO2 SLP214 T00110006 58010",
   "remarks_info": {
     "codes": [
       {
@@ -48,8 +47,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 1,
+      "repr": "58010",
+      "tendency": "Steady or increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP214",
+      "spoken": "one zero two one point four",
+      "value": 1021.4
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,7 +66,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 160829Z 00000KT 1 1/4SM BR OVC100 01/01 A3014 RMK AO2 T00110006",
+  "sanitized": "KBLI 160853Z 00000KT 8SM BKN100 01/01 A3014 RMK AO2 SLP214 T00110006 58010",
   "station": "KBLI",
   "temperature": {
     "repr": "01",
@@ -67,8 +74,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2023-12-16T08:29:00Z",
-    "repr": "160829Z"
+    "dt": "2023-12-16T08:53:00Z",
+    "repr": "160853Z"
   },
   "units": {
     "accumulation": "in",
@@ -79,12 +86,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 4,
-    "normalized": "1 1/4",
-    "numerator": 5,
-    "repr": "5/4",
-    "spoken": "one and one quarter",
-    "value": 1.25
+    "repr": "8",
+    "spoken": "eight",
+    "value": 8
   },
   "wind_direction": {
     "repr": "000",
@@ -98,10 +102,5 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ]
+  "wx_codes": []
 }
