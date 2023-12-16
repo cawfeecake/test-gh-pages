@@ -4,23 +4,31 @@
     "spoken": "three zero point one four",
     "value": 30.14
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "altitude": 110,
+      "modifier": null,
+      "repr": "FEW110",
+      "type": "FEW"
+    }
+  ],
   "density_altitude": -1737,
   "dewpoint": {
     "repr": "00",
     "spoken": "zero",
     "value": 0
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
+    "cache-timestamp": "2023-12-16T15:22:05.116000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-16T15:01:21.949214Z"
+    "timestamp": "2023-12-16T15:22:33.594418Z"
   },
   "other": [],
   "pressure_altitude": -50,
-  "raw": "KBLI 161453Z AUTO 00000KT 3SM BR CLR 01/00 A3014 RMK AO2 SLP217 T00060000 55002",
+  "raw": "KBLI 161508Z AUTO 00000KT 2 1/2SM BR FEW110 01/00 A3014 RMK AO2 T00060000",
   "relative_humidity": 0.9574966857850682,
-  "remarks": "RMK AO2 SLP217 T00060000 55002",
+  "remarks": "RMK AO2 T00060000",
   "remarks_info": {
     "codes": [
       {
@@ -40,16 +48,8 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.2,
-      "repr": "55002",
-      "tendency": "Decreasing, then increasing"
-    },
-    "sea_level_pressure": {
-      "repr": "SLP217",
-      "spoken": "one zero two one point seven",
-      "value": 1021.7
-    },
+    "pressure_tendency": null,
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,7 +59,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 161453Z 00000KT 3SM BR 01/00 A3014 RMK AO2 SLP217 T00060000 55002",
+  "sanitized": "KBLI 161508Z 00000KT 2 1/2SM BR FEW110 01/00 A3014 RMK AO2 T00060000",
   "station": "KBLI",
   "temperature": {
     "repr": "01",
@@ -67,8 +67,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2023-12-16T14:53:00Z",
-    "repr": "161453Z"
+    "dt": "2023-12-16T15:08:00Z",
+    "repr": "161508Z"
   },
   "units": {
     "accumulation": "in",
@@ -79,9 +79,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
