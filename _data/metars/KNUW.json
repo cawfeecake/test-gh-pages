@@ -6,35 +6,61 @@
   },
   "clouds": [
     {
-      "altitude": 3,
+      "altitude": 1,
       "modifier": null,
-      "repr": "OVC003",
-      "type": "OVC"
+      "repr": "SCT001",
+      "type": "SCT"
+    },
+    {
+      "altitude": 6,
+      "modifier": null,
+      "repr": "BKN006",
+      "type": "BKN"
+    },
+    {
+      "altitude": 120,
+      "modifier": null,
+      "repr": "BKN120",
+      "type": "BKN"
+    },
+    {
+      "altitude": 220,
+      "modifier": null,
+      "repr": "BKN220",
+      "type": "BKN"
     }
   ],
-  "density_altitude": -1758,
+  "density_altitude": -1686,
   "dewpoint": {
-    "repr": "02",
-    "spoken": "two",
-    "value": 2
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2023-12-17T16:02:02.902000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-17T16:02:46.504431Z"
+    "timestamp": "2023-12-17T16:29:48.644317Z"
   },
   "other": [],
   "pressure_altitude": -233,
-  "raw": "KNUW 171453Z 12004KT 1/8SM FG OVC003 02/02 A3020 RMK SFC VIS 1/4 SLP231 T00220017 56005",
-  "relative_humidity": 0.9649208694160765,
-  "remarks": "RMK SFC VIS 1/4 SLP231 T00220017 56005",
+  "raw": "KNUW 171627Z 21003KT 1 1/2SM BR BCFG SCT001 BKN006 BKN120 BKN220 03/03 A3020 RMK AO2 TWR VIS 2 T00280028 $",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 TWR VIS 2 T00280028 $",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
-      "repr": "0017",
-      "spoken": "one point seven",
-      "value": 1.7
+      "repr": "0028",
+      "spoken": "two point eight",
+      "value": 2.8
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -43,35 +69,27 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.5,
-      "repr": "56005",
-      "tendency": "Decreasing, then steady"
-    },
-    "sea_level_pressure": {
-      "repr": "SLP231",
-      "spoken": "one zero two three point one",
-      "value": 1023.1
-    },
+    "pressure_tendency": null,
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0022",
-      "spoken": "two point two",
-      "value": 2.2
+      "repr": "0028",
+      "spoken": "two point eight",
+      "value": 2.8
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 171453Z 12004KT 1/8SM FG OVC003 02/02 A3020 RMK SFC VIS 1/4 SLP231 T00220017 56005",
+  "sanitized": "KNUW 171627Z 21003KT 1 1/2SM BR BCFG SCT001 BKN006 BKN120 BKN220 03/03 A3020 RMK AO2 TWR VIS 2 T00280028 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "02",
-    "spoken": "two",
-    "value": 2
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "time": {
-    "dt": "2023-12-17T14:53:00Z",
-    "repr": "171453Z"
+    "dt": "2023-12-17T16:27:00Z",
+    "repr": "171627Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,29 +100,33 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 8,
-    "normalized": "1/8",
-    "numerator": 1,
-    "repr": "1/8",
-    "spoken": "one eight",
-    "value": 0.125
+    "denominator": 2,
+    "normalized": "1 1/2",
+    "numerator": 3,
+    "repr": "3/2",
+    "spoken": "one and one half",
+    "value": 1.5
   },
   "wind_direction": {
-    "repr": "120",
-    "spoken": "one two zero",
-    "value": 120
+    "repr": "210",
+    "spoken": "two one zero",
+    "value": 210
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "FG",
-      "value": "Fog"
+      "repr": "BR",
+      "value": "Mist"
+    },
+    {
+      "repr": "BCFG",
+      "value": "Patchy Fog"
     }
   ]
 }
