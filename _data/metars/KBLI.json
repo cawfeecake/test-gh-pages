@@ -6,29 +6,34 @@
   },
   "clouds": [
     {
-      "altitude": 60,
+      "altitude": 50,
       "modifier": null,
-      "repr": "OVC060",
+      "repr": "BKN050",
+      "type": "BKN"
+    },
+    {
+      "altitude": 70,
+      "modifier": null,
+      "repr": "OVC070",
       "type": "OVC"
     }
   ],
-  "density_altitude": -353,
+  "density_altitude": -485,
   "dewpoint": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2023-12-18T23:40:02.837000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-18T23:40:31.743996Z"
+    "timestamp": "2023-12-19T00:27:46.058060Z"
   },
   "other": [],
   "pressure_altitude": 470,
-  "raw": "KBLI 182253Z 00000KT 10SM OVC060 08/05 A2962 RMK AO2 RAB03E24 SLP039 P0000 T00780050",
-  "relative_humidity": 0.824548883443889,
-  "remarks": "RMK AO2 RAB03E24 SLP039 P0000 T00780050",
+  "raw": "KBLI 182353Z 00000KT 5SM -RA BR BKN050 OVC070 07/06 A2962 RMK AO2 RAB12 SLP039 P0005 60006 T00670061 10078 20056 56020",
+  "relative_humidity": 0.9595042676817481,
+  "remarks": "RMK AO2 RAB12 SLP039 P0005 60006 T00670061 10078 20056 56020",
   "remarks_info": {
     "codes": [
       {
@@ -36,23 +41,43 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
+        "repr": "RAB12",
+        "value": "Rain began at :12"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0050",
-      "spoken": "five point zero",
-      "value": 5
+      "repr": "0061",
+      "spoken": "six point one",
+      "value": 6.1
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10078",
+      "spoken": "seven point eight",
+      "value": 7.8
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20056",
+      "spoken": "five point six",
+      "value": 5.6
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
+    "precip_36_hours": {
+      "repr": "60006",
+      "spoken": "zero point zero six",
+      "value": 0.06
+    },
+    "precip_hourly": {
+      "repr": "P0005",
+      "spoken": "zero point zero five",
+      "value": 0.05
+    },
+    "pressure_tendency": {
+      "change": 2,
+      "repr": "56020",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP039",
       "spoken": "one zero zero three point nine",
@@ -61,22 +86,22 @@
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0078",
-      "spoken": "seven point eight",
-      "value": 7.8
+      "repr": "0067",
+      "spoken": "six point seven",
+      "value": 6.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 182253Z 00000KT 10SM OVC060 08/05 A2962 RMK AO2 RAB03E24 SLP039 P0000 T00780050",
+  "sanitized": "KBLI 182353Z 00000KT 5SM -RA BR BKN050 OVC070 07/06 A2962 RMK AO2 RAB12 SLP039 P0005 60006 T00670061 10078 20056 56020",
   "station": "KBLI",
   "temperature": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
   "time": {
-    "dt": "2023-12-18T22:53:00Z",
-    "repr": "182253Z"
+    "dt": "2023-12-18T23:53:00Z",
+    "repr": "182353Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,9 +112,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
     "repr": "000",
@@ -103,5 +128,14 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
