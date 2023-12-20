@@ -6,9 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 80,
+      "altitude": 75,
       "modifier": null,
-      "repr": "BKN080",
+      "repr": "BKN075",
       "type": "BKN"
     }
   ],
@@ -20,15 +20,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-12-20T15:20:07.252000Z",
+    "cache-timestamp": "2023-12-20T15:40:05.794000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-20T15:20:38.748908Z"
+    "timestamp": "2023-12-20T15:40:33.946232Z"
   },
   "other": [],
   "pressure_altitude": 210,
-  "raw": "KBLI 201453Z 00000KT 10SM BKN080 04/04 A2988 RMK AO2 SLP126 T00390039 53012",
+  "raw": "KBLI 201520Z 00000KT 10SM R16/3500VP6000FT BKN075 04/04 A2988 RMK AO2 T00390039",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP126 T00390039 53012",
+  "remarks": "RMK AO2 T00390039",
   "remarks_info": {
     "codes": [
       {
@@ -48,16 +48,8 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 1.2,
-      "repr": "53012",
-      "tendency": "Decreasing or steady, then increasing"
-    },
-    "sea_level_pressure": {
-      "repr": "SLP126",
-      "spoken": "one zero one two point six",
-      "value": 1012.6
-    },
+    "pressure_tendency": null,
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -66,8 +58,27 @@
       "value": 3.9
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 201453Z 00000KT 10SM BKN080 04/04 A2988 RMK AO2 SLP126 T00390039 53012",
+  "runway_visibility": [
+    {
+      "repr": "R16/3500VP6000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "3500",
+          "spoken": "three five hundred",
+          "value": 3500
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 201520Z 00000KT 10SM R16/3500VP6000FT BKN075 04/04 A2988 RMK AO2 T00390039",
   "station": "KBLI",
   "temperature": {
     "repr": "04",
@@ -75,8 +86,8 @@
     "value": 4
   },
   "time": {
-    "dt": "2023-12-20T14:53:00Z",
-    "repr": "201453Z"
+    "dt": "2023-12-20T15:20:00Z",
+    "repr": "201520Z"
   },
   "units": {
     "accumulation": "in",
