@@ -1,11 +1,24 @@
 {
   "altimeter": {
-    "repr": "A3009",
-    "spoken": "three zero point zero nine",
-    "value": 30.09
+    "repr": "A3008",
+    "spoken": "three zero point zero eight",
+    "value": 30.08
   },
-  "clouds": [],
-  "density_altitude": -351,
+  "clouds": [
+    {
+      "altitude": 80,
+      "modifier": null,
+      "repr": "SCT080",
+      "type": "SCT"
+    },
+    {
+      "altitude": 85,
+      "modifier": null,
+      "repr": "SCT085",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": -341,
   "dewpoint": {
     "repr": "11",
     "spoken": "one one",
@@ -13,13 +26,13 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-12-28T22:26:12.430000Z",
+    "cache-timestamp": "2023-12-28T22:40:24.587000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-28T22:26:32.731652Z"
+    "timestamp": "2023-12-28T22:40:26.644138Z"
   },
   "other": [],
-  "pressure_altitude": -26,
-  "raw": "KBVS 282155Z AUTO 05005G15KT 10SM CLR 12/11 A3009 RMK A01",
+  "pressure_altitude": -16,
+  "raw": "KBVS 282215Z AUTO 05011KT 10SM SCT080 SCT085 12/11 A3008 RMK A01",
   "relative_humidity": 0.9359723503065726,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -39,7 +52,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 282155Z 05005G15KT 10SM 12/11 A3009 RMK A01",
+  "sanitized": "KBVS 282215Z 05011KT 10SM SCT080 SCT085 12/11 A3008 RMK A01",
   "station": "KBVS",
   "temperature": {
     "repr": "12",
@@ -47,8 +60,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2023-12-28T21:55:00Z",
-    "repr": "282155Z"
+    "dt": "2023-12-28T22:15:00Z",
+    "repr": "282215Z"
   },
   "units": {
     "accumulation": "in",
@@ -68,15 +81,11 @@
     "spoken": "zero five zero",
     "value": 50
   },
-  "wind_gust": {
-    "repr": "15",
-    "spoken": "one five",
-    "value": 15
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "wind_variable_direction": [],
   "wx_codes": []
