@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3001",
-    "spoken": "three zero point zero one",
-    "value": 30.01
+    "repr": "A3004",
+    "spoken": "three zero point zero four",
+    "value": 30.04
   },
-  "clouds": [],
-  "density_altitude": -143,
+  "clouds": [
+    {
+      "altitude": 42,
+      "modifier": null,
+      "repr": "SCT042",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": -173,
   "dewpoint": {
     "repr": "05",
     "spoken": "five",
@@ -13,14 +20,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
+    "cache-timestamp": "2023-12-28T16:30:06.751000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-28T16:05:18.619791Z"
+    "timestamp": "2023-12-28T16:30:22.462243Z"
   },
   "other": [],
-  "pressure_altitude": 80,
-  "raw": "KBLI 281453Z 16015G28KT 10SM CLR 13/05 A3001 RMK AO2 PK WND 20028/1446 SLP168 T01280050 51010",
+  "pressure_altitude": 50,
+  "raw": "KBLI 281553Z 17011G25KT 10SM SCT042 13/05 A3004 RMK AO2 PK WND 17026/1517 SLP179 T01280050",
   "relative_humidity": 0.5904131923821705,
-  "remarks": "RMK AO2 PK WND 20028/1446 SLP168 T01280050 51010",
+  "remarks": "RMK AO2 PK WND 17026/1517 SLP179 T01280050",
   "remarks_info": {
     "codes": [
       {
@@ -40,15 +48,11 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 1,
-      "repr": "51010",
-      "tendency": "Increasing, then steady"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP168",
-      "spoken": "one zero one six point eight",
-      "value": 1016.8
+      "repr": "SLP179",
+      "spoken": "one zero one seven point nine",
+      "value": 1017.9
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -59,7 +63,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 281453Z 16015G28KT 10SM 13/05 A3001 RMK AO2 PK WND 20028/1446 SLP168 T01280050 51010",
+  "sanitized": "KBLI 281553Z 17011G25KT 10SM SCT042 13/05 A3004 RMK AO2 PK WND 17026/1517 SLP179 T01280050",
   "station": "KBLI",
   "temperature": {
     "repr": "13",
@@ -67,8 +71,8 @@
     "value": 13
   },
   "time": {
-    "dt": "2023-12-28T14:53:00Z",
-    "repr": "281453Z"
+    "dt": "2023-12-28T15:53:00Z",
+    "repr": "281553Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,19 +88,19 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "160",
-    "spoken": "one six zero",
-    "value": 160
+    "repr": "170",
+    "spoken": "one seven zero",
+    "value": 170
   },
   "wind_gust": {
-    "repr": "28",
-    "spoken": "two eight",
-    "value": 28
+    "repr": "25",
+    "spoken": "two five",
+    "value": 25
   },
   "wind_speed": {
-    "repr": "15",
-    "spoken": "one five",
-    "value": 15
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "wind_variable_direction": [],
   "wx_codes": []
