@@ -8,13 +8,7 @@
     {
       "altitude": 70,
       "modifier": null,
-      "repr": "BKN070",
-      "type": "BKN"
-    },
-    {
-      "altitude": 100,
-      "modifier": null,
-      "repr": "OVC100",
+      "repr": "OVC070",
       "type": "OVC"
     }
   ],
@@ -26,20 +20,24 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2023-12-29T02:40:04.750000Z",
+    "cache-timestamp": "2023-12-29T03:02:47.361000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2023-12-29T02:40:27.663665Z"
+    "timestamp": "2023-12-29T03:03:31.014434Z"
   },
   "other": [],
   "pressure_altitude": 40,
-  "raw": "KBLI 290153Z 03007KT 10SM BKN070 OVC100 10/07 A3005 RMK AO2 SLP183 T01000067",
+  "raw": "KBLI 290253Z 02003KT 10SM OVC070 10/07 A3005 RMK AO2 RAB0159E24 SLP183 P0000 60000 T01000067 50000",
   "relative_humidity": 0.7994238789303805,
-  "remarks": "RMK AO2 SLP183 T01000067",
+  "remarks": "RMK AO2 RAB0159E24 SLP183 P0000 60000 T01000067 50000",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -52,9 +50,17 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0,
+      "repr": "50000",
+      "tendency": "Increasing, then decreasing"
+    },
     "sea_level_pressure": {
       "repr": "SLP183",
       "spoken": "one zero one eight point three",
@@ -69,7 +75,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 290153Z 03007KT 10SM BKN070 OVC100 10/07 A3005 RMK AO2 SLP183 T01000067",
+  "sanitized": "KBLI 290253Z 02003KT 10SM OVC070 10/07 A3005 RMK AO2 RAB0159E24 SLP183 P0000 60000 T01000067 50000",
   "station": "KBLI",
   "temperature": {
     "repr": "10",
@@ -77,8 +83,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2023-12-29T01:53:00Z",
-    "repr": "290153Z"
+    "dt": "2023-12-29T02:53:00Z",
+    "repr": "290253Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,15 +100,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "030",
-    "spoken": "zero three zero",
-    "value": 30
+    "repr": "020",
+    "spoken": "zero two zero",
+    "value": 20
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "07",
-    "spoken": "seven",
-    "value": 7
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": []
