@@ -1,27 +1,34 @@
 {
   "altimeter": {
-    "repr": "A3023",
-    "spoken": "three zero point two three",
-    "value": 30.23
+    "repr": "A3024",
+    "spoken": "three zero point two four",
+    "value": 30.24
   },
-  "clouds": [],
-  "density_altitude": -2054,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -2016,
   "dewpoint": {
     "repr": "M01",
     "spoken": "minus one",
     "value": -1
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2024-01-01T09:40:05.499000Z",
+    "cache-timestamp": "2024-01-01T10:02:42.223000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-01T09:40:36.325316Z"
+    "timestamp": "2024-01-01T10:03:38.824306Z"
   },
   "other": [],
-  "pressure_altitude": -168,
-  "raw": "KAWO 010922Z AUTO 01003KT 3SM BR CLR M01/M01 A3023 RMK AO2 FZRANO",
+  "pressure_altitude": -178,
+  "raw": "KAWO 010956Z AUTO 00000KT 1SM BR VV002 M01/M01 A3024 RMK AO2 SLP246 T10061006 FZRANO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 FZRANO",
+  "remarks": "RMK AO2 SLP246 T10061006 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -33,7 +40,11 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -42,13 +53,21 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP246",
+      "spoken": "one zero two four point six",
+      "value": 1024.6
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 010922Z 01003KT 3SM BR M01/M01 A3023 RMK AO2 FZRANO",
+  "sanitized": "KAWO 010956Z 00000KT 1SM BR VV002 M01/M01 A3024 RMK AO2 SLP246 T10061006 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "M01",
@@ -56,8 +75,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2024-01-01T09:22:00Z",
-    "repr": "010922Z"
+    "dt": "2024-01-01T09:56:00Z",
+    "repr": "010956Z"
   },
   "units": {
     "accumulation": "in",
@@ -68,20 +87,20 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "repr": "1",
+    "spoken": "one",
+    "value": 1
   },
   "wind_direction": {
-    "repr": "010",
-    "spoken": "zero one zero",
-    "value": 10
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
   "wx_codes": [
