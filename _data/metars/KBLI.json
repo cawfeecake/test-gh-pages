@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 27,
+      "altitude": 26,
       "modifier": null,
-      "repr": "SCT027",
-      "type": "SCT"
-    },
-    {
-      "altitude": 50,
-      "modifier": null,
-      "repr": "BKN050",
+      "repr": "BKN026",
       "type": "BKN"
     },
     {
-      "altitude": 60,
+      "altitude": 38,
       "modifier": null,
-      "repr": "OVC060",
+      "repr": "BKN038",
+      "type": "BKN"
+    },
+    {
+      "altitude": 55,
+      "modifier": null,
+      "repr": "OVC055",
       "type": "OVC"
     }
   ],
@@ -30,16 +30,16 @@
     "spoken": "four",
     "value": 4
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-04T16:05:53.923720Z"
+    "timestamp": "2024-01-04T16:31:29.192259Z"
   },
   "other": [],
   "pressure_altitude": 50,
-  "raw": "KBLI 041553Z 14014KT 10SM SCT027 BKN050 OVC060 07/04 A3004 RMK AO2 RAE03 SLP180 P0000 T00670039",
+  "raw": "KBLI 041608Z 14012KT 10SM -RA BKN026 BKN038 OVC055 07/04 A3004 RMK AO2 RAB03 P0000 T00670039",
   "relative_humidity": 0.8231403572695032,
-  "remarks": "RMK AO2 RAE03 SLP180 P0000 T00670039",
+  "remarks": "RMK AO2 RAB03 P0000 T00670039",
   "remarks_info": {
     "codes": [
       {
@@ -51,8 +51,8 @@
         "value": "Trace amount of rain in the last hour"
       },
       {
-        "repr": "RAE03",
-        "value": "Rain ended at :03"
+        "repr": "RAB03",
+        "value": "Rain began at :03"
       }
     ],
     "dewpoint_decimal": {
@@ -68,11 +68,7 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP180",
-      "spoken": "one zero one eight point zero",
-      "value": 1018
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -82,7 +78,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 041553Z 14014KT 10SM SCT027 BKN050 OVC060 07/04 A3004 RMK AO2 RAE03 SLP180 P0000 T00670039",
+  "sanitized": "KBLI 041608Z 14012KT 10SM -RA BKN026 BKN038 OVC055 07/04 A3004 RMK AO2 RAB03 P0000 T00670039",
   "station": "KBLI",
   "temperature": {
     "repr": "07",
@@ -90,8 +86,8 @@
     "value": 7
   },
   "time": {
-    "dt": "2024-01-04T15:53:00Z",
-    "repr": "041553Z"
+    "dt": "2024-01-04T16:08:00Z",
+    "repr": "041608Z"
   },
   "units": {
     "accumulation": "in",
@@ -113,10 +109,15 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "14",
-    "spoken": "one four",
-    "value": 14
+    "repr": "12",
+    "spoken": "one two",
+    "value": 12
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
