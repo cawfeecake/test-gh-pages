@@ -6,15 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 29,
+      "altitude": 26,
       "modifier": null,
-      "repr": "BKN029",
+      "repr": "BKN026",
       "type": "BKN"
     },
     {
-      "altitude": 75,
+      "altitude": 35,
       "modifier": null,
-      "repr": "OVC075",
+      "repr": "OVC035",
       "type": "OVC"
     }
   ],
@@ -26,20 +26,27 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-01-05T21:40:04.786000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-05T21:40:38.615657Z"
+    "timestamp": "2024-01-05T22:01:20.245495Z"
   },
   "other": [],
   "pressure_altitude": -20,
-  "raw": "KBLI 052125Z 16019G35KT 10SM BKN029 OVC075 08/03 A3011 RMK AO2 PK WND 16035/2120 T00780033",
+  "raw": "KBLI 052153Z 17019G32KT 10SM -RA BKN026 OVC035 08/03 A3011 RMK AO2 PK WND 16035/2120 RAB40 SLP203 P0000 T00780033",
   "relative_humidity": 0.731846990709336,
-  "remarks": "RMK AO2 PK WND 16035/2120 T00780033",
+  "remarks": "RMK AO2 PK WND 16035/2120 RAB40 SLP203 P0000 T00780033",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB40",
+        "value": "Rain began at :40"
       }
     ],
     "dewpoint_decimal": {
@@ -55,7 +62,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP203",
+      "spoken": "one zero two zero point three",
+      "value": 1020.3
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -65,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 052125Z 16019G35KT 10SM BKN029 OVC075 08/03 A3011 RMK AO2 PK WND 16035/2120 T00780033",
+  "sanitized": "KBLI 052153Z 17019G32KT 10SM -RA BKN026 OVC035 08/03 A3011 RMK AO2 PK WND 16035/2120 RAB40 SLP203 P0000 T00780033",
   "station": "KBLI",
   "temperature": {
     "repr": "08",
@@ -73,8 +84,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2024-01-05T21:25:00Z",
-    "repr": "052125Z"
+    "dt": "2024-01-05T21:53:00Z",
+    "repr": "052153Z"
   },
   "units": {
     "accumulation": "in",
@@ -90,14 +101,14 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "160",
-    "spoken": "one six zero",
-    "value": 160
+    "repr": "170",
+    "spoken": "one seven zero",
+    "value": 170
   },
   "wind_gust": {
-    "repr": "35",
-    "spoken": "three five",
-    "value": 35
+    "repr": "32",
+    "spoken": "three two",
+    "value": 32
   },
   "wind_speed": {
     "repr": "19",
@@ -105,5 +116,10 @@
     "value": 19
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
