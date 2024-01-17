@@ -21,18 +21,22 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-17T16:43:35.076231Z"
+    "timestamp": "2024-01-17T17:01:47.911080Z"
   },
   "other": [],
   "pressure_altitude": 521,
-  "raw": "KORS 171635Z AUTO VRB06G12KT 1/2SM -SN BR OVC003 00/M00 A2943 RMK AO2",
+  "raw": "KORS 171655Z AUTO VRB06KT 1/2SM FG OVC003 00/M00 A2943 RMK AO2 P0006 PWINO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0006 PWINO",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "PWINO",
+        "value": "Precipitation identifier information not available"
       }
     ],
     "dewpoint_decimal": null,
@@ -42,7 +46,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0006",
+      "spoken": "zero point zero six",
+      "value": 0.06
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -50,7 +58,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 171635Z VRB06G12KT 1/2SM -SN BR OVC003 00/M00 A2943 RMK AO2",
+  "sanitized": "KORS 171655Z VRB06KT 1/2SM FG OVC003 00/M00 A2943 RMK AO2 P0006 PWINO",
   "station": "KORS",
   "temperature": {
     "repr": "00",
@@ -58,8 +66,8 @@
     "value": 0
   },
   "time": {
-    "dt": "2024-01-17T16:35:00Z",
-    "repr": "171635Z"
+    "dt": "2024-01-17T16:55:00Z",
+    "repr": "171655Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,11 +90,7 @@
     "spoken": "variable",
     "value": null
   },
-  "wind_gust": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
-  },
+  "wind_gust": null,
   "wind_speed": {
     "repr": "06",
     "spoken": "six",
@@ -95,12 +99,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "-SN",
-      "value": "Light Snow"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
