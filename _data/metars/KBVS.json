@@ -1,43 +1,43 @@
 {
   "altimeter": {
-    "repr": "A3015",
-    "spoken": "three zero point one five",
-    "value": 30.15
+    "repr": "A3016",
+    "spoken": "three zero point one six",
+    "value": 30.16
   },
   "clouds": [
     {
+      "altitude": 3,
+      "modifier": null,
+      "repr": "SCT003",
+      "type": "SCT"
+    },
+    {
       "altitude": 23,
       "modifier": null,
-      "repr": "FEW023",
-      "type": "FEW"
+      "repr": "SCT023",
+      "type": "SCT"
     },
     {
       "altitude": 29,
       "modifier": null,
-      "repr": "SCT029",
-      "type": "SCT"
-    },
-    {
-      "altitude": 42,
-      "modifier": null,
-      "repr": "OVC042",
-      "type": "OVC"
+      "repr": "BKN029",
+      "type": "BKN"
     }
   ],
-  "density_altitude": -1851,
+  "density_altitude": -1861,
   "dewpoint": {
-    "repr": "00",
+    "repr": "M00",
     "spoken": "zero",
     "value": 0
   },
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-18T17:01:34.906729Z"
+    "timestamp": "2024-01-18T17:27:16.653524Z"
   },
   "other": [],
-  "pressure_altitude": -86,
-  "raw": "KBVS 181655Z AUTO 00000KT 10SM FEW023 SCT029 OVC042 00/00 A3015 RMK A01",
+  "pressure_altitude": -96,
+  "raw": "KBVS 181715Z AUTO 00000KT 1 1/2SM BR SCT003 SCT023 BKN029 M00/M00 A3016 RMK A01",
   "relative_humidity": 1,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -57,16 +57,16 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 181655Z 00000KT 10SM FEW023 SCT029 OVC042 00/00 A3015 RMK A01",
+  "sanitized": "KBVS 181715Z 00000KT 1 1/2SM BR SCT003 SCT023 BKN029 M00/M00 A3016 RMK A01",
   "station": "KBVS",
   "temperature": {
-    "repr": "00",
+    "repr": "M00",
     "spoken": "zero",
     "value": 0
   },
   "time": {
-    "dt": "2024-01-18T16:55:00Z",
-    "repr": "181655Z"
+    "dt": "2024-01-18T17:15:00Z",
+    "repr": "181715Z"
   },
   "units": {
     "accumulation": "in",
@@ -77,9 +77,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 2,
+    "normalized": "1 1/2",
+    "numerator": 3,
+    "repr": "3/2",
+    "spoken": "one and one half",
+    "value": 1.5
   },
   "wind_direction": {
     "repr": "000",
@@ -93,5 +96,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
