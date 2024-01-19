@@ -1,11 +1,24 @@
 {
   "altimeter": {
-    "repr": "A2991",
-    "spoken": "two nine point nine one",
-    "value": 29.91
+    "repr": "A2989",
+    "spoken": "two nine point eight nine",
+    "value": 29.89
   },
-  "clouds": [],
-  "density_altitude": -1131,
+  "clouds": [
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "FEW050",
+      "type": "FEW"
+    },
+    {
+      "altitude": 80,
+      "modifier": null,
+      "repr": "FEW080",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": -1111,
   "dewpoint": {
     "repr": "04",
     "spoken": "four",
@@ -13,15 +26,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-01-19T22:40:03.770000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-19T22:40:47.050851Z"
+    "timestamp": "2024-01-19T23:02:06.342257Z"
   },
   "other": [],
-  "pressure_altitude": 154,
-  "raw": "KBVS 192215Z AUTO 00000KT 10SM CLR 04/04 A2991 RMK A01",
+  "pressure_altitude": 174,
+  "raw": "KBVS 192255Z AUTO 00000KT 10SM FEW050 FEW080 04/04 A2989 RMK A01 P0002",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0002",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -31,7 +43,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -39,7 +55,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 192215Z 00000KT 10SM 04/04 A2991 RMK A01",
+  "sanitized": "KBVS 192255Z 00000KT 10SM FEW050 FEW080 04/04 A2989 RMK A01 P0002",
   "station": "KBVS",
   "temperature": {
     "repr": "04",
@@ -47,8 +63,8 @@
     "value": 4
   },
   "time": {
-    "dt": "2024-01-19T22:15:00Z",
-    "repr": "192215Z"
+    "dt": "2024-01-19T22:55:00Z",
+    "repr": "192255Z"
   },
   "units": {
     "accumulation": "in",
