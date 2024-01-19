@@ -6,15 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 40,
-      "modifier": null,
-      "repr": "FEW040",
-      "type": "FEW"
-    },
-    {
       "altitude": 60,
       "modifier": null,
-      "repr": "OVC060",
+      "repr": "BKN060",
+      "type": "BKN"
+    },
+    {
+      "altitude": 80,
+      "modifier": null,
+      "repr": "OVC080",
       "type": "OVC"
     }
   ],
@@ -24,17 +24,16 @@
     "spoken": "one",
     "value": 1
   },
-  "flight_rules": "IFR",
+  "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-01-19T07:40:09.374000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-19T07:40:33.594246Z"
+    "timestamp": "2024-01-19T08:07:44.733035Z"
   },
   "other": [],
   "pressure_altitude": -18,
-  "raw": "KAWO 190704Z AUTO 00000KT 2 1/2SM -RA BR FEW040 OVC060 01/01 A3008 RMK AO2 P0000 FZRANO",
+  "raw": "KAWO 190723Z AUTO 00000KT 3SM -RA BR BKN060 OVC080 01/01 A3008 RMK AO2 P0001 FZRANO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 P0000 FZRANO",
+  "remarks": "RMK AO2 P0001 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -44,10 +43,6 @@
       {
         "repr": "FZRANO",
         "value": "Freezing rain information not available"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": null,
@@ -57,7 +52,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -65,7 +64,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 190704Z 00000KT 2 1/2SM -RA BR FEW040 OVC060 01/01 A3008 RMK AO2 P0000 FZRANO",
+  "sanitized": "KAWO 190723Z 00000KT 3SM -RA BR BKN060 OVC080 01/01 A3008 RMK AO2 P0001 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "01",
@@ -73,8 +72,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2024-01-19T07:04:00Z",
-    "repr": "190704Z"
+    "dt": "2024-01-19T07:23:00Z",
+    "repr": "190723Z"
   },
   "units": {
     "accumulation": "in",
@@ -85,12 +84,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 2,
-    "normalized": "2 1/2",
-    "numerator": 5,
-    "repr": "5/2",
-    "spoken": "two and one half",
-    "value": 2.5
+    "repr": "3",
+    "spoken": "three",
+    "value": 3
   },
   "wind_direction": {
     "repr": "000",
