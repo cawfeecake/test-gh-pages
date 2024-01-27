@@ -1,24 +1,30 @@
 {
   "altimeter": {
-    "repr": "A3002",
-    "spoken": "three zero point zero two",
-    "value": 30.02
+    "repr": "A3001",
+    "spoken": "three zero point zero one",
+    "value": 30.01
   },
   "clouds": [
     {
-      "altitude": 27,
+      "altitude": 38,
       "modifier": null,
-      "repr": "FEW027",
-      "type": "FEW"
+      "repr": "BKN038",
+      "type": "BKN"
     },
     {
-      "altitude": 36,
+      "altitude": 47,
       "modifier": null,
-      "repr": "OVC036",
+      "repr": "BKN047",
+      "type": "BKN"
+    },
+    {
+      "altitude": 60,
+      "modifier": null,
+      "repr": "OVC060",
       "type": "OVC"
     }
   ],
-  "density_altitude": -644,
+  "density_altitude": -718,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -26,15 +32,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-01-27T14:40:06.051000Z",
     "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-27T14:40:32.757329Z"
+    "timestamp": "2024-01-27T15:01:06.604011Z"
   },
   "other": [],
-  "pressure_altitude": 42,
-  "raw": "KAWO 271404Z AUTO 01006KT 10SM -RA FEW027 OVC036 09/08 A3002 RMK AO2 RAB03 P0000",
-  "relative_humidity": 0.9344901544791844,
-  "remarks": "RMK AO2 RAB03 P0000",
+  "pressure_altitude": 52,
+  "raw": "KAWO 271456Z AUTO 00000KT 10SM RA BKN038 BKN047 OVC060 08/08 A3001 RMK AO2 RAB03 SLP168 P0003 60003 T00830078 56009",
+  "relative_humidity": 0.9665731399975396,
+  "remarks": "RMK AO2 RAB03 SLP168 P0003 60003 T00830078 56009",
   "remarks_info": {
     "codes": [
       {
@@ -42,39 +47,59 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
         "repr": "RAB03",
         "value": "Rain began at :03"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0078",
+      "spoken": "seven point eight",
+      "value": 7.8
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "precip_36_hours": {
+      "repr": "60003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
+    "pressure_tendency": {
+      "change": 0.9,
+      "repr": "56009",
+      "tendency": "Decreasing, then steady"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP168",
+      "spoken": "one zero one six point eight",
+      "value": 1016.8
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0083",
+      "spoken": "eight point three",
+      "value": 8.3
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 271404Z 01006KT 10SM -RA FEW027 OVC036 09/08 A3002 RMK AO2 RAB03 P0000",
+  "sanitized": "KAWO 271456Z 00000KT 10SM RA BKN038 BKN047 OVC060 08/08 A3001 RMK AO2 RAB03 SLP168 P0003 60003 T00830078 56009",
   "station": "KAWO",
   "temperature": {
-    "repr": "09",
-    "spoken": "nine",
-    "value": 9
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
   "time": {
-    "dt": "2024-01-27T14:04:00Z",
-    "repr": "271404Z"
+    "dt": "2024-01-27T14:56:00Z",
+    "repr": "271456Z"
   },
   "units": {
     "accumulation": "in",
@@ -90,21 +115,21 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "010",
-    "spoken": "zero one zero",
-    "value": 10
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "-RA",
-      "value": "Light Rain"
+      "repr": "RA",
+      "value": "Rain"
     }
   ]
 }
