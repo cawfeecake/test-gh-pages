@@ -8,8 +8,8 @@
     {
       "altitude": 3,
       "modifier": null,
-      "repr": "FEW003",
-      "type": "FEW"
+      "repr": "BKN003",
+      "type": "BKN"
     },
     {
       "altitude": 8,
@@ -24,17 +24,16 @@
     "spoken": "one two",
     "value": 12
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2024-01-28T13:40:04.656000Z",
-    "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-28T13:40:39.557313Z"
+    "stations_updated": "2024-01-01",
+    "timestamp": "2024-01-28T14:01:08.748436Z"
   },
   "other": [],
   "pressure_altitude": 44,
-  "raw": "KBVS 281315Z AUTO 00000KT 4SM BR FEW003 OVC008 12/12 A3002 RMK A01",
+  "raw": "KBVS 281355Z AUTO 00000KT 2 1/2SM BR BKN003 OVC008 12/12 A3002 RMK A01 P0010",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0010",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -44,7 +43,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0010",
+      "spoken": "zero point one",
+      "value": 0.1
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -52,7 +55,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 281315Z 00000KT 4SM BR FEW003 OVC008 12/12 A3002 RMK A01",
+  "sanitized": "KBVS 281355Z 00000KT 2 1/2SM BR BKN003 OVC008 12/12 A3002 RMK A01 P0010",
   "station": "KBVS",
   "temperature": {
     "repr": "12",
@@ -60,8 +63,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2024-01-28T13:15:00Z",
-    "repr": "281315Z"
+    "dt": "2024-01-28T13:55:00Z",
+    "repr": "281355Z"
   },
   "units": {
     "accumulation": "in",
@@ -72,9 +75,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "4",
-    "spoken": "four",
-    "value": 4
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
