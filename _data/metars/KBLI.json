@@ -8,7 +8,13 @@
     {
       "altitude": 5,
       "modifier": null,
-      "repr": "OVC005",
+      "repr": "BKN005",
+      "type": "BKN"
+    },
+    {
+      "altitude": 10,
+      "modifier": null,
+      "repr": "OVC010",
       "type": "OVC"
     }
   ],
@@ -20,15 +26,15 @@
   },
   "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2024-01-28T17:00:10.680000Z",
-    "stations_updated": "2023-10-28",
-    "timestamp": "2024-01-28T17:01:06.389486Z"
+    "cache-timestamp": "2024-01-28T17:26:04.371000Z",
+    "stations_updated": "2024-01-01",
+    "timestamp": "2024-01-28T17:26:40.964817Z"
   },
   "other": [],
   "pressure_altitude": 0,
-  "raw": "KBLI 281643Z 00000KT 10SM OVC005 09/09 A3009 RMK AO2 T00940094",
+  "raw": "KBLI 281653Z 00000KT 4SM BR BKN005 OVC010 09/09 A3009 RMK AO2 SLP195 T00940094",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00940094",
+  "remarks": "RMK AO2 SLP195 T00940094",
   "remarks_info": {
     "codes": [
       {
@@ -49,7 +55,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP195",
+      "spoken": "one zero one nine point five",
+      "value": 1019.5
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,7 +69,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 281643Z 00000KT 10SM OVC005 09/09 A3009 RMK AO2 T00940094",
+  "sanitized": "KBLI 281653Z 00000KT 4SM BR BKN005 OVC010 09/09 A3009 RMK AO2 SLP195 T00940094",
   "station": "KBLI",
   "temperature": {
     "repr": "09",
@@ -67,8 +77,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-01-28T16:43:00Z",
-    "repr": "281643Z"
+    "dt": "2024-01-28T16:53:00Z",
+    "repr": "281653Z"
   },
   "units": {
     "accumulation": "in",
@@ -79,9 +89,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "4",
+    "spoken": "four",
+    "value": 4
   },
   "wind_direction": {
     "repr": "000",
@@ -95,5 +105,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
