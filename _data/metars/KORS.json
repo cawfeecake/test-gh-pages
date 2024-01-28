@@ -6,15 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 3,
+      "altitude": 2,
       "modifier": null,
-      "repr": "SCT003",
-      "type": "SCT"
-    },
-    {
-      "altitude": 18,
-      "modifier": null,
-      "repr": "OVC018",
+      "repr": "OVC002",
       "type": "OVC"
     }
   ],
@@ -24,17 +18,17 @@
     "spoken": "one one",
     "value": 11
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2024-01-28T13:01:28.965000Z",
-    "stations_updated": "2024-01-01",
-    "timestamp": "2024-01-28T13:01:43.421447Z"
+    "cache-timestamp": "2024-01-28T13:22:04.744000Z",
+    "stations_updated": "2023-10-28",
+    "timestamp": "2024-01-28T13:22:44.162571Z"
   },
   "other": [],
   "pressure_altitude": -49,
-  "raw": "KORS 281235Z AUTO 00000KT 4SM -RA BR SCT003 OVC018 11/11 A3000 RMK AO2",
+  "raw": "KORS 281255Z AUTO 00000KT 1 1/2SM -RA BR OVC002 11/11 A3000 RMK AO2 P0003",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0003",
   "remarks_info": {
     "codes": [
       {
@@ -49,7 +43,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -57,7 +55,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 281235Z 00000KT 4SM -RA BR SCT003 OVC018 11/11 A3000 RMK AO2",
+  "sanitized": "KORS 281255Z 00000KT 1 1/2SM -RA BR OVC002 11/11 A3000 RMK AO2 P0003",
   "station": "KORS",
   "temperature": {
     "repr": "11",
@@ -65,8 +63,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-01-28T12:35:00Z",
-    "repr": "281235Z"
+    "dt": "2024-01-28T12:55:00Z",
+    "repr": "281255Z"
   },
   "units": {
     "accumulation": "in",
@@ -77,9 +75,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "4",
-    "spoken": "four",
-    "value": 4
+    "denominator": 2,
+    "normalized": "1 1/2",
+    "numerator": 3,
+    "repr": "3/2",
+    "spoken": "one and one half",
+    "value": 1.5
   },
   "wind_direction": {
     "repr": "000",
