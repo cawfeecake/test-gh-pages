@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A2959",
-    "spoken": "two nine point five nine",
-    "value": 29.59
+    "repr": "A2960",
+    "spoken": "two nine point six zero",
+    "value": 29.6
   },
-  "clouds": [],
-  "density_altitude": -659,
+  "clouds": [
+    {
+      "altitude": 110,
+      "modifier": null,
+      "repr": "OVC110",
+      "type": "OVC"
+    }
+  ],
+  "density_altitude": -597,
   "dewpoint": {
     "repr": "M03",
     "spoken": "minus three",
@@ -13,15 +20,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-02-05T14:40:03.200000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-02-05T14:40:41.515513Z"
+    "timestamp": "2024-02-05T15:01:48.506456Z"
   },
   "other": [],
-  "pressure_altitude": 500,
-  "raw": "KBLI 051353Z AUTO 02010KT 10SM CLR 05/M03 A2959 RMK AO2 SLP028 T00501028",
-  "relative_humidity": 0.5705903930224268,
-  "remarks": "RMK AO2 SLP028 T00501028",
+  "pressure_altitude": 490,
+  "raw": "KBLI 051453Z 02013KT 10SM OVC110 06/M03 A2960 RMK AO2 SLP031 T00561028 53002",
+  "relative_humidity": 0.547283387537419,
+  "remarks": "RMK AO2 SLP031 T00561028 53002",
   "remarks_info": {
     "codes": [
       {
@@ -41,31 +47,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "53002",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP028",
-      "spoken": "one zero zero two point eight",
-      "value": 1002.8
+      "repr": "SLP031",
+      "spoken": "one zero zero three point one",
+      "value": 1003.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0050",
-      "spoken": "five point zero",
-      "value": 5
+      "repr": "0056",
+      "spoken": "five point six",
+      "value": 5.6
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 051353Z 02010KT 10SM 05/M03 A2959 RMK AO2 SLP028 T00501028",
+  "sanitized": "KBLI 051453Z 02013KT 10SM OVC110 06/M03 A2960 RMK AO2 SLP031 T00561028 53002",
   "station": "KBLI",
   "temperature": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "time": {
-    "dt": "2024-02-05T13:53:00Z",
-    "repr": "051353Z"
+    "dt": "2024-02-05T14:53:00Z",
+    "repr": "051453Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,9 +97,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "13",
+    "spoken": "one three",
+    "value": 13
   },
   "wind_variable_direction": [],
   "wx_codes": []
