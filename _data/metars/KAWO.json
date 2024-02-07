@@ -1,34 +1,39 @@
 {
   "altimeter": {
-    "repr": "A2969",
-    "spoken": "two nine point six nine",
-    "value": 29.69
+    "repr": "A2970",
+    "spoken": "two nine point seven zero",
+    "value": 29.7
   },
   "clouds": [
     {
-      "altitude": 48,
+      "altitude": 1,
       "modifier": null,
-      "repr": "OVC048",
+      "repr": "FEW001",
+      "type": "FEW"
+    },
+    {
+      "altitude": 75,
+      "modifier": null,
+      "repr": "OVC075",
       "type": "OVC"
     }
   ],
-  "density_altitude": -926,
+  "density_altitude": -1140,
   "dewpoint": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "02",
+    "spoken": "two",
+    "value": 2
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2024-02-07T11:40:04Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-02-07T11:40:31.936277Z"
+    "timestamp": "2024-02-07T12:09:05.453486Z"
   },
   "other": [],
-  "pressure_altitude": 372,
-  "raw": "KAWO 071056Z AUTO 00000KT 5SM BR OVC048 04/04 A2969 RMK AO2 RAE0959 SLP061 P0000 T00390039",
+  "pressure_altitude": 362,
+  "raw": "KAWO 071156Z AUTO 00000KT 1/4SM FG FEW001 OVC075 02/02 A2970 RMK AO2 SLP061 60000 70006 T00220022 10044 20017 55001 FZRANO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 RAE0959 SLP061 P0000 T00390039",
+  "remarks": "RMK AO2 SLP061 60000 70006 T00220022 10044 20017 55001 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -36,23 +41,43 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
+        "repr": "FZRANO",
+        "value": "Freezing rain information not available"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0039",
-      "spoken": "three point nine",
-      "value": 3.9
+      "repr": "0022",
+      "spoken": "two point two",
+      "value": 2.2
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10044",
+      "spoken": "four point four",
+      "value": 4.4
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
-    "precip_24_hours": null,
-    "precip_36_hours": null,
+    "minimum_temperature_6": {
+      "repr": "20017",
+      "spoken": "one point seven",
+      "value": 1.7
+    },
+    "precip_24_hours": {
+      "repr": "70006",
+      "spoken": "zero point zero six",
+      "value": 0.06
+    },
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "55001",
+      "tendency": "Decreasing, then increasing"
+    },
     "sea_level_pressure": {
       "repr": "SLP061",
       "spoken": "one zero zero six point one",
@@ -61,22 +86,22 @@
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0039",
-      "spoken": "three point nine",
-      "value": 3.9
+      "repr": "0022",
+      "spoken": "two point two",
+      "value": 2.2
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 071056Z 00000KT 5SM BR OVC048 04/04 A2969 RMK AO2 RAE0959 SLP061 P0000 T00390039",
+  "sanitized": "KAWO 071156Z 00000KT 1/4SM FG FEW001 OVC075 02/02 A2970 RMK AO2 SLP061 60000 70006 T00220022 10044 20017 55001 FZRANO",
   "station": "KAWO",
   "temperature": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "02",
+    "spoken": "two",
+    "value": 2
   },
   "time": {
-    "dt": "2024-02-07T10:56:00Z",
-    "repr": "071056Z"
+    "dt": "2024-02-07T11:56:00Z",
+    "repr": "071156Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,9 +112,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "5",
-    "spoken": "five",
-    "value": 5
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -105,8 +133,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
