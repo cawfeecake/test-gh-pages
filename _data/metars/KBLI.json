@@ -1,27 +1,33 @@
 {
   "altimeter": {
-    "repr": "A3022",
-    "spoken": "three zero point two two",
-    "value": 30.22
+    "repr": "A3023",
+    "spoken": "three zero point two three",
+    "value": 30.23
   },
-  "clouds": [],
-  "density_altitude": -1625,
+  "clouds": [
+    {
+      "altitude": 120,
+      "modifier": null,
+      "repr": "FEW120",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": -1695,
   "dewpoint": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "01",
+    "spoken": "one",
+    "value": 1
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-02-10T03:02:16.449000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-02-10T03:02:32.616579Z"
+    "timestamp": "2024-02-10T03:23:05.477286Z"
   },
   "other": [],
-  "pressure_altitude": -130,
-  "raw": "KBLI 100153Z 00000KT 10SM CLR 02/00 A3022 RMK AO2 SLP245 T00220000",
-  "relative_humidity": 0.853664227943715,
-  "remarks": "RMK AO2 SLP245 T00220000",
+  "pressure_altitude": -140,
+  "raw": "KBLI 100253Z 00000KT 10SM FEW120 02/01 A3023 RMK AO2 SLP245 T00170006 51007",
+  "relative_humidity": 0.9239704971399328,
+  "remarks": "RMK AO2 SLP245 T00170006 51007",
   "remarks_info": {
     "codes": [
       {
@@ -30,9 +36,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0000",
-      "spoken": "zero",
-      "value": 0
+      "repr": "0006",
+      "spoken": "zero point six",
+      "value": 0.6
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -41,7 +47,11 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.7,
+      "repr": "51007",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP245",
       "spoken": "one zero two four point five",
@@ -50,13 +60,13 @@
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0022",
-      "spoken": "two point two",
-      "value": 2.2
+      "repr": "0017",
+      "spoken": "one point seven",
+      "value": 1.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 100153Z 00000KT 10SM 02/00 A3022 RMK AO2 SLP245 T00220000",
+  "sanitized": "KBLI 100253Z 00000KT 10SM FEW120 02/01 A3023 RMK AO2 SLP245 T00170006 51007",
   "station": "KBLI",
   "temperature": {
     "repr": "02",
@@ -64,8 +74,8 @@
     "value": 2
   },
   "time": {
-    "dt": "2024-02-10T01:53:00Z",
-    "repr": "100153Z"
+    "dt": "2024-02-10T02:53:00Z",
+    "repr": "100253Z"
   },
   "units": {
     "accumulation": "in",
