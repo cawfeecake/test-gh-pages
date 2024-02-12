@@ -8,19 +8,19 @@
     {
       "altitude": 7,
       "modifier": null,
-      "repr": "SCT007",
-      "type": "SCT"
+      "repr": "FEW007",
+      "type": "FEW"
     },
     {
-      "altitude": 10,
+      "altitude": 12,
       "modifier": null,
-      "repr": "BKN010",
-      "type": "BKN"
+      "repr": "FEW012",
+      "type": "FEW"
     },
     {
-      "altitude": 41,
+      "altitude": 42,
       "modifier": null,
-      "repr": "OVC041",
+      "repr": "OVC042",
       "type": "OVC"
     }
   ],
@@ -30,16 +30,16 @@
     "spoken": "nine",
     "value": 9
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-02-12T07:40:39.386900Z"
+    "timestamp": "2024-02-12T08:07:57.204650Z"
   },
   "other": [],
   "pressure_altitude": -39,
-  "raw": "KORS 120735Z AUTO 00000KT 3SM RA BR SCT007 BKN010 OVC041 09/09 A2999 RMK AO2",
+  "raw": "KORS 120755Z AUTO 00000KT 9SM -RA FEW007 FEW012 OVC042 09/09 A2999 RMK AO2 P0009",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0009",
   "remarks_info": {
     "codes": [
       {
@@ -54,7 +54,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0009",
+      "spoken": "zero point zero nine",
+      "value": 0.09
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -62,7 +66,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 120735Z 00000KT 3SM RA BR SCT007 BKN010 OVC041 09/09 A2999 RMK AO2",
+  "sanitized": "KORS 120755Z 00000KT 9SM -RA FEW007 FEW012 OVC042 09/09 A2999 RMK AO2 P0009",
   "station": "KORS",
   "temperature": {
     "repr": "09",
@@ -70,8 +74,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-02-12T07:35:00Z",
-    "repr": "120735Z"
+    "dt": "2024-02-12T07:55:00Z",
+    "repr": "120755Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,9 +86,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "repr": "9",
+    "spoken": "nine",
+    "value": 9
   },
   "wind_direction": {
     "repr": "000",
@@ -100,12 +104,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "RA",
-      "value": "Rain"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "-RA",
+      "value": "Light Rain"
     }
   ]
 }
