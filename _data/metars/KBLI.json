@@ -1,34 +1,40 @@
 {
   "altimeter": {
-    "repr": "A2989",
-    "spoken": "two nine point eight nine",
-    "value": 29.89
+    "repr": "A2991",
+    "spoken": "two nine point nine one",
+    "value": 29.91
   },
   "clouds": [
     {
       "altitude": 26,
       "modifier": null,
-      "repr": "OVC026",
+      "repr": "SCT026",
+      "type": "SCT"
+    },
+    {
+      "altitude": 35,
+      "modifier": null,
+      "repr": "OVC035",
       "type": "OVC"
     }
   ],
-  "density_altitude": -695,
+  "density_altitude": -715,
   "dewpoint": {
     "repr": "07",
     "spoken": "seven",
     "value": 7
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-02-21T17:40:03.423000Z",
+    "cache-timestamp": "2024-02-21T18:06:02.841000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-02-21T17:40:28.538894Z"
+    "timestamp": "2024-02-21T18:06:45.103344Z"
   },
   "other": [],
-  "pressure_altitude": 200,
-  "raw": "KBLI 211653Z 04003KT 10SM OVC026 07/07 A2989 RMK AO2 RAE1558 SLP129 P0000 T00720067",
+  "pressure_altitude": 180,
+  "raw": "KBLI 211753Z 02006KT 8SM -RA SCT026 OVC035 07/07 A2991 RMK AO2 RAB42 SLP135 P0001 60013 T00720067 10078 20056 53015",
   "relative_humidity": 0.9662838843819482,
-  "remarks": "RMK AO2 RAE1558 SLP129 P0000 T00720067",
+  "remarks": "RMK AO2 RAB42 SLP135 P0001 60013 T00720067 10078 20056 53015",
   "remarks_info": {
     "codes": [
       {
@@ -36,8 +42,8 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
+        "repr": "RAB42",
+        "value": "Rain began at :42"
       }
     ],
     "dewpoint_decimal": {
@@ -46,17 +52,37 @@
       "value": 6.7
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10078",
+      "spoken": "seven point eight",
+      "value": 7.8
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20056",
+      "spoken": "five point six",
+      "value": 5.6
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
+    "precip_36_hours": {
+      "repr": "60013",
+      "spoken": "zero point one three",
+      "value": 0.13
+    },
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
+    "pressure_tendency": {
+      "change": 1.5,
+      "repr": "53015",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP129",
-      "spoken": "one zero one two point nine",
-      "value": 1012.9
+      "repr": "SLP135",
+      "spoken": "one zero one three point five",
+      "value": 1013.5
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -67,7 +93,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 211653Z 04003KT 10SM OVC026 07/07 A2989 RMK AO2 RAE1558 SLP129 P0000 T00720067",
+  "sanitized": "KBLI 211753Z 02006KT 8SM -RA SCT026 OVC035 07/07 A2991 RMK AO2 RAB42 SLP135 P0001 60013 T00720067 10078 20056 53015",
   "station": "KBLI",
   "temperature": {
     "repr": "07",
@@ -75,8 +101,8 @@
     "value": 7
   },
   "time": {
-    "dt": "2024-02-21T16:53:00Z",
-    "repr": "211653Z"
+    "dt": "2024-02-21T17:53:00Z",
+    "repr": "211753Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,21 +113,26 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "8",
+    "spoken": "eight",
+    "value": 8
   },
   "wind_direction": {
-    "repr": "040",
-    "spoken": "zero four zero",
-    "value": 40
+    "repr": "020",
+    "spoken": "zero two zero",
+    "value": 20
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
