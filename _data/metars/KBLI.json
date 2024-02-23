@@ -1,11 +1,11 @@
 {
   "altimeter": {
-    "repr": "A3037",
-    "spoken": "three zero point three seven",
-    "value": 30.37
+    "repr": "A3036",
+    "spoken": "three zero point three six",
+    "value": 30.36
   },
   "clouds": [],
-  "density_altitude": -1907,
+  "density_altitude": -1897,
   "dewpoint": {
     "repr": "01",
     "spoken": "one",
@@ -13,15 +13,15 @@
   },
   "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2024-02-23T08:40:03.720000Z",
+    "cache-timestamp": "2024-02-23T09:02:03.786000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-02-23T08:40:42.216887Z"
+    "timestamp": "2024-02-23T09:02:19.402737Z"
   },
   "other": [],
-  "pressure_altitude": -280,
-  "raw": "KBLI 230822Z AUTO 00000KT 1/2SM R16/P6000FT FG CLR 01/01 A3037 RMK AO2 VIS 1/4V5 T00110011",
+  "pressure_altitude": -270,
+  "raw": "KBLI 230853Z AUTO 00000KT 1/2SM R16/2200VP6000FT FG CLR 01/01 A3036 RMK AO2 SLP291 T00110011 50002",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 VIS 1/4V5 T00110011",
+  "remarks": "RMK AO2 SLP291 T00110011 50002",
   "remarks_info": {
     "codes": [
       {
@@ -41,8 +41,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "50002",
+      "tendency": "Increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP291",
+      "spoken": "one zero two nine point one",
+      "value": 1029.1
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -53,18 +61,25 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/P6000FT",
+      "repr": "R16/2200VP6000FT",
       "runway": "16",
       "trend": null,
-      "variable_visibility": [],
-      "visibility": {
-        "repr": "P6000",
-        "spoken": "greater than six thousand",
-        "value": null
-      }
+      "variable_visibility": [
+        {
+          "repr": "2200",
+          "spoken": "two two hundred",
+          "value": 2200
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
     }
   ],
-  "sanitized": "KBLI 230822Z 00000KT 1/2SM R16/P6000FT FG 01/01 A3037 RMK AO2 VIS 1/4V5 T00110011",
+  "sanitized": "KBLI 230853Z 00000KT 1/2SM R16/2200VP6000FT FG 01/01 A3036 RMK AO2 SLP291 T00110011 50002",
   "station": "KBLI",
   "temperature": {
     "repr": "01",
@@ -72,8 +87,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2024-02-23T08:22:00Z",
-    "repr": "230822Z"
+    "dt": "2024-02-23T08:53:00Z",
+    "repr": "230853Z"
   },
   "units": {
     "accumulation": "in",
