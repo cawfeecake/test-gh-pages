@@ -6,6 +6,12 @@
   },
   "clouds": [
     {
+      "altitude": 21,
+      "modifier": null,
+      "repr": "BKN021",
+      "type": "BKN"
+    },
+    {
       "altitude": 26,
       "modifier": null,
       "repr": "OVC026",
@@ -20,20 +26,27 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-03-01T13:40:03.824000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-01T13:40:34.136534Z"
+    "timestamp": "2024-03-01T14:01:35.905812Z"
   },
   "other": [],
   "pressure_altitude": 542,
-  "raw": "KAWO 011256Z AUTO 15008KT 10SM OVC026 03/01 A2952 RMK AO2 SLP001 T00330011",
+  "raw": "KAWO 011356Z AUTO 15009KT 10SM -RA BKN021 OVC026 03/01 A2952 RMK AO2 RAB48 SLP001 P0000 T00330011",
   "relative_humidity": 0.8548717667849024,
-  "remarks": "RMK AO2 SLP001 T00330011",
+  "remarks": "RMK AO2 RAB48 SLP001 P0000 T00330011",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB48",
+        "value": "Rain began at :48"
       }
     ],
     "dewpoint_decimal": {
@@ -63,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 011256Z 15008KT 10SM OVC026 03/01 A2952 RMK AO2 SLP001 T00330011",
+  "sanitized": "KAWO 011356Z 15009KT 10SM -RA BKN021 OVC026 03/01 A2952 RMK AO2 RAB48 SLP001 P0000 T00330011",
   "station": "KAWO",
   "temperature": {
     "repr": "03",
@@ -71,8 +84,8 @@
     "value": 3
   },
   "time": {
-    "dt": "2024-03-01T12:56:00Z",
-    "repr": "011256Z"
+    "dt": "2024-03-01T13:56:00Z",
+    "repr": "011356Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,10 +107,15 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "09",
+    "spoken": "nine",
+    "value": 9
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
