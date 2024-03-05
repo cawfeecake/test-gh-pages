@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3001",
-    "spoken": "three zero point zero one",
-    "value": 30.01
+    "repr": "A3002",
+    "spoken": "three zero point zero two",
+    "value": 30.02
   },
-  "clouds": [],
-  "density_altitude": -2036,
+  "clouds": [
+    {
+      "altitude": 25,
+      "modifier": null,
+      "repr": "FEW025",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": -1974,
   "dewpoint": {
     "repr": "M03",
     "spoken": "minus three",
@@ -13,15 +20,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-03-05T14:40:05.373000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-05T14:40:34.686216Z"
+    "timestamp": "2024-03-05T15:02:04.880347Z"
   },
   "other": [],
-  "pressure_altitude": -43,
-  "raw": "KNUW 051353Z 00000KT 10SM CLR M02/M03 A3001 RMK AO2 SLP167 T10171028 $",
-  "relative_humidity": 0.9218989053690371,
-  "remarks": "RMK AO2 SLP167 T10171028 $",
+  "pressure_altitude": -53,
+  "raw": "KNUW 051453Z 00000KT 10SM FEW025 M01/M03 A3002 RMK AO2 SLP169 T10111028 51009 $",
+  "relative_humidity": 0.8821749962501599,
+  "remarks": "RMK AO2 SLP169 T10111028 51009 $",
   "remarks_info": {
     "codes": [
       {
@@ -45,31 +51,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.9,
+      "repr": "51009",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP167",
-      "spoken": "one zero one six point seven",
-      "value": 1016.7
+      "repr": "SLP169",
+      "spoken": "one zero one six point nine",
+      "value": 1016.9
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "1017",
-      "spoken": "minus one point seven",
-      "value": -1.7
+      "repr": "1011",
+      "spoken": "minus one point one",
+      "value": -1.1
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 051353Z 00000KT 10SM M02/M03 A3001 RMK AO2 SLP167 T10171028 $",
+  "sanitized": "KNUW 051453Z 00000KT 10SM FEW025 M01/M03 A3002 RMK AO2 SLP169 T10111028 51009 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "M02",
-    "spoken": "minus two",
-    "value": -2
+    "repr": "M01",
+    "spoken": "minus one",
+    "value": -1
   },
   "time": {
-    "dt": "2024-03-05T13:53:00Z",
-    "repr": "051353Z"
+    "dt": "2024-03-05T14:53:00Z",
+    "repr": "051453Z"
   },
   "units": {
     "accumulation": "in",
