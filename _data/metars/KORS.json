@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3024",
-    "spoken": "three zero point two four",
-    "value": 30.24
+    "repr": "A3023",
+    "spoken": "three zero point two three",
+    "value": 30.23
   },
-  "clouds": [],
-  "density_altitude": -1362,
+  "clouds": [
+    {
+      "altitude": 45,
+      "modifier": null,
+      "repr": "SCT045",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": -1352,
   "dewpoint": {
     "repr": "M01",
     "spoken": "minus one",
@@ -13,13 +20,13 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-03-07T20:22:05.404000Z",
+    "cache-timestamp": "2024-03-07T20:40:05.224000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-07T20:22:46.250383Z"
+    "timestamp": "2024-03-07T20:40:36.848100Z"
   },
   "other": [],
-  "pressure_altitude": -289,
-  "raw": "KORS 071955Z AUTO 00000KT 10SM CLR 06/M01 A3024 RMK AO2",
+  "pressure_altitude": -279,
+  "raw": "KORS 072035Z AUTO VRB05G10KT 10SM SCT045 06/M01 A3023 RMK AO2",
   "relative_humidity": 0.6078690253216088,
   "remarks": "RMK AO2",
   "remarks_info": {
@@ -44,7 +51,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 071955Z 00000KT 10SM 06/M01 A3024 RMK AO2",
+  "sanitized": "KORS 072035Z VRB05G10KT 10SM SCT045 06/M01 A3023 RMK AO2",
   "station": "KORS",
   "temperature": {
     "repr": "06",
@@ -52,8 +59,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-03-07T19:55:00Z",
-    "repr": "071955Z"
+    "dt": "2024-03-07T20:35:00Z",
+    "repr": "072035Z"
   },
   "units": {
     "accumulation": "in",
@@ -69,15 +76,19 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "VRB",
+    "spoken": "variable",
+    "value": null
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
+  },
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "05",
+    "spoken": "five",
+    "value": 5
   },
   "wind_variable_direction": [],
   "wx_codes": []
