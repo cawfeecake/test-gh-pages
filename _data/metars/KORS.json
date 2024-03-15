@@ -1,24 +1,31 @@
 {
   "altimeter": {
-    "repr": "A3032",
-    "spoken": "three zero point three two",
-    "value": 30.32
+    "repr": "A3031",
+    "spoken": "three zero point three one",
+    "value": 30.31
   },
-  "clouds": [],
-  "density_altitude": -1562,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -1552,
   "dewpoint": {
     "repr": "05",
     "spoken": "five",
     "value": 5
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-15T14:05:05.122887Z"
+    "timestamp": "2024-03-15T14:25:38.615229Z"
   },
   "other": [],
-  "pressure_altitude": -369,
-  "raw": "KORS 151355Z AUTO 00000KT 8SM CLR 05/05 A3032 RMK AO2",
+  "pressure_altitude": -359,
+  "raw": "KORS 151415Z AUTO 00000KT 1/4SM FG VV002 05/05 A3031 RMK AO2",
   "relative_humidity": 1,
   "remarks": "RMK AO2",
   "remarks_info": {
@@ -43,7 +50,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 151355Z 00000KT 8SM 05/05 A3032 RMK AO2",
+  "sanitized": "KORS 151415Z 00000KT 1/4SM FG VV002 05/05 A3031 RMK AO2",
   "station": "KORS",
   "temperature": {
     "repr": "05",
@@ -51,8 +58,8 @@
     "value": 5
   },
   "time": {
-    "dt": "2024-03-15T13:55:00Z",
-    "repr": "151355Z"
+    "dt": "2024-03-15T14:15:00Z",
+    "repr": "151415Z"
   },
   "units": {
     "accumulation": "in",
@@ -63,9 +70,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -79,5 +89,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ]
 }
