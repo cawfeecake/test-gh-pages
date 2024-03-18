@@ -1,27 +1,33 @@
 {
   "altimeter": {
-    "repr": "A3021",
-    "spoken": "three zero point two one",
-    "value": 30.21
+    "repr": "A3022",
+    "spoken": "three zero point two two",
+    "value": 30.22
   },
-  "clouds": [],
-  "density_altitude": -1543,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -1493,
   "dewpoint": {
-    "repr": "02",
-    "spoken": "two",
-    "value": 2
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
-    "cache-timestamp": "2024-03-18T12:09:17.479000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-18T12:09:25.909243Z"
+    "timestamp": "2024-03-18T12:39:06.721989Z"
   },
   "other": [],
-  "pressure_altitude": -120,
-  "raw": "KBLI 181153Z AUTO 00000KT 1 1/2SM R16/2000VP6000FT BR CLR 03/02 A3021 RMK AO2 SLP238 T00280022 10083 20028 51003",
-  "relative_humidity": 0.958237479247377,
-  "remarks": "RMK AO2 SLP238 T00280022 10083 20028 51003",
+  "pressure_altitude": -130,
+  "raw": "KBLI 181229Z AUTO 00000KT 1/4SM R16/1200VP6000FT FG VV002 03/03 A3022 RMK AO2 T00330028",
+  "relative_humidity": 0.9652276930831346,
+  "remarks": "RMK AO2 T00330028",
   "remarks_info": {
     "codes": [
       {
@@ -30,53 +36,37 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0022",
-      "spoken": "two point two",
-      "value": 2.2
-    },
-    "maximum_temperature_24": null,
-    "maximum_temperature_6": {
-      "repr": "10083",
-      "spoken": "eight point three",
-      "value": 8.3
-    },
-    "minimum_temperature_24": null,
-    "minimum_temperature_6": {
-      "repr": "20028",
-      "spoken": "two point eight",
-      "value": 2.8
-    },
-    "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.3,
-      "repr": "51003",
-      "tendency": "Increasing, then steady"
-    },
-    "sea_level_pressure": {
-      "repr": "SLP238",
-      "spoken": "one zero two three point eight",
-      "value": 1023.8
-    },
-    "snow_depth": null,
-    "sunshine_minutes": null,
-    "temperature_decimal": {
       "repr": "0028",
       "spoken": "two point eight",
       "value": 2.8
+    },
+    "maximum_temperature_24": null,
+    "maximum_temperature_6": null,
+    "minimum_temperature_24": null,
+    "minimum_temperature_6": null,
+    "precip_24_hours": null,
+    "precip_36_hours": null,
+    "precip_hourly": null,
+    "pressure_tendency": null,
+    "sea_level_pressure": null,
+    "snow_depth": null,
+    "sunshine_minutes": null,
+    "temperature_decimal": {
+      "repr": "0033",
+      "spoken": "three point three",
+      "value": 3.3
     }
   },
   "runway_visibility": [
     {
-      "repr": "R16/2000VP6000FT",
+      "repr": "R16/1200VP6000FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
-          "repr": "2000",
-          "spoken": "two thousand",
-          "value": 2000
+          "repr": "1200",
+          "spoken": "one two hundred",
+          "value": 1200
         },
         {
           "repr": "P6000",
@@ -87,7 +77,7 @@
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 181153Z 00000KT 1 1/2SM R16/2000VP6000FT BR 03/02 A3021 RMK AO2 SLP238 T00280022 10083 20028 51003",
+  "sanitized": "KBLI 181229Z 00000KT 1/4SM R16/1200VP6000FT FG VV002 03/03 A3022 RMK AO2 T00330028",
   "station": "KBLI",
   "temperature": {
     "repr": "03",
@@ -95,8 +85,8 @@
     "value": 3
   },
   "time": {
-    "dt": "2024-03-18T11:53:00Z",
-    "repr": "181153Z"
+    "dt": "2024-03-18T12:29:00Z",
+    "repr": "181229Z"
   },
   "units": {
     "accumulation": "in",
@@ -107,12 +97,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 2,
-    "normalized": "1 1/2",
-    "numerator": 3,
-    "repr": "3/2",
-    "spoken": "one and one half",
-    "value": 1.5
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -128,8 +118,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
