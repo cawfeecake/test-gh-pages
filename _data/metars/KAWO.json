@@ -1,10 +1,16 @@
 {
   "altimeter": {
-    "repr": "A2971",
-    "spoken": "two nine point seven one",
-    "value": 29.71
+    "repr": "A2970",
+    "spoken": "two nine point seven zero",
+    "value": 29.7
   },
   "clouds": [
+    {
+      "altitude": 60,
+      "modifier": null,
+      "repr": "BKN060",
+      "type": "BKN"
+    },
     {
       "altitude": 70,
       "modifier": null,
@@ -12,7 +18,7 @@
       "type": "OVC"
     }
   ],
-  "density_altitude": -214,
+  "density_altitude": -132,
   "dewpoint": {
     "repr": "09",
     "spoken": "nine",
@@ -20,28 +26,19 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-03-23T05:40:05.142000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-23T05:40:29.765464Z"
+    "timestamp": "2024-03-23T06:10:10.359601Z"
   },
   "other": [],
-  "pressure_altitude": 352,
-  "raw": "KAWO 230456Z AUTO 00000KT 10SM -RA OVC070 10/09 A2971 RMK AO2 RAB49 SLP066 P0000 T01000094",
-  "relative_humidity": 0.9605319898773285,
-  "remarks": "RMK AO2 RAB49 SLP066 P0000 T01000094",
+  "pressure_altitude": 362,
+  "raw": "KAWO 230556Z AUTO 05003KT 10SM -RA BKN060 OVC070 11/09 A2970 RMK AO2 SLP061 P0001 60002 T01060094 10133 20100 58008",
+  "relative_humidity": 0.9227971730278188,
+  "remarks": "RMK AO2 SLP061 P0001 60002 T01060094 10133 20100 58008",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAB49",
-        "value": "Rain began at :49"
       }
     ],
     "dewpoint_decimal": {
@@ -50,37 +47,57 @@
       "value": 9.4
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10133",
+      "spoken": "one three point three",
+      "value": 13.3
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20100",
+      "spoken": "one zero point zero",
+      "value": 10
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
+    "precip_36_hours": {
+      "repr": "60002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
+    "pressure_tendency": {
+      "change": 0.8,
+      "repr": "58008",
+      "tendency": "Steady or increasing, then decreasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP066",
-      "spoken": "one zero zero six point six",
-      "value": 1006.6
+      "repr": "SLP061",
+      "spoken": "one zero zero six point one",
+      "value": 1006.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0100",
-      "spoken": "one zero point zero",
-      "value": 10
+      "repr": "0106",
+      "spoken": "one zero point six",
+      "value": 10.6
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 230456Z 00000KT 10SM -RA OVC070 10/09 A2971 RMK AO2 RAB49 SLP066 P0000 T01000094",
+  "sanitized": "KAWO 230556Z 05003KT 10SM -RA BKN060 OVC070 11/09 A2970 RMK AO2 SLP061 P0001 60002 T01060094 10133 20100 58008",
   "station": "KAWO",
   "temperature": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "time": {
-    "dt": "2024-03-23T04:56:00Z",
-    "repr": "230456Z"
+    "dt": "2024-03-23T05:56:00Z",
+    "repr": "230556Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,15 +113,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "050",
+    "spoken": "zero five zero",
+    "value": 50
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": [
