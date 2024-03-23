@@ -1,16 +1,10 @@
 {
   "altimeter": {
-    "repr": "A2976",
-    "spoken": "two nine point seven six",
-    "value": 29.76
+    "repr": "A2974",
+    "spoken": "two nine point seven four",
+    "value": 29.74
   },
   "clouds": [
-    {
-      "altitude": 7,
-      "modifier": null,
-      "repr": "SCT007",
-      "type": "SCT"
-    },
     {
       "altitude": 50,
       "modifier": null,
@@ -18,13 +12,19 @@
       "type": "BKN"
     },
     {
-      "altitude": 90,
+      "altitude": 65,
       "modifier": null,
-      "repr": "BKN090",
+      "repr": "BKN065",
       "type": "BKN"
+    },
+    {
+      "altitude": 85,
+      "modifier": null,
+      "repr": "OVC085",
+      "type": "OVC"
     }
   ],
-  "density_altitude": -522,
+  "density_altitude": -502,
   "dewpoint": {
     "repr": "09",
     "spoken": "nine",
@@ -32,15 +32,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-03-23T01:30:04.714000Z",
+    "cache-timestamp": "2024-03-23T02:04:04.882000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-23T01:30:30.973443Z"
+    "timestamp": "2024-03-23T02:04:35.235448Z"
   },
   "other": [],
-  "pressure_altitude": 191,
-  "raw": "KORS 230055Z AUTO 00000KT 9SM SCT007 BKN050 BKN090 09/09 A2976 RMK AO2",
+  "pressure_altitude": 211,
+  "raw": "KORS 230155Z AUTO 00000KT 7SM -RA BKN050 BKN065 OVC085 09/09 A2974 RMK AO2 P0001",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0001",
   "remarks_info": {
     "codes": [
       {
@@ -55,7 +55,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -63,7 +67,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 230055Z 00000KT 9SM SCT007 BKN050 BKN090 09/09 A2976 RMK AO2",
+  "sanitized": "KORS 230155Z 00000KT 7SM -RA BKN050 BKN065 OVC085 09/09 A2974 RMK AO2 P0001",
   "station": "KORS",
   "temperature": {
     "repr": "09",
@@ -71,8 +75,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-03-23T00:55:00Z",
-    "repr": "230055Z"
+    "dt": "2024-03-23T01:55:00Z",
+    "repr": "230155Z"
   },
   "units": {
     "accumulation": "in",
@@ -83,9 +87,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "repr": "7",
+    "spoken": "seven",
+    "value": 7
   },
   "wind_direction": {
     "repr": "000",
@@ -99,5 +103,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
