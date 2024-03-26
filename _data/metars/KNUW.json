@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 28,
+      "altitude": 14,
       "modifier": null,
-      "repr": "SCT028",
+      "repr": "SCT014",
       "type": "SCT"
     },
     {
-      "altitude": 37,
+      "altitude": 28,
       "modifier": null,
-      "repr": "BKN037",
+      "repr": "BKN028",
       "type": "BKN"
     },
     {
-      "altitude": 60,
+      "altitude": 38,
       "modifier": null,
-      "repr": "BKN060",
+      "repr": "BKN038",
       "type": "BKN"
     }
   ],
@@ -30,18 +30,22 @@
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-26T05:02:14.692643Z"
+    "timestamp": "2024-03-26T05:25:25.092717Z"
   },
   "other": [],
   "pressure_altitude": 87,
-  "raw": "KNUW 260453Z 10004KT 10SM SCT028 BKN037 BKN060 07/06 A2988 RMK AO2 SLP122 T00720061",
+  "raw": "KNUW 260513Z 11004KT 10SM SCT014 BKN028 BKN038 07/06 A2988 RMK AO2 T00720061 $",
   "relative_humidity": 0.9271535108565763,
-  "remarks": "RMK AO2 SLP122 T00720061",
+  "remarks": "RMK AO2 T00720061 $",
   "remarks_info": {
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -60,11 +64,7 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP122",
-      "spoken": "one zero one two point two",
-      "value": 1012.2
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -74,7 +74,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 260453Z 10004KT 10SM SCT028 BKN037 BKN060 07/06 A2988 RMK AO2 SLP122 T00720061",
+  "sanitized": "KNUW 260513Z 11004KT 10SM SCT014 BKN028 BKN038 07/06 A2988 RMK AO2 T00720061 $",
   "station": "KNUW",
   "temperature": {
     "repr": "07",
@@ -82,8 +82,8 @@
     "value": 7
   },
   "time": {
-    "dt": "2024-03-26T04:53:00Z",
-    "repr": "260453Z"
+    "dt": "2024-03-26T05:13:00Z",
+    "repr": "260513Z"
   },
   "units": {
     "accumulation": "in",
@@ -99,9 +99,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "100",
-    "spoken": "one zero zero",
-    "value": 100
+    "repr": "110",
+    "spoken": "one one zero",
+    "value": 110
   },
   "wind_gust": null,
   "wind_speed": {
