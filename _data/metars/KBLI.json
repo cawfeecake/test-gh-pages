@@ -20,20 +20,23 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-03-27T15:40:06.380000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-03-27T15:40:31.807524Z"
+    "timestamp": "2024-03-27T16:07:53.423573Z"
   },
   "other": [],
   "pressure_altitude": 430,
-  "raw": "KBLI 271453Z 04007KT 10SM -RA OVC041 06/04 A2966 RMK AO2 SLP051 P0001 60009 T00560044 56034",
+  "raw": "KBLI 271553Z 04007KT 10SM OVC041 06/04 A2966 RMK AO2 RAE1458 SLP050 P0000 T00560044",
   "relative_humidity": 0.9197884374087767,
-  "remarks": "RMK AO2 SLP051 P0001 60009 T00560044 56034",
+  "remarks": "RMK AO2 RAE1458 SLP050 P0000 T00560044",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -46,25 +49,13 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": {
-      "repr": "60009",
-      "spoken": "zero point zero nine",
-      "value": 0.09
-    },
-    "precip_hourly": {
-      "repr": "P0001",
-      "spoken": "zero point zero one",
-      "value": 0.01
-    },
-    "pressure_tendency": {
-      "change": 3.4,
-      "repr": "56034",
-      "tendency": "Decreasing, then steady"
-    },
+    "precip_36_hours": null,
+    "precip_hourly": null,
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP051",
-      "spoken": "one zero zero five point one",
-      "value": 1005.1
+      "repr": "SLP050",
+      "spoken": "one zero zero five point zero",
+      "value": 1005
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -75,7 +66,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 271453Z 04007KT 10SM -RA OVC041 06/04 A2966 RMK AO2 SLP051 P0001 60009 T00560044 56034",
+  "sanitized": "KBLI 271553Z 04007KT 10SM OVC041 06/04 A2966 RMK AO2 RAE1458 SLP050 P0000 T00560044",
   "station": "KBLI",
   "temperature": {
     "repr": "06",
@@ -83,8 +74,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-03-27T14:53:00Z",
-    "repr": "271453Z"
+    "dt": "2024-03-27T15:53:00Z",
+    "repr": "271553Z"
   },
   "units": {
     "accumulation": "in",
@@ -111,10 +102,5 @@
     "value": 7
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ]
+  "wx_codes": []
 }
