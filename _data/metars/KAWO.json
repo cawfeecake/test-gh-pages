@@ -6,15 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 28,
+      "altitude": 30,
       "modifier": null,
-      "repr": "BKN028",
-      "type": "BKN"
+      "repr": "SCT030",
+      "type": "SCT"
     },
     {
-      "altitude": 37,
+      "altitude": 39,
       "modifier": null,
-      "repr": "OVC037",
+      "repr": "OVC039",
       "type": "OVC"
     }
   ],
@@ -24,21 +24,30 @@
     "spoken": "four",
     "value": 4
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
+    "cache-timestamp": "2024-04-07T02:12:04.517000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-04-07T01:39:15.141577Z"
+    "timestamp": "2024-04-07T02:12:34.791390Z"
   },
   "other": [],
   "pressure_altitude": -78,
-  "raw": "KAWO 070124Z AUTO 19007KT 10SM BKN028 OVC037 09/04 A3014 RMK AO2",
+  "raw": "KAWO 070142Z AUTO 18007KT 10SM -RA SCT030 OVC039 09/04 A3014 RMK AO2 RAB39 P0000",
   "relative_humidity": 0.7087545355451176,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 RAB39 P0000",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB39",
+        "value": "Rain began at :39"
       }
     ],
     "dewpoint_decimal": null,
@@ -56,7 +65,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 070124Z 19007KT 10SM BKN028 OVC037 09/04 A3014 RMK AO2",
+  "sanitized": "KAWO 070142Z 18007KT 10SM -RA SCT030 OVC039 09/04 A3014 RMK AO2 RAB39 P0000",
   "station": "KAWO",
   "temperature": {
     "repr": "09",
@@ -64,8 +73,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-04-07T01:24:00Z",
-    "repr": "070124Z"
+    "dt": "2024-04-07T01:42:00Z",
+    "repr": "070142Z"
   },
   "units": {
     "accumulation": "in",
@@ -81,9 +90,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "190",
-    "spoken": "one nine zero",
-    "value": 190
+    "repr": "180",
+    "spoken": "one eight zero",
+    "value": 180
   },
   "wind_gust": null,
   "wind_speed": {
@@ -92,5 +101,10 @@
     "value": 7
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
