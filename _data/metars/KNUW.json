@@ -32,15 +32,15 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-04-24T19:40:03.610000Z",
+    "cache-timestamp": "2024-04-24T20:02:14.209000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-04-24T19:40:40.921626Z"
+    "timestamp": "2024-04-24T20:02:43.080160Z"
   },
   "other": [],
   "pressure_altitude": -103,
-  "raw": "KNUW 241914Z 24009KT 10SM BKN024 BKN036 OVC100 10/07 A3007 RMK AO2 T01000067 $",
-  "relative_humidity": 0.7994238789303805,
-  "remarks": "RMK AO2 T01000067 $",
+  "raw": "KNUW 241953Z 24009KT 10SM -RA BKN024 BKN036 OVC100 10/07 A3007 RMK AO2 RAB49 SLP185 P0000 T01000072 $",
+  "relative_humidity": 0.8273178222792216,
+  "remarks": "RMK AO2 RAB49 SLP185 P0000 T01000072 $",
   "remarks_info": {
     "codes": [
       {
@@ -50,12 +50,20 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB49",
+        "value": "Rain began at :49"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0067",
-      "spoken": "six point seven",
-      "value": 6.7
+      "repr": "0072",
+      "spoken": "seven point two",
+      "value": 7.2
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -65,7 +73,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP185",
+      "spoken": "one zero one eight point five",
+      "value": 1018.5
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -75,7 +87,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 241914Z 24009KT 10SM BKN024 BKN036 OVC100 10/07 A3007 RMK AO2 T01000067 $",
+  "sanitized": "KNUW 241953Z 24009KT 10SM -RA BKN024 BKN036 OVC100 10/07 A3007 RMK AO2 RAB49 SLP185 P0000 T01000072 $",
   "station": "KNUW",
   "temperature": {
     "repr": "10",
@@ -83,8 +95,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-04-24T19:14:00Z",
-    "repr": "241914Z"
+    "dt": "2024-04-24T19:53:00Z",
+    "repr": "241953Z"
   },
   "units": {
     "accumulation": "in",
@@ -111,5 +123,10 @@
     "value": 9
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
