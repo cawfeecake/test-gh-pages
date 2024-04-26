@@ -6,25 +6,25 @@
   },
   "clouds": [
     {
-      "altitude": 18,
+      "altitude": 15,
       "modifier": null,
-      "repr": "BKN018",
+      "repr": "SCT015",
+      "type": "SCT"
+    },
+    {
+      "altitude": 19,
+      "modifier": null,
+      "repr": "BKN019",
       "type": "BKN"
     },
     {
-      "altitude": 25,
+      "altitude": 65,
       "modifier": null,
-      "repr": "BKN025",
-      "type": "BKN"
-    },
-    {
-      "altitude": 60,
-      "modifier": null,
-      "repr": "OVC060",
+      "repr": "OVC065",
       "type": "OVC"
     }
   ],
-  "density_altitude": -190,
+  "density_altitude": -250,
   "dewpoint": {
     "repr": "09",
     "spoken": "nine",
@@ -32,15 +32,14 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-04-26T05:40:03.183000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-04-26T05:40:47.162079Z"
+    "timestamp": "2024-04-26T06:07:59.082420Z"
   },
   "other": [],
   "pressure_altitude": 267,
-  "raw": "KNUW 260453Z 13012G21KT 10SM BKN018 BKN025 OVC060 11/09 A2970 RMK AO2 RAB18E52 SLP060 P0000 T01110094 $",
-  "relative_humidity": 0.8926151927981825,
-  "remarks": "RMK AO2 RAB18E52 SLP060 P0000 T01110094 $",
+  "raw": "KNUW 260553Z 13014KT 10SM -RA SCT015 BKN019 OVC065 11/09 A2970 RMK AO2 RAB16 SLP062 P0000 60002 T01060094 10117 20106 53006 $",
+  "relative_humidity": 0.9227971730278188,
+  "remarks": "RMK AO2 RAB16 SLP062 P0000 60002 T01060094 10117 20106 53006 $",
   "remarks_info": {
     "codes": [
       {
@@ -54,6 +53,10 @@
       {
         "repr": "P0000",
         "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB16",
+        "value": "Rain began at :16"
       }
     ],
     "dewpoint_decimal": {
@@ -62,28 +65,44 @@
       "value": 9.4
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10117",
+      "spoken": "one one point seven",
+      "value": 11.7
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20106",
+      "spoken": "one zero point six",
+      "value": 10.6
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.6,
+      "repr": "53006",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP060",
-      "spoken": "one zero zero six point zero",
-      "value": 1006
+      "repr": "SLP062",
+      "spoken": "one zero zero six point two",
+      "value": 1006.2
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0111",
-      "spoken": "one one point one",
-      "value": 11.1
+      "repr": "0106",
+      "spoken": "one zero point six",
+      "value": 10.6
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 260453Z 13012G21KT 10SM BKN018 BKN025 OVC060 11/09 A2970 RMK AO2 RAB18E52 SLP060 P0000 T01110094 $",
+  "sanitized": "KNUW 260553Z 13014KT 10SM -RA SCT015 BKN019 OVC065 11/09 A2970 RMK AO2 RAB16 SLP062 P0000 60002 T01060094 10117 20106 53006 $",
   "station": "KNUW",
   "temperature": {
     "repr": "11",
@@ -91,8 +110,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-04-26T04:53:00Z",
-    "repr": "260453Z"
+    "dt": "2024-04-26T05:53:00Z",
+    "repr": "260553Z"
   },
   "units": {
     "accumulation": "in",
@@ -112,16 +131,17 @@
     "spoken": "one three zero",
     "value": 130
   },
-  "wind_gust": {
-    "repr": "21",
-    "spoken": "two one",
-    "value": 21
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
+    "repr": "14",
+    "spoken": "one four",
+    "value": 14
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
