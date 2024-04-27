@@ -6,15 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 16,
+      "altitude": 18,
       "modifier": null,
-      "repr": "BKN016",
+      "repr": "BKN018",
       "type": "BKN"
     },
     {
-      "altitude": 21,
+      "altitude": 22,
       "modifier": null,
-      "repr": "OVC021",
+      "repr": "OVC022",
       "type": "OVC"
     }
   ],
@@ -26,15 +26,14 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-04-27T13:02:02.993000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-04-27T13:02:58.322352Z"
+    "timestamp": "2024-04-27T13:23:32.158656Z"
   },
   "other": [],
   "pressure_altitude": 112,
-  "raw": "KAWO 271239Z AUTO 15011KT 10SM -RA BKN016 OVC021 10/08 A2995 RMK AO2 PNO $",
-  "relative_humidity": 0.8737387809028685,
-  "remarks": "RMK AO2 PNO $",
+  "raw": "KAWO 271256Z AUTO 15011KT 10SM BKN018 OVC022 10/08 A2995 RMK AO2 RAE42 SLP146 T01000083 PNO $",
+  "relative_humidity": 0.8917307313199454,
+  "remarks": "RMK AO2 RAE42 SLP146 T01000083 PNO $",
   "remarks_info": {
     "codes": [
       {
@@ -48,9 +47,17 @@
       {
         "repr": "PNO",
         "value": "Precipitation amount not available"
+      },
+      {
+        "repr": "RAE42",
+        "value": "Rain ended at :42"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0083",
+      "spoken": "eight point three",
+      "value": 8.3
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -59,13 +66,21 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP146",
+      "spoken": "one zero one four point six",
+      "value": 1014.6
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0100",
+      "spoken": "one zero point zero",
+      "value": 10
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 271239Z 15011KT 10SM -RA BKN016 OVC021 10/08 A2995 RMK AO2 PNO $",
+  "sanitized": "KAWO 271256Z 15011KT 10SM BKN018 OVC022 10/08 A2995 RMK AO2 RAE42 SLP146 T01000083 PNO $",
   "station": "KAWO",
   "temperature": {
     "repr": "10",
@@ -73,8 +88,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-04-27T12:39:00Z",
-    "repr": "271239Z"
+    "dt": "2024-04-27T12:56:00Z",
+    "repr": "271256Z"
   },
   "units": {
     "accumulation": "in",
@@ -101,10 +116,5 @@
     "value": 11
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    }
-  ]
+  "wx_codes": []
 }
