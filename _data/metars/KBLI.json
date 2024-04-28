@@ -6,9 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 30,
+      "altitude": 29,
       "modifier": null,
-      "repr": "OVC030",
+      "repr": "BKN029",
+      "type": "BKN"
+    },
+    {
+      "altitude": 65,
+      "modifier": null,
+      "repr": "OVC065",
       "type": "OVC"
     }
   ],
@@ -20,15 +26,15 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-04-28T02:42:04.233000Z",
+    "cache-timestamp": "2024-04-28T03:06:04.210000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-04-28T02:42:54.672588Z"
+    "timestamp": "2024-04-28T03:06:56.509181Z"
   },
   "other": [],
   "pressure_altitude": 180,
-  "raw": "KBLI 280153Z AUTO 16009G16KT 10SM OVC030 11/06 A2991 RMK AO2 RAB06E52 SLP136 P0000 T01110056",
-  "relative_humidity": 0.688572216070134,
-  "remarks": "RMK AO2 RAB06E52 SLP136 P0000 T01110056",
+  "raw": "KBLI 280253Z AUTO 16009KT 10SM -RA BKN029 OVC065 11/06 A2991 RMK AO2 RAB16E31B53 SLP136 P0000 60000 T01110061 56006",
+  "relative_humidity": 0.7128144064072947,
+  "remarks": "RMK AO2 RAB16E31B53 SLP136 P0000 60000 T01110061 56006",
   "remarks_info": {
     "codes": [
       {
@@ -41,18 +47,26 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0056",
-      "spoken": "five point six",
-      "value": 5.6
+      "repr": "0061",
+      "spoken": "six point one",
+      "value": 6.1
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.6,
+      "repr": "56006",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP136",
       "spoken": "one zero one three point six",
@@ -67,7 +81,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 280153Z 16009G16KT 10SM OVC030 11/06 A2991 RMK AO2 RAB06E52 SLP136 P0000 T01110056",
+  "sanitized": "KBLI 280253Z 16009KT 10SM -RA BKN029 OVC065 11/06 A2991 RMK AO2 RAB16E31B53 SLP136 P0000 60000 T01110061 56006",
   "station": "KBLI",
   "temperature": {
     "repr": "11",
@@ -75,8 +89,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-04-28T01:53:00Z",
-    "repr": "280153Z"
+    "dt": "2024-04-28T02:53:00Z",
+    "repr": "280253Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,16 +110,17 @@
     "spoken": "one six zero",
     "value": 160
   },
-  "wind_gust": {
-    "repr": "16",
-    "spoken": "one six",
-    "value": 16
-  },
+  "wind_gust": null,
   "wind_speed": {
     "repr": "09",
     "spoken": "nine",
     "value": 9
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
