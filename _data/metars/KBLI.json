@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3000",
-    "spoken": "three zero point zero zero",
-    "value": 30
+    "repr": "A3001",
+    "spoken": "three zero point zero one",
+    "value": 30.01
   },
-  "clouds": [],
-  "density_altitude": -937,
+  "clouds": [
+    {
+      "altitude": 75,
+      "modifier": null,
+      "repr": "OVC075",
+      "type": "OVC"
+    }
+  ],
+  "density_altitude": -875,
   "dewpoint": {
     "repr": "03",
     "spoken": "three",
@@ -13,15 +20,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-04-29T14:40:13.121000Z",
+    "cache-timestamp": "2024-04-29T15:02:19.281000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-04-29T14:40:31.509553Z"
+    "timestamp": "2024-04-29T15:02:43.755786Z"
   },
   "other": [],
-  "pressure_altitude": 90,
-  "raw": "KBLI 291353Z AUTO VRB04KT 10SM CLR 06/03 A3000 RMK AO2 SLP165 T00610033",
-  "relative_humidity": 0.8223651929534089,
-  "remarks": "RMK AO2 SLP165 T00610033",
+  "pressure_altitude": 80,
+  "raw": "KBLI 291453Z AUTO VRB03KT 10SM OVC075 07/03 A3001 RMK AO2 SLP170 T00670033 53010",
+  "relative_humidity": 0.7890629122317202,
+  "remarks": "RMK AO2 SLP170 T00670033 53010",
   "remarks_info": {
     "codes": [
       {
@@ -41,31 +48,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 1,
+      "repr": "53010",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP165",
-      "spoken": "one zero one six point five",
-      "value": 1016.5
+      "repr": "SLP170",
+      "spoken": "one zero one seven point zero",
+      "value": 1017
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0061",
-      "spoken": "six point one",
-      "value": 6.1
+      "repr": "0067",
+      "spoken": "six point seven",
+      "value": 6.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 291353Z VRB04KT 10SM 06/03 A3000 RMK AO2 SLP165 T00610033",
+  "sanitized": "KBLI 291453Z VRB03KT 10SM OVC075 07/03 A3001 RMK AO2 SLP170 T00670033 53010",
   "station": "KBLI",
   "temperature": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
   "time": {
-    "dt": "2024-04-29T13:53:00Z",
-    "repr": "291353Z"
+    "dt": "2024-04-29T14:53:00Z",
+    "repr": "291453Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,9 +98,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": []
