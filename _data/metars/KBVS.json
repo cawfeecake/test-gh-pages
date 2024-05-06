@@ -1,11 +1,30 @@
 {
   "altimeter": {
-    "repr": "A2993",
-    "spoken": "two nine point nine three",
-    "value": 29.93
+    "repr": "A2992",
+    "spoken": "two nine point nine two",
+    "value": 29.92
   },
-  "clouds": [],
-  "density_altitude": -311,
+  "clouds": [
+    {
+      "altitude": 30,
+      "modifier": null,
+      "repr": "FEW030",
+      "type": "FEW"
+    },
+    {
+      "altitude": 36,
+      "modifier": null,
+      "repr": "FEW036",
+      "type": "FEW"
+    },
+    {
+      "altitude": 41,
+      "modifier": null,
+      "repr": "SCT041",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": -181,
   "dewpoint": {
     "repr": "09",
     "spoken": "nine",
@@ -13,13 +32,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
+    "cache-timestamp": "2024-05-06T23:22:04.908000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-05-06T23:01:52.688188Z"
+    "timestamp": "2024-05-06T23:22:53.401435Z"
   },
   "other": [],
-  "pressure_altitude": 134,
-  "raw": "KBVS 062235Z AUTO 00000KT 10SM CLR 11/09 A2993 RMK A01",
-  "relative_humidity": 0.8746678827465182,
+  "pressure_altitude": 144,
+  "raw": "KBVS 062255Z AUTO VRB03G10KT 10SM FEW030 FEW036 SCT041 12/09 A2992 RMK A01",
+  "relative_humidity": 0.8186649539519323,
   "remarks": "RMK A01",
   "remarks_info": {
     "codes": [],
@@ -38,16 +58,16 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 062235Z 00000KT 10SM 11/09 A2993 RMK A01",
+  "sanitized": "KBVS 062255Z VRB03G10KT 10SM FEW030 FEW036 SCT041 12/09 A2992 RMK A01",
   "station": "KBVS",
   "temperature": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "12",
+    "spoken": "one two",
+    "value": 12
   },
   "time": {
-    "dt": "2024-05-06T22:35:00Z",
-    "repr": "062235Z"
+    "dt": "2024-05-06T22:55:00Z",
+    "repr": "062255Z"
   },
   "units": {
     "accumulation": "in",
@@ -63,15 +83,19 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "VRB",
+    "spoken": "variable",
+    "value": null
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
+  },
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": []
