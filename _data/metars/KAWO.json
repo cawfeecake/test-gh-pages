@@ -1,61 +1,70 @@
 {
   "altimeter": {
-    "repr": "A3022",
-    "spoken": "three zero point two two",
-    "value": 30.22
+    "repr": "A3024",
+    "spoken": "three zero point two four",
+    "value": 30.24
   },
   "clouds": [
     {
-      "altitude": 11,
+      "altitude": 17,
       "modifier": null,
-      "repr": "SCT011",
-      "type": "SCT"
+      "repr": "FEW017",
+      "type": "FEW"
     },
     {
-      "altitude": 16,
+      "altitude": 35,
       "modifier": null,
-      "repr": "BKN016",
+      "repr": "BKN035",
       "type": "BKN"
     },
     {
-      "altitude": 39,
+      "altitude": 43,
       "modifier": null,
-      "repr": "OVC039",
+      "repr": "OVC043",
       "type": "OVC"
     }
   ],
-  "density_altitude": -844,
+  "density_altitude": -948,
   "dewpoint": {
     "repr": "06",
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
+    "cache-timestamp": "2024-05-07T17:02:13.302000Z",
     "stations_updated": "2024-01-01",
-    "timestamp": "2024-05-07T16:41:14.172124Z"
+    "timestamp": "2024-05-07T17:02:14.638984Z"
   },
   "other": [],
-  "pressure_altitude": -158,
-  "raw": "KAWO 071613Z AUTO 26006KT 10SM -RA SCT011 BKN016 OVC039 09/06 A3022 RMK AO2 RAB01 P0000",
-  "relative_humidity": 0.8147353662483537,
-  "remarks": "RMK AO2 RAB01 P0000",
+  "pressure_altitude": -178,
+  "raw": "KAWO 071656Z AUTO VRB03KT 9SM RA FEW017 BKN035 OVC043 08/06 A3024 RMK AO2 RAB01 SLP245 T00830056 PNO $",
+  "relative_humidity": 0.8309278587907312,
+  "remarks": "RMK AO2 RAB01 SLP245 T00830056 PNO $",
   "remarks_info": {
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
+        "repr": "PNO",
+        "value": "Precipitation amount not available"
       },
       {
         "repr": "RAB01",
         "value": "Rain began at :01"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0056",
+      "spoken": "five point six",
+      "value": 5.6
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -64,22 +73,30 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP245",
+      "spoken": "one zero two four point five",
+      "value": 1024.5
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0083",
+      "spoken": "eight point three",
+      "value": 8.3
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 071613Z 26006KT 10SM -RA SCT011 BKN016 OVC039 09/06 A3022 RMK AO2 RAB01 P0000",
+  "sanitized": "KAWO 071656Z VRB03KT 9SM RA FEW017 BKN035 OVC043 08/06 A3024 RMK AO2 RAB01 SLP245 T00830056 PNO $",
   "station": "KAWO",
   "temperature": {
-    "repr": "09",
-    "spoken": "nine",
-    "value": 9
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
   "time": {
-    "dt": "2024-05-07T16:13:00Z",
-    "repr": "071613Z"
+    "dt": "2024-05-07T16:56:00Z",
+    "repr": "071656Z"
   },
   "units": {
     "accumulation": "in",
@@ -90,26 +107,26 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "9",
+    "spoken": "nine",
+    "value": 9
   },
   "wind_direction": {
-    "repr": "260",
-    "spoken": "two six zero",
-    "value": 260
+    "repr": "VRB",
+    "spoken": "variable",
+    "value": null
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "-RA",
-      "value": "Light Rain"
+      "repr": "RA",
+      "value": "Rain"
     }
   ]
 }
