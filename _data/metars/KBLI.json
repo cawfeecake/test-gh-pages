@@ -1,16 +1,10 @@
 {
   "altimeter": {
-    "repr": "A2998",
-    "spoken": "two nine point nine eight",
-    "value": 29.98
+    "repr": "A2997",
+    "spoken": "two nine point nine seven",
+    "value": 29.97
   },
   "clouds": [
-    {
-      "altitude": 15,
-      "modifier": null,
-      "repr": "SCT015",
-      "type": "SCT"
-    },
     {
       "altitude": 21,
       "modifier": null,
@@ -20,11 +14,17 @@
     {
       "altitude": 45,
       "modifier": null,
-      "repr": "OVC045",
+      "repr": "BKN045",
+      "type": "BKN"
+    },
+    {
+      "altitude": 60,
+      "modifier": null,
+      "repr": "OVC060",
       "type": "OVC"
     }
   ],
-  "density_altitude": -377,
+  "density_altitude": -307,
   "dewpoint": {
     "repr": "09",
     "spoken": "nine",
@@ -32,15 +32,15 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-05-21T20:40:02.639000Z",
+    "cache-timestamp": "2024-05-21T21:02:02.828000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-05-21T20:40:47.446726Z"
+    "timestamp": "2024-05-21T21:02:10.131664Z"
   },
   "other": [],
-  "pressure_altitude": 110,
-  "raw": "KBLI 211953Z 16008KT 6SM RA BR SCT015 BKN021 OVC045 11/09 A2998 RMK AO2 SLP160 P0011 T01060089",
-  "relative_humidity": 0.8922144848734106,
-  "remarks": "RMK AO2 SLP160 P0011 T01060089",
+  "pressure_altitude": 120,
+  "raw": "KBLI 212053Z 16010G16KT 6SM -RA BR BKN021 BKN045 OVC060 11/09 A2997 RMK AO2 SLP154 P0007 60030 T01110094 58017",
+  "relative_humidity": 0.8926151927981825,
+  "remarks": "RMK AO2 SLP154 P0007 60030 T01110094 58017",
   "remarks_info": {
     "codes": [
       {
@@ -49,37 +49,45 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0089",
-      "spoken": "eight point nine",
-      "value": 8.9
+      "repr": "0094",
+      "spoken": "nine point four",
+      "value": 9.4
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0011",
-      "spoken": "zero point one one",
-      "value": 0.11
+    "precip_36_hours": {
+      "repr": "60030",
+      "spoken": "zero point three",
+      "value": 0.3
     },
-    "pressure_tendency": null,
+    "precip_hourly": {
+      "repr": "P0007",
+      "spoken": "zero point zero seven",
+      "value": 0.07
+    },
+    "pressure_tendency": {
+      "change": 1.7,
+      "repr": "58017",
+      "tendency": "Steady or increasing, then decreasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP160",
-      "spoken": "one zero one six point zero",
-      "value": 1016
+      "repr": "SLP154",
+      "spoken": "one zero one five point four",
+      "value": 1015.4
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0106",
-      "spoken": "one zero point six",
-      "value": 10.6
+      "repr": "0111",
+      "spoken": "one one point one",
+      "value": 11.1
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 211953Z 16008KT 6SM RA BR SCT015 BKN021 OVC045 11/09 A2998 RMK AO2 SLP160 P0011 T01060089",
+  "sanitized": "KBLI 212053Z 16010G16KT 6SM -RA BR BKN021 BKN045 OVC060 11/09 A2997 RMK AO2 SLP154 P0007 60030 T01110094 58017",
   "station": "KBLI",
   "temperature": {
     "repr": "11",
@@ -87,8 +95,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-05-21T19:53:00Z",
-    "repr": "211953Z"
+    "dt": "2024-05-21T20:53:00Z",
+    "repr": "212053Z"
   },
   "units": {
     "accumulation": "in",
@@ -108,17 +116,21 @@
     "spoken": "one six zero",
     "value": 160
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "16",
+    "spoken": "one six",
+    "value": 16
+  },
   "wind_speed": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "RA",
-      "value": "Rain"
+      "repr": "-RA",
+      "value": "Light Rain"
     },
     {
       "repr": "BR",
