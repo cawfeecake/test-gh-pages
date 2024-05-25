@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 7,
+      "altitude": 11,
       "modifier": null,
-      "repr": "FEW007",
-      "type": "FEW"
-    },
-    {
-      "altitude": 13,
-      "modifier": null,
-      "repr": "SCT013",
+      "repr": "SCT011",
       "type": "SCT"
     },
     {
-      "altitude": 30,
+      "altitude": 19,
       "modifier": null,
-      "repr": "OVC030",
+      "repr": "BKN019",
+      "type": "BKN"
+    },
+    {
+      "altitude": 27,
+      "modifier": null,
+      "repr": "OVC027",
       "type": "OVC"
     }
   ],
@@ -30,17 +30,16 @@
     "spoken": "eight",
     "value": 8
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
-    "cache-timestamp": "2024-05-25T20:01:46.875000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-05-25T20:01:58.485468Z"
+    "timestamp": "2024-05-25T20:23:28.245379Z"
   },
   "other": [],
   "pressure_altitude": 72,
-  "raw": "KAWO 251952Z AUTO 00000KT 10SM -RA FEW007 SCT013 OVC030 09/08 A2999 RMK AO2 PNO $",
+  "raw": "KAWO 252020Z AUTO 00000KT 2 1/2SM -RA BR SCT011 BKN019 OVC027 09/08 A2999 RMK AO2 RAB07 PNO $",
   "relative_humidity": 0.9344901544791844,
-  "remarks": "RMK AO2 PNO $",
+  "remarks": "RMK AO2 RAB07 PNO $",
   "remarks_info": {
     "codes": [
       {
@@ -54,6 +53,10 @@
       {
         "repr": "PNO",
         "value": "Precipitation amount not available"
+      },
+      {
+        "repr": "RAB07",
+        "value": "Rain began at :07"
       }
     ],
     "dewpoint_decimal": null,
@@ -71,7 +74,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 251952Z 00000KT 10SM -RA FEW007 SCT013 OVC030 09/08 A2999 RMK AO2 PNO $",
+  "sanitized": "KAWO 252020Z 00000KT 2 1/2SM -RA BR SCT011 BKN019 OVC027 09/08 A2999 RMK AO2 RAB07 PNO $",
   "station": "KAWO",
   "temperature": {
     "repr": "09",
@@ -79,8 +82,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-05-25T19:52:00Z",
-    "repr": "251952Z"
+    "dt": "2024-05-25T20:20:00Z",
+    "repr": "252020Z"
   },
   "units": {
     "accumulation": "in",
@@ -91,9 +94,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
@@ -111,6 +117,10 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
