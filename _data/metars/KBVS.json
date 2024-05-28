@@ -1,24 +1,30 @@
 {
   "altimeter": {
-    "repr": "A3010",
-    "spoken": "three zero point one zero",
-    "value": 30.1
+    "repr": "A3011",
+    "spoken": "three zero point one one",
+    "value": 30.11
   },
   "clouds": [
     {
-      "altitude": 7,
+      "altitude": 6,
       "modifier": null,
-      "repr": "SCT007",
-      "type": "SCT"
+      "repr": "FEW006",
+      "type": "FEW"
     },
     {
-      "altitude": 16,
+      "altitude": 20,
       "modifier": null,
-      "repr": "BKN016",
+      "repr": "BKN020",
+      "type": "BKN"
+    },
+    {
+      "altitude": 26,
+      "modifier": null,
+      "repr": "BKN026",
       "type": "BKN"
     }
   ],
-  "density_altitude": -481,
+  "density_altitude": -491,
   "dewpoint": {
     "repr": "11",
     "spoken": "one one",
@@ -26,15 +32,15 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-05-28T20:04:04.780000Z",
+    "cache-timestamp": "2024-05-28T20:24:04.923000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-05-28T20:04:54.207845Z"
+    "timestamp": "2024-05-28T20:25:04.338786Z"
   },
   "other": [],
-  "pressure_altitude": -36,
-  "raw": "KBVS 281935Z AUTO 00000KT 7SM SCT007 BKN016 11/11 A3010 RMK A01",
+  "pressure_altitude": -46,
+  "raw": "KBVS 281955Z AUTO 00000KT 6SM BR FEW006 BKN020 BKN026 11/11 A3011 RMK A01 P0007",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0007",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -44,7 +50,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0007",
+      "spoken": "zero point zero seven",
+      "value": 0.07
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -52,7 +62,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 281935Z 00000KT 7SM SCT007 BKN016 11/11 A3010 RMK A01",
+  "sanitized": "KBVS 281955Z 00000KT 6SM BR FEW006 BKN020 BKN026 11/11 A3011 RMK A01 P0007",
   "station": "KBVS",
   "temperature": {
     "repr": "11",
@@ -60,8 +70,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-05-28T19:35:00Z",
-    "repr": "281935Z"
+    "dt": "2024-05-28T19:55:00Z",
+    "repr": "281955Z"
   },
   "units": {
     "accumulation": "in",
@@ -72,9 +82,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "repr": "6",
+    "spoken": "six",
+    "value": 6
   },
   "wind_direction": {
     "repr": "000",
@@ -88,5 +98,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
