@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3040",
-    "spoken": "three zero point four zero",
-    "value": 30.4
+    "repr": "A3038",
+    "spoken": "three zero point three eight",
+    "value": 30.38
   },
-  "clouds": [],
-  "density_altitude": -376,
+  "clouds": [
+    {
+      "altitude": 47,
+      "modifier": null,
+      "repr": "BKN047",
+      "type": "BKN"
+    }
+  ],
+  "density_altitude": -356,
   "dewpoint": {
     "repr": "06",
     "spoken": "six",
@@ -13,15 +20,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-05-30T20:40:06.521000Z",
+    "cache-timestamp": "2024-05-30T21:02:03.015000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-05-30T20:40:37.684100Z"
+    "timestamp": "2024-05-30T21:02:35.761839Z"
   },
   "other": [],
-  "pressure_altitude": -338,
-  "raw": "KAWO 301956Z AUTO 00000KT 10SM CLR 14/06 A3040 RMK AO2 SLP298 T01440056",
+  "pressure_altitude": -318,
+  "raw": "KAWO 302056Z AUTO 31006KT 10SM BKN047 14/06 A3038 RMK AO2 SLP293 T01440056 58012",
   "relative_humidity": 0.5546727881309178,
-  "remarks": "RMK AO2 SLP298 T01440056",
+  "remarks": "RMK AO2 SLP293 T01440056 58012",
   "remarks_info": {
     "codes": [
       {
@@ -41,11 +48,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 1.2,
+      "repr": "58012",
+      "tendency": "Steady or increasing, then decreasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP298",
-      "spoken": "one zero two nine point eight",
-      "value": 1029.8
+      "repr": "SLP293",
+      "spoken": "one zero two nine point three",
+      "value": 1029.3
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -56,7 +67,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 301956Z 00000KT 10SM 14/06 A3040 RMK AO2 SLP298 T01440056",
+  "sanitized": "KAWO 302056Z 31006KT 10SM BKN047 14/06 A3038 RMK AO2 SLP293 T01440056 58012",
   "station": "KAWO",
   "temperature": {
     "repr": "14",
@@ -64,8 +75,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-05-30T19:56:00Z",
-    "repr": "301956Z"
+    "dt": "2024-05-30T20:56:00Z",
+    "repr": "302056Z"
   },
   "units": {
     "accumulation": "in",
@@ -81,15 +92,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "310",
+    "spoken": "three one zero",
+    "value": 310
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
   "wx_codes": []
