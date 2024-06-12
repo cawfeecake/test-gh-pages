@@ -1,24 +1,30 @@
 {
   "altimeter": {
-    "repr": "A3020",
-    "spoken": "three zero point two zero",
-    "value": 30.2
+    "repr": "A3019",
+    "spoken": "three zero point one nine",
+    "value": 30.19
   },
   "clouds": [
     {
-      "altitude": 22,
+      "altitude": 20,
       "modifier": null,
-      "repr": "FEW022",
+      "repr": "FEW020",
+      "type": "FEW"
+    },
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "FEW050",
       "type": "FEW"
     },
     {
       "altitude": 220,
       "modifier": null,
-      "repr": "FEW220",
-      "type": "FEW"
+      "repr": "SCT220",
+      "type": "SCT"
     }
   ],
-  "density_altitude": -894,
+  "density_altitude": -884,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -26,14 +32,15 @@
   },
   "flight_rules": "VFR",
   "meta": {
+    "cache-timestamp": "2024-06-12T09:06:02.637000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-06-12T08:41:48.500081Z"
+    "timestamp": "2024-06-12T09:06:43.259124Z"
   },
   "other": [],
-  "pressure_altitude": -233,
-  "raw": "KNUW 120753Z 27011KT 10SM FEW022 FEW220 09/08 A3020 RMK AO2 SLP230 T00940083 401670094 VISNO $",
+  "pressure_altitude": -223,
+  "raw": "KNUW 120853Z 27013KT 10SM FEW020 FEW050 SCT220 09/08 A3019 RMK AO2 SLP228 T00940083 58001 VISNO $",
   "relative_humidity": 0.9283717155883899,
-  "remarks": "RMK AO2 SLP230 T00940083 401670094 VISNO $",
+  "remarks": "RMK AO2 SLP228 T00940083 58001 VISNO $",
   "remarks_info": {
     "codes": [
       {
@@ -50,26 +57,22 @@
       "spoken": "eight point three",
       "value": 8.3
     },
-    "maximum_temperature_24": {
-      "repr": "0167",
-      "spoken": "one six point seven",
-      "value": 16.7
-    },
+    "maximum_temperature_24": null,
     "maximum_temperature_6": null,
-    "minimum_temperature_24": {
-      "repr": "0094",
-      "spoken": "nine point four",
-      "value": 9.4
-    },
+    "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "58001",
+      "tendency": "Steady or increasing, then decreasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP230",
-      "spoken": "one zero two three point zero",
-      "value": 1023
+      "repr": "SLP228",
+      "spoken": "one zero two two point eight",
+      "value": 1022.8
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -80,7 +83,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 120753Z 27011KT 10SM FEW022 FEW220 09/08 A3020 RMK AO2 SLP230 T00940083 401670094 VISNO $",
+  "sanitized": "KNUW 120853Z 27013KT 10SM FEW020 FEW050 SCT220 09/08 A3019 RMK AO2 SLP228 T00940083 58001 VISNO $",
   "station": "KNUW",
   "temperature": {
     "repr": "09",
@@ -88,8 +91,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-06-12T07:53:00Z",
-    "repr": "120753Z"
+    "dt": "2024-06-12T08:53:00Z",
+    "repr": "120853Z"
   },
   "units": {
     "accumulation": "in",
@@ -111,9 +114,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "13",
+    "spoken": "one three",
+    "value": 13
   },
   "wind_variable_direction": [],
   "wx_codes": []
