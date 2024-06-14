@@ -1,10 +1,16 @@
 {
   "altimeter": {
-    "repr": "A3012",
-    "spoken": "three zero point one two",
-    "value": 30.12
+    "repr": "A3013",
+    "spoken": "three zero point one three",
+    "value": 30.13
   },
   "clouds": [
+    {
+      "altitude": 45,
+      "modifier": null,
+      "repr": "SCT045",
+      "type": "SCT"
+    },
     {
       "altitude": 70,
       "modifier": null,
@@ -12,7 +18,7 @@
       "type": "OVC"
     }
   ],
-  "density_altitude": -385,
+  "density_altitude": -395,
   "dewpoint": {
     "repr": "06",
     "spoken": "six",
@@ -20,15 +26,14 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-06-14T15:06:04.857000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-06-14T15:06:30.291891Z"
+    "timestamp": "2024-06-14T15:27:44.617502Z"
   },
   "other": [],
-  "pressure_altitude": -30,
-  "raw": "KBLI 141353Z 16012G18KT 10SM OVC070 12/06 A3012 RMK AO2 SLP204 T01170061",
+  "pressure_altitude": -40,
+  "raw": "KBLI 141453Z VRB06KT 10SM SCT045 OVC070 12/06 A3013 RMK AO2 SLP210 T01170061 53014",
   "relative_humidity": 0.68504766646176,
-  "remarks": "RMK AO2 SLP204 T01170061",
+  "remarks": "RMK AO2 SLP210 T01170061 53014",
   "remarks_info": {
     "codes": [
       {
@@ -48,11 +53,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 1.4,
+      "repr": "53014",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP204",
-      "spoken": "one zero two zero point four",
-      "value": 1020.4
+      "repr": "SLP210",
+      "spoken": "one zero two one point zero",
+      "value": 1021
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -63,7 +72,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 141353Z 16012G18KT 10SM OVC070 12/06 A3012 RMK AO2 SLP204 T01170061",
+  "sanitized": "KBLI 141453Z VRB06KT 10SM SCT045 OVC070 12/06 A3013 RMK AO2 SLP210 T01170061 53014",
   "station": "KBLI",
   "temperature": {
     "repr": "12",
@@ -71,8 +80,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2024-06-14T13:53:00Z",
-    "repr": "141353Z"
+    "dt": "2024-06-14T14:53:00Z",
+    "repr": "141453Z"
   },
   "units": {
     "accumulation": "in",
@@ -88,19 +97,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "160",
-    "spoken": "one six zero",
-    "value": 160
+    "repr": "VRB",
+    "spoken": "variable",
+    "value": null
   },
-  "wind_gust": {
-    "repr": "18",
-    "spoken": "one eight",
-    "value": 18
-  },
+  "wind_gust": null,
   "wind_speed": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
   "wx_codes": []
