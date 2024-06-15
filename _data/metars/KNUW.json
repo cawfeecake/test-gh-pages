@@ -1,14 +1,14 @@
 {
   "altimeter": {
-    "repr": "A3011",
-    "spoken": "three zero point one one",
-    "value": 30.11
+    "repr": "A3009",
+    "spoken": "three zero point zero nine",
+    "value": 30.09
   },
   "clouds": [
     {
-      "altitude": 45,
-      "modifier": "CB",
-      "repr": "SCT045CB",
+      "altitude": 27,
+      "modifier": null,
+      "repr": "SCT027",
       "type": "SCT"
     },
     {
@@ -18,9 +18,9 @@
       "type": "BKN"
     },
     {
-      "altitude": 85,
+      "altitude": 80,
       "modifier": null,
-      "repr": "BKN085",
+      "repr": "BKN080",
       "type": "BKN"
     },
     {
@@ -30,23 +30,23 @@
       "type": "BKN"
     }
   ],
-  "density_altitude": -336,
+  "density_altitude": -184,
   "dewpoint": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "12",
+    "spoken": "one two",
+    "value": 12
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-06-14T23:40:02.806000Z",
+    "cache-timestamp": "2024-06-15T00:28:04.771000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-06-14T23:40:31.161201Z"
+    "timestamp": "2024-06-15T00:28:55.432962Z"
   },
   "other": [],
-  "pressure_altitude": -143,
-  "raw": "KNUW 142253Z 14012KT 5SM -RA BR SCT045CB BKN060 BKN085 BKN200 13/11 A3011 RMK AO2 RAB29 SLP200 CB SE MOV NE P0004 T01330111 $",
-  "relative_humidity": 0.8652137135915917,
-  "remarks": "RMK AO2 RAB29 SLP200 CB SE MOV NE P0004 T01330111 $",
+  "pressure_altitude": -123,
+  "raw": "KNUW 142353Z 11011KT 10SM SCT027 BKN060 BKN080 BKN200 14/12 A3009 RMK AO2 RAE49 SLP194 CB DSNT NE-SE P0003 60007 T01440122 10183 20133 56011 $",
+  "relative_humidity": 0.8662852364578876,
+  "remarks": "RMK AO2 RAE49 SLP194 CB DSNT NE-SE P0003 60007 T01440122 10183 20133 56011 $",
   "remarks_info": {
     "codes": [
       {
@@ -58,51 +58,67 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "RAB29",
-        "value": "Rain began at :29"
+        "repr": "RAE49",
+        "value": "Rain ended at :49"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0111",
-      "spoken": "one one point one",
-      "value": 11.1
+      "repr": "0122",
+      "spoken": "one two point two",
+      "value": 12.2
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
-    "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
-    "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0004",
-      "spoken": "zero point zero four",
-      "value": 0.04
+    "maximum_temperature_6": {
+      "repr": "10183",
+      "spoken": "one eight point three",
+      "value": 18.3
     },
-    "pressure_tendency": null,
+    "minimum_temperature_24": null,
+    "minimum_temperature_6": {
+      "repr": "20133",
+      "spoken": "one three point three",
+      "value": 13.3
+    },
+    "precip_24_hours": null,
+    "precip_36_hours": {
+      "repr": "60007",
+      "spoken": "zero point zero seven",
+      "value": 0.07
+    },
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
+    "pressure_tendency": {
+      "change": 1.1,
+      "repr": "56011",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP200",
-      "spoken": "one zero two zero point zero",
-      "value": 1020
+      "repr": "SLP194",
+      "spoken": "one zero one nine point four",
+      "value": 1019.4
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0133",
-      "spoken": "one three point three",
-      "value": 13.3
+      "repr": "0144",
+      "spoken": "one four point four",
+      "value": 14.4
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 142253Z 14012KT 5SM -RA BR SCT045CB BKN060 BKN085 BKN200 13/11 A3011 RMK AO2 RAB29 SLP200 CB SE MOV NE P0004 T01330111 $",
+  "sanitized": "KNUW 142353Z 11011KT 10SM SCT027 BKN060 BKN080 BKN200 14/12 A3009 RMK AO2 RAE49 SLP194 CB DSNT NE-SE P0003 60007 T01440122 10183 20133 56011 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "13",
-    "spoken": "one three",
-    "value": 13
+    "repr": "14",
+    "spoken": "one four",
+    "value": 14
   },
   "time": {
-    "dt": "2024-06-14T22:53:00Z",
-    "repr": "142253Z"
+    "dt": "2024-06-14T23:53:00Z",
+    "repr": "142353Z"
   },
   "units": {
     "accumulation": "in",
@@ -113,30 +129,21 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "5",
-    "spoken": "five",
-    "value": 5
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_direction": {
-    "repr": "140",
-    "spoken": "one four zero",
-    "value": 140
+    "repr": "110",
+    "spoken": "one one zero",
+    "value": 110
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ]
+  "wx_codes": []
 }
