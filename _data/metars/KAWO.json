@@ -6,9 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 60,
+      "altitude": 48,
       "modifier": null,
-      "repr": "OVC060",
+      "repr": "OVC048",
       "type": "OVC"
     }
   ],
@@ -20,20 +20,27 @@
   },
   "flight_rules": "VFR",
   "meta": {
-    "cache-timestamp": "2024-06-17T08:08:04.933000Z",
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-06-17T08:08:58.140625Z"
+    "timestamp": "2024-06-17T08:30:32.279825Z"
   },
   "other": [],
   "pressure_altitude": 62,
-  "raw": "KAWO 170656Z AUTO 00000KT 10SM OVC060 11/08 A3000 RMK AO2 SLP164 T01110083",
+  "raw": "KAWO 170756Z AUTO 00000KT 10SM -RA OVC048 11/08 A3000 RMK AO2 RAB01 SLP164 P0000 T01110083 401500061",
   "relative_humidity": 0.8286786978983101,
-  "remarks": "RMK AO2 SLP164 T01110083",
+  "remarks": "RMK AO2 RAB01 SLP164 P0000 T01110083 401500061",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB01",
+        "value": "Rain began at :01"
       }
     ],
     "dewpoint_decimal": {
@@ -41,9 +48,17 @@
       "spoken": "eight point three",
       "value": 8.3
     },
-    "maximum_temperature_24": null,
+    "maximum_temperature_24": {
+      "repr": "0150",
+      "spoken": "one five point zero",
+      "value": 15
+    },
     "maximum_temperature_6": null,
-    "minimum_temperature_24": null,
+    "minimum_temperature_24": {
+      "repr": "0061",
+      "spoken": "six point one",
+      "value": 6.1
+    },
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
@@ -63,7 +78,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 170656Z 00000KT 10SM OVC060 11/08 A3000 RMK AO2 SLP164 T01110083",
+  "sanitized": "KAWO 170756Z 00000KT 10SM -RA OVC048 11/08 A3000 RMK AO2 RAB01 SLP164 P0000 T01110083 401500061",
   "station": "KAWO",
   "temperature": {
     "repr": "11",
@@ -71,8 +86,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-06-17T06:56:00Z",
-    "repr": "170656Z"
+    "dt": "2024-06-17T07:56:00Z",
+    "repr": "170756Z"
   },
   "units": {
     "accumulation": "in",
@@ -99,5 +114,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
