@@ -6,15 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 43,
+      "altitude": 41,
       "modifier": null,
-      "repr": "BKN043",
-      "type": "BKN"
-    },
-    {
-      "altitude": 50,
-      "modifier": null,
-      "repr": "OVC050",
+      "repr": "OVC041",
       "type": "OVC"
     }
   ],
@@ -27,18 +21,26 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-06-18T02:25:15.849665Z"
+    "timestamp": "2024-06-18T03:07:49.366053Z"
   },
   "other": [],
   "pressure_altitude": -8,
-  "raw": "KAWO 180156Z AUTO 29006KT 10SM BKN043 OVC050 14/08 A3007 RMK AO2 SLP188 T01440078",
+  "raw": "KAWO 180256Z AUTO 10SM OVC041 14/08 A3007 RMK AO2 RAB18E32 SLP188 P0000 60000 T01440078 51003 $",
   "relative_humidity": 0.6452206564299534,
-  "remarks": "RMK AO2 SLP188 T01440078",
+  "remarks": "RMK AO2 RAB18E32 SLP188 P0000 60000 T01440078 51003 $",
   "remarks_info": {
     "codes": [
       {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -51,9 +53,17 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.3,
+      "repr": "51003",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP188",
       "spoken": "one zero one eight point eight",
@@ -68,7 +78,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 180156Z 29006KT 10SM BKN043 OVC050 14/08 A3007 RMK AO2 SLP188 T01440078",
+  "sanitized": "KAWO 180256Z 10SM OVC041 14/08 A3007 RMK AO2 RAB18E32 SLP188 P0000 60000 T01440078 51003 $",
   "station": "KAWO",
   "temperature": {
     "repr": "14",
@@ -76,8 +86,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-06-18T01:56:00Z",
-    "repr": "180156Z"
+    "dt": "2024-06-18T02:56:00Z",
+    "repr": "180256Z"
   },
   "units": {
     "accumulation": "in",
@@ -92,17 +102,9 @@
     "spoken": "one zero",
     "value": 10
   },
-  "wind_direction": {
-    "repr": "290",
-    "spoken": "two nine zero",
-    "value": 290
-  },
+  "wind_direction": null,
   "wind_gust": null,
-  "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
-  },
+  "wind_speed": null,
   "wind_variable_direction": [],
   "wx_codes": []
 }
