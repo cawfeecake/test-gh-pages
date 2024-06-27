@@ -14,15 +14,19 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-05-13",
-    "timestamp": "2024-06-27T02:47:08.176791Z"
+    "timestamp": "2024-06-27T03:07:24.211536Z"
   },
   "other": [],
   "pressure_altitude": 72,
-  "raw": "KAWO 270156Z AUTO 31003KT 5SM -RA BR 14/13 A2999 RMK AO2 SLP159 P0003 T01390133",
+  "raw": "KAWO 270256Z AUTO 00000KT 5SM -RA BR 14/13 A2999 RMK AO2 SLP159 P0005 60015 T01390133 51001 $",
   "relative_humidity": 0.9616972468637218,
-  "remarks": "RMK AO2 SLP159 P0003 T01390133",
+  "remarks": "RMK AO2 SLP159 P0005 60015 T01390133 51001 $",
   "remarks_info": {
     "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
@@ -38,13 +42,21 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0003",
-      "spoken": "zero point zero three",
-      "value": 0.03
+    "precip_36_hours": {
+      "repr": "60015",
+      "spoken": "zero point one five",
+      "value": 0.15
     },
-    "pressure_tendency": null,
+    "precip_hourly": {
+      "repr": "P0005",
+      "spoken": "zero point zero five",
+      "value": 0.05
+    },
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "51001",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP159",
       "spoken": "one zero one five point nine",
@@ -59,7 +71,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 270156Z 31003KT 5SM -RA BR 14/13 A2999 RMK AO2 SLP159 P0003 T01390133",
+  "sanitized": "KAWO 270256Z 00000KT 5SM -RA BR 14/13 A2999 RMK AO2 SLP159 P0005 60015 T01390133 51001 $",
   "station": "KAWO",
   "temperature": {
     "repr": "14",
@@ -67,8 +79,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-06-27T01:56:00Z",
-    "repr": "270156Z"
+    "dt": "2024-06-27T02:56:00Z",
+    "repr": "270256Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,15 +96,15 @@
     "value": 5
   },
   "wind_direction": {
-    "repr": "310",
-    "spoken": "three one zero",
-    "value": 310
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
   "wx_codes": [
