@@ -21,18 +21,26 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-06-30T11:40:28.990940Z"
+    "timestamp": "2024-06-30T12:10:26.000337Z"
   },
   "other": [],
   "pressure_altitude": -18,
-  "raw": "KAWO 301056Z AUTO 00000KT 10SM OVC022 15/14 A3008 RMK AO2 SLP190 T01500144",
+  "raw": "KAWO 301156Z AUTO 00000KT 7SM -RA OVC022 15/14 A3008 RMK AO2 RAB55 SLP190 P0000 60000 T01500144 10150 20144 51001",
   "relative_humidity": 0.9620166466516531,
-  "remarks": "RMK AO2 SLP190 T01500144",
+  "remarks": "RMK AO2 RAB55 SLP190 P0000 60000 T01500144 10150 20144 51001",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB55",
+        "value": "Rain began at :55"
       }
     ],
     "dewpoint_decimal": {
@@ -41,13 +49,29 @@
       "value": 14.4
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10150",
+      "spoken": "one five point zero",
+      "value": 15
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20144",
+      "spoken": "one four point four",
+      "value": 14.4
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "51001",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP190",
       "spoken": "one zero one nine point zero",
@@ -62,7 +86,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 301056Z 00000KT 10SM OVC022 15/14 A3008 RMK AO2 SLP190 T01500144",
+  "sanitized": "KAWO 301156Z 00000KT 7SM -RA OVC022 15/14 A3008 RMK AO2 RAB55 SLP190 P0000 60000 T01500144 10150 20144 51001",
   "station": "KAWO",
   "temperature": {
     "repr": "15",
@@ -70,8 +94,8 @@
     "value": 15
   },
   "time": {
-    "dt": "2024-06-30T10:56:00Z",
-    "repr": "301056Z"
+    "dt": "2024-06-30T11:56:00Z",
+    "repr": "301156Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,9 +106,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "7",
+    "spoken": "seven",
+    "value": 7
   },
   "wind_direction": {
     "repr": "000",
@@ -98,5 +122,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
