@@ -1,11 +1,11 @@
 {
   "altimeter": {
-    "repr": "A3003",
-    "spoken": "three zero point zero three",
-    "value": 30.03
+    "repr": "A3002",
+    "spoken": "three zero point zero two",
+    "value": 30.02
   },
   "clouds": [],
-  "density_altitude": 620,
+  "density_altitude": 762,
   "dewpoint": {
     "repr": "12",
     "spoken": "one two",
@@ -14,15 +14,24 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-07-06T20:40:36.338074Z"
+    "timestamp": "2024-07-06T21:04:31.621941Z"
   },
   "other": [],
-  "pressure_altitude": -63,
-  "raw": "KNUW 061953Z 27005KT 10SM CLR 21/12 A3003 RMK SLP 174 T02060122",
-  "relative_humidity": 0.5855524803615992,
-  "remarks": "RMK SLP 174 T02060122",
+  "pressure_altitude": -53,
+  "raw": "KNUW 062053Z 27005KT 10SM CLR 22/12 A3002 RMK AO2 SLP170 T02170122 58008 $",
+  "relative_humidity": 0.5472910677463987,
+  "remarks": "RMK AO2 SLP170 T02170122 58008 $",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0122",
       "spoken": "one two point two",
@@ -35,27 +44,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.8,
+      "repr": "58008",
+      "tendency": "Steady or increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP170",
+      "spoken": "one zero one seven point zero",
+      "value": 1017
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0206",
-      "spoken": "two zero point six",
-      "value": 20.6
+      "repr": "0217",
+      "spoken": "two one point seven",
+      "value": 21.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 061953Z 27005KT 10SM 21/12 A3003 RMK SLP 174 T02060122",
+  "sanitized": "KNUW 062053Z 27005KT 10SM 22/12 A3002 RMK AO2 SLP170 T02170122 58008 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "21",
-    "spoken": "two one",
-    "value": 21
+    "repr": "22",
+    "spoken": "two two",
+    "value": 22
   },
   "time": {
-    "dt": "2024-07-06T19:53:00Z",
-    "repr": "061953Z"
+    "dt": "2024-07-06T20:53:00Z",
+    "repr": "062053Z"
   },
   "units": {
     "accumulation": "in",
