@@ -1,10 +1,16 @@
 {
   "altimeter": {
-    "repr": "A3000",
-    "spoken": "three zero point zero zero",
-    "value": 30
+    "repr": "A3001",
+    "spoken": "three zero point zero one",
+    "value": 30.01
   },
   "clouds": [
+    {
+      "altitude": 5,
+      "modifier": null,
+      "repr": "BKN005",
+      "type": "BKN"
+    },
     {
       "altitude": 10,
       "modifier": null,
@@ -12,22 +18,22 @@
       "type": "BKN"
     }
   ],
-  "density_altitude": -418,
+  "density_altitude": -428,
   "dewpoint": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-07-10T14:40:38.713892Z"
+    "timestamp": "2024-07-10T15:07:02.351889Z"
   },
   "other": [],
-  "pressure_altitude": -33,
-  "raw": "KNUW 101412Z 22008KT 10SM BKN010 12/12 A3000 RMK AO2 T01170117 $",
-  "relative_humidity": 1,
-  "remarks": "RMK AO2 T01170117 $",
+  "pressure_altitude": -43,
+  "raw": "KNUW 101453Z 22009KT 1SM BR BKN005 BKN010 12/11 A3001 RMK AO2 SFC VIS 5 SLP167 VIS W 1 T01170111 53020 $",
+  "relative_humidity": 0.9610463260900074,
+  "remarks": "RMK AO2 SFC VIS 5 SLP167 VIS W 1 T01170111 53020 $",
   "remarks_info": {
     "codes": [
       {
@@ -40,9 +46,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0117",
-      "spoken": "one one point seven",
-      "value": 11.7
+      "repr": "0111",
+      "spoken": "one one point one",
+      "value": 11.1
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -51,8 +57,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 2,
+      "repr": "53020",
+      "tendency": "Decreasing or steady, then increasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP167",
+      "spoken": "one zero one six point seven",
+      "value": 1016.7
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -62,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 101412Z 22008KT 10SM BKN010 12/12 A3000 RMK AO2 T01170117 $",
+  "sanitized": "KNUW 101453Z 22009KT 1SM BR BKN005 BKN010 12/11 A3001 RMK AO2 SFC VIS 5 SLP167 VIS W 1 T01170111 53020 $",
   "station": "KNUW",
   "temperature": {
     "repr": "12",
@@ -70,8 +84,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2024-07-10T14:12:00Z",
-    "repr": "101412Z"
+    "dt": "2024-07-10T14:53:00Z",
+    "repr": "101453Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,9 +96,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "1",
+    "spoken": "one",
+    "value": 1
   },
   "wind_direction": {
     "repr": "220",
@@ -93,10 +107,15 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "09",
+    "spoken": "nine",
+    "value": 9
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
