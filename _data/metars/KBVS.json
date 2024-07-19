@@ -11,16 +11,16 @@
     "spoken": "one two",
     "value": 12
   },
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-07-19T12:44:54.606295Z"
+    "timestamp": "2024-07-19T13:09:52.101157Z"
   },
   "other": [],
   "pressure_altitude": -96,
-  "raw": "KBVS 191235Z AUTO 00000KT 10SM CLR 12/12 A3016 RMK A01",
+  "raw": "KBVS 191255Z AUTO 00000KT 1 1/4SM BR CLR 12/12 A3016 RMK A01 VIS 1/2V5",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 VIS 1/2V5",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -38,7 +38,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 191235Z 00000KT 10SM 12/12 A3016 RMK A01",
+  "sanitized": "KBVS 191255Z 00000KT 1 1/4SM BR 12/12 A3016 RMK A01 VIS 1/2V5",
   "station": "KBVS",
   "temperature": {
     "repr": "12",
@@ -46,8 +46,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2024-07-19T12:35:00Z",
-    "repr": "191235Z"
+    "dt": "2024-07-19T12:55:00Z",
+    "repr": "191255Z"
   },
   "units": {
     "accumulation": "in",
@@ -58,9 +58,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 4,
+    "normalized": "1 1/4",
+    "numerator": 5,
+    "repr": "5/4",
+    "spoken": "one and one quarter",
+    "value": 1.25
   },
   "wind_direction": {
     "repr": "000",
@@ -74,5 +77,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
