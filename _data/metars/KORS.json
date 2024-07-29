@@ -8,19 +8,13 @@
     {
       "altitude": 5,
       "modifier": null,
-      "repr": "SCT005",
-      "type": "SCT"
+      "repr": "FEW005",
+      "type": "FEW"
     },
     {
-      "altitude": 19,
+      "altitude": 32,
       "modifier": null,
-      "repr": "SCT019",
-      "type": "SCT"
-    },
-    {
-      "altitude": 31,
-      "modifier": null,
-      "repr": "SCT031",
+      "repr": "SCT032",
       "type": "SCT"
     }
   ],
@@ -30,16 +24,16 @@
     "spoken": "one six",
     "value": 16
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-07-29T17:40:30.074023Z"
+    "timestamp": "2024-07-29T18:08:15.739957Z"
   },
   "other": [],
   "pressure_altitude": 91,
-  "raw": "KORS 291735Z AUTO 17006KT 3SM -RA BR SCT005 SCT019 SCT031 16/16 A2986 RMK AO2",
+  "raw": "KORS 291755Z AUTO 18009KT 2 1/2SM -RA BR FEW005 SCT032 16/16 A2986 RMK AO2 P0002",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0002",
   "remarks_info": {
     "codes": [
       {
@@ -54,7 +48,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -62,7 +60,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 291735Z 17006KT 3SM -RA BR SCT005 SCT019 SCT031 16/16 A2986 RMK AO2",
+  "sanitized": "KORS 291755Z 18009KT 2 1/2SM -RA BR FEW005 SCT032 16/16 A2986 RMK AO2 P0002",
   "station": "KORS",
   "temperature": {
     "repr": "16",
@@ -70,8 +68,8 @@
     "value": 16
   },
   "time": {
-    "dt": "2024-07-29T17:35:00Z",
-    "repr": "291735Z"
+    "dt": "2024-07-29T17:55:00Z",
+    "repr": "291755Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,20 +80,23 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
-    "repr": "170",
-    "spoken": "one seven zero",
-    "value": 170
+    "repr": "180",
+    "spoken": "one eight zero",
+    "value": 180
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "09",
+    "spoken": "nine",
+    "value": 9
   },
   "wind_variable_direction": [],
   "wx_codes": [
