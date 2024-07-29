@@ -6,9 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 14,
+      "altitude": 10,
       "modifier": null,
-      "repr": "OVC014",
+      "repr": "BKN010",
+      "type": "BKN"
+    },
+    {
+      "altitude": 15,
+      "modifier": null,
+      "repr": "OVC015",
       "type": "OVC"
     }
   ],
@@ -20,16 +26,14 @@
   },
   "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2024-07-29T14:40:36.509000Z",
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-07-29T15:06:47.440710Z",
-    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
+    "timestamp": "2024-07-29T15:28:17.945757Z"
   },
   "other": [],
   "pressure_altitude": 87,
-  "raw": "KNUW 291433Z 12007KT 9SM -RA OVC014 16/15 A2988 RMK AO2 P0002 T01560150",
+  "raw": "KNUW 291453Z 13008KT 5SM RA BR BKN010 OVC015 16/15 A2988 RMK AO2 SLP121 P0004 60008 T01560150 53002",
   "relative_humidity": 0.9621891947752454,
-  "remarks": "RMK AO2 P0002 T01560150",
+  "remarks": "RMK AO2 SLP121 P0004 60008 T01560150 53002",
   "remarks_info": {
     "codes": [
       {
@@ -47,14 +51,26 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0002",
-      "spoken": "zero point zero two",
-      "value": 0.02
+    "precip_36_hours": {
+      "repr": "60008",
+      "spoken": "zero point zero eight",
+      "value": 0.08
     },
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "precip_hourly": {
+      "repr": "P0004",
+      "spoken": "zero point zero four",
+      "value": 0.04
+    },
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "53002",
+      "tendency": "Decreasing or steady, then increasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP121",
+      "spoken": "one zero one two point one",
+      "value": 1012.1
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -64,7 +80,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 291433Z 12007KT 9SM -RA OVC014 16/15 A2988 RMK AO2 P0002 T01560150",
+  "sanitized": "KNUW 291453Z 13008KT 5SM RA BR BKN010 OVC015 16/15 A2988 RMK AO2 SLP121 P0004 60008 T01560150 53002",
   "station": "KNUW",
   "temperature": {
     "repr": "16",
@@ -72,8 +88,8 @@
     "value": 16
   },
   "time": {
-    "dt": "2024-07-29T14:33:00Z",
-    "repr": "291433Z"
+    "dt": "2024-07-29T14:53:00Z",
+    "repr": "291453Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,26 +100,30 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
-    "repr": "120",
-    "spoken": "one two zero",
-    "value": 120
+    "repr": "130",
+    "spoken": "one three zero",
+    "value": 130
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "07",
-    "spoken": "seven",
-    "value": 7
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "-RA",
-      "value": "Light Rain"
+      "repr": "RA",
+      "value": "Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
