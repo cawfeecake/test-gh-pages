@@ -1,24 +1,31 @@
 {
   "altimeter": {
-    "repr": "A3005",
-    "spoken": "three zero point zero five",
-    "value": 30.05
+    "repr": "A3006",
+    "spoken": "three zero point zero six",
+    "value": 30.06
   },
-  "clouds": [],
-  "density_altitude": -191,
+  "clouds": [
+    {
+      "altitude": 28,
+      "modifier": null,
+      "repr": "FEW028",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": -201,
   "dewpoint": {
     "repr": "13",
     "spoken": "one three",
     "value": 13
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-01T10:31:15.071332Z"
+    "timestamp": "2024-08-01T10:41:34.328913Z"
   },
   "other": [],
-  "pressure_altitude": 14,
-  "raw": "KBVS 011015Z AUTO 00000KT 10SM CLR 13/13 A3005 RMK A01",
+  "pressure_altitude": 4,
+  "raw": "KBVS 011035Z AUTO 00000KT 5SM BR FEW028 13/13 A3006 RMK A01",
   "relative_humidity": 1,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -38,7 +45,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 011015Z 00000KT 10SM 13/13 A3005 RMK A01",
+  "sanitized": "KBVS 011035Z 00000KT 5SM BR FEW028 13/13 A3006 RMK A01",
   "station": "KBVS",
   "temperature": {
     "repr": "13",
@@ -46,8 +53,8 @@
     "value": 13
   },
   "time": {
-    "dt": "2024-08-01T10:15:00Z",
-    "repr": "011015Z"
+    "dt": "2024-08-01T10:35:00Z",
+    "repr": "011035Z"
   },
   "units": {
     "accumulation": "in",
@@ -58,9 +65,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
     "repr": "000",
@@ -74,5 +81,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
