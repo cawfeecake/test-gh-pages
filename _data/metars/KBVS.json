@@ -1,31 +1,37 @@
 {
   "altimeter": {
-    "repr": "A3002",
-    "spoken": "three zero point zero two",
-    "value": 30.02
+    "repr": "A3001",
+    "spoken": "three zero point zero one",
+    "value": 30.01
   },
   "clouds": [
     {
-      "altitude": 95,
+      "altitude": 80,
       "modifier": null,
-      "repr": "BKN095",
-      "type": "BKN"
+      "repr": "FEW080",
+      "type": "FEW"
+    },
+    {
+      "altitude": 90,
+      "modifier": null,
+      "repr": "SCT090",
+      "type": "SCT"
     }
   ],
-  "density_altitude": -161,
+  "density_altitude": -151,
   "dewpoint": {
     "repr": "13",
     "spoken": "one three",
     "value": 13
   },
-  "flight_rules": "VFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-08T12:11:10.724884Z"
+    "timestamp": "2024-08-08T12:46:45.663923Z"
   },
   "other": [],
-  "pressure_altitude": 44,
-  "raw": "KBVS 081155Z AUTO 00000KT 10SM BKN095 13/13 A3002 RMK A01",
+  "pressure_altitude": 54,
+  "raw": "KBVS 081235Z AUTO 00000KT 2 1/2SM BR FEW080 SCT090 13/13 A3001 RMK A01",
   "relative_humidity": 1,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -45,7 +51,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 081155Z 00000KT 10SM BKN095 13/13 A3002 RMK A01",
+  "sanitized": "KBVS 081235Z 00000KT 2 1/2SM BR FEW080 SCT090 13/13 A3001 RMK A01",
   "station": "KBVS",
   "temperature": {
     "repr": "13",
@@ -53,8 +59,8 @@
     "value": 13
   },
   "time": {
-    "dt": "2024-08-08T11:55:00Z",
-    "repr": "081155Z"
+    "dt": "2024-08-08T12:35:00Z",
+    "repr": "081235Z"
   },
   "units": {
     "accumulation": "in",
@@ -65,9 +71,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
@@ -81,5 +90,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
