@@ -11,14 +11,14 @@
     "spoken": "one zero",
     "value": 10
   },
-  "flight_rules": "IFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-19T13:28:35.083305Z"
+    "timestamp": "2024-08-19T13:40:29.914443Z"
   },
   "other": [],
   "pressure_altitude": 60,
-  "raw": "KBLI 191320Z AUTO 00000KT 2 1/2SM BR CLR 10/10 A3003 RMK AO2 T01000100",
+  "raw": "KBLI 191327Z AUTO 00000KT 10SM R16/4500VP6000FT CLR 10/10 A3003 RMK AO2 T01000100",
   "relative_humidity": 1,
   "remarks": "RMK AO2 T01000100",
   "remarks_info": {
@@ -50,8 +50,27 @@
       "value": 10
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 191320Z 00000KT 2 1/2SM BR 10/10 A3003 RMK AO2 T01000100",
+  "runway_visibility": [
+    {
+      "repr": "R16/4500VP6000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "4500",
+          "spoken": "four five hundred",
+          "value": 4500
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 191327Z 00000KT 10SM R16/4500VP6000FT 10/10 A3003 RMK AO2 T01000100",
   "station": "KBLI",
   "temperature": {
     "repr": "10",
@@ -59,8 +78,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-08-19T13:20:00Z",
-    "repr": "191320Z"
+    "dt": "2024-08-19T13:27:00Z",
+    "repr": "191327Z"
   },
   "units": {
     "accumulation": "in",
@@ -71,12 +90,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 2,
-    "normalized": "2 1/2",
-    "numerator": 5,
-    "repr": "5/2",
-    "spoken": "two and one half",
-    "value": 2.5
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_direction": {
     "repr": "000",
@@ -90,10 +106,5 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ]
+  "wx_codes": []
 }
