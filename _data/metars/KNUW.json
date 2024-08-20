@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 24,
+      "altitude": 25,
       "modifier": null,
-      "repr": "BKN024",
+      "repr": "SCT025",
+      "type": "SCT"
+    },
+    {
+      "altitude": 33,
+      "modifier": null,
+      "repr": "BKN033",
       "type": "BKN"
     },
     {
-      "altitude": 30,
+      "altitude": 80,
       "modifier": null,
-      "repr": "BKN030",
-      "type": "BKN"
-    },
-    {
-      "altitude": 75,
-      "modifier": null,
-      "repr": "OVC075",
+      "repr": "OVC080",
       "type": "OVC"
     }
   ],
@@ -30,18 +30,27 @@
     "spoken": "one three",
     "value": 13
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-20T21:40:34.081763Z"
+    "timestamp": "2024-08-20T22:03:20.242879Z"
   },
   "other": [],
   "pressure_altitude": -143,
-  "raw": "KNUW 201953Z 15012KT 10SM BKN024 BKN030 OVC075 19/13 A3011 RMK SLP200 T01940133",
+  "raw": "KNUW 202124Z 15011KT 10SM SCT025 BKN033 OVC080 19/13 A3011 RMK RAB24 P0000 T01940133",
   "relative_humidity": 0.6778980555664295,
-  "remarks": "RMK SLP200 T01940133",
+  "remarks": "RMK RAB24 P0000 T01940133",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB24",
+        "value": "Rain began at :24"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0133",
       "spoken": "one three point three",
@@ -55,11 +64,7 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP200",
-      "spoken": "one zero two zero point zero",
-      "value": 1020
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -69,7 +74,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 201953Z 15012KT 10SM BKN024 BKN030 OVC075 19/13 A3011 RMK SLP200 T01940133",
+  "sanitized": "KNUW 202124Z 15011KT 10SM SCT025 BKN033 OVC080 19/13 A3011 RMK RAB24 P0000 T01940133",
   "station": "KNUW",
   "temperature": {
     "repr": "19",
@@ -77,8 +82,8 @@
     "value": 19
   },
   "time": {
-    "dt": "2024-08-20T19:53:00Z",
-    "repr": "201953Z"
+    "dt": "2024-08-20T21:24:00Z",
+    "repr": "202124Z"
   },
   "units": {
     "accumulation": "in",
@@ -100,9 +105,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "wind_variable_direction": [],
   "wx_codes": []
