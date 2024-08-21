@@ -6,10 +6,16 @@
   },
   "clouds": [
     {
-      "altitude": 32,
+      "altitude": 35,
       "modifier": null,
-      "repr": "SCT032",
+      "repr": "SCT035",
       "type": "SCT"
+    },
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "BKN050",
+      "type": "BKN"
     },
     {
       "altitude": 95,
@@ -18,15 +24,9 @@
       "type": "BKN"
     },
     {
-      "altitude": 130,
+      "altitude": 200,
       "modifier": null,
-      "repr": "BKN130",
-      "type": "BKN"
-    },
-    {
-      "altitude": 220,
-      "modifier": null,
-      "repr": "BKN220",
+      "repr": "BKN200",
       "type": "BKN"
     }
   ],
@@ -39,13 +39,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-21T03:28:38.606982Z"
+    "timestamp": "2024-08-21T03:40:44.700337Z"
   },
   "other": [],
   "pressure_altitude": -113,
-  "raw": "KNUW 210153Z 34003KT 10SM SCT032 BKN095 BKN130 BKN220 17/13 A3008 RMK SLP190 T01670133",
+  "raw": "KNUW 210253Z 35004KT 10SM SCT035 BKN050 BKN095 BKN200 17/13 A3008 RMK SLP190 T01670133 55003",
   "relative_humidity": 0.8033751811322976,
-  "remarks": "RMK SLP190 T01670133",
+  "remarks": "RMK SLP190 T01670133 55003",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": {
@@ -60,7 +60,11 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.3,
+      "repr": "55003",
+      "tendency": "Decreasing, then increasing"
+    },
     "sea_level_pressure": {
       "repr": "SLP190",
       "spoken": "one zero one nine point zero",
@@ -75,7 +79,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 210153Z 34003KT 10SM SCT032 BKN095 BKN130 BKN220 17/13 A3008 RMK SLP190 T01670133",
+  "sanitized": "KNUW 210253Z 35004KT 10SM SCT035 BKN050 BKN095 BKN200 17/13 A3008 RMK SLP190 T01670133 55003",
   "station": "KNUW",
   "temperature": {
     "repr": "17",
@@ -83,8 +87,8 @@
     "value": 17
   },
   "time": {
-    "dt": "2024-08-21T01:53:00Z",
-    "repr": "210153Z"
+    "dt": "2024-08-21T02:53:00Z",
+    "repr": "210253Z"
   },
   "units": {
     "accumulation": "in",
@@ -100,15 +104,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "340",
-    "spoken": "three four zero",
-    "value": 340
+    "repr": "350",
+    "spoken": "three five zero",
+    "value": 350
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "wind_variable_direction": [],
   "wx_codes": []
