@@ -18,9 +18,9 @@
       "type": "BKN"
     },
     {
-      "altitude": 11,
+      "altitude": 25,
       "modifier": null,
-      "repr": "OVC011",
+      "repr": "OVC025",
       "type": "OVC"
     }
   ],
@@ -33,18 +33,26 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-24T02:51:44.117741Z"
+    "timestamp": "2024-08-24T03:06:58.512659Z"
   },
   "other": [],
   "pressure_altitude": 310,
-  "raw": "KBLI 240153Z 18009G18KT 5SM BR BKN004 BKN008 OVC011 14/14 A2978 RMK AO2 SLP090 T01390139",
+  "raw": "KBLI 240253Z 17011G21KT 4SM -RA BR BKN004 BKN008 OVC025 14/14 A2978 RMK AO2 RAB48 CIG 002V006 SLP090 P0000 60000 T01390139 51002",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP090 T01390139",
+  "remarks": "RMK AO2 RAB48 CIG 002V006 SLP090 P0000 60000 T01390139 51002",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB48",
+        "value": "Rain began at :48"
       }
     ],
     "dewpoint_decimal": {
@@ -57,9 +65,17 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "51002",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP090",
       "spoken": "one zero zero nine point zero",
@@ -74,7 +90,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 240153Z 18009G18KT 5SM BR BKN004 BKN008 OVC011 14/14 A2978 RMK AO2 SLP090 T01390139",
+  "sanitized": "KBLI 240253Z 17011G21KT 4SM -RA BR BKN004 BKN008 OVC025 14/14 A2978 RMK AO2 RAB48 CIG 002V006 SLP090 P0000 60000 T01390139 51002",
   "station": "KBLI",
   "temperature": {
     "repr": "14",
@@ -82,8 +98,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-08-24T01:53:00Z",
-    "repr": "240153Z"
+    "dt": "2024-08-24T02:53:00Z",
+    "repr": "240253Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,27 +110,31 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "5",
-    "spoken": "five",
-    "value": 5
+    "repr": "4",
+    "spoken": "four",
+    "value": 4
   },
   "wind_direction": {
-    "repr": "180",
-    "spoken": "one eight zero",
-    "value": 180
+    "repr": "170",
+    "spoken": "one seven zero",
+    "value": 170
   },
   "wind_gust": {
-    "repr": "18",
-    "spoken": "one eight",
-    "value": 18
+    "repr": "21",
+    "spoken": "two one",
+    "value": 21
   },
   "wind_speed": {
-    "repr": "09",
-    "spoken": "nine",
-    "value": 9
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "wind_variable_direction": [],
   "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
     {
       "repr": "BR",
       "value": "Mist"
