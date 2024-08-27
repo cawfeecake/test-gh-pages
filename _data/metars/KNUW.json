@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 50,
+      "altitude": 32,
       "modifier": null,
-      "repr": "SCT050",
+      "repr": "FEW032",
+      "type": "FEW"
+    },
+    {
+      "altitude": 60,
+      "modifier": null,
+      "repr": "SCT060",
       "type": "SCT"
     },
     {
-      "altitude": 80,
+      "altitude": 90,
       "modifier": null,
-      "repr": "BKN080",
-      "type": "BKN"
-    },
-    {
-      "altitude": 95,
-      "modifier": null,
-      "repr": "BKN095",
+      "repr": "BKN090",
       "type": "BKN"
     },
     {
@@ -30,7 +30,7 @@
       "type": "OVC"
     }
   ],
-  "density_altitude": 244,
+  "density_altitude": -20,
   "dewpoint": {
     "repr": "13",
     "spoken": "one three",
@@ -39,18 +39,22 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-08-26T23:40:33.366838Z"
+    "timestamp": "2024-08-27T00:32:18.443977Z"
   },
   "other": [],
   "pressure_altitude": -163,
-  "raw": "KNUW 262253Z 06006KT 10SM SCT050 BKN080 BKN095 OVC150 18/13 A3013 RMK PRESFR SLP207 T01830133",
-  "relative_humidity": 0.7261539169497305,
-  "remarks": "RMK PRESFR SLP207 T01830133",
+  "raw": "KNUW 262353Z 32005KT 10SM -RA FEW032 SCT060 BKN090 OVC150 16/13 A3013 RMK RAB52 SLP207 P0000 60000 T01610133 10194 20150 58006",
+  "relative_humidity": 0.8346733328098689,
+  "remarks": "RMK RAB52 SLP207 P0000 60000 T01610133 10194 20150 58006",
   "remarks_info": {
     "codes": [
       {
-        "repr": "PRESFR",
-        "value": "Pressure Falling Rapidly"
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB52",
+        "value": "Rain began at :52"
       }
     ],
     "dewpoint_decimal": {
@@ -59,13 +63,29 @@
       "value": 13.3
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10194",
+      "spoken": "one nine point four",
+      "value": 19.4
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20150",
+      "spoken": "one five point zero",
+      "value": 15
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.6,
+      "repr": "58006",
+      "tendency": "Steady or increasing, then decreasing"
+    },
     "sea_level_pressure": {
       "repr": "SLP207",
       "spoken": "one zero two zero point seven",
@@ -74,22 +94,22 @@
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0183",
-      "spoken": "one eight point three",
-      "value": 18.3
+      "repr": "0161",
+      "spoken": "one six point one",
+      "value": 16.1
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 262253Z 06006KT 10SM SCT050 BKN080 BKN095 OVC150 18/13 A3013 RMK PRESFR SLP207 T01830133",
+  "sanitized": "KNUW 262353Z 32005KT 10SM -RA FEW032 SCT060 BKN090 OVC150 16/13 A3013 RMK RAB52 SLP207 P0000 60000 T01610133 10194 20150 58006",
   "station": "KNUW",
   "temperature": {
-    "repr": "18",
-    "spoken": "one eight",
-    "value": 18
+    "repr": "16",
+    "spoken": "one six",
+    "value": 16
   },
   "time": {
-    "dt": "2024-08-26T22:53:00Z",
-    "repr": "262253Z"
+    "dt": "2024-08-26T23:53:00Z",
+    "repr": "262353Z"
   },
   "units": {
     "accumulation": "in",
@@ -105,16 +125,21 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "060",
-    "spoken": "zero six zero",
-    "value": 60
+    "repr": "320",
+    "spoken": "three two zero",
+    "value": 320
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "05",
+    "spoken": "five",
+    "value": 5
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
