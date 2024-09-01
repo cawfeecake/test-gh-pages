@@ -6,19 +6,19 @@
   },
   "clouds": [
     {
-      "altitude": 120,
+      "altitude": 150,
       "modifier": null,
-      "repr": "SCT120",
-      "type": "SCT"
+      "repr": "FEW150",
+      "type": "FEW"
     },
     {
-      "altitude": 200,
+      "altitude": 230,
       "modifier": null,
-      "repr": "SCT200",
-      "type": "SCT"
+      "repr": "FEW230",
+      "type": "FEW"
     }
   ],
-  "density_altitude": 38,
+  "density_altitude": 242,
   "dewpoint": {
     "repr": "14",
     "spoken": "one four",
@@ -27,15 +27,24 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-01T15:40:28.939323Z"
+    "timestamp": "2024-09-01T16:06:56.304481Z"
   },
   "other": [],
   "pressure_altitude": 27,
-  "raw": "KNUW 011453Z COR 00000KT 10SM SCT120 SCT200 15/14 A2994 RMK SLP140 T01500139 53003",
-  "relative_humidity": 0.9313398487265037,
-  "remarks": "RMK SLP140 T01500139 53003",
+  "raw": "KNUW 011553Z 00000KT 10SM FEW150 FEW230 17/14 A2994 RMK AO2 SLP141 T01670139 $",
+  "relative_humidity": 0.8353722377310088,
+  "remarks": "RMK AO2 SLP141 T01670139 $",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0139",
       "spoken": "one three point nine",
@@ -48,35 +57,31 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.3,
-      "repr": "53003",
-      "tendency": "Decreasing or steady, then increasing"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP140",
-      "spoken": "one zero one four point zero",
-      "value": 1014
+      "repr": "SLP141",
+      "spoken": "one zero one four point one",
+      "value": 1014.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0150",
-      "spoken": "one five point zero",
-      "value": 15
+      "repr": "0167",
+      "spoken": "one six point seven",
+      "value": 16.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 011453Z 00000KT 10SM SCT120 SCT200 15/14 A2994 RMK SLP140 T01500139 53003",
+  "sanitized": "KNUW 011553Z 00000KT 10SM FEW150 FEW230 17/14 A2994 RMK AO2 SLP141 T01670139 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "15",
-    "spoken": "one five",
-    "value": 15
+    "repr": "17",
+    "spoken": "one seven",
+    "value": 17
   },
   "time": {
-    "dt": "2024-09-01T14:53:00Z",
-    "repr": "011453Z"
+    "dt": "2024-09-01T15:53:00Z",
+    "repr": "011553Z"
   },
   "units": {
     "accumulation": "in",
