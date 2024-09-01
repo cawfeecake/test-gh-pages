@@ -1,11 +1,24 @@
 {
   "altimeter": {
-    "repr": "A2995",
-    "spoken": "two nine point nine five",
-    "value": 29.95
+    "repr": "A2994",
+    "spoken": "two nine point nine four",
+    "value": 29.94
   },
-  "clouds": [],
-  "density_altitude": 556,
+  "clouds": [
+    {
+      "altitude": 150,
+      "modifier": null,
+      "repr": "FEW150",
+      "type": "FEW"
+    },
+    {
+      "altitude": 230,
+      "modifier": null,
+      "repr": "FEW230",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": 434,
   "dewpoint": {
     "repr": "14",
     "spoken": "one four",
@@ -14,13 +27,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-01T02:11:46.292542Z"
+    "timestamp": "2024-09-01T03:03:00.453312Z"
   },
   "other": [],
-  "pressure_altitude": 17,
-  "raw": "KNUW 010153Z 00000KT 10SM CLR 19/14 A2995 RMK AO2 SLP144 T01940139 $",
-  "relative_humidity": 0.7048975733030165,
-  "remarks": "RMK AO2 SLP144 T01940139 $",
+  "pressure_altitude": 27,
+  "raw": "KNUW 010253Z 00000KT 10SM FEW150 FEW230 18/14 A2994 RMK AO2 SLP142 T01830139 56013 $",
+  "relative_humidity": 0.7550753829418322,
+  "remarks": "RMK AO2 SLP142 T01830139 56013 $",
   "remarks_info": {
     "codes": [
       {
@@ -44,31 +57,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 1.3,
+      "repr": "56013",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP144",
-      "spoken": "one zero one four point four",
-      "value": 1014.4
+      "repr": "SLP142",
+      "spoken": "one zero one four point two",
+      "value": 1014.2
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0194",
-      "spoken": "one nine point four",
-      "value": 19.4
+      "repr": "0183",
+      "spoken": "one eight point three",
+      "value": 18.3
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 010153Z 00000KT 10SM 19/14 A2995 RMK AO2 SLP144 T01940139 $",
+  "sanitized": "KNUW 010253Z 00000KT 10SM FEW150 FEW230 18/14 A2994 RMK AO2 SLP142 T01830139 56013 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "19",
-    "spoken": "one nine",
-    "value": 19
+    "repr": "18",
+    "spoken": "one eight",
+    "value": 18
   },
   "time": {
-    "dt": "2024-09-01T01:53:00Z",
-    "repr": "010153Z"
+    "dt": "2024-09-01T02:53:00Z",
+    "repr": "010253Z"
   },
   "units": {
     "accumulation": "in",
