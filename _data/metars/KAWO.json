@@ -4,23 +4,30 @@
     "spoken": "two nine point eight six",
     "value": 29.86
   },
-  "clouds": [],
-  "density_altitude": 308,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": 116,
   "dewpoint": {
-    "repr": "14",
-    "spoken": "one four",
-    "value": 14
+    "repr": "13",
+    "spoken": "one three",
+    "value": 13
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-08T11:40:30.533491Z"
+    "timestamp": "2024-09-08T12:10:45.548610Z"
   },
   "other": [],
   "pressure_altitude": 202,
-  "raw": "KAWO 081056Z AUTO 00000KT 9SM CLR 16/14 A2986 RMK AO2 SLP115 T01560144",
-  "relative_humidity": 0.9256420226021359,
-  "remarks": "RMK AO2 SLP115 T01560144",
+  "raw": "KAWO 081203Z AUTO 00000KT 1/4SM FG VV002 14/13 A2986 RMK AO2",
+  "relative_humidity": 0.9369330286066342,
+  "remarks": "RMK AO2",
   "remarks_info": {
     "codes": [
       {
@@ -28,11 +35,7 @@
         "value": "Automated with precipitation sensor"
       }
     ],
-    "dewpoint_decimal": {
-      "repr": "0144",
-      "spoken": "one four point four",
-      "value": 14.4
-    },
+    "dewpoint_decimal": null,
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -41,30 +44,22 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP115",
-      "spoken": "one zero one one point five",
-      "value": 1011.5
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": {
-      "repr": "0156",
-      "spoken": "one five point six",
-      "value": 15.6
-    }
+    "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 081056Z 00000KT 9SM 16/14 A2986 RMK AO2 SLP115 T01560144",
+  "sanitized": "KAWO 081203Z 00000KT 1/4SM FG VV002 14/13 A2986 RMK AO2",
   "station": "KAWO",
   "temperature": {
-    "repr": "16",
-    "spoken": "one six",
-    "value": 16
+    "repr": "14",
+    "spoken": "one four",
+    "value": 14
   },
   "time": {
-    "dt": "2024-09-08T10:56:00Z",
-    "repr": "081056Z"
+    "dt": "2024-09-08T12:03:00Z",
+    "repr": "081203Z"
   },
   "units": {
     "accumulation": "in",
@@ -75,9 +70,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -91,5 +89,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ]
 }
