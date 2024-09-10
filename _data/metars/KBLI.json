@@ -21,15 +21,15 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-10T14:41:48.826869Z"
+    "timestamp": "2024-09-10T15:06:39.907331Z"
   },
   "other": [
     "M14KT"
   ],
   "pressure_altitude": 170,
-  "raw": "KBLI 101424Z 00000KT M1/4SM R16/0600V1000FT FG VV001 13/13 A2992 RMK AO2 T01280128 $",
+  "raw": "KBLI 101453Z 17003KT M1/4SM R16/0700V1000FT FG VV001 13/13 A2992 RMK AO2 SLP139 T01280128 55002 $",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T01280128 $",
+  "remarks": "RMK AO2 SLP139 T01280128 55002 $",
   "remarks_info": {
     "codes": [
       {
@@ -53,8 +53,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "55002",
+      "tendency": "Decreasing, then increasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP139",
+      "spoken": "one zero one three point nine",
+      "value": 1013.9
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -65,14 +73,14 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/0600V1000FT",
+      "repr": "R16/0700V1000FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
-          "repr": "0600",
-          "spoken": "six hundred",
-          "value": 600
+          "repr": "0700",
+          "spoken": "seven hundred",
+          "value": 700
         },
         {
           "repr": "1000",
@@ -83,7 +91,7 @@
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 101424Z 00000KT M14KT R16/0600V1000FT FG VV001 13/13 A2992 RMK AO2 T01280128 $",
+  "sanitized": "KBLI 101453Z 17003KT M14KT R16/0700V1000FT FG VV001 13/13 A2992 RMK AO2 SLP139 T01280128 55002 $",
   "station": "KBLI",
   "temperature": {
     "repr": "13",
@@ -91,8 +99,8 @@
     "value": 13
   },
   "time": {
-    "dt": "2024-09-10T14:24:00Z",
-    "repr": "101424Z"
+    "dt": "2024-09-10T14:53:00Z",
+    "repr": "101453Z"
   },
   "units": {
     "accumulation": "in",
@@ -104,15 +112,15 @@
   },
   "visibility": null,
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "170",
+    "spoken": "one seven zero",
+    "value": 170
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": [
