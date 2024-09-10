@@ -6,16 +6,10 @@
   },
   "clouds": [
     {
-      "altitude": 50,
+      "altitude": 2,
       "modifier": null,
-      "repr": "SCT050",
-      "type": "SCT"
-    },
-    {
-      "altitude": 65,
-      "modifier": null,
-      "repr": "SCT065",
-      "type": "SCT"
+      "repr": "OVC002",
+      "type": "OVC"
     }
   ],
   "density_altitude": -332,
@@ -24,14 +18,14 @@
     "spoken": "one two",
     "value": 12
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-10T12:14:05.844826Z"
+    "timestamp": "2024-09-10T12:50:20.791686Z"
   },
   "other": [],
   "pressure_altitude": 21,
-  "raw": "KORS 101155Z AUTO 00000KT 10SM SCT050 SCT065 12/12 A2993 RMK AO2",
+  "raw": "KORS 101235Z AUTO 00000KT 1/2SM FG OVC002 12/12 A2993 RMK AO2",
   "relative_humidity": 1,
   "remarks": "RMK AO2",
   "remarks_info": {
@@ -56,7 +50,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 101155Z 00000KT 10SM SCT050 SCT065 12/12 A2993 RMK AO2",
+  "sanitized": "KORS 101235Z 00000KT 1/2SM FG OVC002 12/12 A2993 RMK AO2",
   "station": "KORS",
   "temperature": {
     "repr": "12",
@@ -64,8 +58,8 @@
     "value": 12
   },
   "time": {
-    "dt": "2024-09-10T11:55:00Z",
-    "repr": "101155Z"
+    "dt": "2024-09-10T12:35:00Z",
+    "repr": "101235Z"
   },
   "units": {
     "accumulation": "in",
@@ -76,9 +70,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -92,5 +89,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ]
 }
