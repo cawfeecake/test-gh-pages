@@ -6,12 +6,6 @@
   },
   "clouds": [
     {
-      "altitude": 3,
-      "modifier": null,
-      "repr": "FEW003",
-      "type": "FEW"
-    },
-    {
       "altitude": 50,
       "modifier": null,
       "repr": "SCT050",
@@ -27,13 +21,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-12T08:45:24.199548Z"
+    "timestamp": "2024-09-12T09:07:03.671301Z"
   },
   "other": [],
   "pressure_altitude": 107,
-  "raw": "KNUW 120834Z 00000KT 6SM BR FEW003 SCT050 10/10 A2986 RMK AO2 VIS NE 2SM FG BANK NE T01000100 $",
+  "raw": "KNUW 120853Z COR 00000KT 8SM MIFG SCT050 10/10 A2986 RMK AO2 SLP114 T01000100 53004 $",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 VIS NE 2SM FG BANK NE T01000100 $",
+  "remarks": "RMK AO2 SLP114 T01000100 53004 $",
   "remarks_info": {
     "codes": [
       {
@@ -57,8 +51,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.4,
+      "repr": "53004",
+      "tendency": "Decreasing or steady, then increasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP114",
+      "spoken": "one zero one one point four",
+      "value": 1011.4
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -68,7 +70,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 120834Z 00000KT 6SM BR FEW003 SCT050 10/10 A2986 RMK AO2 VIS NE 2SM FG BANK NE T01000100 $",
+  "sanitized": "KNUW 120853Z 00000KT 8SM MIFG SCT050 10/10 A2986 RMK AO2 SLP114 T01000100 53004 $",
   "station": "KNUW",
   "temperature": {
     "repr": "10",
@@ -76,8 +78,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-09-12T08:34:00Z",
-    "repr": "120834Z"
+    "dt": "2024-09-12T08:53:00Z",
+    "repr": "120853Z"
   },
   "units": {
     "accumulation": "in",
@@ -88,9 +90,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "6",
-    "spoken": "six",
-    "value": 6
+    "repr": "8",
+    "spoken": "eight",
+    "value": 8
   },
   "wind_direction": {
     "repr": "000",
@@ -106,8 +108,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "MIFG",
+      "value": "Shallow Fog"
     }
   ]
 }
