@@ -1,41 +1,39 @@
 {
   "altimeter": {
-    "repr": "A3001",
-    "spoken": "three zero point zero one",
-    "value": 30.01
+    "repr": "A3000",
+    "spoken": "three zero point zero zero",
+    "value": 30
   },
   "clouds": [
     {
-      "altitude": 8,
+      "altitude": 20,
       "modifier": null,
-      "repr": "SCT008",
+      "repr": "SCT020",
       "type": "SCT"
     },
     {
-      "altitude": 10,
+      "altitude": 70,
       "modifier": null,
-      "repr": "BKN010",
+      "repr": "BKN070",
       "type": "BKN"
-    },
-    {
-      "altitude": 50,
-      "modifier": null,
-      "repr": "OVC050",
-      "type": "OVC"
     }
   ],
-  "density_altitude": null,
-  "dewpoint": null,
-  "flight_rules": "MVFR",
+  "density_altitude": 131,
+  "dewpoint": {
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
+  },
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-13T17:40:32.257326Z"
+    "timestamp": "2024-09-13T18:09:00.673940Z"
   },
   "other": [],
-  "pressure_altitude": null,
-  "raw": "KBLI 131653Z 20006KT 7SM SCT008 BKN010 OVC050 A3001 RMK AO2 SLPNO PNO $",
-  "relative_humidity": null,
-  "remarks": "RMK AO2 SLPNO PNO $",
+  "pressure_altitude": 90,
+  "raw": "KBLI 131753Z 19007G14KT 150V240 7SM SCT020 BKN070 15/06 A3000 RMK AO2 SLP165 6//// T01500056 10150 20133 50000 PNO $",
+  "relative_humidity": 0.5336044556266284,
+  "remarks": "RMK AO2 SLP165 6//// T01500056 10150 20133 50000 PNO $",
   "remarks_info": {
     "codes": [
       {
@@ -49,33 +47,57 @@
       {
         "repr": "PNO",
         "value": "Precipitation amount not available"
-      },
-      {
-        "repr": "SLPNO",
-        "value": "Sea level pressure not available"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0056",
+      "spoken": "five point six",
+      "value": 5.6
+    },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10150",
+      "spoken": "one five point zero",
+      "value": 15
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20133",
+      "spoken": "one three point three",
+      "value": 13.3
+    },
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0,
+      "repr": "50000",
+      "tendency": "Increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP165",
+      "spoken": "one zero one six point five",
+      "value": 1016.5
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0150",
+      "spoken": "one five point zero",
+      "value": 15
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 131653Z 20006KT 7SM SCT008 BKN010 OVC050 A3001 RMK AO2 SLPNO PNO $",
+  "sanitized": "KBLI 131753Z 19007G14KT 150V240 7SM SCT020 BKN070 15/06 A3000 RMK AO2 SLP165 6//// T01500056 10150 20133 50000 PNO $",
   "station": "KBLI",
-  "temperature": null,
+  "temperature": {
+    "repr": "15",
+    "spoken": "one five",
+    "value": 15
+  },
   "time": {
-    "dt": "2024-09-13T16:53:00Z",
-    "repr": "131653Z"
+    "dt": "2024-09-13T17:53:00Z",
+    "repr": "131753Z"
   },
   "units": {
     "accumulation": "in",
@@ -91,16 +113,31 @@
     "value": 7
   },
   "wind_direction": {
-    "repr": "200",
-    "spoken": "two zero zero",
-    "value": 200
+    "repr": "190",
+    "spoken": "one nine zero",
+    "value": 190
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "14",
+    "spoken": "one four",
+    "value": 14
+  },
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
-  "wind_variable_direction": [],
+  "wind_variable_direction": [
+    {
+      "repr": "150",
+      "spoken": "one five zero",
+      "value": 150
+    },
+    {
+      "repr": "240",
+      "spoken": "two four zero",
+      "value": 240
+    }
+  ],
   "wx_codes": []
 }
