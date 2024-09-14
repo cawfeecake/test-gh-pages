@@ -6,15 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 37,
+      "altitude": 39,
       "modifier": null,
-      "repr": "FEW037",
+      "repr": "FEW039",
       "type": "FEW"
     },
     {
-      "altitude": 55,
+      "altitude": 45,
       "modifier": null,
-      "repr": "OVC055",
+      "repr": "FEW045",
+      "type": "FEW"
+    },
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "OVC050",
       "type": "OVC"
     }
   ],
@@ -24,16 +30,16 @@
     "spoken": "one three",
     "value": 13
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-14T05:40:53.821513Z"
+    "timestamp": "2024-09-14T06:08:46.836774Z"
   },
   "other": [],
   "pressure_altitude": 21,
-  "raw": "KORS 140535Z AUTO 00000KT 9SM -RA FEW037 OVC055 13/13 A2993 RMK AO2",
+  "raw": "KORS 140555Z AUTO 00000KT 5SM -RA BR FEW039 FEW045 OVC050 13/13 A2993 RMK AO2 P0007",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0007",
   "remarks_info": {
     "codes": [
       {
@@ -48,7 +54,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0007",
+      "spoken": "zero point zero seven",
+      "value": 0.07
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -56,7 +66,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 140535Z 00000KT 9SM -RA FEW037 OVC055 13/13 A2993 RMK AO2",
+  "sanitized": "KORS 140555Z 00000KT 5SM -RA BR FEW039 FEW045 OVC050 13/13 A2993 RMK AO2 P0007",
   "station": "KORS",
   "temperature": {
     "repr": "13",
@@ -64,8 +74,8 @@
     "value": 13
   },
   "time": {
-    "dt": "2024-09-14T05:35:00Z",
-    "repr": "140535Z"
+    "dt": "2024-09-14T05:55:00Z",
+    "repr": "140555Z"
   },
   "units": {
     "accumulation": "in",
@@ -76,9 +86,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
     "repr": "000",
@@ -96,6 +106,10 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
