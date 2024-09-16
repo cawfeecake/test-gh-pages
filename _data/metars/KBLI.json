@@ -4,23 +4,30 @@
     "spoken": "three zero point zero one",
     "value": 30.01
   },
-  "clouds": [],
-  "density_altitude": -683,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "VV002",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -875,
   "dewpoint": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-16T11:24:38.900250Z"
+    "timestamp": "2024-09-16T11:40:32.481789Z"
   },
   "other": [],
   "pressure_altitude": 80,
-  "raw": "KBLI 161053Z AUTO 00000KT 8SM R16/3500VP6000FT CLR 08/08 A3001 RMK AO2 SLP168 T00830083",
+  "raw": "KBLI 161133Z AUTO 00000KT 3/4SM R16/3500VP6000FT BR VV002 07/07 A3001 RMK AO2 VIS 1/2V3 T00670067",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP168 T00830083",
+  "remarks": "RMK AO2 VIS 1/2V3 T00670067",
   "remarks_info": {
     "codes": [
       {
@@ -29,9 +36,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0083",
-      "spoken": "eight point three",
-      "value": 8.3
+      "repr": "0067",
+      "spoken": "six point seven",
+      "value": 6.7
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -41,17 +48,13 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP168",
-      "spoken": "one zero one six point eight",
-      "value": 1016.8
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0083",
-      "spoken": "eight point three",
-      "value": 8.3
+      "repr": "0067",
+      "spoken": "six point seven",
+      "value": 6.7
     }
   },
   "runway_visibility": [
@@ -74,16 +77,16 @@
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 161053Z 00000KT 8SM R16/3500VP6000FT 08/08 A3001 RMK AO2 SLP168 T00830083",
+  "sanitized": "KBLI 161133Z 00000KT 3/4SM R16/3500VP6000FT BR VV002 07/07 A3001 RMK AO2 VIS 1/2V3 T00670067",
   "station": "KBLI",
   "temperature": {
-    "repr": "08",
-    "spoken": "eight",
-    "value": 8
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
   "time": {
-    "dt": "2024-09-16T10:53:00Z",
-    "repr": "161053Z"
+    "dt": "2024-09-16T11:33:00Z",
+    "repr": "161133Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,9 +97,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
     "repr": "000",
@@ -110,5 +116,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
