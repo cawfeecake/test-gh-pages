@@ -4,23 +4,30 @@
     "spoken": "two nine point eight six",
     "value": 29.86
   },
-  "clouds": [],
-  "density_altitude": -484,
+  "clouds": [
+    {
+      "altitude": 1,
+      "modifier": null,
+      "repr": "VV001",
+      "type": "VV"
+    }
+  ],
+  "density_altitude": -436,
   "dewpoint": {
     "repr": "09",
     "spoken": "nine",
     "value": 9
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-17T09:40:56.952956Z"
+    "timestamp": "2024-09-17T10:07:08.776849Z"
   },
   "other": [],
   "pressure_altitude": 202,
-  "raw": "KAWO 170913Z AUTO 00000KT 10SM CLR 09/09 A2986 RMK AO2",
-  "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "raw": "KAWO 170956Z AUTO 00000KT 1/4SM FG VV001 09/09 A2986 RMK AO2 SLP117 T00940089",
+  "relative_humidity": 0.9668587106156139,
+  "remarks": "RMK AO2 SLP117 T00940089",
   "remarks_info": {
     "codes": [
       {
@@ -28,7 +35,11 @@
         "value": "Automated with precipitation sensor"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0089",
+      "spoken": "eight point nine",
+      "value": 8.9
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -37,13 +48,21 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP117",
+      "spoken": "one zero one one point seven",
+      "value": 1011.7
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0094",
+      "spoken": "nine point four",
+      "value": 9.4
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 170913Z 00000KT 10SM 09/09 A2986 RMK AO2",
+  "sanitized": "KAWO 170956Z 00000KT 1/4SM FG VV001 09/09 A2986 RMK AO2 SLP117 T00940089",
   "station": "KAWO",
   "temperature": {
     "repr": "09",
@@ -51,8 +70,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-09-17T09:13:00Z",
-    "repr": "170913Z"
+    "dt": "2024-09-17T09:56:00Z",
+    "repr": "170956Z"
   },
   "units": {
     "accumulation": "in",
@@ -63,9 +82,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -79,5 +101,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ]
 }
