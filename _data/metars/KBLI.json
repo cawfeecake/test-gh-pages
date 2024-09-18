@@ -8,19 +8,7 @@
     {
       "altitude": 15,
       "modifier": null,
-      "repr": "SCT015",
-      "type": "SCT"
-    },
-    {
-      "altitude": 27,
-      "modifier": null,
-      "repr": "BKN027",
-      "type": "BKN"
-    },
-    {
-      "altitude": 36,
-      "modifier": null,
-      "repr": "OVC036",
+      "repr": "OVC015",
       "type": "OVC"
     }
   ],
@@ -33,13 +21,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-18T11:40:30.890581Z"
+    "timestamp": "2024-09-18T12:12:32.104338Z"
   },
   "other": [],
   "pressure_altitude": 120,
-  "raw": "KBLI 181053Z AUTO 00000KT 10SM SCT015 BKN027 OVC036 14/13 A2997 RMK AO2 SLP155 T01390128 $",
+  "raw": "KBLI 181153Z AUTO 00000KT 10SM OVC015 14/13 A2997 RMK AO2 SLP155 T01390128 10139 20133 51009 $",
   "relative_humidity": 0.9307713770988568,
-  "remarks": "RMK AO2 SLP155 T01390128 $",
+  "remarks": "RMK AO2 SLP155 T01390128 10139 20133 51009 $",
   "remarks_info": {
     "codes": [
       {
@@ -57,13 +45,25 @@
       "value": 12.8
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10139",
+      "spoken": "one three point nine",
+      "value": 13.9
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20133",
+      "spoken": "one three point three",
+      "value": 13.3
+    },
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.9,
+      "repr": "51009",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP155",
       "spoken": "one zero one five point five",
@@ -78,7 +78,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 181053Z 00000KT 10SM SCT015 BKN027 OVC036 14/13 A2997 RMK AO2 SLP155 T01390128 $",
+  "sanitized": "KBLI 181153Z 00000KT 10SM OVC015 14/13 A2997 RMK AO2 SLP155 T01390128 10139 20133 51009 $",
   "station": "KBLI",
   "temperature": {
     "repr": "14",
@@ -86,8 +86,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-09-18T10:53:00Z",
-    "repr": "181053Z"
+    "dt": "2024-09-18T11:53:00Z",
+    "repr": "181153Z"
   },
   "units": {
     "accumulation": "in",
