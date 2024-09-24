@@ -6,13 +6,13 @@
   },
   "clouds": [
     {
-      "altitude": 2,
+      "altitude": 4,
       "modifier": null,
-      "repr": "OVC002",
+      "repr": "OVC004",
       "type": "OVC"
     }
   ],
-  "density_altitude": 86,
+  "density_altitude": 134,
   "dewpoint": {
     "repr": "14",
     "spoken": "one four",
@@ -20,14 +20,15 @@
   },
   "flight_rules": "LIFR",
   "meta": {
+    "cache-timestamp": "2024-09-24T17:05:41.509000Z",
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-24T16:46:48.488816Z"
+    "timestamp": "2024-09-24T17:06:19.706885Z"
   },
   "other": [],
   "pressure_altitude": 172,
-  "raw": "KAWO 241623Z AUTO 00000KT 8SM OVC002 14/14 A2989 RMK AO2",
+  "raw": "KAWO 241656Z AUTO 00000KT 6SM BR OVC004 14/14 A2989 RMK AO2 SLP125 T01440144",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 SLP125 T01440144",
   "remarks_info": {
     "codes": [
       {
@@ -35,7 +36,11 @@
         "value": "Automated with precipitation sensor"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0144",
+      "spoken": "one four point four",
+      "value": 14.4
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -44,13 +49,21 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP125",
+      "spoken": "one zero one two point five",
+      "value": 1012.5
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0144",
+      "spoken": "one four point four",
+      "value": 14.4
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 241623Z 00000KT 8SM OVC002 14/14 A2989 RMK AO2",
+  "sanitized": "KAWO 241656Z 00000KT 6SM BR OVC004 14/14 A2989 RMK AO2 SLP125 T01440144",
   "station": "KAWO",
   "temperature": {
     "repr": "14",
@@ -58,8 +71,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-09-24T16:23:00Z",
-    "repr": "241623Z"
+    "dt": "2024-09-24T16:56:00Z",
+    "repr": "241656Z"
   },
   "units": {
     "accumulation": "in",
@@ -70,9 +83,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "repr": "6",
+    "spoken": "six",
+    "value": 6
   },
   "wind_direction": {
     "repr": "000",
@@ -86,5 +99,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
