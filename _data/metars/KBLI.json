@@ -1,38 +1,52 @@
 {
   "altimeter": {
-    "repr": "A2962",
-    "spoken": "two nine point six two",
-    "value": 29.62
+    "repr": "A2961",
+    "spoken": "two nine point six one",
+    "value": 29.61
   },
   "clouds": [
     {
-      "altitude": 29,
+      "altitude": 31,
       "modifier": null,
-      "repr": "OVC029",
+      "repr": "BKN031",
+      "type": "BKN"
+    },
+    {
+      "altitude": 110,
+      "modifier": null,
+      "repr": "OVC110",
       "type": "OVC"
     }
   ],
-  "density_altitude": 439,
+  "density_altitude": 521,
   "dewpoint": {
     "repr": "14",
     "spoken": "one four",
     "value": 14
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-25T15:42:42.617780Z"
+    "timestamp": "2024-09-25T16:08:16.271706Z"
   },
   "other": [],
-  "pressure_altitude": 470,
-  "raw": "KBLI 251453Z VRB05KT 10SM OVC029 14/14 A2962 RMK AO2 SLP037 60001 T01440139 55007",
-  "relative_humidity": 0.968111988465146,
-  "remarks": "RMK AO2 SLP037 60001 T01440139 55007",
+  "pressure_altitude": 480,
+  "raw": "KBLI 251553Z VRB05KT 10SM -RA BKN031 OVC110 15/14 A2961 RMK AO2 RAB48 SLP031 P0000 T01500139",
+  "relative_humidity": 0.9313398487265037,
+  "remarks": "RMK AO2 RAB48 SLP031 P0000 T01500139",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB48",
+        "value": "Rain began at :48"
       }
     ],
     "dewpoint_decimal": {
@@ -45,41 +59,33 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": {
-      "repr": "60001",
-      "spoken": "zero point zero one",
-      "value": 0.01
-    },
+    "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.7,
-      "repr": "55007",
-      "tendency": "Decreasing, then increasing"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP037",
-      "spoken": "one zero zero three point seven",
-      "value": 1003.7
+      "repr": "SLP031",
+      "spoken": "one zero zero three point one",
+      "value": 1003.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0144",
-      "spoken": "one four point four",
-      "value": 14.4
+      "repr": "0150",
+      "spoken": "one five point zero",
+      "value": 15
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 251453Z VRB05KT 10SM OVC029 14/14 A2962 RMK AO2 SLP037 60001 T01440139 55007",
+  "sanitized": "KBLI 251553Z VRB05KT 10SM -RA BKN031 OVC110 15/14 A2961 RMK AO2 RAB48 SLP031 P0000 T01500139",
   "station": "KBLI",
   "temperature": {
-    "repr": "14",
-    "spoken": "one four",
-    "value": 14
+    "repr": "15",
+    "spoken": "one five",
+    "value": 15
   },
   "time": {
-    "dt": "2024-09-25T14:53:00Z",
-    "repr": "251453Z"
+    "dt": "2024-09-25T15:53:00Z",
+    "repr": "251553Z"
   },
   "units": {
     "accumulation": "in",
@@ -106,5 +112,10 @@
     "value": 5
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
