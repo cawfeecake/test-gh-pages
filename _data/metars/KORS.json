@@ -6,16 +6,22 @@
   },
   "clouds": [
     {
-      "altitude": 6,
+      "altitude": 4,
       "modifier": null,
-      "repr": "BKN006",
-      "type": "BKN"
+      "repr": "FEW004",
+      "type": "FEW"
     },
     {
-      "altitude": 11,
+      "altitude": 9,
       "modifier": null,
-      "repr": "OVC011",
-      "type": "OVC"
+      "repr": "SCT009",
+      "type": "SCT"
+    },
+    {
+      "altitude": 14,
+      "modifier": null,
+      "repr": "BKN014",
+      "type": "BKN"
     }
   ],
   "density_altitude": 168,
@@ -27,13 +33,13 @@
   "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-25T18:46:01.741511Z"
+    "timestamp": "2024-09-25T19:02:10.113002Z"
   },
   "other": [],
   "pressure_altitude": 281,
-  "raw": "KORS 251835Z AUTO 00000KT 3SM RA BR BKN006 OVC011 14/14 A2967 RMK AO2",
+  "raw": "KORS 251855Z AUTO 00000KT 2 1/2SM -RA BR FEW004 SCT009 BKN014 14/14 A2967 RMK AO2 P0013",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0013",
   "remarks_info": {
     "codes": [
       {
@@ -48,7 +54,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0013",
+      "spoken": "zero point one three",
+      "value": 0.13
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -56,7 +66,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 251835Z 00000KT 3SM RA BR BKN006 OVC011 14/14 A2967 RMK AO2",
+  "sanitized": "KORS 251855Z 00000KT 2 1/2SM -RA BR FEW004 SCT009 BKN014 14/14 A2967 RMK AO2 P0013",
   "station": "KORS",
   "temperature": {
     "repr": "14",
@@ -64,8 +74,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-09-25T18:35:00Z",
-    "repr": "251835Z"
+    "dt": "2024-09-25T18:55:00Z",
+    "repr": "251855Z"
   },
   "units": {
     "accumulation": "in",
@@ -76,9 +86,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
@@ -94,8 +107,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "RA",
-      "value": "Rain"
+      "repr": "-RA",
+      "value": "Light Rain"
     },
     {
       "repr": "BR",
