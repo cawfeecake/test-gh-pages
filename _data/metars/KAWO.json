@@ -1,11 +1,24 @@
 {
   "altimeter": {
-    "repr": "A3005",
-    "spoken": "three zero point zero five",
-    "value": 30.05
+    "repr": "A3004",
+    "spoken": "three zero point zero four",
+    "value": 30.04
   },
-  "clouds": [],
-  "density_altitude": -158,
+  "clouds": [
+    {
+      "altitude": 36,
+      "modifier": null,
+      "repr": "SCT036",
+      "type": "SCT"
+    },
+    {
+      "altitude": 110,
+      "modifier": null,
+      "repr": "OVC110",
+      "type": "OVC"
+    }
+  ],
+  "density_altitude": 56,
   "dewpoint": {
     "repr": "11",
     "spoken": "one one",
@@ -14,13 +27,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-26T17:43:01.610287Z"
+    "timestamp": "2024-09-26T18:08:56.641425Z"
   },
   "other": [],
-  "pressure_altitude": 12,
-  "raw": "KAWO 261656Z AUTO 14009KT 10SM CLR 13/11 A3005 RMK AO2 SLPNO P0001 T01330106",
-  "relative_humidity": 0.836915118882693,
-  "remarks": "RMK AO2 SLPNO P0001 T01330106",
+  "pressure_altitude": 22,
+  "raw": "KAWO 261756Z AUTO 15009KT 10SM SCT036 OVC110 15/11 A3004 RMK AO2 SLPNO 6//// T01500106 58002",
+  "relative_humidity": 0.7495972273501348,
+  "remarks": "RMK AO2 SLPNO 6//// T01500106 58002",
   "remarks_info": {
     "codes": [
       {
@@ -43,32 +56,32 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "spoken": "zero point zero one",
-      "value": 0.01
+    "precip_hourly": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "58002",
+      "tendency": "Steady or increasing, then decreasing"
     },
-    "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0133",
-      "spoken": "one three point three",
-      "value": 13.3
+      "repr": "0150",
+      "spoken": "one five point zero",
+      "value": 15
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 261656Z 14009KT 10SM 13/11 A3005 RMK AO2 SLPNO P0001 T01330106",
+  "sanitized": "KAWO 261756Z 15009KT 10SM SCT036 OVC110 15/11 A3004 RMK AO2 SLPNO 6//// T01500106 58002",
   "station": "KAWO",
   "temperature": {
-    "repr": "13",
-    "spoken": "one three",
-    "value": 13
+    "repr": "15",
+    "spoken": "one five",
+    "value": 15
   },
   "time": {
-    "dt": "2024-09-26T16:56:00Z",
-    "repr": "261656Z"
+    "dt": "2024-09-26T17:56:00Z",
+    "repr": "261756Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,9 +97,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "140",
-    "spoken": "one four zero",
-    "value": 140
+    "repr": "150",
+    "spoken": "one five zero",
+    "value": 150
   },
   "wind_gust": null,
   "wind_speed": {
