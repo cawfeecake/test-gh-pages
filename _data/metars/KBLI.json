@@ -1,18 +1,24 @@
 {
   "altimeter": {
-    "repr": "A3014",
-    "spoken": "three zero point one four",
-    "value": 30.14
+    "repr": "A3016",
+    "spoken": "three zero point one six",
+    "value": 30.16
   },
   "clouds": [
     {
-      "altitude": 32,
+      "altitude": 20,
       "modifier": null,
-      "repr": "BKN032",
+      "repr": "FEW020",
+      "type": "FEW"
+    },
+    {
+      "altitude": 60,
+      "modifier": null,
+      "repr": "BKN060",
       "type": "BKN"
     }
   ],
-  "density_altitude": -609,
+  "density_altitude": -629,
   "dewpoint": {
     "repr": "07",
     "spoken": "seven",
@@ -21,13 +27,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-09-29T14:40:31.373095Z"
+    "timestamp": "2024-09-29T15:06:52.447768Z"
   },
   "other": [],
-  "pressure_altitude": -50,
-  "raw": "KBLI 291353Z 18004KT 10SM BKN032 10/07 A3014 RMK AO2 SLP213 T01000072",
+  "pressure_altitude": -70,
+  "raw": "KBLI 291453Z 18006KT 10SM FEW020 BKN060 10/07 A3016 RMK AO2 SLP220 T01000072 53022",
   "relative_humidity": 0.8273178222792216,
-  "remarks": "RMK AO2 SLP213 T01000072",
+  "remarks": "RMK AO2 SLP220 T01000072 53022",
   "remarks_info": {
     "codes": [
       {
@@ -47,11 +53,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 2.2,
+      "repr": "53022",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP213",
-      "spoken": "one zero two one point three",
-      "value": 1021.3
+      "repr": "SLP220",
+      "spoken": "one zero two two point zero",
+      "value": 1022
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -62,7 +72,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 291353Z 18004KT 10SM BKN032 10/07 A3014 RMK AO2 SLP213 T01000072",
+  "sanitized": "KBLI 291453Z 18006KT 10SM FEW020 BKN060 10/07 A3016 RMK AO2 SLP220 T01000072 53022",
   "station": "KBLI",
   "temperature": {
     "repr": "10",
@@ -70,8 +80,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-09-29T13:53:00Z",
-    "repr": "291353Z"
+    "dt": "2024-09-29T14:53:00Z",
+    "repr": "291453Z"
   },
   "units": {
     "accumulation": "in",
@@ -93,9 +103,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
   "wx_codes": []
