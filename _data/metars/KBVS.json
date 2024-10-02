@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3023",
-    "spoken": "three zero point two three",
-    "value": 30.23
+    "repr": "A3024",
+    "spoken": "three zero point two four",
+    "value": 30.24
   },
-  "clouds": [],
-  "density_altitude": -1091,
+  "clouds": [
+    {
+      "altitude": 46,
+      "modifier": null,
+      "repr": "SCT046",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": -1101,
   "dewpoint": {
     "repr": "07",
     "spoken": "seven",
@@ -14,13 +21,13 @@
   "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-02T09:29:37.036819Z"
+    "timestamp": "2024-10-02T09:42:04.747109Z"
   },
   "other": [],
-  "pressure_altitude": -166,
-  "raw": "KBVS 020915Z AUTO 00000KT 1SM BR CLR 07/07 A3023 RMK A01 VIS 1/4V5",
+  "pressure_altitude": -176,
+  "raw": "KBVS 020935Z AUTO 00000KT 1 1/2SM BR SCT046 07/07 A3024 RMK A01",
   "relative_humidity": 1,
-  "remarks": "RMK A01 VIS 1/4V5",
+  "remarks": "RMK A01",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -38,7 +45,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 020915Z 00000KT 1SM BR 07/07 A3023 RMK A01 VIS 1/4V5",
+  "sanitized": "KBVS 020935Z 00000KT 1 1/2SM BR SCT046 07/07 A3024 RMK A01",
   "station": "KBVS",
   "temperature": {
     "repr": "07",
@@ -46,8 +53,8 @@
     "value": 7
   },
   "time": {
-    "dt": "2024-10-02T09:15:00Z",
-    "repr": "020915Z"
+    "dt": "2024-10-02T09:35:00Z",
+    "repr": "020935Z"
   },
   "units": {
     "accumulation": "in",
@@ -58,9 +65,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "1",
-    "spoken": "one",
-    "value": 1
+    "denominator": 2,
+    "normalized": "1 1/2",
+    "numerator": 3,
+    "repr": "3/2",
+    "spoken": "one and one half",
+    "value": 1.5
   },
   "wind_direction": {
     "repr": "000",
