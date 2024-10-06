@@ -1,18 +1,24 @@
 {
   "altimeter": {
-    "repr": "A3011",
-    "spoken": "three zero point one one",
-    "value": 30.11
+    "repr": "A3013",
+    "spoken": "three zero point one three",
+    "value": 30.13
   },
   "clouds": [
     {
-      "altitude": 110,
+      "altitude": 2,
       "modifier": null,
-      "repr": "SCT110",
+      "repr": "FEW002",
+      "type": "FEW"
+    },
+    {
+      "altitude": 120,
+      "modifier": null,
+      "repr": "SCT120",
       "type": "SCT"
     }
   ],
-  "density_altitude": -783,
+  "density_altitude": -803,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -21,13 +27,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-06T14:41:00.152347Z"
+    "timestamp": "2024-10-06T15:02:33.916236Z"
   },
   "other": [],
-  "pressure_altitude": -20,
-  "raw": "KBLI 061353Z 00000KT 10SM SCT110 08/08 A3011 RMK AO2 SLP203 T00830083",
+  "pressure_altitude": -40,
+  "raw": "KBLI 061453Z 00000KT 10SM FEW002 SCT120 08/08 A3013 RMK AO2 SLP210 T00830083 53013",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP203 T00830083",
+  "remarks": "RMK AO2 SLP210 T00830083 53013",
   "remarks_info": {
     "codes": [
       {
@@ -47,11 +53,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 1.3,
+      "repr": "53013",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP203",
-      "spoken": "one zero two zero point three",
-      "value": 1020.3
+      "repr": "SLP210",
+      "spoken": "one zero two one point zero",
+      "value": 1021
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -62,7 +72,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 061353Z 00000KT 10SM SCT110 08/08 A3011 RMK AO2 SLP203 T00830083",
+  "sanitized": "KBLI 061453Z 00000KT 10SM FEW002 SCT120 08/08 A3013 RMK AO2 SLP210 T00830083 53013",
   "station": "KBLI",
   "temperature": {
     "repr": "08",
@@ -70,8 +80,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2024-10-06T13:53:00Z",
-    "repr": "061353Z"
+    "dt": "2024-10-06T14:53:00Z",
+    "repr": "061453Z"
   },
   "units": {
     "accumulation": "in",
