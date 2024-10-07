@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3014",
-    "spoken": "three zero point one four",
-    "value": 30.14
+    "repr": "A3015",
+    "spoken": "three zero point one five",
+    "value": 30.15
   },
-  "clouds": [],
-  "density_altitude": -345,
+  "clouds": [
+    {
+      "altitude": 110,
+      "modifier": null,
+      "repr": "SCT110",
+      "type": "SCT"
+    }
+  ],
+  "density_altitude": -487,
   "dewpoint": {
     "repr": "11",
     "spoken": "one one",
@@ -14,13 +21,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-07T02:07:56.406053Z"
+    "timestamp": "2024-10-07T03:00:08.385724Z"
   },
   "other": [],
-  "pressure_altitude": -50,
-  "raw": "KBLI 070153Z 00000KT 10SM CLR 12/11 A3014 RMK AO2 SLP214 T01220106",
-  "relative_humidity": 0.8994654196028143,
-  "remarks": "RMK AO2 SLP214 T01220106",
+  "pressure_altitude": -60,
+  "raw": "KBLI 070253Z 00000KT 10SM SCT110 11/11 A3015 RMK AO2 SLP216 T01110106 53002",
+  "relative_humidity": 0.9672929424668637,
+  "remarks": "RMK AO2 SLP216 T01110106 53002",
   "remarks_info": {
     "codes": [
       {
@@ -40,31 +47,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "53002",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP214",
-      "spoken": "one zero two one point four",
-      "value": 1021.4
+      "repr": "SLP216",
+      "spoken": "one zero two one point six",
+      "value": 1021.6
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0122",
-      "spoken": "one two point two",
-      "value": 12.2
+      "repr": "0111",
+      "spoken": "one one point one",
+      "value": 11.1
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 070153Z 00000KT 10SM 12/11 A3014 RMK AO2 SLP214 T01220106",
+  "sanitized": "KBLI 070253Z 00000KT 10SM SCT110 11/11 A3015 RMK AO2 SLP216 T01110106 53002",
   "station": "KBLI",
   "temperature": {
-    "repr": "12",
-    "spoken": "one two",
-    "value": 12
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "time": {
-    "dt": "2024-10-07T01:53:00Z",
-    "repr": "070153Z"
+    "dt": "2024-10-07T02:53:00Z",
+    "repr": "070253Z"
   },
   "units": {
     "accumulation": "in",
