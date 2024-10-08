@@ -1,24 +1,24 @@
 {
   "altimeter": {
-    "repr": "A2995",
-    "spoken": "two nine point nine five",
-    "value": 29.95
+    "repr": "A2996",
+    "spoken": "two nine point nine six",
+    "value": 29.96
   },
   "clouds": [
     {
       "altitude": 60,
       "modifier": null,
-      "repr": "FEW060",
-      "type": "FEW"
+      "repr": "SCT060",
+      "type": "SCT"
     },
     {
       "altitude": 80,
       "modifier": null,
-      "repr": "SCT080",
-      "type": "SCT"
+      "repr": "BKN080",
+      "type": "BKN"
     }
   ],
-  "density_altitude": 8,
+  "density_altitude": -2,
   "dewpoint": {
     "repr": "15",
     "spoken": "one five",
@@ -27,13 +27,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-08T19:40:34.411344Z"
+    "timestamp": "2024-10-08T20:06:39.401531Z"
   },
   "other": [],
-  "pressure_altitude": 1,
-  "raw": "KORS 081935Z AUTO 18009KT 10SM FEW060 SCT080 15/15 A2995 RMK AO2",
+  "pressure_altitude": -9,
+  "raw": "KORS 081955Z AUTO 18007KT 10SM -RA SCT060 BKN080 15/15 A2996 RMK AO2 P0002",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0002",
   "remarks_info": {
     "codes": [
       {
@@ -48,7 +48,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -56,7 +60,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 081935Z 18009KT 10SM FEW060 SCT080 15/15 A2995 RMK AO2",
+  "sanitized": "KORS 081955Z 18007KT 10SM -RA SCT060 BKN080 15/15 A2996 RMK AO2 P0002",
   "station": "KORS",
   "temperature": {
     "repr": "15",
@@ -64,8 +68,8 @@
     "value": 15
   },
   "time": {
-    "dt": "2024-10-08T19:35:00Z",
-    "repr": "081935Z"
+    "dt": "2024-10-08T19:55:00Z",
+    "repr": "081955Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,10 +91,15 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "09",
-    "spoken": "nine",
-    "value": 9
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
