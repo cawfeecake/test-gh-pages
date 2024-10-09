@@ -12,15 +12,15 @@
       "type": "BKN"
     },
     {
-      "altitude": 15,
+      "altitude": 46,
       "modifier": null,
-      "repr": "BKN015",
+      "repr": "BKN046",
       "type": "BKN"
     },
     {
-      "altitude": 37,
+      "altitude": 85,
       "modifier": null,
-      "repr": "OVC037",
+      "repr": "OVC085",
       "type": "OVC"
     }
   ],
@@ -33,18 +33,22 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-09T03:44:50.367787Z"
+    "timestamp": "2024-10-09T04:09:17.467548Z"
   },
   "other": [],
   "pressure_altitude": 170,
-  "raw": "KBLI 090300Z 00000KT 2SM RA BR BKN004 BKN015 OVC037 14/14 A2992 RMK AO2 P0003 T01440144",
+  "raw": "KBLI 090353Z 00000KT 4SM BR BKN004 BKN046 OVC085 14/14 A2992 RMK AO2 RAE45 SLP137 P0006 T01440144",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 P0003 T01440144",
+  "remarks": "RMK AO2 RAE45 SLP137 P0006 T01440144",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAE45",
+        "value": "Rain ended at :45"
       }
     ],
     "dewpoint_decimal": {
@@ -59,12 +63,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": {
-      "repr": "P0003",
-      "spoken": "zero point zero three",
-      "value": 0.03
+      "repr": "P0006",
+      "spoken": "zero point zero six",
+      "value": 0.06
     },
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP137",
+      "spoken": "one zero one three point seven",
+      "value": 1013.7
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -74,7 +82,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 090300Z 00000KT 2SM RA BR BKN004 BKN015 OVC037 14/14 A2992 RMK AO2 P0003 T01440144",
+  "sanitized": "KBLI 090353Z 00000KT 4SM BR BKN004 BKN046 OVC085 14/14 A2992 RMK AO2 RAE45 SLP137 P0006 T01440144",
   "station": "KBLI",
   "temperature": {
     "repr": "14",
@@ -82,8 +90,8 @@
     "value": 14
   },
   "time": {
-    "dt": "2024-10-09T03:00:00Z",
-    "repr": "090300Z"
+    "dt": "2024-10-09T03:53:00Z",
+    "repr": "090353Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,9 +102,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "2",
-    "spoken": "two",
-    "value": 2
+    "repr": "4",
+    "spoken": "four",
+    "value": 4
   },
   "wind_direction": {
     "repr": "000",
@@ -111,10 +119,6 @@
   },
   "wind_variable_direction": [],
   "wx_codes": [
-    {
-      "repr": "RA",
-      "value": "Rain"
-    },
     {
       "repr": "BR",
       "value": "Mist"
