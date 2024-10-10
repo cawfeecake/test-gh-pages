@@ -21,13 +21,15 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-10T14:42:27.425112Z"
+    "timestamp": "2024-10-10T15:07:18.798973Z"
   },
-  "other": [],
+  "other": [
+    "M14KT"
+  ],
   "pressure_altitude": -180,
-  "raw": "KBLI 101430Z 00000KT 1/4SM R16/1000V1600FT FG VV002 08/08 A3027 RMK AO2 T00780078",
+  "raw": "KBLI 101453Z 06004KT M1/4SM R16/1000V1200FT FG VV002 08/08 A3027 RMK AO2 SLP258 T00780078 51006",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00780078",
+  "remarks": "RMK AO2 SLP258 T00780078 51006",
   "remarks_info": {
     "codes": [
       {
@@ -47,8 +49,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.6,
+      "repr": "51006",
+      "tendency": "Increasing, then steady"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP258",
+      "spoken": "one zero two five point eight",
+      "value": 1025.8
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,7 +69,7 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1000V1600FT",
+      "repr": "R16/1000V1200FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
@@ -69,15 +79,15 @@
           "value": 1000
         },
         {
-          "repr": "1600",
-          "spoken": "one six hundred",
-          "value": 1600
+          "repr": "1200",
+          "spoken": "one two hundred",
+          "value": 1200
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 101430Z 00000KT 1/4SM R16/1000V1600FT FG VV002 08/08 A3027 RMK AO2 T00780078",
+  "sanitized": "KBLI 101453Z 06004KT M14KT R16/1000V1200FT FG VV002 08/08 A3027 RMK AO2 SLP258 T00780078 51006",
   "station": "KBLI",
   "temperature": {
     "repr": "08",
@@ -85,8 +95,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2024-10-10T14:30:00Z",
-    "repr": "101430Z"
+    "dt": "2024-10-10T14:53:00Z",
+    "repr": "101453Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,24 +106,17 @@
     "visibility": "sm",
     "wind_speed": "kt"
   },
-  "visibility": {
-    "denominator": 4,
-    "normalized": "1/4",
-    "numerator": 1,
-    "repr": "1/4",
-    "spoken": "one quarter",
-    "value": 0.25
-  },
+  "visibility": null,
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "060",
+    "spoken": "zero six zero",
+    "value": 60
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "wind_variable_direction": [],
   "wx_codes": [
