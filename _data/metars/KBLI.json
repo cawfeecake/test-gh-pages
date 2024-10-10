@@ -1,58 +1,50 @@
 {
   "altimeter": {
-    "repr": "A3018",
-    "spoken": "three zero point one eight",
-    "value": 30.18
+    "repr": "A3019",
+    "spoken": "three zero point one nine",
+    "value": 30.19
   },
   "clouds": [
     {
-      "altitude": 46,
+      "altitude": 2,
       "modifier": null,
-      "repr": "BKN046",
-      "type": "BKN"
+      "repr": "FEW002",
+      "type": "FEW"
     },
     {
-      "altitude": 65,
+      "altitude": 47,
       "modifier": null,
-      "repr": "OVC065",
-      "type": "OVC"
+      "repr": "FEW047",
+      "type": "FEW"
     }
   ],
-  "density_altitude": -577,
+  "density_altitude": -923,
   "dewpoint": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-10T05:42:26.558565Z"
+    "timestamp": "2024-10-10T06:10:47.776408Z"
   },
   "other": [],
-  "pressure_altitude": -90,
-  "raw": "KBLI 100453Z 18003KT 10SM BKN046 OVC065 11/11 A3018 RMK AO2 RAE14 SLP228 P0000 T01060106",
+  "pressure_altitude": -100,
+  "raw": "KBLI 100559Z AUTO 01004KT 3/4SM R16/3000VP6000FT BR FEW002 FEW047 08/08 A3019 RMK AO2 VIS 1/2V4 T00780078",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 RAE14 SLP228 P0000 T01060106",
+  "remarks": "RMK AO2 VIS 1/2V4 T00780078",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
-        "repr": "RAE14",
-        "value": "Rain ended at :14"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0106",
-      "spoken": "one zero point six",
-      "value": 10.6
+      "repr": "0078",
+      "spoken": "seven point eight",
+      "value": 7.8
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -62,30 +54,45 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP228",
-      "spoken": "one zero two two point eight",
-      "value": 1022.8
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0106",
-      "spoken": "one zero point six",
-      "value": 10.6
+      "repr": "0078",
+      "spoken": "seven point eight",
+      "value": 7.8
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 100453Z 18003KT 10SM BKN046 OVC065 11/11 A3018 RMK AO2 RAE14 SLP228 P0000 T01060106",
+  "runway_visibility": [
+    {
+      "repr": "R16/3000VP6000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "3000",
+          "spoken": "three thousand",
+          "value": 3000
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 100559Z 01004KT 3/4SM R16/3000VP6000FT BR FEW002 FEW047 08/08 A3019 RMK AO2 VIS 1/2V4 T00780078",
   "station": "KBLI",
   "temperature": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
   "time": {
-    "dt": "2024-10-10T04:53:00Z",
-    "repr": "100453Z"
+    "dt": "2024-10-10T05:59:00Z",
+    "repr": "100559Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,21 +103,29 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
-    "repr": "180",
-    "spoken": "one eight zero",
-    "value": 180
+    "repr": "010",
+    "spoken": "zero one zero",
+    "value": 10
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
