@@ -4,7 +4,14 @@
     "spoken": "three zero point zero seven",
     "value": 30.07
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "altitude": 4,
+      "modifier": null,
+      "repr": "FEW004",
+      "type": "FEW"
+    }
+  ],
   "density_altitude": -1139,
   "dewpoint": {
     "repr": "05",
@@ -14,11 +21,11 @@
   "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-11T07:40:31.021770Z"
+    "timestamp": "2024-10-11T08:10:01.367967Z"
   },
   "other": [],
   "pressure_altitude": 20,
-  "raw": "KBLI 110736Z AUTO 00000KT 2SM R16/2200VP6000FT BR CLR 05/05 A3007 RMK AO2 T00500050",
+  "raw": "KBLI 110803Z AUTO 00000KT 2 1/2SM BR FEW004 05/05 A3007 RMK AO2 T00500050",
   "relative_humidity": 1,
   "remarks": "RMK AO2 T00500050",
   "remarks_info": {
@@ -50,27 +57,8 @@
       "value": 5
     }
   },
-  "runway_visibility": [
-    {
-      "repr": "R16/2200VP6000FT",
-      "runway": "16",
-      "trend": null,
-      "variable_visibility": [
-        {
-          "repr": "2200",
-          "spoken": "two two hundred",
-          "value": 2200
-        },
-        {
-          "repr": "P6000",
-          "spoken": "greater than six thousand",
-          "value": null
-        }
-      ],
-      "visibility": null
-    }
-  ],
-  "sanitized": "KBLI 110736Z 00000KT 2SM R16/2200VP6000FT BR 05/05 A3007 RMK AO2 T00500050",
+  "runway_visibility": [],
+  "sanitized": "KBLI 110803Z 00000KT 2 1/2SM BR FEW004 05/05 A3007 RMK AO2 T00500050",
   "station": "KBLI",
   "temperature": {
     "repr": "05",
@@ -78,8 +66,8 @@
     "value": 5
   },
   "time": {
-    "dt": "2024-10-11T07:36:00Z",
-    "repr": "110736Z"
+    "dt": "2024-10-11T08:03:00Z",
+    "repr": "110803Z"
   },
   "units": {
     "accumulation": "in",
@@ -90,9 +78,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "2",
-    "spoken": "two",
-    "value": 2
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
