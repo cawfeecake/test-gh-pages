@@ -1,26 +1,33 @@
 {
   "altimeter": {
-    "repr": "A3004",
-    "spoken": "three zero point zero four",
-    "value": 30.04
+    "repr": "A3003",
+    "spoken": "three zero point zero three",
+    "value": 30.03
   },
-  "clouds": [],
-  "density_altitude": -1037,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "FEW002",
+      "type": "FEW"
+    }
+  ],
+  "density_altitude": -1027,
   "dewpoint": {
     "repr": "06",
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-12T11:01:11.392949Z"
+    "timestamp": "2024-10-12T11:25:06.558916Z"
   },
   "other": [],
-  "pressure_altitude": 50,
-  "raw": "KBLI 121053Z AUTO 00000KT 3SM R16/1800VP6000FT BR CLR 06/06 A3004 RMK AO2 SLP179 T00560056",
+  "pressure_altitude": 60,
+  "raw": "KBLI 121119Z AUTO 00000KT 2 1/2SM BR FEW002 06/06 A3003 RMK AO2 T00560056",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP179 T00560056",
+  "remarks": "RMK AO2 T00560056",
   "remarks_info": {
     "codes": [
       {
@@ -41,11 +48,7 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP179",
-      "spoken": "one zero one seven point nine",
-      "value": 1017.9
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -54,27 +57,8 @@
       "value": 5.6
     }
   },
-  "runway_visibility": [
-    {
-      "repr": "R16/1800VP6000FT",
-      "runway": "16",
-      "trend": null,
-      "variable_visibility": [
-        {
-          "repr": "1800",
-          "spoken": "one eight hundred",
-          "value": 1800
-        },
-        {
-          "repr": "P6000",
-          "spoken": "greater than six thousand",
-          "value": null
-        }
-      ],
-      "visibility": null
-    }
-  ],
-  "sanitized": "KBLI 121053Z 00000KT 3SM R16/1800VP6000FT BR 06/06 A3004 RMK AO2 SLP179 T00560056",
+  "runway_visibility": [],
+  "sanitized": "KBLI 121119Z 00000KT 2 1/2SM BR FEW002 06/06 A3003 RMK AO2 T00560056",
   "station": "KBLI",
   "temperature": {
     "repr": "06",
@@ -82,8 +66,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-10-12T10:53:00Z",
-    "repr": "121053Z"
+    "dt": "2024-10-12T11:19:00Z",
+    "repr": "121119Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,9 +78,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
