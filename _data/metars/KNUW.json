@@ -1,11 +1,36 @@
 {
   "altimeter": {
-    "repr": "A3003",
-    "spoken": "three zero point zero three",
-    "value": 30.03
+    "repr": "A3002",
+    "spoken": "three zero point zero two",
+    "value": 30.02
   },
-  "clouds": [],
-  "density_altitude": -580,
+  "clouds": [
+    {
+      "altitude": 45,
+      "modifier": null,
+      "repr": "FEW045",
+      "type": "FEW"
+    },
+    {
+      "altitude": 95,
+      "modifier": null,
+      "repr": "SCT095",
+      "type": "SCT"
+    },
+    {
+      "altitude": 150,
+      "modifier": null,
+      "repr": "SCT150",
+      "type": "SCT"
+    },
+    {
+      "altitude": 220,
+      "modifier": null,
+      "repr": "BKN220",
+      "type": "BKN"
+    }
+  ],
+  "density_altitude": -570,
   "dewpoint": {
     "repr": "10",
     "spoken": "one zero",
@@ -14,13 +39,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-14T04:45:15.116781Z"
+    "timestamp": "2024-10-14T05:08:09.235215Z"
   },
   "other": [],
-  "pressure_altitude": -63,
-  "raw": "KNUW 140353Z 12003KT 10SM CLR 11/10 A3003 RMK AO2 SLP171 T01060100 $",
+  "pressure_altitude": -53,
+  "raw": "KNUW 140453Z 09003KT 10SM MIFG FEW045 SCT095 SCT150 BKN220 11/10 A3002 RMK AO2 SLP170 T01060100 $",
   "relative_humidity": 0.9607146693216029,
-  "remarks": "RMK AO2 SLP171 T01060100 $",
+  "remarks": "RMK AO2 SLP170 T01060100 $",
   "remarks_info": {
     "codes": [
       {
@@ -46,9 +71,9 @@
     "precip_hourly": null,
     "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP171",
-      "spoken": "one zero one seven point one",
-      "value": 1017.1
+      "repr": "SLP170",
+      "spoken": "one zero one seven point zero",
+      "value": 1017
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -59,7 +84,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 140353Z 12003KT 10SM 11/10 A3003 RMK AO2 SLP171 T01060100 $",
+  "sanitized": "KNUW 140453Z 09003KT 10SM MIFG FEW045 SCT095 SCT150 BKN220 11/10 A3002 RMK AO2 SLP170 T01060100 $",
   "station": "KNUW",
   "temperature": {
     "repr": "11",
@@ -67,8 +92,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-10-14T03:53:00Z",
-    "repr": "140353Z"
+    "dt": "2024-10-14T04:53:00Z",
+    "repr": "140453Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,9 +109,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "120",
-    "spoken": "one two zero",
-    "value": 120
+    "repr": "090",
+    "spoken": "zero nine zero",
+    "value": 90
   },
   "wind_gust": null,
   "wind_speed": {
@@ -95,5 +120,10 @@
     "value": 3
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "MIFG",
+      "value": "Shallow Fog"
+    }
+  ]
 }
