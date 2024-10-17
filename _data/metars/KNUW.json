@@ -1,10 +1,16 @@
 {
   "altimeter": {
-    "repr": "A2995",
-    "spoken": "two nine point nine five",
-    "value": 29.95
+    "repr": "A2997",
+    "spoken": "two nine point nine seven",
+    "value": 29.97
   },
   "clouds": [
+    {
+      "altitude": 5,
+      "modifier": null,
+      "repr": "FEW005",
+      "type": "FEW"
+    },
     {
       "altitude": 25,
       "modifier": null,
@@ -18,7 +24,7 @@
       "type": "BKN"
     }
   ],
-  "density_altitude": -836,
+  "density_altitude": -856,
   "dewpoint": {
     "repr": "07",
     "spoken": "seven",
@@ -27,15 +33,24 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-17T14:42:13.334155Z"
+    "timestamp": "2024-10-17T15:03:41.210081Z"
   },
   "other": [],
-  "pressure_altitude": 17,
-  "raw": "KNUW 171353Z 11003KT 10SM SCT025 BKN045 08/07 A2995 RMK SLP147 T00780072",
+  "pressure_altitude": -3,
+  "raw": "KNUW 171439Z 00000KT 10SM FEW005 SCT025 BKN045 08/07 A2997 RMK AO2 T00780072 $",
   "relative_humidity": 0.9598512259113078,
-  "remarks": "RMK SLP147 T00780072",
+  "remarks": "RMK AO2 T00780072 $",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0072",
       "spoken": "seven point two",
@@ -49,11 +64,7 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP147",
-      "spoken": "one zero one four point seven",
-      "value": 1014.7
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -63,7 +74,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 171353Z 11003KT 10SM SCT025 BKN045 08/07 A2995 RMK SLP147 T00780072",
+  "sanitized": "KNUW 171439Z 00000KT 10SM FEW005 SCT025 BKN045 08/07 A2997 RMK AO2 T00780072 $",
   "station": "KNUW",
   "temperature": {
     "repr": "08",
@@ -71,8 +82,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2024-10-17T13:53:00Z",
-    "repr": "171353Z"
+    "dt": "2024-10-17T14:39:00Z",
+    "repr": "171439Z"
   },
   "units": {
     "accumulation": "in",
@@ -88,15 +99,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "110",
-    "spoken": "one one zero",
-    "value": 110
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
   "wx_codes": []
