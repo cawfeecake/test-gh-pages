@@ -1,18 +1,24 @@
 {
   "altimeter": {
-    "repr": "A3012",
-    "spoken": "three zero point one two",
-    "value": 30.12
+    "repr": "A3010",
+    "spoken": "three zero point one zero",
+    "value": 30.1
   },
   "clouds": [
     {
-      "altitude": 46,
+      "altitude": 44,
       "modifier": null,
-      "repr": "OVC046",
+      "repr": "SCT044",
+      "type": "SCT"
+    },
+    {
+      "altitude": 85,
+      "modifier": null,
+      "repr": "OVC085",
       "type": "OVC"
     }
   ],
-  "density_altitude": -624,
+  "density_altitude": -532,
   "dewpoint": {
     "repr": "06",
     "spoken": "six",
@@ -21,18 +27,26 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-18T23:40:32.821652Z"
+    "timestamp": "2024-10-19T00:35:11.118282Z"
   },
   "other": [],
-  "pressure_altitude": -58,
-  "raw": "KAWO 182256Z AUTO 13016G20KT 10SM OVC046 10/06 A3012 RMK AO2 RAB12E25 SLP205 P0001 T01000056",
-  "relative_humidity": 0.7409639071935751,
-  "remarks": "RMK AO2 RAB12E25 SLP205 P0001 T01000056",
+  "pressure_altitude": -38,
+  "raw": "KAWO 182356Z AUTO 13018G24KT 10SM -RA SCT044 OVC085 11/06 A3010 RMK AO2 RAB42 SLP198 P0000 60002 T01060056 10111 20083 56028",
+  "relative_humidity": 0.7118548950787184,
+  "remarks": "RMK AO2 RAB42 SLP198 P0000 60002 T01060056 10111 20083 56028",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB42",
+        "value": "Rain began at :42"
       }
     ],
     "dewpoint_decimal": {
@@ -41,41 +55,53 @@
       "value": 5.6
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
-    "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
-    "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "spoken": "zero point zero one",
-      "value": 0.01
+    "maximum_temperature_6": {
+      "repr": "10111",
+      "spoken": "one one point one",
+      "value": 11.1
     },
-    "pressure_tendency": null,
+    "minimum_temperature_24": null,
+    "minimum_temperature_6": {
+      "repr": "20083",
+      "spoken": "eight point three",
+      "value": 8.3
+    },
+    "precip_24_hours": null,
+    "precip_36_hours": {
+      "repr": "60002",
+      "spoken": "zero point zero two",
+      "value": 0.02
+    },
+    "precip_hourly": null,
+    "pressure_tendency": {
+      "change": 2.8,
+      "repr": "56028",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP205",
-      "spoken": "one zero two zero point five",
-      "value": 1020.5
+      "repr": "SLP198",
+      "spoken": "one zero one nine point eight",
+      "value": 1019.8
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0100",
-      "spoken": "one zero point zero",
-      "value": 10
+      "repr": "0106",
+      "spoken": "one zero point six",
+      "value": 10.6
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 182256Z 13016G20KT 10SM OVC046 10/06 A3012 RMK AO2 RAB12E25 SLP205 P0001 T01000056",
+  "sanitized": "KAWO 182356Z 13018G24KT 10SM -RA SCT044 OVC085 11/06 A3010 RMK AO2 RAB42 SLP198 P0000 60002 T01060056 10111 20083 56028",
   "station": "KAWO",
   "temperature": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "11",
+    "spoken": "one one",
+    "value": 11
   },
   "time": {
-    "dt": "2024-10-18T22:56:00Z",
-    "repr": "182256Z"
+    "dt": "2024-10-18T23:56:00Z",
+    "repr": "182356Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,15 +122,20 @@
     "value": 130
   },
   "wind_gust": {
-    "repr": "20",
-    "spoken": "two zero",
-    "value": 20
+    "repr": "24",
+    "spoken": "two four",
+    "value": 24
   },
   "wind_speed": {
-    "repr": "16",
-    "spoken": "one six",
-    "value": 16
+    "repr": "18",
+    "spoken": "one eight",
+    "value": 18
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
