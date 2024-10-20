@@ -4,23 +4,42 @@
     "spoken": "two nine point nine seven",
     "value": 29.97
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "altitude": 8,
+      "modifier": null,
+      "repr": "FEW008",
+      "type": "FEW"
+    },
+    {
+      "altitude": 15,
+      "modifier": null,
+      "repr": "BKN015",
+      "type": "BKN"
+    },
+    {
+      "altitude": 29,
+      "modifier": null,
+      "repr": "OVC029",
+      "type": "OVC"
+    }
+  ],
   "density_altitude": -492,
   "dewpoint": {
     "repr": "11",
     "spoken": "one one",
     "value": 11
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-20T10:42:26.468934Z"
+    "timestamp": "2024-10-20T11:02:05.199042Z"
   },
   "other": [],
   "pressure_altitude": -19,
-  "raw": "KORS 201035Z AUTO 00000KT 3SM -RA BR 11/11 A2997 RMK AO2",
+  "raw": "KORS 201055Z AUTO 00000KT 2 1/2SM -RA BR FEW008 BKN015 OVC029 11/11 A2997 RMK AO2 P0003",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0003",
   "remarks_info": {
     "codes": [
       {
@@ -35,7 +54,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -43,7 +66,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 201035Z 00000KT 3SM -RA BR 11/11 A2997 RMK AO2",
+  "sanitized": "KORS 201055Z 00000KT 2 1/2SM -RA BR FEW008 BKN015 OVC029 11/11 A2997 RMK AO2 P0003",
   "station": "KORS",
   "temperature": {
     "repr": "11",
@@ -51,8 +74,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-10-20T10:35:00Z",
-    "repr": "201035Z"
+    "dt": "2024-10-20T10:55:00Z",
+    "repr": "201055Z"
   },
   "units": {
     "accumulation": "in",
@@ -63,9 +86,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "3",
-    "spoken": "three",
-    "value": 3
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
     "repr": "000",
