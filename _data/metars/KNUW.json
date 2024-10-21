@@ -6,16 +6,22 @@
   },
   "clouds": [
     {
-      "altitude": 25,
+      "altitude": 20,
       "modifier": null,
-      "repr": "FEW025",
+      "repr": "FEW020",
       "type": "FEW"
     },
     {
-      "altitude": 45,
+      "altitude": 35,
       "modifier": null,
-      "repr": "OVC045",
-      "type": "OVC"
+      "repr": "SCT035",
+      "type": "SCT"
+    },
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "BKN050",
+      "type": "BKN"
     }
   ],
   "density_altitude": -592,
@@ -27,13 +33,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-21T10:46:29.224438Z"
+    "timestamp": "2024-10-21T11:07:11.973563Z"
   },
   "other": [],
   "pressure_altitude": -3,
-  "raw": "KNUW 210953Z 15004KT 10SM FEW025 OVC045 10/08 A2997 RMK AO2 SLP153 T01000083 $",
+  "raw": "KNUW 211053Z 21003KT 10SM -RA FEW020 SCT035 BKN050 10/08 A2997 RMK AO2 RAB43 SLP151 P0000 T01000083 $",
   "relative_humidity": 0.8917307313199454,
-  "remarks": "RMK AO2 SLP153 T01000083 $",
+  "remarks": "RMK AO2 RAB43 SLP151 P0000 T01000083 $",
   "remarks_info": {
     "codes": [
       {
@@ -43,6 +49,14 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB43",
+        "value": "Rain began at :43"
       }
     ],
     "dewpoint_decimal": {
@@ -59,9 +73,9 @@
     "precip_hourly": null,
     "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP153",
-      "spoken": "one zero one five point three",
-      "value": 1015.3
+      "repr": "SLP151",
+      "spoken": "one zero one five point one",
+      "value": 1015.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -72,7 +86,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 210953Z 15004KT 10SM FEW025 OVC045 10/08 A2997 RMK AO2 SLP153 T01000083 $",
+  "sanitized": "KNUW 211053Z 21003KT 10SM -RA FEW020 SCT035 BKN050 10/08 A2997 RMK AO2 RAB43 SLP151 P0000 T01000083 $",
   "station": "KNUW",
   "temperature": {
     "repr": "10",
@@ -80,8 +94,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-10-21T09:53:00Z",
-    "repr": "210953Z"
+    "dt": "2024-10-21T10:53:00Z",
+    "repr": "211053Z"
   },
   "units": {
     "accumulation": "in",
@@ -97,16 +111,21 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "150",
-    "spoken": "one five zero",
-    "value": 150
+    "repr": "210",
+    "spoken": "two one zero",
+    "value": 210
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
