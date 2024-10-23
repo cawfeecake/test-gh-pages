@@ -6,16 +6,16 @@
   },
   "clouds": [
     {
-      "altitude": 9,
+      "altitude": 14,
       "modifier": null,
-      "repr": "FEW009",
-      "type": "FEW"
+      "repr": "BKN014",
+      "type": "BKN"
     },
     {
       "altitude": 55,
       "modifier": null,
-      "repr": "SCT055",
-      "type": "SCT"
+      "repr": "BKN055",
+      "type": "BKN"
     }
   ],
   "density_altitude": -1281,
@@ -24,16 +24,16 @@
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-23T07:07:31.216104Z"
+    "timestamp": "2024-10-23T07:29:17.580537Z"
   },
   "other": [],
   "pressure_altitude": -236,
-  "raw": "KBVS 230655Z AUTO 00000KT 10SM FEW009 SCT055 06/06 A3030 RMK A01",
+  "raw": "KBVS 230715Z AUTO 00000KT 3/4SM BR BKN014 BKN055 06/06 A3030 RMK A01 VIS 1/4V5",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 VIS 1/4V5",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -51,7 +51,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 230655Z 00000KT 10SM FEW009 SCT055 06/06 A3030 RMK A01",
+  "sanitized": "KBVS 230715Z 00000KT 3/4SM BR BKN014 BKN055 06/06 A3030 RMK A01 VIS 1/4V5",
   "station": "KBVS",
   "temperature": {
     "repr": "06",
@@ -59,8 +59,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-10-23T06:55:00Z",
-    "repr": "230655Z"
+    "dt": "2024-10-23T07:15:00Z",
+    "repr": "230715Z"
   },
   "units": {
     "accumulation": "in",
@@ -71,9 +71,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
     "repr": "000",
@@ -87,5 +90,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
