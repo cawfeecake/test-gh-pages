@@ -8,8 +8,14 @@
     {
       "altitude": 2,
       "modifier": null,
-      "repr": "VV002",
-      "type": "VV"
+      "repr": "BKN002",
+      "type": "BKN"
+    },
+    {
+      "altitude": 23,
+      "modifier": null,
+      "repr": "OVC023",
+      "type": "OVC"
     }
   ],
   "density_altitude": -1613,
@@ -21,13 +27,13 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-23T08:46:49.449784Z"
+    "timestamp": "2024-10-23T09:07:48.514361Z"
   },
   "other": [],
   "pressure_altitude": -190,
-  "raw": "KBLI 230840Z AUTO 00000KT 1SM R16/2000V5000FT BR VV002 03/03 A3028 RMK AO2 T00280028",
+  "raw": "KBLI 230853Z AUTO 00000KT 1SM R16/1600V2200FT BR BKN002 OVC023 03/03 A3028 RMK AO2 SLP260 T00280028 57003",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00280028",
+  "remarks": "RMK AO2 SLP260 T00280028 57003",
   "remarks_info": {
     "codes": [
       {
@@ -47,8 +53,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.3,
+      "repr": "57003",
+      "tendency": "Decreasing steadily or unsteadily"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP260",
+      "spoken": "one zero two six point zero",
+      "value": 1026
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,25 +73,25 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/2000V5000FT",
+      "repr": "R16/1600V2200FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
-          "repr": "2000",
-          "spoken": "two thousand",
-          "value": 2000
+          "repr": "1600",
+          "spoken": "one six hundred",
+          "value": 1600
         },
         {
-          "repr": "5000",
-          "spoken": "five thousand",
-          "value": 5000
+          "repr": "2200",
+          "spoken": "two two hundred",
+          "value": 2200
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 230840Z 00000KT 1SM R16/2000V5000FT BR VV002 03/03 A3028 RMK AO2 T00280028",
+  "sanitized": "KBLI 230853Z 00000KT 1SM R16/1600V2200FT BR BKN002 OVC023 03/03 A3028 RMK AO2 SLP260 T00280028 57003",
   "station": "KBLI",
   "temperature": {
     "repr": "03",
@@ -85,8 +99,8 @@
     "value": 3
   },
   "time": {
-    "dt": "2024-10-23T08:40:00Z",
-    "repr": "230840Z"
+    "dt": "2024-10-23T08:53:00Z",
+    "repr": "230853Z"
   },
   "units": {
     "accumulation": "in",
