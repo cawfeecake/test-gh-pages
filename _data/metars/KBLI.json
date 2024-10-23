@@ -6,28 +6,28 @@
   },
   "clouds": [
     {
-      "altitude": 3,
+      "altitude": 2,
       "modifier": null,
-      "repr": "FEW003",
-      "type": "FEW"
+      "repr": "VV002",
+      "type": "VV"
     }
   ],
-  "density_altitude": -1421,
+  "density_altitude": -1481,
   "dewpoint": {
     "repr": "04",
     "spoken": "four",
     "value": 4
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-23T06:47:54.722849Z"
+    "timestamp": "2024-10-23T07:07:30.211519Z"
   },
   "other": [],
   "pressure_altitude": -190,
-  "raw": "KBLI 230641Z AUTO 00000KT 2SM BR FEW003 04/04 A3028 RMK AO2 VIS 1 1/4V3 T00440044",
+  "raw": "KBLI 230659Z AUTO 00000KT 3/4SM R16/P6000FT BR VV002 04/04 A3028 RMK AO2 T00390039",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 VIS 1 1/4V3 T00440044",
+  "remarks": "RMK AO2 T00390039",
   "remarks_info": {
     "codes": [
       {
@@ -36,9 +36,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0044",
-      "spoken": "four point four",
-      "value": 4.4
+      "repr": "0039",
+      "spoken": "three point nine",
+      "value": 3.9
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -52,13 +52,25 @@
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0044",
-      "spoken": "four point four",
-      "value": 4.4
+      "repr": "0039",
+      "spoken": "three point nine",
+      "value": 3.9
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 230641Z 00000KT 2SM BR FEW003 04/04 A3028 RMK AO2 VIS 1 1/4V3 T00440044",
+  "runway_visibility": [
+    {
+      "repr": "R16/P6000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [],
+      "visibility": {
+        "repr": "P6000",
+        "spoken": "greater than six thousand",
+        "value": null
+      }
+    }
+  ],
+  "sanitized": "KBLI 230659Z 00000KT 3/4SM R16/P6000FT BR VV002 04/04 A3028 RMK AO2 T00390039",
   "station": "KBLI",
   "temperature": {
     "repr": "04",
@@ -66,8 +78,8 @@
     "value": 4
   },
   "time": {
-    "dt": "2024-10-23T06:41:00Z",
-    "repr": "230641Z"
+    "dt": "2024-10-23T06:59:00Z",
+    "repr": "230659Z"
   },
   "units": {
     "accumulation": "in",
@@ -78,9 +90,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "2",
-    "spoken": "two",
-    "value": 2
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
     "repr": "000",
