@@ -1,45 +1,45 @@
 {
   "altimeter": {
-    "repr": "A2967",
-    "spoken": "two nine point six seven",
-    "value": 29.67
+    "repr": "A2965",
+    "spoken": "two nine point six five",
+    "value": 29.65
   },
   "clouds": [
     {
-      "altitude": 19,
+      "altitude": 3,
       "modifier": null,
-      "repr": "BKN019",
+      "repr": "FEW003",
+      "type": "FEW"
+    },
+    {
+      "altitude": 15,
+      "modifier": null,
+      "repr": "BKN015",
       "type": "BKN"
     },
     {
       "altitude": 27,
       "modifier": null,
-      "repr": "BKN027",
-      "type": "BKN"
-    },
-    {
-      "altitude": 75,
-      "modifier": null,
-      "repr": "OVC075",
+      "repr": "OVC027",
       "type": "OVC"
     }
   ],
-  "density_altitude": 197,
+  "density_altitude": 145,
   "dewpoint": {
     "repr": "12",
     "spoken": "one two",
     "value": 12
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-27T08:45:58.975388Z"
+    "timestamp": "2024-10-27T09:06:51.931737Z"
   },
   "other": [],
-  "pressure_altitude": 420,
-  "raw": "KBLI 270830Z AUTO 22004KT 9SM -RA BKN019 BKN027 OVC075 13/12 A2967 RMK AO2 RAB0757 P0002 T01280122",
-  "relative_humidity": 0.9613738290736719,
-  "remarks": "RMK AO2 RAB0757 P0002 T01280122",
+  "pressure_altitude": 440,
+  "raw": "KBLI 270903Z AUTO 30010KT 3/4SM R16/2800VP6000FT +RA BR FEW003 BKN015 OVC027 12/12 A2965 RMK AO2 P0029 T01220122",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 P0029 T01220122",
   "remarks_info": {
     "codes": [
       {
@@ -59,31 +59,50 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": {
-      "repr": "P0002",
-      "spoken": "zero point zero two",
-      "value": 0.02
+      "repr": "P0029",
+      "spoken": "zero point two nine",
+      "value": 0.29
     },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0128",
-      "spoken": "one two point eight",
-      "value": 12.8
+      "repr": "0122",
+      "spoken": "one two point two",
+      "value": 12.2
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 270830Z 22004KT 9SM -RA BKN019 BKN027 OVC075 13/12 A2967 RMK AO2 RAB0757 P0002 T01280122",
+  "runway_visibility": [
+    {
+      "repr": "R16/2800VP6000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "2800",
+          "spoken": "two eight hundred",
+          "value": 2800
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 270903Z 30010KT 3/4SM R16/2800VP6000FT +RA BR FEW003 BKN015 OVC027 12/12 A2965 RMK AO2 P0029 T01220122",
   "station": "KBLI",
   "temperature": {
-    "repr": "13",
-    "spoken": "one three",
-    "value": 13
+    "repr": "12",
+    "spoken": "one two",
+    "value": 12
   },
   "time": {
-    "dt": "2024-10-27T08:30:00Z",
-    "repr": "270830Z"
+    "dt": "2024-10-27T09:03:00Z",
+    "repr": "270903Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,26 +113,33 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "9",
-    "spoken": "nine",
-    "value": 9
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
-    "repr": "220",
-    "spoken": "two two zero",
-    "value": 220
+    "repr": "300",
+    "spoken": "three zero zero",
+    "value": 300
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "-RA",
-      "value": "Light Rain"
+      "repr": "+RA",
+      "value": "Heavy Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
