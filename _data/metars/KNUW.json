@@ -6,40 +6,40 @@
   },
   "clouds": [
     {
-      "altitude": 16,
+      "altitude": 5,
       "modifier": null,
-      "repr": "BKN016",
+      "repr": "SCT005",
+      "type": "SCT"
+    },
+    {
+      "altitude": 10,
+      "modifier": null,
+      "repr": "BKN010",
       "type": "BKN"
     },
     {
-      "altitude": 30,
+      "altitude": 35,
       "modifier": null,
-      "repr": "BKN030",
-      "type": "BKN"
-    },
-    {
-      "altitude": 45,
-      "modifier": null,
-      "repr": "BKN045",
+      "repr": "BKN035",
       "type": "BKN"
     }
   ],
-  "density_altitude": -1180,
+  "density_altitude": -1108,
   "dewpoint": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-29T14:43:51.651850Z"
+    "timestamp": "2024-10-29T15:07:30.875178Z"
   },
   "other": [],
   "pressure_altitude": -123,
-  "raw": "KNUW 291432Z 10006KT 1SM BR BCFG BKN016 BKN030 BKN045 06/06 A3009 RMK AO2 RAE22 P0001 T00610056 $",
-  "relative_humidity": 0.9659908804883092,
-  "remarks": "RMK AO2 RAE22 P0001 T00610056 $",
+  "raw": "KNUW 291453Z 10008KT 1/4SM FG SCT005 BKN010 BKN035 07/07 A3009 RMK AO2 RAE22 SLP194 P0001 60001 T00670067 51007 $",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 RAE22 SLP194 P0001 60001 T00670067 51007 $",
   "remarks_info": {
     "codes": [
       {
@@ -56,42 +56,54 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0056",
-      "spoken": "five point six",
-      "value": 5.6
+      "repr": "0067",
+      "spoken": "six point seven",
+      "value": 6.7
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "precip_hourly": {
       "repr": "P0001",
       "spoken": "zero point zero one",
       "value": 0.01
     },
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.7,
+      "repr": "51007",
+      "tendency": "Increasing, then steady"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP194",
+      "spoken": "one zero one nine point four",
+      "value": 1019.4
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0061",
-      "spoken": "six point one",
-      "value": 6.1
+      "repr": "0067",
+      "spoken": "six point seven",
+      "value": 6.7
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 291432Z 10006KT 1SM BR BCFG BKN016 BKN030 BKN045 06/06 A3009 RMK AO2 RAE22 P0001 T00610056 $",
+  "sanitized": "KNUW 291453Z 10008KT 1/4SM FG SCT005 BKN010 BKN035 07/07 A3009 RMK AO2 RAE22 SLP194 P0001 60001 T00670067 51007 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
   "time": {
-    "dt": "2024-10-29T14:32:00Z",
-    "repr": "291432Z"
+    "dt": "2024-10-29T14:53:00Z",
+    "repr": "291453Z"
   },
   "units": {
     "accumulation": "in",
@@ -102,9 +114,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "1",
-    "spoken": "one",
-    "value": 1
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "100",
@@ -113,19 +128,15 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
-    },
-    {
-      "repr": "BCFG",
-      "value": "Patchy Fog"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
