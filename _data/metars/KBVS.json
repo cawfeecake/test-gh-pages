@@ -1,18 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3011",
-    "spoken": "three zero point one one",
-    "value": 30.11
+    "repr": "A3012",
+    "spoken": "three zero point one two",
+    "value": 30.12
   },
   "clouds": [
     {
-      "altitude": 2,
+      "altitude": 3,
       "modifier": null,
-      "repr": "OVC002",
+      "repr": "OVC003",
       "type": "OVC"
     }
   ],
-  "density_altitude": -971,
+  "density_altitude": -981,
   "dewpoint": {
     "repr": "07",
     "spoken": "seven",
@@ -21,15 +21,13 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-06-12",
-    "timestamp": "2024-10-29T15:43:37.595795Z"
+    "timestamp": "2024-10-29T16:09:09.504172Z"
   },
-  "other": [
-    "M14KT"
-  ],
-  "pressure_altitude": -46,
-  "raw": "KBVS 291535Z AUTO 07004KT M1/4SM FG OVC002 07/07 A3011 RMK A01",
+  "other": [],
+  "pressure_altitude": -56,
+  "raw": "KBVS 291555Z AUTO 05004KT 1/2SM BR OVC003 07/07 A3012 RMK A01 P0001",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0001",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -39,7 +37,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -47,7 +49,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 291535Z 07004KT M14KT FG OVC002 07/07 A3011 RMK A01",
+  "sanitized": "KBVS 291555Z 05004KT 1/2SM BR OVC003 07/07 A3012 RMK A01 P0001",
   "station": "KBVS",
   "temperature": {
     "repr": "07",
@@ -55,8 +57,8 @@
     "value": 7
   },
   "time": {
-    "dt": "2024-10-29T15:35:00Z",
-    "repr": "291535Z"
+    "dt": "2024-10-29T15:55:00Z",
+    "repr": "291555Z"
   },
   "units": {
     "accumulation": "in",
@@ -66,11 +68,18 @@
     "visibility": "sm",
     "wind_speed": "kt"
   },
-  "visibility": null,
+  "visibility": {
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
+  },
   "wind_direction": {
-    "repr": "070",
-    "spoken": "zero seven zero",
-    "value": 70
+    "repr": "050",
+    "spoken": "zero five zero",
+    "value": 50
   },
   "wind_gust": null,
   "wind_speed": {
@@ -81,8 +90,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "FG",
-      "value": "Fog"
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
