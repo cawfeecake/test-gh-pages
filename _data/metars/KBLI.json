@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 24,
+      "altitude": 22,
       "modifier": null,
-      "repr": "SCT024",
-      "type": "SCT"
-    },
-    {
-      "altitude": 60,
-      "modifier": null,
-      "repr": "BKN060",
+      "repr": "BKN022",
       "type": "BKN"
     },
     {
-      "altitude": 100,
+      "altitude": 29,
       "modifier": null,
-      "repr": "OVC100",
+      "repr": "BKN029",
+      "type": "BKN"
+    },
+    {
+      "altitude": 95,
+      "modifier": null,
+      "repr": "OVC095",
       "type": "OVC"
     }
   ],
@@ -30,21 +30,25 @@
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-02T04:09:09.305251Z"
+    "timestamp": "2024-11-02T04:33:00.350420Z"
   },
   "other": [],
   "pressure_altitude": 450,
-  "raw": "KBLI 020400Z 01005KT 10SM SCT024 BKN060 OVC100 06/06 A2964 RMK AO2 T00610061",
+  "raw": "KBLI 020426Z 02006KT 10SM -RA BKN022 BKN029 OVC095 06/06 A2964 RMK AO2 RAB24 P0001 T00610061",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00610061",
+  "remarks": "RMK AO2 RAB24 P0001 T00610061",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAB24",
+        "value": "Rain began at :24"
       }
     ],
     "dewpoint_decimal": {
@@ -58,7 +62,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -70,7 +78,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 020400Z 01005KT 10SM SCT024 BKN060 OVC100 06/06 A2964 RMK AO2 T00610061",
+  "sanitized": "KBLI 020426Z 02006KT 10SM -RA BKN022 BKN029 OVC095 06/06 A2964 RMK AO2 RAB24 P0001 T00610061",
   "station": "KBLI",
   "temperature": {
     "repr": "06",
@@ -78,8 +86,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-11-02T04:00:00Z",
-    "repr": "020400Z"
+    "dt": "2024-11-02T04:26:00Z",
+    "repr": "020426Z"
   },
   "units": {
     "accumulation": "in",
@@ -95,16 +103,21 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "010",
-    "spoken": "zero one zero",
-    "value": 10
+    "repr": "020",
+    "spoken": "zero two zero",
+    "value": 20
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
