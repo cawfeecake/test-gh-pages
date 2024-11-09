@@ -1,10 +1,16 @@
 {
   "altimeter": {
-    "repr": "A2997",
-    "spoken": "two nine point nine seven",
-    "value": 29.97
+    "repr": "A2998",
+    "spoken": "two nine point nine eight",
+    "value": 29.98
   },
   "clouds": [
+    {
+      "altitude": 45,
+      "modifier": null,
+      "repr": "SCT045",
+      "type": "SCT"
+    },
     {
       "altitude": 60,
       "modifier": null,
@@ -12,13 +18,13 @@
       "type": "BKN"
     },
     {
-      "altitude": 90,
+      "altitude": 80,
       "modifier": null,
-      "repr": "OVC090",
+      "repr": "OVC080",
       "type": "OVC"
     }
   ],
-  "density_altitude": -664,
+  "density_altitude": -674,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -27,13 +33,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-09T08:42:57.295414Z"
+    "timestamp": "2024-11-09T09:06:14.353681Z"
   },
   "other": [],
-  "pressure_altitude": -3,
-  "raw": "KNUW 090753Z 09004KT 10SM -RA BKN060 OVC090 09/08 A2997 RMK AO2 RAE00B52 SLP154 P0000 T00940083 401330050 $",
+  "pressure_altitude": -13,
+  "raw": "KNUW 090853Z 08004KT 6SM -RA BR SCT045 BKN060 OVC080 09/08 A2998 RMK AO2 SLP156 P0004 60005 T00940083 55007 $",
   "relative_humidity": 0.9283717155883899,
-  "remarks": "RMK AO2 RAE00B52 SLP154 P0000 T00940083 401330050 $",
+  "remarks": "RMK AO2 SLP156 P0004 60005 T00940083 55007 $",
   "remarks_info": {
     "codes": [
       {
@@ -43,10 +49,6 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -54,26 +56,30 @@
       "spoken": "eight point three",
       "value": 8.3
     },
-    "maximum_temperature_24": {
-      "repr": "0133",
-      "spoken": "one three point three",
-      "value": 13.3
-    },
+    "maximum_temperature_24": null,
     "maximum_temperature_6": null,
-    "minimum_temperature_24": {
-      "repr": "0050",
-      "spoken": "five point zero",
-      "value": 5
-    },
+    "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
+    "precip_36_hours": {
+      "repr": "60005",
+      "spoken": "zero point zero five",
+      "value": 0.05
+    },
+    "precip_hourly": {
+      "repr": "P0004",
+      "spoken": "zero point zero four",
+      "value": 0.04
+    },
+    "pressure_tendency": {
+      "change": 0.7,
+      "repr": "55007",
+      "tendency": "Decreasing, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP154",
-      "spoken": "one zero one five point four",
-      "value": 1015.4
+      "repr": "SLP156",
+      "spoken": "one zero one five point six",
+      "value": 1015.6
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -84,7 +90,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 090753Z 09004KT 10SM -RA BKN060 OVC090 09/08 A2997 RMK AO2 RAE00B52 SLP154 P0000 T00940083 401330050 $",
+  "sanitized": "KNUW 090853Z 08004KT 6SM -RA BR SCT045 BKN060 OVC080 09/08 A2998 RMK AO2 SLP156 P0004 60005 T00940083 55007 $",
   "station": "KNUW",
   "temperature": {
     "repr": "09",
@@ -92,8 +98,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2024-11-09T07:53:00Z",
-    "repr": "090753Z"
+    "dt": "2024-11-09T08:53:00Z",
+    "repr": "090853Z"
   },
   "units": {
     "accumulation": "in",
@@ -104,14 +110,14 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "6",
+    "spoken": "six",
+    "value": 6
   },
   "wind_direction": {
-    "repr": "090",
-    "spoken": "zero nine zero",
-    "value": 90
+    "repr": "080",
+    "spoken": "zero eight zero",
+    "value": 80
   },
   "wind_gust": null,
   "wind_speed": {
@@ -124,6 +130,10 @@
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
