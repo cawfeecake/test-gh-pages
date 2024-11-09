@@ -6,21 +6,21 @@
   },
   "clouds": [
     {
-      "altitude": 12,
+      "altitude": 10,
       "modifier": null,
-      "repr": "FEW012",
+      "repr": "FEW010",
       "type": "FEW"
     },
     {
-      "altitude": 17,
+      "altitude": 16,
       "modifier": null,
-      "repr": "BKN017",
+      "repr": "BKN016",
       "type": "BKN"
     },
     {
-      "altitude": 45,
+      "altitude": 40,
       "modifier": null,
-      "repr": "OVC045",
+      "repr": "OVC040",
       "type": "OVC"
     }
   ],
@@ -33,13 +33,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-09T20:40:36.198704Z"
+    "timestamp": "2024-11-09T21:02:15.643001Z"
   },
   "other": [],
   "pressure_altitude": 17,
-  "raw": "KNUW 092026Z 15009KT 7SM FEW012 BKN017 OVC045 11/09 A2995 RMK AO2 T01110094 $",
+  "raw": "KNUW 092053Z 15006KT 10SM FEW010 BKN016 OVC040 11/09 A2995 RMK AO2 SLP144 60001 T01110094 50001 $",
   "relative_humidity": 0.8926151927981825,
-  "remarks": "RMK AO2 T01110094 $",
+  "remarks": "RMK AO2 SLP144 60001 T01110094 50001 $",
   "remarks_info": {
     "codes": [
       {
@@ -61,10 +61,22 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "50001",
+      "tendency": "Increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP144",
+      "spoken": "one zero one four point four",
+      "value": 1014.4
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -74,7 +86,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 092026Z 15009KT 7SM FEW012 BKN017 OVC045 11/09 A2995 RMK AO2 T01110094 $",
+  "sanitized": "KNUW 092053Z 15006KT 10SM FEW010 BKN016 OVC040 11/09 A2995 RMK AO2 SLP144 60001 T01110094 50001 $",
   "station": "KNUW",
   "temperature": {
     "repr": "11",
@@ -82,8 +94,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-11-09T20:26:00Z",
-    "repr": "092026Z"
+    "dt": "2024-11-09T20:53:00Z",
+    "repr": "092053Z"
   },
   "units": {
     "accumulation": "in",
@@ -94,9 +106,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_direction": {
     "repr": "150",
@@ -105,9 +117,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "09",
-    "spoken": "nine",
-    "value": 9
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "wind_variable_direction": [],
   "wx_codes": []
