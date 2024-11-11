@@ -1,30 +1,30 @@
 {
   "altimeter": {
-    "repr": "A2964",
-    "spoken": "two nine point six four",
-    "value": 29.64
+    "repr": "A2962",
+    "spoken": "two nine point six two",
+    "value": 29.62
   },
   "clouds": [
     {
-      "altitude": 50,
+      "altitude": 55,
       "modifier": null,
-      "repr": "SCT050",
-      "type": "SCT"
+      "repr": "FEW055",
+      "type": "FEW"
     },
     {
-      "altitude": 80,
+      "altitude": 75,
       "modifier": null,
-      "repr": "BKN080",
+      "repr": "BKN075",
       "type": "BKN"
     },
     {
-      "altitude": 110,
+      "altitude": 95,
       "modifier": null,
-      "repr": "OVC110",
-      "type": "OVC"
+      "repr": "BKN095",
+      "type": "BKN"
     }
   ],
-  "density_altitude": -130,
+  "density_altitude": -110,
   "dewpoint": {
     "repr": "08",
     "spoken": "eight",
@@ -33,13 +33,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-11T05:42:23.831215Z"
+    "timestamp": "2024-11-11T06:11:07.947550Z"
   },
   "other": [],
-  "pressure_altitude": 327,
-  "raw": "KNUW 110453Z 13011KT 10SM SCT050 BKN080 OVC110 11/08 A2964 RMK AO2 SLP042 T01110078 $",
+  "pressure_altitude": 347,
+  "raw": "KNUW 110553Z 14014G26KT 10SM FEW055 BKN075 BKN095 11/08 A2962 RMK AO2 PK WND 14026/0545 RAB35E50 SLP033 P0000 60000 T01110078 10122 20111 56034 $",
   "relative_humidity": 0.8009785710766422,
-  "remarks": "RMK AO2 SLP042 T01110078 $",
+  "remarks": "RMK AO2 PK WND 14026/0545 RAB35E50 SLP033 P0000 60000 T01110078 10122 20111 56034 $",
   "remarks_info": {
     "codes": [
       {
@@ -49,6 +49,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -57,17 +61,33 @@
       "value": 7.8
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10122",
+      "spoken": "one two point two",
+      "value": 12.2
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20111",
+      "spoken": "one one point one",
+      "value": 11.1
+    },
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 3.4,
+      "repr": "56034",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP042",
-      "spoken": "one zero zero four point two",
-      "value": 1004.2
+      "repr": "SLP033",
+      "spoken": "one zero zero three point three",
+      "value": 1003.3
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -78,7 +98,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 110453Z 13011KT 10SM SCT050 BKN080 OVC110 11/08 A2964 RMK AO2 SLP042 T01110078 $",
+  "sanitized": "KNUW 110553Z 14014G26KT 10SM FEW055 BKN075 BKN095 11/08 A2962 RMK AO2 PK WND 14026/0545 RAB35E50 SLP033 P0000 60000 T01110078 10122 20111 56034 $",
   "station": "KNUW",
   "temperature": {
     "repr": "11",
@@ -86,8 +106,8 @@
     "value": 11
   },
   "time": {
-    "dt": "2024-11-11T04:53:00Z",
-    "repr": "110453Z"
+    "dt": "2024-11-11T05:53:00Z",
+    "repr": "110553Z"
   },
   "units": {
     "accumulation": "in",
@@ -103,15 +123,19 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "130",
-    "spoken": "one three zero",
-    "value": 130
+    "repr": "140",
+    "spoken": "one four zero",
+    "value": 140
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "26",
+    "spoken": "two six",
+    "value": 26
+  },
   "wind_speed": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "14",
+    "spoken": "one four",
+    "value": 14
   },
   "wind_variable_direction": [],
   "wx_codes": []
