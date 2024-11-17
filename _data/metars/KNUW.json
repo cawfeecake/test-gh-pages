@@ -1,24 +1,30 @@
 {
   "altimeter": {
-    "repr": "A2955",
-    "spoken": "two nine point five five",
-    "value": 29.55
+    "repr": "A2956",
+    "spoken": "two nine point five six",
+    "value": 29.56
   },
   "clouds": [
     {
-      "altitude": 21,
+      "altitude": 20,
       "modifier": null,
-      "repr": "BKN021",
+      "repr": "SCT020",
+      "type": "SCT"
+    },
+    {
+      "altitude": 26,
+      "modifier": null,
+      "repr": "BKN026",
       "type": "BKN"
     },
     {
-      "altitude": 49,
+      "altitude": 48,
       "modifier": null,
-      "repr": "OVC049",
+      "repr": "OVC048",
       "type": "OVC"
     }
   ],
-  "density_altitude": -376,
+  "density_altitude": -446,
   "dewpoint": {
     "repr": "06",
     "spoken": "six",
@@ -27,13 +33,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-17T20:42:06.689532Z"
+    "timestamp": "2024-11-17T21:04:16.066250Z"
   },
   "other": [],
-  "pressure_altitude": 417,
-  "raw": "KNUW 172011Z 00000KT 10SM -RA BKN021 OVC049 08/06 A2955 RMK AO2 RAB10 P0000 T00830061 $",
-  "relative_humidity": 0.8601818874011486,
-  "remarks": "RMK AO2 RAB10 P0000 T00830061 $",
+  "pressure_altitude": 407,
+  "raw": "KNUW 172053Z 25013KT 4SM -RA BR SCT020 BKN026 OVC048 08/06 A2956 RMK AO2 RAB10 SLP013 P0003 60013 T00780056 56012 $",
+  "relative_humidity": 0.859663717525656,
+  "remarks": "RMK AO2 RAB10 SLP013 P0003 60013 T00780056 56012 $",
   "remarks_info": {
     "codes": [
       {
@@ -45,38 +51,50 @@
         "value": "Automated with precipitation sensor"
       },
       {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
-      },
-      {
         "repr": "RAB10",
         "value": "Rain began at :10"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0061",
-      "spoken": "six point one",
-      "value": 6.1
+      "repr": "0056",
+      "spoken": "five point six",
+      "value": 5.6
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "precip_36_hours": {
+      "repr": "60013",
+      "spoken": "zero point one three",
+      "value": 0.13
+    },
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
+    "pressure_tendency": {
+      "change": 1.2,
+      "repr": "56012",
+      "tendency": "Decreasing, then steady"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP013",
+      "spoken": "one zero zero one point three",
+      "value": 1001.3
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0083",
-      "spoken": "eight point three",
-      "value": 8.3
+      "repr": "0078",
+      "spoken": "seven point eight",
+      "value": 7.8
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 172011Z 00000KT 10SM -RA BKN021 OVC049 08/06 A2955 RMK AO2 RAB10 P0000 T00830061 $",
+  "sanitized": "KNUW 172053Z 25013KT 4SM -RA BR SCT020 BKN026 OVC048 08/06 A2956 RMK AO2 RAB10 SLP013 P0003 60013 T00780056 56012 $",
   "station": "KNUW",
   "temperature": {
     "repr": "08",
@@ -84,8 +102,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2024-11-17T20:11:00Z",
-    "repr": "172011Z"
+    "dt": "2024-11-17T20:53:00Z",
+    "repr": "172053Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,26 +114,30 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "4",
+    "spoken": "four",
+    "value": 4
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "250",
+    "spoken": "two five zero",
+    "value": 250
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "13",
+    "spoken": "one three",
+    "value": 13
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
