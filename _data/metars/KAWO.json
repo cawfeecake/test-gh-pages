@@ -6,9 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 39,
+      "altitude": 41,
       "modifier": null,
-      "repr": "OVC039",
+      "repr": "BKN041",
+      "type": "BKN"
+    },
+    {
+      "altitude": 49,
+      "modifier": null,
+      "repr": "OVC049",
       "type": "OVC"
     }
   ],
@@ -21,18 +27,26 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-21T14:44:42.895752Z"
+    "timestamp": "2024-11-21T15:07:27.204766Z"
   },
   "other": [],
   "pressure_altitude": 132,
-  "raw": "KAWO 211356Z AUTO 00000KT 10SM OVC039 06/03 A2993 RMK AO2 SLP140 T00610033",
+  "raw": "KAWO 211456Z AUTO 05003KT 10SM -RA BKN041 OVC049 06/03 A2993 RMK AO2 RAB40 SLP140 P0000 60000 T00610033 51006",
   "relative_humidity": 0.8223651929534089,
-  "remarks": "RMK AO2 SLP140 T00610033",
+  "remarks": "RMK AO2 RAB40 SLP140 P0000 60000 T00610033 51006",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB40",
+        "value": "Rain began at :40"
       }
     ],
     "dewpoint_decimal": {
@@ -45,9 +59,17 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
+    "precip_36_hours": {
+      "repr": "60000",
+      "spoken": "zero",
+      "value": 0
+    },
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.6,
+      "repr": "51006",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
       "repr": "SLP140",
       "spoken": "one zero one four point zero",
@@ -62,7 +84,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 211356Z 00000KT 10SM OVC039 06/03 A2993 RMK AO2 SLP140 T00610033",
+  "sanitized": "KAWO 211456Z 05003KT 10SM -RA BKN041 OVC049 06/03 A2993 RMK AO2 RAB40 SLP140 P0000 60000 T00610033 51006",
   "station": "KAWO",
   "temperature": {
     "repr": "06",
@@ -70,8 +92,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-11-21T13:56:00Z",
-    "repr": "211356Z"
+    "dt": "2024-11-21T14:56:00Z",
+    "repr": "211456Z"
   },
   "units": {
     "accumulation": "in",
@@ -87,16 +109,21 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "050",
+    "spoken": "zero five zero",
+    "value": 50
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
