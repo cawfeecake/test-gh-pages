@@ -6,10 +6,22 @@
   },
   "clouds": [
     {
-      "altitude": 38,
+      "altitude": 2,
       "modifier": null,
-      "repr": "OVC038",
-      "type": "OVC"
+      "repr": "SCT002",
+      "type": "SCT"
+    },
+    {
+      "altitude": 19,
+      "modifier": null,
+      "repr": "SCT019",
+      "type": "SCT"
+    },
+    {
+      "altitude": 37,
+      "modifier": null,
+      "repr": "BKN037",
+      "type": "BKN"
     }
   ],
   "density_altitude": -1693,
@@ -18,14 +30,14 @@
     "spoken": "three",
     "value": 3
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-11-28T10:08:28.858484Z"
+    "timestamp": "2024-11-28T10:36:21.015225Z"
   },
   "other": [],
   "pressure_altitude": -270,
-  "raw": "KBLI 281000Z AUTO 00000KT 1 1/2SM BR OVC038 03/03 A3036 RMK AO2 T00280028",
+  "raw": "KBLI 281023Z AUTO 00000KT 1/2SM R16/1400VP6000FT FG SCT002 SCT019 BKN037 03/03 A3036 RMK AO2 T00280028",
   "relative_humidity": 1,
   "remarks": "RMK AO2 T00280028",
   "remarks_info": {
@@ -57,8 +69,27 @@
       "value": 2.8
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 281000Z 00000KT 1 1/2SM BR OVC038 03/03 A3036 RMK AO2 T00280028",
+  "runway_visibility": [
+    {
+      "repr": "R16/1400VP6000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "1400",
+          "spoken": "one four hundred",
+          "value": 1400
+        },
+        {
+          "repr": "P6000",
+          "spoken": "greater than six thousand",
+          "value": null
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 281023Z 00000KT 1/2SM R16/1400VP6000FT FG SCT002 SCT019 BKN037 03/03 A3036 RMK AO2 T00280028",
   "station": "KBLI",
   "temperature": {
     "repr": "03",
@@ -66,8 +97,8 @@
     "value": 3
   },
   "time": {
-    "dt": "2024-11-28T10:00:00Z",
-    "repr": "281000Z"
+    "dt": "2024-11-28T10:23:00Z",
+    "repr": "281023Z"
   },
   "units": {
     "accumulation": "in",
@@ -79,11 +110,11 @@
   },
   "visibility": {
     "denominator": 2,
-    "normalized": "1 1/2",
-    "numerator": 3,
-    "repr": "3/2",
-    "spoken": "one and one half",
-    "value": 1.5
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -99,8 +130,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
