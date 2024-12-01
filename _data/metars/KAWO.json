@@ -6,9 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 2,
+      "altitude": 1,
       "modifier": null,
-      "repr": "BKN002",
+      "repr": "BKN001",
       "type": "BKN"
     }
   ],
@@ -21,13 +21,13 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-12-01T08:45:50.735024Z"
+    "timestamp": "2024-12-01T09:07:15.929488Z"
   },
   "other": [],
   "pressure_altitude": -208,
-  "raw": "KAWO 010838Z AUTO 00000KT 1/2SM FG BKN002 00/M01 A3027 RMK AO2 FZRANO",
-  "relative_humidity": 0.9297254240529413,
-  "remarks": "RMK AO2 FZRANO",
+  "raw": "KAWO 010856Z AUTO 00000KT 1/2SM FG BKN001 00/M01 A3027 RMK AO2 SLP257 T00001006 58007 FZRANO",
+  "relative_humidity": 0.9572912555144957,
+  "remarks": "RMK AO2 SLP257 T00001006 58007 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -39,7 +39,11 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -47,14 +51,26 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.7,
+      "repr": "58007",
+      "tendency": "Steady or increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP257",
+      "spoken": "one zero two five point seven",
+      "value": 1025.7
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0000",
+      "spoken": "zero",
+      "value": 0
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 010838Z 00000KT 1/2SM FG BKN002 00/M01 A3027 RMK AO2 FZRANO",
+  "sanitized": "KAWO 010856Z 00000KT 1/2SM FG BKN001 00/M01 A3027 RMK AO2 SLP257 T00001006 58007 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "00",
@@ -62,8 +78,8 @@
     "value": 0
   },
   "time": {
-    "dt": "2024-12-01T08:38:00Z",
-    "repr": "010838Z"
+    "dt": "2024-12-01T08:56:00Z",
+    "repr": "010856Z"
   },
   "units": {
     "accumulation": "in",
