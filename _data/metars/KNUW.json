@@ -8,8 +8,8 @@
     {
       "altitude": 3,
       "modifier": null,
-      "repr": "SCT003",
-      "type": "SCT"
+      "repr": "FEW003",
+      "type": "FEW"
     },
     {
       "altitude": 200,
@@ -24,16 +24,16 @@
     "spoken": "one",
     "value": 1
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-12-01T14:42:15.006696Z"
+    "timestamp": "2024-12-01T15:06:46.035317Z"
   },
   "other": [],
   "pressure_altitude": -303,
-  "raw": "KNUW 011353Z 00000KT 5SM BR SCT003 BKN200 01/01 A3027 RMK AO2 SLP254 VIS NE 1 1/2 T00060006 $",
+  "raw": "KNUW 011453Z 11004KT 10SM MIFG FEW003 BKN200 01/01 A3027 RMK AO2 SLP255 T00060006 53001 $",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP254 VIS NE 1 1/2 T00060006 $",
+  "remarks": "RMK AO2 SLP255 T00060006 53001 $",
   "remarks_info": {
     "codes": [
       {
@@ -57,11 +57,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "53001",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP254",
-      "spoken": "one zero two five point four",
-      "value": 1025.4
+      "repr": "SLP255",
+      "spoken": "one zero two five point five",
+      "value": 1025.5
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -72,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 011353Z 00000KT 5SM BR SCT003 BKN200 01/01 A3027 RMK AO2 SLP254 VIS NE 1 1/2 T00060006 $",
+  "sanitized": "KNUW 011453Z 11004KT 10SM MIFG FEW003 BKN200 01/01 A3027 RMK AO2 SLP255 T00060006 53001 $",
   "station": "KNUW",
   "temperature": {
     "repr": "01",
@@ -80,8 +84,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2024-12-01T13:53:00Z",
-    "repr": "011353Z"
+    "dt": "2024-12-01T14:53:00Z",
+    "repr": "011453Z"
   },
   "units": {
     "accumulation": "in",
@@ -92,26 +96,26 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "5",
-    "spoken": "five",
-    "value": 5
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "110",
+    "spoken": "one one zero",
+    "value": 110
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "MIFG",
+      "value": "Shallow Fog"
     }
   ]
 }
