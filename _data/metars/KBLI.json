@@ -8,8 +8,8 @@
     {
       "altitude": 1,
       "modifier": null,
-      "repr": "SCT001",
-      "type": "SCT"
+      "repr": "VV001",
+      "type": "VV"
     }
   ],
   "density_altitude": -2091,
@@ -18,21 +18,25 @@
     "spoken": "minus one",
     "value": -1
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-12-02T10:37:40.799891Z"
+    "timestamp": "2024-12-02T10:48:36.294868Z"
   },
   "other": [],
   "pressure_altitude": -200,
-  "raw": "KBLI 021034Z AUTO 00000KT 2SM BR SCT001 M01/M01 A3029 RMK AO2 I1001 T10111011",
+  "raw": "KBLI 021044Z AUTO 00000KT 1/2SM FZFG VV001 M01/M01 A3029 RMK AO2 I1001 T10111011 RVRNO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 I1001 T10111011",
+  "remarks": "RMK AO2 I1001 T10111011 RVRNO",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RVRNO",
+        "value": "Runway Visual Range missing"
       }
     ],
     "dewpoint_decimal": {
@@ -58,7 +62,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 021034Z 00000KT 2SM BR SCT001 M01/M01 A3029 RMK AO2 I1001 T10111011",
+  "sanitized": "KBLI 021044Z 00000KT 1/2SM FZFG VV001 M01/M01 A3029 RMK AO2 I1001 T10111011 RVRNO",
   "station": "KBLI",
   "temperature": {
     "repr": "M01",
@@ -66,8 +70,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2024-12-02T10:34:00Z",
-    "repr": "021034Z"
+    "dt": "2024-12-02T10:44:00Z",
+    "repr": "021044Z"
   },
   "units": {
     "accumulation": "in",
@@ -78,9 +82,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "2",
-    "spoken": "two",
-    "value": 2
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -96,8 +103,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
