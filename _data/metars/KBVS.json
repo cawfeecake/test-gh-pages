@@ -4,21 +4,28 @@
     "spoken": "three zero point three zero",
     "value": 30.3
   },
-  "clouds": [],
-  "density_altitude": -2121,
+  "clouds": [
+    {
+      "altitude": 2,
+      "modifier": null,
+      "repr": "OVC002",
+      "type": "OVC"
+    }
+  ],
+  "density_altitude": -2241,
   "dewpoint": {
-    "repr": "M01",
-    "spoken": "minus one",
-    "value": -1
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-12-02T11:40:43.339869Z"
+    "timestamp": "2024-12-02T12:14:55.832951Z"
   },
   "other": [],
   "pressure_altitude": -236,
-  "raw": "KBVS 021135Z AUTO 00000KT 1SM BR CLR M01/M01 A3030 RMK A01",
+  "raw": "KBVS 021155Z AUTO 00000KT 1/4SM FZFG OVC002 M02/M02 A3030 RMK A01",
   "relative_humidity": 1,
   "remarks": "RMK A01",
   "remarks_info": {
@@ -38,16 +45,16 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 021135Z 00000KT 1SM BR M01/M01 A3030 RMK A01",
+  "sanitized": "KBVS 021155Z 00000KT 1/4SM FZFG OVC002 M02/M02 A3030 RMK A01",
   "station": "KBVS",
   "temperature": {
-    "repr": "M01",
-    "spoken": "minus one",
-    "value": -1
+    "repr": "M02",
+    "spoken": "minus two",
+    "value": -2
   },
   "time": {
-    "dt": "2024-12-02T11:35:00Z",
-    "repr": "021135Z"
+    "dt": "2024-12-02T11:55:00Z",
+    "repr": "021155Z"
   },
   "units": {
     "accumulation": "in",
@@ -58,9 +65,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "1",
-    "spoken": "one",
-    "value": 1
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -76,8 +86,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
