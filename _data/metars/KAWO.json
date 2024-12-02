@@ -8,8 +8,8 @@
     {
       "altitude": 2,
       "modifier": null,
-      "repr": "SCT002",
-      "type": "SCT"
+      "repr": "BKN002",
+      "type": "BKN"
     }
   ],
   "density_altitude": -1804,
@@ -18,16 +18,16 @@
     "spoken": "one",
     "value": 1
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-02T22:44:12.105795Z"
+    "timestamp": "2024-12-02T23:08:55.771326Z"
   },
   "other": [],
   "pressure_altitude": -278,
-  "raw": "KAWO 022238Z AUTO 18004KT 5SM BR SCT002 02/01 A3034 RMK AO2 FZRANO",
+  "raw": "KAWO 022304Z AUTO 17005KT 3/4SM UP BR BKN002 02/01 A3034 RMK AO2 VIS 1/4V1 1/2 UPB04 P0000 FZRANO",
   "relative_humidity": 0.9308276135609017,
-  "remarks": "RMK AO2 FZRANO",
+  "remarks": "RMK AO2 VIS 1/4V1 1/2 UPB04 P0000 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -37,6 +37,14 @@
       {
         "repr": "FZRANO",
         "value": "Freezing rain information not available"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "UPB04",
+        "value": "Unknown Precip began at :04"
       }
     ],
     "dewpoint_decimal": null,
@@ -54,7 +62,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 022238Z 18004KT 5SM BR SCT002 02/01 A3034 RMK AO2 FZRANO",
+  "sanitized": "KAWO 022304Z 17005KT 3/4SM UP BR BKN002 02/01 A3034 RMK AO2 VIS 1/4V1 1/2 UPB04 P0000 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "02",
@@ -62,8 +70,8 @@
     "value": 2
   },
   "time": {
-    "dt": "2024-12-02T22:38:00Z",
-    "repr": "022238Z"
+    "dt": "2024-12-02T23:04:00Z",
+    "repr": "022304Z"
   },
   "units": {
     "accumulation": "in",
@@ -74,23 +82,30 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "5",
-    "spoken": "five",
-    "value": 5
+    "denominator": 4,
+    "normalized": "3/4",
+    "numerator": 3,
+    "repr": "3/4",
+    "spoken": "three quarters",
+    "value": 0.75
   },
   "wind_direction": {
-    "repr": "180",
-    "spoken": "one eight zero",
-    "value": 180
+    "repr": "170",
+    "spoken": "one seven zero",
+    "value": 170
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "05",
+    "spoken": "five",
+    "value": 5
   },
   "wind_variable_direction": [],
   "wx_codes": [
+    {
+      "repr": "UP",
+      "value": "Unknown Precip"
+    },
     {
       "repr": "BR",
       "value": "Mist"
