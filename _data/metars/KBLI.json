@@ -8,37 +8,41 @@
     {
       "altitude": 2,
       "modifier": null,
-      "repr": "SCT002",
-      "type": "SCT"
+      "repr": "BKN002",
+      "type": "BKN"
     }
   ],
-  "density_altitude": -1939,
+  "density_altitude": -2011,
   "dewpoint": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "M01",
+    "spoken": "minus one",
+    "value": -1
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-10-29",
-    "timestamp": "2024-12-02T04:46:45.643435Z"
+    "timestamp": "2024-12-02T05:08:38.323716Z"
   },
   "other": [],
   "pressure_altitude": -180,
-  "raw": "KBLI 020435Z 00000KT 7SM SCT002 00/00 A3027 RMK AO2 T00000000",
+  "raw": "KBLI 020500Z 00000KT 1/2SM FZFG BKN002 M01/M01 A3027 RMK AO2 T10061006 RVRNO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T00000000",
+  "remarks": "RMK AO2 T10061006 RVRNO",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RVRNO",
+        "value": "Runway Visual Range missing"
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0000",
-      "spoken": "zero",
-      "value": 0
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -52,22 +56,22 @@
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0000",
-      "spoken": "zero",
-      "value": 0
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 020435Z 00000KT 7SM SCT002 00/00 A3027 RMK AO2 T00000000",
+  "sanitized": "KBLI 020500Z 00000KT 1/2SM FZFG BKN002 M01/M01 A3027 RMK AO2 T10061006 RVRNO",
   "station": "KBLI",
   "temperature": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "M01",
+    "spoken": "minus one",
+    "value": -1
   },
   "time": {
-    "dt": "2024-12-02T04:35:00Z",
-    "repr": "020435Z"
+    "dt": "2024-12-02T05:00:00Z",
+    "repr": "020500Z"
   },
   "units": {
     "accumulation": "in",
@@ -78,9 +82,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -94,5 +101,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FZFG",
+      "value": "Freezing Fog"
+    }
+  ]
 }
