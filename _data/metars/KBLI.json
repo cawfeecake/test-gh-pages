@@ -21,13 +21,13 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-03T10:49:02.059080Z"
+    "timestamp": "2024-12-03T11:06:49.920449Z"
   },
   "other": [],
   "pressure_altitude": -260,
-  "raw": "KBLI 031039Z AUTO 00000KT 1/4SM R16/1200V1800FT FZFG VV001 M01/M01 A3035 RMK AO2 I1000 T10111011",
+  "raw": "KBLI 031053Z AUTO 00000KT 1/4SM R16/1000V1200FT FZFG VV001 M01/M01 A3035 RMK AO2 SLP286 I1000 T10111011",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 I1000 T10111011",
+  "remarks": "RMK AO2 SLP286 I1000 T10111011",
   "remarks_info": {
     "codes": [
       {
@@ -48,7 +48,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP286",
+      "spoken": "one zero two eight point six",
+      "value": 1028.6
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,25 +63,25 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1200V1800FT",
+      "repr": "R16/1000V1200FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
+          "repr": "1000",
+          "spoken": "one thousand",
+          "value": 1000
+        },
+        {
           "repr": "1200",
           "spoken": "one two hundred",
           "value": 1200
-        },
-        {
-          "repr": "1800",
-          "spoken": "one eight hundred",
-          "value": 1800
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 031039Z 00000KT 1/4SM R16/1200V1800FT FZFG VV001 M01/M01 A3035 RMK AO2 I1000 T10111011",
+  "sanitized": "KBLI 031053Z 00000KT 1/4SM R16/1000V1200FT FZFG VV001 M01/M01 A3035 RMK AO2 SLP286 I1000 T10111011",
   "station": "KBLI",
   "temperature": {
     "repr": "M01",
@@ -85,8 +89,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2024-12-03T10:39:00Z",
-    "repr": "031039Z"
+    "dt": "2024-12-03T10:53:00Z",
+    "repr": "031053Z"
   },
   "units": {
     "accumulation": "in",
