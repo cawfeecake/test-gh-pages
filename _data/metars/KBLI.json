@@ -21,13 +21,13 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-04T08:51:30.005139Z"
+    "timestamp": "2024-12-04T09:08:28.485701Z"
   },
   "other": [],
   "pressure_altitude": -240,
-  "raw": "KBLI 040815Z AUTO 00000KT 1/4SM R16/1200V2200FT FZFG VV002 M01/M01 A3033 RMK AO2 T10061006",
+  "raw": "KBLI 040853Z AUTO 00000KT 1/4SM R16/1400V2000FT FZFG VV002 M01/M01 A3033 RMK AO2 SLP278 I1000 I3000 T10061006 58001",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T10061006",
+  "remarks": "RMK AO2 SLP278 I1000 I3000 T10061006 58001",
   "remarks_info": {
     "codes": [
       {
@@ -47,8 +47,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "58001",
+      "tendency": "Steady or increasing, then decreasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP278",
+      "spoken": "one zero two seven point eight",
+      "value": 1027.8
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,25 +67,25 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/1200V2200FT",
+      "repr": "R16/1400V2000FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
         {
-          "repr": "1200",
-          "spoken": "one two hundred",
-          "value": 1200
+          "repr": "1400",
+          "spoken": "one four hundred",
+          "value": 1400
         },
         {
-          "repr": "2200",
-          "spoken": "two two hundred",
-          "value": 2200
+          "repr": "2000",
+          "spoken": "two thousand",
+          "value": 2000
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 040815Z 00000KT 1/4SM R16/1200V2200FT FZFG VV002 M01/M01 A3033 RMK AO2 T10061006",
+  "sanitized": "KBLI 040853Z 00000KT 1/4SM R16/1400V2000FT FZFG VV002 M01/M01 A3033 RMK AO2 SLP278 I1000 I3000 T10061006 58001",
   "station": "KBLI",
   "temperature": {
     "repr": "M01",
@@ -85,8 +93,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2024-12-04T08:15:00Z",
-    "repr": "040815Z"
+    "dt": "2024-12-04T08:53:00Z",
+    "repr": "040853Z"
   },
   "units": {
     "accumulation": "in",
