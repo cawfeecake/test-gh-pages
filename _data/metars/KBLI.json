@@ -21,13 +21,15 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-05T15:44:16.255950Z"
+    "timestamp": "2024-12-05T16:09:19.943843Z"
   },
-  "other": [],
+  "other": [
+    "M14KT"
+  ],
   "pressure_altitude": -230,
-  "raw": "KBLI 051533Z 00000KT 1/4SM R16/0800V1600FT FZFG VV001 M01/M01 A3032 RMK AO2 T10061006",
+  "raw": "KBLI 051553Z 00000KT M1/4SM R16/0800V1200FT FZFG VV001 M01/M01 A3032 RMK AO2 SLP279 T10061006",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 T10061006",
+  "remarks": "RMK AO2 SLP279 T10061006",
   "remarks_info": {
     "codes": [
       {
@@ -48,7 +50,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP279",
+      "spoken": "one zero two seven point nine",
+      "value": 1027.9
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -59,7 +65,7 @@
   },
   "runway_visibility": [
     {
-      "repr": "R16/0800V1600FT",
+      "repr": "R16/0800V1200FT",
       "runway": "16",
       "trend": null,
       "variable_visibility": [
@@ -69,15 +75,15 @@
           "value": 800
         },
         {
-          "repr": "1600",
-          "spoken": "one six hundred",
-          "value": 1600
+          "repr": "1200",
+          "spoken": "one two hundred",
+          "value": 1200
         }
       ],
       "visibility": null
     }
   ],
-  "sanitized": "KBLI 051533Z 00000KT 1/4SM R16/0800V1600FT FZFG VV001 M01/M01 A3032 RMK AO2 T10061006",
+  "sanitized": "KBLI 051553Z 00000KT M14KT R16/0800V1200FT FZFG VV001 M01/M01 A3032 RMK AO2 SLP279 T10061006",
   "station": "KBLI",
   "temperature": {
     "repr": "M01",
@@ -85,8 +91,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2024-12-05T15:33:00Z",
-    "repr": "051533Z"
+    "dt": "2024-12-05T15:53:00Z",
+    "repr": "051553Z"
   },
   "units": {
     "accumulation": "in",
@@ -96,14 +102,7 @@
     "visibility": "sm",
     "wind_speed": "kt"
   },
-  "visibility": {
-    "denominator": 4,
-    "normalized": "1/4",
-    "numerator": 1,
-    "repr": "1/4",
-    "spoken": "one quarter",
-    "value": 0.25
-  },
+  "visibility": null,
   "wind_direction": {
     "repr": "000",
     "spoken": "zero zero zero",
