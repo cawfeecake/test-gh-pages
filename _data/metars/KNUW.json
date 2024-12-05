@@ -21,15 +21,20 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-05T12:55:25.672117Z"
+    "timestamp": "2024-12-05T13:20:22.267958Z"
   },
   "other": [],
   "pressure_altitude": -323,
-  "raw": "KNUW 051242Z 10006KT 2 1/2SM BR BKN003 01/01 A3029 RMK T00110011",
+  "raw": "KNUW 051253Z 10006KT 3SM BR BKN003 01/01 A3029 RMK AO2 SLP260 VIS NE 2 T00110011",
   "relative_humidity": 1,
-  "remarks": "RMK T00110011",
+  "remarks": "RMK AO2 SLP260 VIS NE 2 T00110011",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0011",
       "spoken": "one point one",
@@ -43,7 +48,11 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP260",
+      "spoken": "one zero two six point zero",
+      "value": 1026
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -53,7 +62,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 051242Z 10006KT 2 1/2SM BR BKN003 01/01 A3029 RMK T00110011",
+  "sanitized": "KNUW 051253Z 10006KT 3SM BR BKN003 01/01 A3029 RMK AO2 SLP260 VIS NE 2 T00110011",
   "station": "KNUW",
   "temperature": {
     "repr": "01",
@@ -61,8 +70,8 @@
     "value": 1
   },
   "time": {
-    "dt": "2024-12-05T12:42:00Z",
-    "repr": "051242Z"
+    "dt": "2024-12-05T12:53:00Z",
+    "repr": "051253Z"
   },
   "units": {
     "accumulation": "in",
@@ -73,12 +82,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "denominator": 2,
-    "normalized": "2 1/2",
-    "numerator": 5,
-    "repr": "5/2",
-    "spoken": "two and one half",
-    "value": 2.5
+    "repr": "3",
+    "spoken": "three",
+    "value": 3
   },
   "wind_direction": {
     "repr": "100",
