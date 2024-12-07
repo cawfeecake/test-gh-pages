@@ -1,11 +1,30 @@
 {
   "altimeter": {
-    "repr": "A2994",
-    "spoken": "two nine point nine four",
-    "value": 29.94
+    "repr": "A2995",
+    "spoken": "two nine point nine five",
+    "value": 29.95
   },
-  "clouds": [],
-  "density_altitude": -582,
+  "clouds": [
+    {
+      "altitude": 26,
+      "modifier": null,
+      "repr": "FEW026",
+      "type": "FEW"
+    },
+    {
+      "altitude": 37,
+      "modifier": null,
+      "repr": "SCT037",
+      "type": "SCT"
+    },
+    {
+      "altitude": 43,
+      "modifier": null,
+      "repr": "BKN043",
+      "type": "BKN"
+    }
+  ],
+  "density_altitude": -592,
   "dewpoint": {
     "repr": "10",
     "spoken": "one zero",
@@ -14,13 +33,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-07T10:44:29.637811Z"
+    "timestamp": "2024-12-07T11:03:42.864259Z"
   },
   "other": [],
-  "pressure_altitude": 11,
-  "raw": "KORS 071035Z AUTO 18011KT 5SM -RA BR 10/10 A2994 RMK AO2",
+  "pressure_altitude": 1,
+  "raw": "KORS 071055Z AUTO 18009G15KT 5SM -RA BR FEW026 SCT037 BKN043 10/10 A2995 RMK AO2 P0008",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0008",
   "remarks_info": {
     "codes": [
       {
@@ -35,7 +54,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0008",
+      "spoken": "zero point zero eight",
+      "value": 0.08
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -43,7 +66,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 071035Z 18011KT 5SM -RA BR 10/10 A2994 RMK AO2",
+  "sanitized": "KORS 071055Z 18009G15KT 5SM -RA BR FEW026 SCT037 BKN043 10/10 A2995 RMK AO2 P0008",
   "station": "KORS",
   "temperature": {
     "repr": "10",
@@ -51,8 +74,8 @@
     "value": 10
   },
   "time": {
-    "dt": "2024-12-07T10:35:00Z",
-    "repr": "071035Z"
+    "dt": "2024-12-07T10:55:00Z",
+    "repr": "071055Z"
   },
   "units": {
     "accumulation": "in",
@@ -72,11 +95,15 @@
     "spoken": "one eight zero",
     "value": 180
   },
-  "wind_gust": null,
+  "wind_gust": {
+    "repr": "15",
+    "spoken": "one five",
+    "value": 15
+  },
   "wind_speed": {
-    "repr": "11",
-    "spoken": "one one",
-    "value": 11
+    "repr": "09",
+    "spoken": "nine",
+    "value": 9
   },
   "wind_variable_direction": [],
   "wx_codes": [
