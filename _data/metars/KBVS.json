@@ -6,15 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 4,
+      "altitude": 8,
       "modifier": null,
-      "repr": "BKN004",
+      "repr": "BKN008",
       "type": "BKN"
     },
     {
-      "altitude": 15,
+      "altitude": 14,
       "modifier": null,
-      "repr": "OVC015",
+      "repr": "OVC014",
       "type": "OVC"
     }
   ],
@@ -24,16 +24,16 @@
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "LIFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-08T21:40:35.108981Z"
+    "timestamp": "2024-12-08T22:06:39.779033Z"
   },
   "other": [],
   "pressure_altitude": -186,
-  "raw": "KBVS 082135Z AUTO 04006KT 7SM BKN004 OVC015 06/06 A3025 RMK A01",
+  "raw": "KBVS 082155Z AUTO 00000KT 2 1/2SM BR BKN008 OVC014 06/06 A3025 RMK A01 P0003",
   "relative_humidity": 1,
-  "remarks": "RMK A01",
+  "remarks": "RMK A01 P0003",
   "remarks_info": {
     "codes": [],
     "dewpoint_decimal": null,
@@ -43,7 +43,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -51,7 +55,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KBVS 082135Z 04006KT 7SM BKN004 OVC015 06/06 A3025 RMK A01",
+  "sanitized": "KBVS 082155Z 00000KT 2 1/2SM BR BKN008 OVC014 06/06 A3025 RMK A01 P0003",
   "station": "KBVS",
   "temperature": {
     "repr": "06",
@@ -59,8 +63,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-12-08T21:35:00Z",
-    "repr": "082135Z"
+    "dt": "2024-12-08T21:55:00Z",
+    "repr": "082155Z"
   },
   "units": {
     "accumulation": "in",
@@ -71,21 +75,29 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "7",
-    "spoken": "seven",
-    "value": 7
+    "denominator": 2,
+    "normalized": "2 1/2",
+    "numerator": 5,
+    "repr": "5/2",
+    "spoken": "two and one half",
+    "value": 2.5
   },
   "wind_direction": {
-    "repr": "040",
-    "spoken": "zero four zero",
-    "value": 40
+    "repr": "000",
+    "spoken": "zero zero zero",
+    "value": 0
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
