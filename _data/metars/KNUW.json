@@ -8,19 +8,13 @@
     {
       "altitude": 3,
       "modifier": null,
-      "repr": "FEW003",
-      "type": "FEW"
+      "repr": "SCT003",
+      "type": "SCT"
     },
     {
       "altitude": 25,
       "modifier": null,
-      "repr": "BKN025",
-      "type": "BKN"
-    },
-    {
-      "altitude": 45,
-      "modifier": null,
-      "repr": "OVC045",
+      "repr": "OVC025",
       "type": "OVC"
     }
   ],
@@ -33,13 +27,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-09T08:51:37.049047Z"
+    "timestamp": "2024-12-09T09:09:16.618545Z"
   },
   "other": [],
   "pressure_altitude": -453,
-  "raw": "KNUW 090824Z 10006KT 10SM MIFG FEW003 BKN025 OVC045 06/05 A3042 RMK AO2 T00560050 $",
+  "raw": "KNUW 090853Z 10006KT 10SM MIFG SCT003 OVC025 06/05 A3042 RMK AO2 SLP306 FG BANK E T00560050 51008 $",
   "relative_humidity": 0.9591528252665625,
-  "remarks": "RMK AO2 T00560050 $",
+  "remarks": "RMK AO2 SLP306 FG BANK E T00560050 51008 $",
   "remarks_info": {
     "codes": [
       {
@@ -63,8 +57,16 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 0.8,
+      "repr": "51008",
+      "tendency": "Increasing, then steady"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP306",
+      "spoken": "one zero three zero point six",
+      "value": 1030.6
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -74,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 090824Z 10006KT 10SM MIFG FEW003 BKN025 OVC045 06/05 A3042 RMK AO2 T00560050 $",
+  "sanitized": "KNUW 090853Z 10006KT 10SM MIFG SCT003 OVC025 06/05 A3042 RMK AO2 SLP306 FG BANK E T00560050 51008 $",
   "station": "KNUW",
   "temperature": {
     "repr": "06",
@@ -82,8 +84,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-12-09T08:24:00Z",
-    "repr": "090824Z"
+    "dt": "2024-12-09T08:53:00Z",
+    "repr": "090853Z"
   },
   "units": {
     "accumulation": "in",
