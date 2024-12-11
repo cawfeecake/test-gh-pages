@@ -12,7 +12,7 @@
       "type": "OVC"
     }
   ],
-  "density_altitude": -2044,
+  "density_altitude": -1996,
   "dewpoint": {
     "repr": "M01",
     "spoken": "minus one",
@@ -21,13 +21,13 @@
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-11T08:50:49.965300Z"
+    "timestamp": "2024-12-11T09:08:33.831953Z"
   },
   "other": [],
   "pressure_altitude": -158,
-  "raw": "KAWO 110848Z AUTO 00000KT 1SM BR OVC002 M01/M01 A3022 RMK AO2 VIS 1/4V5 FZRANO",
+  "raw": "KAWO 110856Z AUTO 00000KT 1/4SM FZFG OVC002 M01/M01 A3022 RMK AO2 SLP241 T10061006 56014 FZRANO",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 VIS 1/4V5 FZRANO",
+  "remarks": "RMK AO2 SLP241 T10061006 56014 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -39,7 +39,11 @@
         "value": "Freezing rain information not available"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -47,14 +51,26 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "pressure_tendency": {
+      "change": 1.4,
+      "repr": "56014",
+      "tendency": "Decreasing, then steady"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP241",
+      "spoken": "one zero two four point one",
+      "value": 1024.1
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "1006",
+      "spoken": "minus zero point six",
+      "value": -0.6
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 110848Z 00000KT 1SM BR OVC002 M01/M01 A3022 RMK AO2 VIS 1/4V5 FZRANO",
+  "sanitized": "KAWO 110856Z 00000KT 1/4SM FZFG OVC002 M01/M01 A3022 RMK AO2 SLP241 T10061006 56014 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "M01",
@@ -62,8 +78,8 @@
     "value": -1
   },
   "time": {
-    "dt": "2024-12-11T08:48:00Z",
-    "repr": "110848Z"
+    "dt": "2024-12-11T08:56:00Z",
+    "repr": "110856Z"
   },
   "units": {
     "accumulation": "in",
@@ -74,9 +90,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "1",
-    "spoken": "one",
-    "value": 1
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -92,8 +111,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
