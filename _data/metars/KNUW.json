@@ -12,9 +12,9 @@
       "type": "BKN"
     },
     {
-      "altitude": 32,
+      "altitude": 35,
       "modifier": null,
-      "repr": "OVC032",
+      "repr": "OVC035",
       "type": "OVC"
     }
   ],
@@ -27,13 +27,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-13T02:17:21.916636Z"
+    "timestamp": "2024-12-13T03:11:19.005470Z"
   },
   "other": [],
   "pressure_altitude": 157,
-  "raw": "KNUW 130153Z 10007KT 10SM -RA BKN025 OVC032 06/04 A2981 RMK AO2 SLP098 P0001 T00560044 $",
+  "raw": "KNUW 130253Z 10007KT 10SM -RA BKN025 OVC035 06/04 A2981 RMK AO2 SLP099 P0000 60001 T00560044 51001 $",
   "relative_humidity": 0.9197884374087767,
-  "remarks": "RMK AO2 SLP098 P0001 T00560044 $",
+  "remarks": "RMK AO2 SLP099 P0000 60001 T00560044 51001 $",
   "remarks_info": {
     "codes": [
       {
@@ -43,6 +43,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -55,17 +59,21 @@
     "minimum_temperature_24": null,
     "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0001",
+    "precip_36_hours": {
+      "repr": "60001",
       "spoken": "zero point zero one",
       "value": 0.01
     },
-    "pressure_tendency": null,
+    "precip_hourly": null,
+    "pressure_tendency": {
+      "change": 0.1,
+      "repr": "51001",
+      "tendency": "Increasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP098",
-      "spoken": "one zero zero nine point eight",
-      "value": 1009.8
+      "repr": "SLP099",
+      "spoken": "one zero zero nine point nine",
+      "value": 1009.9
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -76,7 +84,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 130153Z 10007KT 10SM -RA BKN025 OVC032 06/04 A2981 RMK AO2 SLP098 P0001 T00560044 $",
+  "sanitized": "KNUW 130253Z 10007KT 10SM -RA BKN025 OVC035 06/04 A2981 RMK AO2 SLP099 P0000 60001 T00560044 51001 $",
   "station": "KNUW",
   "temperature": {
     "repr": "06",
@@ -84,8 +92,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2024-12-13T01:53:00Z",
-    "repr": "130153Z"
+    "dt": "2024-12-13T02:53:00Z",
+    "repr": "130253Z"
   },
   "units": {
     "accumulation": "in",
