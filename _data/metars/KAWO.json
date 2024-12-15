@@ -8,37 +8,47 @@
     {
       "altitude": 16,
       "modifier": null,
-      "repr": "BKN016",
+      "repr": "SCT016",
+      "type": "SCT"
+    },
+    {
+      "altitude": 34,
+      "modifier": null,
+      "repr": "BKN034",
       "type": "BKN"
     },
     {
-      "altitude": 43,
+      "altitude": 50,
       "modifier": null,
-      "repr": "OVC043",
+      "repr": "OVC050",
       "type": "OVC"
     }
   ],
   "density_altitude": -1374,
   "dewpoint": {
-    "repr": "03",
-    "spoken": "three",
-    "value": 3
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-15T14:29:58.748536Z"
+    "timestamp": "2024-12-15T14:41:43.032564Z"
   },
   "other": [],
   "pressure_altitude": -88,
-  "raw": "KAWO 151419Z AUTO 15005KT 10SM BKN016 OVC043 04/03 A3015 RMK AO2",
-  "relative_humidity": 0.9319043972307702,
-  "remarks": "RMK AO2",
+  "raw": "KAWO 151432Z AUTO 14007KT 10SM RA SCT016 BKN034 OVC050 04/04 A3015 RMK AO2 RAB21 P0001",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 RAB21 P0001",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAB21",
+        "value": "Rain began at :21"
       }
     ],
     "dewpoint_decimal": null,
@@ -48,7 +58,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -56,7 +70,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 151419Z 15005KT 10SM BKN016 OVC043 04/03 A3015 RMK AO2",
+  "sanitized": "KAWO 151432Z 14007KT 10SM RA SCT016 BKN034 OVC050 04/04 A3015 RMK AO2 RAB21 P0001",
   "station": "KAWO",
   "temperature": {
     "repr": "04",
@@ -64,8 +78,8 @@
     "value": 4
   },
   "time": {
-    "dt": "2024-12-15T14:19:00Z",
-    "repr": "151419Z"
+    "dt": "2024-12-15T14:32:00Z",
+    "repr": "151432Z"
   },
   "units": {
     "accumulation": "in",
@@ -81,16 +95,21 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "150",
-    "spoken": "one five zero",
-    "value": 150
+    "repr": "140",
+    "spoken": "one four zero",
+    "value": 140
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "07",
+    "spoken": "seven",
+    "value": 7
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "RA",
+      "value": "Rain"
+    }
+  ]
 }
