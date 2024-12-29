@@ -8,19 +8,19 @@
     {
       "altitude": 11,
       "modifier": null,
-      "repr": "BKN011",
+      "repr": "SCT011",
+      "type": "SCT"
+    },
+    {
+      "altitude": 18,
+      "modifier": null,
+      "repr": "BKN018",
       "type": "BKN"
     },
     {
-      "altitude": 41,
+      "altitude": 37,
       "modifier": null,
-      "repr": "BKN041",
-      "type": "BKN"
-    },
-    {
-      "altitude": 60,
-      "modifier": null,
-      "repr": "OVC060",
+      "repr": "OVC037",
       "type": "OVC"
     }
   ],
@@ -33,13 +33,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-29T19:20:58.472604Z"
+    "timestamp": "2024-12-29T19:40:31.301016Z"
   },
   "other": [],
   "pressure_altitude": 217,
-  "raw": "KNUW 291911Z 13006KT 10SM -RA BKN011 BKN041 OVC060 08/07 A2975 RMK AO2 RAB00 P0000 T00780072 $",
+  "raw": "KNUW 291930Z COR 13005KT 5SM -RA BR SCT011 BKN018 OVC037 08/07 A2975 RMK AO2 RAB00 P0004 T00780072 $",
   "relative_humidity": 0.9598512259113078,
-  "remarks": "RMK AO2 RAB00 P0000 T00780072 $",
+  "remarks": "RMK AO2 RAB00 P0004 T00780072 $",
   "remarks_info": {
     "codes": [
       {
@@ -49,10 +49,6 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
-      },
-      {
-        "repr": "P0000",
-        "value": "Trace amount of rain in the last hour"
       },
       {
         "repr": "RAB00",
@@ -70,7 +66,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0004",
+      "spoken": "zero point zero four",
+      "value": 0.04
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -82,7 +82,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 291911Z 13006KT 10SM -RA BKN011 BKN041 OVC060 08/07 A2975 RMK AO2 RAB00 P0000 T00780072 $",
+  "sanitized": "KNUW 291930Z 13005KT 5SM -RA BR SCT011 BKN018 OVC037 08/07 A2975 RMK AO2 RAB00 P0004 T00780072 $",
   "station": "KNUW",
   "temperature": {
     "repr": "08",
@@ -90,8 +90,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2024-12-29T19:11:00Z",
-    "repr": "291911Z"
+    "dt": "2024-12-29T19:30:00Z",
+    "repr": "291930Z"
   },
   "units": {
     "accumulation": "in",
@@ -102,9 +102,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
     "repr": "130",
@@ -113,15 +113,19 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "05",
+    "spoken": "five",
+    "value": 5
   },
   "wind_variable_direction": [],
   "wx_codes": [
     {
       "repr": "-RA",
       "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
     }
   ]
 }
