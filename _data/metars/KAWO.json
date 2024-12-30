@@ -1,8 +1,8 @@
 {
   "altimeter": {
-    "repr": "A3002",
-    "spoken": "three zero point zero two",
-    "value": 30.02
+    "repr": "A3003",
+    "spoken": "three zero point zero three",
+    "value": 30.03
   },
   "clouds": [
     {
@@ -12,33 +12,47 @@
       "type": "FEW"
     },
     {
-      "altitude": 30,
+      "altitude": 26,
       "modifier": null,
-      "repr": "OVC030",
+      "repr": "BKN026",
+      "type": "BKN"
+    },
+    {
+      "altitude": 32,
+      "modifier": null,
+      "repr": "OVC032",
       "type": "OVC"
     }
   ],
-  "density_altitude": -1124,
+  "density_altitude": -1134,
   "dewpoint": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2024-12-30T03:20:47.761246Z"
+    "timestamp": "2024-12-30T03:44:57.471090Z"
   },
   "other": [],
-  "pressure_altitude": 42,
-  "raw": "KAWO 300315Z AUTO 00000KT 10SM FEW004 OVC030 05/05 A3002 RMK AO2",
-  "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "pressure_altitude": 32,
+  "raw": "KAWO 300327Z AUTO 00000KT 10SM -RA FEW004 BKN026 OVC032 05/04 A3003 RMK AO2 RAB24 P0000",
+  "relative_humidity": 0.9324335019213874,
+  "remarks": "RMK AO2 RAB24 P0000",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
+      },
+      {
+        "repr": "RAB24",
+        "value": "Rain began at :24"
       }
     ],
     "dewpoint_decimal": null,
@@ -56,7 +70,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 300315Z 00000KT 10SM FEW004 OVC030 05/05 A3002 RMK AO2",
+  "sanitized": "KAWO 300327Z 00000KT 10SM -RA FEW004 BKN026 OVC032 05/04 A3003 RMK AO2 RAB24 P0000",
   "station": "KAWO",
   "temperature": {
     "repr": "05",
@@ -64,8 +78,8 @@
     "value": 5
   },
   "time": {
-    "dt": "2024-12-30T03:15:00Z",
-    "repr": "300315Z"
+    "dt": "2024-12-30T03:27:00Z",
+    "repr": "300327Z"
   },
   "units": {
     "accumulation": "in",
@@ -92,5 +106,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    }
+  ]
 }
