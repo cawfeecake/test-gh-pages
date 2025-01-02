@@ -6,9 +6,15 @@
   },
   "clouds": [
     {
-      "altitude": 70,
+      "altitude": 40,
       "modifier": null,
-      "repr": "OVC070",
+      "repr": "SCT040",
+      "type": "SCT"
+    },
+    {
+      "altitude": 50,
+      "modifier": null,
+      "repr": "OVC050",
       "type": "OVC"
     }
   ],
@@ -21,18 +27,22 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-02T15:40:35.741786Z"
+    "timestamp": "2025-01-02T16:08:31.599713Z"
   },
   "other": [],
   "pressure_altitude": 10,
-  "raw": "KBLI 021453Z 05005KT 10SM OVC070 03/M01 A3008 RMK AO2 SLP195 T00331011 55002",
+  "raw": "KBLI 021553Z 08005KT 10SM SCT040 OVC050 03/M01 A3008 RMK AO2 RAB22E49 SLP194 P0000 T00331011",
   "relative_humidity": 0.7287286219700893,
-  "remarks": "RMK AO2 SLP195 T00331011 55002",
+  "remarks": "RMK AO2 RAB22E49 SLP194 P0000 T00331011",
   "remarks_info": {
     "codes": [
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "P0000",
+        "value": "Trace amount of rain in the last hour"
       }
     ],
     "dewpoint_decimal": {
@@ -47,15 +57,11 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0.2,
-      "repr": "55002",
-      "tendency": "Decreasing, then increasing"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP195",
-      "spoken": "one zero one nine point five",
-      "value": 1019.5
+      "repr": "SLP194",
+      "spoken": "one zero one nine point four",
+      "value": 1019.4
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -66,7 +72,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 021453Z 05005KT 10SM OVC070 03/M01 A3008 RMK AO2 SLP195 T00331011 55002",
+  "sanitized": "KBLI 021553Z 08005KT 10SM SCT040 OVC050 03/M01 A3008 RMK AO2 RAB22E49 SLP194 P0000 T00331011",
   "station": "KBLI",
   "temperature": {
     "repr": "03",
@@ -74,8 +80,8 @@
     "value": 3
   },
   "time": {
-    "dt": "2025-01-02T14:53:00Z",
-    "repr": "021453Z"
+    "dt": "2025-01-02T15:53:00Z",
+    "repr": "021553Z"
   },
   "units": {
     "accumulation": "in",
@@ -91,9 +97,9 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "050",
-    "spoken": "zero five zero",
-    "value": 50
+    "repr": "080",
+    "spoken": "zero eight zero",
+    "value": 80
   },
   "wind_gust": null,
   "wind_speed": {
