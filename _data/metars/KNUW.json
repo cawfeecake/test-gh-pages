@@ -1,33 +1,33 @@
 {
   "altimeter": {
-    "repr": "A3006",
-    "spoken": "three zero point zero six",
-    "value": 30.06
+    "repr": "A3007",
+    "spoken": "three zero point zero seven",
+    "value": 30.07
   },
   "clouds": [
     {
-      "altitude": 10,
+      "altitude": 9,
       "modifier": null,
-      "repr": "OVC010",
+      "repr": "OVC009",
       "type": "OVC"
     }
   ],
-  "density_altitude": -946,
+  "density_altitude": -956,
   "dewpoint": {
     "repr": "07",
     "spoken": "seven",
     "value": 7
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "IFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-05T10:41:07.572714Z"
+    "timestamp": "2025-01-05T11:01:55.542834Z"
   },
   "other": [],
-  "pressure_altitude": -93,
-  "raw": "KNUW 051029Z 09006KT 8SM OVC010 08/07 A3006 RMK AO2 T00780067 $",
+  "pressure_altitude": -103,
+  "raw": "KNUW 051053Z 11004KT 5SM -RA BR OVC009 08/07 A3007 RMK AO2 RAB39 SLP188 P0001 T00780067 $",
   "relative_humidity": 0.9274887710023534,
-  "remarks": "RMK AO2 T00780067 $",
+  "remarks": "RMK AO2 RAB39 SLP188 P0001 T00780067 $",
   "remarks_info": {
     "codes": [
       {
@@ -37,6 +37,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAB39",
+        "value": "Rain began at :39"
       }
     ],
     "dewpoint_decimal": {
@@ -50,9 +54,17 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP188",
+      "spoken": "one zero one eight point eight",
+      "value": 1018.8
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
@@ -62,7 +74,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 051029Z 09006KT 8SM OVC010 08/07 A3006 RMK AO2 T00780067 $",
+  "sanitized": "KNUW 051053Z 11004KT 5SM -RA BR OVC009 08/07 A3007 RMK AO2 RAB39 SLP188 P0001 T00780067 $",
   "station": "KNUW",
   "temperature": {
     "repr": "08",
@@ -70,8 +82,8 @@
     "value": 8
   },
   "time": {
-    "dt": "2025-01-05T10:29:00Z",
-    "repr": "051029Z"
+    "dt": "2025-01-05T10:53:00Z",
+    "repr": "051053Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,21 +94,30 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
-    "repr": "090",
-    "spoken": "zero nine zero",
-    "value": 90
+    "repr": "110",
+    "spoken": "one one zero",
+    "value": 110
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "06",
-    "spoken": "six",
-    "value": 6
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "-RA",
+      "value": "Light Rain"
+    },
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
