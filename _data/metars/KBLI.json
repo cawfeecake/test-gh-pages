@@ -1,33 +1,35 @@
 {
   "altimeter": {
-    "repr": "A3051",
-    "spoken": "three zero point five one",
-    "value": 30.51
+    "repr": "A3053",
+    "spoken": "three zero point five three",
+    "value": 30.53
   },
   "clouds": [
     {
-      "altitude": 3,
+      "altitude": 1,
       "modifier": null,
-      "repr": "FEW003",
-      "type": "FEW"
+      "repr": "VV001",
+      "type": "VV"
     }
   ],
-  "density_altitude": -1579,
+  "density_altitude": -1863,
   "dewpoint": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-07T00:36:53.957011Z"
+    "timestamp": "2025-01-07T02:05:35.538785Z"
   },
-  "other": [],
-  "pressure_altitude": -420,
-  "raw": "KBLI 062353Z 00000KT 10SM FEW003 05/04 A3051 RMK AO2 SLP341 T00500044 10083 20028 53000",
-  "relative_humidity": 0.958959211899474,
-  "remarks": "RMK AO2 SLP341 T00500044 10083 20028 53000",
+  "other": [
+    "M14KT"
+  ],
+  "pressure_altitude": -440,
+  "raw": "KBLI 070153Z 00000KT M1/4SM R16/0800V1000FT FG VV001 03/03 A3053 RMK AO2 SLP349 T00280028",
+  "relative_humidity": 1,
+  "remarks": "RMK AO2 SLP349 T00280028",
   "remarks_info": {
     "codes": [
       {
@@ -36,54 +38,61 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "0044",
-      "spoken": "four point four",
-      "value": 4.4
-    },
-    "maximum_temperature_24": null,
-    "maximum_temperature_6": {
-      "repr": "10083",
-      "spoken": "eight point three",
-      "value": 8.3
-    },
-    "minimum_temperature_24": null,
-    "minimum_temperature_6": {
-      "repr": "20028",
+      "repr": "0028",
       "spoken": "two point eight",
       "value": 2.8
     },
+    "maximum_temperature_24": null,
+    "maximum_temperature_6": null,
+    "minimum_temperature_24": null,
+    "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": {
-      "change": 0,
-      "repr": "53000",
-      "tendency": "Decreasing or steady, then increasing"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP341",
-      "spoken": "one zero three four point one",
-      "value": 1034.1
+      "repr": "SLP349",
+      "spoken": "one zero three four point nine",
+      "value": 1034.9
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0050",
-      "spoken": "five point zero",
-      "value": 5
+      "repr": "0028",
+      "spoken": "two point eight",
+      "value": 2.8
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 062353Z 00000KT 10SM FEW003 05/04 A3051 RMK AO2 SLP341 T00500044 10083 20028 53000",
+  "runway_visibility": [
+    {
+      "repr": "R16/0800V1000FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "0800",
+          "spoken": "eight hundred",
+          "value": 800
+        },
+        {
+          "repr": "1000",
+          "spoken": "one thousand",
+          "value": 1000
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 070153Z 00000KT M14KT R16/0800V1000FT FG VV001 03/03 A3053 RMK AO2 SLP349 T00280028",
   "station": "KBLI",
   "temperature": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "time": {
-    "dt": "2025-01-06T23:53:00Z",
-    "repr": "062353Z"
+    "dt": "2025-01-07T01:53:00Z",
+    "repr": "070153Z"
   },
   "units": {
     "accumulation": "in",
@@ -93,11 +102,7 @@
     "visibility": "sm",
     "wind_speed": "kt"
   },
-  "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
-  },
+  "visibility": null,
   "wind_direction": {
     "repr": "000",
     "spoken": "zero zero zero",
@@ -110,5 +115,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FG",
+      "value": "Fog"
+    }
+  ]
 }
