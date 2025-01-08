@@ -6,9 +6,9 @@
   },
   "clouds": [
     {
-      "altitude": 42,
+      "altitude": 34,
       "modifier": null,
-      "repr": "OVC042",
+      "repr": "OVC034",
       "type": "OVC"
     }
   ],
@@ -18,18 +18,16 @@
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "VFR",
+  "flight_rules": "MVFR",
   "meta": {
-    "cache-timestamp": "2025-01-08T08:33:28.201000Z",
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-08T08:45:44.913845Z",
-    "warning": "Unable to fetch report. This cached data might be out of date. To return an error instead, set ?onfail=error"
+    "timestamp": "2025-01-08T09:07:48.135601Z"
   },
   "other": [],
   "pressure_altitude": -459,
-  "raw": "KORS 080815Z AUTO 00000KT 10SM OVC042 06/06 A3041 RMK AO2",
+  "raw": "KORS 080855Z AUTO 00000KT 5SM BR OVC034 06/06 A3041 RMK AO2 P0001",
   "relative_humidity": 1,
-  "remarks": "RMK AO2",
+  "remarks": "RMK AO2 P0001",
   "remarks_info": {
     "codes": [
       {
@@ -44,7 +42,11 @@
     "minimum_temperature_6": null,
     "precip_24_hours": null,
     "precip_36_hours": null,
-    "precip_hourly": null,
+    "precip_hourly": {
+      "repr": "P0001",
+      "spoken": "zero point zero one",
+      "value": 0.01
+    },
     "pressure_tendency": null,
     "sea_level_pressure": null,
     "snow_depth": null,
@@ -52,7 +54,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KORS 080815Z 00000KT 10SM OVC042 06/06 A3041 RMK AO2",
+  "sanitized": "KORS 080855Z 00000KT 5SM BR OVC034 06/06 A3041 RMK AO2 P0001",
   "station": "KORS",
   "temperature": {
     "repr": "06",
@@ -60,8 +62,8 @@
     "value": 6
   },
   "time": {
-    "dt": "2025-01-08T08:15:00Z",
-    "repr": "080815Z"
+    "dt": "2025-01-08T08:55:00Z",
+    "repr": "080855Z"
   },
   "units": {
     "accumulation": "in",
@@ -72,9 +74,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "repr": "5",
+    "spoken": "five",
+    "value": 5
   },
   "wind_direction": {
     "repr": "000",
@@ -88,5 +90,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "BR",
+      "value": "Mist"
+    }
+  ]
 }
