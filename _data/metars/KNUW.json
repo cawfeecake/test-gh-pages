@@ -1,18 +1,24 @@
 {
   "altimeter": {
-    "repr": "A3047",
-    "spoken": "three zero point four seven",
-    "value": 30.47
+    "repr": "A3048",
+    "spoken": "three zero point four eight",
+    "value": 30.48
   },
   "clouds": [
     {
-      "altitude": 45,
+      "altitude": 50,
       "modifier": null,
-      "repr": "BKN045",
+      "repr": "BKN050",
+      "type": "BKN"
+    },
+    {
+      "altitude": 80,
+      "modifier": null,
+      "repr": "BKN080",
       "type": "BKN"
     }
   ],
-  "density_altitude": -1428,
+  "density_altitude": -1366,
   "dewpoint": {
     "repr": "05",
     "spoken": "five",
@@ -21,15 +27,24 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-11T14:40:33.634651Z"
+    "timestamp": "2025-01-11T15:03:43.417249Z"
   },
   "other": [],
-  "pressure_altitude": -503,
-  "raw": "KNUW 111353Z 28014KT 10SM BKN045 07/05 A3047 RMK SLP322 T00720050",
-  "relative_humidity": 0.8590382146577359,
-  "remarks": "RMK SLP322 T00720050",
+  "pressure_altitude": -513,
+  "raw": "KNUW 111453Z 28015KT 10SM BKN050 BKN080 08/05 A3048 RMK AO2 SLP325 T00780050 53009 $",
+  "relative_humidity": 0.824548883443889,
+  "remarks": "RMK AO2 SLP325 T00780050 53009 $",
   "remarks_info": {
-    "codes": [],
+    "codes": [
+      {
+        "repr": "$",
+        "value": "ASOS requires maintenance"
+      },
+      {
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
+      }
+    ],
     "dewpoint_decimal": {
       "repr": "0050",
       "spoken": "five point zero",
@@ -42,31 +57,35 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.9,
+      "repr": "53009",
+      "tendency": "Decreasing or steady, then increasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP322",
-      "spoken": "one zero three two point two",
-      "value": 1032.2
+      "repr": "SLP325",
+      "spoken": "one zero three two point five",
+      "value": 1032.5
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0072",
-      "spoken": "seven point two",
-      "value": 7.2
+      "repr": "0078",
+      "spoken": "seven point eight",
+      "value": 7.8
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 111353Z 28014KT 10SM BKN045 07/05 A3047 RMK SLP322 T00720050",
+  "sanitized": "KNUW 111453Z 28015KT 10SM BKN050 BKN080 08/05 A3048 RMK AO2 SLP325 T00780050 53009 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "07",
-    "spoken": "seven",
-    "value": 7
+    "repr": "08",
+    "spoken": "eight",
+    "value": 8
   },
   "time": {
-    "dt": "2025-01-11T13:53:00Z",
-    "repr": "111353Z"
+    "dt": "2025-01-11T14:53:00Z",
+    "repr": "111453Z"
   },
   "units": {
     "accumulation": "in",
@@ -88,9 +107,9 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "14",
-    "spoken": "one four",
-    "value": 14
+    "repr": "15",
+    "spoken": "one five",
+    "value": 15
   },
   "wind_variable_direction": [],
   "wx_codes": []
