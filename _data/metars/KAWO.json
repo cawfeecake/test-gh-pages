@@ -6,16 +6,22 @@
   },
   "clouds": [
     {
-      "altitude": 23,
+      "altitude": 20,
       "modifier": null,
-      "repr": "BKN023",
+      "repr": "SCT020",
+      "type": "SCT"
+    },
+    {
+      "altitude": 32,
+      "modifier": null,
+      "repr": "BKN032",
       "type": "BKN"
     },
     {
-      "altitude": 28,
+      "altitude": 41,
       "modifier": null,
-      "repr": "OVC028",
-      "type": "OVC"
+      "repr": "BKN041",
+      "type": "BKN"
     }
   ],
   "density_altitude": -1440,
@@ -24,25 +30,25 @@
     "spoken": "six",
     "value": 6
   },
-  "flight_rules": "MVFR",
+  "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-11T18:43:34.804674Z"
+    "timestamp": "2025-01-11T19:01:23.555965Z"
   },
   "other": [],
   "pressure_altitude": -478,
-  "raw": "KAWO 111756Z AUTO 13005KT 4SM RA BR BKN023 OVC028 07/06 A3054 RMK AO2 RAB43 SLP348 P0001 60005 T00670056 10078 20056 53015",
+  "raw": "KAWO 111856Z AUTO 10SM -RA SCT020 BKN032 BKN041 07/06 A3054 RMK AO2 RAE11B28 SLP349 P0001 T00670056 $",
   "relative_humidity": 0.9268723723701822,
-  "remarks": "RMK AO2 RAB43 SLP348 P0001 60005 T00670056 10078 20056 53015",
+  "remarks": "RMK AO2 RAE11B28 SLP349 P0001 T00670056 $",
   "remarks_info": {
     "codes": [
       {
-        "repr": "AO2",
-        "value": "Automated with precipitation sensor"
+        "repr": "$",
+        "value": "ASOS requires maintenance"
       },
       {
-        "repr": "RAB43",
-        "value": "Rain began at :43"
+        "repr": "AO2",
+        "value": "Automated with precipitation sensor"
       }
     ],
     "dewpoint_decimal": {
@@ -51,37 +57,21 @@
       "value": 5.6
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": {
-      "repr": "10078",
-      "spoken": "seven point eight",
-      "value": 7.8
-    },
+    "maximum_temperature_6": null,
     "minimum_temperature_24": null,
-    "minimum_temperature_6": {
-      "repr": "20056",
-      "spoken": "five point six",
-      "value": 5.6
-    },
+    "minimum_temperature_6": null,
     "precip_24_hours": null,
-    "precip_36_hours": {
-      "repr": "60005",
-      "spoken": "zero point zero five",
-      "value": 0.05
-    },
+    "precip_36_hours": null,
     "precip_hourly": {
       "repr": "P0001",
       "spoken": "zero point zero one",
       "value": 0.01
     },
-    "pressure_tendency": {
-      "change": 1.5,
-      "repr": "53015",
-      "tendency": "Decreasing or steady, then increasing"
-    },
+    "pressure_tendency": null,
     "sea_level_pressure": {
-      "repr": "SLP348",
-      "spoken": "one zero three four point eight",
-      "value": 1034.8
+      "repr": "SLP349",
+      "spoken": "one zero three four point nine",
+      "value": 1034.9
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -92,7 +82,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 111756Z 13005KT 4SM RA BR BKN023 OVC028 07/06 A3054 RMK AO2 RAB43 SLP348 P0001 60005 T00670056 10078 20056 53015",
+  "sanitized": "KAWO 111856Z 10SM -RA SCT020 BKN032 BKN041 07/06 A3054 RMK AO2 RAE11B28 SLP349 P0001 T00670056 $",
   "station": "KAWO",
   "temperature": {
     "repr": "07",
@@ -100,8 +90,8 @@
     "value": 7
   },
   "time": {
-    "dt": "2025-01-11T17:56:00Z",
-    "repr": "111756Z"
+    "dt": "2025-01-11T18:56:00Z",
+    "repr": "111856Z"
   },
   "units": {
     "accumulation": "in",
@@ -112,30 +102,18 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "4",
-    "spoken": "four",
-    "value": 4
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
-  "wind_direction": {
-    "repr": "130",
-    "spoken": "one three zero",
-    "value": 130
-  },
+  "wind_direction": null,
   "wind_gust": null,
-  "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
-  },
+  "wind_speed": null,
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "RA",
-      "value": "Rain"
-    },
-    {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "-RA",
+      "value": "Light Rain"
     }
   ]
 }
