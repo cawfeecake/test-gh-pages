@@ -4,7 +4,20 @@
     "spoken": "three zero point five three",
     "value": 30.53
   },
-  "clouds": [],
+  "clouds": [
+    {
+      "altitude": 35,
+      "modifier": null,
+      "repr": "SCT035",
+      "type": "SCT"
+    },
+    {
+      "altitude": 180,
+      "modifier": null,
+      "repr": "BKN180",
+      "type": "BKN"
+    }
+  ],
   "density_altitude": -1284,
   "dewpoint": {
     "repr": "03",
@@ -14,13 +27,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-11T21:02:20.957593Z"
+    "timestamp": "2025-01-11T21:25:04.592701Z"
   },
   "other": [],
   "pressure_altitude": -563,
-  "raw": "KNUW 111953Z 00000KT 10SM CLR 09/03 A3053 RMK AO2 SLP342 T00890028 $",
+  "raw": "KNUW 112053Z 33003KT 10SM SCT035 BKN180 09/03 A3053 RMK AO2 SLP341 T00890028 50002 $",
   "relative_humidity": 0.6556071384913482,
-  "remarks": "RMK AO2 SLP342 T00890028 $",
+  "remarks": "RMK AO2 SLP341 T00890028 50002 $",
   "remarks_info": {
     "codes": [
       {
@@ -44,11 +57,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.2,
+      "repr": "50002",
+      "tendency": "Increasing, then decreasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP342",
-      "spoken": "one zero three four point two",
-      "value": 1034.2
+      "repr": "SLP341",
+      "spoken": "one zero three four point one",
+      "value": 1034.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -59,7 +76,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 111953Z 00000KT 10SM 09/03 A3053 RMK AO2 SLP342 T00890028 $",
+  "sanitized": "KNUW 112053Z 33003KT 10SM SCT035 BKN180 09/03 A3053 RMK AO2 SLP341 T00890028 50002 $",
   "station": "KNUW",
   "temperature": {
     "repr": "09",
@@ -67,8 +84,8 @@
     "value": 9
   },
   "time": {
-    "dt": "2025-01-11T19:53:00Z",
-    "repr": "111953Z"
+    "dt": "2025-01-11T20:53:00Z",
+    "repr": "112053Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,15 +101,15 @@
     "value": 10
   },
   "wind_direction": {
-    "repr": "000",
-    "spoken": "zero zero zero",
-    "value": 0
+    "repr": "330",
+    "spoken": "three three zero",
+    "value": 330
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "00",
-    "spoken": "zero",
-    "value": 0
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "wind_variable_direction": [],
   "wx_codes": []
