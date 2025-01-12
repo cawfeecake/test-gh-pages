@@ -6,25 +6,25 @@
   },
   "clouds": [
     {
-      "altitude": 18,
+      "altitude": 17,
       "modifier": null,
-      "repr": "SCT018",
-      "type": "SCT"
-    },
-    {
-      "altitude": 24,
-      "modifier": null,
-      "repr": "BKN024",
+      "repr": "BKN017",
       "type": "BKN"
     },
     {
-      "altitude": 29,
+      "altitude": 25,
       "modifier": null,
-      "repr": "OVC029",
+      "repr": "BKN025",
+      "type": "BKN"
+    },
+    {
+      "altitude": 32,
+      "modifier": null,
+      "repr": "OVC032",
       "type": "OVC"
     }
   ],
-  "density_altitude": -1732,
+  "density_altitude": -1660,
   "dewpoint": {
     "repr": "04",
     "spoken": "four",
@@ -33,13 +33,13 @@
   "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-12T17:40:31.902238Z"
+    "timestamp": "2025-01-12T18:08:30.744265Z"
   },
   "other": [],
   "pressure_altitude": -543,
-  "raw": "KNUW 121705Z 01004KT 4SM -RA BR SCT018 BKN024 OVC029 05/04 A3051 RMK AO2 P0001 T00500044 $",
-  "relative_humidity": 0.958959211899474,
-  "remarks": "RMK AO2 P0001 T00500044 $",
+  "raw": "KNUW 121753Z 01004KT 6SM BR BKN017 BKN025 OVC032 06/04 A3051 RMK AO2 RAE35 SLP334 P0003 60005 T00560044 10056 20011 53006 $",
+  "relative_humidity": 0.9197884374087767,
+  "remarks": "RMK AO2 RAE35 SLP334 P0003 60005 T00560044 10056 20011 53006 $",
   "remarks_info": {
     "codes": [
       {
@@ -49,6 +49,10 @@
       {
         "repr": "AO2",
         "value": "Automated with precipitation sensor"
+      },
+      {
+        "repr": "RAE35",
+        "value": "Rain ended at :35"
       }
     ],
     "dewpoint_decimal": {
@@ -57,37 +61,57 @@
       "value": 4.4
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
-    "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
-    "precip_24_hours": null,
-    "precip_36_hours": null,
-    "precip_hourly": {
-      "repr": "P0001",
-      "spoken": "zero point zero one",
-      "value": 0.01
+    "maximum_temperature_6": {
+      "repr": "10056",
+      "spoken": "five point six",
+      "value": 5.6
     },
-    "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "minimum_temperature_24": null,
+    "minimum_temperature_6": {
+      "repr": "20011",
+      "spoken": "one point one",
+      "value": 1.1
+    },
+    "precip_24_hours": null,
+    "precip_36_hours": {
+      "repr": "60005",
+      "spoken": "zero point zero five",
+      "value": 0.05
+    },
+    "precip_hourly": {
+      "repr": "P0003",
+      "spoken": "zero point zero three",
+      "value": 0.03
+    },
+    "pressure_tendency": {
+      "change": 0.6,
+      "repr": "53006",
+      "tendency": "Decreasing or steady, then increasing"
+    },
+    "sea_level_pressure": {
+      "repr": "SLP334",
+      "spoken": "one zero three three point four",
+      "value": 1033.4
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0050",
-      "spoken": "five point zero",
-      "value": 5
+      "repr": "0056",
+      "spoken": "five point six",
+      "value": 5.6
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 121705Z 01004KT 4SM -RA BR SCT018 BKN024 OVC029 05/04 A3051 RMK AO2 P0001 T00500044 $",
+  "sanitized": "KNUW 121753Z 01004KT 6SM BR BKN017 BKN025 OVC032 06/04 A3051 RMK AO2 RAE35 SLP334 P0003 60005 T00560044 10056 20011 53006 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "06",
+    "spoken": "six",
+    "value": 6
   },
   "time": {
-    "dt": "2025-01-12T17:05:00Z",
-    "repr": "121705Z"
+    "dt": "2025-01-12T17:53:00Z",
+    "repr": "121753Z"
   },
   "units": {
     "accumulation": "in",
@@ -98,9 +122,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "4",
-    "spoken": "four",
-    "value": 4
+    "repr": "6",
+    "spoken": "six",
+    "value": 6
   },
   "wind_direction": {
     "repr": "010",
@@ -115,10 +139,6 @@
   },
   "wind_variable_direction": [],
   "wx_codes": [
-    {
-      "repr": "-RA",
-      "value": "Light Rain"
-    },
     {
       "repr": "BR",
       "value": "Mist"
