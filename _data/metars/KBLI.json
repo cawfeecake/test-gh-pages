@@ -1,11 +1,18 @@
 {
   "altimeter": {
-    "repr": "A3051",
-    "spoken": "three zero point five one",
-    "value": 30.51
+    "repr": "A3052",
+    "spoken": "three zero point five two",
+    "value": 30.52
   },
-  "clouds": [],
-  "density_altitude": -1711,
+  "clouds": [
+    {
+      "altitude": 49,
+      "modifier": null,
+      "repr": "OVC049",
+      "type": "OVC"
+    }
+  ],
+  "density_altitude": -1721,
   "dewpoint": {
     "repr": "04",
     "spoken": "four",
@@ -14,13 +21,13 @@
   "flight_rules": "VFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-12T02:17:42.993028Z"
+    "timestamp": "2025-01-12T03:04:27.737646Z"
   },
   "other": [],
-  "pressure_altitude": -420,
-  "raw": "KBLI 120153Z 00000KT 10SM CLR 04/04 A3051 RMK AO2 SLP342 T00390039",
+  "pressure_altitude": -430,
+  "raw": "KBLI 120253Z 00000KT 10SM OVC049 04/04 A3052 RMK AO2 SLP344 T00390039 58003",
   "relative_humidity": 1,
-  "remarks": "RMK AO2 SLP342 T00390039",
+  "remarks": "RMK AO2 SLP344 T00390039 58003",
   "remarks_info": {
     "codes": [
       {
@@ -40,11 +47,15 @@
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 0.3,
+      "repr": "58003",
+      "tendency": "Steady or increasing, then decreasing"
+    },
     "sea_level_pressure": {
-      "repr": "SLP342",
-      "spoken": "one zero three four point two",
-      "value": 1034.2
+      "repr": "SLP344",
+      "spoken": "one zero three four point four",
+      "value": 1034.4
     },
     "snow_depth": null,
     "sunshine_minutes": null,
@@ -55,7 +66,7 @@
     }
   },
   "runway_visibility": [],
-  "sanitized": "KBLI 120153Z 00000KT 10SM 04/04 A3051 RMK AO2 SLP342 T00390039",
+  "sanitized": "KBLI 120253Z 00000KT 10SM OVC049 04/04 A3052 RMK AO2 SLP344 T00390039 58003",
   "station": "KBLI",
   "temperature": {
     "repr": "04",
@@ -63,8 +74,8 @@
     "value": 4
   },
   "time": {
-    "dt": "2025-01-12T01:53:00Z",
-    "repr": "120153Z"
+    "dt": "2025-01-12T02:53:00Z",
+    "repr": "120253Z"
   },
   "units": {
     "accumulation": "in",
