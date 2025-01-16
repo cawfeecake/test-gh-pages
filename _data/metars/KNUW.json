@@ -1,21 +1,21 @@
 {
   "altimeter": {
-    "repr": "A3031",
-    "spoken": "three zero point three one",
-    "value": 30.31
+    "repr": "A3029",
+    "spoken": "three zero point two nine",
+    "value": 30.29
   },
   "clouds": [
     {
       "altitude": 3,
       "modifier": null,
-      "repr": "SCT003",
-      "type": "SCT"
+      "repr": "BKN003",
+      "type": "BKN"
     },
     {
-      "altitude": 12,
+      "altitude": 10,
       "modifier": null,
-      "repr": "SCT012",
-      "type": "SCT"
+      "repr": "BKN010",
+      "type": "BKN"
     },
     {
       "altitude": 220,
@@ -24,22 +24,22 @@
       "type": "BKN"
     }
   ],
-  "density_altitude": -1664,
+  "density_altitude": -1776,
   "dewpoint": {
     "repr": "03",
     "spoken": "three",
     "value": 3
   },
-  "flight_rules": "VFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-15T23:40:44.759361Z"
+    "timestamp": "2025-01-16T00:35:26.158194Z"
   },
   "other": [],
-  "pressure_altitude": -343,
-  "raw": "KNUW 152253Z 11006KT 10SM BCFG SCT003 SCT012 BKN220 04/03 A3031 RMK AO2 SLP267 VIS NE-SE 1 1/2 FG BANK NE-SE T00390028 $",
-  "relative_humidity": 0.9252679300008134,
-  "remarks": "RMK AO2 SLP267 VIS NE-SE 1 1/2 FG BANK NE-SE T00390028 $",
+  "pressure_altitude": -323,
+  "raw": "KNUW 152353Z 12006KT 1/4SM FG BKN003 BKN010 BKN220 03/03 A3029 RMK AO2 SFC VIS 1/2 SLP261 VIS S-W 2 T00280028 10050 20028 56024 $",
+  "relative_humidity": 1.0,
+  "remarks": "RMK AO2 SFC VIS 1/2 SLP261 VIS S-W 2 T00280028 10050 20028 56024 $",
   "remarks_info": {
     "codes": [
       {
@@ -57,37 +57,49 @@
       "value": 2.8
     },
     "maximum_temperature_24": null,
-    "maximum_temperature_6": null,
+    "maximum_temperature_6": {
+      "repr": "10050",
+      "spoken": "five point zero",
+      "value": 5.0
+    },
     "minimum_temperature_24": null,
-    "minimum_temperature_6": null,
+    "minimum_temperature_6": {
+      "repr": "20028",
+      "spoken": "two point eight",
+      "value": 2.8
+    },
     "precip_24_hours": null,
     "precip_36_hours": null,
     "precip_hourly": null,
-    "pressure_tendency": null,
+    "pressure_tendency": {
+      "change": 2.4,
+      "repr": "56024",
+      "tendency": "Decreasing, then steady"
+    },
     "sea_level_pressure": {
-      "repr": "SLP267",
-      "spoken": "one zero two six point seven",
-      "value": 1026.7
+      "repr": "SLP261",
+      "spoken": "one zero two six point one",
+      "value": 1026.1
     },
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "0039",
-      "spoken": "three point nine",
-      "value": 3.9
+      "repr": "0028",
+      "spoken": "two point eight",
+      "value": 2.8
     }
   },
   "runway_visibility": [],
-  "sanitized": "KNUW 152253Z 11006KT 10SM BCFG SCT003 SCT012 BKN220 04/03 A3031 RMK AO2 SLP267 VIS NE-SE 1 1/2 FG BANK NE-SE T00390028 $",
+  "sanitized": "KNUW 152353Z 12006KT 1/4SM FG BKN003 BKN010 BKN220 03/03 A3029 RMK AO2 SFC VIS 1/2 SLP261 VIS S-W 2 T00280028 10050 20028 56024 $",
   "station": "KNUW",
   "temperature": {
-    "repr": "04",
-    "spoken": "four",
-    "value": 4
+    "repr": "03",
+    "spoken": "three",
+    "value": 3
   },
   "time": {
-    "dt": "2025-01-15T22:53:00Z",
-    "repr": "152253Z"
+    "dt": "2025-01-15T23:53:00Z",
+    "repr": "152353Z"
   },
   "units": {
     "accumulation": "in",
@@ -98,14 +110,17 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "10",
-    "spoken": "one zero",
-    "value": 10
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
-    "repr": "110",
-    "spoken": "one one zero",
-    "value": 110
+    "repr": "120",
+    "spoken": "one two zero",
+    "value": 120
   },
   "wind_gust": null,
   "wind_speed": {
@@ -116,8 +131,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BCFG",
-      "value": "Patchy Fog"
+      "repr": "FG",
+      "value": "Fog"
     }
   ]
 }
