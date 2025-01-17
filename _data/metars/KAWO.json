@@ -8,8 +8,8 @@
     {
       "altitude": 1,
       "modifier": null,
-      "repr": "BKN001",
-      "type": "BKN"
+      "repr": "SCT001",
+      "type": "SCT"
     },
     {
       "altitude": 23,
@@ -20,20 +20,20 @@
   ],
   "density_altitude": -2134,
   "dewpoint": {
-    "repr": "M01",
-    "spoken": "minus one",
-    "value": -1
+    "repr": "00",
+    "spoken": "zero",
+    "value": 0
   },
-  "flight_rules": "LIFR",
+  "flight_rules": "MVFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-17T16:44:04.409056Z"
+    "timestamp": "2025-01-17T17:02:50.079886Z"
   },
   "other": [],
   "pressure_altitude": -368,
-  "raw": "KAWO 171641Z AUTO 04005KT 4SM BR BKN001 OVC023 00/M01 A3043 RMK AO2 UPB26E32SNB32E41 P0000 FZRANO",
-  "relative_humidity": 0.9297254240529413,
-  "remarks": "RMK AO2 UPB26E32SNB32E41 P0000 FZRANO",
+  "raw": "KAWO 171656Z AUTO 04004KT 10SM SCT001 OVC023 00/00 A3043 RMK AO2 UPB26E32SNB32E41 SLP313 P0000 T00000000 FZRANO",
+  "relative_humidity": 1.0,
+  "remarks": "RMK AO2 UPB26E32SNB32E41 SLP313 P0000 T00000000 FZRANO",
   "remarks_info": {
     "codes": [
       {
@@ -49,7 +49,11 @@
         "value": "Trace amount of rain in the last hour"
       }
     ],
-    "dewpoint_decimal": null,
+    "dewpoint_decimal": {
+      "repr": "0000",
+      "spoken": "zero",
+      "value": 0
+    },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
     "minimum_temperature_24": null,
@@ -58,13 +62,21 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": null,
+    "sea_level_pressure": {
+      "repr": "SLP313",
+      "spoken": "one zero three one point three",
+      "value": 1031.3
+    },
     "snow_depth": null,
     "sunshine_minutes": null,
-    "temperature_decimal": null
+    "temperature_decimal": {
+      "repr": "0000",
+      "spoken": "zero",
+      "value": 0
+    }
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 171641Z 04005KT 4SM BR BKN001 OVC023 00/M01 A3043 RMK AO2 UPB26E32SNB32E41 P0000 FZRANO",
+  "sanitized": "KAWO 171656Z 04004KT 10SM SCT001 OVC023 00/00 A3043 RMK AO2 UPB26E32SNB32E41 SLP313 P0000 T00000000 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "00",
@@ -72,8 +84,8 @@
     "value": 0
   },
   "time": {
-    "dt": "2025-01-17T16:41:00Z",
-    "repr": "171641Z"
+    "dt": "2025-01-17T16:56:00Z",
+    "repr": "171656Z"
   },
   "units": {
     "accumulation": "in",
@@ -84,9 +96,9 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "4",
-    "spoken": "four",
-    "value": 4
+    "repr": "10",
+    "spoken": "one zero",
+    "value": 10
   },
   "wind_direction": {
     "repr": "040",
@@ -95,15 +107,10 @@
   },
   "wind_gust": null,
   "wind_speed": {
-    "repr": "05",
-    "spoken": "five",
-    "value": 5
+    "repr": "04",
+    "spoken": "four",
+    "value": 4
   },
   "wind_variable_direction": [],
-  "wx_codes": [
-    {
-      "repr": "BR",
-      "value": "Mist"
-    }
-  ]
+  "wx_codes": []
 }
