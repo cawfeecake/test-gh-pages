@@ -6,28 +6,28 @@
   },
   "clouds": [
     {
-      "altitude": 1,
+      "altitude": 4,
       "modifier": null,
-      "repr": "BKN001",
-      "type": "BKN"
+      "repr": "VV004",
+      "type": "VV"
     }
   ],
-  "density_altitude": -2625,
+  "density_altitude": -2565,
   "dewpoint": {
-    "repr": "M04",
-    "spoken": "minus four",
-    "value": -4
+    "repr": "M03",
+    "spoken": "minus three",
+    "value": -3
   },
   "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-18T11:01:33.228362Z"
+    "timestamp": "2025-01-18T11:21:28.589799Z"
   },
   "other": [],
   "pressure_altitude": -470,
-  "raw": "KBLI 181053Z AUTO 00000KT 8SM BKN001 M03/M04 A3056 RMK AO2 SLP358 I1000 T10331039",
-  "relative_humidity": 0.9561345228017767,
-  "remarks": "RMK AO2 SLP358 I1000 T10331039",
+  "raw": "KBLI 181115Z AUTO 00000KT 1/2SM R16/2400V5500FT FZFG VV004 M03/M03 A3056 RMK AO2 T10281033",
+  "relative_humidity": 0.9634740523958434,
+  "remarks": "RMK AO2 T10281033",
   "remarks_info": {
     "codes": [
       {
@@ -36,9 +36,9 @@
       }
     ],
     "dewpoint_decimal": {
-      "repr": "1039",
-      "spoken": "minus three point nine",
-      "value": -3.9
+      "repr": "1033",
+      "spoken": "minus three point three",
+      "value": -3.3
     },
     "maximum_temperature_24": null,
     "maximum_temperature_6": null,
@@ -48,21 +48,36 @@
     "precip_36_hours": null,
     "precip_hourly": null,
     "pressure_tendency": null,
-    "sea_level_pressure": {
-      "repr": "SLP358",
-      "spoken": "one zero three five point eight",
-      "value": 1035.8
-    },
+    "sea_level_pressure": null,
     "snow_depth": null,
     "sunshine_minutes": null,
     "temperature_decimal": {
-      "repr": "1033",
-      "spoken": "minus three point three",
-      "value": -3.3
+      "repr": "1028",
+      "spoken": "minus two point eight",
+      "value": -2.8
     }
   },
-  "runway_visibility": [],
-  "sanitized": "KBLI 181053Z 00000KT 8SM BKN001 M03/M04 A3056 RMK AO2 SLP358 I1000 T10331039",
+  "runway_visibility": [
+    {
+      "repr": "R16/2400V5500FT",
+      "runway": "16",
+      "trend": null,
+      "variable_visibility": [
+        {
+          "repr": "2400",
+          "spoken": "two four hundred",
+          "value": 2400
+        },
+        {
+          "repr": "5500",
+          "spoken": "five five hundred",
+          "value": 5500
+        }
+      ],
+      "visibility": null
+    }
+  ],
+  "sanitized": "KBLI 181115Z 00000KT 1/2SM R16/2400V5500FT FZFG VV004 M03/M03 A3056 RMK AO2 T10281033",
   "station": "KBLI",
   "temperature": {
     "repr": "M03",
@@ -70,8 +85,8 @@
     "value": -3
   },
   "time": {
-    "dt": "2025-01-18T10:53:00Z",
-    "repr": "181053Z"
+    "dt": "2025-01-18T11:15:00Z",
+    "repr": "181115Z"
   },
   "units": {
     "accumulation": "in",
@@ -82,9 +97,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "8",
-    "spoken": "eight",
-    "value": 8
+    "denominator": 2,
+    "normalized": "1/2",
+    "numerator": 1,
+    "repr": "1/2",
+    "spoken": "one half",
+    "value": 0.5
   },
   "wind_direction": {
     "repr": "000",
@@ -98,5 +116,10 @@
     "value": 0
   },
   "wind_variable_direction": [],
-  "wx_codes": []
+  "wx_codes": [
+    {
+      "repr": "FZFG",
+      "value": "Freezing Fog"
+    }
+  ]
 }
