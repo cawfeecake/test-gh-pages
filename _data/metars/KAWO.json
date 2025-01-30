@@ -1,24 +1,31 @@
 {
   "altimeter": {
-    "repr": "A3013",
-    "spoken": "three zero point one three",
-    "value": 30.13
+    "repr": "A3014",
+    "spoken": "three zero point one four",
+    "value": 30.14
   },
-  "clouds": [],
-  "density_altitude": -2194,
+  "clouds": [
+    {
+      "altitude": 3,
+      "modifier": null,
+      "repr": "BKN003",
+      "type": "BKN"
+    }
+  ],
+  "density_altitude": -2204,
   "dewpoint": {
     "repr": "M04",
     "spoken": "minus four",
     "value": -4
   },
-  "flight_rules": "IFR",
+  "flight_rules": "LIFR",
   "meta": {
     "stations_updated": "2024-12-02",
-    "timestamp": "2025-01-30T04:43:35.316185Z"
+    "timestamp": "2025-01-30T05:07:33.298319Z"
   },
   "other": [],
-  "pressure_altitude": -68,
-  "raw": "KAWO 300437Z AUTO 00000KT 2SM BR M03/M04 A3013 RMK AO2 FZRANO",
+  "pressure_altitude": -78,
+  "raw": "KAWO 300504Z AUTO 00000KT 1/4SM FZFG BKN003 M03/M04 A3014 RMK AO2 FZRANO",
   "relative_humidity": 0.9280227586111668,
   "remarks": "RMK AO2 FZRANO",
   "remarks_info": {
@@ -47,7 +54,7 @@
     "temperature_decimal": null
   },
   "runway_visibility": [],
-  "sanitized": "KAWO 300437Z 00000KT 2SM BR M03/M04 A3013 RMK AO2 FZRANO",
+  "sanitized": "KAWO 300504Z 00000KT 1/4SM FZFG BKN003 M03/M04 A3014 RMK AO2 FZRANO",
   "station": "KAWO",
   "temperature": {
     "repr": "M03",
@@ -55,8 +62,8 @@
     "value": -3
   },
   "time": {
-    "dt": "2025-01-30T04:37:00Z",
-    "repr": "300437Z"
+    "dt": "2025-01-30T05:04:00Z",
+    "repr": "300504Z"
   },
   "units": {
     "accumulation": "in",
@@ -67,9 +74,12 @@
     "wind_speed": "kt"
   },
   "visibility": {
-    "repr": "2",
-    "spoken": "two",
-    "value": 2
+    "denominator": 4,
+    "normalized": "1/4",
+    "numerator": 1,
+    "repr": "1/4",
+    "spoken": "one quarter",
+    "value": 0.25
   },
   "wind_direction": {
     "repr": "000",
@@ -85,8 +95,8 @@
   "wind_variable_direction": [],
   "wx_codes": [
     {
-      "repr": "BR",
-      "value": "Mist"
+      "repr": "FZFG",
+      "value": "Freezing Fog"
     }
   ]
 }
